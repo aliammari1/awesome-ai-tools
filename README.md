@@ -87,8 +87,11 @@
 ### ⏰ Time Management & Scheduling
 
 - [Motion](https://www.usemotion.com/) - AI calendar scheduling and intelligent task automation. 💰
+- [Zoom AI Companion 3.0](https://www.zoom.com/en/products/ai-assistant/) - Agentic AI for meeting prep, notes, and calendar optimization (Nov 2025). 💰
 - [Reclaim.ai](https://reclaim.ai/) - Intelligent calendar protection and focus time optimization. 🆓/💰
 - [Clockwise](https://www.clockwise.com/) - AI-powered calendar optimization for teams. 🆓/💰
+- [Nyota.ai](https://www.nyota.ai/) - AI meeting assistant with automated CRM updates. 💰
+- [Fathom](https://fathom.video/) - Free AI meeting recording and transcription. 🆓
 - [Clockify](https://clockify.me) - AI-enhanced project time tracking. 🆓/💰
 - [RescueTime](https://www.rescuetime.com/) - Automatic time tracking with AI insights. 🆓/💰
 - [Focus@Will](https://www.focusatwill.com/) - Neuroscience-based focus music. 💰
@@ -307,10 +310,14 @@
 
 - [Sora 2](https://openai.com/sora) - OpenAI's physics-accurate video & audio generation with dialogue sync (Oct 2025). 💰
 - [Google Veo 3](https://deepmind.google/technologies/veo/) - Google's latest video generation model with photorealism (Oct 2025). 💰
+- [Vibes](https://www.meta.com/vibes) - Meta's AI video feed platform with social features (Sep 2025). 🆓
 - [Runway Gen-4](https://runwayml.com/) - Latest generation with improved speed and visual fidelity (2025). 🆓/💰
 - [Kling AI 2.0](https://kling.ai/) - Advanced motion control and fast-action video generation. 🆓/💰
 - [Pika 2.2](https://pika.art/) - AI video generator with 1080p HD and scene integration. 🆓/💰
 - [Luma Ray2](https://lumalabs.ai/) - High-fidelity AI video generation with dynamic compositions. 🆓/💰
+- [Haiper AI](https://haiper.ai/) - AI video generation platform with creative tools (Oct 2024). 🆓/💰
+- [LTX Studio](https://ltx.studio/) - Comprehensive AI filmmaking platform. 💰
+- [Pyramidal Flow](https://pyramid-flow.github.io/) - Open-source AI video generation model (Oct 2024). 🆓
 - [Amazon Nova Reel](https://aws.amazon.com/ai/generative-ai/) - Enterprise-grade AI video with IP indemnification. 💰
 - [Hailuo AI](https://hailuo.ai/) - MiniMax's AI video generation platform. 🆓/💰
 - [Synthesia](https://www.synthesia.io/) - AI avatar video generation for business. 💰
@@ -337,8 +344,11 @@
 - [GitHub Copilot](https://github.com/features/copilot) - AI pair programmer by Microsoft. 💰
 - [Cursor](https://cursor.sh/) - AI-first code editor with powerful agent features. 🆓/💰
 - [Windsurf](https://windsurf.com/) - Codeium's AI coding assistant with Cascade agent. 🆓/💰
+- [Qodo](https://www.qodo.ai/) - AI coding platform for code quality, testing, and review (formerly Codium). 🆓/💰
+- [Zed](https://zed.dev/) - High-performance AI code editor with collaborative features. 🆓
 - [Tabnine](https://www.tabnine.com/) - AI code completion for multiple IDEs. 🆓/💰
 - [Amazon CodeWhisperer](https://aws.amazon.com/codewhisperer/) - AI coding companion by AWS. 🆓/💰
+- [Jules](https://labs.google/jules) - Google's AI coding agent for automated development (Oct 2025). 🆓
 - [Replit Ghostwriter](https://replit.com/site/ghostwriter) - AI coding in the browser. 💰
 - [Codeium](https://codeium.com/) - Free AI code acceleration with 40+ IDE support. 🆓
 - [Continue.dev](https://continue.dev/) - Open-source AI coding assistant for VS Code & JetBrains. 🆓
@@ -348,6 +358,7 @@
 
 - [Vercel v0](https://v0.dev/) - AI-powered React component generator by Vercel. 🆓/💰
 - [Bolt.new](https://bolt.new/) - Full-stack web development with AI. 🆓/💰
+- [Tessl](https://www.tessl.io/) - Spec-driven development framework for AI-native coding (Oct 2025). 🆓
 - [Lovable](https://lovable.ai/) - AI-powered app builder for rapid development. 💰
 - [Builder.io](https://www.builder.io/) - Visual development platform with AI. 🆓/💰
 - [Anima](https://www.animaapp.com/) - Design to code conversion tool. 🆓/💰
