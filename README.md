@@ -126,6 +126,7 @@
 - [DALL-E 3](https://openai.com/dall-e-3) - OpenAI's advanced image generator integrated in ChatGPT. 💰
 - [Flux](https://blackforestlabs.ai/) - Next-gen open-source image generator with photorealistic output. 🆓/💰
 - [Stable Diffusion 3](https://stability.ai/stablediffusion) - Latest open-source image generation model. 🆓
+- [ComfyUI](https://github.com/comfyanonymous/ComfyUI) - Powerful node-based UI for Stable Diffusion with advanced workflows. 🆓
 - [Ideogram](https://ideogram.ai/) - AI image generator with accurate text rendering. 🆓/💰
 - [Reve](https://reve.ai/) - AI art with superior prompt adherence. 🆓/💰
 - [Leonardo AI](https://leonardo.ai/) - AI art generation for creatives with fine-tuned control. 🆓/💰
