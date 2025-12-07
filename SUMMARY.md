@@ -64,11 +64,5 @@
 * [Getting Started](docs/getting-started/README.md)
   * [� Free Tools to Try First](docs/getting-started/free-tools-to-try-first.md)
   * [Pro Tips](docs/getting-started/pro-tips.md)
-
-* [Contributing](docs/contributing/README.md)
-  * [Contribution Guidelines](docs/contributing/contribution-guidelines.md)
-
-* [License](docs/license/README.md)
-
-* [Support](docs/support/README.md)
+  * [Learning Resources](docs/getting-started/learning-resources.md)
 

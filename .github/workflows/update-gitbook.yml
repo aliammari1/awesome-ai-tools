@@ -22,16 +22,8 @@ jobs:
     - name: Setup Node.js
       uses: actions/setup-node@v4
       with:
-        node-version: '18'
+        node-version: '22'
         cache: 'npm'
-
-    - name: Install dependencies
-      run: |
-        if [ -f package.json ]; then
-          npm install
-        else
-          npm install js-yaml markdown-it
-        fi
 
     - name: Run GitBook update script
       run: node .github/scripts/update-gitbook.js
@@ -39,8 +31,8 @@ jobs:
     - name: Commit and push changes
       if: github.event_name == 'push'
       run: |
-        git config --local user.email "action@github.com"
-        git config --local user.name "GitHub Action"
+        git config --local user.email "ammari.ali.0001@gmail.com"
+        git config --local user.name "aliammari1"
         git add docs/ SUMMARY.md
         if git diff --staged --quiet; then
           echo "No changes to commit"

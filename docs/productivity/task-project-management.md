@@ -4,14 +4,14 @@ Task & Project Management tools for productivity.
 
 ## Available Tools
 
+### Notion
+- **Website**: [https://www.notion.so](https://www.notion.so)
+- **Description**: All-in-one workspace with AI agents and Q&A (Notion 3.0).
+- **Pricing**: 🆓/💰
+
 ### Todoist
 - **Website**: [https://todoist.com/](https://todoist.com/)
 - **Description**: Natural language task scheduling with AI.
-- **Pricing**: 🆓/💰
-
-### Notion
-- **Website**: [https://www.notion.so](https://www.notion.so)
-- **Description**: All-in-one workspace with AI writing assistant.
 - **Pricing**: 🆓/💰
 
 ### Asana
@@ -31,16 +31,21 @@ Task & Project Management tools for productivity.
 
 ### Taskade
 - **Website**: [https://taskade.com](https://taskade.com)
-- **Description**: AI-powered team collaboration and workflows.
+- **Description**: AI-powered team collaboration, workflows, and custom AI agents.
 - **Pricing**: 🆓/💰
 
-### Superhuman
-- **Website**: [https://superhuman.com/](https://superhuman.com/)
-- **Description**: AI-powered email client.
+### Kuse
+- **Website**: [https://kuse.ai/](https://kuse.ai/)
+- **Description**: AI task manager that extracts tasks from documents and knowledge.
 - **Pricing**: 💰
 
 ### Mem
 - **Website**: [https://mem.ai/](https://mem.ai/)
 - **Description**: AI-native note-taking and knowledge management.
 - **Pricing**: 💰
+
+### Personal AI
+- **Website**: [https://personal.ai/](https://personal.ai/)
+- **Description**: AI chatbot for personal knowledge management.
+- **Pricing**: 🆓/💰
 
