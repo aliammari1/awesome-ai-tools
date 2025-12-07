@@ -11,17 +11,12 @@
 
 ### Google AI Studio
 - **Website**: [https://makersuite.google.com/](https://makersuite.google.com/)
-- **Description**: Test Google's Gemini models.
+- **Description**: Test Google's Gemini 3 models.
 - **Pricing**: 💰
 
 ### Hugging Face Spaces
 - **Website**: [https://huggingface.co/spaces](https://huggingface.co/spaces)
 - **Description**: Try pre-trained models instantly.
-- **Pricing**: 💰
-
-### Replicate
-- **Website**: [https://replicate.com/](https://replicate.com/)
-- **Description**: Run open-source models in the cloud.
 - **Pricing**: 💰
 
 ### Gradio
