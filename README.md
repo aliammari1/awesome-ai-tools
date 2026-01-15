@@ -361,6 +361,7 @@
 - [Fliki](https://fliki.ai/) - Text-to-video with AI voices and avatars. 🆓/💰
 - [Steve AI](https://www.steve.ai/) - Animated video creation. 💰
 - [Visla](https://www.visla.us/) - AI video storytelling platform. 🆓/💰
+- [MaxVideoAI](https://maxvideoai.com) - Multi-engine AI video generation hub (Sora, Veo, Wan, Kling, LTX…). 🆓/💰
 
 ### 📺 Video Enhancement & Effects
 
