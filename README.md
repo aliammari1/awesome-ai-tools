@@ -1,18 +1,12 @@
 # 🚀 Awesome AI Tools [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
-<div align="center">
-  <img src="https://img.shields.io/github/stars/aliammari1/Awesome-Ai-Tools?style=for-the-badge&logo=github&color=yellow" alt="GitHub stars">
-  <img src="https://img.shields.io/github/forks/aliammari1/Awesome-Ai-Tools?style=for-the-badge&logo=github&color=blue" alt="GitHub forks">
-  <img src="https://img.shields.io/github/issues/aliammari1/Awesome-Ai-Tools?style=for-the-badge&logo=github&color=red" alt="GitHub issues">
-  <img src="https://img.shields.io/github/license/aliammari1/Awesome-Ai-Tools?style=for-the-badge&logo=github&color=green" alt="License">
-</div>
+<!-- badges -->
+![GitHub stars](https://img.shields.io/github/stars/aliammari1/Awesome-Ai-Tools?style=for-the-badge&logo=github&color=yellow) ![GitHub forks](https://img.shields.io/github/forks/aliammari1/Awesome-Ai-Tools?style=for-the-badge&logo=github&color=blue) ![GitHub issues](https://img.shields.io/github/issues/aliammari1/Awesome-Ai-Tools?style=for-the-badge&logo=github&color=red) ![License](https://img.shields.io/github/license/aliammari1/Awesome-Ai-Tools?style=for-the-badge&logo=github&color=green)
 
-<div align="center">
-  <p>AI tools, libraries, and platforms for machine learning, natural language processing, computer vision, and intelligent automation.</p>
+AI tools, libraries, and platforms for machine learning, natural language processing, computer vision, and intelligent automation.
+
+[📚 Documentation](https://alis-organization-72.gitbook.io/awesome-ai-tools/)
   
-  <a href="https://alis-organization-72.gitbook.io/awesome-ai-tools/">📚 Documentation</a>
-</div>
-
 ---
 
 ## Contents
@@ -687,9 +681,7 @@
 
 ---
 
-<div align="center">
-  
-  [📚 View Documentation](https://alis-organization-72.gitbook.io/awesome-ai-tools/) | [🐛 Report Issues](https://github.com/aliammari1/Awesome-Ai-Tools/issues)
-  
-  <sub>Last updated: December 2025 | Made with ❤️ by [Ali Ammari](https://github.com/aliammari1)</sub>
-</div>
+<!-- footer -->
+[📚 View Documentation](https://alis-organization-72.gitbook.io/awesome-ai-tools/) | [🐛 Report Issues](https://github.com/aliammari1/Awesome-Ai-Tools/issues)
+
+_Last updated: December 2025 · Made with ❤️ by [Ali Ammari](https://github.com/aliammari1)_
