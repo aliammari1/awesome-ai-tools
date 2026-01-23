@@ -19,6 +19,7 @@ You can contribute to repo in various ways:
 ## How to Contribute
 
 To contribute to this repo, follow these simple steps:
+
 1. Give a star to this repository.
 
 2. Fork the repository to your GitHub account.
