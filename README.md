@@ -436,6 +436,7 @@ AI tools, libraries, and platforms for machine learning, natural language proces
 - [Consensus](https://consensus.app/) - AI-powered research engine for scientific papers. 🆓/💰
 - [Scite](https://scite.ai/) - Smart citations for research validation. 🆓/💰
 - [Connected Papers](https://www.connectedpapers.com/) - Visual academic paper exploration. 🆓/💰
+- [BGPT MCP](https://github.com/connerlambden/bgpt-mcp) - Hosted MCP server for searching scientific papers with full-text experimental data (50 free searches). 🆓/💰
 
 ---
 
