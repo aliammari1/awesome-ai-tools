@@ -3,7 +3,7 @@
 <!-- badges -->
 ![GitHub stars](https://img.shields.io/github/stars/aliammari1/awesome-ai-tools?style=for-the-badge&logo=github&color=yellow) ![GitHub forks](https://img.shields.io/github/forks/aliammari1/awesome-ai-tools?style=for-the-badge&logo=github&color=blue) ![GitHub issues](https://img.shields.io/github/issues/aliammari1/awesome-ai-tools?style=for-the-badge&logo=github&color=red) ![License](https://img.shields.io/github/license/aliammari1/awesome-ai-tools?style=for-the-badge&logo=github&color=green)
 
-AI tools, libraries, and platforms for machine learning, natural language processing, computer vision, and intelligent automation.
+Curated catalog of AI software for real-world work across text, code, image, audio, video, and research.
   
 ---
 
