@@ -100,7 +100,7 @@ Curated catalog of AI software for real-world work across text, code, image, aud
 - [Asana](https://asana.com) - Project management with AI-powered insights. 🆓/💰
 - [ClickUp](https://clickup.com/) - Productivity platform with AI automation. 🆓/💰
 - [Monday.com](https://monday.com/) - Work OS with AI workflow automation. 💰
-- [Taskade](https://taskade.com) - AI-powered team collaboration, workflows, and custom AI agents. 🆓/💰
+- [Taskade](https://github.com/taskade/taskade) - Open-source AI-native workspace for collaboration, workflows, and custom AI agents. 🆓/💰
 - [Kuse](https://kuse.ai/) - AI task manager that extracts tasks from documents and knowledge. 💰
 - [Mem](https://mem.ai/) - AI-native note-taking and knowledge management. 💰
 - [Personal AI](https://personal.ai/) - AI chatbot for personal knowledge management. 🆓/💰
