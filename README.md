@@ -1,11 +1,9 @@
 # 🚀 Awesome AI Tools [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
 <!-- badges -->
-![GitHub stars](https://img.shields.io/github/stars/aliammari1/Awesome-Ai-Tools?style=for-the-badge&logo=github&color=yellow) ![GitHub forks](https://img.shields.io/github/forks/aliammari1/Awesome-Ai-Tools?style=for-the-badge&logo=github&color=blue) ![GitHub issues](https://img.shields.io/github/issues/aliammari1/Awesome-Ai-Tools?style=for-the-badge&logo=github&color=red) ![License](https://img.shields.io/github/license/aliammari1/Awesome-Ai-Tools?style=for-the-badge&logo=github&color=green)
+![GitHub stars](https://img.shields.io/github/stars/aliammari1/awesome-ai-tools?style=for-the-badge&logo=github&color=yellow) ![GitHub forks](https://img.shields.io/github/forks/aliammari1/awesome-ai-tools?style=for-the-badge&logo=github&color=blue) ![GitHub issues](https://img.shields.io/github/issues/aliammari1/awesome-ai-tools?style=for-the-badge&logo=github&color=red) ![License](https://img.shields.io/github/license/aliammari1/awesome-ai-tools?style=for-the-badge&logo=github&color=green)
 
 AI tools, libraries, and platforms for machine learning, natural language processing, computer vision, and intelligent automation.
-
-[📚 Documentation](https://alis-organization-72.gitbook.io/awesome-ai-tools/)
   
 ---
 
@@ -681,7 +679,14 @@ AI tools, libraries, and platforms for machine learning, natural language proces
 
 ---
 
-<!-- footer -->
-[📚 View Documentation](https://alis-organization-72.gitbook.io/awesome-ai-tools/) | [🐛 Report Issues](https://github.com/aliammari1/Awesome-Ai-Tools/issues)
+## Contributing
 
-_Last updated: December 2025 · Made with ❤️ by [Ali Ammari](https://github.com/aliammari1)_
+See [CONTRIBUTING.md](CONTRIBUTING.md) for contribution guidelines.
+
+## Footnotes
+
+- [Documentation](https://alis-organization-72.gitbook.io/awesome-ai-tools/)
+- [Report Issues](https://github.com/aliammari1/awesome-ai-tools/issues)
+- Last updated: Mars 2026.
+- Maintained by [Ali Ammari](https://github.com/aliammari1).
+
