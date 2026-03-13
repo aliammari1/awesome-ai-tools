@@ -530,6 +530,7 @@ Curated catalog of AI software for real-world work across text, code, image, aud
 - [Yotpo](https://www.yotpo.com/) - Customer reviews and loyalty. 💰
 - [Klevu](https://www.klevu.com/) - AI-powered site search. 💰
 - [Searchspring](https://searchspring.com/) - E-commerce search and merchandising. 💰
+- [RankingRider](https://www.rankingrider.com/) - AI-powered bulk SEO optimization for Shopify products via CSV. 🆓/💰
 
 ---
 
