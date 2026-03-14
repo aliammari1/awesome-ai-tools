@@ -3,7 +3,6 @@
 * [Introduction](README.md)
 
 ## Sections
-
 * [Productivity](docs/productivity/README.md)
   * [Time Management & Scheduling](docs/productivity/time-management-scheduling.md)
   * [Task & Project Management](docs/productivity/task-project-management.md)
@@ -66,3 +65,4 @@
   * [� Free Tools to Try First](docs/getting-started/free-tools-to-try-first.md)
   * [Pro Tips](docs/getting-started/pro-tips.md)
   * [Learning Resources](docs/getting-started/learning-resources.md)
+
