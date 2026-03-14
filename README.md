@@ -1,11 +1,9 @@
 # 🚀 Awesome AI Tools [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
 <!-- badges -->
-![GitHub stars](https://img.shields.io/github/stars/aliammari1/Awesome-Ai-Tools?style=for-the-badge&logo=github&color=yellow) ![GitHub forks](https://img.shields.io/github/forks/aliammari1/Awesome-Ai-Tools?style=for-the-badge&logo=github&color=blue) ![GitHub issues](https://img.shields.io/github/issues/aliammari1/Awesome-Ai-Tools?style=for-the-badge&logo=github&color=red) ![License](https://img.shields.io/github/license/aliammari1/Awesome-Ai-Tools?style=for-the-badge&logo=github&color=green)
+![GitHub stars](https://img.shields.io/github/stars/aliammari1/awesome-ai-tools?style=for-the-badge&logo=github&color=yellow) ![GitHub forks](https://img.shields.io/github/forks/aliammari1/awesome-ai-tools?style=for-the-badge&logo=github&color=blue) ![GitHub issues](https://img.shields.io/github/issues/aliammari1/awesome-ai-tools?style=for-the-badge&logo=github&color=red) ![License](https://img.shields.io/github/license/aliammari1/awesome-ai-tools?style=for-the-badge&logo=github&color=green)
 
-AI tools, libraries, and platforms for machine learning, natural language processing, computer vision, and intelligent automation.
-
-[📚 Documentation](https://alis-organization-72.gitbook.io/awesome-ai-tools/)
+Curated catalog of AI software for real-world work across text, code, image, audio, video, and research.
   
 ---
 
@@ -102,7 +100,7 @@ AI tools, libraries, and platforms for machine learning, natural language proces
 - [Asana](https://asana.com) - Project management with AI-powered insights. 🆓/💰
 - [ClickUp](https://clickup.com/) - Productivity platform with AI automation. 🆓/💰
 - [Monday.com](https://monday.com/) - Work OS with AI workflow automation. 💰
-- [Taskade](https://taskade.com) - AI-powered team collaboration, workflows, and custom AI agents. 🆓/💰
+- [Taskade](https://github.com/taskade/taskade) - Open-source AI-native workspace for collaboration, workflows, and custom AI agents. 🆓/💰
 - [Kuse](https://kuse.ai/) - AI task manager that extracts tasks from documents and knowledge. 💰
 - [Mem](https://mem.ai/) - AI-native note-taking and knowledge management. 💰
 - [Personal AI](https://personal.ai/) - AI chatbot for personal knowledge management. 🆓/💰
@@ -436,6 +434,7 @@ AI tools, libraries, and platforms for machine learning, natural language proces
 - [Consensus](https://consensus.app/) - AI-powered research engine for scientific papers. 🆓/💰
 - [Scite](https://scite.ai/) - Smart citations for research validation. 🆓/💰
 - [Connected Papers](https://www.connectedpapers.com/) - Visual academic paper exploration. 🆓/💰
+- [CiteMe](https://citeme.app/) - AI-powered academic citation generator that searches 11+ scholarly databases and formats references in 40+ citation styles. 🆓/💰
 - [BGPT MCP](https://github.com/connerlambden/bgpt-mcp) - Hosted MCP server for searching scientific papers with full-text experimental data (50 free searches). 🆓/💰
 
 ---
@@ -532,6 +531,7 @@ AI tools, libraries, and platforms for machine learning, natural language proces
 - [Yotpo](https://www.yotpo.com/) - Customer reviews and loyalty. 💰
 - [Klevu](https://www.klevu.com/) - AI-powered site search. 💰
 - [Searchspring](https://searchspring.com/) - E-commerce search and merchandising. 💰
+- [RankingRider](https://www.rankingrider.com/) - AI-powered bulk SEO optimization for Shopify products via CSV. 🆓/💰
 
 ---
 
@@ -682,7 +682,14 @@ AI tools, libraries, and platforms for machine learning, natural language proces
 
 ---
 
-<!-- footer -->
-[📚 View Documentation](https://alis-organization-72.gitbook.io/awesome-ai-tools/) | [🐛 Report Issues](https://github.com/aliammari1/Awesome-Ai-Tools/issues)
+## Contributing
 
-_Last updated: December 2025 · Made with ❤️ by [Ali Ammari](https://github.com/aliammari1)_
+See [CONTRIBUTING.md](CONTRIBUTING.md) for contribution guidelines.
+
+## Footnotes
+
+- [Documentation](https://alis-organization-72.gitbook.io/awesome-ai-tools/)
+- [Report Issues](https://github.com/aliammari1/awesome-ai-tools/issues)
+- Last updated: Mars 2026.
+- Maintained by [Ali Ammari](https://github.com/aliammari1).
+
