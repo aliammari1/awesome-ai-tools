@@ -435,6 +435,7 @@ Curated catalog of AI software for real-world work across text, code, image, aud
 - [Scite](https://scite.ai/) - Smart citations for research validation. 🆓/💰
 - [Connected Papers](https://www.connectedpapers.com/) - Visual academic paper exploration. 🆓/💰
 - [CiteMe](https://citeme.app/) - AI-powered academic citation generator that searches 11+ scholarly databases and formats references in 40+ citation styles. 🆓/💰
+- [BGPT MCP](https://github.com/connerlambden/bgpt-mcp) - Hosted MCP server for searching scientific papers with full-text experimental data (50 free searches). 🆓/💰
 
 ---
 
