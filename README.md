@@ -194,6 +194,7 @@ Curated catalog of AI software for real-world work across text, code, image, aud
 - [Gamma](https://gamma.app/) - AI presentation and document generator. 🆓/💰
 - [Beautiful.ai](https://www.beautiful.ai/) - AI-powered presentation design. 🆓/💰
 - [Hemingway Editor](http://www.hemingwayapp.com/) - Readability-focused writing tool. 🆓/💰
+- [SocialBu](https://socialbu.com/) - AI-powered social media management for scheduling, publishing, and automating across X, Instagram, LinkedIn, Facebook, TikTok, and more. 🆓/💰
 
 ### 🌍 Translation & Localization
 
