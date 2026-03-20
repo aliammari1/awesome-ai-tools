@@ -194,6 +194,7 @@ Curated catalog of AI software for real-world work across text, code, image, aud
 - [Gamma](https://gamma.app/) - AI presentation and document generator. 🆓/💰
 - [Beautiful.ai](https://www.beautiful.ai/) - AI-powered presentation design. 🆓/💰
 - [Hemingway Editor](http://www.hemingwayapp.com/) - Readability-focused writing tool. 🆓/💰
+- [SocialBu](https://socialbu.com/) - AI-powered social media management for scheduling, publishing, and automating across X, Instagram, LinkedIn, Facebook, TikTok, and more. 🆓/💰
 
 ### 🌍 Translation & Localization
 
@@ -435,6 +436,7 @@ Curated catalog of AI software for real-world work across text, code, image, aud
 - [Scite](https://scite.ai/) - Smart citations for research validation. 🆓/💰
 - [Connected Papers](https://www.connectedpapers.com/) - Visual academic paper exploration. 🆓/💰
 - [CiteMe](https://citeme.app/) - AI-powered academic citation generator that searches 11+ scholarly databases and formats references in 40+ citation styles. 🆓/💰
+- [BGPT MCP](https://github.com/connerlambden/bgpt-mcp) - Hosted MCP server for searching scientific papers with full-text experimental data (50 free searches). 🆓/💰
 
 ---
 
@@ -685,18 +687,9 @@ Curated catalog of AI software for real-world work across text, code, image, aud
 
 See [CONTRIBUTING.md](CONTRIBUTING.md) for contribution guidelines.
 
-## Documentation (Astro)
-
-- Docs site: https://aliammari1.github.io/awesome-ai-tools/
-- Local dev: `npm run dev`
-- Build docs: `npm run build`
-- Translate source docs: `npm run translate:docs`
-- Sync docs into Astro content: `npm run sync:docs`
-- Run full docs pipeline: `npm run update:docs`
-
 ## Footnotes
 
-- [Documentation](https://aliammari1.github.io/awesome-ai-tools/)
+- [Documentation](https://alis-organization-72.gitbook.io/awesome-ai-tools/)
 - [Report Issues](https://github.com/aliammari1/awesome-ai-tools/issues)
 - Last updated: Mars 2026.
 - Maintained by [Ali Ammari](https://github.com/aliammari1).
