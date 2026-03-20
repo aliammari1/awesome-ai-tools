@@ -25,6 +25,8 @@ jobs:
     steps:
       - name: Checkout docs branch
         uses: actions/checkout@v4
+        with:
+          ref: docs
 
       - name: Setup Bun
         uses: oven-sh/setup-bun@v2
