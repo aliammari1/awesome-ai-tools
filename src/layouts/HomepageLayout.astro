@@ -1,0 +1,19 @@
+---
+/**
+ * HomepageLayout.astro
+ * Custom layout for homepage that injects PopularThisWeek component
+ * This layout wraps the splash template and adds trending content
+ */
+import type { MarkdownLayoutProps } from 'astro';
+import PopularThisWeek from '../components/PopularThisWeek.astro';
+
+type Props = MarkdownLayoutProps<{}>;
+
+const { file, ...layoutProps } = Astro.props;
+---
+
+<SplashLayout {file} {...layoutProps}>
+  <Fragment slot="after-hero">
+    <PopularThisWeek />
+  </Fragment>
+</SplashLayout>

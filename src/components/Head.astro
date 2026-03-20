@@ -1,0 +1,248 @@
+---
+/**
+ * Custom Head component for Awesome AI Tools
+ * Adds comprehensive SEO meta tags, Open Graph, Twitter Cards, 
+ * structured data (JSON-LD), and performance hints.
+ */
+import Default from '@astrojs/starlight/components/Head.astro';
+const { starlightRoute } = Astro.props;
+const currentLocale = Astro.locals?.starlightRoute?.locale || 'en';
+
+const siteUrl = 'https://aliammari1.github.io/awesome-ai-tools';
+const ogImageUrl = `${siteUrl}/og-image.png`;
+
+// Dictionary for localized SEO defaults
+/** @type {Record<string, {desc: string, ogLocale: string}>} */
+const seoLocales = {
+  en: {
+    desc: 'Discover 500+ hand-picked AI tools for productivity, coding, design, writing, music, video, research, and more. Free and paid options curated for real-world work.',
+    ogLocale: 'en_US'
+  },
+  fr: {
+    desc: 'Découvrez plus de 500 outils d\'IA sélectionnés pour la productivité, le codage, le design, la rédaction, la musique, la vidéo, la recherche, et plus encore. Des options gratuites et payantes pour le travail réel.',
+    ogLocale: 'fr_FR'
+  },
+  ar: {
+    desc: 'اكتشف أكثر من 500 أداة ذكاء اصطناعي مختارة بعناية للإنتاجية والبرمجة والتصميم والكتابة والموسيقى والفيديو والبحث والمزيد. خيارات مجانية ومدفوعة للعمل الحقيقي.',
+    ogLocale: 'ar_SA'
+  },
+  es: {
+    desc: 'Descubre más de 500 herramientas de IA seleccionadas para productividad, programación, diseño, escritura, música, vídeo, investigación y más. Opciones gratuitas y de pago para el trabajo real.',
+    ogLocale: 'es_ES'
+  },
+  de: {
+    desc: 'Entdecken Sie über 500 handverlesene KI-Tools für Produktivität, Programmierung, Design, Schreiben, Musik, Video, Forschung und mehr. Kostenlose und kostenpflichtige Optionen für die Praxis.',
+    ogLocale: 'de_DE'
+  },
+  zh: {
+    desc: '发现 500 多个精选的人工智能工具，用于生产力、编码、设计、写作、音乐、视频、研究等。为实际工作精选的免费和付费选项。',
+    ogLocale: 'zh_CN'
+  },
+  ja: {
+    desc: '生産性、コーディング、デザイン、ライティング、音楽、ビデオ、研究などのために厳選された500以上のAIツールを発見してください。実際の作業のためにキュレーションされた無料と有料のオプション。',
+    ogLocale: 'ja_JP'
+  }
+};
+
+const t = seoLocales[currentLocale as keyof typeof seoLocales] || seoLocales.en;
+
+const title = starlightRoute?.entry?.data?.title 
+  ? `${starlightRoute.entry.data.title} — Awesome AI Tools`
+  : 'Awesome AI Tools — The Ultimate AI Directory';
+
+const description = starlightRoute?.entry?.data?.description || t.desc;
+const canonicalUrl = starlightRoute?.slug 
+  ? `${siteUrl}/${starlightRoute.slug}/` 
+  : `${siteUrl}/`;
+
+const keywords = 'AI tools, artificial intelligence, machine learning, ChatGPT, Midjourney, GitHub Copilot, AI productivity, AI design, AI coding, awesome list, curated AI tools, best AI tools';
+
+// JSON-LD Structured Data
+const jsonLd = JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "Awesome AI Tools",
+  "url": siteUrl,
+  "description": t.desc,
+  "author": {
+    "@type": "Person",
+    "name": "Ali Ammari",
+    "url": "https://github.com/aliammari1"
+  },
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": `${siteUrl}/?q={search_term_string}`,
+    "query-input": "required name=search_term_string"
+  },
+  "inLanguage": currentLocale,
+  "dateModified": new Date().toISOString().split('T')[0],
+  "publisher": {
+    "@type": "Person",
+    "name": "Ali Ammari"
+  }
+});
+
+// Generate og:locale:alternate tags for all supported locales
+const altLocales = Object.entries(seoLocales)
+  .filter(([lang]) => lang !== currentLocale)
+  .map(([_, localeData]) => localeData.ogLocale);
+
+const localeDetectionScript = String.raw`
+(function () {
+  try {
+    var basePath = ${JSON.stringify(new URL(siteUrl).pathname)};
+    var supportedLocales = ${JSON.stringify(Object.keys(seoLocales))};
+    var path = window.location.pathname;
+
+    if (!path.startsWith(basePath)) return;
+
+    var relativePath = path.slice(basePath.length);
+    var firstSegment = relativePath.split('/')[0];
+
+    if (supportedLocales.indexOf(firstSegment) !== -1) return;
+
+    var storedLocale = window.localStorage.getItem('awt-locale') || '';
+    var browserLocales = [];
+
+    if (storedLocale) browserLocales.push(storedLocale);
+    if (Array.isArray(navigator.languages)) browserLocales = browserLocales.concat(navigator.languages);
+    if (navigator.language) browserLocales.push(navigator.language);
+
+    function normalizeLocale(value) {
+      return String(value || '').toLowerCase().replace('_', '-');
+    }
+
+    function resolveLocale(value) {
+      var normalized = normalizeLocale(value);
+      if (!normalized) return null;
+      if (normalized.indexOf('zh') === 0) return 'zh';
+      var primary = normalized.split('-')[0];
+      return supportedLocales.indexOf(primary) !== -1 ? primary : null;
+    }
+
+    var detectedLocale = null;
+    for (var i = 0; i < browserLocales.length; i++) {
+      detectedLocale = resolveLocale(browserLocales[i]);
+      if (detectedLocale) break;
+    }
+
+    if (!detectedLocale) detectedLocale = 'en';
+
+    window.localStorage.setItem('awt-locale', detectedLocale);
+
+    var targetPath = basePath + detectedLocale + '/';
+    if (relativePath) targetPath += relativePath;
+
+    window.location.replace(targetPath);
+  } catch (error) {
+    try {
+      window.localStorage.setItem('awt-locale', 'en');
+    } catch (_) {}
+  }
+})();
+`;
+---
+
+<Default {...Astro.props}><slot /></Default>
+
+<!-- Dark Mode Theme Manager -->
+<script is:inline>
+  (function initTheme() {
+    // Theme management with localStorage persistence and system preference detection
+    const THEME_KEY = 'awt-theme';
+    const DARK = 'dark';
+    const LIGHT = 'light';
+    
+    function getStoredTheme() {
+      try {
+        return window.localStorage.getItem(THEME_KEY);
+      } catch {
+        return null;
+      }
+    }
+    
+    function getSystemTheme() {
+      if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        return DARK;
+      }
+      return LIGHT;
+    }
+    
+    function applyTheme(theme) {
+      const html = document.documentElement;
+      if (theme === DARK) {
+        html.setAttribute('data-theme', DARK);
+      } else {
+        html.removeAttribute('data-theme');
+      }
+    }
+    
+    function setTheme(theme) {
+      try {
+        window.localStorage.setItem(THEME_KEY, theme);
+      } catch {}
+      applyTheme(theme);
+      // Dispatch event for components that need to react to theme change
+      window.dispatchEvent(new CustomEvent('theme-changed', { detail: { theme } }));
+    }
+    
+    // Initialize theme on page load
+    const storedTheme = getStoredTheme();
+    const theme = storedTheme || getSystemTheme();
+    applyTheme(theme);
+    
+    // Expose toggle function globally
+    window.toggleTheme = function() {
+      const current = getStoredTheme() || getSystemTheme();
+      const next = current === DARK ? LIGHT : DARK;
+      setTheme(next);
+    };
+    
+    // Get current theme globally
+    window.getCurrentTheme = function() {
+      return getStoredTheme() || getSystemTheme();
+    };
+  })();
+</script>
+
+<script is:inline set:text={localeDetectionScript} />
+
+<!-- SEO Meta Tags -->
+<meta name="description" content={description} />
+<meta name="keywords" content={keywords} />
+<meta name="author" content="Ali Ammari" />
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+<link rel="canonical" href={canonicalUrl} />
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website" />
+<meta property="og:url" content={canonicalUrl} />
+<meta property="og:title" content={title} />
+<meta property="og:description" content={description} />
+<meta property="og:image" content={ogImageUrl} />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:site_name" content="Awesome AI Tools" />
+<meta property="og:locale" content={t.ogLocale} />
+{altLocales.map((locale) => (
+  <meta property="og:locale:alternate" content={locale} />
+))}
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:url" content={canonicalUrl} />
+<meta name="twitter:title" content={title} />
+<meta name="twitter:description" content={description} />
+<meta name="twitter:image" content={ogImageUrl} />
+
+<!-- JSON-LD Structured Data -->
+<script type="application/ld+json" set:html={jsonLd} />
+
+<!-- Performance Hints -->
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+<!-- PWA / Mobile -->
+<meta name="theme-color" content="#0f172a" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />

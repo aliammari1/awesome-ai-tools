@@ -1,0 +1,28 @@
+{
+  "name": "awesome-ai-tools-docs",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Starlight documentation site for Awesome AI Tools",
+  "scripts": {
+    "translate:docs": "node scripts/translate-docs.mjs",
+    "sync:docs": "node scripts/sync-docs.mjs",
+    "update:docs": "npm run translate:docs && npm run sync:docs",
+    "dev": "npm run sync:docs && astro dev",
+    "build": "npm run sync:docs && astro build",
+    "preview": "astro preview"
+  },
+  "dependencies": {
+    "@astrojs/starlight": "^0.38.1",
+    "astro": "^6.0.8",
+    "starlight-image-zoom": "^0.14.1",
+    "starlight-links-validator": "^0.20.1",
+    "starlight-page-actions": "^0.5.0",
+    "starlight-scroll-to-top": "^0.4.0"
+  },
+  "engines": {
+    "node": ">=18.17.0"
+  },
+  "devDependencies": {
+    "bing-translate-api": "^4.2.0"
+  }
+}

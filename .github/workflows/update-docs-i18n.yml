@@ -1,0 +1,91 @@
+name: Update Docs Branch + i18n + Site
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'README.md'
+      - 'docs/**'
+      - 'scripts/sync-docs.mjs'
+      - 'scripts/translate-docs.mjs'
+      - 'src/content/i18n/**'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-docs-i18n-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  sync-docs-branch-readme:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout main branch
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fetch-depth: 0
+
+      - name: Sync README.md to docs branch
+        run: |
+          git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+
+          if git ls-remote --exit-code --heads origin docs >/dev/null 2>&1; then
+            git fetch origin docs
+            git checkout -B docs origin/docs
+          else
+            echo "docs branch not found, creating it from main"
+            git checkout -B docs origin/main
+          fi
+
+          git checkout origin/main -- README.md
+          git add README.md
+
+          if git diff --staged --quiet; then
+            echo "No README.md changes for docs branch"
+          else
+            git commit -m "chore(docs-branch): sync README from main"
+            git push origin docs
+          fi
+
+  update-docs:
+    needs: sync-docs-branch-readme
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fetch-depth: 0
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Generate translated docs
+        run: npm run translate:docs
+
+      - name: Sync docs for Astro content layer
+        run: npm run sync:docs
+
+      - name: Commit and push updates
+        run: |
+          git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add docs-*/ scripts/translation-cache.json src/content/docs/
+          if git diff --staged --quiet; then
+            echo "No docs/i18n changes to commit"
+          else
+            git commit -m "chore(docs): auto-update translations and Astro docs content"
+            git push
+          fi

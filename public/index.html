@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Awesome AI Tools – Redirecting...</title>
+    <style>
+      body {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+          Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      }
+
+      .container {
+        text-align: center;
+        color: white;
+        background: rgba(0, 0, 0, 0.1);
+        padding: 40px;
+        border-radius: 10px;
+        backdrop-filter: blur(10px);
+      }
+
+      h1 {
+        margin: 0 0 10px;
+        font-size: 24px;
+      }
+
+      p {
+        margin: 0;
+        opacity: 0.9;
+      }
+
+      a {
+        color: white;
+        text-decoration: underline;
+      }
+    </style>
+    <script>
+      // Client-side locale detection and redirect
+      (function () {
+        const SUPPORTED_LOCALES = ['en', 'fr', 'ar', 'es', 'de', 'zh', 'ja'];
+        const DEFAULT_LOCALE = 'en';
+        const LANGUAGE_MAP = {
+          en: 'en',
+          'en-US': 'en',
+          'en-GB': 'en',
+          'en-AU': 'en',
+          fr: 'fr',
+          'fr-FR': 'fr',
+          'fr-CA': 'fr',
+          ar: 'ar',
+          'ar-SA': 'ar',
+          'ar-EG': 'ar',
+          es: 'es',
+          'es-ES': 'es',
+          'es-MX': 'es',
+          de: 'de',
+          'de-DE': 'de',
+          'de-AT': 'de',
+          'de-CH': 'de',
+          zh: 'zh',
+          'zh-CN': 'zh',
+          'zh-Hans': 'zh',
+          'zh-Hant': 'zh',
+          ja: 'ja',
+          'ja-JP': 'ja'
+        };
+
+        function getPreferredLocale() {
+          // 1. Check if locale was previously saved in localStorage
+          try {
+            const savedLocale = localStorage.getItem('preferred-locale');
+            if (savedLocale && SUPPORTED_LOCALES.includes(savedLocale)) {
+              return savedLocale;
+            }
+          } catch (e) {
+            // localStorage might be disabled
+          }
+
+          // 2. Check browser language preferences
+          const browserLangs = navigator.languages || [navigator.language];
+          for (let lang of browserLangs) {
+            const baseLang = lang.split('-')[0];
+            const matched = LANGUAGE_MAP[lang] || LANGUAGE_MAP[baseLang];
+            if (matched && SUPPORTED_LOCALES.includes(matched)) {
+              return matched;
+            }
+          }
+
+          // 3. Fall back to default
+          return DEFAULT_LOCALE;
+        }
+
+        // Get the locale and redirect
+        const locale = getPreferredLocale();
+        const basePath = '/awesome-ai-tools';
+        const targetPath = basePath + '/' + locale + '/';
+
+        // Use replace to avoid back button issues
+        window.location.replace(targetPath);
+      })();
+    </script>
+    <noscript>
+      <meta http-equiv="refresh" content="0;url=/awesome-ai-tools/en/" />
+    </noscript>
+  </head>
+  <body>
+    <div class="container">
+      <h1>🚀 Awesome AI Tools</h1>
+      <p>Detecting your language preference...</p>
+      <p style="margin-top: 20px;">
+        <a href="/awesome-ai-tools/en/">Click here if not redirected automatically</a>
+      </p>
+    </div>
+  </body>
+</html>

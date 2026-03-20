@@ -1,0 +1,192 @@
+---
+const { starlightRoute } = Astro.locals;
+const { entry, locale, siteTitleHref } = starlightRoute;
+const PAGE_TITLE_ID = '_top';
+
+const normalizedFilePath = entry.filePath.replaceAll('\\', '/');
+const docsRoot = '/src/content/docs/';
+const localizedRoot = `${docsRoot}${locale}/`;
+const relativePath = normalizedFilePath.includes(localizedRoot)
+  ? normalizedFilePath.slice(normalizedFilePath.indexOf(localizedRoot) + localizedRoot.length)
+  : normalizedFilePath.includes(docsRoot)
+    ? normalizedFilePath.slice(normalizedFilePath.indexOf(docsRoot) + docsRoot.length)
+    : normalizedFilePath;
+
+const pathWithoutExtension = relativePath.replace(/\.(md|mdx)$/i, '');
+const pathSegments = pathWithoutExtension.split('/').filter(Boolean);
+const breadcrumbSegments = pathSegments.length > 1 ? pathSegments.slice(0, -1) : [];
+
+const categoryLabels = {
+  productivity: 'Productivity',
+  'creativity-design': 'Creativity & Design',
+  'communication-writing': 'Communication & Writing',
+  'data-science-analytics': 'Data Science & Analytics',
+  'code-generation-development': 'Code & Development',
+  'large-language-models': 'Large Language Models',
+  'audio-music': 'Audio & Music',
+  'video-media': 'Video & Media',
+  'ai-search-research': 'AI Search & Research',
+  'natural-language-processing': 'Natural Language Processing',
+  'computer-vision': 'Computer Vision',
+  'business-marketing': 'Business & Marketing',
+  'gaming-entertainment': 'Gaming & Entertainment',
+  'no-codelow-code-ai': 'No-Code / Low-Code AI',
+  'research-education': 'Research & Education',
+  'ai-safety-ethics': 'AI Safety & Ethics',
+  miscellaneous: 'Miscellaneous',
+  'getting-started': 'Getting Started',
+  footnotes: 'Footnotes'
+};
+
+function humanizeSegment(segment) {
+  return categoryLabels[segment] || segment.replace(/-/g, ' ').replace(/\b\w/g, (char) => char.toUpperCase());
+}
+
+const breadcrumbItems = breadcrumbSegments.map((segment, index) => ({
+  label: humanizeSegment(segment),
+  href: `${siteTitleHref.replace(/\/?$/, '/')}${breadcrumbSegments.slice(0, index + 1).join('/')}/`
+}));
+
+const homeHref = siteTitleHref.endsWith('/') ? siteTitleHref : `${siteTitleHref}/`;
+---
+
+<div class="page-header-shell">
+  {breadcrumbItems.length > 0 && (
+    <nav class="page-breadcrumbs" aria-label="Breadcrumb">
+      <ol>
+        <li>
+          <a href={homeHref}>Home</a>
+        </li>
+        {breadcrumbItems.map((item) => (
+          <li>
+            <span aria-hidden="true">/</span>
+            <a href={item.href}>{item.label}</a>
+          </li>
+        ))}
+      </ol>
+    </nav>
+  )}
+
+  <div class="page-title-row">
+    <h1 id={PAGE_TITLE_ID} data-page-title>{entry.data.title}</h1>
+    <div class="page-actions" data-page-actions>
+      <button class="page-action-button" type="button" data-copy-link>
+        Copy link
+      </button>
+      <button class="page-action-button" type="button" data-favorite-toggle>
+        Save
+      </button>
+    </div>
+  </div>
+</div>
+
+<script is:inline>
+  (() => {
+    const root = document.querySelector('[data-page-actions]');
+    const copyButton = root?.querySelector('[data-copy-link]');
+    const favoriteButton = root?.querySelector('[data-favorite-toggle]');
+    if (!root || !copyButton || !favoriteButton) return;
+
+    const storageKey = 'awt-favorites';
+    const clickTrackingKey = 'awt-tool-clicks';
+    const pagePath = window.location.pathname;
+
+    function readFavorites() {
+      try {
+        return JSON.parse(window.localStorage.getItem(storageKey) || '[]');
+      } catch {
+        return [];
+      }
+    }
+
+    function writeFavorites(favorites) {
+      window.localStorage.setItem(storageKey, JSON.stringify(favorites));
+    }
+
+    // Click tracking for popular tools widget
+    function trackToolView() {
+      try {
+        const now = Date.now();
+        const oneWeekAgo = now - 7 * 24 * 60 * 60 * 1000;
+        
+        let clicks = {};
+        try {
+          clicks = JSON.parse(window.localStorage.getItem(clickTrackingKey) || '{}');
+        } catch {
+          clicks = {};
+        }
+
+        // Ensure we have path data for this tool, or create it
+        if (!clicks[pagePath]) {
+          clicks[pagePath] = { count: 0, timestamps: [], title: document.title };
+        }
+
+        // Add current timestamp
+        clicks[pagePath].count += 1;
+        clicks[pagePath].timestamps = (clicks[pagePath].timestamps || []).concat([now]);
+
+        // Clean old timestamps (older than 7 days)
+        clicks[pagePath].timestamps = clicks[pagePath].timestamps.filter(ts => ts > oneWeekAgo);
+        clicks[pagePath].count = clicks[pagePath].timestamps.length;
+
+        // Cleanup: remove paths with no clicks in past week
+        Object.keys(clicks).forEach(path => {
+          if (!clicks[path].timestamps || clicks[path].timestamps.length === 0) {
+            delete clicks[path];
+          }
+        });
+
+        // Limit to 50 tools max
+        const pathsWithClicks = Object.keys(clicks).sort((a, b) => {
+          return (clicks[b].count || 0) - (clicks[a].count || 0);
+        });
+        
+        if (pathsWithClicks.length > 50) {
+          pathsWithClicks.slice(50).forEach(path => delete clicks[path]);
+        }
+
+        window.localStorage.setItem(clickTrackingKey, JSON.stringify(clicks));
+      } catch (e) {
+        // Silently fail if localStorage is full or unavailable
+      }
+    }
+
+    // Track view on page load
+    trackToolView();
+
+    function setFavoriteState() {
+      const favorites = readFavorites();
+      const isSaved = favorites.includes(pagePath);
+      favoriteButton.setAttribute('aria-pressed', String(isSaved));
+      favoriteButton.textContent = isSaved ? 'Saved' : 'Save';
+      favoriteButton.classList.toggle('is-active', isSaved);
+    }
+
+    copyButton.addEventListener('click', async () => {
+      try {
+        await navigator.clipboard.writeText(window.location.href);
+        const previous = copyButton.textContent;
+        copyButton.textContent = 'Copied';
+        window.setTimeout(() => {
+          copyButton.textContent = previous;
+        }, 1400);
+      } catch {
+        window.prompt('Copy this link', window.location.href);
+      }
+    });
+
+    favoriteButton.addEventListener('click', () => {
+      const favorites = readFavorites();
+      const index = favorites.indexOf(pagePath);
+      if (index >= 0) {
+        favorites.splice(index, 1);
+      } else {
+        favorites.unshift(pagePath);
+      }
+      writeFavorites(favorites.slice(0, 50));
+      setFavoriteState();
+    });
+
+    setFavoriteState();
+  })();
+</script>
