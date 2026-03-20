@@ -1,0 +1,11 @@
+# Awesome AI Tools - robots.txt
+# https://aliammari1.github.io/awesome-ai-tools/
+
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://aliammari1.github.io/awesome-ai-tools/sitemap-index.xml
+
+# Crawl-delay (optional)
+Crawl-delay: 1

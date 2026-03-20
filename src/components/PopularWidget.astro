@@ -1,0 +1,231 @@
+---
+/**
+ * PopularWidget.astro
+ * Displays the top 5 most-visited tools from the past 7 days
+ * Data is populated client-side from localStorage
+ */
+---
+
+<div class="popular-widget">
+  <div class="popular-header">
+    <h2>
+      <span class="popular-icon">🔥</span>
+      Popular This Week
+    </h2>
+    <p class="popular-subtitle">Trending tools discovered by our community</p>
+  </div>
+
+  <div class="popular-grid" data-popular-grid>
+    <!-- Populated by client-side script -->
+    <div class="popular-loading">Loading trending tools...</div>
+  </div>
+</div>
+
+<script is:inline>
+  (function populatePopularWidget() {
+    const clickTrackingKey = 'awt-tool-clicks';
+    const gridContainer = document.querySelector('[data-popular-grid]');
+    
+    if (!gridContainer) return;
+
+    function getPopularTools() {
+      try {
+        const clicks = JSON.parse(window.localStorage.getItem(clickTrackingKey) || '{}');
+        const oneWeekAgo = Date.now() - 7 * 24 * 60 * 60 * 1000;
+
+        // Filter, clean, and sort tools by click count
+        const tools = Object.entries(clicks)
+          .map(([path, data]) => {
+            // Clean timestamps older than 7 days
+            const recentTimestamps = (data.timestamps || []).filter(ts => ts > oneWeekAgo);
+            return {
+              path,
+              count: recentTimestamps.length,
+              title: data.title || 'Unknown Tool'
+            };
+          })
+          .filter(tool => tool.count > 0)
+          .sort((a, b) => b.count - a.count)
+          .slice(0, 5);
+
+        return tools;
+      } catch (e) {
+        return [];
+      }
+    }
+
+    function formatToolTitle(fullTitle) {
+      // Extract tool name from title like "TaskName — Awesome AI Tools"
+      return fullTitle.split(' — ')[0].trim();
+    }
+
+    function renderPopularTools() {
+      const tools = getPopularTools();
+
+      if (tools.length === 0) {
+        gridContainer.innerHTML = `
+          <div class="popular-empty">
+            <p>No trending tools yet. Start exploring!</p>
+          </div>
+        `;
+        return;
+      }
+
+      const html = tools.map((tool, index) => `
+        <a href="${tool.path}" class="popular-item" title="${formatToolTitle(tool.title)}">
+          <div class="popular-rank">#${index + 1}</div>
+          <div class="popular-content">
+            <h3 class="popular-name">${formatToolTitle(tool.title)}</h3>
+            <div class="popular-meta">
+              <span class="popular-badge">🔥 Trending</span>
+              <span class="popular-count">${tool.count} visit${tool.count !== 1 ? 's' : ''}</span>
+            </div>
+          </div>
+          <div class="popular-arrow">→</div>
+        </a>
+      `).join('');
+
+      gridContainer.innerHTML = html;
+    }
+
+    // Render on load
+    renderPopularTools();
+
+    // Listen for storage changes (from other tabs)
+    window.addEventListener('storage', (e) => {
+      if (e.key === clickTrackingKey) {
+        renderPopularTools();
+      }
+    });
+
+    // Periodically refresh (every 30 seconds) in case data changed
+    setInterval(renderPopularTools, 30000);
+  })();
+</script>
+
+<style>
+  .popular-widget {
+    margin: 2rem 0;
+    padding: 2rem;
+    background: var(--pro-surface);
+    border: 1px solid var(--pro-border);
+    border-radius: 12px;
+  }
+
+  .popular-header {
+    margin-bottom: 1.5rem;
+  }
+
+  .popular-header h2 {
+    margin: 0 0 0.35rem 0 !important;
+    font-size: 1.35rem;
+    font-weight: 700;
+    color: var(--sl-color-white) !important;
+    border: none !important;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .popular-icon {
+    font-size: 1.5rem;
+    line-height: 1;
+  }
+
+  .popular-subtitle {
+    margin: 0 !important;
+    font-size: 0.85rem;
+    color: var(--sl-color-gray-3);
+    font-weight: 500;
+  }
+
+  .popular-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+  }
+
+  .popular-item {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    padding: 1rem;
+    background: var(--sl-color-bg);
+    border: 1px solid var(--pro-border);
+    border-radius: 8px;
+    text-decoration: none !important;
+    color: var(--sl-color-text) !important;
+    transition: border-color 200ms ease, box-shadow 200ms ease, transform 150ms ease;
+  }
+
+  .popular-item:hover {
+    border-color: var(--pro-primary);
+    box-shadow: 0 2px 8px rgba(59, 130, 246, 0.1);
+    transform: translateY(-2px);
+  }
+
+  .popular-rank {
+    font-weight: 700;
+    font-size: 1.1rem;
+    color: var(--pro-primary);
+  }
+
+  .popular-content {
+    flex: 1;
+  }
+
+  .popular-name {
+    margin: 0 !important;
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: var(--sl-color-white) !important;
+    line-height: 1.3;
+  }
+
+  .popular-meta {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+    font-size: 0.8rem;
+  }
+
+  .popular-badge {
+    padding: 0.25rem 0.5rem;
+    background: rgba(59, 130, 246, 0.15);
+    color: var(--pro-primary);
+    border-radius: 4px;
+    font-weight: 600;
+  }
+
+  .popular-count {
+    color: var(--sl-color-gray-3);
+  }
+
+  .popular-arrow {
+    align-self: flex-start;
+    color: var(--pro-primary);
+    font-weight: 700;
+  }
+
+  .popular-loading,
+  .popular-empty {
+    grid-column: 1 / -1;
+    padding: 2rem;
+    text-align: center;
+    color: var(--sl-color-gray-3);
+    font-size: 0.9rem;
+  }
+
+  @media (max-width: 48rem) {
+    .popular-widget {
+      margin: 1.5rem -1rem;
+      border-radius: 0;
+      padding: 1.5rem;
+    }
+
+    .popular-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

@@ -685,9 +685,18 @@ Curated catalog of AI software for real-world work across text, code, image, aud
 
 See [CONTRIBUTING.md](CONTRIBUTING.md) for contribution guidelines.
 
+## Documentation (Astro)
+
+- Docs site: https://aliammari1.github.io/awesome-ai-tools/
+- Local dev: `npm run dev`
+- Build docs: `npm run build`
+- Translate source docs: `npm run translate:docs`
+- Sync docs into Astro content: `npm run sync:docs`
+- Run full docs pipeline: `npm run update:docs`
+
 ## Footnotes
 
-- [Documentation](https://alis-organization-72.gitbook.io/awesome-ai-tools/)
+- [Documentation](https://aliammari1.github.io/awesome-ai-tools/)
 - [Report Issues](https://github.com/aliammari1/awesome-ai-tools/issues)
 - Last updated: Mars 2026.
 - Maintained by [Ali Ammari](https://github.com/aliammari1).

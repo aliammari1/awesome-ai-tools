@@ -1,0 +1,9 @@
+# سلامة وأخلاقيات الذكاء الاصطناعي
+
+AI tools for ai safety & ethics:
+
+- **AI Safety Tools**: Tools for ai safety tools
+
+## في هذا القسم
+
+{% page-ref page="ai-safety-tools.md" %}
