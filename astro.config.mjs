@@ -6,7 +6,7 @@ import starlightScrollToTop from "starlight-scroll-to-top";
 import starlightPageActions from "starlight-page-actions";
 
 export default defineConfig({
-  site: "https://aliammari1.github.io",
+  site: "https://docs.aliammari.com",
   base: "/awesome-ai-tools/",
   integrations: [
     starlight({
@@ -24,7 +24,7 @@ export default defineConfig({
         }),
         starlightScrollToTop(),
         starlightPageActions({
-          baseUrl: "https://aliammari1.github.io/awesome-ai-tools/",
+          baseUrl: "https://docs.aliammari.com/awesome-ai-tools/",
           share: true,
         }),
       ],
