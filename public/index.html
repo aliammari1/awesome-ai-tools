@@ -98,15 +98,14 @@
 
         // Get the locale and redirect
         const locale = getPreferredLocale();
-        const basePath = '/awesome-ai-tools';
-        const targetPath = basePath + '/' + locale + '/';
+        const targetPath = '/' + locale + '/';
 
         // Use replace to avoid back button issues
         window.location.replace(targetPath);
       })();
     </script>
     <noscript>
-      <meta http-equiv="refresh" content="0;url=/awesome-ai-tools/en/" />
+      <meta http-equiv="refresh" content="0;url=/en/" />
     </noscript>
   </head>
   <body>
@@ -114,7 +113,7 @@
       <h1>🚀 Awesome AI Tools</h1>
       <p>Detecting your language preference...</p>
       <p style="margin-top: 20px;">
-        <a href="/awesome-ai-tools/en/">Click here if not redirected automatically</a>
+        <a href="/en/">Click here if not redirected automatically</a>
       </p>
     </div>
   </body>
