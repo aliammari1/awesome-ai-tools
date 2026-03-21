@@ -774,7 +774,7 @@ async function countCategories() {
 // --------------- Generate index page for a locale ---------------
 function generateIndex(locale, toolCount, catCount) {
   const t = locales[locale] || locales.en;
-  const base = "/awesome-ai-tools";
+  const base = "";
   const prefix = `/${locale}`;
 
   const escapeHtmlAttribute = (value) =>
@@ -825,10 +825,10 @@ hero:
   title: "${t.heroTitle}"
   tagline: "${t.heroTagline(toolCount, catCount)}"
   image:
-    html: '<img src="${base}/og-image.png" alt="Awesome AI Tools" style="border-radius:12px;border:1px solid var(--pro-border,#e2e8f0);max-width:480px;width:100%;" />'
+    html: '<img src="/og-image.png" alt="Awesome AI Tools" style="border-radius:12px;border:1px solid var(--pro-border,#e2e8f0);max-width:480px;width:100%;" />'
   actions:
     - text: "${t.browseAll}"
-      link: ${base}${prefix}/productivity/
+      link: ${prefix}/productivity/
       icon: right-arrow
     - text: "${t.viewGitHub}"
       link: https://github.com/aliammari1/awesome-ai-tools

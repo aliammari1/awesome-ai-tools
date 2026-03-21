@@ -2,6 +2,7 @@ import { defineMiddleware } from 'astro:middleware';
 
 const LOCALES = ['en', 'fr', 'ar', 'es', 'de', 'zh', 'ja'];
 const DEFAULT_LOCALE = 'en';
+const LEGACY_BASE = '/awesome-ai-tools';
 
 // Map browser language codes to supported locales
 const LANGUAGE_MAP: Record<string, string> = {
@@ -28,51 +29,45 @@ const LANGUAGE_MAP: Record<string, string> = {
   'ja-JP': 'ja'
 };
 
+function getPreferredLocale(acceptLanguage: string) {
+  const languages = acceptLanguage
+    .split(',')
+    .map((lang) => lang.split(';')[0].trim())
+    .map((lang) => LANGUAGE_MAP[lang] || lang.split('-')[0])
+    .filter((lang) => LOCALES.includes(lang));
+
+  return languages[0] || DEFAULT_LOCALE;
+}
+
 export const onRequest = defineMiddleware((context, next) => {
-  const pathname = context.url.pathname;
-  const base = '/awesome-ai-tools';
-  
-  // Remove base from pathname to check if at root
-  const pathAfterBase = pathname.startsWith(base) 
-    ? pathname.slice(base.length) 
-    : pathname;
-  
-  // If accessing root or /awesome-ai-tools/, redirect to locale
-  if (pathAfterBase === '' || pathAfterBase === '/') {
-    const acceptLanguage = context.request.headers.get('accept-language') || '';
-    
-    // Parse accept-language header to find first matching locale
-    const languages = acceptLanguage
-      .split(',')
-      .map(lang => lang.split(';')[0].trim())
-      .map(lang => LANGUAGE_MAP[lang] || lang.split('-')[0])
-      .filter(lang => LOCALES.includes(lang));
-    
-    const preferredLocale = languages[0] || DEFAULT_LOCALE;
-    const redirectUrl = `${base}/${preferredLocale}/`;
-    
-    return context.redirect(redirectUrl, 302);
+  const originalPathname = context.url.pathname;
+  const pathname =
+    originalPathname === LEGACY_BASE || originalPathname.startsWith(`${LEGACY_BASE}/`)
+      ? originalPathname.slice(LEGACY_BASE.length) || '/'
+      : originalPathname;
+
+  if (pathname === '/' || pathname === '') {
+    const preferredLocale = getPreferredLocale(
+      context.request.headers.get('accept-language') || '',
+    );
+
+    return context.redirect(`/${preferredLocale}/`, 302);
   }
-  
-  // Check if path starts with a valid locale
-  const pathParts = pathAfterBase.split('/').filter(Boolean);
+
+  const pathParts = pathname.split('/').filter(Boolean);
   const firstSegment = pathParts[0];
-  
-  // If not a valid locale in the path, redirect to default
+
   if (firstSegment && !LOCALES.includes(firstSegment)) {
-    // This path doesn't have a locale prefix, so check browser preference
-    const acceptLanguage = context.request.headers.get('accept-language') || '';
-    const languages = acceptLanguage
-      .split(',')
-      .map(lang => lang.split(';')[0].trim())
-      .map(lang => LANGUAGE_MAP[lang] || lang.split('-')[0])
-      .filter(lang => LOCALES.includes(lang));
-    
-    const preferredLocale = languages[0] || DEFAULT_LOCALE;
-    const redirectUrl = `${base}/${preferredLocale}${pathAfterBase}`;
-    
-    return context.redirect(redirectUrl, 302);
+    const preferredLocale = getPreferredLocale(
+      context.request.headers.get('accept-language') || '',
+    );
+
+    return context.redirect(`/${preferredLocale}${pathname}`, 302);
   }
-  
+
+  if (originalPathname !== pathname) {
+    return context.redirect(pathname, 302);
+  }
+
   return next();
 });
