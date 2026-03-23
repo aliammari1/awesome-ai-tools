@@ -54,6 +54,7 @@ Curated catalog of AI software for real-world work across text, code, image, aud
   - [📈 Marketing & Sales](#-marketing--sales)
   - [💼 Business Intelligence](#-business-intelligence)
   - [🛒 E-commerce & Retail](#-e-commerce--retail)
+  - [💼 Career & Job Search](#-career--job-search)
 - [🎮 Gaming & Entertainment](#-gaming--entertainment)
   - [🎯 Game Development](#-game-development)
   - [🎪 Entertainment & Media](#-entertainment--media)
@@ -533,6 +534,13 @@ Curated catalog of AI software for real-world work across text, code, image, aud
 - [Klevu](https://www.klevu.com/) - AI-powered site search. 💰
 - [Searchspring](https://searchspring.com/) - E-commerce search and merchandising. 💰
 - [RankingRider](https://www.rankingrider.com/) - AI-powered bulk SEO optimization for Shopify products via CSV. 🆓/💰
+
+### 💼 Career & Job Search
+
+- [JobMirror](https://jobmirror.app) - End-to-end AI career toolkit: resume review, job fit analysis, offer comparison, career assessment, and cover letter generator — all free to start. 🆓/💰
+- [Jobscan](https://www.jobscan.co/) - Resume and LinkedIn optimization with ATS keyword matching. 🆓/💰
+- [Resume Worded](https://resumeworded.com/) - AI resume and LinkedIn feedback with score and targeted advice. 🆓/💰
+- [Kickresume](https://www.kickresume.com/) - AI resume builder with templates and job matching. 🆓/💰
 
 ---
 
