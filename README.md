@@ -576,6 +576,7 @@ Curated catalog of AI software for real-world work across text, code, image, aud
 - [Adalo](https://www.adalo.com/) - No-code mobile app builder with AI features. 🆓/💰
 - [FlutterFlow](https://flutterflow.io/) - Visual Flutter app builder with AI code generation. 🆓/💰
 - [Softr](https://www.softr.io/) - No-code web app builder with Airtable and AI. 🆓/💰
+- [Suriya](https://suriya.ai) - AI app builder for Thai small businesses. Create loyalty apps, booking systems, and customer management tools in 5 minutes with no coding. Available in Thai and English. 🆓/💰
 
 ### 🤖 Chatbot Builders
 
