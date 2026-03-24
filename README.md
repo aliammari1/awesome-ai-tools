@@ -307,6 +307,7 @@ Curated catalog of AI software for real-world work across text, code, image, aud
 - [Riffusion](https://www.riffusion.com/) - AI music generation with text-to-music, audio extension, and remixing. 🆓/💰
 - [Boomy](https://boomy.com/) - Create and monetize AI-generated music with one-click distribution. 🆓/💰
 - [Loudly](https://www.loudly.com/) - AI music for video content with adaptive soundtracks. 🆓/💰
+- [voicetoinstrument.com](https://voicetoinstrument.com) - Convert voice to instrument tracks using AI for music production and audio content creation. 🆓/💰
 
 ### 🎤 Voice & Speech
 
