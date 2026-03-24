@@ -1,10 +1,10 @@
 ---
 title: "Awesome AI Tools"
-description: "أكثر من 425 أداة ذكاء اصطناعي مختارة عبر 18 فئة — من الإنتاجية إلى الإبداع والبرمجة."
+description: "أكثر من 426 أداة ذكاء اصطناعي مختارة عبر 18 فئة — من الإنتاجية إلى الإبداع والبرمجة."
 template: splash
 hero:
   title: "الدليل الشامل لأدوات الذكاء الاصطناعي"
-  tagline: "أكثر من 425 أداة ذكاء اصطناعي مختارة عبر 18 فئة — من الإنتاجية إلى الإبداع والبرمجة."
+  tagline: "أكثر من 426 أداة ذكاء اصطناعي مختارة عبر 18 فئة — من الإنتاجية إلى الإبداع والبرمجة."
   image:
     html: '<img src="/og-image.png" alt="Awesome AI Tools" style="border-radius:12px;border:1px solid var(--pro-border,#e2e8f0);max-width:480px;width:100%;" />'
   actions:
