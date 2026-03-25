@@ -196,6 +196,7 @@ Curated catalog of AI software for real-world work across text, code, image, aud
 - [Beautiful.ai](https://www.beautiful.ai/) - AI-powered presentation design. 🆓/💰
 - [Hemingway Editor](http://www.hemingwayapp.com/) - Readability-focused writing tool. 🆓/💰
 - [SocialBu](https://socialbu.com/) - AI-powered social media management for scheduling, publishing, and automating across X, Instagram, LinkedIn, Facebook, TikTok, and more. 🆓/💰
+- [StoryRoute](https://storyroute.netlify.app) - AI-powered interactive storytelling platform with branching narratives. Explore fantasy, sci-fi, mystery, and romance genres, or build immersive stories with Writer Mode. 🆓
 
 ### 🌍 Translation & Localization
 
