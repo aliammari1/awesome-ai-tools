@@ -357,6 +357,7 @@ Curated catalog of AI software for real-world work across text, code, image, aud
 - [Steve AI](https://www.steve.ai/) - Animated video creation. 💰
 - [Visla](https://www.visla.us/) - AI video storytelling platform. 🆓/💰
 - [MaxVideoAI](https://maxvideoai.com) - Multi-engine AI video generation hub (Sora, Veo, Wan, Kling, LTX…). 🆓/💰
+- [PVID](http://pvid.app/) - Free AI video generator aggregating Kling 3.0, Sora 2, Veo 3.1. Image-to-video, text-to-video, video-to-video. 100 free credits. 🆓
 
 ### 📺 Video Enhancement & Effects
 
