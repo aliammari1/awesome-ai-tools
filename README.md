@@ -63,6 +63,7 @@ Curated catalog of AI software for real-world work across text, code, image, aud
   - [🤖 Chatbot Builders](#-chatbot-builders)
 - [🛡️ AI Safety & Ethics](#-ai-safety--ethics)
   - [🔒 AI Safety Tools](#-ai-safety-tools)
+- [Prefactor](https://prefactor.tech/) - AI agent runtime control plane with real-time observability, policy enforcement, and PII detection for regulated industries. 💰
   - [📊 AI Ethics & Governance](#-ai-ethics--governance)
 - [🌐 Miscellaneous](#-miscellaneous)
   - [🔧 AI Infrastructure & MLOps](#-ai-infrastructure--mlops)
