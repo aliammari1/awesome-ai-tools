@@ -204,6 +204,7 @@ Curated catalog of AI software for real-world work across text, code, image, aud
 - [Microsoft Translator](https://www.microsoft.com/en-us/translator/) - Real-time translation. 🆓
 - [Linguee](https://www.linguee.com/) - Dictionary with translation examples. 🆓
 - [Reverso](https://www.reverso.net/) - Translation with context examples. 🆓
+- [LocalePack](https://localepack.app/) - AI-powered locale file translator for browser extensions, Next.js, i18next, and vue-i18n. Translates into 52 languages with placeholders and nested structure preserved. 💰
 
 ---
 
