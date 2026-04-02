@@ -1,10 +1,10 @@
 ---
 title: "Awesome AI Tools"
-description: "Über 426 kuratierte KI-Tools in 18 Kategorien — von Produktivität bis kreative KI und LLMs."
+description: "Über 394 kuratierte KI-Tools in 18 Kategorien — von Produktivität bis kreative KI und LLMs."
 template: splash
 hero:
   title: "Das KI-Werkzeug-Verzeichnis"
-  tagline: "Über 426 kuratierte KI-Tools in 18 Kategorien — von Produktivität bis kreative KI und LLMs."
+  tagline: "Über 394 kuratierte KI-Tools in 18 Kategorien — von Produktivität bis kreative KI und LLMs."
   image:
     html: '<img src="/og-image.png" alt="Awesome AI Tools" style="border-radius:12px;border:1px solid var(--pro-border,#e2e8f0);max-width:480px;width:100%;" />'
   actions:

@@ -1,10 +1,10 @@
 ---
 title: "Awesome AI Tools"
-description: "426+ curated AI tools across 18 categories — from productivity to creative AI, coding assistants to LLMs. All hand-picked for real-world work."
+description: "394+ curated AI tools across 18 categories — from productivity to creative AI, coding assistants to LLMs. All hand-picked for real-world work."
 template: splash
 hero:
   title: "The Definitive AI Tools Directory"
-  tagline: "426+ curated AI tools across 18 categories — from productivity to creative AI, coding assistants to LLMs. All hand-picked for real-world work."
+  tagline: "394+ curated AI tools across 18 categories — from productivity to creative AI, coding assistants to LLMs. All hand-picked for real-world work."
   image:
     html: '<img src="/og-image.png" alt="Awesome AI Tools" style="border-radius:12px;border:1px solid var(--pro-border,#e2e8f0);max-width:480px;width:100%;" />'
   actions:

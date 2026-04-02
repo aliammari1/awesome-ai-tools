@@ -1,10 +1,10 @@
 ---
 title: "Awesome AI Tools"
-description: "426+ outils IA sélectionnés dans 18 catégories — de la productivité à l'IA créative, des assistants de code aux LLMs."
+description: "394+ outils IA sélectionnés dans 18 catégories — de la productivité à l'IA créative, des assistants de code aux LLMs."
 template: splash
 hero:
   title: "Le répertoire définitif des outils IA"
-  tagline: "426+ outils IA sélectionnés dans 18 catégories — de la productivité à l'IA créative, des assistants de code aux LLMs."
+  tagline: "394+ outils IA sélectionnés dans 18 catégories — de la productivité à l'IA créative, des assistants de code aux LLMs."
   image:
     html: '<img src="/og-image.png" alt="Awesome AI Tools" style="border-radius:12px;border:1px solid var(--pro-border,#e2e8f0);max-width:480px;width:100%;" />'
   actions:

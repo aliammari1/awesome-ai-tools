@@ -1,10 +1,10 @@
 ---
 title: "Awesome AI Tools"
-description: "精选 426+ 个 AI 工具，涵盖 18 个类别——从生产力到创意 AI、编码助手到大语言模型。"
+description: "精选 394+ 个 AI 工具，涵盖 18 个类别——从生产力到创意 AI、编码助手到大语言模型。"
 template: splash
 hero:
   title: "AI 工具权威目录"
-  tagline: "精选 426+ 个 AI 工具，涵盖 18 个类别——从生产力到创意 AI、编码助手到大语言模型。"
+  tagline: "精选 394+ 个 AI 工具，涵盖 18 个类别——从生产力到创意 AI、编码助手到大语言模型。"
   image:
     html: '<img src="/og-image.png" alt="Awesome AI Tools" style="border-radius:12px;border:1px solid var(--pro-border,#e2e8f0);max-width:480px;width:100%;" />'
   actions:

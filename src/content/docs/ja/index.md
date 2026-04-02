@@ -1,10 +1,10 @@
 ---
 title: "Awesome AI Tools"
-description: "18カテゴリにわたる426以上の厳選AIツール — 生産性からクリエイティブAI、コーディングアシスタントからLLMまで。"
+description: "18カテゴリにわたる394以上の厳選AIツール — 生産性からクリエイティブAI、コーディングアシスタントからLLMまで。"
 template: splash
 hero:
   title: "AIツール決定版ディレクトリ"
-  tagline: "18カテゴリにわたる426以上の厳選AIツール — 生産性からクリエイティブAI、コーディングアシスタントからLLMまで。"
+  tagline: "18カテゴリにわたる394以上の厳選AIツール — 生産性からクリエイティブAI、コーディングアシスタントからLLMまで。"
   image:
     html: '<img src="/og-image.png" alt="Awesome AI Tools" style="border-radius:12px;border:1px solid var(--pro-border,#e2e8f0);max-width:480px;width:100%;" />'
   actions:
