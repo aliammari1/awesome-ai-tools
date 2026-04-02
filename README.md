@@ -7,62 +7,62 @@ Artificial intelligence tools are software applications that utilize machine lea
 
 ## Contents
 - [Productivity](#productivity)
-  - [Time Management & Scheduling](#time-management-scheduling)
-  - [Task & Project Management](#task-project-management)
-  - [Email & Communication](#email-communication)
-- [Creativity & Design](#creativity-design)
-  - [Image Generation & Art](#image-generation-art)
+  - [Time Management & Scheduling](#time-management--scheduling)
+  - [Task & Project Management](#task--project-management)
+  - [Email & Communication](#email--communication)
+- [Creativity & Design](#creativity--design)
+  - [Image Generation & Art](#image-generation--art)
   - [Design Tools](#design-tools)
-- [Communication & Writing](#communication-writing)
+- [Communication & Writing](#communication--writing)
   - [Writing Assistants](#writing-assistants)
   - [Content Creation](#content-creation)
-  - [Translation & Localization](#translation-localization)
-- [Data Science & Analytics](#data-science-analytics)
+  - [Translation & Localization](#translation--localization)
+- [Data Science & Analytics](#data-science--analytics)
   - [Machine Learning Platforms](#machine-learning-platforms)
-  - [Data Analysis & Visualization](#data-analysis-visualization)
+  - [Data Analysis & Visualization](#data-analysis--visualization)
   - [Research Tools](#research-tools)
 - [Natural Language Processing](#natural-language-processing)
-  - [NLP Libraries & Tools](#nlp-libraries-tools)
-  - [NLP APIs & Services](#nlp-apis-services)
+  - [NLP Libraries & Tools](#nlp-libraries--tools)
+  - [NLP APIs & Services](#nlp-apis--services)
 - [Computer Vision](#computer-vision)
-  - [Image Recognition & Analysis](#image-recognition-analysis)
+  - [Image Recognition & Analysis](#image-recognition--analysis)
   - [Specialized Vision Tools](#specialized-vision-tools)
-- [Audio & Music](#audio-music)
-  - [Music Generation & Composition](#music-generation-composition)
-  - [Voice & Speech](#voice-speech)
-- [Video & Media](#video-media)
-  - [Video Creation & Editing](#video-creation-editing)
-  - [Video Enhancement & Effects](#video-enhancement-effects)
-- [Code Generation & Development](#code-generation-development)
+- [Audio & Music](#audio--music)
+  - [Music Generation & Composition](#music-generation--composition)
+  - [Voice & Speech](#voice--speech)
+- [Video & Media](#video--media)
+  - [Video Creation & Editing](#video-creation--editing)
+  - [Video Enhancement & Effects](#video-enhancement--effects)
+- [Code Generation & Development](#code-generation--development)
   - [AI Coding Assistants](#ai-coding-assistants)
   - [Development Tools](#development-tools)
-  - [Code Analysis & Review](#code-analysis-review)
-- [AI Search & Research](#ai-search-research)
+  - [Code Analysis & Review](#code-analysis--review)
+- [AI Search & Research](#ai-search--research)
   - [AI-Powered Search Engines](#ai-powered-search-engines)
-  - [Research & Knowledge Tools](#research-knowledge-tools)
+  - [Research & Knowledge Tools](#research--knowledge-tools)
 - [Large Language Models](#large-language-models)
   - [General Purpose LLMs](#general-purpose-llms)
   - [Open Source LLMs](#open-source-llms)
-  - [LLM Tools & Frameworks](#llm-tools-frameworks)
-- [Research & Education](#research-education)
+  - [LLM Tools & Frameworks](#llm-tools--frameworks)
+- [Research & Education](#research--education)
   - [Educational AI Tools](#educational-ai-tools)
   - [Research Platforms](#research-platforms)
-- [Business & Marketing](#business-marketing)
-  - [Marketing & Sales](#marketing-sales)
-  - [E-commerce & Retail](#e-commerce-retail)
-  - [Career & Job Search](#career-job-search)
-- [Gaming & Entertainment](#gaming-entertainment)
+- [Business & Marketing](#business--marketing)
+  - [Marketing & Sales](#marketing--sales)
+  - [E-commerce & Retail](#e-commerce--retail)
+  - [Career & Job Search](#career--job-search)
+- [Gaming & Entertainment](#gaming--entertainment)
   - [Game Development](#game-development)
-  - [Entertainment & Media](#entertainment-media)
+  - [Entertainment & Media](#entertainment--media)
 - [No-Code/Low-Code AI](#no-codelow-code-ai)
   - [AI App Builders](#ai-app-builders)
   - [Chatbot Builders](#chatbot-builders)
-- [AI Safety & Ethics](#ai-safety-ethics)
+- [AI Safety & Ethics](#ai-safety--ethics)
   - [AI Safety Tools](#ai-safety-tools)
-  - [AI Ethics & Governance](#ai-ethics-governance)
+  - [AI Ethics & Governance](#ai-ethics--governance)
 - [Miscellaneous](#miscellaneous)
-  - [AI Infrastructure & MLOps](#ai-infrastructure-mlops)
-  - [AI Agents & Automation](#ai-agents-automation)
+  - [AI Infrastructure & MLOps](#ai-infrastructure--mlops)
+  - [AI Agents & Automation](#ai-agents--automation)
   - [Specialized AI Applications](#specialized-ai-applications)
 - [Getting Started](#getting-started)
   - [Learning Resources](#learning-resources)
@@ -116,12 +116,12 @@ Artificial intelligence tools are software applications that utilize machine lea
 
 - [Midjourney](https://www.midjourney.com/) - AI image generator with draft mode and personalization.
 - [DALL-E](https://openai.com/dall-e-3) - OpenAI's image generator integrated in ChatGPT.
-- [FLUX](https://blackforestlabs.ai/) - image models with multi-reference, 4MP resolution, pose control, and context-aware editing.
-- [Recraft](https://recraft.ai/) - design-focused generator with vector export, icons, and logos.
-- [Stable Diffusion](https://stability.ai/stablediffusion) - open-source image generation model with enhanced quality.
-- [ComfyUI](https://github.com/comfyanonymous/ComfyUI) - node-based UI for Stable Diffusion with workflows.
-- [Ideogram](https://ideogram.ai/) - model for text rendering and typography with Magic Prompt.
-- [Reve](https://reve.ai/) - AI art with  prompt adherence and multi-image editing.
+- [FLUX](https://blackforestlabs.ai/) - Image models with multi-reference, 4MP resolution, pose control, and context-aware editing.
+- [Recraft](https://recraft.ai/) - Design-focused generator with vector export, icons, and logos.
+- [Stable Diffusion](https://stability.ai/stablediffusion) - Open-source image generation model with enhanced quality.
+- [ComfyUI](https://github.com/comfyanonymous/ComfyUI) - Node-based UI for Stable Diffusion with workflows.
+- [Ideogram](https://ideogram.ai/) - Model for text rendering and typography with Magic Prompt.
+- [Reve](https://reve.ai/) - AI art with prompt adherence and multi-image editing.
 - [Leonardo AI](https://leonardo.ai/) - AI art generation for creatives with fine-tuned control.
 - [Adobe Firefly](https://firefly.adobe.com/) - Adobe's generative AI suite integrated in Creative Cloud.
 - [DreamStudio](https://dreamstudio.ai/) - Stability AI's image generation interface.
@@ -157,14 +157,14 @@ Artificial intelligence tools are software applications that utilize machine lea
 
 ### Writing Assistants
 
-- [Grammarly](https://www.grammarly.com/) - grammar and style checker with GrammarlyGO AI and tone detection.
+- [Grammarly](https://www.grammarly.com/) - Grammar and style checker with GrammarlyGO AI and tone detection.
 - [Jasper](https://www.jasper.ai/) - Content generation tool for marketing teams.
 - [Copy.ai](https://www.copy.ai/) - Copywriting assistant with workflows.
 - [Writesonic](https://writesonic.com/) - AI writing tool with SEO optimization and Chatsonic AI assistant.
 - [Rytr](https://rytr.me/) - AI writing assistant for 40+ use cases in 30+ languages.
 - [Koala Writer](https://koala.sh/) - AI article writer with SEO optimization and real-time data.
 - [QuillBot](https://quillbot.com/) - AI paraphrasing, grammar, and plagiarism checker with Co-Writer.
-- [ProWritingAid](https://prowritingaid.com/) - writing editor with AI analysis and style suggestions.
+- [ProWritingAid](https://prowritingaid.com/) - Writing editor with AI analysis and style suggestions.
 - [Wordtune](https://www.wordtune.com/) - AI writing companion with rewriting, summarization, and tone adjustment.
 - [Writer](https://writer.com/) - AI writing platform for teams with brand consistency and Palmyra LLMs.
 - [Anyword](https://anyword.com/) - AI copywriting with performance prediction and brand voice.
@@ -187,7 +187,7 @@ Artificial intelligence tools are software applications that utilize machine lea
 
 ### Translation & Localization
 
-- [DeepL](https://www.deepl.com/translator) - neural translation.
+- [DeepL](https://www.deepl.com/translator) - Neural translation.
 - [Google Translate](https://translate.google.com/) - Free multilingual translation.
 - [Microsoft Translator](https://www.microsoft.com/en-us/translator/) - Real-time translation.
 - [Linguee](https://www.linguee.com/) - Dictionary with translation examples.
@@ -270,7 +270,7 @@ Artificial intelligence tools are software applications that utilize machine lea
 
 ### Specialized Vision Tools
 
-- [YOLO](https://github.com/ultralytics/ultralytics) - real-time object detection with C2PSA module.
+- [YOLO](https://github.com/ultralytics/ultralytics) - Real-time object detection with C2PSA module.
 - [YOLO](https://pjreddie.com/darknet/yolo/) - Real-time object detection framework.
 - [Detectron2](https://github.com/facebookresearch/detectron2) - Facebook's detection framework.
 - [MediaPipe](https://mediapipe.dev/) - Google's ML framework for live perception.
@@ -305,7 +305,7 @@ Artificial intelligence tools are software applications that utilize machine lea
 - [Jamie](https://meetjamie.ai/) - Bot-free meeting transcription with smart summaries for all platforms.
 - [tl;dv](https://tldv.io/) - AI meeting recorder with timestamped transcriptions for Zoom, Meet, and Teams.
 - [Supernormal](https://supernormal.com/) - AI meeting notes with automated action items and integrations.
-- [Rev](https://www.rev.com/) - transcription and human review option.
+- [Rev](https://www.rev.com/) - Transcription and human review option.
 - [Whisper](https://openai.com/research/whisper) - OpenAI's open-source speech recognition with 100+ language support.
 - [Assembly AI](https://www.assemblyai.com/) - Speech-to-text API with speaker diarization and content moderation.
 - [HappyScribe](https://www.happyscribe.com/) - AI transcription with 120+ languages and subtitle export.
@@ -319,10 +319,10 @@ Artificial intelligence tools are software applications that utilize machine lea
 ### Video Creation & Editing
 
 - [Sora](https://openai.com/sora) - OpenAI's video & audio generation with synchronized dialogue, iOS app.
-- [Google Veo](https://deepmind.google/technologies/veo/) - video model with Ingredients-to-Video, native audio.
+- [Google Veo](https://deepmind.google/technologies/veo/) - Video model with Ingredients-to-Video, native audio.
 - [Runway](https://runwayml.com/) - Video generation model with accurate motion and physics representation.
 - [Kling AI](https://kling.ai/) - Video generation with audio, dialogue, avatars, and editing features.
-- [MiniMax Hailuo](https://hailuo.ai/) - video generation with improved motion.
+- [MiniMax Hailuo](https://hailuo.ai/) - Video generation with improved motion.
 - [Pika](https://pika.art/) - Video generator with scene integration.
 - [Luma Ray](https://lumalabs.ai/) - AI video generation with dynamic compositions.
 - [Haiper AI](https://haiper.ai/) - AI video generation platform with creative tools.
@@ -342,7 +342,7 @@ Artificial intelligence tools are software applications that utilize machine lea
 
 ### Video Enhancement & Effects
 
-- [DaVinci Resolve](https://www.blackmagicdesign.com/products/davinciresolve/) - video editing with AI features.
+- [DaVinci Resolve](https://www.blackmagicdesign.com/products/davinciresolve/) - Video editing with AI features.
 
 
 
@@ -437,7 +437,7 @@ Artificial intelligence tools are software applications that utilize machine lea
 - [GLM](https://github.com/THUDM/GLM-4) - Zhipu's 130B model with MIT license.
 - [Kimi](https://moonshot.cn/) - Moonshot AI's Chinese LLM with open research.
 - [Gemma](https://ai.google.dev/gemma) - Google's lightweight open model with Gemma license.
-- [Falcon](https://falconllm.tii.ae/) - open-source LLM by TII with improved performance.
+- [Falcon](https://falconllm.tii.ae/) - Open-source LLM by TII with improved performance.
 
 ### LLM Tools & Frameworks
 
