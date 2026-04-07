@@ -224,6 +224,7 @@ Artificial intelligence tools are software applications that utilize machine lea
 - [Qlik Predict](https://www.qlik.com/) - No-code predictive analytics with AutoML for business users.
 - [Mode](https://mode.com/) - Collaborative analytics with SQL, Python, and R.
 - [Deepnote](https://deepnote.com/) - Collaborative data science notebooks with AI assistance.
+- [AI for Database](https://aifordatabase.com) - Connect to any database and interact with it in plain English. No SQL needed — get instant insights, build self-refreshing dashboards, and trigger automated workflows based on database changes.
 
 ### Research Tools
 
