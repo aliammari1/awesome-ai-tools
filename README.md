@@ -493,6 +493,7 @@ Artificial intelligence tools are software applications that utilize machine lea
 - [Drift](https://www.drift.com/) - Conversational marketing platform with AI chatbots.
 - [Lavender](https://www.lavender.ai/) - AI email coach for sales with real-time suggestions.
 - [Seamless.ai](https://seamless.ai/) - AI-powered B2B lead generation and prospecting.
+- [Toprank](https://github.com/nowork-studio/toprank) - Open-source Claude Code plugin and skill set for SEO, Google Ads, content writing, and CMS optimization workflows.
 
 ### E-commerce & Retail
 
@@ -651,4 +652,3 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for contribution guidelines.
 - [Report Issues](https://github.com/aliammari1/awesome-ai-tools/issues)
 - Last updated: March 2026.
 - Maintained by [Ali Ammari](https://github.com/aliammari1).
-
