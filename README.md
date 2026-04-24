@@ -463,6 +463,7 @@ Artificial intelligence tools are software applications that utilize machine lea
 - [Khan Academy](https://www.khanacademy.org/) - Educational platform with Khanmigo AI tutor powered by GPT-4.
 - [Coursera](https://www.coursera.org/) - Online courses with AI recommendations and career coaching.
 - [Duolingo](https://www.duolingo.com/) - Language learning with Duolingo Max AI features and roleplay.
+- [Elispeak](https://app.elispeak.com/?freemium=true) - AI English speaking coach for live voice conversations on everyday, work, travel, and IELTS/TOEFL topics; 15 free minutes of practice per day in the browser.
 - [Socratic by Google](https://socratic.org/) - AI homework helper with step-by-step explanations.
 - [Photomath](https://photomath.com/) - Math problem solver with camera scanning and explanations.
 - [Quizlet](https://quizlet.com/) - AI-powered flashcards and study tools with Q-Chat tutor.
