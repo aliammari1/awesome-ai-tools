@@ -508,6 +508,8 @@ Artificial intelligence tools are software applications that utilize machine lea
 - [Jobscan](https://www.jobscan.co/) - Resume and LinkedIn optimization with ATS keyword matching.
 - [Resume Worded](https://resumeworded.com/) - AI resume and LinkedIn feedback with score and targeted advice.
 - [Kickresume](https://www.kickresume.com/) - AI resume builder with templates and job matching.
+- [CV Mirror](https://cv-mirror-web.vercel.app/) - Free, fully client-side ATS scanner. Simulates how 5 real ATS systems (Workday, Greenhouse, Lever, Taleo, iCIMS) parse a CV side by side. Reading-order overlay, vendor-specific lint, no fake score. Nothing uploads.
+- [Vantage AI](https://vantage-livid.vercel.app/) - AI job preparation tool. Upload CV, paste job link, get the full prep pack (company brief, tailored cover letter, mock interview, fit score, 5-min pitch outline) in 90 seconds.
 
 
 
