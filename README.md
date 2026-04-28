@@ -283,6 +283,7 @@ Artificial intelligence tools are software applications that utilize machine lea
 
 ### Music Generation & Composition
 
+- [Suede](https://suedeai.ai/) - AI music and video generation with automatic on-chain ownership and licensing/royalty routing.
 - [Suno](https://suno.ai/) - AI music generator.
 - [Udio](https://udio.com/) - AI music with vocal control.
 - [AIVA](https://www.aiva.ai/) - AI music composition for 250+ styles with emotional intelligence.
