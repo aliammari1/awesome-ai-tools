@@ -502,6 +502,7 @@ Artificial intelligence tools are software applications that utilize machine lea
 - [Klevu](https://www.klevu.com/) - AI-powered site search.
 - [Searchspring](https://searchspring.com/) - E-commerce search and merchandising.
 - [RankingRider](https://www.rankingrider.com/) - AI-powered bulk SEO optimization for Shopify products via CSV.
+- [igly.ai](https://igly.ai/) - AI image editing platform for background removal, inpainting, upscaling, and generative fill. [Demo video →](https://www.youtube.com/watch?v=HB2E1WZ12is)
 
 ### Career & Job Search
 
