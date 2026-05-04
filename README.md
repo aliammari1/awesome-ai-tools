@@ -293,6 +293,7 @@ Artificial intelligence tools are software applications that utilize machine lea
 - [Boomy](https://boomy.com/) - Create and monetize AI-generated music with one-click distribution.
 - [Loudly](https://www.loudly.com/) - AI music for video content with adaptive soundtracks.
 - [voicetoinstrument.com](https://voicetoinstrument.com) - Convert voice to instrument tracks using AI for music production and audio content creation.
+- [Suede](https://suedeai.ai/) - AI music and video generation with automatic on-chain ownership and licensing/royalty routing.
 
 ### Voice & Speech
 
@@ -651,4 +652,3 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for contribution guidelines.
 - [Report Issues](https://github.com/aliammari1/awesome-ai-tools/issues)
 - Last updated: March 2026.
 - Maintained by [Ali Ammari](https://github.com/aliammari1).
-
