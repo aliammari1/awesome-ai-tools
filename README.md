@@ -150,6 +150,7 @@ Artificial intelligence tools are software applications that utilize machine lea
 - [LogoAI](https://www.logoai.com/) - AI logo generator with brand kit creation.
 - [Brandmark](https://brandmark.io/) - AI brand identity generator with color palettes.
 - [Looka](https://looka.com/) - AI logo maker with full brand kit.
+- [AdDogs](https://www.addogs.ai/) - AI ad creative generator that clones any winning ad design and applies your product photo and brand identity.
 
 
 
