@@ -70,6 +70,7 @@ Artificial intelligence tools are software applications that utilize machine lea
 
 
 ## Productivity
+- [Qonspekt](https://qonspekt.github.io/qonspekt/) - Article to atomic Obsidian notes via Claude AI. BYOK, no backend. [GitHub](https://github.com/Qonspekt/qonspekt)
 
 ### Time Management & Scheduling
 
