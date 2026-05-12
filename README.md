@@ -138,6 +138,7 @@ Artificial intelligence tools are software applications that utilize machine lea
 
 ### Design Tools
 
+- [ClearCrowds](https://clearcrowds.com/) - AI photo cleanup editor for removing crowds, objects, clutter, and other distractions with presets and natural-language prompts.
 - [Figma AI](https://www.figma.com/) - Design platform with AI features and auto layout.
 - [Canva AI](https://www.canva.com/) - Design platform with Magic Design and background removal.
 - [Framer](https://www.framer.com/) - Web design with AI site generation and responsive layouts.
