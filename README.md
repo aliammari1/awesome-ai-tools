@@ -267,6 +267,7 @@ Artificial intelligence tools are software applications that utilize machine lea
 - [OpenCV](https://opencv.org/) - Open-source computer vision library.
 - [Viso.ai](https://viso.ai/) - No-code computer vision platform for enterprise applications.
 - [Landing AI](https://landing.ai/) - Andrew Ng's computer vision platform for manufacturing.
+- [ScanRead.ai](https://scanread.ai) - Free OCR for images, PDFs, screenshots, and handwriting in 100+ languages with PP-OCRv5.
 
 ### Specialized Vision Tools
 
