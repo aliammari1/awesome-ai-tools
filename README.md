@@ -146,6 +146,7 @@ Artificial intelligence tools are software applications that utilize machine lea
 - [Kittl](https://www.kittl.com/) - AI design with vectorization, templates, and print-ready exports.
 - [Penpot](https://penpot.app/) - Open-source design platform with AI features and collaboration.
 - [Spline](https://spline.design/) - 3D design with AI generation and web export.
+- [LandscapioAI](https://www.landscapioai.com/) - AI landscape design and outdoor project planning from yard photos, with cost calculators for smarter home-improvement decisions.
 - [Mockup Photos](https://mockup.photos/) - AI-generated mockups with templates.
 - [LogoAI](https://www.logoai.com/) - AI logo generator with brand kit creation.
 - [Brandmark](https://brandmark.io/) - AI brand identity generator with color palettes.
