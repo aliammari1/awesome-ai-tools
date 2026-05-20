@@ -170,6 +170,7 @@ Artificial intelligence tools are software applications that utilize machine lea
 - [Anyword](https://anyword.com/) - AI copywriting with performance prediction and brand voice.
 - [Hypotenuse AI](https://hypotenuse.ai/) - AI content generator for e-commerce with product descriptions.
 - [Type.ai](https://type.ai/) - AI writing with customizable LLM models and document editor.
+- [Lynote AI Humanize Text](https://github.com/lynote-ai/humanize-text) - Open-source AI text humanization tool, polish robotic AI content into natural human writing. Full free web version: https://lynote.ai/ai-humanizer
 - [Hyperwrite](https://hyperwriteai.com/) - Personal AI writing assistant with AutoWrite and TypeAhead.
 - [Frase](https://www.frase.io/) - AI SEO content creation and optimization with SERP analysis.
 - [Surfer SEO](https://surferseo.com/) - AI-powered content optimization with NLP analysis.
