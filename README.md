@@ -136,6 +136,10 @@ Artificial intelligence tools are software applications that utilize machine lea
 - [BlueWillow](https://www.bluewillow.ai/) - Free AI image generator.
 - [Prisma](https://prisma-ai.com/) - Artistic photo filters.
 
+### Photo Enhancement & Restoration
+
+- [PhotoRestore.ai](https://photorestore.ai) - AI-powered restoration of old and damaged photos — repairs scratches, fading, tears, and colorizes B&W images. Free trial.
+
 ### Design Tools
 
 - [Figma AI](https://www.figma.com/) - Design platform with AI features and auto layout.
