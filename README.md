@@ -312,6 +312,7 @@ Artificial intelligence tools are software applications that utilize machine lea
 - [HappyScribe](https://www.happyscribe.com/) - AI transcription with 120+ languages and subtitle export.
 - [Resemble AI](https://www.resemble.ai/) - AI voice cloning with real-time synthesis and emotion control.
 - [Krisp](https://krisp.ai/) - AI-powered noise cancellation and meeting transcription.
+- [Voqusa Chrome Extension](https://chromewebstore.google.com/detail/voqusa-social-video-trans/ifojkfjgiombchkkijefngjhgbmehhmo) - Right-click any social video (TikTok, YouTube Shorts, Reels, Facebook, X, LinkedIn, Pinterest) and get an instant AI transcript without leaving your browser.
 
 
 
