@@ -455,6 +455,7 @@ Artificial intelligence tools are software applications that utilize machine lea
 - [LM Studio](https://lmstudio.ai/) - Desktop app for running local LLMs with chat UI.
 - [vLLM](https://vllm.ai/) - High-throughput LLM serving with PagedAttention.
 - [Anyscale](https://www.anyscale.com/) - Scalable LLM deployment with Ray framework.
+- [Future AGI](https://github.com/future-agi/future-agi) - Open-source self-hostable end-to-end agent engineering and optimization platform unifying tracing, evaluation, simulation, datasets, gateway, and guardrails in one feedback loop.
 
 
 
