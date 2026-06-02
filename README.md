@@ -150,6 +150,7 @@ Artificial intelligence tools are software applications that utilize machine lea
 - [LogoAI](https://www.logoai.com/) - AI logo generator with brand kit creation.
 - [Brandmark](https://brandmark.io/) - AI brand identity generator with color palettes.
 - [Looka](https://looka.com/) - AI logo maker with full brand kit.
+- [TinyTools](https://tinytools-smoky.vercel.app/) - Free browser-based AI design utilities: AI background remover (runs locally), favicon generator, color palette generator, OG image generator, and more. No signup required.
 
 
 
