@@ -512,6 +512,7 @@ Artificial intelligence tools are software applications that utilize machine lea
 - [Jobscan](https://www.jobscan.co/) - Resume and LinkedIn optimization with ATS keyword matching.
 - [Resume Worded](https://resumeworded.com/) - AI resume and LinkedIn feedback with score and targeted advice.
 - [Kickresume](https://www.kickresume.com/) - AI resume builder with templates and job matching.
+- [FoundRole](https://www.foundrole.com/ai-search-mcp) - MCP server connecting AI assistants to live job listings, with a Kanban tracker.
 
 
 
