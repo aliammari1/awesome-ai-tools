@@ -206,6 +206,7 @@ Artificial intelligence tools are software applications that utilize machine lea
 - [Databricks](https://databricks.com/) - Unified analytics platform with LakehouseIQ and Mosaic AI.
 - [Dataiku](https://www.dataiku.com/) - Data science platform with AI agents and LLM Mesh.
 - [PyCaret](https://pycaret.org/) - Low-code ML library for rapid experimentation with 30+ algorithms.
+- **[TWZRD Agent Intel](https://intel.twzrd.xyz)** - Solana-native x402 MCP server for AI agent trust scoring. Free tools: `score_agent(wallet)`, `preflight_check(wallet)`. Paid: `get_trust_receipt` via HTTP 402 + USDC on Solana. MCP: `https://intel.twzrd.xyz/mcp`
 - [Auto-Sklearn](https://automl.github.io/auto-sklearn/) - Open-source AutoML with ensemble learning.
 
 ### Data Analysis & Visualization
