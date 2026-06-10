@@ -328,6 +328,7 @@ Artificial intelligence tools are software applications that utilize machine lea
 - [Pika](https://pika.art/) - Video generator with scene integration.
 - [Luma Ray](https://lumalabs.ai/) - AI video generation with dynamic compositions.
 - [Haiper AI](https://haiper.ai/) - AI video generation platform with creative tools.
+- [ImagineClip](https://imagineclip.com?ref=aliammari1-awesome-ai-tools) - AI video generator for fun clips, avatars, and social-ready effects.
 - [LTX Studio](https://ltx.studio/) - Comprehensive AI filmmaking platform.
 - [Pyramidal Flow](https://pyramid-flow.github.io/) - Open-source AI video generation model.
 - [Amazon Nova Reel](https://aws.amazon.com/ai/generative-ai/) - Enterprise-grade AI video with IP indemnification.
