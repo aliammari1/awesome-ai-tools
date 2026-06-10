@@ -184,6 +184,7 @@ Artificial intelligence tools are software applications that utilize machine lea
 - [Beautiful.ai](https://www.beautiful.ai/) - AI-powered presentation design.
 - [Hemingway Editor](http://www.hemingwayapp.com/) - Readability-focused writing tool.
 - [SocialBu](https://socialbu.com/) - AI-powered social media management for scheduling, publishing, and automating across X, Instagram, LinkedIn, Facebook, TikTok, and more.
+- [CreatorSkills](https://creatorskills.co) - Marketplace for AI skills (SKILL.md format) for content creators — YouTube scripting, sponsorship analysis, content repurposing, and audience growth. Compatible with Claude, ChatGPT, and 20+ AI platforms.
 
 ### Translation & Localization
 
