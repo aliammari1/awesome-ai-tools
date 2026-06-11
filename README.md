@@ -1,8 +1,12 @@
 # Awesome AI Tools [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
+<!-- TODO: add hero banner once generated — see assets/BANNER.md
+<p align="center"><img src="assets/hero.png" alt="Awesome AI Tools" width="100%"></p>
+-->
+
 Artificial intelligence tools are software applications that utilize machine learning models, natural language processing, and computer vision to automate, enhance, and streamline real-world tasks across text, code, image, audio, video and research.
 
-  
+Why this list? It is hand-picked and quality-gated — actively-maintained, reachable, non-duplicate tools — not an auto-scraped dump, with a multilingual companion site (see Footnotes).
 
 
 ## Contents
@@ -644,11 +648,22 @@ Artificial intelligence tools are software applications that utilize machine lea
 
 ## Contributing
 
-See [CONTRIBUTING.md](CONTRIBUTING.md) for contribution guidelines.
+Contributions are welcome! See [CONTRIBUTING.md](CONTRIBUTING.md) for the quality bar and
+submission format. New pull requests get an automated [`awesome-lint`](https://github.com/sindresorhus/awesome-lint)
+and [`lychee`](https://github.com/lycheeverse/lychee) link check, plus an advisory AI pass
+that suggests a category, flags duplicates, and checks whether a linked repo is archived.
+
+This list is published as a multilingual documentation site (English, Français, العربية,
+Español, Deutsch, 中文, 日本語) built with Astro + Starlight — linked under Footnotes.
+
+> **GitHub topics / About:** this repository is tagged
+> [`awesome`](https://github.com/topics/awesome) and
+> [`awesome-ai-tools`](https://github.com/topics/awesome-ai-tools) so it surfaces in the
+> GitHub topic feeds and awesome-list aggregators.
 
 ## Footnotes
 
-- [Documentation](https://alis-organization-72.gitbook.io/awesome-ai-tools/)
+- [Documentation](https://docs.aliammari.com)
 - [Report Issues](https://github.com/aliammari1/awesome-ai-tools/issues)
-- Last updated: March 2026.
+- Last updated: June 2026.
 - Maintained by [Ali Ammari](https://github.com/aliammari1).
