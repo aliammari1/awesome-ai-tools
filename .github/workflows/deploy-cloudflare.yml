@@ -1,0 +1,69 @@
+name: Deploy to Cloudflare Pages
+
+# Builds the Astro+Bun i18n docs site (docs branch) and deploys it to
+# Cloudflare Pages. This runs ALONGSIDE the existing GitHub Pages deploy
+# (deploy-pages.yml). It is gated on the `ENABLE_CLOUDFLARE_PAGES` repo
+# variable — until that is set to "true" the job is skipped, so nothing
+# breaks for forks or before the CF project exists.
+#
+# To enable:
+#   1. Set repo variable  ENABLE_CLOUDFLARE_PAGES = true
+#   2. Add repo secrets:
+#        CLOUDFLARE_API_TOKEN   - token with "Cloudflare Pages: Edit" permission
+#        CLOUDFLARE_ACCOUNT_ID  - your Cloudflare account id
+#   3. Create a Pages project named "awesome-ai-tools" (or change the name below).
+#
+# The custom domain (docs.aliammari.com) is attached in the Cloudflare Pages
+# dashboard under "Custom domains"; the public/CNAME file on the docs branch
+# keeps the GitHub Pages domain working in parallel during the migration.
+
+on:
+  push:
+    branches:
+      - docs
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  deployments: write
+
+concurrency:
+  group: cloudflare-pages-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    name: Build & deploy
+    runs-on: ubuntu-latest
+    # Only run when the Cloudflare secrets are present.
+    if: ${{ vars.ENABLE_CLOUDFLARE_PAGES == 'true' }}
+    environment:
+      name: cloudflare-pages
+    steps:
+      - name: Checkout docs branch
+        uses: actions/checkout@v6
+        with:
+          ref: docs
+
+      - name: Setup Node
+        uses: actions/setup-node@v6
+        with:
+          node-version: 24.14.1
+
+      - name: Setup Bun
+        uses: oven-sh/setup-bun@v2
+        with:
+          bun-version: latest
+
+      - name: Install dependencies
+        run: bun install --frozen-lockfile
+
+      - name: Build site
+        run: bun run build
+
+      - name: Deploy to Cloudflare Pages
+        uses: cloudflare/wrangler-action@ebbaa1584979971c8614a24965b4405ff95890e0 # v4.0.0
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          command: pages deploy dist --project-name=awesome-ai-tools --branch=docs
