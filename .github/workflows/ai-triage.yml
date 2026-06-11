@@ -1,0 +1,90 @@
+name: AI Submission Triage
+
+# When a pull request changes README.md (i.e. adds or edits a tool entry), an
+# AI assistant reviews the diff and leaves a single advisory comment that:
+#   1. Suggests the most specific category/subcategory for the new tool,
+#   2. Flags likely duplicates already present in the list,
+#   3. Checks whether the linked GitHub repo (if any) is archived/abandoned,
+#   4. Sanity-checks the entry format (description < 120 chars, ends with a period).
+#
+# This is ADVISORY ONLY — it never blocks merging and never edits files. The
+# job is gated on the ANTHROPIC_API_KEY secret, so it silently no-ops on forks
+# or before the secret is configured. awesome-lint + lychee remain the hard
+# gates (see ci.yml).
+
+on:
+  pull_request_target:
+    types: [opened, synchronize, reopened]
+    paths:
+      - 'README.md'
+
+permissions:
+  contents: read
+  pull-requests: write
+  issues: write
+
+concurrency:
+  group: ai-triage-${{ github.event.pull_request.number }}
+  cancel-in-progress: true
+
+jobs:
+  triage:
+    name: Categorize, dedupe & validate
+    runs-on: ubuntu-latest
+    # Skip when the API key isn't available (e.g. forks). Secrets are not
+    # exposed to fork-originated runs, so this guard avoids noisy failures.
+    if: ${{ github.event.pull_request.head.repo.full_name == github.repository }}
+    steps:
+      - name: Checkout PR head
+        uses: actions/checkout@v6
+        with:
+          ref: ${{ github.event.pull_request.head.sha }}
+          fetch-depth: 0
+
+      - name: Check for API key
+        id: guard
+        run: |
+          if [ -n "${{ secrets.ANTHROPIC_API_KEY }}" ]; then
+            echo "enabled=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "enabled=false" >> "$GITHUB_OUTPUT"
+            echo "::notice::ANTHROPIC_API_KEY not set — skipping AI triage."
+          fi
+
+      - name: AI triage of the submission
+        if: steps.guard.outputs.enabled == 'true'
+        uses: anthropics/claude-code-action@v1
+        with:
+          anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
+          # Tools the assistant may use: read the diff, read README.md, search
+          # the list, query the GitHub API for repo status, and post one comment.
+          claude_args: >-
+            --allowedTools "Bash(git diff:*),Bash(gh pr diff:*),Bash(gh api:*),Bash(gh pr comment:*),Read,Grep"
+          prompt: |
+            You are the submission reviewer for the "Awesome AI Tools" curated list
+            (an awesome-list of links in README.md). A pull request has changed README.md.
+
+            Do the following and then post ONE concise advisory comment on the PR
+            (use `gh pr comment ${{ github.event.pull_request.number }} --body ...`).
+            Do NOT edit any files. Do NOT approve or request changes. This is advisory.
+
+            1. Run `gh pr diff ${{ github.event.pull_request.number }}` to see the added/changed
+               entries. Focus only on newly ADDED tool lines (`- [Name](URL) - Description.`).
+            2. For each added tool, suggest the SINGLE most specific category and subcategory
+               from the existing "## Contents" table of contents in README.md. If it's already
+               in a sensible subcategory, say so.
+            3. DUPLICATE CHECK: grep README.md for the tool name and the bare domain of its URL.
+               If a very similar entry already exists, quote it and flag a possible duplicate.
+            4. ARCHIVE CHECK: if the URL is a github.com/owner/repo link, call
+               `gh api repos/<owner>/<repo> --jq '{archived,pushed_at,description}'`. If the repo
+               is archived, or hasn't been pushed to in over ~12 months, flag it as possibly
+               abandoned (the list requires actively-maintained tools).
+            5. FORMAT CHECK: confirm each description is under 120 characters, starts with a
+               capital letter, and ends with a period; and that the entry sits in the most
+               specific subcategory and is alphabetically ordered within it.
+
+            Keep the comment short and skimmable: a few bullet points per added tool.
+            Start the comment with "🤖 **AI submission triage** (advisory — `awesome-lint` and
+            the link check are the actual gates):". Be helpful, not pedantic.
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
