@@ -407,6 +407,7 @@ Artificial intelligence tools are software applications that utilize machine lea
 - [Brave Search](https://search.brave.com/) - Independent search with AI Summarizer and privacy focus.
 - [Arc Search](https://arc.net/search) - AI-powered mobile search browser with Browse for Me feature.
 - [Exa](https://exa.ai/) - Neural search API for finding similar content and semantic search.
+- [AIToolIndex](https://aitoolindex.io/) - Searchable AI tool directory for comparing tools by category, use case, pricing model, alternatives, and workflow fit.
 
 ### Research & Knowledge Tools
 
