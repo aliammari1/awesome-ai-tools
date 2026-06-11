@@ -1,0 +1,5 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Report a bad, dead, or unsafe link
+    url: https://github.com/aliammari1/awesome-ai-tools/blob/main/SECURITY.md
+    about: For hijacked, malicious, or dead links, please follow the reporting steps in SECURITY.md.
