@@ -1,12 +1,14 @@
 # Awesome AI Tools [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
 <!-- TODO: add hero banner once generated — see assets/BANNER.md
-<p align="center"><img src="assets/hero.png" alt="Awesome AI Tools" width="100%"></p>
+<p align="center"><img src="assets/banner.png" alt="Awesome AI Tools" width="100%"></p>
 -->
 
 Artificial intelligence tools are software applications that utilize machine learning models, natural language processing, and computer vision to automate, enhance, and streamline real-world tasks across text, code, image, audio, video and research.
 
 Why this list? It is hand-picked and quality-gated — actively-maintained, reachable, non-duplicate tools — not an auto-scraped dump, with a multilingual companion site (see Footnotes).
+
+**Browse the live, searchable list** at **[docs.aliammari.com](https://docs.aliammari.com)** — the same catalog as a multilingual (EN · FR · AR · ES · DE · 中文 · 日本語) site built with Astro + Starlight and deployed on Cloudflare Pages.
 
 
 ## Contents
@@ -663,7 +665,7 @@ Español, Deutsch, 中文, 日本語) built with Astro + Starlight — linked un
 
 ## Footnotes
 
-- [Documentation](https://docs.aliammari.com)
+- [Live site / docs](https://docs.aliammari.com) — searchable, multilingual (7 languages), Astro + Starlight on Cloudflare Pages.
 - [Report Issues](https://github.com/aliammari1/awesome-ai-tools/issues)
 - Last updated: June 2026.
 - Maintained by [Ali Ammari](https://github.com/aliammari1).
