@@ -4,14 +4,18 @@
 <p align="center"><img src="assets/banner.png" alt="Awesome AI Tools" width="100%"></p>
 -->
 
+> ⭐ **Star to bookmark — updated weekly.** A hand-picked, quality-gated map of the AI tool landscape (including a dedicated **[AI Agents](#ai-agents)** section for 2026). New tools are reviewed and added every week.
+>
+> 🔎 **[Browse the live, searchable list →](https://docs.aliammari.com)** — the same catalog as a fast, multilingual (EN · FR · AR · ES · DE · 中文 · 日本語) site built with Astro + Starlight on Cloudflare Pages.
+
 Artificial intelligence tools are software applications that utilize machine learning models, natural language processing, and computer vision to automate, enhance, and streamline real-world tasks across text, code, image, audio, video and research.
 
 Why this list? It is hand-picked and quality-gated — actively-maintained, reachable, non-duplicate tools — not an auto-scraped dump, with a multilingual companion site (see Footnotes).
 
-**Browse the live, searchable list** at **[docs.aliammari.com](https://docs.aliammari.com)** — the same catalog as a multilingual (EN · FR · AR · ES · DE · 中文 · 日本語) site built with Astro + Starlight and deployed on Cloudflare Pages.
-
 
 ## Contents
+- [AI Agents](#ai-agents)
+- [Featured Open-Source AI Projects](#featured-open-source-ai-projects)
 - [Productivity](#productivity)
   - [Time Management & Scheduling](#time-management--scheduling)
   - [Task & Project Management](#task--project-management)
@@ -72,6 +76,34 @@ Why this list? It is hand-picked and quality-gated — actively-maintained, reac
   - [Specialized AI Applications](#specialized-ai-applications)
 - [Getting Started](#getting-started)
   - [Learning Resources](#learning-resources)
+
+
+
+## AI Agents
+
+The fastest-moving corner of the field in 2026: autonomous and semi-autonomous systems that plan, use tools, and act. For agent *frameworks and orchestration*, see also [AI Agents & Automation](#ai-agents--automation); for coding agents, see [AI Coding Assistants](#ai-coding-assistants).
+
+- [OpenAI Agents SDK](https://openai.github.io/openai-agents-python/) - Lightweight framework for multi-agent workflows with handoffs and guardrails.
+- [Model Context Protocol](https://modelcontextprotocol.io/) - Open standard for connecting AI agents to tools and data sources.
+- [Claude Agent SDK](https://code.claude.com/docs/en/agent-sdk/overview) - Build agents on the same harness as Claude Code with tool use and MCP.
+- [Google Agent Development Kit](https://adk.dev/) - Open-source toolkit for building and deploying multi-agent systems.
+- [Pydantic AI](https://pydantic.dev/docs/ai/overview/) - Type-safe Python agent framework with structured outputs and validation.
+- [Smolagents](https://github.com/huggingface/smolagents) - Hugging Face's minimal library for code-writing agents.
+- [Manus](https://manus.im/) - General autonomous agent that executes multi-step real-world tasks.
+- [OpenHands](https://github.com/All-Hands-AI/OpenHands) - Open-source autonomous software-engineering agent (formerly OpenDevin).
+- [AgentScope](https://github.com/modelscope/agentscope) - Multi-agent platform with distributed orchestration and visual debugging.
+- [Letta](https://www.letta.com/) - Framework for stateful agents with long-term memory (formerly MemGPT).
+- [Browser Use](https://github.com/browser-use/browser-use) - Library that lets agents control a real browser to complete web tasks.
+
+
+
+## Featured Open-Source AI Projects
+
+Source-available and open-source AI projects worth a look — including a few from this list's maintainer. All are self-hostable.
+
+- [JobPrep](https://github.com/aliammari1/JobPrep) - Source-available AI interview-prep platform: mock interviews, multi-LLM, self-host.
+- [readrealm](https://github.com/aliammari1/readrealm) - Open-source AI book-chat that turns any book into a conversation.
+- [pulmocare](https://github.com/aliammari1/pulmocare) - Open-source, self-hostable chest-X-ray analysis agent.
 
 
 
@@ -667,5 +699,5 @@ Español, Deutsch, 中文, 日本語) built with Astro + Starlight — linked un
 
 - [Live site / docs](https://docs.aliammari.com) — searchable, multilingual (7 languages), Astro + Starlight on Cloudflare Pages.
 - [Report Issues](https://github.com/aliammari1/awesome-ai-tools/issues)
-- Last updated: June 2026.
+- Last updated: June 2026 — reviewed and updated weekly.
 - Maintained by [Ali Ammari](https://github.com/aliammari1).
