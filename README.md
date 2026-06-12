@@ -305,6 +305,7 @@ Source-available and open-source AI projects worth a look — including a few fr
 - [OpenCV](https://opencv.org/) - Open-source computer vision library.
 - [Viso.ai](https://viso.ai/) - No-code computer vision platform for enterprise applications.
 - [Landing AI](https://landing.ai/) - Andrew Ng's computer vision platform for manufacturing.
+- [ScanRead.ai](https://scanread.ai) - Free OCR for images, PDFs, screenshots, and handwriting in 100+ languages with PP-OCRv5.
 
 ### Specialized Vision Tools
 
@@ -378,6 +379,7 @@ Source-available and open-source AI projects worth a look — including a few fr
 - [Steve AI](https://www.steve.ai/) - Animated video creation.
 - [Visla](https://www.visla.us/) - AI video storytelling platform.
 - [MaxVideoAI](https://maxvideoai.com) - Multi-engine AI video generation hub (Sora, Veo, Wan, Kling, LTX…).
+- [ZOOOP](https://zooop.ai) - AI-native filmmaking workstation for image, video, audio, and lip-sync generation.
 
 ### Video Enhancement & Effects
 
@@ -492,6 +494,7 @@ Source-available and open-source AI projects worth a look — including a few fr
 - [LM Studio](https://lmstudio.ai/) - Desktop app for running local LLMs with chat UI.
 - [vLLM](https://vllm.ai/) - High-throughput LLM serving with PagedAttention.
 - [Anyscale](https://www.anyscale.com/) - Scalable LLM deployment with Ray framework.
+- [Future AGI](https://github.com/future-agi/future-agi) - Open-source self-hostable end-to-end agent engineering and optimization platform unifying tracing, evaluation, simulation, datasets, gateway, and guardrails in one feedback loop.
 
 
 
