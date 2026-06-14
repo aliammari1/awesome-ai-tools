@@ -342,6 +342,7 @@ Artificial intelligence tools are software applications that utilize machine lea
 - [Visla](https://www.visla.us/) - AI video storytelling platform.
 - [MaxVideoAI](https://maxvideoai.com) - Multi-engine AI video generation hub (Sora, Veo, Wan, Kling, LTX…).
 - [ZOOOP](https://zooop.ai) - AI-native filmmaking workstation for image, video, audio, and lip-sync generation.
+- [VideoOverlayKit](https://github.com/alichherawalla/video-overlay-kit) - Open-source local renderer for 4-6s animated b-roll overlay videos targeted at short-form social (LinkedIn, IG Reels, YouTube Shorts, TikTok) and landscape YouTube. AI-driven via MCP: paste your script into Claude Code / Cursor / Codex, the server hands the model tools to write the scene spec and render the mp4. Built on Remotion + Tabler + LottieFiles. Free, MIT.
 
 ### Video Enhancement & Effects
 
