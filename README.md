@@ -135,6 +135,7 @@ Artificial intelligence tools are software applications that utilize machine lea
 - [Jasper Art](https://www.jasper.ai/art) - AI art generation for marketers.
 - [BlueWillow](https://www.bluewillow.ai/) - Free AI image generator.
 - [Prisma](https://prisma-ai.com/) - Artistic photo filters.
+- [Seedream AI Studio](https://seedream4.video/) - Multi-model AI image generation using ByteDance Seedream 5.0/4.5/4.0, with one-click image-to-video animation via Kling 2.1. Free tier available.
 
 ### Design Tools
 
