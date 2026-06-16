@@ -342,6 +342,7 @@ Artificial intelligence tools are software applications that utilize machine lea
 - [Visla](https://www.visla.us/) - AI video storytelling platform.
 - [MaxVideoAI](https://maxvideoai.com) - Multi-engine AI video generation hub (Sora, Veo, Wan, Kling, LTX…).
 - [ZOOOP](https://zooop.ai) - AI-native filmmaking workstation for image, video, audio, and lip-sync generation.
+- [ImagineClip](https://imagineclip.com) - AI video generator for fun clips, avatar videos, stylized scenes, and shareable social content from prompts, images, and effects.
 
 ### Video Enhancement & Effects
 
