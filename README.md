@@ -147,6 +147,7 @@ Artificial intelligence tools are software applications that utilize machine lea
 - [Penpot](https://penpot.app/) - Open-source design platform with AI features and collaboration.
 - [Spline](https://spline.design/) - 3D design with AI generation and web export.
 - [Mockup Photos](https://mockup.photos/) - AI-generated mockups with templates.
+- [HairWow](https://www.gohairwow.com/) - AI hairstyle try-on and hair-care guidance for previewing haircuts, colors, bangs, layers, and beard styles on your own photo.
 - [LogoAI](https://www.logoai.com/) - AI logo generator with brand kit creation.
 - [Brandmark](https://brandmark.io/) - AI brand identity generator with color palettes.
 - [Looka](https://looka.com/) - AI logo maker with full brand kit.
