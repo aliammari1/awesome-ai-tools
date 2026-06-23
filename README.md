@@ -131,6 +131,7 @@ Artificial intelligence tools are software applications that utilize machine lea
 - [Playground AI](https://playground.com/) - Free AI image generator with mixed image editing.
 - [Fotor AI](https://www.fotor.com/ai-image-generator/) - AI image generator with editing suite.
 - [Krea AI](https://krea.ai/) - Real-time AI image generation with live canvas editing.
+- [igly.ai](https://igly.ai/) - Browser-based AI image editor for background removal, inpainting, upscaling, generative fill, and e-commerce product photos.
 - [Google Imagen](https://deepmind.google/technologies/imagen/) - Google's photorealistic image model.
 - [Jasper Art](https://www.jasper.ai/art) - AI art generation for marketers.
 - [BlueWillow](https://www.bluewillow.ai/) - Free AI image generator.
