@@ -534,6 +534,7 @@ Artificial intelligence tools are software applications that utilize machine lea
 - [Character.AI](https://beta.character.ai/) - Create and chat with AI characters and companions.
 - [Replika](https://replika.ai/) - AI companion and mental wellness chatbot.
 - [AI Dungeon](https://aidungeon.io/) - AI-powered text adventure and storytelling.
+- [Auferet](https://auferet.com/) - AI game master for solo text adventures and tabletop-style RPGs, with persistent memory and your own uploaded lore.
 - [NovelAI](https://novelai.net/) - AI storytelling and image generation platform.
 - [Chai](https://chai.ml/) - Platform for chatting with AI personalities.
 
