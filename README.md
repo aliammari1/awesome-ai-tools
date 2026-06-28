@@ -449,6 +449,7 @@ Artificial intelligence tools are software applications that utilize machine lea
 - [Haystack](https://haystack.deepset.ai/) - NLP framework for building search systems and RAG pipelines.
 - [Hugging Face](https://huggingface.co/) - ML model hub with models, datasets, and Inference Endpoints.
 - [OpenRouter](https://openrouter.ai/) - Unified API for 100+ LLMs with cost optimization and fallbacks.
+- [Tokens Forge](https://tokens-forge.com/) - OpenAI-compatible multi-model API platform for GPT, Claude, and Gemini with token balances, usage ledgers, starter credit, and an AI trading research assistant.
 - [Poe](https://poe.com/) - Platform for accessing multiple AI chatbots with custom bots.
 - [Together AI](https://together.ai/) - Inference and fine-tuning platform for open-source LLMs.
 - [Replicate](https://replicate.com/) - Run open-source models in the cloud with simple API.
