@@ -321,7 +321,7 @@ Artificial intelligence tools are software applications that utilize machine lea
 ### Video Creation & Editing
 
 - [Sora](https://openai.com/sora) - OpenAI's video & audio generation with synchronized dialogue, iOS app.
-- [cv.cm/v](https://cv.cm/v) - Queue-free, full-power Seedance 2.0 text-to-video and image-to-video, with image generation, a node-graph canvas, and a REST API.
+- [cv.cm/v](https://cv.cm/v) - Queue-free Seedance 2.0 text-to-video and image-to-video, with image generation and an API.
 - [Google Veo](https://deepmind.google/technologies/veo/) - Video model with Ingredients-to-Video, native audio.
 - [Runway](https://runwayml.com/) - Video generation model with accurate motion and physics representation.
 - [Kling AI](https://kling.ai/) - Video generation with audio, dialogue, avatars, and editing features.
