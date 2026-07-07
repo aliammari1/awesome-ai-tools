@@ -497,6 +497,7 @@ Artificial intelligence tools are software applications that utilize machine lea
 - [Drift](https://www.drift.com/) - Conversational marketing platform with AI chatbots.
 - [Lavender](https://www.lavender.ai/) - AI email coach for sales with real-time suggestions.
 - [Seamless.ai](https://seamless.ai/) - AI-powered B2B lead generation and prospecting.
+- [AnswerLens](https://app.sfdj.net/) - Audits B2B SaaS public website evidence for pricing, proof, docs, comparison, trust, schema, and llms.txt gaps.
 
 ### E-commerce & Retail
 
