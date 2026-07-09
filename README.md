@@ -342,7 +342,7 @@ Artificial intelligence tools are software applications that utilize machine lea
 - [Visla](https://www.visla.us/) - AI video storytelling platform.
 - [MaxVideoAI](https://maxvideoai.com) - Multi-engine AI video generation hub (Sora, Veo, Wan, Kling, LTX…).
 - [ZOOOP](https://zooop.ai) - AI-native filmmaking workstation for image, video, audio, and lip-sync generation.
-- [YumCut](https://github.com/IgorShadurin/app.yumcut.com) - Source-available, self-hosted AI workflow for generating finished vertical videos with scripts, voiceovers, visuals, captions, and an automation API.
+- [YumCut](https://yumcut.com/) - Self-hosted AI workflow for generating finished vertical videos, with a user automation API.
 
 ### Video Enhancement & Effects
 
