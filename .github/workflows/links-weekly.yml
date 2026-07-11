@@ -1,0 +1,60 @@
+name: Weekly Link Check
+# Runs lychee over the whole list on a schedule and opens/updates a single
+# tracking issue listing every dead link, so rot is caught even when nobody
+# is opening PRs.
+on:
+  schedule:
+    # 08:00 UTC every Monday
+    - cron: '0 8 * * 1'
+  workflow_dispatch:
+permissions:
+  contents: read
+  issues: write
+concurrency:
+  group: links-weekly
+  cancel-in-progress: true
+jobs:
+  link-check:
+    name: Scan for dead links
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+      - name: Run lychee
+        id: lychee
+        uses: lycheeverse/lychee-action@8646ba30535128ac92d33dfc9133794bfdd9b411 # v2.8.0
+        with:
+          args: >-
+            --no-progress
+            --accept 200,206,429
+            README.md
+          # Write a Markdown report instead of failing; we surface it as an issue.
+          output: ./lychee/out.md
+          fail: false
+          format: markdown
+      - name: Find existing tracking issue
+        id: find-issue
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          number=$(gh issue list --search "Link Checker Report in:title" --state open --json number --jq '.[0].number // empty')
+          echo "number=$number" >> "$GITHUB_OUTPUT"
+      - name: Create or update tracking issue
+        if: steps.lychee.outputs.exit_code != 0
+        uses: peter-evans/create-issue-from-file@e8ef132d6df98ed982188e460ebb3b5d4ef3a9cd # v5.0.1
+        with:
+          title: 'Link Checker Report'
+          content-filepath: ./lychee/out.md
+          issue-number: ${{ steps.find-issue.outputs.number }}
+          labels: |
+            broken-link
+            automated
+      - name: Close tracking issue if resolved
+        if: steps.lychee.outputs.exit_code == 0 && steps.find-issue.outputs.number != ''
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gh issue close "${{ steps.find-issue.outputs.number }}" --comment "All links passing as of $(date -u +%F)."
+      - name: Report success
+        if: steps.lychee.outputs.exit_code == 0
+        run: echo "No broken links found. ✅"

@@ -1,39 +1,77 @@
 name: CI
-
 on:
   pull_request:
     branches:
+      - main
       - docs
   push:
     branches:
+      - main
       - docs
-
 concurrency:
-  group: ci-${{ github.ref }}
+  group: ci-${{ github.workflow }}-${{ github.ref }}
   cancel-in-progress: true
-
+permissions:
+  contents: read
 jobs:
-  validate:
+  # ---- Validate the curated list (README.md) ----
+  awesome-lint:
+    name: awesome-lint
     runs-on: ubuntu-latest
-
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+      - name: Run awesome-lint
+        # Fails the job (and therefore CI) on any lint error.
+        run: npx awesome-lint
+  link-check:
+    name: lychee link check
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+      - name: Restore lychee cache
+        uses: actions/cache@v4
+        with:
+          path: .lycheecache
+          key: cache-lychee-${{ github.sha }}
+          restore-keys: cache-lychee-
+      - name: Run lychee
+        uses: lycheeverse/lychee-action@8646ba30535128ac92d33dfc9133794bfdd9b411 # v2.8.0
+        with:
+          # --no-progress for clean CI logs; cache speeds up repeat runs.
+          # 403/405/415 are treated as OK: many sites (OpenAI, Canva, Midjourney,
+          # ResearchGate, Google Scholar, Tableau, Domo, clear.ml, etc.) return
+          # these to any non-browser client due to bot detection, not because
+          # the page is actually gone. Real dead links (404/410/timeouts/TLS
+          # errors) still fail the job.
+          args: >-
+            --no-progress
+            --cache
+            --max-cache-age 1d
+            --accept 200,206,403,405,415,429
+            README.md
+          # fail (non-zero exit) when dead links are found
+          fail: true
+  # ---- Build the Astro+Bun i18n docs site (docs branch) ----
+  build-docs:
+    name: Build docs site
+    if: github.ref == 'refs/heads/docs' || github.base_ref == 'docs'
+    runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v6
         with:
           ref: docs
-
       - name: Setup Node
         uses: actions/setup-node@v6
         with:
           node-version: 24.14.1
-
       - name: Setup Bun
         uses: oven-sh/setup-bun@v2
         with:
           bun-version: latest
-
       - name: Install dependencies
         run: bun install --frozen-lockfile
-
       - name: Build site
         run: bun run build
