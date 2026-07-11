@@ -4,7 +4,7 @@
 <p align="center"><img src="assets/banner.png" alt="Awesome AI Tools" width="100%"></p>
 -->
 
-> ⭐ **Star to bookmark — updated weekly.** A hand-picked, quality-gated map of the AI tool landscape (including a dedicated **[AI Agents](#ai-agents)** section for 2026). New tools are reviewed and added every week.
+> ⭐ **Star to bookmark — updated weekly.** A hand-picked, quality-gated map of the AI tool landscape (including a dedicated **AI Agents** section for 2026). New tools are reviewed and added every week.
 >
 > 🔎 **[Browse the live, searchable list →](https://docs.aliammari.com)** — the same catalog as a fast, multilingual (EN · FR · AR · ES · DE · 中文 · 日本語) site built with Astro + Starlight on Cloudflare Pages.
 
@@ -15,7 +15,6 @@ Why this list? It is hand-picked and quality-gated — actively-maintained, reac
 
 ## Contents
 - [AI Agents](#ai-agents)
-- [Featured Open-Source AI Projects](#featured-open-source-ai-projects)
 - [Productivity](#productivity)
   - [Time Management & Scheduling](#time-management--scheduling)
   - [Task & Project Management](#task--project-management)
@@ -81,7 +80,7 @@ Why this list? It is hand-picked and quality-gated — actively-maintained, reac
 
 ## AI Agents
 
-The fastest-moving corner of the field in 2026: autonomous and semi-autonomous systems that plan, use tools, and act. For agent *frameworks and orchestration*, see also [AI Agents & Automation](#ai-agents--automation); for coding agents, see [AI Coding Assistants](#ai-coding-assistants).
+The fastest-moving corner of the field in 2026: autonomous and semi-autonomous systems that plan, use tools, and act.For agent *frameworks and orchestration*, see also **AI Agents & Automation** (under Miscellaneous); for coding agents, see **AI Coding Assistants** (under Code Generation & Development).
 
 - [OpenAI Agents SDK](https://openai.github.io/openai-agents-python/) - Lightweight framework for multi-agent workflows with handoffs and guardrails.
 - [Model Context Protocol](https://modelcontextprotocol.io/) - Open standard for connecting AI agents to tools and data sources.
@@ -94,18 +93,6 @@ The fastest-moving corner of the field in 2026: autonomous and semi-autonomous s
 - [AgentScope](https://github.com/modelscope/agentscope) - Multi-agent platform with distributed orchestration and visual debugging.
 - [Letta](https://www.letta.com/) - Framework for stateful agents with long-term memory (formerly MemGPT).
 - [Browser Use](https://github.com/browser-use/browser-use) - Library that lets agents control a real browser to complete web tasks.
-
-
-
-## Featured Open-Source AI Projects
-
-Source-available and open-source AI projects worth a look — including a few from this list's maintainer. All are self-hostable.
-
-- [JobPrep](https://github.com/aliammari1/JobPrep) - Source-available AI interview-prep platform: mock interviews, multi-LLM, self-host.
-- [readrealm](https://github.com/aliammari1/readrealm) - Open-source AI book-chat that turns any book into a conversation.
-- [pulmocare](https://github.com/aliammari1/pulmocare) - Open-source, self-hostable chest-X-ray analysis agent.
-
-
 
 ## Productivity
 
@@ -700,7 +687,7 @@ Español, Deutsch, 中文, 日本語) built with Astro + Starlight — linked un
 
 ## Footnotes
 
-- [Live site / docs](https://docs.aliammari.com) — searchable, multilingual (7 languages), Astro + Starlight on Cloudflare Pages.
+- Live site / docs (linked at the top of this page) — searchable, multilingual (7 languages), Astro + Starlight on Cloudflare Pages.
 - [Report Issues](https://github.com/aliammari1/awesome-ai-tools/issues)
 - Last updated: June 2026 — reviewed and updated weekly.
 - Maintained by [Ali Ammari](https://github.com/aliammari1).
