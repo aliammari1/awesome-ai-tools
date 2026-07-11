@@ -17,6 +17,7 @@ Please include a summary of the changes and the motivation behind them.
 - [ ] The entry is in the most specific subcategory and alphabetically ordered
 - [ ] I have verified the link works
 - [ ] `awesome-lint` passes locally (or the CI check is green)
+- [ ] `lychee` passes locally (or the CI check is green)
 
 ## Tool Information (for additions)
 - **Name**: 
