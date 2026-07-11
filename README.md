@@ -230,7 +230,6 @@ The fastest-moving corner of the field in 2026: autonomous and semi-autonomous s
 - [Amazon SageMaker](https://aws.amazon.com/sagemaker/) - AWS ML platform with Canvas no-code ML and HyperPod.
 - [Databricks](https://databricks.com/) - Unified analytics platform with LakehouseIQ and Mosaic AI.
 - [Dataiku](https://www.dataiku.com/) - Data science platform with AI agents and LLM Mesh.
-- [PyCaret](https://pycaret.org/) - Low-code ML library for rapid experimentation with 30+ algorithms.
 - [Auto-Sklearn](https://automl.github.io/auto-sklearn/) - Open-source AutoML with ensemble learning.
 
 ### Data Analysis & Visualization
@@ -290,7 +289,6 @@ The fastest-moving corner of the field in 2026: autonomous and semi-autonomous s
 - [Averroes.ai](https://averroes.ai/) - Production-ready visual inspection for manufacturing and quality control.
 - [Nanonets](https://nanonets.com/) - Document AI with OCR, invoice processing, and automation.
 - [OpenCV](https://opencv.org/) - Open-source computer vision library.
-- [Viso.ai](https://viso.ai/) - No-code computer vision platform for enterprise applications.
 - [Landing AI](https://landing.ai/) - Andrew Ng's computer vision platform for manufacturing.
 - [ScanRead.ai](https://scanread.ai) - Free OCR for images, PDFs, screenshots, and handwriting in 100+ languages with PP-OCRv5.
 
@@ -353,7 +351,6 @@ The fastest-moving corner of the field in 2026: autonomous and semi-autonomous s
 - [Pika](https://pika.art/) - Video generator with scene integration.
 - [Luma Ray](https://lumalabs.ai/) - AI video generation with dynamic compositions.
 - [Haiper AI](https://haiper.ai/) - AI video generation platform with creative tools.
-- [LTX Studio](https://ltx.studio/) - Comprehensive AI filmmaking platform.
 - [Pyramidal Flow](https://pyramid-flow.github.io/) - Open-source AI video generation model.
 - [Amazon Nova Reel](https://aws.amazon.com/ai/generative-ai/) - Enterprise-grade AI video with IP indemnification.
 - [OpenArt](https://openart.ai/) - All-in-one AI image and video platform with multiple models.
