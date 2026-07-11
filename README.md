@@ -364,6 +364,7 @@ The fastest-moving corner of the field in 2026: autonomous and semi-autonomous s
 - [Visla](https://www.visla.us/) - AI video storytelling platform.
 - [MaxVideoAI](https://maxvideoai.com) - Multi-engine AI video generation hub (Sora, Veo, Wan, Kling, LTX…).
 - [ZOOOP](https://zooop.ai) - AI-native filmmaking workstation for image, video, audio, and lip-sync generation.
+- [YumCut](https://yumcut.com/) - Self-hosted AI workflow for generating finished vertical videos, with a user automation API.
 
 ### Video Enhancement & Effects
 
