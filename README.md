@@ -1,11 +1,20 @@
 # Awesome AI Tools [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
+<!-- TODO: add hero banner once generated — see assets/BANNER.md
+<p align="center"><img src="assets/banner.png" alt="Awesome AI Tools" width="100%"></p>
+-->
+
+> ⭐ **Star to bookmark — updated weekly.** A hand-picked, quality-gated map of the AI tool landscape (including a dedicated **AI Agents** section for 2026). New tools are reviewed and added every week.
+>
+> 🔎 **[Browse the live, searchable list →](https://docs.aliammari.com)** — the same catalog as a fast, multilingual (EN · FR · AR · ES · DE · 中文 · 日本語) site built with Astro + Starlight on Cloudflare Pages.
+
 Artificial intelligence tools are software applications that utilize machine learning models, natural language processing, and computer vision to automate, enhance, and streamline real-world tasks across text, code, image, audio, video and research.
 
-  
+Why this list? It is hand-picked and quality-gated — actively-maintained, reachable, non-duplicate tools — not an auto-scraped dump, with a multilingual companion site (see Footnotes).
 
 
 ## Contents
+- [AI Agents](#ai-agents)
 - [Productivity](#productivity)
   - [Time Management & Scheduling](#time-management--scheduling)
   - [Task & Project Management](#task--project-management)
@@ -68,6 +77,22 @@ Artificial intelligence tools are software applications that utilize machine lea
   - [Learning Resources](#learning-resources)
 
 
+
+## AI Agents
+
+The fastest-moving corner of the field in 2026: autonomous and semi-autonomous systems that plan, use tools, and act.For agent *frameworks and orchestration*, see also **AI Agents & Automation** (under Miscellaneous); for coding agents, see **AI Coding Assistants** (under Code Generation & Development).
+
+- [OpenAI Agents SDK](https://openai.github.io/openai-agents-python/) - Lightweight framework for multi-agent workflows with handoffs and guardrails.
+- [Model Context Protocol](https://modelcontextprotocol.io/) - Open standard for connecting AI agents to tools and data sources.
+- [Claude Agent SDK](https://code.claude.com/docs/en/agent-sdk/overview) - Build agents on the same harness as Claude Code with tool use and MCP.
+- [Google Agent Development Kit](https://adk.dev/) - Open-source toolkit for building and deploying multi-agent systems.
+- [Pydantic AI](https://pydantic.dev/docs/ai/overview/) - Type-safe Python agent framework with structured outputs and validation.
+- [Smolagents](https://github.com/huggingface/smolagents) - Hugging Face's minimal library for code-writing agents.
+- [Manus](https://manus.im/) - General autonomous agent that executes multi-step real-world tasks.
+- [OpenHands](https://github.com/All-Hands-AI/OpenHands) - Open-source autonomous software-engineering agent (formerly OpenDevin).
+- [AgentScope](https://github.com/modelscope/agentscope) - Multi-agent platform with distributed orchestration and visual debugging.
+- [Letta](https://www.letta.com/) - Framework for stateful agents with long-term memory (formerly MemGPT).
+- [Browser Use](https://github.com/browser-use/browser-use) - Library that lets agents control a real browser to complete web tasks.
 
 ## Productivity
 
@@ -205,7 +230,6 @@ Artificial intelligence tools are software applications that utilize machine lea
 - [Amazon SageMaker](https://aws.amazon.com/sagemaker/) - AWS ML platform with Canvas no-code ML and HyperPod.
 - [Databricks](https://databricks.com/) - Unified analytics platform with LakehouseIQ and Mosaic AI.
 - [Dataiku](https://www.dataiku.com/) - Data science platform with AI agents and LLM Mesh.
-- [PyCaret](https://pycaret.org/) - Low-code ML library for rapid experimentation with 30+ algorithms.
 - [Auto-Sklearn](https://automl.github.io/auto-sklearn/) - Open-source AutoML with ensemble learning.
 
 ### Data Analysis & Visualization
@@ -265,7 +289,6 @@ Artificial intelligence tools are software applications that utilize machine lea
 - [Averroes.ai](https://averroes.ai/) - Production-ready visual inspection for manufacturing and quality control.
 - [Nanonets](https://nanonets.com/) - Document AI with OCR, invoice processing, and automation.
 - [OpenCV](https://opencv.org/) - Open-source computer vision library.
-- [Viso.ai](https://viso.ai/) - No-code computer vision platform for enterprise applications.
 - [Landing AI](https://landing.ai/) - Andrew Ng's computer vision platform for manufacturing.
 - [ScanRead.ai](https://scanread.ai) - Free OCR for images, PDFs, screenshots, and handwriting in 100+ languages with PP-OCRv5.
 
@@ -328,7 +351,6 @@ Artificial intelligence tools are software applications that utilize machine lea
 - [Pika](https://pika.art/) - Video generator with scene integration.
 - [Luma Ray](https://lumalabs.ai/) - AI video generation with dynamic compositions.
 - [Haiper AI](https://haiper.ai/) - AI video generation platform with creative tools.
-- [LTX Studio](https://ltx.studio/) - Comprehensive AI filmmaking platform.
 - [Pyramidal Flow](https://pyramid-flow.github.io/) - Open-source AI video generation model.
 - [Amazon Nova Reel](https://aws.amazon.com/ai/generative-ai/) - Enterprise-grade AI video with IP indemnification.
 - [OpenArt](https://openart.ai/) - All-in-one AI image and video platform with multiple models.
@@ -647,11 +669,22 @@ Artificial intelligence tools are software applications that utilize machine lea
 
 ## Contributing
 
-See [CONTRIBUTING.md](CONTRIBUTING.md) for contribution guidelines.
+Contributions are welcome! See [CONTRIBUTING.md](CONTRIBUTING.md) for the quality bar and
+submission format. New pull requests get an automated [`awesome-lint`](https://github.com/sindresorhus/awesome-lint)
+and [`lychee`](https://github.com/lycheeverse/lychee) link check, plus an advisory AI pass
+that suggests a category, flags duplicates, and checks whether a linked repo is archived.
+
+This list is published as a multilingual documentation site (English, Français, العربية,
+Español, Deutsch, 中文, 日本語) built with Astro + Starlight — linked under Footnotes.
+
+> **GitHub topics / About:** this repository is tagged
+> [`awesome`](https://github.com/topics/awesome) and
+> [`awesome-ai-tools`](https://github.com/topics/awesome-ai-tools) so it surfaces in the
+> GitHub topic feeds and awesome-list aggregators.
 
 ## Footnotes
 
-- [Documentation](https://alis-organization-72.gitbook.io/awesome-ai-tools/)
+- Live site / docs (linked at the top of this page) — searchable, multilingual (7 languages), Astro + Starlight on Cloudflare Pages.
 - [Report Issues](https://github.com/aliammari1/awesome-ai-tools/issues)
-- Last updated: March 2026.
+- Last updated: June 2026 — reviewed and updated weekly.
 - Maintained by [Ali Ammari](https://github.com/aliammari1).
