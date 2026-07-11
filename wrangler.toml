@@ -1,0 +1,16 @@
+# Cloudflare Pages configuration for the Astro+Bun i18n docs site.
+#
+# The site itself lives on the `docs` branch and builds to `dist/` (Astro +
+# Starlight, 7 locales). This file documents the Pages project so it can be
+# deployed with `wrangler pages deploy dist --project-name=awesome-ai-tools`
+# (the CI workflow .github/workflows/deploy-cloudflare.yml does this on push
+# to the docs branch, gated on the ENABLE_CLOUDFLARE_PAGES repo variable and
+# the CLOUDFLARE_API_TOKEN / CLOUDFLARE_ACCOUNT_ID secrets).
+#
+# Custom domain: docs.aliammari.com — attach it in the Cloudflare Pages
+# dashboard (Custom domains). GitHub Pages stays live in parallel via
+# public/CNAME on the docs branch until the migration is finished.
+
+name = "awesome-ai-tools"
+pages_build_output_dir = "dist"
+compatibility_date = "2026-06-12"
