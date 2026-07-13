@@ -479,7 +479,7 @@ The fastest-moving corner of the field in 2026: autonomous and semi-autonomous s
 - [LM Studio](https://lmstudio.ai/) - Desktop app for running local LLMs with chat UI.
 - [vLLM](https://vllm.ai/) - High-throughput LLM serving with PagedAttention.
 - [Anyscale](https://www.anyscale.com/) - Scalable LLM deployment with Ray framework.
-- [DaoXE](https://daoxe.com) - Multi-model multi-protocol AI API gateway for Chat Completions, Responses, and Anthropic Messages.
+- [DaoXE](https://daoxe.com) - Multi-model multi-protocol AI API gateway (Chat Completions, Responses, Anthropic Messages, image APIs).
 - [Future AGI](https://github.com/future-agi/future-agi) - Open-source self-hostable end-to-end agent engineering and optimization platform unifying tracing, evaluation, simulation, datasets, gateway, and guardrails in one feedback loop.
 
 
