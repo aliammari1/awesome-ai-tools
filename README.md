@@ -637,6 +637,7 @@ The fastest-moving corner of the field in 2026: autonomous and semi-autonomous s
 - [AgentGPT](https://agentgpt.reworkd.ai/) - Browser-based autonomous AI agent creation with no setup.
 - [AutoGen](https://github.com/microsoft/autogen) - Microsoft's framework for multi-agent AI with parallel execution and event-driven architecture.
 - [LangGraph](https://langchain-ai.github.io/langgraph/) - LangChain's framework for production AI agents with checkpointing and persistence.
+- [Open Agent Relay](https://github.com/ShakespeareLabs/open-agent-relay) - Expose local agents as LAN-callable capabilities while keeping code and credentials on the host.
 - [OpenAI Swarm](https://github.com/openai/swarm) - Lightweight multi-agent orchestration by OpenAI.
 - [Phidata](https://phidata.com/) - Framework for building AI assistants with memory, knowledge, and tools.
 - [LangFlow](https://github.com/logspace-ai/langflow) - Visual framework for building LangChain flows with drag-and-drop.
