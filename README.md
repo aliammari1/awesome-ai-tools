@@ -123,6 +123,7 @@ The fastest-moving corner of the field in 2026: autonomous and semi-autonomous s
 - [Kuse](https://kuse.ai/) - AI task manager that extracts tasks from documents and knowledge.
 - [Mem](https://mem.ai/) - AI-native note-taking and knowledge management.
 - [Personal AI](https://personal.ai/) - AI chatbot for personal knowledge management.
+- [Tudo](https://blynkai.app/tudo/) - AI task manager for iPhone that turns voice notes, screenshots, shared content, and goals into organized tasks.
 
 ### Email & Communication
 
