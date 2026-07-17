@@ -433,6 +433,7 @@ The fastest-moving corner of the field in 2026: autonomous and semi-autonomous s
 
 ### Research & Knowledge Tools
 
+- [AIToolIndex](https://aitoolindex.io/) - Searchable directory for comparing AI tools by use case, pricing, and workflow fit.
 - [Semantic Scholar](https://www.semanticscholar.org/) - AI-powered academic research tool.
 - [Elicit](https://elicit.org/) - AI research assistant for literature review.
 - [NotebookLM](https://notebooklm.google/) - Google's AI research and note-taking assistant.
