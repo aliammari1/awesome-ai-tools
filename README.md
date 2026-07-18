@@ -347,6 +347,7 @@ The fastest-moving corner of the field in 2026: autonomous and semi-autonomous s
 - [Google Veo](https://deepmind.google/technologies/veo/) - Video model with Ingredients-to-Video, native audio.
 - [Runway](https://runwayml.com/) - Video generation model with accurate motion and physics representation.
 - [Kling AI](https://kling.ai/) - Video generation with audio, dialogue, avatars, and editing features.
+- [ImagineClip](https://imagineclip.com) - AI video generator for avatar clips, stylized scenes, and social-ready videos from prompts, images, and effects.
 - [MiniMax Hailuo](https://hailuo.ai/) - Video generation with improved motion.
 - [Pika](https://pika.art/) - Video generator with scene integration.
 - [Luma Ray](https://lumalabs.ai/) - AI video generation with dynamic compositions.
