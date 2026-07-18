@@ -577,6 +577,7 @@ The fastest-moving corner of the field in 2026: autonomous and semi-autonomous s
 - [Adalo](https://www.adalo.com/) - No-code mobile app builder.
 - [FlutterFlow](https://flutterflow.io/) - Visual Flutter app builder.
 - [Softr](https://www.softr.io/) - No-code web app builder.
+- [Playcode](https://playcode.io/ai-website-builder) - AI website and app builder with visual editing, hosting, custom domains, and one-click publishing.
 - [Suriya](https://suriya.ai) - AI app builder for Thai small businesses.
 
 ### Chatbot Builders
