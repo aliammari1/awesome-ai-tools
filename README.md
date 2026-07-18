@@ -548,6 +548,7 @@ The fastest-moving corner of the field in 2026: autonomous and semi-autonomous s
 - [Convai](https://convai.com/) - Conversational AI for games with voice and animation sync.
 - [NVIDIA ACE](https://www.nvidia.com/en-us/ai/) - AI-driven digital humans with speech, animation, and lip sync.
 - [Roblox Cube](https://www.roblox.com/) - Generative AI tool for Roblox game creation with natural language.
+- [Roblox GUI Maker](https://robloxguimaker.dev/) - AI tool for generating Roblox Studio GUI layouts and Lua starter code from text prompts.
 - [Scenario](https://www.scenario.gg/) - AI-generated game assets with consistent art styles.
 - [Ludo.ai](https://ludo.ai/) - AI game design research and ideation platform.
 - [Latitude AI](https://latitude.io/) - AI storytelling and game experiences platform.
