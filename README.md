@@ -653,6 +653,7 @@ The fastest-moving corner of the field in 2026: autonomous and semi-autonomous s
 - [Core ML](https://developer.apple.com/documentation/coreml) - Apple's ML framework.
 - [ONNX](https://onnx.ai/) - Open neural network exchange.
 - [Apache MXNet](https://mxnet.apache.org/) - Deep learning framework.
+- [TinyTools](https://tinytools-smoky.vercel.app/) - Free browser-based AI utilities suite featuring an AI background remover (runs locally with WebAssembly, no upload), AI cost calculator for comparing LLM token pricing, AI content disclosure generator (EU AI Act Article 50 compliant), and AI robots.txt generator for LLM crawlers. No signup, open source.
 
 
 
