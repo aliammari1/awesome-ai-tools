@@ -472,6 +472,7 @@ The fastest-moving corner of the field in 2026: autonomous and semi-autonomous s
 - [Haystack](https://haystack.deepset.ai/) - NLP framework for building search systems and RAG pipelines.
 - [Hugging Face](https://huggingface.co/) - ML model hub with models, datasets, and Inference Endpoints.
 - [OpenRouter](https://openrouter.ai/) - Unified API for 100+ LLMs with cost optimization and fallbacks.
+- [CoderPlan](https://coderplan.ai/) - Unified LLM API gateway with Claude, OpenAI, and Gemini. Pay-per-use billing, China-optimized with Alipay/WeChat.
 - [Poe](https://poe.com/) - Platform for accessing multiple AI chatbots with custom bots.
 - [Together AI](https://together.ai/) - Inference and fine-tuning platform for open-source LLMs.
 - [Replicate](https://replicate.com/) - Run open-source models in the cloud with simple API.
