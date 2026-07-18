@@ -300,6 +300,7 @@ The fastest-moving corner of the field in 2026: autonomous and semi-autonomous s
 - [MediaPipe](https://mediapipe.dev/) - Google's ML framework for live perception.
 - [Face++](https://www.faceplusplus.com/) - Face recognition platform.
 - [DeepLobe](https://deeplobe.ai/) - Flexible computer vision across images, video, and text.
+- [TinyTools](https://tinytools-smoky.vercel.app/) - Free browser-based AI utilities including an AI background remover that runs locally via ONNX/WASM — no upload, no signup, privacy-first. Open source.
 
 
 
