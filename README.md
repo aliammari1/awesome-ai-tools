@@ -556,6 +556,7 @@ The fastest-moving corner of the field in 2026: autonomous and semi-autonomous s
 
 - [Character.AI](https://beta.character.ai/) - Create and chat with AI characters and companions.
 - [Replika](https://replika.ai/) - AI companion and mental wellness chatbot.
+- [Kissable](https://kissable.app/) - AI companion with persistent memory, photo/video generation, community scenarios, and emotional voice.
 - [AI Dungeon](https://aidungeon.io/) - AI-powered text adventure and storytelling.
 - [NovelAI](https://novelai.net/) - AI storytelling and image generation platform.
 - [Chai](https://chai.ml/) - Platform for chatting with AI personalities.
