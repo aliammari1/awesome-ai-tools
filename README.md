@@ -182,9 +182,10 @@ The fastest-moving corner of the field in 2026: autonomous and semi-autonomous s
 
 ### Writing Assistants
 
+- [Copy.ai](https://www.copy.ai/) - Copywriting assistant with workflows.
 - [Grammarly](https://www.grammarly.com/) - Grammar and style checker with GrammarlyGO AI and tone detection.
 - [Jasper](https://www.jasper.ai/) - Content generation tool for marketing teams.
-- [Copy.ai](https://www.copy.ai/) - Copywriting assistant with workflows.
+- [Noren](https://usenoren.ai/) - Creates reusable voice profiles from writing samples so AI drafts match a writer's style.
 - [Writesonic](https://writesonic.com/) - AI writing tool with SEO optimization and Chatsonic AI assistant.
 - [Rytr](https://rytr.me/) - AI writing assistant for 40+ use cases in 30+ languages.
 - [Koala Writer](https://koala.sh/) - AI article writer with SEO optimization and real-time data.
