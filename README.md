@@ -334,6 +334,7 @@ The fastest-moving corner of the field in 2026: autonomous and semi-autonomous s
 - [Whisper](https://openai.com/research/whisper) - OpenAI's open-source speech recognition with 100+ language support.
 - [Assembly AI](https://www.assemblyai.com/) - Speech-to-text API with speaker diarization and content moderation.
 - [HappyScribe](https://www.happyscribe.com/) - AI transcription with 120+ languages and subtitle export.
+- [Voqusa](https://www.voqusa.com) - AI transcript generator for TikTok, YouTube, Instagram, and 4 more social platforms; no signup required.
 - [Resemble AI](https://www.resemble.ai/) - AI voice cloning with real-time synthesis and emotion control.
 - [Krisp](https://krisp.ai/) - AI-powered noise cancellation and meeting transcription.
 
