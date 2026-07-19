@@ -294,8 +294,8 @@ The fastest-moving corner of the field in 2026: autonomous and semi-autonomous s
 
 ### Specialized Vision Tools
 
-- [YOLO](https://github.com/ultralytics/ultralytics) - Real-time object detection with C2PSA module.
-- [YOLO](https://pjreddie.com/darknet/yolo/) - Real-time object detection framework.
+- [Ultralytics YOLO](https://github.com/ultralytics/ultralytics) - Real-time object detection with C2PSA module.
+- [Darknet YOLO](https://pjreddie.com/darknet/yolo/) - Real-time object detection framework.
 - [Detectron2](https://github.com/facebookresearch/detectron2) - Facebook's detection framework.
 - [MediaPipe](https://mediapipe.dev/) - Google's ML framework for live perception.
 - [Face++](https://www.faceplusplus.com/) - Face recognition platform.
@@ -646,6 +646,9 @@ The fastest-moving corner of the field in 2026: autonomous and semi-autonomous s
 - [Devin AI](https://cognition.ai/) - Autonomous AI software developer agent for full SDLC.
 - [Harvey AI](https://harvey.ai/) - AI agent for automating legal workflows and contract review.
 - [Dust](https://dust.tt/) - AI assistant builder for enterprise with custom agents and data sources.
+- [Xquik](https://xquik.com/en) - Automates X workflows through REST, webhooks, and MCP.
+
+> Xquik is an independent third-party service. Not affiliated with X Corp. "Twitter" and "X" are trademarks of X Corp.
 
 ### Specialized AI Applications
 
