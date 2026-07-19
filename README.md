@@ -399,6 +399,7 @@ The fastest-moving corner of the field in 2026: autonomous and semi-autonomous s
 - [Bolt.new](https://bolt.new/) - Full-stack web development with AI in browser-based environment.
 - [Tessl](https://www.tessl.io/) - Spec-driven development framework for AI-native coding with natural language specs.
 - [Lovable](https://lovable.ai/) - AI-powered app builder for rapid full-stack development.
+- [Markstream](https://github.com/Simon-He95/markstream-vue) - Renders incomplete streaming Markdown for AI chat across Vue, React, Svelte, Angular, and Vue 2.
 - [Supabase AI](https://supabase.com/) - Backend platform with AI-assisted SQL and database features.
 - [Railway](https://railway.app/) - Infrastructure platform with AI deployment assistance.
 - [Builder.io](https://www.builder.io/) - Visual development platform with AI component generation.
