@@ -633,6 +633,7 @@ The fastest-moving corner of the field in 2026: autonomous and semi-autonomous s
 ### AI Agents & Automation
 
 - [AutoGPT](https://github.com/Significant-Gravitas/AutoGPT) - Autonomous AI agent for task automation with memory and web access.
+- [Better Agent](https://github.com/ofekron/better-agent) - Local workspace for running Claude, Codex, and Gemini coding agents in parallel with restart recovery.
 - [CrewAI](https://crewai.com/) - Framework for building role-based AI agent teams.
 - [AgentGPT](https://agentgpt.reworkd.ai/) - Browser-based autonomous AI agent creation with no setup.
 - [AutoGen](https://github.com/microsoft/autogen) - Microsoft's framework for multi-agent AI with parallel execution and event-driven architecture.
