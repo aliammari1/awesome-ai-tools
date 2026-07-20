@@ -646,6 +646,7 @@ The fastest-moving corner of the field in 2026: autonomous and semi-autonomous s
 - [Devin AI](https://cognition.ai/) - Autonomous AI software developer agent for full SDLC.
 - [Harvey AI](https://harvey.ai/) - AI agent for automating legal workflows and contract review.
 - [Dust](https://dust.tt/) - AI assistant builder for enterprise with custom agents and data sources.
+- [Hellomatik](https://hellomatik.com) - AI agent platform that turns company knowledge into agents for support, sales and booking across WhatsApp, email and web.
 
 ### Specialized AI Applications
 
