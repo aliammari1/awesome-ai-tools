@@ -171,6 +171,7 @@ Artificial intelligence tools are software applications that utilize machine lea
 - [Hypotenuse AI](https://hypotenuse.ai/) - AI content generator for e-commerce with product descriptions.
 - [Type.ai](https://type.ai/) - AI writing with customizable LLM models and document editor.
 - [Hyperwrite](https://hyperwriteai.com/) - Personal AI writing assistant with AutoWrite and TypeAhead.
+- [Humanize-Text](https://github.com/lynote-ai/humanize-text) - Open-source AI text humanizer with a multilingual rewriting pipeline and reproducible examples.
 - [Frase](https://www.frase.io/) - AI SEO content creation and optimization with SERP analysis.
 - [Surfer SEO](https://surferseo.com/) - AI-powered content optimization with NLP analysis.
 
@@ -274,6 +275,7 @@ Artificial intelligence tools are software applications that utilize machine lea
 - [YOLO](https://pjreddie.com/darknet/yolo/) - Real-time object detection framework.
 - [Detectron2](https://github.com/facebookresearch/detectron2) - Facebook's detection framework.
 - [MediaPipe](https://mediapipe.dev/) - Google's ML framework for live perception.
+- [AI Image Detector](https://github.com/lynote-ai/ai-image-detector) - Local CLI and API for estimating whether an image is AI-generated with multiple detector backends.
 - [Face++](https://www.faceplusplus.com/) - Face recognition platform.
 - [DeepLobe](https://deeplobe.ai/) - Flexible computer vision across images, video, and text.
 
@@ -578,6 +580,7 @@ Artificial intelligence tools are software applications that utilize machine lea
 - [What-If Tool](https://pair-code.github.io/what-if-tool/) - Google's ML interpretability tool.
 - [LIME](https://github.com/marcotcr/lime) - Local interpretable model explanations.
 - [SHAP](https://github.com/slundberg/shap) - Explain machine learning models.
+- [AI Text Detector](https://github.com/lynote-ai/ai-text-detector) - Explainable local AI-text risk analyzer with cautious scoring, short-text guardrails, and CLI/API support.
 
 ### AI Ethics & Governance
 
