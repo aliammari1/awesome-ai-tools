@@ -146,6 +146,7 @@ The fastest-moving corner of the field in 2026: autonomous and semi-autonomous s
 - [Stable Diffusion](https://stability.ai/stablediffusion) - Open-source image generation model with enhanced quality.
 - [ComfyUI](https://github.com/comfyanonymous/ComfyUI) - Node-based UI for Stable Diffusion with workflows.
 - [Ideogram](https://ideogram.ai/) - Model for text rendering and typography with Magic Prompt.
+- [ImageChanger](https://aiimagechanger.app/) - Edits backgrounds, outfits, product colors, objects, and artistic styles in the browser.
 - [Reve](https://reve.ai/) - AI art with prompt adherence and multi-image editing.
 - [Leonardo AI](https://leonardo.ai/) - AI art generation for creatives with fine-tuned control.
 - [Adobe Firefly](https://firefly.adobe.com/) - Adobe's generative AI suite integrated in Creative Cloud.
