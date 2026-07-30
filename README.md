@@ -288,6 +288,7 @@ The fastest-moving corner of the field in 2026: autonomous and semi-autonomous s
 - [Amazon Rekognition](https://aws.amazon.com/rekognition/) - AWS image analysis with face, text, and scene detection.
 - [Averroes.ai](https://averroes.ai/) - Production-ready visual inspection for manufacturing and quality control.
 - [Nanonets](https://nanonets.com/) - Document AI with OCR, invoice processing, and automation.
+- [Reducto](https://reducto.ai/) - Document AI platform for parsing, extraction, OCR, and workflow automation.
 - [OpenCV](https://opencv.org/) - Open-source computer vision library.
 - [Landing AI](https://landing.ai/) - Andrew Ng's computer vision platform for manufacturing.
 - [ScanRead.ai](https://scanread.ai) - Free OCR for images, PDFs, screenshots, and handwriting in 100+ languages with PP-OCRv5.
