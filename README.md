@@ -512,6 +512,7 @@ The fastest-moving corner of the field in 2026: autonomous and semi-autonomous s
 
 - [HubSpot AI](https://www.hubspot.com/) - CRM with AI Breeze for content, chatbots, and predictive lead scoring.
 - [Meta Business AI](https://www.meta.com/) - AI assistant for ads, WhatsApp, and Messenger with campaign automation.
+- [What Does AI Think My Product Is?](https://mydentify.com/tools/what-does-ai-think-my-product-is) - Checks whether a public homepage clearly communicates its product, audience, and job to AI systems.
 - [Gong](https://www.gong.io/) - Revenue intelligence platform with AI call analysis and deal insights.
 - [Clari](https://www.clari.com/) - Revenue platform with AI forecasting and pipeline management.
 - [Outreach](https://www.outreach.io/) - Sales engagement platform with AI-powered sequences.
