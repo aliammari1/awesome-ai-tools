@@ -209,6 +209,7 @@ The fastest-moving corner of the field in 2026: autonomous and semi-autonomous s
 - [Beautiful.ai](https://www.beautiful.ai/) - AI-powered presentation design.
 - [Hemingway Editor](http://www.hemingwayapp.com/) - Readability-focused writing tool.
 - [SocialBu](https://socialbu.com/) - AI-powered social media management for scheduling, publishing, and automating across X, Instagram, LinkedIn, Facebook, TikTok, and more.
+- [ListingAI](https://lijustin655.github.io/f1-listingai/) - Free AI listing generator for Amazon & TikTok Shop sellers - optimized title, bullets, and description in 30 seconds.
 
 ### Translation & Localization
 
