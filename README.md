@@ -111,7 +111,7 @@ The fastest-moving corner of the field in 2026: autonomous and semi-autonomous s
 - [Sunsama](https://sunsama.com/) - Daily planner with time-blocking and calendar integrations.
 - [Morgen](https://morgen.so/) - Calendar app with scheduling and task integration.
 - [Amie](https://amie.so/) - Beautiful calendar app with AI scheduling.
-- [ExtraBrain](https://extrabrain.app) - macOS copilot for live interviews and meetings with screen context and local transcription.
+- [ExtraBrain](https://extrabrain.app) - macOS copilot for live interviews and meetings.
 
 ### Task & Project Management
 
