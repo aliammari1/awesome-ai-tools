@@ -365,6 +365,7 @@ The fastest-moving corner of the field in 2026: autonomous and semi-autonomous s
 - [MaxVideoAI](https://maxvideoai.com) - Multi-engine AI video generation hub (Sora, Veo, Wan, Kling, LTX…).
 - [ZOOOP](https://zooop.ai) - AI-native filmmaking workstation for image, video, audio, and lip-sync generation.
 - [YumCut](https://yumcut.com/) - Self-hosted AI workflow for generating finished vertical videos, with a user automation API.
+- [Faceless Reels](https://facelessreels.video/) - Turns one topic into a voiced, captioned 9:16 faceless video for TikTok, Reels, and Shorts.
 
 ### Video Enhancement & Effects
 
