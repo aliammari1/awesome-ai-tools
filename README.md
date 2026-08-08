@@ -531,6 +531,7 @@ The fastest-moving corner of the field in 2026: autonomous and semi-autonomous s
 
 ### Career & Job Search
 
+- [CVExpert](https://cvexpert.com/) - AI job-search team for CV improvement, tailored applications, job matching, and career support.
 - [JobMirror](https://jobmirror.app) - AI career toolkit that provides resume review, job fit analysis, and document generation.
 - [Jobscan](https://www.jobscan.co/) - Resume and LinkedIn optimization with ATS keyword matching.
 - [Resume Worded](https://resumeworded.com/) - AI resume and LinkedIn feedback with score and targeted advice.
