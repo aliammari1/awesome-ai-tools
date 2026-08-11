@@ -86,6 +86,7 @@ The fastest-moving corner of the field in 2026: autonomous and semi-autonomous s
 - [Model Context Protocol](https://modelcontextprotocol.io/) - Open standard for connecting AI agents to tools and data sources.
 - [Claude Agent SDK](https://code.claude.com/docs/en/agent-sdk/overview) - Build agents on the same harness as Claude Code with tool use and MCP.
 - [Google Agent Development Kit](https://adk.dev/) - Open-source toolkit for building and deploying multi-agent systems.
+- [Hexis](https://github.com/Bevel-Software/Hexis) - Git-backed platform for skills, tools, and context for AI agents.
 - [Pydantic AI](https://pydantic.dev/docs/ai/overview/) - Type-safe Python agent framework with structured outputs and validation.
 - [Smolagents](https://github.com/huggingface/smolagents) - Hugging Face's minimal library for code-writing agents.
 - [Manus](https://manus.im/) - General autonomous agent that executes multi-step real-world tasks.
