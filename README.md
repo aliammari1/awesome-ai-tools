@@ -93,7 +93,6 @@ The fastest-moving corner of the field in 2026: autonomous and semi-autonomous s
 - [AgentScope](https://github.com/modelscope/agentscope) - Multi-agent platform with distributed orchestration and visual debugging.
 - [Letta](https://www.letta.com/) - Framework for stateful agents with long-term memory (formerly MemGPT).
 - [Browser Use](https://github.com/browser-use/browser-use) - Library that lets agents control a real browser to complete web tasks.
-- [Atomic Agent](https://atomicagent.io) - Local-first CLI and TUI agent running open-weight models on your machine, with MCP and 56 tools.
 
 ## Productivity
 
