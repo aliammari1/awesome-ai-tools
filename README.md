@@ -360,6 +360,7 @@ The fastest-moving corner of the field in 2026: autonomous and semi-autonomous s
 - [Lumen5](https://lumen5.com/) - Video creation from text for social media.
 - [InVideo AI](https://invideo.io/) - AI-powered video creation with templates.
 - [Fliki](https://fliki.ai/) - Text-to-video with AI voices and avatars.
+- [videos.social](https://videos.social/?utm_source=aliammari-awesome-ai-tools&utm_medium=directory&utm_campaign=listing-wave-d) - Turns blogs, PDFs, and prompts into editable faceless videos.
 - [Steve AI](https://www.steve.ai/) - Animated video creation.
 - [Visla](https://www.visla.us/) - AI video storytelling platform.
 - [MaxVideoAI](https://maxvideoai.com) - Multi-engine AI video generation hub (Sora, Veo, Wan, Kling, LTX…).
