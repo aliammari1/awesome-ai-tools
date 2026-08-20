@@ -475,6 +475,7 @@ The fastest-moving corner of the field in 2026: autonomous and semi-autonomous s
 - [Poe](https://poe.com/) - Platform for accessing multiple AI chatbots with custom bots.
 - [Together AI](https://together.ai/) - Inference and fine-tuning platform for open-source LLMs.
 - [Replicate](https://replicate.com/) - Run open-source models in the cloud with simple API.
+- [SandBase CLI](https://github.com/sandbaseai/cli) - CLI and local MCP bridge for configuring AI clients and running multimodal model workflows.
 - [Ollama](https://ollama.ai/) - Run LLMs locally with simple CLI and model library.
 - [LM Studio](https://lmstudio.ai/) - Desktop app for running local LLMs with chat UI.
 - [vLLM](https://vllm.ai/) - High-throughput LLM serving with PagedAttention.
