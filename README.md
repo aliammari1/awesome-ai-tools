@@ -190,6 +190,7 @@ The fastest-moving corner of the field in 2026: autonomous and semi-autonomous s
 - [Koala Writer](https://koala.sh/) - AI article writer with SEO optimization and real-time data.
 - [QuillBot](https://quillbot.com/) - AI paraphrasing, grammar, and plagiarism checker with Co-Writer.
 - [ProWritingAid](https://prowritingaid.com/) - Writing editor with AI analysis and style suggestions.
+- [Wordsmith](https://wordsmith.page/) - Whole-manuscript developmental editing with an editorial letter, comments, and tracked changes.
 - [Wordtune](https://www.wordtune.com/) - AI writing companion with rewriting, summarization, and tone adjustment.
 - [Writer](https://writer.com/) - AI writing platform for teams with brand consistency and Palmyra LLMs.
 - [Anyword](https://anyword.com/) - AI copywriting with performance prediction and brand voice.
