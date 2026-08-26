@@ -60,6 +60,7 @@ Why this list? It is hand-picked and quality-gated — actively-maintained, reac
   - [Marketing & Sales](#marketing--sales)
   - [E-commerce & Retail](#e-commerce--retail)
   - [Career & Job Search](#career--job-search)
+ 
 - [Gaming & Entertainment](#gaming--entertainment)
   - [Game Development](#game-development)
   - [Entertainment & Media](#entertainment--media)
@@ -531,6 +532,7 @@ The fastest-moving corner of the field in 2026: autonomous and semi-autonomous s
 
 ### Career & Job Search
 
+- [AI Mock Interview Assistant](https://github.com/lhw12138/ai-mock-interview) - Free, open-source mock interview trainer for Chinese-speaking job seekers with voice/text answers, contextual follow-ups, evidence-based feedback, and targeted practice.
 - [JobMirror](https://jobmirror.app) - AI career toolkit that provides resume review, job fit analysis, and document generation.
 - [Jobscan](https://www.jobscan.co/) - Resume and LinkedIn optimization with ATS keyword matching.
 - [Resume Worded](https://resumeworded.com/) - AI resume and LinkedIn feedback with score and targeted advice.
