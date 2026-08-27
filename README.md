@@ -524,6 +524,7 @@ The fastest-moving corner of the field in 2026: autonomous and semi-autonomous s
 ### E-commerce & Retail
 
 - [Dynamic Yield](https://www.dynamicyield.com/) - Personalization platform.
+- [Piclisto Product Page Kit](https://piclisto.com/product-page-kit) - Creates reviewable PDP and Amazon A+ image modules from one product SKU.
 - [Yotpo](https://www.yotpo.com/) - Customer reviews and loyalty.
 - [Klevu](https://www.klevu.com/) - AI-powered site search.
 - [Searchspring](https://searchspring.com/) - E-commerce search and merchandising.
