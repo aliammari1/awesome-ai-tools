@@ -175,6 +175,7 @@ The fastest-moving corner of the field in 2026: autonomous and semi-autonomous s
 - [LogoAI](https://www.logoai.com/) - AI logo generator with brand kit creation.
 - [Brandmark](https://brandmark.io/) - AI brand identity generator with color palettes.
 - [Looka](https://looka.com/) - AI logo maker with full brand kit.
+- [Luphra](https://www.luphra.com/) - Turns prompts and sketches into editable 3D models and manufactured physical products.
 
 
 
