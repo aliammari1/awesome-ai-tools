@@ -511,6 +511,7 @@ The fastest-moving corner of the field in 2026: autonomous and semi-autonomous s
 ### Marketing & Sales
 
 - [HubSpot AI](https://www.hubspot.com/) - CRM with AI Breeze for content, chatbots, and predictive lead scoring.
+- [BulkPublish](https://www.bulkpublish.com/) - AI-agent API and MCP server for multi-platform social publishing.
 - [Meta Business AI](https://www.meta.com/) - AI assistant for ads, WhatsApp, and Messenger with campaign automation.
 - [Gong](https://www.gong.io/) - Revenue intelligence platform with AI call analysis and deal insights.
 - [Clari](https://www.clari.com/) - Revenue platform with AI forecasting and pipeline management.
