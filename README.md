@@ -519,6 +519,7 @@ The fastest-moving corner of the field in 2026: autonomous and semi-autonomous s
 - [Pardot](https://www.pardot.com/) - B2B marketing automation with Einstein AI insights.
 - [Drift](https://www.drift.com/) - Conversational marketing platform with AI chatbots.
 - [Lavender](https://www.lavender.ai/) - AI email coach for sales with real-time suggestions.
+- [LLM Pulse](https://llmpulse.ai/) - Tracks brand mentions, citations, sentiment, and competitor share of voice across AI search engines.
 - [Seamless.ai](https://seamless.ai/) - AI-powered B2B lead generation and prospecting.
 
 ### E-commerce & Retail
