@@ -555,8 +555,8 @@ The fastest-moving corner of the field in 2026: autonomous and semi-autonomous s
 ### Entertainment & Media
 
 - [Character.AI](https://beta.character.ai/) - Create and chat with AI characters and companions.
-- [WSUP AI](https://wsupai.app/) - Free AI character chat in the browser — talk to AI characters with no sign up. SFW only.
 - [Replika](https://replika.ai/) - AI companion and mental wellness chatbot.
+- [WSUP AI](https://wsupai.app/) - Browser-based AI character chat offering a free first conversation without sign-up.
 - [AI Dungeon](https://aidungeon.io/) - AI-powered text adventure and storytelling.
 - [NovelAI](https://novelai.net/) - AI storytelling and image generation platform.
 - [Chai](https://chai.ml/) - Platform for chatting with AI personalities.
