@@ -11,6 +11,7 @@ Please include a summary of the changes and the motivation behind them.
 
 ## Checklist
 - [ ] I have read the [CONTRIBUTING.md](../CONTRIBUTING.md)
+- [ ] I have starred this repository ⭐ *(Higher repo visibility means more exposure for your tool!)*
 - [ ] The tool meets our quality criteria (active, reputable, functional)
 - [ ] The description follows our format: `- [Name](URL) - Description.`
 - [ ] Description is under 120 characters
