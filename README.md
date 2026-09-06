@@ -335,6 +335,7 @@ The fastest-moving corner of the field in 2026: autonomous and semi-autonomous s
 - [Assembly AI](https://www.assemblyai.com/) - Speech-to-text API with speaker diarization and content moderation.
 - [HappyScribe](https://www.happyscribe.com/) - AI transcription with 120+ languages and subtitle export.
 - [Resemble AI](https://www.resemble.ai/) - AI voice cloning with real-time synthesis and emotion control.
+- [Speak AI](https://speakai.co) - Conversation intelligence platform scoring calls and meetings against your own rubric in 100+ languages.
 - [Krisp](https://krisp.ai/) - AI-powered noise cancellation and meeting transcription.
 
 
