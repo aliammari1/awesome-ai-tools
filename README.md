@@ -467,6 +467,7 @@ The fastest-moving corner of the field in 2026: autonomous and semi-autonomous s
 
 ### LLM Tools & Frameworks
 
+- [Bifrost](https://github.com/maximhq/bifrost) - Self-hosted AI gateway for multi-provider routing, load balancing, virtual keys, and request logging.
 - [LangChain](https://langchain.com/) - Framework for building LLM applications with chains, agents, and memory.
 - [LlamaIndex](https://www.llamaindex.ai/) - Data framework for LLM applications with RAG and data connectors.
 - [Haystack](https://haystack.deepset.ai/) - NLP framework for building search systems and RAG pipelines.
