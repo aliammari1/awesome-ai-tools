@@ -520,6 +520,7 @@ The fastest-moving corner of the field in 2026: autonomous and semi-autonomous s
 - [Drift](https://www.drift.com/) - Conversational marketing platform with AI chatbots.
 - [Lavender](https://www.lavender.ai/) - AI email coach for sales with real-time suggestions.
 - [Seamless.ai](https://seamless.ai/) - AI-powered B2B lead generation and prospecting.
+- [XMACNA Funcionarios Digitais com IA](https://xmacna.ai/) - AI-powered digital workers for WhatsApp and phone lead qualification, CRM updates, follow-up, and human handoff.
 
 ### E-commerce & Retail
 
