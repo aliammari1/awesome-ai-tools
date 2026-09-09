@@ -443,6 +443,7 @@ The fastest-moving corner of the field in 2026: autonomous and semi-autonomous s
 - [Connected Papers](https://www.connectedpapers.com/) - Visual academic paper exploration.
 - [CiteMe](https://citeme.app/) - AI-powered academic citation generator that searches 11+ scholarly databases and formats references in 40+ citation styles.
 - [BGPT MCP](https://github.com/connerlambden/bgpt-mcp) - Hosted MCP server for searching scientific papers with full-text experimental data (50 free searches).
+- [MindMap AI](https://mindmapai.app/research-to-mindmap) - AI-powered tool for organizing research, structuring ideas, and converting documents into visual mind maps.
 
 
 
