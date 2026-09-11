@@ -498,6 +498,8 @@ The fastest-moving corner of the field in 2026: autonomous and semi-autonomous s
 - [Cognii](https://www.cognii.com/) - AI tutoring with natural language assessment.
 - [Carnegie Learning](https://www.carnegielearning.com/) - AI-powered math and literacy solutions for schools.
 
+- [CitePod](https://citepod.com/) - Turns study notes into an AI-generated study podcast with transcript, topic coverage, and recall questions.
+
 ### Research Platforms
 
 - [Papers with Code](https://paperswithcode.com/) - ML research papers and code.
