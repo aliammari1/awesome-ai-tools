@@ -520,6 +520,7 @@ The fastest-moving corner of the field in 2026: autonomous and semi-autonomous s
 - [Drift](https://www.drift.com/) - Conversational marketing platform with AI chatbots.
 - [Lavender](https://www.lavender.ai/) - AI email coach for sales with real-time suggestions.
 - [Seamless.ai](https://seamless.ai/) - AI-powered B2B lead generation and prospecting.
+- [NotFair](https://notfair.co) - Google Ads MCP server. Connects Claude and AI agents to a Google Ads account: diagnose campaign performance, recommend optimizations, and execute approved campaign changes via the Google Ads API.
 
 ### E-commerce & Retail
 
