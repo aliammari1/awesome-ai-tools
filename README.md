@@ -369,6 +369,7 @@ The fastest-moving corner of the field in 2026: autonomous and semi-autonomous s
 ### Video Enhancement & Effects
 
 - [DaVinci Resolve](https://www.blackmagicdesign.com/products/davinciresolve/) - Video editing with AI features.
+- [LiveFaceSwap AI](https://livefaceswap.ai/) - Real-time webcam face swapping with browser preview and desktop virtual-camera output.
 
 
 
