@@ -182,22 +182,23 @@ The fastest-moving corner of the field in 2026: autonomous and semi-autonomous s
 
 ### Writing Assistants
 
-- [Grammarly](https://www.grammarly.com/) - Grammar and style checker with GrammarlyGO AI and tone detection.
-- [Jasper](https://www.jasper.ai/) - Content generation tool for marketing teams.
+- [Anyword](https://anyword.com/) - AI copywriting with performance prediction and brand voice.
 - [Copy.ai](https://www.copy.ai/) - Copywriting assistant with workflows.
-- [Writesonic](https://writesonic.com/) - AI writing tool with SEO optimization and Chatsonic AI assistant.
-- [Rytr](https://rytr.me/) - AI writing assistant for 40+ use cases in 30+ languages.
+- [Frase](https://www.frase.io/) - AI SEO content creation and optimization with SERP analysis.
+- [Grammarly](https://www.grammarly.com/) - Grammar and style checker with GrammarlyGO AI and tone detection.
+- [Hyperwrite](https://hyperwriteai.com/) - Personal AI writing assistant with AutoWrite and TypeAhead.
+- [Hypotenuse AI](https://hypotenuse.ai/) - AI content generator for e-commerce with product descriptions.
+- [Jasper](https://www.jasper.ai/) - Content generation tool for marketing teams.
 - [Koala Writer](https://koala.sh/) - AI article writer with SEO optimization and real-time data.
-- [QuillBot](https://quillbot.com/) - AI paraphrasing, grammar, and plagiarism checker with Co-Writer.
 - [ProWritingAid](https://prowritingaid.com/) - Writing editor with AI analysis and style suggestions.
+- [QuillBot](https://quillbot.com/) - AI paraphrasing, grammar, and plagiarism checker with Co-Writer.
+- [README Skills](https://github.com/Shiaoming123/readme-skills#readme) - Evidence-first Agent Skill for auditing and writing repository-matched, multilingual READMEs.
+- [Rytr](https://rytr.me/) - AI writing assistant for 40+ use cases in 30+ languages.
+- [Surfer SEO](https://surferseo.com/) - AI-powered content optimization with NLP analysis.
+- [Type.ai](https://type.ai/) - AI writing with customizable LLM models and document editor.
 - [Wordtune](https://www.wordtune.com/) - AI writing companion with rewriting, summarization, and tone adjustment.
 - [Writer](https://writer.com/) - AI writing platform for teams with brand consistency and Palmyra LLMs.
-- [Anyword](https://anyword.com/) - AI copywriting with performance prediction and brand voice.
-- [Hypotenuse AI](https://hypotenuse.ai/) - AI content generator for e-commerce with product descriptions.
-- [Type.ai](https://type.ai/) - AI writing with customizable LLM models and document editor.
-- [Hyperwrite](https://hyperwriteai.com/) - Personal AI writing assistant with AutoWrite and TypeAhead.
-- [Frase](https://www.frase.io/) - AI SEO content creation and optimization with SERP analysis.
-- [Surfer SEO](https://surferseo.com/) - AI-powered content optimization with NLP analysis.
+- [Writesonic](https://writesonic.com/) - AI writing tool with SEO optimization and Chatsonic AI assistant.
 
 ### Content Creation
 
