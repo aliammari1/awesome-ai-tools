@@ -10,7 +10,7 @@ If you spot an entry like that, please help us pull it quickly.
 
 ## How to report
 
-Email **contact@aliammari.com** with `[awesome-ai-tools]` in the subject and include:
+Email **contact@aliammari.dev** with `[awesome-ai-tools]` in the subject and include:
 
 - the entry name and the URL as it appears in the list,
 - what is wrong (dead domain, redirect to malware, phishing, hijacked project, etc.),
