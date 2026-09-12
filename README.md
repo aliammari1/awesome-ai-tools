@@ -495,8 +495,9 @@ The fastest-moving corner of the field in 2026: autonomous and semi-autonomous s
 - [Quizlet](https://quizlet.com/) - AI-powered flashcards and study tools with Q-Chat tutor.
 - [Brainly](https://brainly.com/) - Homework help with AI explanations and expert answers.
 - [Synthesis](https://www.synthesis.com/) - AI math tutoring for kids with problem-solving focus.
-- [Cognii](https://www.cognii.com/) - AI tutoring with natural language assessment.
 - [Carnegie Learning](https://www.carnegielearning.com/) - AI-powered math and literacy solutions for schools.
+- [CitePod](https://citepod.com/) - Turns study notes into an AI-generated study podcast with transcript, topic coverage, and recall questions.
+- [Cognii](https://www.cognii.com/) - AI tutoring with natural language assessment.
 
 ### Research Platforms
 
