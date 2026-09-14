@@ -535,6 +535,7 @@ The fastest-moving corner of the field in 2026: autonomous and semi-autonomous s
 - [Jobscan](https://www.jobscan.co/) - Resume and LinkedIn optimization with ATS keyword matching.
 - [Resume Worded](https://resumeworded.com/) - AI resume and LinkedIn feedback with score and targeted advice.
 - [Kickresume](https://www.kickresume.com/) - AI resume builder with templates and job matching.
+- [ResumeAI](https://withresumeai.com/) - Free ATS checker (3/day no account, 10/day free account) and AI resume builder; State of ATS 2026 dataset (738 employers, 704 portal-verified; Workday 37.9%).
 
 
 
