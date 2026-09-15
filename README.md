@@ -392,6 +392,7 @@ The fastest-moving corner of the field in 2026: autonomous and semi-autonomous s
 - [Continue.dev](https://continue.dev/) - Open-source AI coding assistant for VS Code & JetBrains with custom models.
 - [Aider](https://aider.chat/) - Open-source AI pair programmer for terminal with Git integration.
 - [CodeT5](https://github.com/salesforce/CodeT5) - Open-source code generation by Salesforce.
+- [Atomic Agent](https://github.com/AtomicBot-ai/atomic-agent) - Open-source terminal coding assistant running local models, no account or API key needed.
 
 ### Development Tools
 
