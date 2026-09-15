@@ -160,6 +160,7 @@ The fastest-moving corner of the field in 2026: autonomous and semi-autonomous s
 - [Jasper Art](https://www.jasper.ai/art) - AI art generation for marketers.
 - [BlueWillow](https://www.bluewillow.ai/) - Free AI image generator.
 - [Prisma](https://prisma-ai.com/) - Artistic photo filters.
+ - [Durofy](https://durofy.com/) - AI magazine cover generator that turns photos into styled covers.
 
 ### Design Tools
 
