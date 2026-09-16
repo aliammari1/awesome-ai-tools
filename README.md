@@ -396,6 +396,7 @@ Artificial intelligence tools are software applications that utilize machine lea
 ### AI-Powered Search Engines
 
 - [Perplexity AI](https://www.perplexity.ai/) - AI search engine with browser and web search features.
+- [AI Tools Radar](https://aitoolsradar.com/) - AI tools directory and editorial platform for discovering, comparing, and tracking practical AI products across categories.
 - [Perplexity Comet](https://www.perplexity.ai/comet) - AI-powered browser with search features.
 - [ChatGPT Search](https://openai.com/chatgpt/search) - OpenAI's real-time web search with citations and shopping.
 - [Google AI Overview](https://ai.google/) - AI-enhanced search feature.
