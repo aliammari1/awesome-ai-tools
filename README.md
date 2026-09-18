@@ -180,6 +180,8 @@ The fastest-moving corner of the field in 2026: autonomous and semi-autonomous s
 
 ## Communication & Writing
 
+- [Dom Frame](https://domframe.silentdirectivellc.com/?utm_source=awesome-ai-tools&utm_medium=resource-directory) - An AI texting coach: paste a conversation and get a read on it plus a reply you can actually send. Browser demo, also on iPhone.
+
 ### Writing Assistants
 
 - [Grammarly](https://www.grammarly.com/) - Grammar and style checker with GrammarlyGO AI and tone detection.
