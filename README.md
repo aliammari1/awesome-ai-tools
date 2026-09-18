@@ -491,6 +491,7 @@ The fastest-moving corner of the field in 2026: autonomous and semi-autonomous s
 - [Coursera](https://www.coursera.org/) - Online courses with AI recommendations and career coaching.
 - [Duolingo](https://www.duolingo.com/) - Language learning with Duolingo Max AI features and roleplay.
 - [Socratic by Google](https://socratic.org/) - AI homework helper with step-by-step explanations.
+- [SummarizAI](https://summarizai.ink) - Chrome extension for AI YouTube summaries, chapters, chat, and Study flashcards.
 - [Photomath](https://photomath.com/) - Math problem solver with camera scanning and explanations.
 - [Quizlet](https://quizlet.com/) - AI-powered flashcards and study tools with Q-Chat tutor.
 - [Brainly](https://brainly.com/) - Homework help with AI explanations and expert answers.
