@@ -6,7 +6,7 @@
 
 > ⭐ **Star to bookmark — updated weekly.** A hand-picked, quality-gated map of the AI tool landscape (including a dedicated **AI Agents** section for 2026). New tools are reviewed and added every week.
 >
-> 🔎 **[Browse the live, searchable list →](https://docs.aliammari.com)** — the same catalog as a fast, multilingual (EN · FR · AR · ES · DE · 中文 · 日本語) site built with Astro + Starlight on Cloudflare Pages.
+> 🔎 **[Browse the live, searchable list →](https://docs.aliammari.dev)** — the same catalog as a fast, multilingual (EN · FR · AR · ES · DE · 中文 · 日本語) site built with Astro + Starlight on Cloudflare Pages.
 
 Artificial intelligence tools are software applications that utilize machine learning models, natural language processing, and computer vision to automate, enhance, and streamline real-world tasks across text, code, image, audio, video and research.
 
