@@ -7,7 +7,7 @@
 # to the docs branch, gated on the ENABLE_CLOUDFLARE_PAGES repo variable and
 # the CLOUDFLARE_API_TOKEN / CLOUDFLARE_ACCOUNT_ID secrets).
 #
-# Custom domain: docs.aliammari.com — attach it in the Cloudflare Pages
+# Custom domain: docs.aliammari.dev — attach it in the Cloudflare Pages
 # dashboard (Custom domains). GitHub Pages stays live in parallel via
 # public/CNAME on the docs branch until the migration is finished.
 
