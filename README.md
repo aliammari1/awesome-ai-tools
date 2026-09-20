@@ -336,6 +336,7 @@ The fastest-moving corner of the field in 2026: autonomous and semi-autonomous s
 - [HappyScribe](https://www.happyscribe.com/) - AI transcription with 120+ languages and subtitle export.
 - [Resemble AI](https://www.resemble.ai/) - AI voice cloning with real-time synthesis and emotion control.
 - [Krisp](https://krisp.ai/) - AI-powered noise cancellation and meeting transcription.
+- [Workforce Wave](https://www.workforcewave.com/) - AI voice receptionist that answers business calls 24/7, books appointments, and captures leads.
 
 
 
