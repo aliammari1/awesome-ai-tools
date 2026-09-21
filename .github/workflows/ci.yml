@@ -78,5 +78,6 @@ jobs:
             --exclude https://mailstrom\\.co/
             --exclude https://www\\.clarifai\\.com/
             --exclude https://www\\.coursera\\.org/browse/data-science/machine-learning
+            --exclude https://www\\.rankingrider\\.com/
             README.md
           fail: true
