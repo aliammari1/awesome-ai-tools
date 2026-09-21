@@ -1,6 +1,6 @@
 # Awesome AI Tools [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
-> A curated catalog of **385 AI tools** across **19 categories**.
+> A curated catalog of **384 AI tools** across **19 categories**.
 > Browse the searchable directory at **https://docs.aliammari.dev**.
 
 The catalog source of truth is `catalog/tools/*.json`. This README is generated from that structured catalog; edit catalog records instead of editing tool entries here.
@@ -375,7 +375,6 @@ AI search engines, research assistants, knowledge discovery, and evidence-gather
 - [Google AI Overview](https://ai.google/) - AI-enhanced search feature.
 - [Genspark](https://genspark.ai/) - AI search engine with multi-agent architecture and Sparkpages.
 - [You.com](https://you.com/) - AI search with personalization, privacy focus, and custom AI modes.
-- [Phind](https://www.phind.com/) - Developer-focused AI search engine with code generation.
 - [Kagi](https://kagi.com/) - AI search engine.
 - [Bing Chat](https://www.microsoft.com/en-us/edge/features/bing-chat) - Microsoft's AI-powered search with Copilot integration.
 - [Brave Search](https://search.brave.com/) - Independent search with AI Summarizer and privacy focus.
