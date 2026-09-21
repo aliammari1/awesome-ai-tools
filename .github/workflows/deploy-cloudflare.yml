@@ -20,6 +20,22 @@ jobs:
     environment:
       name: cloudflare-pages
     steps:
+      - name: Verify Cloudflare credentials are configured
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+        run: |
+          missing=0
+          if [ -z "$CLOUDFLARE_API_TOKEN" ]; then
+            echo "::error::Missing CLOUDFLARE_API_TOKEN in the cloudflare-pages environment or repository secrets."
+            missing=1
+          fi
+          if [ -z "$CLOUDFLARE_ACCOUNT_ID" ]; then
+            echo "::error::Missing CLOUDFLARE_ACCOUNT_ID in the cloudflare-pages environment or repository secrets."
+            missing=1
+          fi
+          exit "$missing"
+
       - name: Checkout main
         uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0 # v7
 
@@ -50,4 +66,7 @@ jobs:
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          gitHubToken: ${{ secrets.GITHUB_TOKEN }}
+          wranglerVersion: "4.135.0"
+          packageManager: bun
           command: pages deploy dist --project-name=awesome-ai-tools --branch=main

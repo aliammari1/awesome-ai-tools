@@ -1,7 +1,7 @@
 {
   "name": "Deep Research",
-  "url": "https://openai.com/deep-research",
-  "description": "Research assistant.",
+  "url": "https://openai.com/index/introducing-deep-research/",
+  "description": "OpenAI research agent for multi-step web research with cited reports.",
   "category": "ai-search-and-research",
   "subcategory": {
     "id": "research-and-knowledge-tools",
