@@ -480,6 +480,7 @@ The fastest-moving corner of the field in 2026: autonomous and semi-autonomous s
 - [vLLM](https://vllm.ai/) - High-throughput LLM serving with PagedAttention.
 - [Anyscale](https://www.anyscale.com/) - Scalable LLM deployment with Ray framework.
 - [Future AGI](https://github.com/future-agi/future-agi) - Open-source self-hostable end-to-end agent engineering and optimization platform unifying tracing, evaluation, simulation, datasets, gateway, and guardrails in one feedback loop.
+- [OrcaReplay](https://github.com/Continuum-AI-Corp/OrcaReplay) - Record/replay/fork debugger for coding agents: captures a run below the harness onto one timeline, replays it offline with no model called, or forks it from any checkpoint onto a different model.
 
 
 
