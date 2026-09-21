@@ -1,0 +1,18 @@
+{
+  "name": "Rev",
+  "url": "https://www.rev.com/",
+  "description": "Transcription and human review option.",
+  "category": "audio-and-music",
+  "subcategory": {
+    "id": "voice-and-speech",
+    "name": "Voice & Speech"
+  },
+  "order": 171,
+  "openSource": null,
+  "pricing": null,
+  "status": "listed",
+  "source": {
+    "kind": "readme-migration",
+    "migratedAt": "2026-09-21"
+  }
+}

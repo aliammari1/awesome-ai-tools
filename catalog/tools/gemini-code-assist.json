@@ -1,0 +1,18 @@
+{
+  "name": "Gemini Code Assist",
+  "url": "https://cloud.google.com/gemini/docs/codeassist",
+  "description": "AI coding assistant.",
+  "category": "code-generation-and-development",
+  "subcategory": {
+    "id": "ai-coding-assistants",
+    "name": "AI Coding Assistants"
+  },
+  "order": 210,
+  "openSource": null,
+  "pricing": null,
+  "status": "listed",
+  "source": {
+    "kind": "readme-migration",
+    "migratedAt": "2026-09-21"
+  }
+}

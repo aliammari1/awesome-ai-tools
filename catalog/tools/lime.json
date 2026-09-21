@@ -1,0 +1,18 @@
+{
+  "name": "LIME",
+  "url": "https://github.com/marcotcr/lime",
+  "description": "Local interpretable model explanations.",
+  "category": "ai-safety-and-ethics",
+  "subcategory": {
+    "id": "ai-safety-tools",
+    "name": "AI Safety Tools"
+  },
+  "order": 347,
+  "openSource": null,
+  "pricing": null,
+  "status": "listed",
+  "source": {
+    "kind": "readme-migration",
+    "migratedAt": "2026-09-21"
+  }
+}

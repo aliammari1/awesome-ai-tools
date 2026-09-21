@@ -1,0 +1,18 @@
+{
+  "name": "CodeGuru",
+  "url": "https://aws.amazon.com/codeguru/",
+  "description": "AWS code review service.",
+  "category": "code-generation-and-development",
+  "subcategory": {
+    "id": "code-analysis-and-review",
+    "name": "Code Analysis & Review"
+  },
+  "order": 226,
+  "openSource": null,
+  "pricing": null,
+  "status": "listed",
+  "source": {
+    "kind": "readme-migration",
+    "migratedAt": "2026-09-21"
+  }
+}

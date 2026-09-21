@@ -1,0 +1,18 @@
+{
+  "name": "Jasper Art",
+  "url": "https://www.jasper.ai/art",
+  "description": "AI art generation for marketers.",
+  "category": "creativity-and-design",
+  "subcategory": {
+    "id": "image-generation-and-art",
+    "name": "Image Generation & Art"
+  },
+  "order": 57,
+  "openSource": null,
+  "pricing": null,
+  "status": "listed",
+  "source": {
+    "kind": "readme-migration",
+    "migratedAt": "2026-09-21"
+  }
+}

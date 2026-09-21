@@ -1,0 +1,18 @@
+{
+  "name": "Dante AI",
+  "url": "https://dante-ai.com/",
+  "description": "AI chatbot builder with knowledge base and multi-platform deployment.",
+  "category": "no-code-low-code-ai",
+  "subcategory": {
+    "id": "chatbot-builders",
+    "name": "Chatbot Builders"
+  },
+  "order": 344,
+  "openSource": null,
+  "pricing": null,
+  "status": "listed",
+  "source": {
+    "kind": "readme-migration",
+    "migratedAt": "2026-09-21"
+  }
+}

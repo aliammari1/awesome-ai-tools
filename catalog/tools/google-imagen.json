@@ -1,0 +1,18 @@
+{
+  "name": "Google Imagen",
+  "url": "https://deepmind.google/technologies/imagen/",
+  "description": "Google's photorealistic image model.",
+  "category": "creativity-and-design",
+  "subcategory": {
+    "id": "image-generation-and-art",
+    "name": "Image Generation & Art"
+  },
+  "order": 56,
+  "openSource": null,
+  "pricing": null,
+  "status": "listed",
+  "source": {
+    "kind": "readme-migration",
+    "migratedAt": "2026-09-21"
+  }
+}

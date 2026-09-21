@@ -1,0 +1,18 @@
+{
+  "name": "n8n",
+  "url": "https://n8n.io/",
+  "description": "Workflow automation with 400+ AI nodes and integrations.",
+  "category": "miscellaneous",
+  "subcategory": {
+    "id": "ai-agents-and-automation",
+    "name": "AI Agents & Automation"
+  },
+  "order": 373,
+  "openSource": null,
+  "pricing": null,
+  "status": "listed",
+  "source": {
+    "kind": "readme-migration",
+    "migratedAt": "2026-09-21"
+  }
+}

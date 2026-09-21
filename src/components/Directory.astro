@@ -1,0 +1,126 @@
+---
+import ToolCard from './ToolCard.astro';
+
+interface Props {
+  tools: any[];
+  categories: any[];
+  locale?: string;
+}
+
+const { tools, categories, locale = 'en' } = Astro.props;
+const categoryNames = Object.fromEntries(categories.map((category) => [category.id, category.name]));
+const categoryCounts = tools.reduce<Record<string, number>>((counts, tool) => {
+  counts[tool.category] = (counts[tool.category] ?? 0) + 1;
+  return counts;
+}, {});
+const pricingOptions = [
+  ['free', 'Free'],
+  ['freemium', 'Freemium'],
+  ['paid', 'Paid'],
+  ['contact-sales', 'Contact sales'],
+].map(([id, label]) => ({
+  id,
+  label,
+  count: tools.filter((tool) => tool.pricing === id).length,
+})).filter((option) => option.count > 0);
+---
+<section class="directory" id="directory" data-directory data-view="grid" aria-labelledby="directory-title">
+  <div class="directory-searchbar">
+    <label class="search-field">
+      <span class="sr-only">Search tools</span>
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m21 21-4.3-4.3m2.3-5.2a7.5 7.5 0 1 1-15 0 7.5 7.5 0 0 1 15 0Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      <input id="tool-search" type="search" placeholder="Search by tool, task, or capability…" autocomplete="off" />
+    </label>
+    <button class="control-button mobile-filter-button" type="button" data-filter-toggle aria-expanded="false">Filters</button>
+    <select class="select-control" id="directory-sort" aria-label="Sort tools">
+      <option value="relevance">Sort: Relevance</option>
+      <option value="name">Sort: Name A–Z</option>
+      <option value="catalog">Sort: Catalog order</option>
+    </select>
+  </div>
+
+  <div class="active-filters" data-active-filters aria-live="polite"></div>
+
+  <div class="directory-layout">
+    <button class="filter-backdrop" type="button" data-filter-close aria-label="Close filters"></button>
+    <aside class="filter-panel" aria-label="Filter tools">
+      <div class="filter-panel-header">
+        <h2>Filters</h2>
+        <button class="clear-filters" type="button" data-clear-filters>Clear</button>
+      </div>
+
+      <fieldset class="facet">
+        <legend>Category</legend>
+        <div class="facet-options">
+          {categories.map((category) => (
+            <label class="facet-option">
+              <input type="checkbox" name="category" value={category.id} />
+              <span>{category.name}</span>
+              <span class="facet-count">{categoryCounts[category.id] ?? 0}</span>
+            </label>
+          ))}
+        </div>
+      </fieldset>
+
+      {pricingOptions.length > 0 && (
+        <fieldset class="facet">
+          <legend>Pricing</legend>
+          <div class="facet-options">
+            {pricingOptions.map((option) => (
+              <label class="facet-option">
+                <input type="checkbox" name="pricing" value={option.id} />
+                <span>{option.label}</span>
+                <span class="facet-count">{option.count}</span>
+              </label>
+            ))}
+          </div>
+        </fieldset>
+      )}
+
+      <fieldset class="facet">
+        <legend>Source</legend>
+        <div class="facet-options">
+          <label class="facet-option">
+            <input id="open-source-filter" type="checkbox" name="openSource" value="true" />
+            <span>Open source</span>
+            <span class="facet-count">{tools.filter((tool) => tool.openSource === true).length}</span>
+          </label>
+        </div>
+      </fieldset>
+    </aside>
+
+    <div class="results-panel">
+      <div class="results-header">
+        <p class="results-summary" id="directory-title"><strong id="visible-count">{tools.length}</strong> of {tools.length} tools</p>
+        <div class="results-controls">
+          <div class="view-toggle" aria-label="Result view">
+            <button type="button" data-view-button="grid" aria-pressed="true" title="Grid view">
+              <span class="sr-only">Grid view</span>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h6v6H4V4Zm10 0h6v6h-6V4ZM4 14h6v6H4v-6Zm10 0h6v6h-6v-6Z" fill="currentColor"/></svg>
+            </button>
+            <button type="button" data-view-button="list" aria-pressed="false" title="List view">
+              <span class="sr-only">List view</span>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 6h14M5 12h14M5 18h14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div id="tool-results" class="tool-grid" data-view="grid">
+        {tools.map((tool) => (
+          <ToolCard tool={tool} locale={locale} categoryName={categoryNames[tool.category] ?? tool.category} />
+        ))}
+      </div>
+
+      <div id="empty-results" class="empty-state" hidden>
+        <strong>No tools match those filters.</strong>
+        Try a broader search or remove one of the active filters.
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  import { initDirectory } from '../scripts/directory';
+  initDirectory();
+</script>

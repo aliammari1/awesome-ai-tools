@@ -1,0 +1,12 @@
+---
+import type { Locale } from '../lib/locales';
+interface Props { locale: Locale }
+const { locale } = Astro.props;
+---
+{locale !== 'en' && (
+  <div class="locale-notice" role="note">
+    <strong>Translation rebuild in progress.</strong>
+    <span>This legacy locale URL is preserved, but catalog descriptions currently use the English canonical content.</span>
+    <a href={Astro.url.pathname.replace(new RegExp('^/' + locale + '(?=/|$)'), '/en')}>View the canonical English page</a>
+  </div>
+)}

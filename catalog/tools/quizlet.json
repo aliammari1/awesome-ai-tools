@@ -1,0 +1,18 @@
+{
+  "name": "Quizlet",
+  "url": "https://quizlet.com/",
+  "description": "AI-powered flashcards and study tools with Q-Chat tutor.",
+  "category": "research-and-education",
+  "subcategory": {
+    "id": "educational-ai-tools",
+    "name": "Educational AI Tools"
+  },
+  "order": 280,
+  "openSource": null,
+  "pricing": null,
+  "status": "listed",
+  "source": {
+    "kind": "readme-migration",
+    "migratedAt": "2026-09-21"
+  }
+}

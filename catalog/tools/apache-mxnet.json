@@ -1,0 +1,18 @@
+{
+  "name": "Apache MXNet",
+  "url": "https://mxnet.apache.org/",
+  "description": "Deep learning framework.",
+  "category": "miscellaneous",
+  "subcategory": {
+    "id": "specialized-ai-applications",
+    "name": "Specialized AI Applications"
+  },
+  "order": 381,
+  "openSource": null,
+  "pricing": null,
+  "status": "listed",
+  "source": {
+    "kind": "readme-migration",
+    "migratedAt": "2026-09-21"
+  }
+}

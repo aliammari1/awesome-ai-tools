@@ -1,0 +1,18 @@
+{
+  "name": "Todoist",
+  "url": "https://todoist.com/",
+  "description": "Natural language task scheduling with AI.",
+  "category": "productivity",
+  "subcategory": {
+    "id": "task-and-project-management",
+    "name": "Task & Project Management"
+  },
+  "order": 25,
+  "openSource": null,
+  "pricing": null,
+  "status": "listed",
+  "source": {
+    "kind": "readme-migration",
+    "migratedAt": "2026-09-21"
+  }
+}

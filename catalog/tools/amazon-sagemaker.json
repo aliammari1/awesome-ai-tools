@@ -1,0 +1,18 @@
+{
+  "name": "Amazon SageMaker",
+  "url": "https://aws.amazon.com/sagemaker/",
+  "description": "AWS ML platform with Canvas no-code ML and HyperPod.",
+  "category": "data-science-and-analytics",
+  "subcategory": {
+    "id": "machine-learning-platforms",
+    "name": "Machine Learning Platforms"
+  },
+  "order": 104,
+  "openSource": null,
+  "pricing": null,
+  "status": "listed",
+  "source": {
+    "kind": "readme-migration",
+    "migratedAt": "2026-09-21"
+  }
+}

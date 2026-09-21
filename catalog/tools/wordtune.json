@@ -1,0 +1,18 @@
+{
+  "name": "Wordtune",
+  "url": "https://www.wordtune.com/",
+  "description": "AI writing companion with rewriting, summarization, and tone adjustment.",
+  "category": "communication-and-writing",
+  "subcategory": {
+    "id": "writing-assistants",
+    "name": "Writing Assistants"
+  },
+  "order": 80,
+  "openSource": null,
+  "pricing": null,
+  "status": "listed",
+  "source": {
+    "kind": "readme-migration",
+    "migratedAt": "2026-09-21"
+  }
+}

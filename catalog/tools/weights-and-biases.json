@@ -1,0 +1,18 @@
+{
+  "name": "Weights & Biases",
+  "url": "https://wandb.ai/",
+  "description": "ML experiment tracking with Weave for LLM evaluation.",
+  "category": "miscellaneous",
+  "subcategory": {
+    "id": "ai-infrastructure-and-mlops",
+    "name": "AI Infrastructure & MLOps"
+  },
+  "order": 355,
+  "openSource": null,
+  "pricing": null,
+  "status": "listed",
+  "source": {
+    "kind": "readme-migration",
+    "migratedAt": "2026-09-21"
+  }
+}

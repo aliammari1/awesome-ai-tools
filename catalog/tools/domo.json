@@ -1,0 +1,18 @@
+{
+  "name": "Domo",
+  "url": "https://www.domo.com/",
+  "description": "End-to-end AI platform with Domo.AI and magic ETL.",
+  "category": "data-science-and-analytics",
+  "subcategory": {
+    "id": "data-analysis-and-visualization",
+    "name": "Data Analysis & Visualization"
+  },
+  "order": 118,
+  "openSource": null,
+  "pricing": null,
+  "status": "listed",
+  "source": {
+    "kind": "readme-migration",
+    "migratedAt": "2026-09-21"
+  }
+}
