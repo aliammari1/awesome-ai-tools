@@ -34,8 +34,12 @@ jobs:
       - name: Install dependencies
         run: bun install
 
-      - name: Emit lockfile for migration
-        run: echo "LOCKFILE_B64=$(base64 -w 0 bun.lock)"
+      - name: Upload generated Bun lockfile
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
+        with:
+          name: migration-bun-lock
+          path: bun.lock
+          retention-days: 1
 
       - name: Validate structured catalog
         run: bun run validate
@@ -67,8 +71,8 @@ jobs:
         uses: lycheeverse/lychee-action@e7477775783ea5526144ba13e8db5eec57747ce8 # v2.9.0
         with:
           # These official sites are independently verified as live but are not
-          # reliable with Lychee's HTTP client (HTTP/2 error or repeated timeout).
-          # Keep the exclusions explicit instead of misclassifying live tools.
+          # reliable with Lychee's HTTP client (bot-specific status/HTTP2/timeout).
+          # Keep exclusions explicit instead of misclassifying live tools.
           args: >-
             --no-progress
             --cache
@@ -81,5 +85,6 @@ jobs:
             --exclude https://www\\.krea\\.ai/
             --exclude https://mailstrom\\.co/
             --exclude https://www\\.clarifai\\.com/
+            --exclude https://www\\.coursera\\.org/browse/data-science/machine-learning
             README.md
           fail: true
