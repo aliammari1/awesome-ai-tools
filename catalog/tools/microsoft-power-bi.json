@@ -1,0 +1,18 @@
+{
+  "name": "Microsoft Power BI",
+  "url": "https://powerbi.microsoft.com/",
+  "description": "Business analytics with Copilot AI, natural language Q&A.",
+  "category": "data-science-and-analytics",
+  "subcategory": {
+    "id": "data-analysis-and-visualization",
+    "name": "Data Analysis & Visualization"
+  },
+  "order": 109,
+  "openSource": null,
+  "pricing": null,
+  "status": "listed",
+  "source": {
+    "kind": "readme-migration",
+    "migratedAt": "2026-09-21"
+  }
+}

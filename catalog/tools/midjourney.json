@@ -1,0 +1,18 @@
+{
+  "name": "Midjourney",
+  "url": "https://www.midjourney.com/",
+  "description": "AI image generator with draft mode and personalization.",
+  "category": "creativity-and-design",
+  "subcategory": {
+    "id": "image-generation-and-art",
+    "name": "Image Generation & Art"
+  },
+  "order": 39,
+  "openSource": null,
+  "pricing": null,
+  "status": "listed",
+  "source": {
+    "kind": "readme-migration",
+    "migratedAt": "2026-09-21"
+  }
+}

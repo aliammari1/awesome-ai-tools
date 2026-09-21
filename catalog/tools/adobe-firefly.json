@@ -1,0 +1,18 @@
+{
+  "name": "Adobe Firefly",
+  "url": "https://firefly.adobe.com/",
+  "description": "Adobe's generative AI suite integrated in Creative Cloud.",
+  "category": "creativity-and-design",
+  "subcategory": {
+    "id": "image-generation-and-art",
+    "name": "Image Generation & Art"
+  },
+  "order": 48,
+  "openSource": null,
+  "pricing": null,
+  "status": "listed",
+  "source": {
+    "kind": "readme-migration",
+    "migratedAt": "2026-09-21"
+  }
+}

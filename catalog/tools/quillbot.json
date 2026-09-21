@@ -1,0 +1,18 @@
+{
+  "name": "QuillBot",
+  "url": "https://quillbot.com/",
+  "description": "AI paraphrasing, grammar, and plagiarism checker with Co-Writer.",
+  "category": "communication-and-writing",
+  "subcategory": {
+    "id": "writing-assistants",
+    "name": "Writing Assistants"
+  },
+  "order": 78,
+  "openSource": null,
+  "pricing": null,
+  "status": "listed",
+  "source": {
+    "kind": "readme-migration",
+    "migratedAt": "2026-09-21"
+  }
+}

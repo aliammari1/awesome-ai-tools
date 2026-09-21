@@ -1,0 +1,18 @@
+{
+  "name": "Drift",
+  "url": "https://www.drift.com/",
+  "description": "Conversational marketing platform with AI chatbots.",
+  "category": "business-and-marketing",
+  "subcategory": {
+    "id": "marketing-and-sales",
+    "name": "Marketing & Sales"
+  },
+  "order": 295,
+  "openSource": null,
+  "pricing": null,
+  "status": "listed",
+  "source": {
+    "kind": "readme-migration",
+    "migratedAt": "2026-09-21"
+  }
+}

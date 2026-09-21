@@ -1,0 +1,18 @@
+{
+  "name": "Convai",
+  "url": "https://convai.com/",
+  "description": "Conversational AI for games with voice and animation sync.",
+  "category": "gaming-and-entertainment",
+  "subcategory": {
+    "id": "game-development",
+    "name": "Game Development"
+  },
+  "order": 310,
+  "openSource": null,
+  "pricing": null,
+  "status": "listed",
+  "source": {
+    "kind": "readme-migration",
+    "migratedAt": "2026-09-21"
+  }
+}

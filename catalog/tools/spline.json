@@ -1,0 +1,18 @@
+{
+  "name": "Spline",
+  "url": "https://spline.design/",
+  "description": "3D design with AI generation and web export.",
+  "category": "creativity-and-design",
+  "subcategory": {
+    "id": "design-tools",
+    "name": "Design Tools"
+  },
+  "order": 67,
+  "openSource": null,
+  "pricing": null,
+  "status": "listed",
+  "source": {
+    "kind": "readme-migration",
+    "migratedAt": "2026-09-21"
+  }
+}
