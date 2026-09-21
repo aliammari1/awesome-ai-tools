@@ -8,45 +8,40 @@ import { locales, isLocale } from '../../lib/locales';
 export function getStaticPaths() {
   return locales.map((locale) => ({ params: { locale } }));
 }
+
 const requested = Astro.params.locale;
 if (!isLocale(requested)) throw new Error('Unsupported locale');
 const locale = requested;
-const { tools } = await getCatalog();
+const { tools, categories } = await getCatalog();
+const categoryNames = Object.fromEntries(categories.map((category) => [category.id, category.name]));
 ---
-<BaseLayout title="Saved tools" description="Tools saved in this browser." locale={locale} noindex={true}>
+<BaseLayout title="Saved tools" description="Tools saved locally in this browser." locale={locale} noindex={true}>
   <LegacyLocaleNotice locale={locale} />
-  <section class="content-page">
-    <p class="kicker">Local list</p>
+
+  <section class="saved-page">
+    <p class="kicker">Your shortlist</p>
     <h1>Saved tools</h1>
-    <p>Your saved list stays in this browser. No account or tracking profile is required.</p>
+    <p>Saved tools stay in this browser. There is no account, profile, or cloud synchronization behind this list.</p>
+
     <div id="saved-tools" class="tool-list">
       {tools.map((tool) => (
         <div data-saved-wrapper={tool.id} hidden>
-          <ToolCard tool={tool} locale={locale} />
+          <ToolCard tool={tool} locale={locale} categoryName={categoryNames[tool.category] ?? tool.category} />
         </div>
       ))}
     </div>
-    <p id="no-saved-tools" class="empty-state">You have not saved any tools yet. <a href={`/${locale}/`}>Browse the catalog.</a></p>
+
+    <div id="no-saved-tools" class="empty-state">
+      <strong>No saved tools yet.</strong>
+      Browse the directory and use Save to build a shortlist.
+      <div class="actions-row">
+        <a class="primary-button" href={'/' + locale + '/#directory'}>Browse tools</a>
+      </div>
+    </div>
   </section>
 
-  <script is:inline>
-    (() => {
-      const key = 'awt:saved-tools:v1';
-      const render = () => {
-        let saved = [];
-        try { saved = JSON.parse(localStorage.getItem(key) || '[]'); } catch {}
-        const set = new Set(saved);
-        let count = 0;
-        document.querySelectorAll('[data-saved-wrapper]').forEach((wrapper) => {
-          const show = set.has(wrapper.getAttribute('data-saved-wrapper'));
-          wrapper.hidden = !show;
-          if (show) count += 1;
-        });
-        const empty = document.querySelector('#no-saved-tools');
-        if (empty) empty.hidden = count > 0;
-      };
-      document.addEventListener('awt:saved-changed', render);
-      render();
-    })();
+  <script>
+    import { initSavedPage } from '../../scripts/saved-page';
+    initSavedPage();
   </script>
 </BaseLayout>

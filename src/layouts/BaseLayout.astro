@@ -21,7 +21,7 @@ const {
 
 const canonicalPath = englishCanonicalPath(Astro.url.pathname, locale);
 const canonical = new URL(canonicalPath, Astro.site ?? Astro.url.origin);
-const fullTitle = title === 'Awesome AI Tools' ? title : `${title} · Awesome AI Tools`;
+const fullTitle = title === 'Awesome AI Tools' ? title : title + ' · Awesome AI Tools';
 const contentLanguage = locale === 'en' ? 'en' : 'en';
 ---
 <!doctype html>
@@ -40,44 +40,26 @@ const contentLanguage = locale === 'en' ? 'en' : 'en';
     <meta property="og:description" content={description} />
     <meta property="og:url" content={canonical} />
     <meta name="twitter:card" content="summary" />
-    <meta name="theme-color" content="#f6f4ef" />
+    <meta name="theme-color" content="#f7f8fa" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#101216" media="(prefers-color-scheme: dark)" />
   </head>
   <body data-locale={locale}>
+    <a class="skip-link" href="#main-content">Skip to content</a>
     <Header locale={locale} />
-    <main>
+    <main id="main-content">
       <slot />
     </main>
     <Footer />
-    <script is:inline>
-      (() => {
-        const storageKey = 'awt:saved-tools:v1';
-        const readSaved = () => {
-          try { return new Set(JSON.parse(localStorage.getItem(storageKey) || '[]')); }
-          catch { return new Set(); }
-        };
-        const writeSaved = (set) => localStorage.setItem(storageKey, JSON.stringify([...set]));
-        const syncButtons = () => {
-          const saved = readSaved();
-          document.querySelectorAll('[data-save-tool]').forEach((button) => {
-            const id = button.getAttribute('data-save-tool');
-            const active = saved.has(id);
-            button.setAttribute('aria-pressed', active ? 'true' : 'false');
-            button.textContent = active ? 'Saved' : 'Save';
-          });
-        };
-        document.addEventListener('click', (event) => {
-          const target = event.target instanceof Element ? event.target.closest('[data-save-tool]') : null;
-          if (!target) return;
-          const id = target.getAttribute('data-save-tool');
-          if (!id) return;
-          const saved = readSaved();
-          saved.has(id) ? saved.delete(id) : saved.add(id);
-          writeSaved(saved);
-          syncButtons();
-          document.dispatchEvent(new CustomEvent('awt:saved-changed'));
-        });
-        syncButtons();
-      })();
+
+    <div class="compare-tray" data-compare-tray hidden>
+      <p><strong><span data-compare-count>0</span> selected</strong> · Compare up to three tools side by side.</p>
+      <button class="control-button" type="button" data-clear-compare>Clear</button>
+      <a class="primary-button" href={'/' + locale + '/compare/'} data-compare-link>Compare</a>
+    </div>
+    <div class="sr-only" aria-live="polite" aria-atomic="true" data-site-status></div>
+
+    <script>
+      import '../scripts/site';
     </script>
   </body>
 </html>
