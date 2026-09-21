@@ -291,6 +291,7 @@ The fastest-moving corner of the field in 2026: autonomous and semi-autonomous s
 - [OpenCV](https://opencv.org/) - Open-source computer vision library.
 - [Landing AI](https://landing.ai/) - Andrew Ng's computer vision platform for manufacturing.
 - [ScanRead.ai](https://scanread.ai) - Free OCR for images, PDFs, screenshots, and handwriting in 100+ languages with PP-OCRv5.
+- [isthisaigenerated.app](https://isthisaigenerated.app/site/) - Free AI-generation warning-signal checker for images, text and documents.
 
 ### Specialized Vision Tools
 
