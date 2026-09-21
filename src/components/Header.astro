@@ -1,18 +1,33 @@
 ---
 import type { Locale } from '../lib/locales';
-interface Props { locale?: Locale }
+
+interface Props {
+  locale?: Locale;
+}
+
 const { locale = 'en' } = Astro.props;
-const prefix = `/${locale}`;
+const prefix = '/' + locale;
 ---
 <header class="site-header">
   <div class="shell header-inner">
-    <a class="brand" href={`${prefix}/`} aria-label="Awesome AI Tools home">Awesome AI Tools</a>
+    <a class="brand" href={prefix + '/'} aria-label="Awesome AI Tools home">
+      <span class="brand-mark" aria-hidden="true">AI</span>
+      <span>Awesome AI Tools</span>
+    </a>
+
     <nav class="primary-nav" aria-label="Primary">
-      <a href={`${prefix}/`}>Browse</a>
-      <a href={`${prefix}/saved/`}>Saved</a>
-      <a href={`${prefix}/about/methodology/`}>Methodology</a>
-      <a href={`${prefix}/contribute/`}>Contribute</a>
-      <a href="https://github.com/aliammari1/awesome-ai-tools">GitHub</a>
+      <a href={prefix + '/#directory'}>Tools</a>
+      <a href={prefix + '/saved/'}>Saved</a>
+      <a href={prefix + '/about/methodology/'}>Methodology</a>
+      <a href={prefix + '/contribute/'}>Contribute</a>
+      <a href="https://github.com/aliammari1/awesome-ai-tools" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
     </nav>
+
+    <div class="header-actions">
+      <button class="search-shortcut" type="button" data-search-shortcut aria-label="Search tools">
+        <span>Search</span>
+        <kbd>⌘K</kbd>
+      </button>
+    </div>
   </div>
 </header>
