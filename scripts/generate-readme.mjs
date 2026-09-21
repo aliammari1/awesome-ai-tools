@@ -7,6 +7,9 @@ const categoriesDir = new URL('../catalog/categories/', import.meta.url);
 const slugify = (s) => s.normalize('NFKD').replace(/[\u0300-\u036f]/g, '').toLowerCase()
   .replace(/&/g, ' and ').replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
 
+const headingAnchor = (s) => s.normalize('NFKD').replace(/[\u0300-\u036f]/g, '').toLowerCase()
+  .replace(/[^\w\- ]/g, '').replace(/ /g, '-').replace(/^-|-$/g, '');
+
 const readJsonDir = async (dir) => {
   const names = (await readdir(dir)).filter((name) => name.endsWith('.json')).sort();
   return Promise.all(names.map(async (name) => ({
