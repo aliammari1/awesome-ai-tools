@@ -149,6 +149,7 @@ Writing, content creation, translation, localization, and communication assistan
 - [Hyperwrite](https://hyperwriteai.com/) - Personal AI writing assistant with AutoWrite and TypeAhead.
 - [Frase](https://www.frase.io/) - AI SEO content creation and optimization with SERP analysis.
 - [Surfer SEO](https://surferseo.com/) - AI-powered content optimization with NLP analysis.
+- [Does My Text Sound AI?](https://parweb.github.io/sounds-ai/) - Free checker that scores a draft against ~60 AI-writing tells, offline in the browser.
 
 ### Content Creation
 
