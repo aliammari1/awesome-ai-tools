@@ -1,0 +1,18 @@
+{
+  "name": "Fireflies.ai",
+  "url": "https://fireflies.ai/",
+  "description": "AI meeting assistant with transcription, analytics, and CRM integration.",
+  "category": "audio-and-music",
+  "subcategory": {
+    "id": "voice-and-speech",
+    "name": "Voice & Speech"
+  },
+  "order": 166,
+  "openSource": null,
+  "pricing": null,
+  "status": "listed",
+  "source": {
+    "kind": "readme-migration",
+    "migratedAt": "2026-09-21"
+  }
+}

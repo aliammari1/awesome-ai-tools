@@ -1,0 +1,18 @@
+{
+  "name": "Notion AI",
+  "url": "https://www.notion.so/product/ai",
+  "description": "AI writing, Q&A, and agentic workflows with AI integration.",
+  "category": "communication-and-writing",
+  "subcategory": {
+    "id": "content-creation",
+    "name": "Content Creation"
+  },
+  "order": 88,
+  "openSource": null,
+  "pricing": null,
+  "status": "listed",
+  "source": {
+    "kind": "readme-migration",
+    "migratedAt": "2026-09-21"
+  }
+}

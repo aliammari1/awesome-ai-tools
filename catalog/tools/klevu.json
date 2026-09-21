@@ -1,0 +1,18 @@
+{
+  "name": "Klevu",
+  "url": "https://www.klevu.com/",
+  "description": "AI-powered site search.",
+  "category": "business-and-marketing",
+  "subcategory": {
+    "id": "e-commerce-and-retail",
+    "name": "E-commerce & Retail"
+  },
+  "order": 300,
+  "openSource": null,
+  "pricing": null,
+  "status": "listed",
+  "source": {
+    "kind": "readme-migration",
+    "migratedAt": "2026-09-21"
+  }
+}

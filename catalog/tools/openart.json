@@ -1,0 +1,18 @@
+{
+  "name": "OpenArt",
+  "url": "https://openart.ai/",
+  "description": "All-in-one AI image and video platform with multiple models.",
+  "category": "video-and-media",
+  "subcategory": {
+    "id": "video-creation-and-editing",
+    "name": "Video Creation & Editing"
+  },
+  "order": 187,
+  "openSource": null,
+  "pricing": null,
+  "status": "listed",
+  "source": {
+    "kind": "readme-migration",
+    "migratedAt": "2026-09-21"
+  }
+}

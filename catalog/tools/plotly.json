@@ -1,0 +1,18 @@
+{
+  "name": "Plotly",
+  "url": "https://plotly.com/",
+  "description": "Interactive data visualization with Dash AI for Python apps.",
+  "category": "data-science-and-analytics",
+  "subcategory": {
+    "id": "data-analysis-and-visualization",
+    "name": "Data Analysis & Visualization"
+  },
+  "order": 113,
+  "openSource": null,
+  "pricing": null,
+  "status": "listed",
+  "source": {
+    "kind": "readme-migration",
+    "migratedAt": "2026-09-21"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "name": "Visla",
+  "url": "https://www.visla.us/",
+  "description": "AI video storytelling platform.",
+  "category": "video-and-media",
+  "subcategory": {
+    "id": "video-creation-and-editing",
+    "name": "Video Creation & Editing"
+  },
+  "order": 195,
+  "openSource": null,
+  "pricing": null,
+  "status": "listed",
+  "source": {
+    "kind": "readme-migration",
+    "migratedAt": "2026-09-21"
+  }
+}

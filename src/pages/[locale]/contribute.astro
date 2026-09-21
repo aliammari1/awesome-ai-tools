@@ -1,0 +1,56 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import LegacyLocaleNotice from '../../components/LegacyLocaleNotice.astro';
+import { locales, isLocale } from '../../lib/locales';
+
+export function getStaticPaths() {
+  return locales.map((locale) => ({ params: { locale } }));
+}
+const requested = Astro.params.locale;
+if (!isLocale(requested)) throw new Error('Unsupported locale');
+const locale = requested;
+
+const example = `{
+  "name": "Example Tool",
+  "url": "https://example.com/",
+  "description": "One factual sentence describing what the tool does.",
+  "category": "code-generation-and-development",
+  "subcategory": {
+    "id": "ai-coding-assistants",
+    "name": "AI Coding Assistants"
+  },
+  "order": 9999,
+  "openSource": null,
+  "pricing": null,
+  "status": "listed",
+  "source": {
+    "kind": "readme-migration",
+    "migratedAt": "2026-09-21"
+  }
+}`;
+---
+<BaseLayout title="Contribute" description="How to add or update an entry in the Awesome AI Tools structured catalog." locale={locale}>
+  <LegacyLocaleNotice locale={locale} />
+  <article class="content-page">
+    <p class="kicker">Repository workflow</p>
+    <h1>Contribute to the catalog</h1>
+    <p>Tool entries are no longer edited inside the README. Add or update the structured JSON record; CI validates it, verifies that the README can be regenerated, checks links, and builds the site.</p>
+
+    <h2>Add a tool</h2>
+    <ol>
+      <li>Create <code>catalog/tools/&lt;slug&gt;.json</code>.</li>
+      <li>Use an existing category ID from <code>catalog/categories/</code>.</li>
+      <li>Write a short factual description. Avoid claims that will become stale quickly unless they are separately sourced.</li>
+      <li>Use <code>null</code> for pricing, open-source status, or verification metadata you do not actually know.</li>
+      <li>Run <code>bun run validate</code>, <code>bun run generate:readme</code>, and <code>bun run build</code>.</li>
+    </ol>
+
+    <h2>Example</h2>
+    <pre><code>{example}</code></pre>
+
+    <h2>Why the README is generated</h2>
+    <p>Previously, the README, documentation branch, generated content, and translated trees could drift. The catalog is now the only editable data source. This keeps pull requests reviewable and makes the website and README deterministic outputs of the same records.</p>
+
+    <p><a class="primary-button" href="https://github.com/aliammari1/awesome-ai-tools/blob/main/CONTRIBUTING.md">Read CONTRIBUTING.md ↗</a></p>
+  </article>
+</BaseLayout>

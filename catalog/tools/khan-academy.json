@@ -1,0 +1,18 @@
+{
+  "name": "Khan Academy",
+  "url": "https://www.khanacademy.org/",
+  "description": "Educational platform with Khanmigo AI tutor powered by GPT-4.",
+  "category": "research-and-education",
+  "subcategory": {
+    "id": "educational-ai-tools",
+    "name": "Educational AI Tools"
+  },
+  "order": 275,
+  "openSource": null,
+  "pricing": null,
+  "status": "listed",
+  "source": {
+    "kind": "readme-migration",
+    "migratedAt": "2026-09-21"
+  }
+}

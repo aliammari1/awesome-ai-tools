@@ -1,0 +1,18 @@
+{
+  "name": "Gensim",
+  "url": "https://radimrehurek.com/gensim/",
+  "description": "High-speed topic modeling and document similarity.",
+  "category": "natural-language-processing",
+  "subcategory": {
+    "id": "nlp-libraries-and-tools",
+    "name": "NLP Libraries & Tools"
+  },
+  "order": 130,
+  "openSource": null,
+  "pricing": null,
+  "status": "listed",
+  "source": {
+    "kind": "readme-migration",
+    "migratedAt": "2026-09-21"
+  }
+}

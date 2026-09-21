@@ -1,0 +1,18 @@
+{
+  "name": "AutoGPT",
+  "url": "https://github.com/Significant-Gravitas/AutoGPT",
+  "description": "Autonomous AI agent for task automation with memory and web access.",
+  "category": "miscellaneous",
+  "subcategory": {
+    "id": "ai-agents-and-automation",
+    "name": "AI Agents & Automation"
+  },
+  "order": 364,
+  "openSource": null,
+  "pricing": null,
+  "status": "listed",
+  "source": {
+    "kind": "readme-migration",
+    "migratedAt": "2026-09-21"
+  }
+}

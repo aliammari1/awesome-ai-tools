@@ -1,0 +1,26 @@
+{
+  "name": "awesome-ai-tools",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "packageManager": "bun@1.4.2",
+  "engines": {
+    "node": ">=22.0.0"
+  },
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "validate": "node scripts/validate-catalog.mjs",
+    "generate:readme": "node scripts/generate-readme.mjs",
+    "check:readme": "node scripts/generate-readme.mjs --check",
+    "lint:awesome": "awesome-lint",
+    "check": "bun run validate && bun run check:readme && bun run build"
+  },
+  "dependencies": {
+    "astro": "7.3.3"
+  },
+  "devDependencies": {
+    "awesome-lint": "2.3.0"
+  }
+}

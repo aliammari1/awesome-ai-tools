@@ -1,0 +1,18 @@
+{
+  "name": "Pardot",
+  "url": "https://www.pardot.com/",
+  "description": "B2B marketing automation with Einstein AI insights.",
+  "category": "business-and-marketing",
+  "subcategory": {
+    "id": "marketing-and-sales",
+    "name": "Marketing & Sales"
+  },
+  "order": 294,
+  "openSource": null,
+  "pricing": null,
+  "status": "listed",
+  "source": {
+    "kind": "readme-migration",
+    "migratedAt": "2026-09-21"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "name": "MaxVideoAI",
+  "url": "https://maxvideoai.com",
+  "description": "Multi-engine AI video generation hub (Sora, Veo, Wan, Kling, LTX…).",
+  "category": "video-and-media",
+  "subcategory": {
+    "id": "video-creation-and-editing",
+    "name": "Video Creation & Editing"
+  },
+  "order": 196,
+  "openSource": null,
+  "pricing": null,
+  "status": "listed",
+  "source": {
+    "kind": "readme-migration",
+    "migratedAt": "2026-09-21"
+  }
+}

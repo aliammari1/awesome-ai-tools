@@ -1,0 +1,18 @@
+{
+  "name": "Duolingo",
+  "url": "https://www.duolingo.com/",
+  "description": "Language learning with Duolingo Max AI features and roleplay.",
+  "category": "research-and-education",
+  "subcategory": {
+    "id": "educational-ai-tools",
+    "name": "Educational AI Tools"
+  },
+  "order": 277,
+  "openSource": null,
+  "pricing": null,
+  "status": "listed",
+  "source": {
+    "kind": "readme-migration",
+    "migratedAt": "2026-09-21"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "name": "Timely",
+  "url": "https://timelyapp.com/",
+  "description": "Automatic time tracking and project tagging.",
+  "category": "productivity",
+  "subcategory": {
+    "id": "time-management-and-scheduling",
+    "name": "Time Management & Scheduling"
+  },
+  "order": 20,
+  "openSource": null,
+  "pricing": null,
+  "status": "listed",
+  "source": {
+    "kind": "readme-migration",
+    "migratedAt": "2026-09-21"
+  }
+}

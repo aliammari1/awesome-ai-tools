@@ -1,0 +1,18 @@
+{
+  "name": "Monday.com",
+  "url": "https://monday.com/",
+  "description": "Work OS with AI workflow automation.",
+  "category": "productivity",
+  "subcategory": {
+    "id": "task-and-project-management",
+    "name": "Task & Project Management"
+  },
+  "order": 28,
+  "openSource": null,
+  "pricing": null,
+  "status": "listed",
+  "source": {
+    "kind": "readme-migration",
+    "migratedAt": "2026-09-21"
+  }
+}

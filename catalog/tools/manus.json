@@ -1,0 +1,15 @@
+{
+  "name": "Manus",
+  "url": "https://manus.im/",
+  "description": "General autonomous agent that executes multi-step real-world tasks.",
+  "category": "ai-agents",
+  "subcategory": null,
+  "order": 6,
+  "openSource": null,
+  "pricing": null,
+  "status": "listed",
+  "source": {
+    "kind": "readme-migration",
+    "migratedAt": "2026-09-21"
+  }
+}

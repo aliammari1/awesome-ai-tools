@@ -1,0 +1,18 @@
+{
+  "name": "Jamie",
+  "url": "https://meetjamie.ai/",
+  "description": "Bot-free meeting transcription with smart summaries for all platforms.",
+  "category": "audio-and-music",
+  "subcategory": {
+    "id": "voice-and-speech",
+    "name": "Voice & Speech"
+  },
+  "order": 168,
+  "openSource": null,
+  "pricing": null,
+  "status": "listed",
+  "source": {
+    "kind": "readme-migration",
+    "migratedAt": "2026-09-21"
+  }
+}

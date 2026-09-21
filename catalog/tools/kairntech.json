@@ -1,0 +1,18 @@
+{
+  "name": "Kairntech",
+  "url": "https://kairntech.com/",
+  "description": "Enterprise-grade NLP with on-premise deployment.",
+  "category": "natural-language-processing",
+  "subcategory": {
+    "id": "nlp-libraries-and-tools",
+    "name": "NLP Libraries & Tools"
+  },
+  "order": 128,
+  "openSource": null,
+  "pricing": null,
+  "status": "listed",
+  "source": {
+    "kind": "readme-migration",
+    "migratedAt": "2026-09-21"
+  }
+}

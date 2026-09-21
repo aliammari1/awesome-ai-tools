@@ -1,0 +1,18 @@
+{
+  "name": "Looker Studio",
+  "url": "https://lookerstudio.google.com/",
+  "description": "Google's data visualization with Gemini AI integration.",
+  "category": "data-science-and-analytics",
+  "subcategory": {
+    "id": "data-analysis-and-visualization",
+    "name": "Data Analysis & Visualization"
+  },
+  "order": 111,
+  "openSource": null,
+  "pricing": null,
+  "status": "listed",
+  "source": {
+    "kind": "readme-migration",
+    "migratedAt": "2026-09-21"
+  }
+}

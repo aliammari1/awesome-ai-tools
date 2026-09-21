@@ -1,0 +1,18 @@
+{
+  "name": "Mailstrom",
+  "url": "https://mailstrom.co",
+  "description": "Bulk email cleanup with AI.",
+  "category": "productivity",
+  "subcategory": {
+    "id": "email-and-communication",
+    "name": "Email & Communication"
+  },
+  "order": 37,
+  "openSource": null,
+  "pricing": null,
+  "status": "listed",
+  "source": {
+    "kind": "readme-migration",
+    "migratedAt": "2026-09-21"
+  }
+}

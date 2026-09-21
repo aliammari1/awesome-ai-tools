@@ -1,0 +1,18 @@
+{
+  "name": "Promethean AI",
+  "url": "https://www.prometheanai.com/",
+  "description": "AI assistant for 3D environment creation and level design.",
+  "category": "gaming-and-entertainment",
+  "subcategory": {
+    "id": "game-development",
+    "name": "Game Development"
+  },
+  "order": 308,
+  "openSource": null,
+  "pricing": null,
+  "status": "listed",
+  "source": {
+    "kind": "readme-migration",
+    "migratedAt": "2026-09-21"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "name": "AgentGPT",
+  "url": "https://agentgpt.reworkd.ai/",
+  "description": "Browser-based autonomous AI agent creation with no setup.",
+  "category": "miscellaneous",
+  "subcategory": {
+    "id": "ai-agents-and-automation",
+    "name": "AI Agents & Automation"
+  },
+  "order": 366,
+  "openSource": null,
+  "pricing": null,
+  "status": "listed",
+  "source": {
+    "kind": "readme-migration",
+    "migratedAt": "2026-09-21"
+  }
+}

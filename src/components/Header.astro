@@ -1,0 +1,18 @@
+---
+import type { Locale } from '../lib/locales';
+interface Props { locale?: Locale }
+const { locale = 'en' } = Astro.props;
+const prefix = `/${locale}`;
+---
+<header class="site-header">
+  <div class="shell header-inner">
+    <a class="brand" href={`${prefix}/`} aria-label="Awesome AI Tools home">Awesome AI Tools</a>
+    <nav class="primary-nav" aria-label="Primary">
+      <a href={`${prefix}/`}>Browse</a>
+      <a href={`${prefix}/saved/`}>Saved</a>
+      <a href={`${prefix}/about/methodology/`}>Methodology</a>
+      <a href={`${prefix}/contribute/`}>Contribute</a>
+      <a href="https://github.com/aliammari1/awesome-ai-tools">GitHub</a>
+    </nav>
+  </div>
+</header>

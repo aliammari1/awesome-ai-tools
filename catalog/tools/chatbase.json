@@ -1,0 +1,18 @@
+{
+  "name": "Chatbase",
+  "url": "https://chatbase.co/",
+  "description": "Custom GPT chatbots trained on your data with analytics.",
+  "category": "no-code-low-code-ai",
+  "subcategory": {
+    "id": "chatbot-builders",
+    "name": "Chatbot Builders"
+  },
+  "order": 343,
+  "openSource": null,
+  "pricing": null,
+  "status": "listed",
+  "source": {
+    "kind": "readme-migration",
+    "migratedAt": "2026-09-21"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "name": "Smolagents",
+  "url": "https://github.com/huggingface/smolagents",
+  "description": "Hugging Face's minimal library for code-writing agents.",
+  "category": "ai-agents",
+  "subcategory": null,
+  "order": 5,
+  "openSource": null,
+  "pricing": null,
+  "status": "listed",
+  "source": {
+    "kind": "readme-migration",
+    "migratedAt": "2026-09-21"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "name": "Jules",
+  "url": "https://labs.google/jules",
+  "description": "Google's AI coding agent for automated development and bug fixes.",
+  "category": "code-generation-and-development",
+  "subcategory": {
+    "id": "ai-coding-assistants",
+    "name": "AI Coding Assistants"
+  },
+  "order": 208,
+  "openSource": null,
+  "pricing": null,
+  "status": "listed",
+  "source": {
+    "kind": "readme-migration",
+    "migratedAt": "2026-09-21"
+  }
+}

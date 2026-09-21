@@ -5,16 +5,23 @@
     ":disableDependencyDashboard"
   ],
   "enabledManagers": [
-    "github-actions"
+    "github-actions",
+    "npm"
   ],
   "github-actions": {
     "pinDigests": true
   },
   "packageRules": [
     {
-      "description": "Group all GitHub Actions bumps into a single PR.",
+      "description": "Group GitHub Actions bumps into a single PR.",
       "matchManagers": ["github-actions"],
       "groupName": "github-actions"
+    },
+    {
+      "description": "Keep Astro dependency updates isolated and reviewable.",
+      "matchManagers": ["npm"],
+      "matchPackageNames": ["astro"],
+      "groupName": "astro"
     }
   ]
 }

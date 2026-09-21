@@ -1,0 +1,18 @@
+{
+  "name": "Google Colab",
+  "url": "https://colab.research.google.com/",
+  "description": "Free cloud-based notebooks.",
+  "category": "data-science-and-analytics",
+  "subcategory": {
+    "id": "research-tools",
+    "name": "Research Tools"
+  },
+  "order": 123,
+  "openSource": null,
+  "pricing": null,
+  "status": "listed",
+  "source": {
+    "kind": "readme-migration",
+    "migratedAt": "2026-09-21"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "name": "Anyword",
+  "url": "https://anyword.com/",
+  "description": "AI copywriting with performance prediction and brand voice.",
+  "category": "communication-and-writing",
+  "subcategory": {
+    "id": "writing-assistants",
+    "name": "Writing Assistants"
+  },
+  "order": 82,
+  "openSource": null,
+  "pricing": null,
+  "status": "listed",
+  "source": {
+    "kind": "readme-migration",
+    "migratedAt": "2026-09-21"
+  }
+}

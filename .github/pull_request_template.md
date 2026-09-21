@@ -1,33 +1,36 @@
 ## Description
-Please include a summary of the changes and the motivation behind them.
 
-## Type of Change
-- [ ] Adding a new AI tool
-- [ ] Updating existing tool information
-- [ ] Fixing a broken link
-- [ ] Re-categorizing a tool
-- [ ] Documentation improvement
-- [ ] Other: ___________
+Summarize the change and why it is needed.
 
-## Checklist
-- [ ] I have read the [CONTRIBUTING.md](../CONTRIBUTING.md)
-- [ ] I have starred this repository ⭐ *(Higher repo visibility means more exposure for your tool!)*
-- [ ] The tool meets our quality criteria (active, reputable, functional)
-- [ ] The description follows our format: `- [Name](URL) - Description.`
-- [ ] Description is under 120 characters
-- [ ] The entry is in the most specific subcategory and alphabetically ordered
-- [ ] I have verified the link works
-- [ ] `awesome-lint` passes locally (or the CI check is green)
-- [ ] `lychee` passes locally (or the CI check is green)
+## Type of change
 
-## Tool Information (for additions)
-- **Name**: 
-- **URL**: 
-- **Category**: 
-- **Description**: 
+- [ ] Add a catalog tool
+- [ ] Update/remove a catalog tool
+- [ ] Re-categorize catalog data
+- [ ] Website/UI change
+- [ ] CI/deployment change
+- [ ] Documentation change
+- [ ] Other
 
-## License Acknowledgment
-By submitting this PR, I dedicate my contribution to the public domain under the [CC0 1.0 Universal](../LICENSE) dedication used by this Awesome list.
+## Catalog checklist
 
-## Additional Notes
-Any additional information or context?
+For catalog changes:
+
+- [ ] I edited `catalog/tools/` or `catalog/categories/`, not the generated README entry list.
+- [ ] The official URL is reachable.
+- [ ] The description is factual and avoids unsupported marketing claims.
+- [ ] Unknown metadata is `null` rather than guessed.
+- [ ] The entry is not a duplicate.
+- [ ] I ran `bun run validate`.
+- [ ] I ran `bun run generate:readme`.
+- [ ] I ran `bun run build`.
+
+## General checklist
+
+- [ ] `README.md` is generated and committed when catalog data changed.
+- [ ] CI is green.
+- [ ] I have read [CONTRIBUTING.md](../CONTRIBUTING.md).
+
+## License acknowledgment
+
+By submitting this PR, I dedicate my contribution to the public domain under the [CC0 1.0 Universal](../LICENSE) dedication used by this project.

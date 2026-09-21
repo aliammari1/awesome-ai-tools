@@ -1,0 +1,57 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import LegacyLocaleNotice from '../../../components/LegacyLocaleNotice.astro';
+import ToolCard from '../../../components/ToolCard.astro';
+import { getCatalog } from '../../../lib/catalog';
+import { locales, isLocale } from '../../../lib/locales';
+
+export async function getStaticPaths() {
+  const { tools } = await getCatalog();
+  return locales.flatMap((locale) =>
+    tools.map((tool) => ({ params: { locale, tool: tool.id } }))
+  );
+}
+
+const requested = Astro.params.locale;
+if (!isLocale(requested)) throw new Error('Unsupported locale');
+const locale = requested;
+const toolId = Astro.params.tool;
+const { tools, categories } = await getCatalog();
+const tool = tools.find((entry) => entry.id === toolId);
+if (!tool) throw new Error('Unknown tool');
+const category = categories.find((entry) => entry.id === tool.category);
+const related = tools.filter((entry) => entry.category === tool.category && entry.id !== tool.id).slice(0, 5);
+---
+<BaseLayout title={tool.name} description={tool.description} locale={locale}>
+  <LegacyLocaleNotice locale={locale} />
+  <article class="content-page">
+    <a class="back-link" href={`/${locale}/categories/${tool.category}/`}>← {category?.name ?? 'Category'}</a>
+    <p class="kicker">Catalog entry</p>
+    <h1>{tool.name}</h1>
+    <p>{tool.description}</p>
+
+    <dl class="detail-meta">
+      <div><dt>Category</dt><dd>{category?.name ?? tool.category}</dd></div>
+      <div><dt>Subcategory</dt><dd>{tool.subcategory?.name ?? '—'}</dd></div>
+      <div><dt>Open source</dt><dd>{tool.openSource === true ? 'Yes, stated in source description' : 'Not yet recorded'}</dd></div>
+      <div><dt>Verification</dt><dd>Not yet recorded after structured-data migration</dd></div>
+    </dl>
+
+    <div class="actions-row">
+      <a class="primary-button" href={tool.url} target="_blank" rel="noopener noreferrer">Visit official site ↗</a>
+      <button class="secondary-button" type="button" data-save-tool={tool.id} aria-pressed="false">Save</button>
+    </div>
+
+    <h2>Catalog provenance</h2>
+    <p>This record was migrated from the canonical repository README on September 21, 2026. Migration is not treated as a fresh verification. Future checks should update structured verification metadata rather than changing marketing copy.</p>
+
+    {related.length > 0 && (
+      <>
+        <h2>More in {category?.name ?? 'this category'}</h2>
+        <div class="tool-list">
+          {related.map((entry) => <ToolCard tool={entry} locale={locale} />)}
+        </div>
+      </>
+    )}
+  </article>
+</BaseLayout>

@@ -1,0 +1,18 @@
+{
+  "name": "Google Cloud Natural Language",
+  "url": "https://cloud.google.com/natural-language/",
+  "description": "NLP API by Google.",
+  "category": "natural-language-processing",
+  "subcategory": {
+    "id": "nlp-apis-and-services",
+    "name": "NLP APIs & Services"
+  },
+  "order": 133,
+  "openSource": null,
+  "pricing": null,
+  "status": "listed",
+  "source": {
+    "kind": "readme-migration",
+    "migratedAt": "2026-09-21"
+  }
+}
