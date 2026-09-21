@@ -287,6 +287,7 @@ Music generation, voice, speech, transcription, and audio-production tools.
 - [HappyScribe](https://www.happyscribe.com/) - AI transcription with 120+ languages and subtitle export.
 - [Resemble AI](https://www.resemble.ai/) - AI voice cloning with real-time synthesis and emotion control.
 - [Krisp](https://krisp.ai/) - AI-powered noise cancellation and meeting transcription.
+- [Noota](https://noota.io/) - AI meeting notes with customizable and detailed templates and many native integrations.
 
 ## Video & Media
 
