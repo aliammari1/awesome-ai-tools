@@ -38,6 +38,7 @@ Agent SDKs, autonomous systems, orchestration, tool use, memory, and browser aut
 - [Pydantic AI](https://pydantic.dev/docs/ai/overview/) - Type-safe Python agent framework with structured outputs and validation.
 - [Smolagents](https://github.com/huggingface/smolagents) - Hugging Face's minimal library for code-writing agents.
 - [Manus](https://manus.im/) - General autonomous agent that executes multi-step real-world tasks.
+- [Mnemoverse](https://mnemoverse.com) - Hosted memory server for AI agents over MCP that re-ranks recall when told a memory helped or misled.
 - [OpenHands](https://github.com/All-Hands-AI/OpenHands) - Open-source autonomous software-engineering agent (formerly OpenDevin).
 - [AgentScope](https://github.com/modelscope/agentscope) - Multi-agent platform with distributed orchestration and visual debugging.
 - [Letta](https://www.letta.com/) - Framework for stateful agents with long-term memory (formerly MemGPT).
