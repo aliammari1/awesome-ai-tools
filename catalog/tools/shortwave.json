@@ -1,0 +1,18 @@
+{
+  "name": "Shortwave",
+  "url": "https://www.shortwave.com/",
+  "description": "AI email assistant with smart search.",
+  "category": "productivity",
+  "subcategory": {
+    "id": "email-and-communication",
+    "name": "Email & Communication"
+  },
+  "order": 34,
+  "openSource": null,
+  "pricing": null,
+  "status": "listed",
+  "source": {
+    "kind": "readme-migration",
+    "migratedAt": "2026-09-21"
+  }
+}

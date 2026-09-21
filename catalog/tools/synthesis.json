@@ -1,0 +1,18 @@
+{
+  "name": "Synthesis",
+  "url": "https://www.synthesis.com/",
+  "description": "AI math tutoring for kids with problem-solving focus.",
+  "category": "research-and-education",
+  "subcategory": {
+    "id": "educational-ai-tools",
+    "name": "Educational AI Tools"
+  },
+  "order": 282,
+  "openSource": null,
+  "pricing": null,
+  "status": "listed",
+  "source": {
+    "kind": "readme-migration",
+    "migratedAt": "2026-09-21"
+  }
+}

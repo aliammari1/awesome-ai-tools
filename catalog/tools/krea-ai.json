@@ -1,0 +1,18 @@
+{
+  "name": "Krea AI",
+  "url": "https://krea.ai/",
+  "description": "Real-time AI image generation with live canvas editing.",
+  "category": "creativity-and-design",
+  "subcategory": {
+    "id": "image-generation-and-art",
+    "name": "Image Generation & Art"
+  },
+  "order": 55,
+  "openSource": null,
+  "pricing": null,
+  "status": "listed",
+  "source": {
+    "kind": "readme-migration",
+    "migratedAt": "2026-09-21"
+  }
+}

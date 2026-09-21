@@ -1,0 +1,18 @@
+{
+  "name": "Uizard",
+  "url": "https://uizard.io/",
+  "description": "AI-powered design tool with wireframe-to-UI conversion.",
+  "category": "creativity-and-design",
+  "subcategory": {
+    "id": "design-tools",
+    "name": "Design Tools"
+  },
+  "order": 63,
+  "openSource": null,
+  "pricing": null,
+  "status": "listed",
+  "source": {
+    "kind": "readme-migration",
+    "migratedAt": "2026-09-21"
+  }
+}

@@ -1,0 +1,83 @@
+---
+import '../styles/global.css';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import type { Locale } from '../lib/locales';
+import { englishCanonicalPath } from '../lib/locales';
+
+interface Props {
+  title: string;
+  description: string;
+  locale?: Locale;
+  noindex?: boolean;
+}
+
+const {
+  title,
+  description,
+  locale = 'en',
+  noindex = locale !== 'en',
+} = Astro.props;
+
+const canonicalPath = englishCanonicalPath(Astro.url.pathname, locale);
+const canonical = new URL(canonicalPath, Astro.site ?? Astro.url.origin);
+const fullTitle = title === 'Awesome AI Tools' ? title : `${title} · Awesome AI Tools`;
+const contentLanguage = locale === 'en' ? 'en' : 'en';
+---
+<!doctype html>
+<html lang={contentLanguage}>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{fullTitle}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonical} />
+    {noindex && <meta name="robots" content="noindex,follow" />}
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Awesome AI Tools" />
+    <meta property="og:title" content={fullTitle} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonical} />
+    <meta name="twitter:card" content="summary" />
+    <meta name="theme-color" content="#f6f4ef" />
+  </head>
+  <body data-locale={locale}>
+    <Header locale={locale} />
+    <main>
+      <slot />
+    </main>
+    <Footer />
+    <script is:inline>
+      (() => {
+        const storageKey = 'awt:saved-tools:v1';
+        const readSaved = () => {
+          try { return new Set(JSON.parse(localStorage.getItem(storageKey) || '[]')); }
+          catch { return new Set(); }
+        };
+        const writeSaved = (set) => localStorage.setItem(storageKey, JSON.stringify([...set]));
+        const syncButtons = () => {
+          const saved = readSaved();
+          document.querySelectorAll('[data-save-tool]').forEach((button) => {
+            const id = button.getAttribute('data-save-tool');
+            const active = saved.has(id);
+            button.setAttribute('aria-pressed', active ? 'true' : 'false');
+            button.textContent = active ? 'Saved' : 'Save';
+          });
+        };
+        document.addEventListener('click', (event) => {
+          const target = event.target instanceof Element ? event.target.closest('[data-save-tool]') : null;
+          if (!target) return;
+          const id = target.getAttribute('data-save-tool');
+          if (!id) return;
+          const saved = readSaved();
+          saved.has(id) ? saved.delete(id) : saved.add(id);
+          writeSaved(saved);
+          syncButtons();
+          document.dispatchEvent(new CustomEvent('awt:saved-changed'));
+        });
+        syncButtons();
+      })();
+    </script>
+  </body>
+</html>

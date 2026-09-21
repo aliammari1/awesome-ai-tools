@@ -1,0 +1,18 @@
+{
+  "name": "Deno Deploy",
+  "url": "https://deno.com/deploy",
+  "description": "Edge deployment with AI-assisted development.",
+  "category": "code-generation-and-development",
+  "subcategory": {
+    "id": "development-tools",
+    "name": "Development Tools"
+  },
+  "order": 225,
+  "openSource": null,
+  "pricing": null,
+  "status": "listed",
+  "source": {
+    "kind": "readme-migration",
+    "migratedAt": "2026-09-21"
+  }
+}

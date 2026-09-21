@@ -1,0 +1,18 @@
+{
+  "name": "Scenario",
+  "url": "https://www.scenario.gg/",
+  "description": "AI-generated game assets with consistent art styles.",
+  "category": "gaming-and-entertainment",
+  "subcategory": {
+    "id": "game-development",
+    "name": "Game Development"
+  },
+  "order": 313,
+  "openSource": null,
+  "pricing": null,
+  "status": "listed",
+  "source": {
+    "kind": "readme-migration",
+    "migratedAt": "2026-09-21"
+  }
+}

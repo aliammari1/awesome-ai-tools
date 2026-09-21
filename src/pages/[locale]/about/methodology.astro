@@ -1,0 +1,41 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import LegacyLocaleNotice from '../../../components/LegacyLocaleNotice.astro';
+import { locales, isLocale } from '../../../lib/locales';
+
+export function getStaticPaths() {
+  return locales.map((locale) => ({ params: { locale } }));
+}
+const requested = Astro.params.locale;
+if (!isLocale(requested)) throw new Error('Unsupported locale');
+const locale = requested;
+---
+<BaseLayout title="Curation methodology" description="How Awesome AI Tools selects, records, verifies, and maintains catalog entries." locale={locale}>
+  <LegacyLocaleNotice locale={locale} />
+  <article class="content-page">
+    <p class="kicker">Trust & maintenance</p>
+    <h1>Curation methodology</h1>
+    <p>The directory is a maintained catalog, not an automatically scraped ranking. Inclusion means a tool met the repository's contribution bar at the time it was added; it is not an endorsement or a security guarantee.</p>
+
+    <h2>Inclusion bar</h2>
+    <ul>
+      <li><strong>Reachable:</strong> the product or repository should be publicly accessible.</li>
+      <li><strong>Maintained:</strong> abandoned or archived projects are candidates for removal or a discontinued status.</li>
+      <li><strong>Distinct:</strong> additions should provide meaningful value beyond near-duplicate entries.</li>
+      <li><strong>Legitimate:</strong> obvious scams, thin affiliate pages, and deceptive wrappers do not belong.</li>
+      <li><strong>Specific descriptions:</strong> descriptions explain what a tool does instead of repeating vendor marketing.</li>
+    </ul>
+
+    <h2>Verification means something specific</h2>
+    <p>The September 2026 migration converted the README into structured records, but it did <em>not</em> pretend that all records had just been manually re-verified. A future <code>verifiedAt</code> field should only be added when someone actually checks the official source.</p>
+
+    <h2>One source of truth</h2>
+    <p>Tool records live in <code>catalog/tools/</code>. Category records live in <code>catalog/categories/</code>. The website and README are both generated from that data, so they cannot silently become separate catalogs.</p>
+
+    <h2>Translations</h2>
+    <p>The old automated translation pipeline was removed from production. Legacy locale URLs remain available as English fallbacks and are excluded from indexing until reviewed translations are rebuilt from structured content.</p>
+
+    <h2>Popularity and rankings</h2>
+    <p>The site does not claim browser-local activity represents community popularity. There is no public “trending” ranking until a real aggregate data source exists and its methodology can be explained.</p>
+  </article>
+</BaseLayout>

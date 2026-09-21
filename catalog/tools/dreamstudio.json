@@ -1,0 +1,18 @@
+{
+  "name": "DreamStudio",
+  "url": "https://dreamstudio.ai/",
+  "description": "Stability AI's image generation interface.",
+  "category": "creativity-and-design",
+  "subcategory": {
+    "id": "image-generation-and-art",
+    "name": "Image Generation & Art"
+  },
+  "order": 49,
+  "openSource": null,
+  "pricing": null,
+  "status": "listed",
+  "source": {
+    "kind": "readme-migration",
+    "migratedAt": "2026-09-21"
+  }
+}

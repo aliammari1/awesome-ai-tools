@@ -1,0 +1,18 @@
+{
+  "name": "MediaPipe",
+  "url": "https://mediapipe.dev/",
+  "description": "Google's ML framework for live perception.",
+  "category": "computer-vision",
+  "subcategory": {
+    "id": "specialized-vision-tools",
+    "name": "Specialized Vision Tools"
+  },
+  "order": 148,
+  "openSource": null,
+  "pricing": null,
+  "status": "listed",
+  "source": {
+    "kind": "readme-migration",
+    "migratedAt": "2026-09-21"
+  }
+}

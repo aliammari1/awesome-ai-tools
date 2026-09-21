@@ -1,0 +1,18 @@
+{
+  "name": "BGPT MCP",
+  "url": "https://github.com/connerlambden/bgpt-mcp",
+  "description": "Hosted MCP server for searching scientific papers with full-text experimental data (50 free searches).",
+  "category": "ai-search-and-research",
+  "subcategory": {
+    "id": "research-and-knowledge-tools",
+    "name": "Research & Knowledge Tools"
+  },
+  "order": 250,
+  "openSource": null,
+  "pricing": null,
+  "status": "listed",
+  "source": {
+    "kind": "readme-migration",
+    "migratedAt": "2026-09-21"
+  }
+}

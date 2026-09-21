@@ -1,0 +1,18 @@
+{
+  "name": "DVC",
+  "url": "https://dvc.org/",
+  "description": "Data version control for ML projects with experiment tracking.",
+  "category": "miscellaneous",
+  "subcategory": {
+    "id": "ai-infrastructure-and-mlops",
+    "name": "AI Infrastructure & MLOps"
+  },
+  "order": 354,
+  "openSource": null,
+  "pricing": null,
+  "status": "listed",
+  "source": {
+    "kind": "readme-migration",
+    "migratedAt": "2026-09-21"
+  }
+}

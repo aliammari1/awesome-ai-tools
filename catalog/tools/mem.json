@@ -1,0 +1,18 @@
+{
+  "name": "Mem",
+  "url": "https://mem.ai/",
+  "description": "AI-native note-taking and knowledge management.",
+  "category": "productivity",
+  "subcategory": {
+    "id": "task-and-project-management",
+    "name": "Task & Project Management"
+  },
+  "order": 31,
+  "openSource": null,
+  "pricing": null,
+  "status": "listed",
+  "source": {
+    "kind": "readme-migration",
+    "migratedAt": "2026-09-21"
+  }
+}

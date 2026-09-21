@@ -1,0 +1,87 @@
+---
+import ToolCard from './ToolCard.astro';
+
+interface Props {
+  tools: any[];
+  categories: any[];
+  locale?: string;
+}
+const { tools, categories, locale = 'en' } = Astro.props;
+---
+<section class="directory" aria-labelledby="directory-title">
+  <div class="directory-toolbar">
+    <label class="search-field">
+      <span class="sr-only">Search tools</span>
+      <input id="tool-search" type="search" placeholder="Search names, descriptions, or use cases…" autocomplete="off" />
+    </label>
+    <label class="select-field">
+      <span class="sr-only">Filter by category</span>
+      <select id="category-filter">
+        <option value="">All categories</option>
+        {categories.map((category) => <option value={category.id}>{category.name}</option>)}
+      </select>
+    </label>
+    <label class="check-field">
+      <input id="open-source-filter" type="checkbox" />
+      <span>Open source only</span>
+    </label>
+  </div>
+
+  <div class="results-line">
+    <h2 id="directory-title">Catalog</h2>
+    <p><strong id="visible-count">{tools.length}</strong> of {tools.length} entries</p>
+  </div>
+
+  <div id="tool-results" class="tool-list">
+    {tools.map((tool) => <ToolCard tool={tool} locale={locale} />)}
+  </div>
+
+  <p id="empty-results" class="empty-state" hidden>No matching tools. Try a broader search or clear a filter.</p>
+</section>
+
+<script is:inline>
+  (() => {
+    const search = document.querySelector('#tool-search');
+    const category = document.querySelector('#category-filter');
+    const openSource = document.querySelector('#open-source-filter');
+    const cards = [...document.querySelectorAll('[data-tool-card]')];
+    const visibleCount = document.querySelector('#visible-count');
+    const empty = document.querySelector('#empty-results');
+
+    const params = new URLSearchParams(location.search);
+    if (search && params.get('q')) search.value = params.get('q');
+    if (category && params.get('category')) category.value = params.get('category');
+    if (openSource && params.get('openSource') === 'true') openSource.checked = true;
+
+    const apply = () => {
+      const q = (search?.value || '').trim().toLowerCase();
+      const cat = category?.value || '';
+      const onlyOpen = !!openSource?.checked;
+      let count = 0;
+
+      cards.forEach((card) => {
+        const matchesQuery = !q || (card.getAttribute('data-search') || '').includes(q);
+        const matchesCategory = !cat || card.getAttribute('data-category') === cat;
+        const matchesOpen = !onlyOpen || card.getAttribute('data-open-source') === 'true';
+        const show = matchesQuery && matchesCategory && matchesOpen;
+        card.hidden = !show;
+        if (show) count += 1;
+      });
+
+      if (visibleCount) visibleCount.textContent = String(count);
+      if (empty) empty.hidden = count !== 0;
+
+      const next = new URLSearchParams();
+      if (q) next.set('q', q);
+      if (cat) next.set('category', cat);
+      if (onlyOpen) next.set('openSource', 'true');
+      const suffix = next.toString();
+      history.replaceState(null, '', location.pathname + (suffix ? '?' + suffix : ''));
+    };
+
+    search?.addEventListener('input', apply);
+    category?.addEventListener('change', apply);
+    openSource?.addEventListener('change', apply);
+    apply();
+  })();
+</script>

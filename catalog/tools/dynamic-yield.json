@@ -1,0 +1,18 @@
+{
+  "name": "Dynamic Yield",
+  "url": "https://www.dynamicyield.com/",
+  "description": "Personalization platform.",
+  "category": "business-and-marketing",
+  "subcategory": {
+    "id": "e-commerce-and-retail",
+    "name": "E-commerce & Retail"
+  },
+  "order": 298,
+  "openSource": null,
+  "pricing": null,
+  "status": "listed",
+  "source": {
+    "kind": "readme-migration",
+    "migratedAt": "2026-09-21"
+  }
+}

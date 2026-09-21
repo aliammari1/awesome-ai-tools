@@ -1,0 +1,18 @@
+{
+  "name": "Gemma",
+  "url": "https://ai.google.dev/gemma",
+  "description": "Google's lightweight open model with Gemma license.",
+  "category": "large-language-models",
+  "subcategory": {
+    "id": "open-source-llms",
+    "name": "Open Source LLMs"
+  },
+  "order": 260,
+  "openSource": null,
+  "pricing": null,
+  "status": "listed",
+  "source": {
+    "kind": "readme-migration",
+    "migratedAt": "2026-09-21"
+  }
+}

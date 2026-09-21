@@ -1,0 +1,37 @@
+---
+interface Props {
+  tool: {
+    id: string;
+    name: string;
+    url: string;
+    description: string;
+    category: string;
+    subcategory: { id: string; name: string } | null;
+    openSource: boolean | null;
+  };
+  locale?: string;
+}
+const { tool, locale = 'en' } = Astro.props;
+---
+<article
+  class="tool-row"
+  data-tool-card
+  data-category={tool.category}
+  data-open-source={tool.openSource === true ? 'true' : 'unknown'}
+  data-search={`${tool.name} ${tool.description} ${tool.subcategory?.name ?? ''}`.toLowerCase()}
+>
+  <div class="tool-main">
+    <div class="tool-heading">
+      <h3><a href={`/${locale}/tools/${tool.id}/`}>{tool.name}</a></h3>
+      {tool.openSource === true && <span class="meta-chip">Open source</span>}
+    </div>
+    <p>{tool.description}</p>
+    <div class="tool-meta">
+      {tool.subcategory && <span>{tool.subcategory.name}</span>}
+    </div>
+  </div>
+  <div class="tool-actions">
+    <button class="text-button" type="button" data-save-tool={tool.id} aria-pressed="false">Save</button>
+    <a class="visit-link" href={tool.url} target="_blank" rel="noopener noreferrer">Visit ↗</a>
+  </div>
+</article>
