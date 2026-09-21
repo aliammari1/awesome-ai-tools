@@ -1,0 +1,18 @@
+{
+  "name": "ComfyUI",
+  "url": "https://github.com/comfyanonymous/ComfyUI",
+  "description": "Node-based UI for Stable Diffusion with workflows.",
+  "category": "creativity-and-design",
+  "subcategory": {
+    "id": "image-generation-and-art",
+    "name": "Image Generation & Art"
+  },
+  "order": 44,
+  "openSource": null,
+  "pricing": null,
+  "status": "listed",
+  "source": {
+    "kind": "readme-migration",
+    "migratedAt": "2026-09-21"
+  }
+}

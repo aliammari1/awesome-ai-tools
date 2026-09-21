@@ -1,0 +1,18 @@
+{
+  "name": "Dust",
+  "url": "https://dust.tt/",
+  "description": "AI assistant builder for enterprise with custom agents and data sources.",
+  "category": "miscellaneous",
+  "subcategory": {
+    "id": "ai-agents-and-automation",
+    "name": "AI Agents & Automation"
+  },
+  "order": 377,
+  "openSource": null,
+  "pricing": null,
+  "status": "listed",
+  "source": {
+    "kind": "readme-migration",
+    "migratedAt": "2026-09-21"
+  }
+}

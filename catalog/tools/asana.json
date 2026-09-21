@@ -1,0 +1,18 @@
+{
+  "name": "Asana",
+  "url": "https://asana.com",
+  "description": "Project management with AI-powered insights.",
+  "category": "productivity",
+  "subcategory": {
+    "id": "task-and-project-management",
+    "name": "Task & Project Management"
+  },
+  "order": 26,
+  "openSource": null,
+  "pricing": null,
+  "status": "listed",
+  "source": {
+    "kind": "readme-migration",
+    "migratedAt": "2026-09-21"
+  }
+}

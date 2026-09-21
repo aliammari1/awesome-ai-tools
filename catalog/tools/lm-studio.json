@@ -1,0 +1,18 @@
+{
+  "name": "LM Studio",
+  "url": "https://lmstudio.ai/",
+  "description": "Desktop app for running local LLMs with chat UI.",
+  "category": "large-language-models",
+  "subcategory": {
+    "id": "llm-tools-and-frameworks",
+    "name": "LLM Tools & Frameworks"
+  },
+  "order": 271,
+  "openSource": null,
+  "pricing": null,
+  "status": "listed",
+  "source": {
+    "kind": "readme-migration",
+    "migratedAt": "2026-09-21"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "name": "Ollama",
+  "url": "https://ollama.ai/",
+  "description": "Run LLMs locally with simple CLI and model library.",
+  "category": "large-language-models",
+  "subcategory": {
+    "id": "llm-tools-and-frameworks",
+    "name": "LLM Tools & Frameworks"
+  },
+  "order": 270,
+  "openSource": null,
+  "pricing": null,
+  "status": "listed",
+  "source": {
+    "kind": "readme-migration",
+    "migratedAt": "2026-09-21"
+  }
+}

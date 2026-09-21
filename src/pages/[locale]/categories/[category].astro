@@ -1,0 +1,37 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import LegacyLocaleNotice from '../../../components/LegacyLocaleNotice.astro';
+import Directory from '../../../components/Directory.astro';
+import { getCatalog } from '../../../lib/catalog';
+import { locales, isLocale } from '../../../lib/locales';
+
+export async function getStaticPaths() {
+  const { categories } = await getCatalog();
+  return locales.flatMap((locale) =>
+    categories.map((category) => ({ params: { locale, category: category.id } }))
+  );
+}
+
+const requested = Astro.params.locale;
+if (!isLocale(requested)) throw new Error('Unsupported locale');
+const locale = requested;
+const categoryId = Astro.params.category;
+const { tools, categories } = await getCatalog();
+const category = categories.find((entry) => entry.id === categoryId);
+if (!category) throw new Error('Unknown category');
+const categoryTools = tools.filter((tool) => tool.category === category.id);
+---
+<BaseLayout
+  title={category.name}
+  description={`${category.description} Browse ${categoryTools.length} catalog entries.`}
+  locale={locale}
+>
+  <LegacyLocaleNotice locale={locale} />
+  <section class="content-page" style="padding-bottom:1.5rem">
+    <a class="back-link" href={`/${locale}/`}>← All tools</a>
+    <p class="kicker">Category · {categoryTools.length} entries</p>
+    <h1>{category.name}</h1>
+    <p>{category.description}</p>
+  </section>
+  <Directory tools={categoryTools} categories={[category]} locale={locale} />
+</BaseLayout>

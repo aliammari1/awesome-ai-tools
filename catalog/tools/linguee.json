@@ -1,0 +1,18 @@
+{
+  "name": "Linguee",
+  "url": "https://www.linguee.com/",
+  "description": "Dictionary with translation examples.",
+  "category": "communication-and-writing",
+  "subcategory": {
+    "id": "translation-and-localization",
+    "name": "Translation & Localization"
+  },
+  "order": 99,
+  "openSource": null,
+  "pricing": null,
+  "status": "listed",
+  "source": {
+    "kind": "readme-migration",
+    "migratedAt": "2026-09-21"
+  }
+}

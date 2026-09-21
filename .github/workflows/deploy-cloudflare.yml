@@ -1,4 +1,4 @@
-name: Publish docs to Cloudflare Pages
+name: Publish site to Cloudflare Pages
 
 on:
   push:
@@ -6,7 +6,7 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: write
+  contents: read
   deployments: write
 
 concurrency:
@@ -15,47 +15,39 @@ concurrency:
 
 jobs:
   publish:
-    name: Sync docs branch and deploy
+    name: Build main and deploy
     runs-on: ubuntu-latest
     environment:
       name: cloudflare-pages
     steps:
       - name: Checkout main
         uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0 # v7
+
+      - name: Setup Node
+        uses: actions/setup-node@48b55a011bda9f5d6aeb4c2d9c7362e8dae4041e # v6
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-          fetch-depth: 0
+          node-version: 24.14.1
 
-      - name: Sync the canonical README to docs
-        run: |
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git config user.name "github-actions[bot]"
-          git fetch origin docs
-          git checkout -B docs origin/docs
-          git checkout origin/main -- README.md
-          git add README.md
-          if ! git diff --staged --quiet; then
-            git commit -m "chore(docs): sync README from main"
-            git push origin docs
-          fi
-
-      - name: Checkout docs branch
-        run: git checkout docs
-
-      - name: Set up Bun
-        uses: oven-sh/setup-bun@0c5077e51419868618aeaa5fe8019c62421857d6
+      - name: Setup Bun
+        uses: oven-sh/setup-bun@0c5077e51419868618aeaa5fe8019c62421857d6 # v2
         with:
           bun-version: "1.4.2"
 
       - name: Install dependencies
-        run: bun install --frozen-lockfile
+        run: bun ci
 
-      - name: Build documentation site
+      - name: Validate catalog
+        run: bun run validate
+
+      - name: Verify generated README
+        run: bun run check:readme
+
+      - name: Build site
         run: bun run build
 
-      - name: Deploy to Cloudflare Pages
+      - name: Deploy main build to Cloudflare Pages
         uses: cloudflare/wrangler-action@ebbaa1584979971c8614a24965b4405ff95890e0 # v4.0.0
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          command: pages deploy dist --project-name=awesome-ai-tools --branch=docs
+          command: pages deploy dist --project-name=awesome-ai-tools --branch=main

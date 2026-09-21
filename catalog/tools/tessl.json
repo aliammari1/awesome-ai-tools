@@ -1,0 +1,18 @@
+{
+  "name": "Tessl",
+  "url": "https://www.tessl.io/",
+  "description": "Spec-driven development framework for AI-native coding with natural language specs.",
+  "category": "code-generation-and-development",
+  "subcategory": {
+    "id": "development-tools",
+    "name": "Development Tools"
+  },
+  "order": 218,
+  "openSource": null,
+  "pricing": null,
+  "status": "listed",
+  "source": {
+    "kind": "readme-migration",
+    "migratedAt": "2026-09-21"
+  }
+}

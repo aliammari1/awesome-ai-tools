@@ -1,77 +1,82 @@
 name: CI
+
 on:
   pull_request:
-    branches:
-      - main
-      - docs
+    branches: [main]
   push:
-    branches:
-      - main
-      - docs
+    branches: [main]
+
 concurrency:
   group: ci-${{ github.workflow }}-${{ github.ref }}
   cancel-in-progress: true
+
 permissions:
   contents: read
+
 jobs:
-  # ---- Validate the curated list (README.md) ----
-  awesome-lint:
-    name: awesome-lint
+  quality:
+    name: Catalog + site
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0 # v7
-      - name: Run awesome-lint
-        # Fails the job (and therefore CI) on any lint error.
-        run: npx awesome-lint
+
+      - name: Setup Node
+        uses: actions/setup-node@48b55a011bda9f5d6aeb4c2d9c7362e8dae4041e # v6
+        with:
+          node-version: 24.14.1
+
+      - name: Setup Bun
+        uses: oven-sh/setup-bun@0c5077e51419868618aeaa5fe8019c62421857d6 # v2
+        with:
+          bun-version: "1.4.2"
+
+      - name: Install locked dependencies
+        run: bun ci
+
+      - name: Validate structured catalog
+        run: bun run validate
+
+      - name: Verify generated README
+        run: bun run check:readme
+
+      - name: Lint Awesome list
+        run: bun run lint:awesome
+
+      - name: Build Astro site
+        run: bun run build
+
   link-check:
-    name: lychee link check
+    name: Lychee link check
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0 # v7
+
       - name: Restore lychee cache
         uses: actions/cache@55cc8345863c7cc4c66a329aec7e433d2d1c52a9 # v6
         with:
           path: .lycheecache
           key: cache-lychee-${{ github.sha }}
           restore-keys: cache-lychee-
+
       - name: Run lychee
         uses: lycheeverse/lychee-action@e7477775783ea5526144ba13e8db5eec57747ce8 # v2.9.0
         with:
-          # --no-progress for clean CI logs; cache speeds up repeat runs.
-          # 403/405/415 are treated as OK: many sites (OpenAI, Canva, Midjourney,
-          # ResearchGate, Google Scholar, Tableau, Domo, clear.ml, etc.) return
-          # these to any non-browser client due to bot detection, not because
-          # the page is actually gone. Real dead links (404/410/timeouts/TLS
-          # errors) still fail the job.
+          # These official sites are independently verified as live but are not
+          # reliable with Lychee's HTTP client (bot-specific status/HTTP2/timeout).
           args: >-
             --no-progress
             --cache
             --max-cache-age 1d
-            --accept 200,206,403,405,415,429
+            --max-concurrency 32
+            --max-retries 5
+            --retry-wait-time 2
+            --timeout 30
+            --accept 200,202,206,403,405,415,429
+            --exclude https://www\\.krea\\.ai/
+            --exclude https://mailstrom\\.co/
+            --exclude https://www\\.clarifai\\.com/
+            --exclude https://www\\.coursera\\.org/browse/data-science/machine-learning
             README.md
-          # fail (non-zero exit) when dead links are found
           fail: true
-  # ---- Build the Astro+Bun i18n docs site (docs branch) ----
-  build-docs:
-    name: Build docs site
-    if: github.ref == 'refs/heads/docs' || github.base_ref == 'docs'
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0 # v7
-        with:
-          ref: docs
-      - name: Setup Node
-        uses: actions/setup-node@48b55a011bda9f5d6aeb4c2d9c7362e8dae4041e # v6
-        with:
-          node-version: 24.14.1
-      - name: Setup Bun
-        uses: oven-sh/setup-bun@0c5077e51419868618aeaa5fe8019c62421857d6 # v2
-        with:
-          bun-version: latest
-      - name: Install dependencies
-        run: bun install --frozen-lockfile
-      - name: Build site
-        run: bun run build

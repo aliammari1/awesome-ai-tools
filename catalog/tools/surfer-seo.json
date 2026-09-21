@@ -1,0 +1,18 @@
+{
+  "name": "Surfer SEO",
+  "url": "https://surferseo.com/",
+  "description": "AI-powered content optimization with NLP analysis.",
+  "category": "communication-and-writing",
+  "subcategory": {
+    "id": "writing-assistants",
+    "name": "Writing Assistants"
+  },
+  "order": 87,
+  "openSource": null,
+  "pricing": null,
+  "status": "listed",
+  "source": {
+    "kind": "readme-migration",
+    "migratedAt": "2026-09-21"
+  }
+}

@@ -1,0 +1,51 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import LegacyLocaleNotice from '../../components/LegacyLocaleNotice.astro';
+import Directory from '../../components/Directory.astro';
+import { getCatalog, countByCategory } from '../../lib/catalog';
+import { locales, isLocale } from '../../lib/locales';
+
+export function getStaticPaths() {
+  return locales.map((locale) => ({ params: { locale } }));
+}
+
+const requested = Astro.params.locale;
+if (!isLocale(requested)) throw new Error('Unsupported locale');
+const locale = requested;
+
+const { tools, categories } = await getCatalog();
+const counts = countByCategory(tools);
+---
+<BaseLayout
+  title="Awesome AI Tools"
+  description={`Browse ${tools.length} curated AI tools across ${categories.length} categories. Search the catalog by name, description, category, and open-source status.`}
+  locale={locale}
+>
+  <LegacyLocaleNotice locale={locale} />
+  <section class="hero">
+    <div class="shell">
+      <p class="eyebrow">Curated directory</p>
+      <h1>Find the AI tool that fits the work.</h1>
+      <p class="hero-copy">A structured catalog built for discovery, not marketing. Search {tools.length} entries, browse clear categories, and see exactly what metadata is known.</p>
+      <div class="hero-stats" aria-label="Catalog statistics">
+        <span><strong>{tools.length}</strong> catalog entries</span>
+        <span><strong>{categories.length}</strong> categories</span>
+        <span>README generated from the same source</span>
+        <span>Unverified migration data is not presented as verified</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="category-strip" aria-label="Categories">
+    <div class="shell category-links">
+      {categories.map((category) => (
+        <a class="category-link" href={`/${locale}/categories/${category.id}/`}>
+          <span>{category.name}</span>
+          <small>{counts[category.id] ?? 0}</small>
+        </a>
+      ))}
+    </div>
+  </section>
+
+  <Directory tools={tools} categories={categories} locale={locale} />
+</BaseLayout>

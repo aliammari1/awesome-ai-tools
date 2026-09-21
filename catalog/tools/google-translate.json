@@ -1,0 +1,18 @@
+{
+  "name": "Google Translate",
+  "url": "https://translate.google.com/",
+  "description": "Free multilingual translation.",
+  "category": "communication-and-writing",
+  "subcategory": {
+    "id": "translation-and-localization",
+    "name": "Translation & Localization"
+  },
+  "order": 97,
+  "openSource": null,
+  "pricing": null,
+  "status": "listed",
+  "source": {
+    "kind": "readme-migration",
+    "migratedAt": "2026-09-21"
+  }
+}

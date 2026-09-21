@@ -1,0 +1,18 @@
+{
+  "name": "Suno",
+  "url": "https://suno.ai/",
+  "description": "AI music generator.",
+  "category": "audio-and-music",
+  "subcategory": {
+    "id": "music-generation-and-composition",
+    "name": "Music Generation & Composition"
+  },
+  "order": 151,
+  "openSource": null,
+  "pricing": null,
+  "status": "listed",
+  "source": {
+    "kind": "readme-migration",
+    "migratedAt": "2026-09-21"
+  }
+}
