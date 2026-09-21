@@ -459,6 +459,7 @@ Marketing, sales, e-commerce, retail, career, and job-search tools.
 
 ### Marketing & Sales
 
+- [AnswerLens](https://app.sfdj.net/) - AI-powered public-evidence audit for B2B SaaS websites.
 - [HubSpot AI](https://www.hubspot.com/) - CRM with AI Breeze for content, chatbots, and predictive lead scoring.
 - [Meta Business AI](https://www.meta.com/) - AI assistant for ads, WhatsApp, and Messenger with campaign automation.
 - [Gong](https://www.gong.io/) - Revenue intelligence platform with AI call analysis and deal insights.
