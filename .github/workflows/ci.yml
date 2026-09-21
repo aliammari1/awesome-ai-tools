@@ -75,8 +75,6 @@ jobs:
             --retry-wait-time 2
             --timeout 30
             --accept 200,202,206,403,405,415,429
-            --exclude '^https://www\\.krea\\.ai/?
-          fail: true
-
+            --exclude https://www\\.krea\\.ai/
             README.md
           fail: true
