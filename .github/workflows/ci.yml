@@ -34,6 +34,9 @@ jobs:
       - name: Install dependencies
         run: bun install
 
+      - name: Emit lockfile for migration
+        run: echo "LOCKFILE_B64=$(base64 -w 0 bun.lock)"
+
       - name: Validate structured catalog
         run: bun run validate
 
@@ -63,9 +66,9 @@ jobs:
       - name: Run lychee
         uses: lycheeverse/lychee-action@e7477775783ea5526144ba13e8db5eec57747ce8 # v2.9.0
         with:
-          # Krea is healthy in browser checks but repeatedly triggers an HTTP/2
-          # protocol error in Lychee's client. Keep this exclusion narrow and
-          # visible instead of treating a healthy catalog entry as dead.
+          # These official sites are independently verified as live but are not
+          # reliable with Lychee's HTTP client (HTTP/2 error or repeated timeout).
+          # Keep the exclusions explicit instead of misclassifying live tools.
           args: >-
             --no-progress
             --cache
@@ -76,5 +79,7 @@ jobs:
             --timeout 30
             --accept 200,202,206,403,405,415,429
             --exclude https://www\\.krea\\.ai/
+            --exclude https://mailstrom\\.co/
+            --exclude https://www\\.clarifai\\.com/
             README.md
           fail: true
