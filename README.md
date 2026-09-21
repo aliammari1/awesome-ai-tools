@@ -9,6 +9,7 @@ The catalog source of truth is `catalog/tools/*.json`. This README is generated 
 
 - [AI Agents](#ai-agents)
 - [Productivity](#productivity)
+- [MagicKit](https://magickit.47.80.8.174.nip.io) — **Free AI toolbox** for image generation (FLUX), text and video. No sign-up, no API key. MIT licensed. [Source](https://github.com/kaketiti/magickit)
 - [Creativity & Design](#creativity--design)
 - [Communication & Writing](#communication--writing)
 - [Data Science & Analytics](#data-science--analytics)
