@@ -1,0 +1,18 @@
+{
+  "name": "Hyperwrite",
+  "url": "https://hyperwriteai.com/",
+  "description": "Personal AI writing assistant with AutoWrite and TypeAhead.",
+  "category": "communication-and-writing",
+  "subcategory": {
+    "id": "writing-assistants",
+    "name": "Writing Assistants"
+  },
+  "order": 85,
+  "openSource": null,
+  "pricing": null,
+  "status": "listed",
+  "source": {
+    "kind": "readme-migration",
+    "migratedAt": "2026-09-21"
+  }
+}

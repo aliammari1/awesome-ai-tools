@@ -1,0 +1,18 @@
+{
+  "name": "Carnegie Learning",
+  "url": "https://www.carnegielearning.com/",
+  "description": "AI-powered math and literacy solutions for schools.",
+  "category": "research-and-education",
+  "subcategory": {
+    "id": "educational-ai-tools",
+    "name": "Educational AI Tools"
+  },
+  "order": 284,
+  "openSource": null,
+  "pricing": null,
+  "status": "listed",
+  "source": {
+    "kind": "readme-migration",
+    "migratedAt": "2026-09-21"
+  }
+}

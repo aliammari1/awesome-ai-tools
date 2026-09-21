@@ -1,0 +1,18 @@
+{
+  "name": "Averroes.ai",
+  "url": "https://averroes.ai/",
+  "description": "Production-ready visual inspection for manufacturing and quality control.",
+  "category": "computer-vision",
+  "subcategory": {
+    "id": "image-recognition-and-analysis",
+    "name": "Image Recognition & Analysis"
+  },
+  "order": 140,
+  "openSource": null,
+  "pricing": null,
+  "status": "listed",
+  "source": {
+    "kind": "readme-migration",
+    "migratedAt": "2026-09-21"
+  }
+}

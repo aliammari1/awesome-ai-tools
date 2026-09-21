@@ -1,0 +1,18 @@
+{
+  "name": "Assembly AI",
+  "url": "https://www.assemblyai.com/",
+  "description": "Speech-to-text API with speaker diarization and content moderation.",
+  "category": "audio-and-music",
+  "subcategory": {
+    "id": "voice-and-speech",
+    "name": "Voice & Speech"
+  },
+  "order": 173,
+  "openSource": null,
+  "pricing": null,
+  "status": "listed",
+  "source": {
+    "kind": "readme-migration",
+    "migratedAt": "2026-09-21"
+  }
+}

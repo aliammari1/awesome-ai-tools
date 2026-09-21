@@ -1,0 +1,18 @@
+{
+  "name": "Runway",
+  "url": "https://runwayml.com/",
+  "description": "Video generation model with accurate motion and physics representation.",
+  "category": "video-and-media",
+  "subcategory": {
+    "id": "video-creation-and-editing",
+    "name": "Video Creation & Editing"
+  },
+  "order": 179,
+  "openSource": null,
+  "pricing": null,
+  "status": "listed",
+  "source": {
+    "kind": "readme-migration",
+    "migratedAt": "2026-09-21"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "name": "Latitude AI",
+  "url": "https://latitude.io/",
+  "description": "AI storytelling and game experiences platform.",
+  "category": "gaming-and-entertainment",
+  "subcategory": {
+    "id": "game-development",
+    "name": "Game Development"
+  },
+  "order": 315,
+  "openSource": null,
+  "pricing": null,
+  "status": "listed",
+  "source": {
+    "kind": "readme-migration",
+    "migratedAt": "2026-09-21"
+  }
+}

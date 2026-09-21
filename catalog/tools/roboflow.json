@@ -1,0 +1,18 @@
+{
+  "name": "Roboflow",
+  "url": "https://roboflow.com/",
+  "description": "Computer vision platform.",
+  "category": "computer-vision",
+  "subcategory": {
+    "id": "image-recognition-and-analysis",
+    "name": "Image Recognition & Analysis"
+  },
+  "order": 136,
+  "openSource": null,
+  "pricing": null,
+  "status": "listed",
+  "source": {
+    "kind": "readme-migration",
+    "migratedAt": "2026-09-21"
+  }
+}

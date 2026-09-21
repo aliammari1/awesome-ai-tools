@@ -1,44 +1,73 @@
 # Contributing
 
-Thanks for helping keep **Awesome AI Tools** sharp. This is a curated list, so the bar
-is quality over quantity — every entry should earn its place.
+Thanks for helping maintain **Awesome AI Tools**. The project is a curated catalog, so quality and verifiable information matter more than raw entry count.
+
+## Source of truth
+
+Tool records live in `catalog/tools/`. Category records live in `catalog/categories/`.
+
+**Do not add or edit tool entries directly in `README.md`.** The README and website are both generated from the structured catalog.
 
 ## Add a tool
 
-1. Open `README.md` and find the **most specific** subcategory for the tool.
-2. Add one line, alphabetically ordered within that subcategory:
+1. Choose the most specific existing category and subcategory.
+2. Add a JSON file at `catalog/tools/<slug>.json`.
+3. Keep the description factual and concise. Explain what the tool does; avoid marketing claims, rankings, valuations, user counts, and other volatile facts unless they are separately sourced.
+4. Use `null` instead of guessing unknown metadata such as pricing or open-source status.
+5. Run:
 
-   ```markdown
-   - [Name](https://example.com) - Short description.
+   ```sh
+   bun install
+   bun run validate
+   bun run generate:readme
+   bun run build
    ```
 
-3. Keep the description **under 120 characters**, starting with a capital letter and
-   ending with a period. Describe what the tool *does*, not marketing fluff.
-4. Open a pull request. CI runs [`awesome-lint`](https://github.com/sindresorhus/awesome-lint)
-   and a [`lychee`](https://github.com/lycheeverse/lychee) link check — both must pass.
+6. Open a pull request. CI validates the catalog, confirms the README is generated, runs `awesome-lint`, checks links, and builds the Astro site.
 
-You can also open a [Tool Addition issue](.github/ISSUE_TEMPLATE/tool_addition.md) if you'd
-rather suggest a tool than send a PR.
+Example:
+
+```json
+{
+  "name": "Example Tool",
+  "url": "https://example.com/",
+  "description": "One factual sentence describing what the tool does.",
+  "category": "code-generation-and-development",
+  "subcategory": {
+    "id": "ai-coding-assistants",
+    "name": "AI Coding Assistants"
+  },
+  "order": 9999,
+  "openSource": null,
+  "pricing": null,
+  "status": "listed",
+  "source": {
+    "kind": "readme-migration",
+    "migratedAt": "2026-09-21"
+  }
+}
+```
+
+The `source` field marks records created by the September 2026 README migration. A later schema revision will separate migration provenance from human verification metadata; do not treat the migration date as a verification date.
 
 ## Quality bar
 
 A tool should be:
 
-- **Real and reachable** — a working, publicly accessible product or repo (no invite-only betas).
-- **Actively maintained** — meaningful activity in roughly the last 6 months; not archived.
-- **Distinct** — it adds something the list doesn't already cover (no near-duplicates).
-- **Legit** — reputable, not a thin wrapper, scam, or affiliate trap.
+- **Real and reachable** — a working, publicly accessible product or repository.
+- **Actively maintained** — abandoned or archived projects should be marked or removed.
+- **Distinct** — avoid near-duplicate entries that do not add meaningful value.
+- **Legitimate** — no scams, deceptive wrappers, or affiliate traps.
+- **Clearly described** — descriptions should state function, not repeat vendor slogans.
 
-Entries that fail these get closed. Dead, hijacked, or archived links get removed when found.
+## Update or remove a tool
 
-## Other contributions
+Edit the JSON record when a URL, description, category, or status changes. For discontinued tools, prefer a clear `discontinued` status when preserving the URL is useful to people following old links.
 
-- **Fix a broken link** or correct a description — small PRs are very welcome.
-- **Re-categorize** an entry that's in the wrong place.
-- **Translations** are generated automatically for the [docs site](https://docs.aliammari.com)
-  from the English `README.md`, so you only need to edit English here.
+## Translations
 
-No contribution is too small. A typo fix counts.
+The former automatic production translation pipeline has been retired. Legacy locale URLs currently use English fallback content and are not indexed as translated pages. Reviewed translations can be reintroduced later without duplicating the entire catalog.
 
-By contributing, you agree your contribution is released under
-[CC0 1.0 Universal](LICENSE) (public domain), as is the rest of this list.
+## License
+
+By contributing, you agree that your contribution is released under [CC0 1.0 Universal](LICENSE), as is the rest of the catalog.

@@ -1,0 +1,18 @@
+{
+  "name": "Lumen5",
+  "url": "https://lumen5.com/",
+  "description": "Video creation from text for social media.",
+  "category": "video-and-media",
+  "subcategory": {
+    "id": "video-creation-and-editing",
+    "name": "Video Creation & Editing"
+  },
+  "order": 191,
+  "openSource": null,
+  "pricing": null,
+  "status": "listed",
+  "source": {
+    "kind": "readme-migration",
+    "migratedAt": "2026-09-21"
+  }
+}

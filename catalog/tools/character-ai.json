@@ -1,0 +1,18 @@
+{
+  "name": "Character.AI",
+  "url": "https://beta.character.ai/",
+  "description": "Create and chat with AI characters and companions.",
+  "category": "gaming-and-entertainment",
+  "subcategory": {
+    "id": "entertainment-and-media",
+    "name": "Entertainment & Media"
+  },
+  "order": 316,
+  "openSource": null,
+  "pricing": null,
+  "status": "listed",
+  "source": {
+    "kind": "readme-migration",
+    "migratedAt": "2026-09-21"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "name": "Lindy Build",
+  "url": "https://lindy.ai/build",
+  "description": "Visual builder for AI agents with workflow automation.",
+  "category": "no-code-low-code-ai",
+  "subcategory": {
+    "id": "chatbot-builders",
+    "name": "Chatbot Builders"
+  },
+  "order": 334,
+  "openSource": null,
+  "pricing": null,
+  "status": "listed",
+  "source": {
+    "kind": "readme-migration",
+    "migratedAt": "2026-09-21"
+  }
+}

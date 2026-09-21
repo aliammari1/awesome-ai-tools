@@ -1,0 +1,18 @@
+{
+  "name": "Grafana",
+  "url": "https://grafana.com/",
+  "description": "Monitoring and observability with AI-powered alerting.",
+  "category": "data-science-and-analytics",
+  "subcategory": {
+    "id": "data-analysis-and-visualization",
+    "name": "Data Analysis & Visualization"
+  },
+  "order": 115,
+  "openSource": null,
+  "pricing": null,
+  "status": "listed",
+  "source": {
+    "kind": "readme-migration",
+    "migratedAt": "2026-09-21"
+  }
+}

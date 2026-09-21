@@ -1,0 +1,18 @@
+{
+  "name": "Consensus",
+  "url": "https://consensus.app/",
+  "description": "AI-powered research engine for scientific papers.",
+  "category": "ai-search-and-research",
+  "subcategory": {
+    "id": "research-and-knowledge-tools",
+    "name": "Research & Knowledge Tools"
+  },
+  "order": 246,
+  "openSource": null,
+  "pricing": null,
+  "status": "listed",
+  "source": {
+    "kind": "readme-migration",
+    "migratedAt": "2026-09-21"
+  }
+}

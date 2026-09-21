@@ -1,0 +1,18 @@
+{
+  "name": "RankingRider",
+  "url": "https://www.rankingrider.com/",
+  "description": "AI-powered bulk SEO optimization for Shopify products via CSV.",
+  "category": "business-and-marketing",
+  "subcategory": {
+    "id": "e-commerce-and-retail",
+    "name": "E-commerce & Retail"
+  },
+  "order": 302,
+  "openSource": null,
+  "pricing": null,
+  "status": "listed",
+  "source": {
+    "kind": "readme-migration",
+    "migratedAt": "2026-09-21"
+  }
+}

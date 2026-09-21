@@ -1,0 +1,18 @@
+{
+  "name": "Kickresume",
+  "url": "https://www.kickresume.com/",
+  "description": "AI resume builder with templates and job matching.",
+  "category": "business-and-marketing",
+  "subcategory": {
+    "id": "career-and-job-search",
+    "name": "Career & Job Search"
+  },
+  "order": 306,
+  "openSource": null,
+  "pricing": null,
+  "status": "listed",
+  "source": {
+    "kind": "readme-migration",
+    "migratedAt": "2026-09-21"
+  }
+}

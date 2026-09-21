@@ -1,0 +1,18 @@
+{
+  "name": "LLaMA",
+  "url": "https://ai.meta.com/llama/",
+  "description": "Meta's MoE models: 109B Scout (10M ctx), 400B Maverick multimodal.",
+  "category": "large-language-models",
+  "subcategory": {
+    "id": "open-source-llms",
+    "name": "Open Source LLMs"
+  },
+  "order": 256,
+  "openSource": null,
+  "pricing": null,
+  "status": "listed",
+  "source": {
+    "kind": "readme-migration",
+    "migratedAt": "2026-09-21"
+  }
+}

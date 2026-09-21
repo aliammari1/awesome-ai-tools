@@ -1,0 +1,18 @@
+{
+  "name": "Towards Data Science",
+  "url": "https://towardsdatascience.com/",
+  "description": "Medium publication for data science.",
+  "category": "getting-started",
+  "subcategory": {
+    "id": "learning-resources",
+    "name": "Learning Resources"
+  },
+  "order": 385,
+  "openSource": null,
+  "pricing": null,
+  "status": "listed",
+  "source": {
+    "kind": "readme-migration",
+    "migratedAt": "2026-09-21"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "name": "Superhuman",
+  "url": "https://superhuman.com/",
+  "description": "AI-powered email with voice features and smart shortcuts.",
+  "category": "productivity",
+  "subcategory": {
+    "id": "email-and-communication",
+    "name": "Email & Communication"
+  },
+  "order": 33,
+  "openSource": null,
+  "pricing": null,
+  "status": "listed",
+  "source": {
+    "kind": "readme-migration",
+    "migratedAt": "2026-09-21"
+  }
+}

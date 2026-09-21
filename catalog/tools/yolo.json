@@ -1,0 +1,18 @@
+{
+  "name": "YOLO",
+  "url": "https://github.com/ultralytics/ultralytics",
+  "description": "Real-time object detection with C2PSA module.",
+  "category": "computer-vision",
+  "subcategory": {
+    "id": "specialized-vision-tools",
+    "name": "Specialized Vision Tools"
+  },
+  "order": 145,
+  "openSource": null,
+  "pricing": null,
+  "status": "listed",
+  "source": {
+    "kind": "readme-migration",
+    "migratedAt": "2026-09-21"
+  }
+}

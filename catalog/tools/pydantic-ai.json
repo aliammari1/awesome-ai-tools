@@ -1,0 +1,15 @@
+{
+  "name": "Pydantic AI",
+  "url": "https://pydantic.dev/docs/ai/overview/",
+  "description": "Type-safe Python agent framework with structured outputs and validation.",
+  "category": "ai-agents",
+  "subcategory": null,
+  "order": 4,
+  "openSource": null,
+  "pricing": null,
+  "status": "listed",
+  "source": {
+    "kind": "readme-migration",
+    "migratedAt": "2026-09-21"
+  }
+}
