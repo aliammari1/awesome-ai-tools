@@ -1,0 +1,15 @@
+{
+  "name": "Browser Use",
+  "url": "https://github.com/browser-use/browser-use",
+  "description": "Library that lets agents control a real browser to complete web tasks.",
+  "category": "ai-agents",
+  "subcategory": null,
+  "order": 10,
+  "openSource": null,
+  "pricing": null,
+  "status": "listed",
+  "source": {
+    "kind": "readme-migration",
+    "migratedAt": "2026-09-21"
+  }
+}

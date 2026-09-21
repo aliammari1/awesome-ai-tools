@@ -1,0 +1,18 @@
+{
+  "name": "AI Dungeon",
+  "url": "https://aidungeon.io/",
+  "description": "AI-powered text adventure and storytelling.",
+  "category": "gaming-and-entertainment",
+  "subcategory": {
+    "id": "entertainment-and-media",
+    "name": "Entertainment & Media"
+  },
+  "order": 318,
+  "openSource": null,
+  "pricing": null,
+  "status": "listed",
+  "source": {
+    "kind": "readme-migration",
+    "migratedAt": "2026-09-21"
+  }
+}

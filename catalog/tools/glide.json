@@ -1,0 +1,18 @@
+{
+  "name": "Glide",
+  "url": "https://www.glideapps.com/",
+  "description": "No-code app builder.",
+  "category": "no-code-low-code-ai",
+  "subcategory": {
+    "id": "ai-app-builders",
+    "name": "AI App Builders"
+  },
+  "order": 328,
+  "openSource": null,
+  "pricing": null,
+  "status": "listed",
+  "source": {
+    "kind": "readme-migration",
+    "migratedAt": "2026-09-21"
+  }
+}

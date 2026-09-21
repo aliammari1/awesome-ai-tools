@@ -1,86 +1,35 @@
 # Awesome AI Tools [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
-<!-- TODO: add hero banner once generated — see assets/BANNER.md
-<p align="center"><img src="assets/banner.png" alt="Awesome AI Tools" width="100%"></p>
--->
+> A curated catalog of **384 AI tools** across **19 categories**.
+> Browse the searchable directory at **https://docs.aliammari.dev**.
 
-> ⭐ **Star to bookmark — updated weekly.** A hand-picked, quality-gated map of the AI tool landscape (including a dedicated **AI Agents** section for 2026). New tools are reviewed and added every week.
->
-> 🔎 **[Browse the live, searchable list →](https://docs.aliammari.com)** — the same catalog as a fast, multilingual (EN · FR · AR · ES · DE · 中文 · 日本語) site built with Astro + Starlight on Cloudflare Pages.
-
-Artificial intelligence tools are software applications that utilize machine learning models, natural language processing, and computer vision to automate, enhance, and streamline real-world tasks across text, code, image, audio, video and research.
-
-Why this list? It is hand-picked and quality-gated — actively-maintained, reachable, non-duplicate tools — not an auto-scraped dump, with a multilingual companion site (see Footnotes).
-
+The catalog source of truth is `catalog/tools/*.json`. This README is generated from that structured catalog; edit catalog records instead of editing tool entries here.
 
 ## Contents
+
 - [AI Agents](#ai-agents)
 - [Productivity](#productivity)
-  - [Time Management & Scheduling](#time-management--scheduling)
-  - [Task & Project Management](#task--project-management)
-  - [Email & Communication](#email--communication)
 - [Creativity & Design](#creativity--design)
-  - [Image Generation & Art](#image-generation--art)
-  - [Design Tools](#design-tools)
 - [Communication & Writing](#communication--writing)
-  - [Writing Assistants](#writing-assistants)
-  - [Content Creation](#content-creation)
-  - [Translation & Localization](#translation--localization)
 - [Data Science & Analytics](#data-science--analytics)
-  - [Machine Learning Platforms](#machine-learning-platforms)
-  - [Data Analysis & Visualization](#data-analysis--visualization)
-  - [Research Tools](#research-tools)
 - [Natural Language Processing](#natural-language-processing)
-  - [NLP Libraries & Tools](#nlp-libraries--tools)
-  - [NLP APIs & Services](#nlp-apis--services)
 - [Computer Vision](#computer-vision)
-  - [Image Recognition & Analysis](#image-recognition--analysis)
-  - [Specialized Vision Tools](#specialized-vision-tools)
 - [Audio & Music](#audio--music)
-  - [Music Generation & Composition](#music-generation--composition)
-  - [Voice & Speech](#voice--speech)
 - [Video & Media](#video--media)
-  - [Video Creation & Editing](#video-creation--editing)
-  - [Video Enhancement & Effects](#video-enhancement--effects)
 - [Code Generation & Development](#code-generation--development)
-  - [AI Coding Assistants](#ai-coding-assistants)
-  - [Development Tools](#development-tools)
-  - [Code Analysis & Review](#code-analysis--review)
 - [AI Search & Research](#ai-search--research)
-  - [AI-Powered Search Engines](#ai-powered-search-engines)
-  - [Research & Knowledge Tools](#research--knowledge-tools)
 - [Large Language Models](#large-language-models)
-  - [General Purpose LLMs](#general-purpose-llms)
-  - [Open Source LLMs](#open-source-llms)
-  - [LLM Tools & Frameworks](#llm-tools--frameworks)
 - [Research & Education](#research--education)
-  - [Educational AI Tools](#educational-ai-tools)
-  - [Research Platforms](#research-platforms)
 - [Business & Marketing](#business--marketing)
-  - [Marketing & Sales](#marketing--sales)
-  - [E-commerce & Retail](#e-commerce--retail)
-  - [Career & Job Search](#career--job-search)
 - [Gaming & Entertainment](#gaming--entertainment)
-  - [Game Development](#game-development)
-  - [Entertainment & Media](#entertainment--media)
 - [No-Code/Low-Code AI](#no-codelow-code-ai)
-  - [AI App Builders](#ai-app-builders)
-  - [Chatbot Builders](#chatbot-builders)
 - [AI Safety & Ethics](#ai-safety--ethics)
-  - [AI Safety Tools](#ai-safety-tools)
-  - [AI Ethics & Governance](#ai-ethics--governance)
 - [Miscellaneous](#miscellaneous)
-  - [AI Infrastructure & MLOps](#ai-infrastructure--mlops)
-  - [AI Agents & Automation](#ai-agents--automation)
-  - [Specialized AI Applications](#specialized-ai-applications)
 - [Getting Started](#getting-started)
-  - [Learning Resources](#learning-resources)
-
-
 
 ## AI Agents
 
-The fastest-moving corner of the field in 2026: autonomous and semi-autonomous systems that plan, use tools, and act.For agent *frameworks and orchestration*, see also **AI Agents & Automation** (under Miscellaneous); for coding agents, see **AI Coding Assistants** (under Code Generation & Development).
+Agent SDKs, autonomous systems, orchestration, tool use, memory, and browser automation.
 
 - [OpenAI Agents SDK](https://openai.github.io/openai-agents-python/) - Lightweight framework for multi-agent workflows with handoffs and guardrails.
 - [Model Context Protocol](https://modelcontextprotocol.io/) - Open standard for connecting AI agents to tools and data sources.
@@ -95,6 +44,8 @@ The fastest-moving corner of the field in 2026: autonomous and semi-autonomous s
 - [Browser Use](https://github.com/browser-use/browser-use) - Library that lets agents control a real browser to complete web tasks.
 
 ## Productivity
+
+Scheduling, task management, project workflows, email, and day-to-day work automation.
 
 ### Time Management & Scheduling
 
@@ -133,9 +84,9 @@ The fastest-moving corner of the field in 2026: autonomous and semi-autonomous s
 - [Mailstrom](https://mailstrom.co) - Bulk email cleanup with AI.
 - [Spike](https://www.spikenow.com/) - Conversational email with AI features.
 
-
-
 ## Creativity & Design
+
+Image generation, visual design, creative production, and design-assistance tools.
 
 ### Image Generation & Art
 
@@ -155,7 +106,7 @@ The fastest-moving corner of the field in 2026: autonomous and semi-autonomous s
 - [Freepik AI](https://www.freepik.com/ai) - AI image generator combining multiple models.
 - [Playground AI](https://playground.com/) - Free AI image generator with mixed image editing.
 - [Fotor AI](https://www.fotor.com/ai-image-generator/) - AI image generator with editing suite.
-- [Krea AI](https://krea.ai/) - Real-time AI image generation with live canvas editing.
+- [Krea AI](https://www.krea.ai/) - Real-time AI image generation with live canvas editing.
 - [Google Imagen](https://deepmind.google/technologies/imagen/) - Google's photorealistic image model.
 - [Jasper Art](https://www.jasper.ai/art) - AI art generation for marketers.
 - [BlueWillow](https://www.bluewillow.ai/) - Free AI image generator.
@@ -176,9 +127,9 @@ The fastest-moving corner of the field in 2026: autonomous and semi-autonomous s
 - [Brandmark](https://brandmark.io/) - AI brand identity generator with color palettes.
 - [Looka](https://looka.com/) - AI logo maker with full brand kit.
 
-
-
 ## Communication & Writing
+
+Writing, content creation, translation, localization, and communication assistance.
 
 ### Writing Assistants
 
@@ -218,9 +169,9 @@ The fastest-moving corner of the field in 2026: autonomous and semi-autonomous s
 - [Linguee](https://www.linguee.com/) - Dictionary with translation examples.
 - [Reverso](https://www.reverso.net/) - Translation with context examples.
 
-
-
 ## Data Science & Analytics
+
+Machine learning platforms, analytics, visualization, and data-focused research tools.
 
 ### Machine Learning Platforms
 
@@ -255,9 +206,9 @@ The fastest-moving corner of the field in 2026: autonomous and semi-autonomous s
 - [Google Colab](https://colab.research.google.com/) - Free cloud-based notebooks.
 - [Kaggle](https://www.kaggle.com/) - Data science competition platform.
 
-
-
 ## Natural Language Processing
+
+Libraries, APIs, and services for language understanding and text processing.
 
 ### NLP Libraries & Tools
 
@@ -276,9 +227,9 @@ The fastest-moving corner of the field in 2026: autonomous and semi-autonomous s
 - [Amazon Comprehend](https://aws.amazon.com/comprehend/) - AWS NLP service.
 - [IBM Watson Natural Language Understanding](https://www.ibm.com/cloud/watson-natural-language-understanding) - IBM's NLP service.
 
-
-
 ## Computer Vision
+
+Image recognition, visual analysis, and specialized computer-vision applications.
 
 ### Image Recognition & Analysis
 
@@ -301,9 +252,9 @@ The fastest-moving corner of the field in 2026: autonomous and semi-autonomous s
 - [Face++](https://www.faceplusplus.com/) - Face recognition platform.
 - [DeepLobe](https://deeplobe.ai/) - Flexible computer vision across images, video, and text.
 
-
-
 ## Audio & Music
+
+Music generation, voice, speech, transcription, and audio-production tools.
 
 ### Music Generation & Composition
 
@@ -337,9 +288,9 @@ The fastest-moving corner of the field in 2026: autonomous and semi-autonomous s
 - [Resemble AI](https://www.resemble.ai/) - AI voice cloning with real-time synthesis and emotion control.
 - [Krisp](https://krisp.ai/) - AI-powered noise cancellation and meeting transcription.
 
-
-
 ## Video & Media
+
+Video generation, editing, enhancement, effects, and media-production tools.
 
 ### Video Creation & Editing
 
@@ -370,9 +321,9 @@ The fastest-moving corner of the field in 2026: autonomous and semi-autonomous s
 
 - [DaVinci Resolve](https://www.blackmagicdesign.com/products/davinciresolve/) - Video editing with AI features.
 
-
-
 ## Code Generation & Development
+
+Coding assistants, developer tools, code analysis, and software-engineering automation.
 
 ### AI Coding Assistants
 
@@ -412,9 +363,9 @@ The fastest-moving corner of the field in 2026: autonomous and semi-autonomous s
 - [DeepCode](https://www.deepcode.ai/) - AI-powered code review.
 - [SonarQube](https://www.sonarqube.org/) - Code quality analysis.
 
-
-
 ## AI Search & Research
+
+AI search engines, research assistants, knowledge discovery, and evidence-gathering tools.
 
 ### AI-Powered Search Engines
 
@@ -424,7 +375,6 @@ The fastest-moving corner of the field in 2026: autonomous and semi-autonomous s
 - [Google AI Overview](https://ai.google/) - AI-enhanced search feature.
 - [Genspark](https://genspark.ai/) - AI search engine with multi-agent architecture and Sparkpages.
 - [You.com](https://you.com/) - AI search with personalization, privacy focus, and custom AI modes.
-- [Phind](https://www.phind.com/) - Developer-focused AI search engine with code generation.
 - [Kagi](https://kagi.com/) - AI search engine.
 - [Bing Chat](https://www.microsoft.com/en-us/edge/features/bing-chat) - Microsoft's AI-powered search with Copilot integration.
 - [Brave Search](https://search.brave.com/) - Independent search with AI Summarizer and privacy focus.
@@ -436,17 +386,16 @@ The fastest-moving corner of the field in 2026: autonomous and semi-autonomous s
 - [Semantic Scholar](https://www.semanticscholar.org/) - AI-powered academic research tool.
 - [Elicit](https://elicit.org/) - AI research assistant for literature review.
 - [NotebookLM](https://notebooklm.google/) - Google's AI research and note-taking assistant.
-- [Deep Research](https://openai.com/deep-research) - Research assistant.
+- [Deep Research](https://openai.com/index/introducing-deep-research/) - OpenAI research agent for multi-step web research with cited reports.
 - [ResearchGate](https://www.researchgate.net/) - Scientific network with AI features.
 - [Consensus](https://consensus.app/) - AI-powered research engine for scientific papers.
 - [Scite](https://scite.ai/) - Smart citations for research validation.
 - [Connected Papers](https://www.connectedpapers.com/) - Visual academic paper exploration.
 - [CiteMe](https://citeme.app/) - AI-powered academic citation generator that searches 11+ scholarly databases and formats references in 40+ citation styles.
-- [BGPT MCP](https://github.com/connerlambden/bgpt-mcp) - Hosted MCP server for searching scientific papers with full-text experimental data (50 free searches).
-
-
 
 ## Large Language Models
+
+General-purpose models, open models, and frameworks used to build with LLMs.
 
 ### General Purpose LLMs
 
@@ -481,9 +430,9 @@ The fastest-moving corner of the field in 2026: autonomous and semi-autonomous s
 - [Anyscale](https://www.anyscale.com/) - Scalable LLM deployment with Ray framework.
 - [Future AGI](https://github.com/future-agi/future-agi) - Open-source self-hostable end-to-end agent engineering and optimization platform unifying tracing, evaluation, simulation, datasets, gateway, and guardrails in one feedback loop.
 
-
-
 ## Research & Education
+
+Educational assistants, learning tools, academic research, and research platforms.
 
 ### Educational AI Tools
 
@@ -504,9 +453,9 @@ The fastest-moving corner of the field in 2026: autonomous and semi-autonomous s
 - [arXiv](https://arxiv.org/) - Open-access research archive.
 - [Google Scholar](https://scholar.google.com/) - Academic search engine.
 
-
-
 ## Business & Marketing
+
+Marketing, sales, e-commerce, retail, career, and job-search tools.
 
 ### Marketing & Sales
 
@@ -536,9 +485,9 @@ The fastest-moving corner of the field in 2026: autonomous and semi-autonomous s
 - [Resume Worded](https://resumeworded.com/) - AI resume and LinkedIn feedback with score and targeted advice.
 - [Kickresume](https://www.kickresume.com/) - AI resume builder with templates and job matching.
 
-
-
 ## Gaming & Entertainment
+
+Game-development tools and AI applications for entertainment and interactive media.
 
 ### Game Development
 
@@ -560,9 +509,9 @@ The fastest-moving corner of the field in 2026: autonomous and semi-autonomous s
 - [NovelAI](https://novelai.net/) - AI storytelling and image generation platform.
 - [Chai](https://chai.ml/) - Platform for chatting with AI personalities.
 
-
-
 ## No-Code/Low-Code AI
+
+AI application builders, chatbot builders, and tools for creating without traditional coding.
 
 ### AI App Builders
 
@@ -595,9 +544,9 @@ The fastest-moving corner of the field in 2026: autonomous and semi-autonomous s
 - [Dante AI](https://dante-ai.com/) - AI chatbot builder with knowledge base and multi-platform deployment.
 - [Coze](https://www.coze.com/) - ByteDance's AI chatbot platform with plugins and workflows.
 
-
-
 ## AI Safety & Ethics
+
+Safety evaluation, governance, responsible-AI, and risk-management tools.
 
 ### AI Safety Tools
 
@@ -611,9 +560,9 @@ The fastest-moving corner of the field in 2026: autonomous and semi-autonomous s
 - [Microsoft Responsible AI](https://www.microsoft.com/en-us/ai/responsible-ai) - AI ethics framework.
 - [Google AI Principles](https://ai.google/principles/) - AI ethics guidelines.
 
-
-
 ## Miscellaneous
+
+Infrastructure, MLOps, automation, and specialized tools that span multiple categories.
 
 ### AI Infrastructure & MLOps
 
@@ -621,7 +570,6 @@ The fastest-moving corner of the field in 2026: autonomous and semi-autonomous s
 - [Kubeflow](https://www.kubeflow.org/) - ML workflows on Kubernetes with pipelines and serving.
 - [DVC](https://dvc.org/) - Data version control for ML projects with experiment tracking.
 - [Weights & Biases](https://wandb.ai/) - ML experiment tracking with Weave for LLM evaluation.
-- [Neptune](https://neptune.ai/) - ML metadata store with experiment management and model registry.
 - [Estuary Flow](https://estuary.dev/) - Real-time data automation platform with low-latency streaming.
 - [Informatica](https://www.informatica.com/) - Data integration with AI-powered transformations and CLAIRE.
 - [Alteryx](https://www.alteryx.com/) - Data analytics and automation with AI assistant AiDIN.
@@ -654,9 +602,9 @@ The fastest-moving corner of the field in 2026: autonomous and semi-autonomous s
 - [ONNX](https://onnx.ai/) - Open neural network exchange.
 - [Apache MXNet](https://mxnet.apache.org/) - Deep learning framework.
 
-
-
 ## Getting Started
+
+Learning resources and practical starting points for working with modern AI tools.
 
 ### Learning Resources
 
@@ -666,26 +614,8 @@ The fastest-moving corner of the field in 2026: autonomous and semi-autonomous s
 - [Towards Data Science](https://towardsdatascience.com/) - Medium publication for data science.
 - [ML Paper Implementations](https://github.com/lucidrains) - Research paper implementations.
 
-
-
 ## Contributing
 
-Contributions are welcome! See [CONTRIBUTING.md](CONTRIBUTING.md) for the quality bar and
-submission format. New pull requests get an automated [`awesome-lint`](https://github.com/sindresorhus/awesome-lint)
-and [`lychee`](https://github.com/lycheeverse/lychee) link check, plus an advisory AI pass
-that suggests a category, flags duplicates, and checks whether a linked repo is archived.
+See [CONTRIBUTING.md](CONTRIBUTING.md). New and updated tools belong in `catalog/tools/`; CI validates the catalog, regenerates this README, checks links, and builds the site.
 
-This list is published as a multilingual documentation site (English, Français, العربية,
-Español, Deutsch, 中文, 日本語) built with Astro + Starlight — linked under Footnotes.
-
-> **GitHub topics / About:** this repository is tagged
-> [`awesome`](https://github.com/topics/awesome) and
-> [`awesome-ai-tools`](https://github.com/topics/awesome-ai-tools) so it surfaces in the
-> GitHub topic feeds and awesome-list aggregators.
-
-## Footnotes
-
-- Live site / docs (linked at the top of this page) — searchable, multilingual (7 languages), Astro + Starlight on Cloudflare Pages.
-- [Report Issues](https://github.com/aliammari1/awesome-ai-tools/issues)
-- Last updated: June 2026 — reviewed and updated weekly.
-- Maintained by [Ali Ammari](https://github.com/aliammari1).
+**License:** [CC0 1.0 Universal](LICENSE).

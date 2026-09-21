@@ -1,0 +1,18 @@
+{
+  "name": "Amazon Comprehend",
+  "url": "https://aws.amazon.com/comprehend/",
+  "description": "AWS NLP service.",
+  "category": "natural-language-processing",
+  "subcategory": {
+    "id": "nlp-apis-and-services",
+    "name": "NLP APIs & Services"
+  },
+  "order": 134,
+  "openSource": null,
+  "pricing": null,
+  "status": "listed",
+  "source": {
+    "kind": "readme-migration",
+    "migratedAt": "2026-09-21"
+  }
+}

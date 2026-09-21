@@ -1,0 +1,77 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import LegacyLocaleNotice from '../../components/LegacyLocaleNotice.astro';
+import Directory from '../../components/Directory.astro';
+import { getCatalog, countByCategory } from '../../lib/catalog';
+import { locales, isLocale } from '../../lib/locales';
+
+export function getStaticPaths() {
+  return locales.map((locale) => ({ params: { locale } }));
+}
+
+const requested = Astro.params.locale;
+if (!isLocale(requested)) throw new Error('Unsupported locale');
+const locale = requested;
+
+const { tools, categories } = await getCatalog();
+const counts = countByCategory(tools);
+const featuredCategories = [...categories]
+  .sort((a, b) => (counts[b.id] ?? 0) - (counts[a.id] ?? 0))
+  .slice(0, 8);
+---
+<BaseLayout
+  title="Awesome AI Tools"
+  description={'Explore ' + tools.length + ' AI tools across ' + categories.length + ' categories with fast search, useful filters, saved lists, and transparent catalog metadata.'}
+  locale={locale}
+>
+  <LegacyLocaleNotice locale={locale} />
+
+  <section class="hero">
+    <div class="shell hero-grid">
+      <div>
+        <p class="eyebrow">Independent AI tools directory</p>
+        <h1>Find tools for the work you actually need to do.</h1>
+        <p class="hero-copy">
+          Search a repository-backed catalog, narrow it with useful filters, save candidates, and compare tools without invented ratings or pay-to-rank claims.
+        </p>
+        <div class="hero-actions">
+          <a class="primary-button" href="#directory">Browse all tools</a>
+          <a class="secondary-button" href={'/' + locale + '/about/methodology/'}>How curation works</a>
+        </div>
+      </div>
+
+      <aside class="hero-aside" aria-label="Catalog summary">
+        <strong>{tools.length}</strong>
+        <p>tools in the current catalog</p>
+        <hr />
+        <strong>{categories.length}</strong>
+        <p>categories with one structured source of truth</p>
+      </aside>
+    </div>
+  </section>
+
+  <section class="category-section">
+    <div class="shell">
+      <div class="section-heading">
+        <div>
+          <h2>Browse by category</h2>
+          <p>Start broad, then refine with the directory filters.</p>
+        </div>
+      </div>
+
+      <div class="category-grid">
+        {featuredCategories.map((category) => (
+          <a class="category-card" href={'/' + locale + '/categories/' + category.id + '/'}>
+            <div>
+              <strong>{category.name}</strong>
+              <p>{category.description}</p>
+            </div>
+            <span class="category-count">{counts[category.id] ?? 0} tools</span>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <Directory tools={tools} categories={categories} locale={locale} />
+</BaseLayout>

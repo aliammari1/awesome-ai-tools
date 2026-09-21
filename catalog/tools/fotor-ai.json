@@ -1,0 +1,18 @@
+{
+  "name": "Fotor AI",
+  "url": "https://www.fotor.com/ai-image-generator/",
+  "description": "AI image generator with editing suite.",
+  "category": "creativity-and-design",
+  "subcategory": {
+    "id": "image-generation-and-art",
+    "name": "Image Generation & Art"
+  },
+  "order": 54,
+  "openSource": null,
+  "pricing": null,
+  "status": "listed",
+  "source": {
+    "kind": "readme-migration",
+    "migratedAt": "2026-09-21"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "name": "Bubble",
+  "url": "https://bubble.io/",
+  "description": "Visual programming platform.",
+  "category": "no-code-low-code-ai",
+  "subcategory": {
+    "id": "ai-app-builders",
+    "name": "AI App Builders"
+  },
+  "order": 327,
+  "openSource": null,
+  "pricing": null,
+  "status": "listed",
+  "source": {
+    "kind": "readme-migration",
+    "migratedAt": "2026-09-21"
+  }
+}

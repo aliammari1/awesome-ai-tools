@@ -1,0 +1,18 @@
+{
+  "name": "Luma Ray",
+  "url": "https://lumalabs.ai/",
+  "description": "AI video generation with dynamic compositions.",
+  "category": "video-and-media",
+  "subcategory": {
+    "id": "video-creation-and-editing",
+    "name": "Video Creation & Editing"
+  },
+  "order": 183,
+  "openSource": null,
+  "pricing": null,
+  "status": "listed",
+  "source": {
+    "kind": "readme-migration",
+    "migratedAt": "2026-09-21"
+  }
+}

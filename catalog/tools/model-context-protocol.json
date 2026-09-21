@@ -1,0 +1,15 @@
+{
+  "name": "Model Context Protocol",
+  "url": "https://modelcontextprotocol.io/",
+  "description": "Open standard for connecting AI agents to tools and data sources.",
+  "category": "ai-agents",
+  "subcategory": null,
+  "order": 1,
+  "openSource": null,
+  "pricing": null,
+  "status": "listed",
+  "source": {
+    "kind": "readme-migration",
+    "migratedAt": "2026-09-21"
+  }
+}

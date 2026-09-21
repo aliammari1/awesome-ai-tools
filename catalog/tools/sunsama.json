@@ -1,0 +1,18 @@
+{
+  "name": "Sunsama",
+  "url": "https://sunsama.com/",
+  "description": "Daily planner with time-blocking and calendar integrations.",
+  "category": "productivity",
+  "subcategory": {
+    "id": "time-management-and-scheduling",
+    "name": "Time Management & Scheduling"
+  },
+  "order": 21,
+  "openSource": null,
+  "pricing": null,
+  "status": "listed",
+  "source": {
+    "kind": "readme-migration",
+    "migratedAt": "2026-09-21"
+  }
+}

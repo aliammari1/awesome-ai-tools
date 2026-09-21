@@ -1,0 +1,18 @@
+{
+  "name": "Simplified AI",
+  "url": "https://simplified.com/",
+  "description": "All-in-one AI platform for design, video, and content.",
+  "category": "creativity-and-design",
+  "subcategory": {
+    "id": "design-tools",
+    "name": "Design Tools"
+  },
+  "order": 64,
+  "openSource": null,
+  "pricing": null,
+  "status": "listed",
+  "source": {
+    "kind": "readme-migration",
+    "migratedAt": "2026-09-21"
+  }
+}

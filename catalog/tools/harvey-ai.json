@@ -1,0 +1,18 @@
+{
+  "name": "Harvey AI",
+  "url": "https://harvey.ai/",
+  "description": "AI agent for automating legal workflows and contract review.",
+  "category": "miscellaneous",
+  "subcategory": {
+    "id": "ai-agents-and-automation",
+    "name": "AI Agents & Automation"
+  },
+  "order": 376,
+  "openSource": null,
+  "pricing": null,
+  "status": "listed",
+  "source": {
+    "kind": "readme-migration",
+    "migratedAt": "2026-09-21"
+  }
+}

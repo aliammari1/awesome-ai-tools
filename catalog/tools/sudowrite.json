@@ -1,0 +1,18 @@
+{
+  "name": "Sudowrite",
+  "url": "https://www.sudowrite.com/",
+  "description": "AI writing partner for creative fiction.",
+  "category": "communication-and-writing",
+  "subcategory": {
+    "id": "content-creation",
+    "name": "Content Creation"
+  },
+  "order": 91,
+  "openSource": null,
+  "pricing": null,
+  "status": "listed",
+  "source": {
+    "kind": "readme-migration",
+    "migratedAt": "2026-09-21"
+  }
+}

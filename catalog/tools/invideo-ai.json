@@ -1,0 +1,18 @@
+{
+  "name": "InVideo AI",
+  "url": "https://invideo.io/",
+  "description": "AI-powered video creation with templates.",
+  "category": "video-and-media",
+  "subcategory": {
+    "id": "video-creation-and-editing",
+    "name": "Video Creation & Editing"
+  },
+  "order": 192,
+  "openSource": null,
+  "pricing": null,
+  "status": "listed",
+  "source": {
+    "kind": "readme-migration",
+    "migratedAt": "2026-09-21"
+  }
+}

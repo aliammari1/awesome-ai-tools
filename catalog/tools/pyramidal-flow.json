@@ -1,0 +1,18 @@
+{
+  "name": "Pyramidal Flow",
+  "url": "https://pyramid-flow.github.io/",
+  "description": "Open-source AI video generation model.",
+  "category": "video-and-media",
+  "subcategory": {
+    "id": "video-creation-and-editing",
+    "name": "Video Creation & Editing"
+  },
+  "order": 185,
+  "openSource": true,
+  "pricing": null,
+  "status": "listed",
+  "source": {
+    "kind": "readme-migration",
+    "migratedAt": "2026-09-21"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "name": "Clari",
+  "url": "https://www.clari.com/",
+  "description": "Revenue platform with AI forecasting and pipeline management.",
+  "category": "business-and-marketing",
+  "subcategory": {
+    "id": "marketing-and-sales",
+    "name": "Marketing & Sales"
+  },
+  "order": 291,
+  "openSource": null,
+  "pricing": null,
+  "status": "listed",
+  "source": {
+    "kind": "readme-migration",
+    "migratedAt": "2026-09-21"
+  }
+}

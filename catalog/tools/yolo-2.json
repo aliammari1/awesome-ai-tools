@@ -1,0 +1,18 @@
+{
+  "name": "YOLO",
+  "url": "https://pjreddie.com/darknet/yolo/",
+  "description": "Real-time object detection framework.",
+  "category": "computer-vision",
+  "subcategory": {
+    "id": "specialized-vision-tools",
+    "name": "Specialized Vision Tools"
+  },
+  "order": 146,
+  "openSource": null,
+  "pricing": null,
+  "status": "listed",
+  "source": {
+    "kind": "readme-migration",
+    "migratedAt": "2026-09-21"
+  }
+}

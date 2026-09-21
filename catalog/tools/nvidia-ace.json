@@ -1,0 +1,18 @@
+{
+  "name": "NVIDIA ACE",
+  "url": "https://www.nvidia.com/en-us/ai/",
+  "description": "AI-driven digital humans with speech, animation, and lip sync.",
+  "category": "gaming-and-entertainment",
+  "subcategory": {
+    "id": "game-development",
+    "name": "Game Development"
+  },
+  "order": 311,
+  "openSource": null,
+  "pricing": null,
+  "status": "listed",
+  "source": {
+    "kind": "readme-migration",
+    "migratedAt": "2026-09-21"
+  }
+}

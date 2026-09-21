@@ -1,0 +1,18 @@
+{
+  "name": "NovelAI",
+  "url": "https://novelai.net/",
+  "description": "AI storytelling and image generation platform.",
+  "category": "gaming-and-entertainment",
+  "subcategory": {
+    "id": "entertainment-and-media",
+    "name": "Entertainment & Media"
+  },
+  "order": 319,
+  "openSource": null,
+  "pricing": null,
+  "status": "listed",
+  "source": {
+    "kind": "readme-migration",
+    "migratedAt": "2026-09-21"
+  }
+}

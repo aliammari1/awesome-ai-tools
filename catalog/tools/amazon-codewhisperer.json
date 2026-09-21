@@ -1,0 +1,18 @@
+{
+  "name": "Amazon CodeWhisperer",
+  "url": "https://aws.amazon.com/codewhisperer/",
+  "description": "AI coding companion with security scanning by AWS.",
+  "category": "code-generation-and-development",
+  "subcategory": {
+    "id": "ai-coding-assistants",
+    "name": "AI Coding Assistants"
+  },
+  "order": 207,
+  "openSource": null,
+  "pricing": null,
+  "status": "listed",
+  "source": {
+    "kind": "readme-migration",
+    "migratedAt": "2026-09-21"
+  }
+}

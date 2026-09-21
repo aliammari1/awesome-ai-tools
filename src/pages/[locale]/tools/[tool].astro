@@ -1,0 +1,138 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import LegacyLocaleNotice from '../../../components/LegacyLocaleNotice.astro';
+import ToolCard from '../../../components/ToolCard.astro';
+import { getCatalog } from '../../../lib/catalog';
+import { locales, isLocale } from '../../../lib/locales';
+
+export async function getStaticPaths() {
+  const { tools } = await getCatalog();
+  return locales.flatMap((locale) =>
+    tools.map((tool) => ({ params: { locale, tool: tool.id } }))
+  );
+}
+
+const requested = Astro.params.locale;
+if (!isLocale(requested)) throw new Error('Unsupported locale');
+const locale = requested;
+const toolId = Astro.params.tool;
+const { tools, categories } = await getCatalog();
+const tool = tools.find((entry) => entry.id === toolId);
+if (!tool) throw new Error('Unknown tool');
+
+const category = categories.find((entry) => entry.id === tool.category);
+const categoryName = category?.name ?? tool.category;
+const related = tools
+  .filter((entry) => entry.category === tool.category && entry.id !== tool.id)
+  .slice(0, 6);
+
+const initials = tool.name
+  .split(/\s+/)
+  .filter(Boolean)
+  .slice(0, 2)
+  .map((part) => part[0])
+  .join('');
+
+const pricingLabel: Record<string, string> = {
+  free: 'Free',
+  freemium: 'Freemium',
+  paid: 'Paid',
+  'contact-sales': 'Contact sales',
+};
+---
+<BaseLayout title={tool.name} description={tool.description} locale={locale}>
+  <LegacyLocaleNotice locale={locale} />
+
+  <article class="tool-detail">
+    <a class="back-link" href={'/' + locale + '/categories/' + tool.category + '/'}>← {categoryName}</a>
+
+    <section class="tool-detail-hero">
+      <div>
+        <div class="tool-identity">
+          <div class="tool-mark" aria-hidden="true">{initials}</div>
+          <div>
+            <p class="kicker">AI tool</p>
+            <h1>{tool.name}</h1>
+          </div>
+        </div>
+
+        <p class="tool-detail-lede">{tool.description}</p>
+
+        <div class="detail-badges" aria-label="Tool metadata">
+          <span class="meta-chip">{categoryName}</span>
+          {tool.subcategory && <span class="meta-chip">{tool.subcategory.name}</span>}
+          {tool.pricing && <span class="meta-chip">{pricingLabel[tool.pricing]}</span>}
+          {tool.openSource === true && <span class="meta-chip success">Open source</span>}
+        </div>
+
+        <div class="actions-row">
+          <a class="primary-button" href={tool.url} target="_blank" rel="noopener noreferrer">Visit official site ↗</a>
+          <button class="secondary-button" type="button" data-save-tool={tool.id} aria-pressed="false">Save</button>
+          <button class="secondary-button" type="button" data-compare-tool={tool.id} aria-pressed="false">Compare</button>
+        </div>
+      </div>
+
+      <aside class="detail-panel" aria-label="Known catalog data">
+        <dl>
+          <div class="detail-panel-row">
+            <dt>Category</dt>
+            <dd>{categoryName}</dd>
+          </div>
+          <div class="detail-panel-row">
+            <dt>Subcategory</dt>
+            <dd>{tool.subcategory?.name ?? 'Not recorded'}</dd>
+          </div>
+          <div class="detail-panel-row">
+            <dt>Pricing</dt>
+            <dd>{tool.pricing ? pricingLabel[tool.pricing] : 'Not recorded'}</dd>
+          </div>
+          <div class="detail-panel-row">
+            <dt>Open source</dt>
+            <dd>{tool.openSource === true ? 'Yes' : tool.openSource === false ? 'No' : 'Not recorded'}</dd>
+          </div>
+          <div class="detail-panel-row">
+            <dt>Status</dt>
+            <dd>{tool.status === 'listed' ? 'Listed' : tool.status}</dd>
+          </div>
+          <div class="detail-panel-row">
+            <dt>Verification</dt>
+            <dd>Pending</dd>
+          </div>
+        </dl>
+      </aside>
+    </section>
+
+    <section class="detail-body">
+      <div>
+        <h2>Overview</h2>
+        <p>{tool.description}</p>
+
+        <h2>About this catalog entry</h2>
+        <p>
+          This record is intentionally conservative. Metadata that has not been independently checked is shown as “Not recorded” instead of being inferred from marketing copy or generated automatically.
+        </p>
+      </div>
+
+      <aside>
+        <div class="data-note">
+          <strong>Data confidence</strong>
+          <p>
+            This entry was migrated from the repository catalog on September 21, 2026. Migration established structured provenance, but it is not treated as a fresh verification of pricing, availability, or product claims.
+          </p>
+          <a href={'/' + locale + '/about/methodology/'}>Read the methodology →</a>
+        </div>
+      </aside>
+    </section>
+
+    {related.length > 0 && (
+      <section class="related-section">
+        <h2>More in {categoryName}</h2>
+        <div class="related-grid">
+          {related.map((entry) => (
+            <ToolCard tool={entry} locale={locale} categoryName={categoryName} />
+          ))}
+        </div>
+      </section>
+    )}
+  </article>
+</BaseLayout>

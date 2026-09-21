@@ -1,0 +1,18 @@
+{
+  "name": "IBM Watson Natural Language Understanding",
+  "url": "https://www.ibm.com/cloud/watson-natural-language-understanding",
+  "description": "IBM's NLP service.",
+  "category": "natural-language-processing",
+  "subcategory": {
+    "id": "nlp-apis-and-services",
+    "name": "NLP APIs & Services"
+  },
+  "order": 135,
+  "openSource": null,
+  "pricing": null,
+  "status": "listed",
+  "source": {
+    "kind": "readme-migration",
+    "migratedAt": "2026-09-21"
+  }
+}

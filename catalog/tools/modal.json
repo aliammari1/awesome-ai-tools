@@ -1,0 +1,18 @@
+{
+  "name": "Modal",
+  "url": "https://modal.com/",
+  "description": "Serverless cloud for AI with GPU instances and autoscaling.",
+  "category": "miscellaneous",
+  "subcategory": {
+    "id": "ai-infrastructure-and-mlops",
+    "name": "AI Infrastructure & MLOps"
+  },
+  "order": 360,
+  "openSource": null,
+  "pricing": null,
+  "status": "listed",
+  "source": {
+    "kind": "readme-migration",
+    "migratedAt": "2026-09-21"
+  }
+}
