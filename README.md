@@ -1,6 +1,6 @@
 # Awesome AI Tools [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
-> A curated catalog of **384 AI tools** across **19 categories**.
+> A curated catalog of **385 AI tools** across **19 categories**.
 > Browse the searchable directory at **https://docs.aliammari.dev**.
 
 The catalog source of truth is `catalog/tools/*.json`. This README is generated from that structured catalog; edit catalog records instead of editing tool entries here.
@@ -133,23 +133,23 @@ Writing, content creation, translation, localization, and communication assistan
 
 ### Writing Assistants
 
-- [Anyword](https://anyword.com/) - AI copywriting with performance prediction and brand voice.
-- [Copy.ai](https://www.copy.ai/) - Copywriting assistant with workflows.
-- [Frase](https://www.frase.io/) - AI SEO content creation and optimization with SERP analysis.
 - [Grammarly](https://www.grammarly.com/) - Grammar and style checker with GrammarlyGO AI and tone detection.
-- [Hyperwrite](https://hyperwriteai.com/) - Personal AI writing assistant with AutoWrite and TypeAhead.
-- [Hypotenuse AI](https://hypotenuse.ai/) - AI content generator for e-commerce with product descriptions.
 - [Jasper](https://www.jasper.ai/) - Content generation tool for marketing teams.
-- [Koala Writer](https://koala.sh/) - AI article writer with SEO optimization and real-time data.
-- [ProWritingAid](https://prowritingaid.com/) - Writing editor with AI analysis and style suggestions.
-- [QuillBot](https://quillbot.com/) - AI paraphrasing, grammar, and plagiarism checker with Co-Writer.
-- [README Skills](https://github.com/Shiaoming123/readme-skills#readme) - Evidence-first Agent Skill for auditing and writing repository-matched, multilingual READMEs.
+- [Copy.ai](https://www.copy.ai/) - Copywriting assistant with workflows.
+- [Writesonic](https://writesonic.com/) - AI writing tool with SEO optimization and Chatsonic AI assistant.
 - [Rytr](https://rytr.me/) - AI writing assistant for 40+ use cases in 30+ languages.
-- [Surfer SEO](https://surferseo.com/) - AI-powered content optimization with NLP analysis.
-- [Type.ai](https://type.ai/) - AI writing with customizable LLM models and document editor.
+- [Koala Writer](https://koala.sh/) - AI article writer with SEO optimization and real-time data.
+- [QuillBot](https://quillbot.com/) - AI paraphrasing, grammar, and plagiarism checker with Co-Writer.
+- [ProWritingAid](https://prowritingaid.com/) - Writing editor with AI analysis and style suggestions.
 - [Wordtune](https://www.wordtune.com/) - AI writing companion with rewriting, summarization, and tone adjustment.
 - [Writer](https://writer.com/) - AI writing platform for teams with brand consistency and Palmyra LLMs.
-- [Writesonic](https://writesonic.com/) - AI writing tool with SEO optimization and Chatsonic AI assistant.
+- [Anyword](https://anyword.com/) - AI copywriting with performance prediction and brand voice.
+- [Hypotenuse AI](https://hypotenuse.ai/) - AI content generator for e-commerce with product descriptions.
+- [Type.ai](https://type.ai/) - AI writing with customizable LLM models and document editor.
+- [Hyperwrite](https://hyperwriteai.com/) - Personal AI writing assistant with AutoWrite and TypeAhead.
+- [Frase](https://www.frase.io/) - AI SEO content creation and optimization with SERP analysis.
+- [Surfer SEO](https://surferseo.com/) - AI-powered content optimization with NLP analysis.
+- [README Skills](https://github.com/Shiaoming123/readme-skills) - Evidence-first Agent Skill for auditing and writing repository-matched, multilingual READMEs.
 
 ### Content Creation
 
