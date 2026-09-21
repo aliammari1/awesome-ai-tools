@@ -272,6 +272,7 @@ Music generation, voice, speech, transcription, and audio-production tools.
 
 ### Voice & Speech
 
+- [CharaVox](https://charavox.com) - AI voice generation platform with character voices, voice cloning, and studio-quality TTS in 6 languages (en/zh/ja/ko/es/pt). Powered by VoxCPM.
 - [ElevenLabs](https://elevenlabs.io/) - Voice synthesis platform.
 - [Murf AI](https://murf.ai/) - AI voice generator.
 - [Descript](https://www.descript.com/) - Audio/video editing with AI transcription, Overdub voice cloning, and filler word removal.
