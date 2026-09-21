@@ -1,37 +1,48 @@
 name: Weekly Link Check
-# Runs lychee over the whole list on a schedule and opens/updates a single
-# tracking issue listing every dead link, so rot is caught even when nobody
-# is opening PRs.
+
 on:
   schedule:
-    # 08:00 UTC every Monday
     - cron: '0 8 * * 1'
   workflow_dispatch:
+
 permissions:
   contents: read
   issues: write
+
 concurrency:
   group: links-weekly
   cancel-in-progress: true
+
 jobs:
   link-check:
-    name: Scan for dead links
+    name: Scan catalog links
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0 # v7
+
       - name: Run lychee
         id: lychee
         uses: lycheeverse/lychee-action@e7477775783ea5526144ba13e8db5eec57747ce8 # v2.9.0
         with:
+          # Match pull-request link policy. These exclusions are official sites
+          # independently confirmed live but unreliable with Lychee's HTTP client.
           args: >-
             --no-progress
-            --accept 200,206,429
+            --max-concurrency 32
+            --max-retries 5
+            --retry-wait-time 2
+            --timeout 30
+            --accept 200,202,206,403,405,415,429
+            --exclude https://www\\.krea\\.ai/
+            --exclude https://mailstrom\\.co/
+            --exclude https://www\\.clarifai\\.com/
+            --exclude https://www\\.coursera\\.org/browse/data-science/machine-learning
             README.md
-          # Write a Markdown report instead of failing; we surface it as an issue.
           output: ./lychee/out.md
           fail: false
           format: markdown
+
       - name: Find existing tracking issue
         id: find-issue
         env:
@@ -39,6 +50,7 @@ jobs:
         run: |
           number=$(gh issue list --search "Link Checker Report in:title" --state open --json number --jq '.[0].number // empty')
           echo "number=$number" >> "$GITHUB_OUTPUT"
+
       - name: Create or update tracking issue
         if: steps.lychee.outputs.exit_code != 0
         uses: peter-evans/create-issue-from-file@fca9117c27cdc29c6c4db3b86c48e4115a786710 # v6.0.0
@@ -49,12 +61,14 @@ jobs:
           labels: |
             broken-link
             automated
+
       - name: Close tracking issue if resolved
         if: steps.lychee.outputs.exit_code == 0 && steps.find-issue.outputs.number != ''
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          gh issue close "${{ steps.find-issue.outputs.number }}" --comment "All links passing as of $(date -u +%F)."
+          gh issue close "${{ steps.find-issue.outputs.number }}" --comment "All automatically checked links passing as of $(date -u +%F)."
+
       - name: Report success
         if: steps.lychee.outputs.exit_code == 0
-        run: echo "No broken links found. ✅"
+        run: echo "No automatically detected broken links found."
