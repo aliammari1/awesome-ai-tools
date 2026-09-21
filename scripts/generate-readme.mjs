@@ -31,7 +31,7 @@ const lines = [
   '',
 ];
 
-for (const category of categories) lines.push(`- [${category.name}](#${slugify(category.name)})`);
+for (const category of categories) lines.push(`- [${category.name}](#${headingAnchor(category.name)})`);
 lines.push('');
 
 for (const category of categories) {
@@ -60,8 +60,7 @@ lines.push(
   '## Contributing', '',
   'See [CONTRIBUTING.md](CONTRIBUTING.md). New and updated tools belong in `catalog/tools/`; CI validates the catalog, regenerates this README, checks links, and builds the site.',
   '',
-  '## License', '',
-  'CC0 1.0 Universal — see [LICENSE](LICENSE).', ''
+  '**License:** [CC0 1.0 Universal](LICENSE).', ''
 );
 
 const output = lines.join('\n');

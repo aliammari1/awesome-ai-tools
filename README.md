@@ -1,6 +1,6 @@
 # Awesome AI Tools [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
-> A curated catalog of **387 AI tools** across **19 categories**.
+> A curated catalog of **385 AI tools** across **19 categories**.
 > Browse the searchable directory at **https://docs.aliammari.dev**.
 
 The catalog source of truth is `catalog/tools/*.json`. This README is generated from that structured catalog; edit catalog records instead of editing tool entries here.
@@ -9,21 +9,21 @@ The catalog source of truth is `catalog/tools/*.json`. This README is generated 
 
 - [AI Agents](#ai-agents)
 - [Productivity](#productivity)
-- [Creativity & Design](#creativity-and-design)
-- [Communication & Writing](#communication-and-writing)
-- [Data Science & Analytics](#data-science-and-analytics)
+- [Creativity & Design](#creativity--design)
+- [Communication & Writing](#communication--writing)
+- [Data Science & Analytics](#data-science--analytics)
 - [Natural Language Processing](#natural-language-processing)
 - [Computer Vision](#computer-vision)
-- [Audio & Music](#audio-and-music)
-- [Video & Media](#video-and-media)
-- [Code Generation & Development](#code-generation-and-development)
-- [AI Search & Research](#ai-search-and-research)
+- [Audio & Music](#audio--music)
+- [Video & Media](#video--media)
+- [Code Generation & Development](#code-generation--development)
+- [AI Search & Research](#ai-search--research)
 - [Large Language Models](#large-language-models)
-- [Research & Education](#research-and-education)
-- [Business & Marketing](#business-and-marketing)
-- [Gaming & Entertainment](#gaming-and-entertainment)
-- [No-Code/Low-Code AI](#no-code-low-code-ai)
-- [AI Safety & Ethics](#ai-safety-and-ethics)
+- [Research & Education](#research--education)
+- [Business & Marketing](#business--marketing)
+- [Gaming & Entertainment](#gaming--entertainment)
+- [No-Code/Low-Code AI](#no-codelow-code-ai)
+- [AI Safety & Ethics](#ai-safety--ethics)
 - [Miscellaneous](#miscellaneous)
 - [Getting Started](#getting-started)
 
@@ -106,7 +106,7 @@ Image generation, visual design, creative production, and design-assistance tool
 - [Freepik AI](https://www.freepik.com/ai) - AI image generator combining multiple models.
 - [Playground AI](https://playground.com/) - Free AI image generator with mixed image editing.
 - [Fotor AI](https://www.fotor.com/ai-image-generator/) - AI image generator with editing suite.
-- [Krea AI](https://krea.ai/) - Real-time AI image generation with live canvas editing.
+- [Krea AI](https://www.krea.ai/) - Real-time AI image generation with live canvas editing.
 - [Google Imagen](https://deepmind.google/technologies/imagen/) - Google's photorealistic image model.
 - [Jasper Art](https://www.jasper.ai/art) - AI art generation for marketers.
 - [BlueWillow](https://www.bluewillow.ai/) - Free AI image generator.
@@ -393,7 +393,6 @@ AI search engines, research assistants, knowledge discovery, and evidence-gather
 - [Scite](https://scite.ai/) - Smart citations for research validation.
 - [Connected Papers](https://www.connectedpapers.com/) - Visual academic paper exploration.
 - [CiteMe](https://citeme.app/) - AI-powered academic citation generator that searches 11+ scholarly databases and formats references in 40+ citation styles.
-- [BGPT MCP](https://github.com/connerlambden/bgpt-mcp) - Hosted MCP server for searching scientific papers with full-text experimental data (50 free searches).
 
 ## Large Language Models
 
@@ -572,7 +571,6 @@ Infrastructure, MLOps, automation, and specialized tools that span multiple cate
 - [Kubeflow](https://www.kubeflow.org/) - ML workflows on Kubernetes with pipelines and serving.
 - [DVC](https://dvc.org/) - Data version control for ML projects with experiment tracking.
 - [Weights & Biases](https://wandb.ai/) - ML experiment tracking with Weave for LLM evaluation.
-- [Neptune](https://neptune.ai/) - ML metadata store with experiment management and model registry.
 - [Estuary Flow](https://estuary.dev/) - Real-time data automation platform with low-latency streaming.
 - [Informatica](https://www.informatica.com/) - Data integration with AI-powered transformations and CLAIRE.
 - [Alteryx](https://www.alteryx.com/) - Data analytics and automation with AI assistant AiDIN.
@@ -621,6 +619,4 @@ Learning resources and practical starting points for working with modern AI tool
 
 See [CONTRIBUTING.md](CONTRIBUTING.md). New and updated tools belong in `catalog/tools/`; CI validates the catalog, regenerates this README, checks links, and builds the site.
 
-## License
-
-CC0 1.0 Universal — see [LICENSE](LICENSE).
+**License:** [CC0 1.0 Universal](LICENSE).
