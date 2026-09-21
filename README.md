@@ -436,16 +436,17 @@ Educational assistants, learning tools, academic research, and research platform
 
 ### Educational AI Tools
 
-- [Khan Academy](https://www.khanacademy.org/) - Educational platform with Khanmigo AI tutor powered by GPT-4.
+- [Brainly](https://brainly.com/) - Homework help with AI explanations and expert answers.
+- [Carnegie Learning](https://www.carnegielearning.com/) - AI-powered math and literacy solutions for schools.
+- [Cognii](https://www.cognii.com/) - AI tutoring with natural language assessment.
 - [Coursera](https://www.coursera.org/) - Online courses with AI recommendations and career coaching.
 - [Duolingo](https://www.duolingo.com/) - Language learning with Duolingo Max AI features and roleplay.
-- [Socratic by Google](https://socratic.org/) - AI homework helper with step-by-step explanations.
+- [Khan Academy](https://www.khanacademy.org/) - Educational platform with Khanmigo AI tutor powered by GPT-4.
 - [Photomath](https://photomath.com/) - Math problem solver with camera scanning and explanations.
 - [Quizlet](https://quizlet.com/) - AI-powered flashcards and study tools with Q-Chat tutor.
-- [Brainly](https://brainly.com/) - Homework help with AI explanations and expert answers.
+- [Socratic by Google](https://socratic.org/) - AI homework helper with step-by-step explanations.
+- [SummarizAI](https://summarizai.ink) - Chrome extension for AI YouTube summaries, chapters, chat, and Study flashcards.
 - [Synthesis](https://www.synthesis.com/) - AI math tutoring for kids with problem-solving focus.
-- [Cognii](https://www.cognii.com/) - AI tutoring with natural language assessment.
-- [Carnegie Learning](https://www.carnegielearning.com/) - AI-powered math and literacy solutions for schools.
 
 ### Research Platforms
 
