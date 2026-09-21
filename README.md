@@ -272,6 +272,7 @@ Music generation, voice, speech, transcription, and audio-production tools.
 
 ### Voice & Speech
 
+- [AnveVoice](https://anvevoice.app) - Voice AI agent for websites with agentic DOM actions, MCP support, 50+ languages, <700ms latency. Free tier available.
 - [ElevenLabs](https://elevenlabs.io/) - Voice synthesis platform.
 - [Murf AI](https://murf.ai/) - AI voice generator.
 - [Descript](https://www.descript.com/) - Audio/video editing with AI transcription, Overdub voice cloning, and filler word removal.
