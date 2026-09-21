@@ -23,15 +23,19 @@ const categoryTools = tools.filter((tool) => tool.category === category.id);
 ---
 <BaseLayout
   title={category.name}
-  description={`${category.description} Browse ${categoryTools.length} catalog entries.`}
+  description={category.description + ' Browse ' + categoryTools.length + ' catalog entries.'}
   locale={locale}
 >
   <LegacyLocaleNotice locale={locale} />
-  <section class="content-page" style="padding-bottom:1.5rem">
-    <a class="back-link" href={`/${locale}/`}>← All tools</a>
-    <p class="kicker">Category · {categoryTools.length} entries</p>
-    <h1>{category.name}</h1>
-    <p>{category.description}</p>
+
+  <section class="category-hero">
+    <div class="shell">
+      <a class="back-link" href={'/' + locale + '/'}>← All tools</a>
+      <p class="kicker">Category · {categoryTools.length} tools</p>
+      <h1>{category.name}</h1>
+      <p>{category.description}</p>
+    </div>
   </section>
+
   <Directory tools={categoryTools} categories={[category]} locale={locale} />
 </BaseLayout>

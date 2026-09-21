@@ -15,7 +15,7 @@
     "generate:readme": "node scripts/generate-readme.mjs",
     "check:readme": "node scripts/generate-readme.mjs --check",
     "lint:awesome": "awesome-lint",
-    "check": "bun run validate && bun run check:readme && bun run build"
+    "check": "bun run validate && bun run check:readme && bun run lint:awesome && bun run build"
   },
   "dependencies": {
     "astro": "7.3.3"
