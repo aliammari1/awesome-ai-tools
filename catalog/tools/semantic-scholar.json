@@ -1,0 +1,18 @@
+{
+  "name": "Semantic Scholar",
+  "url": "https://www.semanticscholar.org/",
+  "description": "AI-powered academic research tool.",
+  "category": "ai-search-and-research",
+  "subcategory": {
+    "id": "research-and-knowledge-tools",
+    "name": "Research & Knowledge Tools"
+  },
+  "order": 241,
+  "openSource": null,
+  "pricing": null,
+  "status": "listed",
+  "source": {
+    "kind": "readme-migration",
+    "migratedAt": "2026-09-21"
+  }
+}

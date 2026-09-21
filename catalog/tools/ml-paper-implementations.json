@@ -1,0 +1,18 @@
+{
+  "name": "ML Paper Implementations",
+  "url": "https://github.com/lucidrains",
+  "description": "Research paper implementations.",
+  "category": "getting-started",
+  "subcategory": {
+    "id": "learning-resources",
+    "name": "Learning Resources"
+  },
+  "order": 386,
+  "openSource": null,
+  "pricing": null,
+  "status": "listed",
+  "source": {
+    "kind": "readme-migration",
+    "migratedAt": "2026-09-21"
+  }
+}

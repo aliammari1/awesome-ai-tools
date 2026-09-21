@@ -1,0 +1,18 @@
+{
+  "name": "Observable",
+  "url": "https://observablehq.com/",
+  "description": "Collaborative data visualization with AI-assisted coding.",
+  "category": "data-science-and-analytics",
+  "subcategory": {
+    "id": "data-analysis-and-visualization",
+    "name": "Data Analysis & Visualization"
+  },
+  "order": 114,
+  "openSource": null,
+  "pricing": null,
+  "status": "listed",
+  "source": {
+    "kind": "readme-migration",
+    "migratedAt": "2026-09-21"
+  }
+}

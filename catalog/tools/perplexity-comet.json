@@ -1,0 +1,18 @@
+{
+  "name": "Perplexity Comet",
+  "url": "https://www.perplexity.ai/comet",
+  "description": "AI-powered browser with search features.",
+  "category": "ai-search-and-research",
+  "subcategory": {
+    "id": "ai-powered-search-engines",
+    "name": "AI-Powered Search Engines"
+  },
+  "order": 230,
+  "openSource": null,
+  "pricing": null,
+  "status": "listed",
+  "source": {
+    "kind": "readme-migration",
+    "migratedAt": "2026-09-21"
+  }
+}

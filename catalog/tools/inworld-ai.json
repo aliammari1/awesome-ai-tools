@@ -1,0 +1,18 @@
+{
+  "name": "Inworld AI",
+  "url": "https://www.inworld.ai/",
+  "description": "AI characters for games with Microsoft Xbox partnership and emotional intelligence.",
+  "category": "gaming-and-entertainment",
+  "subcategory": {
+    "id": "game-development",
+    "name": "Game Development"
+  },
+  "order": 309,
+  "openSource": null,
+  "pricing": null,
+  "status": "listed",
+  "source": {
+    "kind": "readme-migration",
+    "migratedAt": "2026-09-21"
+  }
+}

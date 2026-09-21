@@ -1,0 +1,18 @@
+{
+  "name": "SaneBox",
+  "url": "https://www.sanebox.com",
+  "description": "AI email filtering and prioritization.",
+  "category": "productivity",
+  "subcategory": {
+    "id": "email-and-communication",
+    "name": "Email & Communication"
+  },
+  "order": 36,
+  "openSource": null,
+  "pricing": null,
+  "status": "listed",
+  "source": {
+    "kind": "readme-migration",
+    "migratedAt": "2026-09-21"
+  }
+}

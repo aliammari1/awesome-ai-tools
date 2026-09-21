@@ -1,0 +1,18 @@
+{
+  "name": "Artbreeder",
+  "url": "https://www.artbreeder.com/",
+  "description": "Collaborative AI art creation.",
+  "category": "creativity-and-design",
+  "subcategory": {
+    "id": "image-generation-and-art",
+    "name": "Image Generation & Art"
+  },
+  "order": 51,
+  "openSource": null,
+  "pricing": null,
+  "status": "listed",
+  "source": {
+    "kind": "readme-migration",
+    "migratedAt": "2026-09-21"
+  }
+}

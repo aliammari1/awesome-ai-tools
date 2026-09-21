@@ -1,0 +1,18 @@
+{
+  "name": "Boomy",
+  "url": "https://boomy.com/",
+  "description": "Create and monetize AI-generated music with one-click distribution.",
+  "category": "audio-and-music",
+  "subcategory": {
+    "id": "music-generation-and-composition",
+    "name": "Music Generation & Composition"
+  },
+  "order": 158,
+  "openSource": null,
+  "pricing": null,
+  "status": "listed",
+  "source": {
+    "kind": "readme-migration",
+    "migratedAt": "2026-09-21"
+  }
+}

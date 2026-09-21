@@ -1,0 +1,18 @@
+{
+  "name": "Yotpo",
+  "url": "https://www.yotpo.com/",
+  "description": "Customer reviews and loyalty.",
+  "category": "business-and-marketing",
+  "subcategory": {
+    "id": "e-commerce-and-retail",
+    "name": "E-commerce & Retail"
+  },
+  "order": 299,
+  "openSource": null,
+  "pricing": null,
+  "status": "listed",
+  "source": {
+    "kind": "readme-migration",
+    "migratedAt": "2026-09-21"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "name": "CiteMe",
+  "url": "https://citeme.app/",
+  "description": "AI-powered academic citation generator that searches 11+ scholarly databases and formats references in 40+ citation styles.",
+  "category": "ai-search-and-research",
+  "subcategory": {
+    "id": "research-and-knowledge-tools",
+    "name": "Research & Knowledge Tools"
+  },
+  "order": 249,
+  "openSource": null,
+  "pricing": null,
+  "status": "listed",
+  "source": {
+    "kind": "readme-migration",
+    "migratedAt": "2026-09-21"
+  }
+}

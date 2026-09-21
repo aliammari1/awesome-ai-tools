@@ -1,0 +1,18 @@
+{
+  "name": "FLUX",
+  "url": "https://blackforestlabs.ai/",
+  "description": "Image models with multi-reference, 4MP resolution, pose control, and context-aware editing.",
+  "category": "creativity-and-design",
+  "subcategory": {
+    "id": "image-generation-and-art",
+    "name": "Image Generation & Art"
+  },
+  "order": 41,
+  "openSource": null,
+  "pricing": null,
+  "status": "listed",
+  "source": {
+    "kind": "readme-migration",
+    "migratedAt": "2026-09-21"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "name": "JobMirror",
+  "url": "https://jobmirror.app",
+  "description": "AI career toolkit that provides resume review, job fit analysis, and document generation.",
+  "category": "business-and-marketing",
+  "subcategory": {
+    "id": "career-and-job-search",
+    "name": "Career & Job Search"
+  },
+  "order": 303,
+  "openSource": null,
+  "pricing": null,
+  "status": "listed",
+  "source": {
+    "kind": "readme-migration",
+    "migratedAt": "2026-09-21"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "name": "TextBlob",
+  "url": "https://textblob.readthedocs.io/",
+  "description": "Simple NLP library for beginners.",
+  "category": "natural-language-processing",
+  "subcategory": {
+    "id": "nlp-libraries-and-tools",
+    "name": "NLP Libraries & Tools"
+  },
+  "order": 129,
+  "openSource": null,
+  "pricing": null,
+  "status": "listed",
+  "source": {
+    "kind": "readme-migration",
+    "migratedAt": "2026-09-21"
+  }
+}
