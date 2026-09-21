@@ -235,6 +235,7 @@ Image recognition, visual analysis, and specialized computer-vision applications
 
 - [Roboflow](https://roboflow.com/) - Computer vision platform.
 - [Google Cloud Vision](https://cloud.google.com/vision/) - Image analysis API.
+- [Aurcue](https://www.aurcue.com/) - AI personal aesthetic assistant that analyzes a photo for color, outfit, hairstyle, and glasses guidance.
 - [Clarifai](https://www.clarifai.com/) - Computer vision platform with model training and inference.
 - [Amazon Rekognition](https://aws.amazon.com/rekognition/) - AWS image analysis with face, text, and scene detection.
 - [Averroes.ai](https://averroes.ai/) - Production-ready visual inspection for manufacturing and quality control.
