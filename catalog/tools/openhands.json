@@ -1,0 +1,15 @@
+{
+  "name": "OpenHands",
+  "url": "https://github.com/All-Hands-AI/OpenHands",
+  "description": "Open-source autonomous software-engineering agent (formerly OpenDevin).",
+  "category": "ai-agents",
+  "subcategory": null,
+  "order": 7,
+  "openSource": true,
+  "pricing": null,
+  "status": "listed",
+  "source": {
+    "kind": "readme-migration",
+    "migratedAt": "2026-09-21"
+  }
+}

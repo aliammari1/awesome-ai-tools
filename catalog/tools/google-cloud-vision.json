@@ -1,0 +1,18 @@
+{
+  "name": "Google Cloud Vision",
+  "url": "https://cloud.google.com/vision/",
+  "description": "Image analysis API.",
+  "category": "computer-vision",
+  "subcategory": {
+    "id": "image-recognition-and-analysis",
+    "name": "Image Recognition & Analysis"
+  },
+  "order": 137,
+  "openSource": null,
+  "pricing": null,
+  "status": "listed",
+  "source": {
+    "kind": "readme-migration",
+    "migratedAt": "2026-09-21"
+  }
+}

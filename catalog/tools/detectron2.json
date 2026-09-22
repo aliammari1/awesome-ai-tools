@@ -1,0 +1,18 @@
+{
+  "name": "Detectron2",
+  "url": "https://github.com/facebookresearch/detectron2",
+  "description": "Facebook's detection framework.",
+  "category": "computer-vision",
+  "subcategory": {
+    "id": "specialized-vision-tools",
+    "name": "Specialized Vision Tools"
+  },
+  "order": 147,
+  "openSource": null,
+  "pricing": null,
+  "status": "listed",
+  "source": {
+    "kind": "readme-migration",
+    "migratedAt": "2026-09-21"
+  }
+}

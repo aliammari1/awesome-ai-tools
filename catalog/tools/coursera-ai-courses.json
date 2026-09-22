@@ -1,0 +1,18 @@
+{
+  "name": "Coursera AI Courses",
+  "url": "https://www.coursera.org/browse/data-science/machine-learning",
+  "description": "Online AI and ML courses.",
+  "category": "getting-started",
+  "subcategory": {
+    "id": "learning-resources",
+    "name": "Learning Resources"
+  },
+  "order": 383,
+  "openSource": null,
+  "pricing": null,
+  "status": "listed",
+  "source": {
+    "kind": "readme-migration",
+    "migratedAt": "2026-09-21"
+  }
+}

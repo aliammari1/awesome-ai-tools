@@ -1,0 +1,18 @@
+{
+  "name": "Mubert",
+  "url": "https://mubert.com/",
+  "description": "AI-generated royalty-free music streaming and creation.",
+  "category": "audio-and-music",
+  "subcategory": {
+    "id": "music-generation-and-composition",
+    "name": "Music Generation & Composition"
+  },
+  "order": 156,
+  "openSource": null,
+  "pricing": null,
+  "status": "listed",
+  "source": {
+    "kind": "readme-migration",
+    "migratedAt": "2026-09-21"
+  }
+}
