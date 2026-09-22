@@ -1,6 +1,6 @@
 # Awesome AI Tools [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
-> A curated catalog of **384 AI tools** across **19 categories**.
+> A curated catalog of **385 AI tools** across **19 categories**.
 > Browse the searchable directory at **https://docs.aliammari.dev**.
 
 The catalog source of truth is `catalog/tools/*.json`. This README is generated from that structured catalog; edit catalog records instead of editing tool entries here.
@@ -459,17 +459,17 @@ Marketing, sales, e-commerce, retail, career, and job-search tools.
 
 ### Marketing & Sales
 
-- [Apollo.io](https://www.apollo.io/) - Sales intelligence with AI prospecting and engagement.
-- [BulkPublish](https://www.bulkpublish.com/) - AI-agent API and MCP server for multi-platform social publishing.
-- [Clari](https://www.clari.com/) - Revenue platform with AI forecasting and pipeline management.
-- [Drift](https://www.drift.com/) - Conversational marketing platform with AI chatbots.
-- [Gong](https://www.gong.io/) - Revenue intelligence platform with AI call analysis and deal insights.
 - [HubSpot AI](https://www.hubspot.com/) - CRM with AI Breeze for content, chatbots, and predictive lead scoring.
-- [Lavender](https://www.lavender.ai/) - AI email coach for sales with real-time suggestions.
 - [Meta Business AI](https://www.meta.com/) - AI assistant for ads, WhatsApp, and Messenger with campaign automation.
+- [Gong](https://www.gong.io/) - Revenue intelligence platform with AI call analysis and deal insights.
+- [Clari](https://www.clari.com/) - Revenue platform with AI forecasting and pipeline management.
 - [Outreach](https://www.outreach.io/) - Sales engagement platform with AI-powered sequences.
+- [Apollo.io](https://www.apollo.io/) - Sales intelligence with AI prospecting and engagement.
 - [Pardot](https://www.pardot.com/) - B2B marketing automation with Einstein AI insights.
+- [Drift](https://www.drift.com/) - Conversational marketing platform with AI chatbots.
+- [Lavender](https://www.lavender.ai/) - AI email coach for sales with real-time suggestions.
 - [Seamless.ai](https://seamless.ai/) - AI-powered B2B lead generation and prospecting.
+- [BulkPublish](https://www.bulkpublish.com/) - API and MCP server for scheduling and publishing posts to connected social media accounts.
 
 ### E-commerce & Retail
 
