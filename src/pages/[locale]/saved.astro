@@ -1,0 +1,47 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import LegacyLocaleNotice from '../../components/LegacyLocaleNotice.astro';
+import ToolCard from '../../components/ToolCard.astro';
+import { getCatalog } from '../../lib/catalog';
+import { locales, isLocale } from '../../lib/locales';
+
+export function getStaticPaths() {
+  return locales.map((locale) => ({ params: { locale } }));
+}
+
+const requested = Astro.params.locale;
+if (!isLocale(requested)) throw new Error('Unsupported locale');
+const locale = requested;
+const { tools, categories } = await getCatalog();
+const categoryNames = Object.fromEntries(categories.map((category) => [category.id, category.name]));
+---
+<BaseLayout title="Saved tools" description="Tools saved locally in this browser." locale={locale} noindex={true}>
+  <LegacyLocaleNotice locale={locale} />
+
+  <section class="saved-page">
+    <p class="kicker">Your shortlist</p>
+    <h1>Saved tools</h1>
+    <p>Saved tools stay in this browser. There is no account, profile, or cloud synchronization behind this list.</p>
+
+    <div id="saved-tools" class="tool-list">
+      {tools.map((tool) => (
+        <div data-saved-wrapper={tool.id} hidden>
+          <ToolCard tool={tool} locale={locale} categoryName={categoryNames[tool.category] ?? tool.category} />
+        </div>
+      ))}
+    </div>
+
+    <div id="no-saved-tools" class="empty-state">
+      <strong>No saved tools yet.</strong>
+      Browse the directory and use Save to build a shortlist.
+      <div class="actions-row">
+        <a class="primary-button" href={'/' + locale + '/#directory'}>Browse tools</a>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    import { initSavedPage } from '../../scripts/saved-page';
+    initSavedPage();
+  </script>
+</BaseLayout>

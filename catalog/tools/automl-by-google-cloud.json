@@ -1,0 +1,18 @@
+{
+  "name": "AutoML by Google Cloud",
+  "url": "https://cloud.google.com/automl/",
+  "description": "Machine learning automation suite within Google Cloud.",
+  "category": "data-science-and-analytics",
+  "subcategory": {
+    "id": "machine-learning-platforms",
+    "name": "Machine Learning Platforms"
+  },
+  "order": 103,
+  "openSource": null,
+  "pricing": null,
+  "status": "listed",
+  "source": {
+    "kind": "readme-migration",
+    "migratedAt": "2026-09-21"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "name": "ElevenLabs",
+  "url": "https://elevenlabs.io/",
+  "description": "Voice synthesis platform.",
+  "category": "audio-and-music",
+  "subcategory": {
+    "id": "voice-and-speech",
+    "name": "Voice & Speech"
+  },
+  "order": 162,
+  "openSource": null,
+  "pricing": null,
+  "status": "listed",
+  "source": {
+    "kind": "readme-migration",
+    "migratedAt": "2026-09-21"
+  }
+}

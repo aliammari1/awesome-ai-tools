@@ -1,0 +1,18 @@
+{
+  "name": "Brandmark",
+  "url": "https://brandmark.io/",
+  "description": "AI brand identity generator with color palettes.",
+  "category": "creativity-and-design",
+  "subcategory": {
+    "id": "design-tools",
+    "name": "Design Tools"
+  },
+  "order": 70,
+  "openSource": null,
+  "pricing": null,
+  "status": "listed",
+  "source": {
+    "kind": "readme-migration",
+    "migratedAt": "2026-09-21"
+  }
+}

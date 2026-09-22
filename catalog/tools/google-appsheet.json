@@ -1,0 +1,18 @@
+{
+  "name": "Google AppSheet",
+  "url": "https://www.appsheet.com/",
+  "description": "No-code app development platform.",
+  "category": "no-code-low-code-ai",
+  "subcategory": {
+    "id": "ai-app-builders",
+    "name": "AI App Builders"
+  },
+  "order": 326,
+  "openSource": null,
+  "pricing": null,
+  "status": "listed",
+  "source": {
+    "kind": "readme-migration",
+    "migratedAt": "2026-09-21"
+  }
+}

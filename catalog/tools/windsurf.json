@@ -1,0 +1,18 @@
+{
+  "name": "Windsurf",
+  "url": "https://windsurf.com/",
+  "description": "Codeium's AI coding assistant with Cascade agent and deep codebase understanding.",
+  "category": "code-generation-and-development",
+  "subcategory": {
+    "id": "ai-coding-assistants",
+    "name": "AI Coding Assistants"
+  },
+  "order": 202,
+  "openSource": null,
+  "pricing": null,
+  "status": "listed",
+  "source": {
+    "kind": "readme-migration",
+    "migratedAt": "2026-09-21"
+  }
+}
