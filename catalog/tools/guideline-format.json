@@ -1,0 +1,18 @@
+{
+  "name": "Guideline Format",
+  "url": "https://videotext.io/guideline-format",
+  "description": "Auto-formats raw transcripts to Rev, GoTranscript, TranscribeMe, or Scribie style guides \u2014 verbatim rules, speaker labels, punctuation, and QA compliance scoring, exported client-ready.",
+  "category": "audio-and-music",
+  "subcategory": {
+    "id": "voice-and-speech",
+    "name": "Voice & Speech"
+  },
+  "order": 201,
+  "openSource": false,
+  "pricing": "free",
+  "status": "listed",
+  "source": {
+    "kind": "community-pr",
+    "submittedAt": "2026-09-22"
+  }
+}
