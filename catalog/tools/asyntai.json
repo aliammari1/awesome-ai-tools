@@ -1,0 +1,14 @@
+{
+  "name": "Asyntai",
+  "url": "https://asyntai.com/",
+  "description": "AI chatbot for websites that answers visitors from your own pages, documents, and product catalog.",
+  "category": "no-code-low-code-ai",
+  "subcategory": {
+    "id": "chatbot-builders",
+    "name": "Chatbot Builders"
+  },
+  "order": 387,
+  "openSource": false,
+  "pricing": null,
+  "status": "listed"
+}
