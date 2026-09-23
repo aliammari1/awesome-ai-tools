@@ -1,7 +1,7 @@
 {
   "name": "Voice Recorder",
   "url": "https://videotext.io/voice-recorder",
-  "description": "In-browser voice-to-text recorder \u2014 speak and get text instantly with no video upload required, privacy-first with files deleted after processing.",
+  "description": "In-browser voice-to-text recorder — speak and get text instantly with no video upload required, privacy-first with files deleted after processing.",
   "category": "audio-and-music",
   "subcategory": {
     "id": "voice-and-speech",
@@ -12,7 +12,7 @@
   "pricing": "free",
   "status": "listed",
   "source": {
-    "kind": "community-pr",
-    "submittedAt": "2026-09-22"
+    "kind": "readme-migration",
+    "migratedAt": "2026-09-23"
   }
 }
