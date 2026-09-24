@@ -1,6 +1,6 @@
 # Awesome AI Tools [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
-> A curated catalog of **384 AI tools** across **19 categories**.
+> A curated catalog of **385 AI tools** across **19 categories**.
 > Browse the searchable directory at **https://docs.aliammari.dev**.
 
 The catalog source of truth is `catalog/tools/*.json`. This README is generated from that structured catalog; edit catalog records instead of editing tool entries here.
@@ -469,6 +469,7 @@ Marketing, sales, e-commerce, retail, career, and job-search tools.
 - [Drift](https://www.drift.com/) - Conversational marketing platform with AI chatbots.
 - [Lavender](https://www.lavender.ai/) - AI email coach for sales with real-time suggestions.
 - [Seamless.ai](https://seamless.ai/) - AI-powered B2B lead generation and prospecting.
+- [BulkPublish](https://www.bulkpublish.com/) - API and MCP server for scheduling and publishing posts to connected social media accounts.
 
 ### E-commerce & Retail
 
