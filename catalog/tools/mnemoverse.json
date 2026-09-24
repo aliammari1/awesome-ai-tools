@@ -1,0 +1,15 @@
+{
+  "name": "Mnemoverse",
+  "url": "https://mnemoverse.com",
+  "description": "Hosted memory server for AI agents over MCP that re-ranks recall when told a memory helped or misled.",
+  "category": "ai-agents",
+  "subcategory": null,
+  "order": 9999,
+  "openSource": false,
+  "pricing": "freemium",
+  "status": "listed",
+  "source": {
+    "kind": "readme-migration",
+    "migratedAt": "2026-09-21"
+  }
+}
