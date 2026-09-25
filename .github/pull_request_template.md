@@ -18,6 +18,7 @@ For catalog changes:
 
 - [ ] I edited `catalog/tools/` or `catalog/categories/`, not the generated README entry list.
 - [ ] The official URL is reachable.
+- [ ] I have starred this repository ⭐ *(Higher repo visibility means more exposure for your tool!)*
 - [ ] The description is factual and avoids unsupported marketing claims.
 - [ ] Unknown metadata is `null` rather than guessed.
 - [ ] The entry is not a duplicate.
