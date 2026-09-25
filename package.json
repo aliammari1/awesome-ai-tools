@@ -18,7 +18,7 @@
     "check": "bun run validate && bun run check:readme && bun run lint:awesome && bun run build"
   },
   "dependencies": {
-    "astro": "7.3.3"
+    "astro": "7.3.5"
   },
   "devDependencies": {
     "awesome-lint": "2.3.0"
