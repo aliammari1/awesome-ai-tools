@@ -1,6 +1,6 @@
 # Awesome AI Tools [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
-> A curated catalog of **384 AI tools** across **19 categories**.
+> A curated catalog of **385 AI tools** across **19 categories**.
 > Browse the searchable directory at **https://docs.aliammari.dev**.
 
 The catalog source of truth is `catalog/tools/*.json`. This README is generated from that structured catalog; edit catalog records instead of editing tool entries here.
@@ -97,6 +97,7 @@ Image generation, visual design, creative production, and design-assistance tool
 - [Stable Diffusion](https://stability.ai/stablediffusion) - Open-source image generation model with enhanced quality.
 - [ComfyUI](https://github.com/comfyanonymous/ComfyUI) - Node-based UI for Stable Diffusion with workflows.
 - [Ideogram](https://ideogram.ai/) - Model for text rendering and typography with Magic Prompt.
+- [Raphael](https://raphael.app/) - Free AI image generator for text-to-image, editing, and creative workflows in the browser.
 - [Reve](https://reve.ai/) - AI art with prompt adherence and multi-image editing.
 - [Leonardo AI](https://leonardo.ai/) - AI art generation for creatives with fine-tuned control.
 - [Adobe Firefly](https://firefly.adobe.com/) - Adobe's generative AI suite integrated in Creative Cloud.
