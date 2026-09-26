@@ -1,7 +1,7 @@
 {
   "name": "MaxVideoAI",
   "url": "https://maxvideoai.com",
-  "description": "Multi-engine AI video generation hub (Sora, Veo, Wan, Kling, LTX…).",
+  "description": "Pay-as-you-go AI video generation with model comparison and MCP workflows.",
   "category": "video-and-media",
   "subcategory": {
     "id": "video-creation-and-editing",
