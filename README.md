@@ -320,6 +320,7 @@ Video generation, editing, enhancement, effects, and media-production tools.
 ### Video Enhancement & Effects
 
 - [DaVinci Resolve](https://www.blackmagicdesign.com/products/davinciresolve/) - Video editing with AI features.
+- [UpRes](https://upres.ai?utm_source=awesome-ai-tools) - Cloud AI image and video upscaler to 4K/8K with REST API and MCP server.
 
 ## Code Generation & Development
 
