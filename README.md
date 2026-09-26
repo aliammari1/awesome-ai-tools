@@ -235,6 +235,7 @@ Image recognition, visual analysis, and specialized computer-vision applications
 
 - [Roboflow](https://roboflow.com/) - Computer vision platform.
 - [Google Cloud Vision](https://cloud.google.com/vision/) - Image analysis API.
+- [Image Describer](https://imagedescriber.dev) - AI vision tool that describes images and generates contextual alt text.
 - [Clarifai](https://www.clarifai.com/) - Computer vision platform with model training and inference.
 - [Amazon Rekognition](https://aws.amazon.com/rekognition/) - AWS image analysis with face, text, and scene detection.
 - [Averroes.ai](https://averroes.ai/) - Production-ready visual inspection for manufacturing and quality control.
@@ -320,6 +321,7 @@ Video generation, editing, enhancement, effects, and media-production tools.
 ### Video Enhancement & Effects
 
 - [DaVinci Resolve](https://www.blackmagicdesign.com/products/davinciresolve/) - Video editing with AI features.
+- [Video Upscaler](https://videoupscaler.video) - AI video enhancer for improving clarity and exporting HD or 4K results.
 
 ## Code Generation & Development
 
@@ -601,6 +603,7 @@ Infrastructure, MLOps, automation, and specialized tools that span multiple cate
 - [Core ML](https://developer.apple.com/documentation/coreml) - Apple's ML framework.
 - [ONNX](https://onnx.ai/) - Open neural network exchange.
 - [Apache MXNet](https://mxnet.apache.org/) - Deep learning framework.
+- [Vedic Astrology Chart](https://vedicastrologychart.net) - Vedic birth chart calculator with AI-powered interpretations.
 
 ## Getting Started
 
