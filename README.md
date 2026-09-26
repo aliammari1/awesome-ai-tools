@@ -111,6 +111,7 @@ Image generation, visual design, creative production, and design-assistance tool
 - [Jasper Art](https://www.jasper.ai/art) - AI art generation for marketers.
 - [BlueWillow](https://www.bluewillow.ai/) - Free AI image generator.
 - [Prisma](https://prisma-ai.com/) - Artistic photo filters.
+- [YingTu](https://yingtu.ai/en) - Browser playground for AI image and video routes, prompts, reference inputs, options, task tracking, and downloads.
 
 ### Design Tools
 
