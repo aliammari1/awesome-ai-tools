@@ -1,0 +1,18 @@
+{
+  "name": "UpRes",
+  "url": "https://upres.ai",
+  "description": "AI image and video upscaler up to 8K with REST API and MCP server.",
+  "category": "video-and-media",
+  "subcategory": {
+    "id": "video-enhancement-and-effects",
+    "name": "Video Enhancement & Effects"
+  },
+  "order": 200,
+  "openSource": false,
+  "pricing": "freemium",
+  "status": "listed",
+  "source": {
+    "kind": "manual",
+    "migratedAt": "2026-09-26"
+  }
+}
