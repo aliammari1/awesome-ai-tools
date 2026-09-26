@@ -1,6 +1,6 @@
 # Awesome AI Tools [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
-> A curated catalog of **384 AI tools** across **19 categories**.
+> A curated catalog of **385 AI tools** across **19 categories**.
 > Browse the searchable directory at **https://docs.aliammari.dev**.
 
 The catalog source of truth is `catalog/tools/*.json`. This README is generated from that structured catalog; edit catalog records instead of editing tool entries here.
@@ -320,6 +320,7 @@ Video generation, editing, enhancement, effects, and media-production tools.
 ### Video Enhancement & Effects
 
 - [DaVinci Resolve](https://www.blackmagicdesign.com/products/davinciresolve/) - Video editing with AI features.
+- [UpRes](https://upres.ai) - AI image and video upscaler up to 8K with REST API and MCP server.
 
 ## Code Generation & Development
 
