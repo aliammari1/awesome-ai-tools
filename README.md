@@ -429,6 +429,7 @@ General-purpose models, open models, and frameworks used to build with LLMs.
 - [vLLM](https://vllm.ai/) - High-throughput LLM serving with PagedAttention.
 - [Anyscale](https://www.anyscale.com/) - Scalable LLM deployment with Ray framework.
 - [Future AGI](https://github.com/future-agi/future-agi) - Open-source self-hostable end-to-end agent engineering and optimization platform unifying tracing, evaluation, simulation, datasets, gateway, and guardrails in one feedback loop.
+- [GPTGeminiGrok.AI](https://trygrokai.asia/) - Multi-model browser workspace for GPT, Gemini, Grok, Claude, and image generation.
 
 ## Research & Education
 
