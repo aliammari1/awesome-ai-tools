@@ -62,6 +62,7 @@ Scheduling, task management, project workflows, email, and day-to-day work autom
 - [Sunsama](https://sunsama.com/) - Daily planner with time-blocking and calendar integrations.
 - [Morgen](https://morgen.so/) - Calendar app with scheduling and task integration.
 - [Amie](https://amie.so/) - Beautiful calendar app with AI scheduling.
+- [ExtraBrain](https://extrabrain.app) - macOS copilot for live interviews and meetings.
 
 ### Task & Project Management
 
