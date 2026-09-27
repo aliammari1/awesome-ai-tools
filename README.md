@@ -320,6 +320,7 @@ Video generation, editing, enhancement, effects, and media-production tools.
 ### Video Enhancement & Effects
 
 - [DaVinci Resolve](https://www.blackmagicdesign.com/products/davinciresolve/) - Video editing with AI features.
+- [LiveFaceSwap AI](https://livefaceswap.ai/) - Real-time webcam face swapping with browser preview and desktop virtual-camera output.
 
 ## Code Generation & Development
 
