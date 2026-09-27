@@ -1,0 +1,18 @@
+{
+  "name": "Raphael",
+  "url": "https://raphael.app/",
+  "description": "Free AI image generator for text-to-image, editing, and creative workflows in the browser.",
+  "category": "creativity-and-design",
+  "subcategory": {
+    "id": "image-generation-and-art",
+    "name": "Image Generation & Art"
+  },
+  "order": 45,
+  "openSource": false,
+  "pricing": "free",
+  "status": "listed",
+  "source": {
+    "kind": "community-pr",
+    "submittedAt": "2026-09-26"
+  }
+}
