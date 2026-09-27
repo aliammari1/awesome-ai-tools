@@ -1,0 +1,18 @@
+{
+  "name": "Muse Me",
+  "url": "https://muse-me-avatar-beta.zhangwei798879.chatgpt.site/?source=github&campaign=directory&content=awesome_ai_catalog_pr",
+  "description": "Turns one authorized photo into an original anime-style social avatar without requiring an account.",
+  "category": "creativity-and-design",
+  "subcategory": {
+    "id": "image-generation-and-art",
+    "name": "Image Generation & Art"
+  },
+  "order": 60,
+  "openSource": false,
+  "pricing": "free",
+  "status": "listed",
+  "source": {
+    "kind": "readme-migration",
+    "migratedAt": "2026-09-27"
+  }
+}
