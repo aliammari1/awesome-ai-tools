@@ -613,6 +613,7 @@ Learning resources and practical starting points for working with modern AI tool
 - [edX AI Programs](https://www.edx.org/learn/artificial-intelligence) - University-level AI programs.
 - [Towards Data Science](https://towardsdatascience.com/) - Medium publication for data science.
 - [ML Paper Implementations](https://github.com/lucidrains) - Research paper implementations.
+- [HostDeFi](https://hostdefi.com) — free token-safety scanner grading tokens A+–F from on-chain checks (mint/freeze authority, liquidity, holder concentration) across Solana + 7 EVM chains. Keyless REST API, hosted MCP, x402 endpoints.
 
 ## Contributing
 
