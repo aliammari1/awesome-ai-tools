@@ -1,0 +1,18 @@
+{
+  "name": "Translate Subtitles",
+  "url": "https://videotext.io/translate-subtitles",
+  "description": "Free online SRT/VTT subtitle translator supporting 70+ languages with every cue timestamp preserved on download.",
+  "category": "video-and-media",
+  "subcategory": {
+    "id": "video-creation-and-editing",
+    "name": "Video Creation & Editing"
+  },
+  "order": 204,
+  "openSource": false,
+  "pricing": "free",
+  "status": "listed",
+  "source": {
+    "kind": "readme-migration",
+    "migratedAt": "2026-09-23"
+  }
+}

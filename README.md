@@ -1,6 +1,6 @@
 # Awesome AI Tools [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
-> A curated catalog of **384 AI tools** across **19 categories**.
+> A curated catalog of **392 AI tools** across **19 categories**.
 > Browse the searchable directory at **https://docs.aliammari.dev**.
 
 The catalog source of truth is `catalog/tools/*.json`. This README is generated from that structured catalog; edit catalog records instead of editing tool entries here.
@@ -287,6 +287,9 @@ Music generation, voice, speech, transcription, and audio-production tools.
 - [HappyScribe](https://www.happyscribe.com/) - AI transcription with 120+ languages and subtitle export.
 - [Resemble AI](https://www.resemble.ai/) - AI voice cloning with real-time synthesis and emotion control.
 - [Krisp](https://krisp.ai/) - AI-powered noise cancellation and meeting transcription.
+- [Video to Transcript](https://videotext.io/video-to-transcript) - Free AI video transcription with 98.5% word accuracy using Whisper large-v3; upload MP4/MOV/WebM/MKV and get a transcript, SRT/VTT, AI summary, and chapters in one pass.
+- [Guideline Format](https://videotext.io/guideline-format) - Auto-formats raw transcripts to Rev, GoTranscript, TranscribeMe, or Scribie style guides — verbatim rules, speaker labels, punctuation, and QA compliance scoring, exported client-ready.
+- [Voice Recorder](https://videotext.io/voice-recorder) - In-browser voice-to-text recorder — speak and get text instantly with no video upload required, privacy-first with files deleted after processing.
 
 ## Video & Media
 
@@ -316,10 +319,15 @@ Video generation, editing, enhancement, effects, and media-production tools.
 - [MaxVideoAI](https://maxvideoai.com) - Multi-engine AI video generation hub (Sora, Veo, Wan, Kling, LTX…).
 - [ZOOOP](https://zooop.ai) - AI-native filmmaking workstation for image, video, audio, and lip-sync generation.
 - [YumCut](https://yumcut.com/) - Self-hosted AI workflow for generating finished vertical videos, with a user automation API.
+- [Video to Subtitles](https://videotext.io/video-to-subtitles) - Full caption generation hub: upload a video for timed SRT/VTT output, then fix, translate, or burn captions in the same workflow.
+- [Translate Subtitles](https://videotext.io/translate-subtitles) - Free online SRT/VTT subtitle translator supporting 70+ languages with every cue timestamp preserved on download.
+- [Fix Subtitles](https://videotext.io/fix-subtitles) - Auto-corrects overlapping timestamps, long lines, CPS/reading-speed issues, and SRT/VTT formatting errors with instant download.
+- [Burn Subtitles](https://videotext.io/burn-subtitles) - Hardcodes SRT/VTT captions permanently into MP4 video — ideal for Instagram, TikTok, and players without native caption support.
 
 ### Video Enhancement & Effects
 
 - [DaVinci Resolve](https://www.blackmagicdesign.com/products/davinciresolve/) - Video editing with AI features.
+- [Compress Video](https://videotext.io/compress-video) - Free online video compressor with light, medium, and heavy settings to shrink file size for faster sharing and uploads.
 
 ## Code Generation & Development
 

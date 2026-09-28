@@ -1,0 +1,18 @@
+{
+  "name": "Compress Video",
+  "url": "https://videotext.io/compress-video",
+  "description": "Free online video compressor with light, medium, and heavy settings to shrink file size for faster sharing and uploads.",
+  "category": "video-and-media",
+  "subcategory": {
+    "id": "video-enhancement-and-effects",
+    "name": "Video Enhancement & Effects"
+  },
+  "order": 207,
+  "openSource": false,
+  "pricing": "free",
+  "status": "listed",
+  "source": {
+    "kind": "readme-migration",
+    "migratedAt": "2026-09-23"
+  }
+}

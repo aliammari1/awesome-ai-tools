@@ -1,0 +1,18 @@
+{
+  "name": "Video to Transcript",
+  "url": "https://videotext.io/video-to-transcript",
+  "description": "Free AI video transcription with 98.5% word accuracy using Whisper large-v3; upload MP4/MOV/WebM/MKV and get a transcript, SRT/VTT, AI summary, and chapters in one pass.",
+  "category": "audio-and-music",
+  "subcategory": {
+    "id": "voice-and-speech",
+    "name": "Voice & Speech"
+  },
+  "order": 200,
+  "openSource": false,
+  "pricing": "free",
+  "status": "listed",
+  "source": {
+    "kind": "readme-migration",
+    "migratedAt": "2026-09-23"
+  }
+}

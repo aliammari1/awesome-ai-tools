@@ -1,0 +1,18 @@
+{
+  "name": "Burn Subtitles",
+  "url": "https://videotext.io/burn-subtitles",
+  "description": "Hardcodes SRT/VTT captions permanently into MP4 video — ideal for Instagram, TikTok, and players without native caption support.",
+  "category": "video-and-media",
+  "subcategory": {
+    "id": "video-creation-and-editing",
+    "name": "Video Creation & Editing"
+  },
+  "order": 206,
+  "openSource": false,
+  "pricing": "free",
+  "status": "listed",
+  "source": {
+    "kind": "readme-migration",
+    "migratedAt": "2026-09-23"
+  }
+}
