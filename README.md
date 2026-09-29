@@ -1,6 +1,6 @@
 # Awesome AI Tools [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
-> A curated catalog of **384 AI tools** across **19 categories**.
+> A curated catalog of **385 AI tools** across **19 categories**.
 > Browse the searchable directory at **https://docs.aliammari.dev**.
 
 The catalog source of truth is `catalog/tools/*.json`. This README is generated from that structured catalog; edit catalog records instead of editing tool entries here.
@@ -429,6 +429,7 @@ General-purpose models, open models, and frameworks used to build with LLMs.
 - [vLLM](https://vllm.ai/) - High-throughput LLM serving with PagedAttention.
 - [Anyscale](https://www.anyscale.com/) - Scalable LLM deployment with Ray framework.
 - [Future AGI](https://github.com/future-agi/future-agi) - Open-source self-hostable end-to-end agent engineering and optimization platform unifying tracing, evaluation, simulation, datasets, gateway, and guardrails in one feedback loop.
+- [ModelVRAM](https://modelvram.com/) - Browser-based calculator that estimates the GPU memory an LLM needs for inference or fine-tuning (weights, KV cache and overhead) from the model's Hugging Face config, and lists the GPUs and Macs that fit.
 
 ## Research & Education
 
