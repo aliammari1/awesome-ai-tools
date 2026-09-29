@@ -1,0 +1,18 @@
+{
+  "name": "ImagineYourBook",
+  "url": "https://www.imagineyourbook.com/",
+  "description": "Web app that plans and drafts full manuscripts chapter by chapter, with series story bibles and Word/EPUB/Markdown export.",
+  "category": "communication-and-writing",
+  "subcategory": {
+    "id": "content-creation",
+    "name": "Content Creation"
+  },
+  "order": 96,
+  "openSource": false,
+  "pricing": null,
+  "status": "listed",
+  "source": {
+    "kind": "readme-migration",
+    "migratedAt": "2026-09-29"
+  }
+}
