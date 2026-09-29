@@ -1,6 +1,6 @@
 # Awesome AI Tools [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
-> A curated catalog of **384 AI tools** across **19 categories**.
+> A curated catalog of **385 AI tools** across **19 categories**.
 > Browse the searchable directory at **https://docs.aliammari.dev**.
 
 The catalog source of truth is `catalog/tools/*.json`. This README is generated from that structured catalog; edit catalog records instead of editing tool entries here.
@@ -390,6 +390,7 @@ AI search engines, research assistants, knowledge discovery, and evidence-gather
 - [ResearchGate](https://www.researchgate.net/) - Scientific network with AI features.
 - [Consensus](https://consensus.app/) - AI-powered research engine for scientific papers.
 - [Scite](https://scite.ai/) - Smart citations for research validation.
+- [Clarity](https://agent-tools.cloud/services/desktop-o99r0sf-tail935fba-ts-net-sub899) - Base mainnet x402 API for short AI research reports and low-cost chat, with free discovery.
 - [Connected Papers](https://www.connectedpapers.com/) - Visual academic paper exploration.
 - [CiteMe](https://citeme.app/) - AI-powered academic citation generator that searches 11+ scholarly databases and formats references in 40+ citation styles.
 
