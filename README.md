@@ -42,6 +42,7 @@ Agent SDKs, autonomous systems, orchestration, tool use, memory, and browser aut
 - [AgentScope](https://github.com/modelscope/agentscope) - Multi-agent platform with distributed orchestration and visual debugging.
 - [Letta](https://www.letta.com/) - Framework for stateful agents with long-term memory (formerly MemGPT).
 - [Browser Use](https://github.com/browser-use/browser-use) - Library that lets agents control a real browser to complete web tasks.
+- [Hivekeep](https://github.com/MarlBurroW/hivekeep) - Self-hosted platform to run a team of AI agents with memory, a web UI, and chat channels.
 
 ## Productivity
 
