@@ -1,6 +1,6 @@
 # Awesome AI Tools [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
-> A curated catalog of **384 AI tools** across **19 categories**.
+> A curated catalog of **385 AI tools** across **19 categories**.
 > Browse the searchable directory at **https://docs.aliammari.dev**.
 
 The catalog source of truth is `catalog/tools/*.json`. This README is generated from that structured catalog; edit catalog records instead of editing tool entries here.
@@ -160,6 +160,7 @@ Writing, content creation, translation, localization, and communication assistan
 - [Beautiful.ai](https://www.beautiful.ai/) - AI-powered presentation design.
 - [Hemingway Editor](http://www.hemingwayapp.com/) - Readability-focused writing tool.
 - [SocialBu](https://socialbu.com/) - AI-powered social media management for scheduling, publishing, and automating across X, Instagram, LinkedIn, Facebook, TikTok, and more.
+- [AI Novel Writer](https://www.orz.md/ai-novel-writer/) - Open-source Windows/macOS fiction-writing workbench for characters, worldbuilding, outlines, chapter drafts, review, and revision, with user-configured cloud models or Ollama.
 
 ### Translation & Localization
 
