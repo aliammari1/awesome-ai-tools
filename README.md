@@ -126,6 +126,7 @@ Image generation, visual design, creative production, and design-assistance tool
 - [LogoAI](https://www.logoai.com/) - AI logo generator with brand kit creation.
 - [Brandmark](https://brandmark.io/) - AI brand identity generator with color palettes.
 - [Looka](https://looka.com/) - AI logo maker with full brand kit.
+- [RoomMaker AI](https://roommakerai.org/) - AI room designer that redesigns a room from a photo, previews renovation changes, stages furniture, and drafts floor plan concepts.
 
 ## Communication & Writing
 
