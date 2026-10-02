@@ -1,0 +1,14 @@
+{
+  "name": "LogNorm",
+  "url": "https://lognorm.com/",
+  "description": "SEO and AI-visibility platform that hands a ranked growth backlog to AI agents over MCP.",
+  "category": "business-and-marketing",
+  "subcategory": {
+    "id": "marketing-and-sales",
+    "name": "Marketing & Sales"
+  },
+  "order": 387,
+  "openSource": null,
+  "pricing": null,
+  "status": "listed"
+}
