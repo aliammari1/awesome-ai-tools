@@ -10,5 +10,9 @@
   "order": 387,
   "openSource": null,
   "pricing": null,
-  "status": "listed"
+  "status": "listed",
+  "source": {
+    "kind": "readme-migration",
+    "migratedAt": "2026-10-02"
+  }
 }
