@@ -271,6 +271,7 @@ Music generation, voice, speech, transcription, and audio-production tools.
 - [Suede](https://suedeai.ai/) - AI music and video generation with automatic on-chain ownership and licensing/royalty routing.
 
 ### Voice & Speech
+- [AI Group Call](https://aigroupcall.app) - You set a goal and two to eight AI voices run a round-table call with you: drop-ins, barge-in, and a written recap.
 
 - [ElevenLabs](https://elevenlabs.io/) - Voice synthesis platform.
 - [Murf AI](https://murf.ai/) - AI voice generator.
