@@ -8,11 +8,11 @@
     "name": "Research & Knowledge Tools"
   },
   "order": 9999,
-  "openSource": false,
-  "pricing": "freemium",
+  "openSource": null,
+  "pricing": null,
   "status": "listed",
   "source": {
-    "kind": "community-pr",
-    "addedAt": "2026-10-08"
+    "kind": "readme-migration",
+    "migratedAt": "2026-09-21"
   }
 }
