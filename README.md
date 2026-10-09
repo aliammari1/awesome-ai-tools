@@ -1,6 +1,6 @@
 # Awesome AI Tools [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
-> A curated catalog of **384 AI tools** across **19 categories**.
+> A curated catalog of **385 AI tools** across **19 categories**.
 > Browse the searchable directory at **https://docs.aliammari.dev**.
 
 The catalog source of truth is `catalog/tools/*.json`. This README is generated from that structured catalog; edit catalog records instead of editing tool entries here.
@@ -242,6 +242,7 @@ Image recognition, visual analysis, and specialized computer-vision applications
 - [OpenCV](https://opencv.org/) - Open-source computer vision library.
 - [Landing AI](https://landing.ai/) - Andrew Ng's computer vision platform for manufacturing.
 - [ScanRead.ai](https://scanread.ai) - Free OCR for images, PDFs, screenshots, and handwriting in 100+ languages with PP-OCRv5.
+- [RealFun Color](https://color.realfun.online/does-this-color-suit-me?utm_source=awesome_ai_tools&utm_medium=directory&utm_campaign=realfun_color_listing_20261009) - Photo-based AI personal color analysis for practical wardrobe color choices.
 
 ### Specialized Vision Tools
 
