@@ -1,0 +1,15 @@
+{
+  "name": "Drevon",
+  "url": "https://www.drevon.dev",
+  "description": "Mac app that connects to your Claude Code or Codex and turns it into an end-to-end GTM operator: research, grunt work, analysis and actions across your stack from a single prompt, in your own browser with your own logins.",
+  "category": "ai-agents",
+  "subcategory": null,
+  "order": 387,
+  "openSource": false,
+  "pricing": "free",
+  "status": "listed",
+  "source": {
+    "kind": "readme-migration",
+    "migratedAt": "2026-09-21"
+  }
+}
