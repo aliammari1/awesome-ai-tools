@@ -1,0 +1,18 @@
+{
+  "name": "Nujan",
+  "url": "https://nujan.app/",
+  "description": "Dual-pane scientific paper reader with Socratic AI coaching, formula breakdowns, and multi-paper literature synthesis.",
+  "category": "ai-search-and-research",
+  "subcategory": {
+    "id": "research-and-knowledge-tools",
+    "name": "Research & Knowledge Tools"
+  },
+  "order": 9999,
+  "openSource": false,
+  "pricing": "freemium",
+  "status": "listed",
+  "source": {
+    "kind": "community-pr",
+    "addedAt": "2026-10-08"
+  }
+}
