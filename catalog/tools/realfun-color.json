@@ -1,6 +1,6 @@
 {
   "name": "RealFun Color",
-  "url": "https://color.realfun.online/does-this-color-suit-me?utm_source=awesome_ai_tools&utm_medium=directory&utm_campaign=realfun_color_listing_20261009",
+  "url": "https://color.realfun.online/does-this-color-suit-me",
   "description": "Photo-based AI personal color analysis for practical wardrobe color choices.",
   "category": "computer-vision",
   "subcategory": {
@@ -10,5 +10,8 @@
   "order": 9999,
   "openSource": null,
   "pricing": null,
-  "status": "listed"
+  "status": "listed",
+  "source": {
+    "kind": "new-submission"
+  }
 }
