@@ -24,8 +24,7 @@ const example = `{
   "pricing": null,
   "status": "listed",
   "source": {
-    "kind": "readme-migration",
-    "migratedAt": "2026-09-21"
+    "kind": "new-submission"
   }
 }`;
 ---
@@ -47,6 +46,10 @@ const example = `{
 
     <h2>Example</h2>
     <pre><code>{example}</code></pre>
+
+    <h2>Source provenance</h2>
+    <p>The required <code>source</code> field covers both new submissions and migrated entries. Use <code>new-submission</code> for a new tool, as shown above; do not invent a migration date.</p>
+    <p>Keep <code>readme-migration</code> and the recorded <code>migratedAt</code> value only for entries actually imported by the README migration. Neither source kind is proof of independent verification of pricing, availability, or product claims; a migration date is not a verification date.</p>
 
     <h2>Why the README is generated</h2>
     <p>Previously, the README, documentation branch, generated content, and translated trees could drift. The catalog is now the only editable data source. This keeps pull requests reviewable and makes the website and README deterministic outputs of the same records.</p>
