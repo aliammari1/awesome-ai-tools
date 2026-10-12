@@ -1,0 +1,18 @@
+{
+  "name": "Unsora",
+  "url": "https://tryunsora.com/",
+  "description": "Open-source app, API and MCP server that generates images, video, voiceovers, music and clips and schedules them to social accounts.",
+  "category": "video-and-media",
+  "subcategory": {
+    "id": "video-creation-and-editing",
+    "name": "Video Creation & Editing"
+  },
+  "order": 387,
+  "openSource": true,
+  "pricing": "freemium",
+  "status": "listed",
+  "source": {
+    "kind": "pull-request",
+    "migratedAt": null
+  }
+}
