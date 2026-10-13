@@ -443,6 +443,7 @@ Educational assistants, learning tools, academic research, and research platform
 - [Photomath](https://photomath.com/) - Math problem solver with camera scanning and explanations.
 - [Quizlet](https://quizlet.com/) - AI-powered flashcards and study tools with Q-Chat tutor.
 - [Brainly](https://brainly.com/) - Homework help with AI explanations and expert answers.
+- [StudyArena](https://studyarena.com) - Lets students compare three AI answers, vote, and reveal the models for free.
 - [Synthesis](https://www.synthesis.com/) - AI math tutoring for kids with problem-solving focus.
 - [Cognii](https://www.cognii.com/) - AI tutoring with natural language assessment.
 - [Carnegie Learning](https://www.carnegielearning.com/) - AI-powered math and literacy solutions for schools.
