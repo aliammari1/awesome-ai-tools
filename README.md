@@ -269,6 +269,7 @@ Music generation, voice, speech, transcription, and audio-production tools.
 - [Loudly](https://www.loudly.com/) - AI music for video content with adaptive soundtracks.
 - [voicetoinstrument.com](https://voicetoinstrument.com) - Convert voice to instrument tracks using AI for music production and audio content creation.
 - [Suede](https://suedeai.ai/) - AI music and video generation with automatic on-chain ownership and licensing/royalty routing.
+- [LyricsGift](https://lyricsgift.com) - Turns a personal story into a custom song with approved lyrics, vocals, and mixing.
 
 ### Voice & Speech
 
