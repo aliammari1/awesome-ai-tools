@@ -1,6 +1,6 @@
 # Awesome AI Tools [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
-> A curated catalog of **384 AI tools** across **19 categories**.
+> A curated catalog of **385 AI tools** across **19 categories**.
 > Browse the searchable directory at **https://docs.aliammari.dev**.
 
 The catalog source of truth is `catalog/tools/*.json`. This README is generated from that structured catalog; edit catalog records instead of editing tool entries here.
@@ -149,6 +149,7 @@ Writing, content creation, translation, localization, and communication assistan
 - [Hyperwrite](https://hyperwriteai.com/) - Personal AI writing assistant with AutoWrite and TypeAhead.
 - [Frase](https://www.frase.io/) - AI SEO content creation and optimization with SERP analysis.
 - [Surfer SEO](https://surferseo.com/) - AI-powered content optimization with NLP analysis.
+- [README Skills](https://github.com/Shiaoming123/readme-skills) - Evidence-first Agent Skill for auditing and writing repository-matched, multilingual READMEs.
 
 ### Content Creation
 
