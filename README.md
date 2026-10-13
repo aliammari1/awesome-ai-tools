@@ -491,6 +491,7 @@ Game-development tools and AI applications for entertainment and interactive med
 
 ### Game Development
 
+- [Pixel Snapper](https://www.spritefusion.com/pixel-snapper) - Cleanup AI-generated pixel art (free & open source).
 - [Unity AI](https://unity.com/products/ai) - Contextual AI assistance, Muse behaviors, and asset generation.
 - [Promethean AI](https://www.prometheanai.com/) - AI assistant for 3D environment creation and level design.
 - [Inworld AI](https://www.inworld.ai/) - AI characters for games with Microsoft Xbox partnership and emotional intelligence.
