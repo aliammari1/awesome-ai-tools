@@ -385,6 +385,7 @@ AI search engines, research assistants, knowledge discovery, and evidence-gather
 
 - [Semantic Scholar](https://www.semanticscholar.org/) - AI-powered academic research tool.
 - [Elicit](https://elicit.org/) - AI research assistant for literature review.
+- [IdeaHunter](https://ideahunter.today) - Finds demand-backed startup ideas with market evidence and MVP scope.
 - [NotebookLM](https://notebooklm.google/) - Google's AI research and note-taking assistant.
 - [Deep Research](https://openai.com/index/introducing-deep-research/) - OpenAI research agent for multi-step web research with cited reports.
 - [ResearchGate](https://www.researchgate.net/) - Scientific network with AI features.
