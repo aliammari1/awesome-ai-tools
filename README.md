@@ -465,6 +465,7 @@ Marketing, sales, e-commerce, retail, career, and job-search tools.
 - [Clari](https://www.clari.com/) - Revenue platform with AI forecasting and pipeline management.
 - [Outreach](https://www.outreach.io/) - Sales engagement platform with AI-powered sequences.
 - [Apollo.io](https://www.apollo.io/) - Sales intelligence with AI prospecting and engagement.
+- [AdMapix](https://www.admapix.com/) - AI ad creative intelligence for competitor research.
 - [Pardot](https://www.pardot.com/) - B2B marketing automation with Einstein AI insights.
 - [Drift](https://www.drift.com/) - Conversational marketing platform with AI chatbots.
 - [Lavender](https://www.lavender.ai/) - AI email coach for sales with real-time suggestions.
