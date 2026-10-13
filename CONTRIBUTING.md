@@ -42,13 +42,25 @@ Example:
   "pricing": null,
   "status": "listed",
   "source": {
+    "kind": "new-submission"
+  }
+}
+```
+
+The required `source` field records provenance for both new submissions and migrated entries. Use `{"kind": "new-submission"}` for a new tool, as in the example above; do not invent a migration date.
+
+Keep `readme-migration` and the recorded `migratedAt` value only for entries actually imported by the README migration, for example:
+
+```json
+{
+  "source": {
     "kind": "readme-migration",
     "migratedAt": "2026-09-21"
   }
 }
 ```
 
-The `source` field marks records created by the September 2026 README migration. A later schema revision will separate migration provenance from human verification metadata; do not treat the migration date as a verification date.
+Neither source kind is proof of independent verification of pricing, availability, or product claims. A migration date is not a verification date.
 
 ## Quality bar
 
