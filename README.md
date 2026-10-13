@@ -356,6 +356,7 @@ Coding assistants, developer tools, code analysis, and software-engineering auto
 - [Anima](https://www.animaapp.com/) - Design to code conversion for React, Vue, and HTML.
 - [Replit](https://replit.com/) - Cloud-based IDE with AI coding and instant deployment.
 - [Deno Deploy](https://deno.com/deploy) - Edge deployment with AI-assisted development.
+- [NextReset](https://nextreset.ai/) - Tracks source-linked Codex resets and official AI-service incidents with a local timer.
 
 ### Code Analysis & Review
 
