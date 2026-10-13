@@ -74,6 +74,7 @@ Scheduling, task management, project workflows, email, and day-to-day work autom
 - [Kuse](https://kuse.ai/) - AI task manager that extracts tasks from documents and knowledge.
 - [Mem](https://mem.ai/) - AI-native note-taking and knowledge management.
 - [Personal AI](https://personal.ai/) - AI chatbot for personal knowledge management.
+- [Remio](https://remio.ai/) - Local-first AI memory and knowledge base for retrieving context from files, webpages, recordings, emails, and notes.
 
 ### Email & Communication
 
