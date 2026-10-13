@@ -160,6 +160,7 @@ Writing, content creation, translation, localization, and communication assistan
 - [Beautiful.ai](https://www.beautiful.ai/) - AI-powered presentation design.
 - [Hemingway Editor](http://www.hemingwayapp.com/) - Readability-focused writing tool.
 - [SocialBu](https://socialbu.com/) - AI-powered social media management for scheduling, publishing, and automating across X, Instagram, LinkedIn, Facebook, TikTok, and more.
+- [WizGenerator Story Generator](https://wizgenerator.com/tools/story-generator/) - Creates customizable stories from genre, tone, characters, and plot details.
 
 ### Translation & Localization
 
