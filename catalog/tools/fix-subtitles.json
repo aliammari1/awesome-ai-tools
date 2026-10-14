@@ -1,0 +1,18 @@
+{
+  "name": "Fix Subtitles",
+  "url": "https://videotext.io/fix-subtitles",
+  "description": "Auto-corrects overlapping timestamps, long lines, CPS/reading-speed issues, and SRT/VTT formatting errors with instant download.",
+  "category": "video-and-media",
+  "subcategory": {
+    "id": "video-creation-and-editing",
+    "name": "Video Creation & Editing"
+  },
+  "order": 205,
+  "openSource": false,
+  "pricing": "free",
+  "status": "listed",
+  "source": {
+    "kind": "readme-migration",
+    "migratedAt": "2026-09-23"
+  }
+}
