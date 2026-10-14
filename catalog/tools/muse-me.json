@@ -1,0 +1,18 @@
+{
+  "name": "Muse Studio",
+  "url": "https://muse-me-avatar-beta.zhangwei798879.chatgpt.site/create?utm_source=github&utm_campaign=ad_recovery&utm_content=aliammari_directory",
+  "description": "Generates static ad concepts from text with editable headline, offer and CTA, and PNG export. Limited free beta; one ChatGPT sign-in; no card.",
+  "category": "creativity-and-design",
+  "subcategory": {
+    "id": "image-generation-and-art",
+    "name": "Image Generation & Art"
+  },
+  "order": 387,
+  "openSource": false,
+  "pricing": "free",
+  "status": "listed",
+  "source": {
+    "kind": "readme-migration",
+    "migratedAt": "2026-09-27"
+  }
+}
