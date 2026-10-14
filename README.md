@@ -110,6 +110,7 @@ Image generation, visual design, creative production, and design-assistance tool
 - [Google Imagen](https://deepmind.google/technologies/imagen/) - Google's photorealistic image model.
 - [Jasper Art](https://www.jasper.ai/art) - AI art generation for marketers.
 - [BlueWillow](https://www.bluewillow.ai/) - Free AI image generator.
+- [PixGT](https://pixgt.cn) - E-commerce image generator with product scenes, clothing try-on, and model swapping.
 - [Prisma](https://prisma-ai.com/) - Artistic photo filters.
 
 ### Design Tools
