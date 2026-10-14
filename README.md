@@ -111,7 +111,7 @@ Image generation, visual design, creative production, and design-assistance tool
 - [Jasper Art](https://www.jasper.ai/art) - AI art generation for marketers.
 - [BlueWillow](https://www.bluewillow.ai/) - Free AI image generator.
 - [Prisma](https://prisma-ai.com/) - Artistic photo filters.
-- [Muse Me](https://muse-me-avatar-beta.zhangwei798879.chatgpt.site/?source=github&campaign=directory&content=awesome_ai_catalog_pr) - Turns one authorized photo into an original anime-style social avatar without requiring an account.
+- [Muse Studio](https://muse-me-avatar-beta.zhangwei798879.chatgpt.site/create?utm_source=github&utm_campaign=ad_recovery&utm_content=aliammari_directory) - Generates static ad concepts from text with editable headline, offer and CTA, and PNG export. Limited free beta; one ChatGPT sign-in; no card.
 
 ### Design Tools
 
