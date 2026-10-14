@@ -416,6 +416,7 @@ General-purpose models, open models, and frameworks used to build with LLMs.
 
 ### LLM Tools & Frameworks
 
+- [AI Router](https://ai-router.dev/) - OpenAI-compatible API relay with personal keys, usage visibility, and authenticated model discovery.
 - [LangChain](https://langchain.com/) - Framework for building LLM applications with chains, agents, and memory.
 - [LlamaIndex](https://www.llamaindex.ai/) - Data framework for LLM applications with RAG and data connectors.
 - [Haystack](https://haystack.deepset.ai/) - NLP framework for building search systems and RAG pipelines.
