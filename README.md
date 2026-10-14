@@ -67,6 +67,7 @@ Scheduling, task management, project workflows, email, and day-to-day work autom
 
 - [Notion](https://www.notion.so) - Workspace with AI features.
 - [Todoist](https://todoist.com/) - Natural language task scheduling with AI.
+- [Tudo](https://blynkai.app/tudo/) - AI task manager for iPhone that turns voice notes, screenshots, and text into organized tasks and plans.
 - [Asana](https://asana.com) - Project management with AI-powered insights.
 - [ClickUp](https://clickup.com/) - Productivity platform with AI automation.
 - [Monday.com](https://monday.com/) - Work OS with AI workflow automation.
