@@ -149,6 +149,7 @@ Writing, content creation, translation, localization, and communication assistan
 - [Hyperwrite](https://hyperwriteai.com/) - Personal AI writing assistant with AutoWrite and TypeAhead.
 - [Frase](https://www.frase.io/) - AI SEO content creation and optimization with SERP analysis.
 - [Surfer SEO](https://surferseo.com/) - AI-powered content optimization with NLP analysis.
+- [Lynote AI Humanize Text](https://github.com/lynote-ai/humanize-text) - Open-source AI text humanization tool that polishes robotic AI-generated content into natural human writing. Full free web version: https://lynote.ai/ai-humanizer
 
 ### Content Creation
 
