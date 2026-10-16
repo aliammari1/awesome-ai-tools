@@ -367,8 +367,6 @@ Coding assistants, developer tools, code analysis, and software-engineering auto
 
 AI search engines, research assistants, knowledge discovery, and evidence-gathering tools.
 
-- [Arcmira: YouTube Transcript Search](https://arcmira.com) - Search YouTube transcripts for timestamped quotes, speaker appearances, sponsors and recommendations through an app, API and MCP connection.
-
 ### AI-Powered Search Engines
 
 - [Perplexity AI](https://www.perplexity.ai/) - AI search engine with browser and web search features.
@@ -394,6 +392,7 @@ AI search engines, research assistants, knowledge discovery, and evidence-gather
 - [Scite](https://scite.ai/) - Smart citations for research validation.
 - [Connected Papers](https://www.connectedpapers.com/) - Visual academic paper exploration.
 - [CiteMe](https://citeme.app/) - AI-powered academic citation generator that searches 11+ scholarly databases and formats references in 40+ citation styles.
+- [Arcmira: YouTube Transcript Search](https://arcmira.com) - Search YouTube transcripts for timestamped quotes, speaker appearances, sponsors and recommendations through an app, API and MCP connection.
 
 ## Large Language Models
 

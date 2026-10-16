@@ -3,7 +3,10 @@
   "url": "https://arcmira.com",
   "description": "Search YouTube transcripts for timestamped quotes, speaker appearances, sponsors and recommendations through an app, API and MCP connection.",
   "category": "ai-search-and-research",
-  "subcategory": null,
+  "subcategory": {
+    "id": "research-and-knowledge-tools",
+    "name": "Research & Knowledge Tools"
+  },
   "order": 9999,
   "openSource": false,
   "pricing": "freemium",
