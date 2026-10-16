@@ -1,6 +1,6 @@
 # Awesome AI Tools [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
-> A curated catalog of **384 AI tools** across **19 categories**.
+> A curated catalog of **385 AI tools** across **19 categories**.
 > Browse the searchable directory at **https://docs.aliammari.dev**.
 
 The catalog source of truth is `catalog/tools/*.json`. This README is generated from that structured catalog; edit catalog records instead of editing tool entries here.
@@ -343,6 +343,7 @@ Coding assistants, developer tools, code analysis, and software-engineering auto
 - [Continue.dev](https://continue.dev/) - Open-source AI coding assistant for VS Code & JetBrains with custom models.
 - [Aider](https://aider.chat/) - Open-source AI pair programmer for terminal with Git integration.
 - [CodeT5](https://github.com/salesforce/CodeT5) - Open-source code generation by Salesforce.
+- [YYLO](https://github.com/yylo-dev/yylo) - Open-source CLI that orchestrates AI coding agents with Kanban task boards, Git worktree workflows, and merge automation.
 
 ### Development Tools
 
