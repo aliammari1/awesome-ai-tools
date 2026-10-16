@@ -21,10 +21,19 @@ const tools = defineCollection({
     openSource: z.boolean().nullable(),
     pricing: z.enum(['free', 'freemium', 'paid', 'contact-sales']).nullable(),
     status: z.enum(['listed', 'deprecated', 'discontinued']),
-    source: z.object({
-      kind: z.literal('readme-migration'),
-      migratedAt: z.string(),
-    }),
+    source: z.discriminatedUnion('kind', [
+      z.object({
+        kind: z.literal('readme-migration'),
+        migratedAt: z.string(),
+      }),
+      z.object({
+        kind: z.literal('submission'),
+        submittedAt: z.string().regex(/^\d{4}-\d{2}-\d{2}$/).refine((value) => {
+          const date = new Date(value);
+          return Number.isFinite(date.getTime()) && date.toISOString().slice(0, 10) === value;
+        }, 'Expected a valid calendar date'),
+      }),
+    ]),
   }),
 });
 
