@@ -21,10 +21,16 @@ const tools = defineCollection({
     openSource: z.boolean().nullable(),
     pricing: z.enum(['free', 'freemium', 'paid', 'contact-sales']).nullable(),
     status: z.enum(['listed', 'deprecated', 'discontinued']),
-    source: z.object({
-      kind: z.literal('readme-migration'),
-      migratedAt: z.string(),
-    }),
+    source: z.discriminatedUnion('kind', [
+      z.object({
+        kind: z.literal('readme-migration'),
+        migratedAt: z.string(),
+      }),
+      z.object({
+        kind: z.literal('submission'),
+        submittedAt: z.string().regex(/^\d{4}-\d{2}-\d{2}$/),
+      }),
+    ]),
   }),
 });
 
