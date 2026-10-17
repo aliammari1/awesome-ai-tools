@@ -111,6 +111,7 @@ Image generation, visual design, creative production, and design-assistance tool
 - [Jasper Art](https://www.jasper.ai/art) - AI art generation for marketers.
 - [BlueWillow](https://www.bluewillow.ai/) - Free AI image generator.
 - [Prisma](https://prisma-ai.com/) - Artistic photo filters.
+- [EmptyRoom AI](https://emptyroomai.com/) - AI virtual staging that furnishes vacant listing photos for agents, $4 per room with free restages.
 
 ### Design Tools
 
