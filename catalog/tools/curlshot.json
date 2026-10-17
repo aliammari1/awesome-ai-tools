@@ -1,0 +1,18 @@
+{
+  "name": "CurlShot",
+  "url": "https://curlshot.com/",
+  "description": "Screenshot API with an MCP server that lets AI agents capture web pages, HTML or Markdown as images, PDFs or scrolling videos.",
+  "category": "code-generation-and-development",
+  "subcategory": {
+    "id": "development-tools",
+    "name": "Development Tools"
+  },
+  "order": 226,
+  "openSource": false,
+  "pricing": "freemium",
+  "status": "listed",
+  "source": {
+    "kind": "community",
+    "addedAt": "2026-10-17"
+  }
+}
