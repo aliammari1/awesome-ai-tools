@@ -1,0 +1,18 @@
+{
+  "name": "VisionQuantech Interview Prep Coach",
+  "url": "https://apps.visionquantech.com/interview-prep-coach/",
+  "description": "Generates likely interview questions from a job description with a STAR answer builder and practice mode. Free, no signup required.",
+  "category": "business-and-marketing",
+  "subcategory": {
+    "id": "career-and-job-search",
+    "name": "Career & Job Search"
+  },
+  "order": 902,
+  "openSource": false,
+  "pricing": "free",
+  "status": "listed",
+  "source": {
+    "kind": "community-submission",
+    "submittedAt": "2026-10-17"
+  }
+}
