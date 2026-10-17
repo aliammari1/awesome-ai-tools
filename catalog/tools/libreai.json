@@ -1,0 +1,18 @@
+{
+  "name": "LibreAI",
+  "url": "https://libreaihub.vercel.app",
+  "description": "A verified showcase of 2,099 open-source AI projects in 17 categories, with install guides — every project checked against its GitHub repo.",
+  "category": "ai-search-and-research",
+  "subcategory": {
+    "id": "research-and-knowledge-tools",
+    "name": "Research & Knowledge Tools"
+  },
+  "order": 9999,
+  "openSource": null,
+  "pricing": null,
+  "status": "listed",
+  "source": {
+    "kind": "readme-migration",
+    "migratedAt": "2026-09-21"
+  }
+}
