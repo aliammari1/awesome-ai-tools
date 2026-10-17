@@ -1,0 +1,18 @@
+{
+  "name": "BKK Staff",
+  "url": "https://www.bkkstaff.com/",
+  "description": "Automated resume screening for small businesses that grades applicants for each job, follows up with strong candidates by email and delivers an interview shortlist.",
+  "category": "business-and-marketing",
+  "subcategory": {
+    "id": "career-and-job-search",
+    "name": "Career & Job Search"
+  },
+  "order": 387,
+  "openSource": false,
+  "pricing": "paid",
+  "status": "listed",
+  "source": {
+    "kind": "pull-request",
+    "submittedAt": "2026-10-17"
+  }
+}
