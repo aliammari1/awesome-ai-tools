@@ -1,0 +1,18 @@
+{
+  "name": "VisionQuantech ATS Resume Checker",
+  "url": "https://apps.visionquantech.com/resume-ats-checker/",
+  "description": "Free ATS resume checker that scores a resume 0-100 against a job description, flags missing keywords, and suggests bullet rewrites. No signup required.",
+  "category": "business-and-marketing",
+  "subcategory": {
+    "id": "career-and-job-search",
+    "name": "Career & Job Search"
+  },
+  "order": 901,
+  "openSource": false,
+  "pricing": "free",
+  "status": "listed",
+  "source": {
+    "kind": "community-submission",
+    "submittedAt": "2026-10-17"
+  }
+}
