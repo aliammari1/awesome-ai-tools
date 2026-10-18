@@ -48,7 +48,7 @@ Example:
 }
 ```
 
-The `source` field marks records created by the September 2026 README migration. A later schema revision will separate migration provenance from human verification metadata; do not treat the migration date as a verification date.
+The `source` field marks records created by the September 2026 README migration. A later schema revision will separate migration provenance from human verification metadata; do not treat the migration date as a verification date. For tools added after that migration, use `"kind": "contributor-submission"` with a `submittedAt` date instead of `readme-migration`.
 
 ## Quality bar
 
