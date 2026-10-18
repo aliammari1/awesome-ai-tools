@@ -1,0 +1,18 @@
+{
+  "name": "Wedding AI",
+  "url": "https://weddingai.studio/",
+  "description": "AI wedding invitation video maker that turns templates, names, and photos into an HD MP4.",
+  "category": "video-and-media",
+  "subcategory": {
+    "id": "video-creation-and-editing",
+    "name": "Video Creation & Editing"
+  },
+  "order": 9992,
+  "openSource": false,
+  "pricing": null,
+  "status": "listed",
+  "source": {
+    "kind": "community-pr",
+    "migratedAt": "2026-10-18"
+  }
+}
