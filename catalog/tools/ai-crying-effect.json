@@ -1,0 +1,18 @@
+{
+  "name": "AI Crying Effect",
+  "url": "https://aicryingeffect.app/",
+  "description": "Turns one adult portrait into a short AI crying-effect video, ordered by email without an account.",
+  "category": "video-and-media",
+  "subcategory": {
+    "id": "video-creation-and-editing",
+    "name": "Video Creation & Editing"
+  },
+  "order": 385,
+  "openSource": null,
+  "pricing": null,
+  "status": "listed",
+  "source": {
+    "kind": "readme-migration",
+    "migratedAt": "2026-10-18"
+  }
+}
