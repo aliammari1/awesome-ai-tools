@@ -7,12 +7,12 @@
     "id": "video-creation-and-editing",
     "name": "Video Creation & Editing"
   },
-  "order": 385,
+  "order": 235,
   "openSource": null,
   "pricing": null,
   "status": "listed",
   "source": {
-    "kind": "readme-migration",
-    "migratedAt": "2026-10-18"
+    "kind": "contributor-submission",
+    "submittedAt": "2026-10-18"
   }
 }
