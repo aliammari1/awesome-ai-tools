@@ -295,6 +295,7 @@ Video generation, editing, enhancement, effects, and media-production tools.
 ### Video Creation & Editing
 
 - [Sora](https://openai.com/sora) - OpenAI's video & audio generation with synchronized dialogue, iOS app.
+- [AI Crying Effect](https://aicryingeffect.app/) - Turns one adult portrait into a short AI crying-effect video, ordered by email without an account.
 - [Google Veo](https://deepmind.google/technologies/veo/) - Video model with Ingredients-to-Video, native audio.
 - [Runway](https://runwayml.com/) - Video generation model with accurate motion and physics representation.
 - [Kling AI](https://kling.ai/) - Video generation with audio, dialogue, avatars, and editing features.
