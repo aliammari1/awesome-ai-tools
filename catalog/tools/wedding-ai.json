@@ -12,7 +12,7 @@
   "pricing": null,
   "status": "listed",
   "source": {
-    "kind": "community-pr",
+    "kind": "readme-migration",
     "migratedAt": "2026-10-18"
   }
 }
