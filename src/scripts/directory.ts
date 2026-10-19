@@ -15,11 +15,7 @@ const editDistance = (a: string, b: string) => {
     rows[0] = j;
     for (let i = 1; i <= a.length; i += 1) {
       const current = rows[i];
-      rows[i] = Math.min(
-        rows[i] + 1,
-        rows[i - 1] + 1,
-        previous + (a[i - 1] === b[j - 1] ? 0 : 1),
-      );
+      rows[i] = Math.min(rows[i] + 1, rows[i - 1] + 1, previous + (a[i - 1] === b[j - 1] ? 0 : 1));
       previous = current;
     }
   }
@@ -42,7 +38,11 @@ const queryScore = (card: HTMLElement, rawQuery: string) => {
     else if (name.startsWith(token)) score = 70;
     else if (name.includes(token)) score = 50;
     else if (haystack.includes(token)) score = 24;
-    else if (token.length >= 4 && words.some((word) => word.length >= 3 && editDistance(token, word) <= 1)) score = 10;
+    else if (
+      token.length >= 4 &&
+      words.some((word) => word.length >= 3 && editDistance(token, word) <= 1)
+    )
+      score = 10;
 
     if (!score) return 0;
     total += score;
@@ -55,7 +55,9 @@ const queryScore = (card: HTMLElement, rawQuery: string) => {
 };
 
 const valuesFor = (root: HTMLElement, name: string) =>
-  [...root.querySelectorAll<HTMLInputElement>('input[name="' + name + '"]:checked')].map((input) => input.value);
+  [...root.querySelectorAll<HTMLInputElement>('input[name="' + name + '"]:checked')].map(
+    (input) => input.value,
+  );
 
 export function initDirectory() {
   const root = document.querySelector<HTMLElement>('[data-directory]');
@@ -91,7 +93,11 @@ export function initDirectory() {
   }
 
   const storedView = (() => {
-    try { return localStorage.getItem('awt:directory-view:v1'); } catch { return null; }
+    try {
+      return localStorage.getItem('awt:directory-view:v1');
+    } catch {
+      return null;
+    }
   })();
   const initialView = params.get('view') || storedView || 'grid';
 
@@ -99,8 +105,14 @@ export function initDirectory() {
     const next = view === 'list' ? 'list' : 'grid';
     root.dataset.view = next;
     if (results) results.dataset.view = next;
-    viewButtons.forEach((button) => button.setAttribute('aria-pressed', String(button.dataset.viewButton === next)));
-    try { localStorage.setItem('awt:directory-view:v1', next); } catch {}
+    viewButtons.forEach((button) =>
+      button.setAttribute('aria-pressed', String(button.dataset.viewButton === next)),
+    );
+    try {
+      localStorage.setItem('awt:directory-view:v1', next);
+    } catch {
+      /* view preference is best-effort; storage may be unavailable */
+    }
   };
   setView(initialView);
 
@@ -165,7 +177,11 @@ export function initDirectory() {
     if (view === 'list') next.set('view', 'list');
 
     const suffix = next.toString();
-    history.replaceState(null, '', location.pathname + (suffix ? '?' + suffix : '') + location.hash);
+    history.replaceState(
+      null,
+      '',
+      location.pathname + (suffix ? '?' + suffix : '') + location.hash,
+    );
   };
 
   const apply = () => {
@@ -208,17 +224,22 @@ export function initDirectory() {
 
   const clearFilters = () => {
     if (search) search.value = '';
-    root.querySelectorAll<HTMLInputElement>('.filter-panel input').forEach((input) => { input.checked = false; });
+    root.querySelectorAll<HTMLInputElement>('.filter-panel input').forEach((input) => {
+      input.checked = false;
+    });
     if (sort) sort.value = 'relevance';
     apply();
   };
 
   search?.addEventListener('input', apply);
   sort?.addEventListener('change', apply);
-  root.querySelectorAll<HTMLInputElement>('.filter-panel input').forEach((input) => input.addEventListener('change', apply));
+  root
+    .querySelectorAll<HTMLInputElement>('.filter-panel input')
+    .forEach((input) => input.addEventListener('change', apply));
 
   root.addEventListener('click', (event) => {
-    const target = event.target instanceof Element ? event.target.closest<HTMLElement>('button') : null;
+    const target =
+      event.target instanceof Element ? event.target.closest<HTMLElement>('button') : null;
     if (!target) return;
 
     if (target.dataset.clearFilters !== undefined) {
@@ -232,7 +253,11 @@ export function initDirectory() {
     }
     if (target.dataset.removeFilterName && target.dataset.removeFilterValue) {
       const input = root.querySelector<HTMLInputElement>(
-        'input[name="' + target.dataset.removeFilterName + '"][value="' + CSS.escape(target.dataset.removeFilterValue) + '"]',
+        'input[name="' +
+          target.dataset.removeFilterName +
+          '"][value="' +
+          CSS.escape(target.dataset.removeFilterValue) +
+          '"]',
       );
       if (input) input.checked = false;
       apply();
@@ -268,7 +293,11 @@ export function initDirectory() {
       search?.focus();
       search?.select();
     }
-    if (event.key === '/' && document.activeElement?.tagName !== 'INPUT' && document.activeElement?.tagName !== 'TEXTAREA') {
+    if (
+      event.key === '/' &&
+      document.activeElement?.tagName !== 'INPUT' &&
+      document.activeElement?.tagName !== 'TEXTAREA'
+    ) {
       event.preventDefault();
       search?.focus();
     }

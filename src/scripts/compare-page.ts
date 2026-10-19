@@ -1,3 +1,5 @@
+import { pricingLabels } from '../lib/pricing';
+
 type CompareTool = {
   id: string;
   name: string;
@@ -10,24 +12,24 @@ type CompareTool = {
 };
 
 const KEY = 'awt:compare-tools:v1';
-const pricingLabel: Record<string, string> = {
-  free: 'Free',
-  freemium: 'Freemium',
-  paid: 'Paid',
-  'contact-sales': 'Contact sales',
-};
 
 const readStored = () => {
   try {
     const parsed = JSON.parse(localStorage.getItem(KEY) || '[]');
-    return Array.isArray(parsed) ? parsed.filter((value) => typeof value === 'string').slice(0, 3) : [];
+    return Array.isArray(parsed)
+      ? parsed.filter((value) => typeof value === 'string').slice(0, 3)
+      : [];
   } catch {
     return [];
   }
 };
 
 const writeStored = (ids: string[]) => {
-  try { localStorage.setItem(KEY, JSON.stringify(ids.slice(0, 3))); } catch {}
+  try {
+    localStorage.setItem(KEY, JSON.stringify(ids.slice(0, 3)));
+  } catch {
+    /* localStorage can be unavailable in private or locked-down contexts */
+  }
 };
 
 const td = (value: string) => {
@@ -43,12 +45,21 @@ export function initComparePage() {
   const allTools = JSON.parse(dataNode.textContent || '[]') as CompareTool[];
   const byId = new Map(allTools.map((tool) => [tool.id, tool]));
   const params = new URLSearchParams(location.search);
-  const fromUrl = (params.get('ids') || '').split(',').filter((id) => byId.has(id)).slice(0, 3);
+  const fromUrl = (params.get('ids') || '')
+    .split(',')
+    .filter((id) => byId.has(id))
+    .slice(0, 3);
+
+  let currentIds: string[] = fromUrl.length
+    ? fromUrl
+    : readStored()
+        .filter((id) => byId.has(id))
+        .slice(0, 3);
 
   if (fromUrl.length) writeStored(fromUrl);
 
   const render = () => {
-    const ids = (fromUrl.length ? readStored() : readStored()).filter((id) => byId.has(id)).slice(0, 3);
+    const ids = currentIds.filter((id) => byId.has(id)).slice(0, 3);
     const tools = ids.map((id) => byId.get(id)).filter(Boolean) as CompareTool[];
 
     const empty = document.querySelector<HTMLElement>('#compare-empty');
@@ -80,7 +91,11 @@ export function initComparePage() {
       const mark = document.createElement('div');
       mark.className = 'tool-mark';
       mark.setAttribute('aria-hidden', 'true');
-      mark.textContent = tool.name.split(/\s+/).slice(0, 2).map((part) => part[0]).join('');
+      mark.textContent = tool.name
+        .split(/\s+/)
+        .slice(0, 2)
+        .map((part) => part[0])
+        .join('');
 
       const title = document.createElement('div');
       title.className = 'tool-title';
@@ -104,7 +119,8 @@ export function initComparePage() {
       remove.className = 'icon-text-button';
       remove.textContent = 'Remove';
       remove.addEventListener('click', () => {
-        writeStored(readStored().filter((id) => id !== tool.id));
+        currentIds = currentIds.filter((id) => id !== tool.id);
+        writeStored(currentIds);
         document.dispatchEvent(new CustomEvent('awt:compare-changed'));
         render();
       });
@@ -113,7 +129,7 @@ export function initComparePage() {
       visit.className = 'visit-link';
       visit.href = tool.url;
       visit.target = '_blank';
-      visit.rel = 'noopener noreferrer';
+      visit.rel = 'noopener noreferrer nofollow';
       visit.textContent = 'Visit ↗';
 
       actions.append(remove, visit);
@@ -137,9 +153,13 @@ export function initComparePage() {
     const rows: Array<[string, (tool: CompareTool) => string]> = [
       ['Category', (tool) => tool.category],
       ['Subcategory', (tool) => tool.subcategory || 'Not recorded'],
-      ['Pricing', (tool) => tool.pricing ? pricingLabel[tool.pricing] : 'Not recorded'],
-      ['Open source', (tool) => tool.openSource === true ? 'Yes' : tool.openSource === false ? 'No' : 'Not recorded'],
-      ['Verification', () => 'Pending'],
+      ['Pricing', (tool) => (tool.pricing ? pricingLabels[tool.pricing] : 'Not recorded')],
+      [
+        'Open source',
+        (tool) =>
+          tool.openSource === true ? 'Yes' : tool.openSource === false ? 'No' : 'Not recorded',
+      ],
+      ['Verification', () => 'Not independently verified'],
     ];
 
     rows.forEach(([label, value]) => {
@@ -157,6 +177,18 @@ export function initComparePage() {
     history.replaceState(null, '', location.pathname + '?' + next.toString());
   };
 
-  document.addEventListener('awt:compare-changed', render);
+  document.addEventListener('awt:compare-changed', () => {
+    const stored = readStored()
+      .filter((id) => byId.has(id))
+      .slice(0, 3);
+    try {
+      if (localStorage.getItem(KEY) !== null || stored.length > 0) {
+        currentIds = stored;
+      }
+    } catch {
+      /* localStorage blocked, preserve in-memory currentIds */
+    }
+    render();
+  });
   render();
 }

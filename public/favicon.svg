@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Awesome AI Tools">
+  <rect width="64" height="64" rx="15" fill="#101216"/>
+  <rect x="9" y="9" width="46" height="46" rx="11" fill="#3B82F6"/>
+  <text x="32" y="43" text-anchor="middle" font-family="DejaVu Sans, Helvetica, Arial, sans-serif" font-size="25" font-weight="700" fill="#ffffff">AI</text>
+</svg>

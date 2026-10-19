@@ -8,10 +8,13 @@ interface Props {
 const { locale = 'en' } = Astro.props;
 const prefix = '/' + locale;
 ---
+
 <header class="site-header">
   <div class="shell header-inner">
     <a class="brand" href={prefix + '/'} aria-label="Awesome AI Tools home">
-      <span class="brand-mark" aria-hidden="true">AI</span>
+      <span class="brand-mark" aria-hidden="true">
+        AI
+      </span>
       <span>Awesome AI Tools</span>
     </a>
 
@@ -20,7 +23,13 @@ const prefix = '/' + locale;
       <a href={prefix + '/saved/'}>Saved</a>
       <a href={prefix + '/about/methodology/'}>Methodology</a>
       <a href={prefix + '/contribute/'}>Contribute</a>
-      <a href="https://github.com/aliammari1/awesome-ai-tools" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+      <a
+        href="https://github.com/aliammari1/awesome-ai-tools"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        GitHub ↗
+      </a>
     </nav>
 
     <div class="header-actions">

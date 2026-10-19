@@ -12,14 +12,20 @@ const readList = (key: string) => {
 };
 
 const writeList = (key: string, list: string[]) => {
-  try { localStorage.setItem(key, JSON.stringify(list)); } catch {}
+  try {
+    localStorage.setItem(key, JSON.stringify(list));
+  } catch {
+    /* saved/compare state is best-effort; storage may be unavailable */
+  }
 };
 
 const announce = (message: string) => {
   const region = document.querySelector<HTMLElement>('[data-site-status]');
   if (!region) return;
   region.textContent = '';
-  requestAnimationFrame(() => { region.textContent = message; });
+  requestAnimationFrame(() => {
+    region.textContent = message;
+  });
 };
 
 const syncSaved = () => {

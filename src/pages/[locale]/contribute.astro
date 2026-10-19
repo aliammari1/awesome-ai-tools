@@ -15,42 +15,78 @@ const example = `{
   "url": "https://example.com/",
   "description": "One factual sentence describing what the tool does.",
   "category": "code-generation-and-development",
-  "subcategory": {
-    "id": "ai-coding-assistants",
-    "name": "AI Coding Assistants"
-  },
-  "order": 9999,
-  "openSource": null,
-  "pricing": null,
-  "status": "listed",
   "source": {
-    "kind": "readme-migration",
-    "migratedAt": "2026-09-21"
+    "kind": "community",
+    "addedAt": "YYYY-MM-DD"
   }
 }`;
 ---
-<BaseLayout title="Contribute" description="How to add or update an entry in the Awesome AI Tools structured catalog." locale={locale}>
+
+<BaseLayout
+  title="Contribute"
+  description="How to add or update an entry in the Awesome AI Tools structured catalog."
+  locale={locale}
+>
   <LegacyLocaleNotice locale={locale} />
   <article class="content-page">
     <p class="kicker">Repository workflow</p>
     <h1>Contribute to the catalog</h1>
-    <p>Tool entries are no longer edited inside the README. Add or update the structured JSON record; CI validates it, verifies that the README can be regenerated, checks links, and builds the site.</p>
+    <p>
+      Add or update a structured JSON record. CI validates the catalog, checks types, runs tests,
+      and builds the site. External link reports assist human review.
+    </p>
+    <p>
+      You can also{' '}
+      <a href="https://github.com/aliammari1/awesome-ai-tools/issues/new?template=tool_addition.yml">
+        suggest a tool through an issue
+      </a>{' '}
+      without installing anything.
+    </p>
 
     <h2>Add a tool</h2>
     <ol>
-      <li>Create <code>catalog/tools/&lt;slug&gt;.json</code>.</li>
-      <li>Use an existing category ID from <code>catalog/categories/</code>.</li>
-      <li>Write a short factual description. Avoid claims that will become stale quickly unless they are separately sourced.</li>
-      <li>Use <code>null</code> for pricing, open-source status, or verification metadata you do not actually know.</li>
-      <li>Run <code>bun run validate</code>, <code>bun run generate:readme</code>, and <code>bun run build</code>.</li>
+      <li>
+        Run <code>bun run new:tool</code> for the interactive wizard, or manually create{' '}
+        <code>catalog/tools/&lt;slug&gt;.json</code>.
+      </li>
+      <li>
+        Use an existing category ID from <code>catalog/categories/</code>.
+      </li>
+      <li>
+        Write a short factual description. Avoid claims that will become stale quickly unless they
+        are separately sourced.
+      </li>
+      <li>
+        Use <code>null</code> for pricing, open-source status, or verification metadata you do not
+        actually know.
+      </li>
+      <li>
+        Use today's date (format: <code>YYYY-MM-DD</code>) for <code>source.addedAt</code>; this
+        records submission provenance, not independent verification.
+      </li>
+      <li>
+        Install with <code>bun ci</code>, then run <code>bun run generate:readme</code> and{' '}
+        <code>bun run check:pr</code>.
+      </li>
     </ol>
 
     <h2>Example</h2>
     <pre><code>{example}</code></pre>
 
     <h2>Why the README is generated</h2>
-    <p>Previously, the README, documentation branch, generated content, and translated trees could drift. The catalog is now the only editable data source. This keeps pull requests reviewable and makes the website and README deterministic outputs of the same records.</p>
+    <p>
+      Previously, the README, documentation branch, generated content, and translated trees could
+      drift. The catalog is now the only editable data source. This keeps pull requests reviewable
+      and makes the website and README deterministic outputs of the same records.
+    </p>
 
-    <p><a class="primary-button" href="https://github.com/aliammari1/awesome-ai-tools/blob/main/CONTRIBUTING.md">Read CONTRIBUTING.md ↗</a></p>
+    <p>
+      <a
+        class="primary-button"
+        href="https://github.com/aliammari1/awesome-ai-tools/blob/main/CONTRIBUTING.md"
+      >
+        Read CONTRIBUTING.md ↗
+      </a>
+    </p>
   </article>
 </BaseLayout>

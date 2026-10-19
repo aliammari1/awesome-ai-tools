@@ -1,13 +1,7 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": [
-    "config:recommended",
-    ":disableDependencyDashboard"
-  ],
-  "enabledManagers": [
-    "github-actions",
-    "npm"
-  ],
+  "extends": ["config:recommended", ":disableDependencyDashboard"],
+  "enabledManagers": ["github-actions", "npm"],
   "github-actions": {
     "pinDigests": true
   },
