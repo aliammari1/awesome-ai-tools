@@ -288,6 +288,8 @@ Image recognition, visual analysis, and specialized computer-vision applications
 
 Music generation, voice, speech, transcription, and audio-production tools.
 
+- [Vocal Separator](https://vocalseparator.com/) - Separates vocals and instruments into WAV stems, with loops, tempo and pitch controls for music practice.
+
 ### Music Generation & Composition
 
 - [Suno](https://suno.ai/) - AI music generator.

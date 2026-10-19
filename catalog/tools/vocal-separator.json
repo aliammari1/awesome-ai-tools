@@ -1,0 +1,15 @@
+{
+  "name": "Vocal Separator",
+  "url": "https://vocalseparator.com/",
+  "description": "Separates vocals and instruments into WAV stems, with loops, tempo and pitch controls for music practice.",
+  "category": "audio-and-music",
+  "subcategory": null,
+  "order": 9999,
+  "openSource": false,
+  "pricing": "freemium",
+  "status": "listed",
+  "source": {
+    "kind": "community",
+    "addedAt": "2026-10-19"
+  }
+}
