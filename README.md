@@ -1,6 +1,6 @@
 # Awesome AI Tools [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
-> A curated catalog of **384 AI tools** across **19 categories**.
+> A curated catalog of **385 AI tools** across **19 categories**.
 > Browse the searchable directory at **https://docs.aliammari.dev**.
 
 The catalog source of truth is `catalog/tools/*.json`. This README is generated from that structured catalog; edit catalog records instead of editing tool entries here.
@@ -255,6 +255,8 @@ Image recognition, visual analysis, and specialized computer-vision applications
 ## Audio & Music
 
 Music generation, voice, speech, transcription, and audio-production tools.
+
+- [Vocal Separator](https://vocalseparator.com/) - Separates vocals and instruments into WAV stems, with loops, tempo and pitch controls for music practice.
 
 ### Music Generation & Composition
 
