@@ -42,13 +42,18 @@ Example:
   "pricing": null,
   "status": "listed",
   "source": {
-    "kind": "readme-migration",
-    "migratedAt": "2026-09-21"
+    "kind": "submission",
+    "submittedAt": "2026-10-19"
   }
 }
 ```
 
-The `source` field marks records created by the September 2026 README migration. A later schema revision will separate migration provenance from human verification metadata; do not treat the migration date as a verification date.
+The `source` field records how an entry entered the catalog:
+
+- For new entries, use `kind: "submission"` and set `submittedAt` to the actual submission date in `YYYY-MM-DD` format. Replace the example date above; empty strings and invalid calendar dates are rejected by the content schema.
+- Existing records from the September 2026 README migration retain `kind: "readme-migration"` and their original `migratedAt` value when updated.
+
+Neither date is a verification date. A future `verifiedAt` field should only be added when someone actually checks the official source.
 
 ## Quality bar
 

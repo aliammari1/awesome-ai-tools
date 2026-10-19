@@ -24,8 +24,8 @@ const example = `{
   "pricing": null,
   "status": "listed",
   "source": {
-    "kind": "readme-migration",
-    "migratedAt": "2026-09-21"
+    "kind": "submission",
+    "submittedAt": "2026-10-19"
   }
 }`;
 ---
@@ -47,6 +47,7 @@ const example = `{
 
     <h2>Example</h2>
     <pre><code>{example}</code></pre>
+    <p>For a new entry, use <code>source.kind: "submission"</code> and replace <code>submittedAt</code> with the actual submission date in <code>YYYY-MM-DD</code> format. Empty strings and invalid calendar dates are rejected by the content schema. When updating an existing migrated entry, preserve its <code>readme-migration</code> source and original <code>migratedAt</code> value. Neither date represents independent verification of the product.</p>
 
     <h2>Why the README is generated</h2>
     <p>Previously, the README, documentation branch, generated content, and translated trees could drift. The catalog is now the only editable data source. This keeps pull requests reviewable and makes the website and README deterministic outputs of the same records.</p>

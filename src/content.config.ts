@@ -28,7 +28,7 @@ const tools = defineCollection({
       }),
       z.object({
         kind: z.literal('submission'),
-        submittedAt: z.string(),
+        submittedAt: z.iso.date(),
       }),
     ]),
   }),
