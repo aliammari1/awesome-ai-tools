@@ -1,0 +1,18 @@
+{
+  "name": "Flowlines",
+  "url": "https://flowlines.ai/",
+  "description": "MCP analytics and agent monitoring for tool adoption, user journeys, reported outcomes, and recurring failures.",
+  "category": "miscellaneous",
+  "subcategory": {
+    "id": "ai-infrastructure-and-mlops",
+    "name": "AI Infrastructure & MLOps"
+  },
+  "order": 9999,
+  "openSource": false,
+  "pricing": "freemium",
+  "status": "listed",
+  "source": {
+    "kind": "submission",
+    "submittedAt": "2026-10-19"
+  }
+}
