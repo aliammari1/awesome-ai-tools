@@ -12,6 +12,7 @@
   --brand: #2457d6;
   --brand-hover: #1c46b3;
   --brand-soft: #edf2ff;
+  --on-brand: #ffffff;
   --success: #147a4b;
   --success-soft: #eaf7f0;
   --warning: #9b5b07;
@@ -39,6 +40,7 @@
     --brand: #7ca1ff;
     --brand-hover: #9ab6ff;
     --brand-soft: #1d2b50;
+    --on-brand: #101216;
     --success: #62d69a;
     --success-soft: #123524;
     --warning: #f0ba61;
@@ -172,6 +174,7 @@ img { max-width: 100%; }
 
 .empty-state { padding: 4rem 1rem; text-align: center; border: 1px dashed var(--border-strong); border-radius: var(--radius); color: var(--text-secondary); }
 .empty-state strong { display: block; color: var(--text); margin-bottom: 0.3rem; }
+.empty-state .actions-row { justify-content: center; }
 .filter-backdrop { display: none; }
 
 .content-page { width: min(calc(100% - 2rem), 860px); margin: 0 auto; padding: 4rem 0 6rem; }
@@ -200,7 +203,7 @@ img { max-width: 100%; }
 .detail-panel dd { margin: 0; text-align: right; font-size: 0.8rem; font-weight: 650; }
 .actions-row { display: flex; flex-wrap: wrap; gap: 0.55rem; margin-top: 1rem; }
 .primary-button, .secondary-button { min-height: 42px; display: inline-flex; align-items: center; justify-content: center; gap: 0.35rem; padding: 0.55rem 0.8rem; border-radius: 8px; text-decoration: none; font-weight: 680; font-size: 0.85rem; }
-.primary-button { border: 1px solid var(--brand); background: var(--brand); color: #fff !important; }
+.primary-button { border: 1px solid var(--brand); background: var(--brand); color: var(--on-brand) !important; }
 .primary-button:hover { background: var(--brand-hover); border-color: var(--brand-hover); }
 .secondary-button { border: 1px solid var(--border-strong); background: var(--surface); color: var(--text); }
 .secondary-button:hover { background: var(--surface-subtle); }
