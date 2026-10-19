@@ -1,0 +1,18 @@
+{
+  "name": "Frink",
+  "url": "https://frink.dev/",
+  "description": "Fine-tuned automation for everyone: visual workflows where AI coding agents (Claude Code, Codex, OpenCode, GitHub Copilot, Cursor) act on your tickets, errors and schedules, and ask before they change anything.",
+  "category": "miscellaneous",
+  "subcategory": {
+    "id": "ai-agents-and-automation",
+    "name": "AI Agents & Automation"
+  },
+  "order": 387,
+  "openSource": true,
+  "pricing": null,
+  "status": "listed",
+  "source": {
+    "kind": "readme-migration",
+    "migratedAt": "2026-09-21"
+  }
+}
