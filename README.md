@@ -1,6 +1,6 @@
 # Awesome AI Tools [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
-> A curated catalog of **384 AI tools** across **19 categories**.
+> A curated catalog of **385 AI tools** across **19 categories**.
 > Browse the searchable directory at **https://docs.aliammari.dev**.
 
 The catalog source of truth is `catalog/tools/*.json`. This README is generated from that structured catalog; edit catalog records instead of editing tool entries here.
@@ -577,6 +577,7 @@ Infrastructure, MLOps, automation, and specialized tools that span multiple cate
 - [Comet ML](https://www.comet.com/) - ML experiment tracking with model monitoring.
 - [ClearML](https://clear.ml/) - Open-source MLOps platform with experiment tracking.
 - [BentoML](https://www.bentoml.com/) - Framework for serving ML models with OpenLLM.
+- [Flowlines](https://flowlines.ai/) - MCP analytics and agent monitoring for tool adoption, user journeys, reported outcomes, and recurring failures.
 
 ### AI Agents & Automation
 

@@ -116,9 +116,11 @@ const pricingLabel: Record<string, string> = {
       <aside>
         <div class="data-note">
           <strong>Data confidence</strong>
-          <p>
-            This entry was migrated from the repository catalog on September 21, 2026. Migration established structured provenance, but it is not treated as a fresh verification of pricing, availability, or product claims.
-          </p>
+          {tool.source.kind === 'submission' ? (
+            <p>This entry was submitted to the catalog on {tool.source.submittedAt}. Submission is not independent verification of pricing, availability, or product claims.</p>
+          ) : (
+            <p>This entry was migrated from the repository catalog on {tool.source.migratedAt}. Migration established structured provenance, but it is not treated as a fresh verification of pricing, availability, or product claims.</p>
+          )}
           <a href={'/' + locale + '/about/methodology/'}>Read the methodology →</a>
         </div>
       </aside>
