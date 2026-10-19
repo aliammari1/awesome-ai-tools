@@ -205,7 +205,7 @@ Machine learning platforms, analytics, visualization, and data-focused research 
 - [Jupyter Notebook](https://jupyter.org/) - Interactive computing environment.
 - [Google Colab](https://colab.research.google.com/) - Free cloud-based notebooks.
 - [Kaggle](https://www.kaggle.com/) - Data science competition platform.
-- [Pulse](https://pulsecorp.co) - AI-moderated market research platform that runs customer interviews at scale.
+- [Pulse](https://pulsecorp.co) - AI-moderated customer interviews for market research.
 
 ## Natural Language Processing
 

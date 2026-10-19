@@ -1,14 +1,18 @@
 {
   "name": "Pulse",
   "url": "https://pulsecorp.co",
-  "description": "AI-moderated market research platform that runs customer interviews at scale.",
+  "description": "AI-moderated customer interviews for market research.",
   "category": "data-science-and-analytics",
   "subcategory": {
     "id": "research-tools",
     "name": "Research Tools"
   },
-  "order": 9999,
-  "openSource": false,
-  "pricing": "paid",
-  "status": "listed"
+  "order": 387,
+  "openSource": null,
+  "pricing": null,
+  "status": "listed",
+  "source": {
+    "kind": "readme-migration",
+    "migratedAt": "2026-09-21"
+  }
 }
