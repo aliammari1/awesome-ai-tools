@@ -1,6 +1,6 @@
 # Awesome AI Tools [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
-> A curated catalog of **384 AI tools** across **19 categories**.
+> A curated catalog of **385 AI tools** across **19 categories**.
 > Browse the searchable directory at **https://docs.aliammari.dev**.
 
 Find AI tools by task, then compare recorded pricing and open-source information in the [searchable directory](https://docs.aliammari.dev/en/). Unknown metadata stays unknown.
@@ -207,6 +207,7 @@ Machine learning platforms, analytics, visualization, and data-focused research 
 - [Jupyter Notebook](https://jupyter.org/) - Interactive computing environment.
 - [Google Colab](https://colab.research.google.com/) - Free cloud-based notebooks.
 - [Kaggle](https://www.kaggle.com/) - Data science competition platform.
+- [Pulse](https://pulsecorp.co) - AI-moderated customer interviews for market research.
 
 ## Natural Language Processing
 
