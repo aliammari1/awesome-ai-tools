@@ -594,7 +594,7 @@ Infrastructure, MLOps, automation, and specialized tools that span multiple cate
 - [Devin AI](https://cognition.ai/) - Autonomous AI software developer agent for full SDLC.
 - [Harvey AI](https://harvey.ai/) - AI agent for automating legal workflows and contract review.
 - [Dust](https://dust.tt/) - AI assistant builder for enterprise with custom agents and data sources.
-- [Frink](https://frink.dev/) - Fine-tuned automation for everyone: visual workflows where AI coding agents (Claude Code, Codex, OpenCode, GitHub Copilot, Cursor) act on your tickets, errors and schedules, and ask before they change anything.
+- [Frink](https://frink.dev/) - Desktop-first, open-source (MIT) application for running parallel agents, and multi-step custom workflows triggered by schedules, webhooks or events from tools like Linear and Sentry, across your already-used providers.
 
 ### Specialized AI Applications
 
