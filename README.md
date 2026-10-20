@@ -1,6 +1,6 @@
 # Awesome AI Tools [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
-> A curated catalog of **384 AI tools** across **19 categories**.
+> A curated catalog of **385 AI tools** across **19 categories**.
 > Browse the searchable directory at **https://docs.aliammari.dev**.
 
 Find AI tools by task, then compare recorded pricing and open-source information in the [searchable directory](https://docs.aliammari.dev/en/). Unknown metadata stays unknown.
@@ -48,6 +48,8 @@ Agent SDKs, autonomous systems, orchestration, tool use, memory, and browser aut
 ## Productivity
 
 Scheduling, task management, project workflows, email, and day-to-day work automation.
+
+- [OtterFill](https://otterfill.com/) - AI form filler that turns any form into clear questions, prefills answers from your documents, and cross-checks answers across your other forms.
 
 ### Time Management & Scheduling
 
