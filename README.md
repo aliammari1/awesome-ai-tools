@@ -1,6 +1,6 @@
 # Awesome AI Tools [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
-> A curated catalog of **384 AI tools** across **19 categories**.
+> A curated catalog of **385 AI tools** across **19 categories**.
 > Browse the searchable directory at **https://docs.aliammari.dev**.
 
 Find AI tools by task, then compare recorded pricing and open-source information in the [searchable directory](https://docs.aliammari.dev/en/). Unknown metadata stays unknown.
@@ -596,6 +596,7 @@ Infrastructure, MLOps, automation, and specialized tools that span multiple cate
 - [Devin AI](https://cognition.ai/) - Autonomous AI software developer agent for full SDLC.
 - [Harvey AI](https://harvey.ai/) - AI agent for automating legal workflows and contract review.
 - [Dust](https://dust.tt/) - AI assistant builder for enterprise with custom agents and data sources.
+- [Frink](https://frink.dev/) - Desktop-first, open-source (MIT) application for running parallel agents, and multi-step custom workflows triggered by schedules, webhooks or events from tools like Linear and Sentry, across your already-used providers.
 
 ### Specialized AI Applications
 
