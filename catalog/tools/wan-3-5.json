@@ -1,0 +1,18 @@
+{
+  "name": "Wan 3.5",
+  "url": "https://wan35.app/",
+  "description": "Browser-based AI video generator for text-to-video and image-to-video creation.",
+  "category": "video-and-media",
+  "subcategory": {
+    "id": "video-creation-and-editing",
+    "name": "Video Creation & Editing"
+  },
+  "order": 387,
+  "openSource": null,
+  "pricing": null,
+  "status": "listed",
+  "source": {
+    "kind": "community",
+    "addedAt": "2026-10-21"
+  }
+}
