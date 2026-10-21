@@ -46,7 +46,7 @@
     "audit:dependencies": "bun audit --audit-level=high --ignore=GHSA-vfj7-8cjw-p6xm"
   },
   "dependencies": {
-    "astro": "7.3.3"
+    "astro": "7.4.2"
   },
   "devDependencies": {
     "@astrojs/check": "0.9.11",
