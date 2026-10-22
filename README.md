@@ -292,6 +292,7 @@ Music generation, voice, speech, transcription, and audio-production tools.
 
 ## Video & Media
 
+- [Ideoy](https://ideoy.ai/) - AI meme video generator — remake this week's memes with one selfie.
 Video generation, editing, enhancement, effects, and media-production tools.
 
 ### Video Creation & Editing
