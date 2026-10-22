@@ -1,0 +1,18 @@
+{
+  "name": "Orbi",
+  "url": "https://orbi.build/",
+  "description": "Open-source GitHub coding agent that turns issues labeled ai-ready into independently reviewed, CI-checked, merged pull requests.",
+  "category": "code-generation-and-development",
+  "subcategory": {
+    "id": "ai-coding-assistants",
+    "name": "AI Coding Assistants"
+  },
+  "order": 9999,
+  "openSource": true,
+  "pricing": null,
+  "status": "listed",
+  "source": {
+    "kind": "community",
+    "addedAt": "2026-10-22"
+  }
+}
