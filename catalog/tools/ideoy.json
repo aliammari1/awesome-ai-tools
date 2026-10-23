@@ -9,10 +9,10 @@
   },
   "order": 200,
   "openSource": false,
-  "pricing": "freemium",
+  "pricing": "paid",
   "status": "listed",
   "source": {
     "kind": "community",
-    "addedAt": "2026-10-22"
+    "addedAt": "2026-10-23"
   }
 }
