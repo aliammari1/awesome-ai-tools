@@ -1,6 +1,6 @@
 # Awesome AI Tools [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
-> A curated catalog of **384 AI tools** across **19 categories**.
+> A curated catalog of **385 AI tools** across **19 categories**.
 > Browse the searchable directory at **https://docs.aliammari.dev**.
 
 The catalog source of truth is `catalog/tools/*.json`. This README is generated from that structured catalog; edit catalog records instead of editing tool entries here.
@@ -307,6 +307,7 @@ Video generation, editing, enhancement, effects, and media-production tools.
 - [OpenArt](https://openart.ai/) - All-in-one AI image and video platform with multiple models.
 - [Synthesia](https://www.synthesia.io/) - AI avatar video generation for business.
 - [HeyGen](https://www.heygen.com/) - AI video generator with hyper-avatars.
+- [makeaicreator](https://makeaicreator.com/) - Build a face-consistent AI influencer from a plain-language persona; generate photos, voiceover videos, and script-split long videos.
 - [Pictory](https://pictory.ai/) - Text-to-video creation for content creators.
 - [Lumen5](https://lumen5.com/) - Video creation from text for social media.
 - [InVideo AI](https://invideo.io/) - AI-powered video creation with templates.
