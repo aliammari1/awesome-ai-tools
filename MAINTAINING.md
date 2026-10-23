@@ -14,7 +14,7 @@ The default contributor path is `bun ci`, creating or editing a tool record, `bu
 
 ## Keep the catalog trustworthy
 
-Fix ordinary dead links or stale descriptions through public issues and pull requests. Mark a genuinely retired product `deprecated` or `discontinued` when preserving its record helps maintainers understand the catalog history. These records are excluded from public clickable listings. Remove a confirmed malicious, hijacked, or phishing destination from the catalog promptly. Follow [SECURITY.md](SECURITY.md) for private reports; do not copy sensitive report details into a public issue before remediation.
+Fix ordinary dead links or stale descriptions through public issues and pull requests. Mark a genuinely retired product `deprecated` or `discontinued` when preserving its record helps maintainers understand the catalog history. These records are excluded from public clickable listings. Remove a confirmed malicious, hijacked, or phishing destination from the catalog promptly. Follow [SECURITY.md](SECURITY.md) for confidential reports; do not copy sensitive report details into a public issue before remediation.
 
 The scheduled link check is a maintenance signal. Review redirects and context before changing records, and avoid repeatedly contacting a site that rejects automated traffic. Keep private-address exclusions enabled for any job that visits contributor-supplied URLs.
 
