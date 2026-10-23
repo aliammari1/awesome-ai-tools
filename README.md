@@ -1,6 +1,6 @@
 # Awesome AI Tools [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
-> A curated catalog of **384 AI tools** across **19 categories**.
+> A curated catalog of **385 AI tools** across **19 categories**.
 > Browse the searchable directory at **https://docs.aliammari.dev**.
 
 Find AI tools by task, then compare recorded pricing and open-source information in the [searchable directory](https://docs.aliammari.dev/en/). Unknown metadata stays unknown.
@@ -292,7 +292,6 @@ Music generation, voice, speech, transcription, and audio-production tools.
 
 ## Video & Media
 
-- [Ideoy](https://ideoy.ai/) - AI meme video generator — remake this week's memes with one selfie.
 Video generation, editing, enhancement, effects, and media-production tools.
 
 ### Video Creation & Editing
@@ -319,6 +318,7 @@ Video generation, editing, enhancement, effects, and media-production tools.
 - [MaxVideoAI](https://maxvideoai.com) - Multi-engine AI video generation hub (Sora, Veo, Wan, Kling, LTX…).
 - [ZOOOP](https://zooop.ai) - AI-native filmmaking workstation for image, video, audio, and lip-sync generation.
 - [YumCut](https://yumcut.com/) - Self-hosted AI workflow for generating finished vertical videos, with a user automation API.
+- [Ideoy](https://ideoy.ai/) - AI meme video generator that remakes this week's memes with one selfie.
 
 ### Video Enhancement & Effects
 
