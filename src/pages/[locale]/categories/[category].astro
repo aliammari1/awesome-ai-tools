@@ -8,7 +8,7 @@ import { locales, isLocale } from '../../../lib/locales';
 export async function getStaticPaths() {
   const { categories } = await getCatalog();
   return locales.flatMap((locale) =>
-    categories.map((category) => ({ params: { locale, category: category.id } }))
+    categories.map((category) => ({ params: { locale, category: category.id } })),
   );
 }
 
@@ -21,6 +21,7 @@ const category = categories.find((entry) => entry.id === categoryId);
 if (!category) throw new Error('Unknown category');
 const categoryTools = tools.filter((tool) => tool.category === category.id);
 ---
+
 <BaseLayout
   title={category.name}
   description={category.description + ' Browse ' + categoryTools.length + ' catalog entries.'}
@@ -30,7 +31,9 @@ const categoryTools = tools.filter((tool) => tool.category === category.id);
 
   <section class="category-hero">
     <div class="shell">
-      <a class="back-link" href={'/' + locale + '/'}>← All tools</a>
+      <a class="back-link" href={'/' + locale + '/'}>
+        ← All tools
+      </a>
       <p class="kicker">Category · {categoryTools.length} tools</p>
       <h1>{category.name}</h1>
       <p>{category.description}</p>

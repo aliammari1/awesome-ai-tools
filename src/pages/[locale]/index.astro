@@ -19,9 +19,16 @@ const featuredCategories = [...categories]
   .sort((a, b) => (counts[b.id] ?? 0) - (counts[a.id] ?? 0))
   .slice(0, 8);
 ---
+
 <BaseLayout
   title="Awesome AI Tools"
-  description={'Explore ' + tools.length + ' AI tools across ' + categories.length + ' categories with fast search, useful filters, saved lists, and transparent catalog metadata.'}
+  description={
+    'Explore ' +
+    tools.length +
+    ' AI tools across ' +
+    categories.length +
+    ' categories with fast search, useful filters, saved lists, and transparent catalog metadata.'
+  }
   locale={locale}
 >
   <LegacyLocaleNotice locale={locale} />
@@ -32,11 +39,16 @@ const featuredCategories = [...categories]
         <p class="eyebrow">Independent AI tools directory</p>
         <h1>Find tools for the work you actually need to do.</h1>
         <p class="hero-copy">
-          Search a repository-backed catalog, narrow it with useful filters, save candidates, and compare tools without invented ratings or pay-to-rank claims.
+          Search a repository-backed catalog, narrow it with useful filters, save candidates, and
+          compare tools without invented ratings or pay-to-rank claims.
         </p>
         <div class="hero-actions">
-          <a class="primary-button" href="#directory">Browse all tools</a>
-          <a class="secondary-button" href={'/' + locale + '/about/methodology/'}>How curation works</a>
+          <a class="primary-button" href="#directory">
+            Browse all tools
+          </a>
+          <a class="secondary-button" href={'/' + locale + '/about/methodology/'}>
+            How curation works
+          </a>
         </div>
       </div>
 

@@ -1,8 +1,6 @@
-# Cloudflare Pages deployment configuration.
-# The production site is built directly from main; there is no deployment/source branch.
-# The GitHub deployment workflow builds the Astro static output in dist/ and publishes it
-# to the existing awesome-ai-tools Pages project so docs.aliammari.dev can remain attached
-# without a risky DNS cutover during the application migration.
+# Cloudflare Pages project and static output directory.
+# Deployment mode, production branch, and domain settings are managed in Cloudflare;
+# verify them in the dashboard before changing deployment. See MAINTAINING.md.
 
 name = "awesome-ai-tools"
 pages_build_output_dir = "dist"

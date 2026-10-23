@@ -12,7 +12,9 @@ const requested = Astro.params.locale;
 if (!isLocale(requested)) throw new Error('Unsupported locale');
 const locale = requested;
 const { tools, categories } = await getCatalog();
-const categoryNames = Object.fromEntries(categories.map((category) => [category.id, category.name]));
+const categoryNames = Object.fromEntries(
+  categories.map((category) => [category.id, category.name]),
+);
 const comparisonData = tools.map((tool) => ({
   id: tool.id,
   name: tool.name,
@@ -25,19 +27,30 @@ const comparisonData = tools.map((tool) => ({
 }));
 const serialized = JSON.stringify(comparisonData).replace(/</g, '\\u003c');
 ---
-<BaseLayout title="Compare tools" description="Compare up to three AI tools side by side using recorded catalog metadata." locale={locale} noindex={true}>
+
+<BaseLayout
+  title="Compare tools"
+  description="Compare up to three AI tools side by side using recorded catalog metadata."
+  locale={locale}
+  noindex={true}
+>
   <LegacyLocaleNotice locale={locale} />
 
   <section class="compare-page">
     <p class="kicker">Decision support</p>
     <h1>Compare tools</h1>
-    <p>Compare only what the catalog actually records. Unknown fields stay unknown rather than being filled with guesses.</p>
+    <p>
+      Compare only what the catalog actually records. Unknown fields stay unknown rather than being
+      filled with guesses.
+    </p>
 
     <div id="compare-empty" class="empty-state compare-empty">
       <strong>No tools selected.</strong>
       Add up to three tools from the directory, then return here.
       <div class="actions-row">
-        <a class="primary-button" href={'/' + locale + '/#directory'}>Browse tools</a>
+        <a class="primary-button" href={'/' + locale + '/#directory'}>
+          Browse tools
+        </a>
       </div>
     </div>
 

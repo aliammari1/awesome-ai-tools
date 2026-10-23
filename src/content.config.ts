@@ -1,53 +1,23 @@
 import { defineCollection } from 'astro:content';
 import { glob } from 'astro/loaders';
-import { z } from 'astro/zod';
+import { toolSchema, categorySchema } from './lib/catalog-schema';
 
 const tools = defineCollection({
   loader: glob({
-    pattern: '**/*.json',
+    pattern: '*.json',
     base: './catalog/tools',
     generateId: ({ entry }) => entry.replace(/\.json$/, ''),
   }),
-  schema: z.object({
-    name: z.string().min(1),
-    url: z.string().url(),
-    description: z.string().min(10),
-    category: z.string().min(1),
-    subcategory: z.object({
-      id: z.string().min(1),
-      name: z.string().min(1),
-    }).nullable(),
-    order: z.number().int().nonnegative(),
-    openSource: z.boolean().nullable(),
-    pricing: z.enum(['free', 'freemium', 'paid', 'contact-sales']).nullable(),
-    status: z.enum(['listed', 'deprecated', 'discontinued']),
-    source: z.discriminatedUnion('kind', [
-      z.object({
-        kind: z.literal('readme-migration'),
-        migratedAt: z.string(),
-      }),
-      z.object({
-        kind: z.literal('submission'),
-        submittedAt: z.string().regex(/^\d{4}-\d{2}-\d{2}$/).refine((value) => {
-          const date = new Date(value);
-          return Number.isFinite(date.getTime()) && date.toISOString().slice(0, 10) === value;
-        }, 'Expected a valid calendar date'),
-      }),
-    ]),
-  }),
+  schema: toolSchema,
 });
 
 const categories = defineCollection({
   loader: glob({
-    pattern: '**/*.json',
+    pattern: '*.json',
     base: './catalog/categories',
     generateId: ({ entry }) => entry.replace(/\.json$/, ''),
   }),
-  schema: z.object({
-    name: z.string().min(1),
-    description: z.string().min(1),
-    order: z.number().int().nonnegative(),
-  }),
+  schema: categorySchema,
 });
 
 export const collections = { tools, categories };

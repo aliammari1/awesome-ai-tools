@@ -3,7 +3,9 @@
 > A curated catalog of **385 AI tools** across **19 categories**.
 > Browse the searchable directory at **https://docs.aliammari.dev**.
 
-The catalog source of truth is `catalog/tools/*.json`. This README is generated from that structured catalog; edit catalog records instead of editing tool entries here.
+Find AI tools by task, then compare recorded pricing and open-source information in the [searchable directory](https://docs.aliammari.dev/en/). Unknown metadata stays unknown.
+
+Choose a category below, [suggest a tool](https://github.com/aliammari1/awesome-ai-tools/issues/new?template=tool_addition.yml), or read our [curation methodology](https://docs.aliammari.dev/en/about/methodology/) and [security policy](SECURITY.md).
 
 ## Contents
 
@@ -158,7 +160,7 @@ Writing, content creation, translation, localization, and communication assistan
 - [Sudowrite](https://www.sudowrite.com/) - AI writing partner for creative fiction.
 - [Gamma](https://gamma.app/) - AI presentation and document generator.
 - [Beautiful.ai](https://www.beautiful.ai/) - AI-powered presentation design.
-- [Hemingway Editor](http://www.hemingwayapp.com/) - Readability-focused writing tool.
+- [Hemingway Editor](https://hemingwayapp.com/) - Readability-focused writing tool.
 - [SocialBu](https://socialbu.com/) - AI-powered social media management for scheduling, publishing, and automating across X, Instagram, LinkedIn, Facebook, TikTok, and more.
 
 ### Translation & Localization
@@ -245,8 +247,8 @@ Image recognition, visual analysis, and specialized computer-vision applications
 
 ### Specialized Vision Tools
 
-- [YOLO](https://github.com/ultralytics/ultralytics) - Real-time object detection with C2PSA module.
-- [YOLO](https://pjreddie.com/darknet/yolo/) - Real-time object detection framework.
+- [Ultralytics YOLO](https://github.com/ultralytics/ultralytics) - Real-time object detection, segmentation, and classification framework.
+- [Darknet YOLO](https://pjreddie.com/darknet/yolo/) - Original open-source Darknet neural network framework for real-time object detection.
 - [Detectron2](https://github.com/facebookresearch/detectron2) - Facebook's detection framework.
 - [MediaPipe](https://mediapipe.dev/) - Google's ML framework for live perception.
 - [Face++](https://www.faceplusplus.com/) - Face recognition platform.
@@ -617,6 +619,6 @@ Learning resources and practical starting points for working with modern AI tool
 
 ## Contributing
 
-See [CONTRIBUTING.md](CONTRIBUTING.md). New and updated tools belong in `catalog/tools/`; CI validates the catalog, regenerates this README, checks links, and builds the site.
+See [CONTRIBUTING.md](CONTRIBUTING.md) for contribution guidelines. New and updated tools belong in `catalog/tools/`; run `bun run new:tool` to use the interactive tool wizard, or `bun run generate:readme` to regenerate this README and `bun run check:pr` before submitting. CI validates the catalog, tests, typechecks, and builds the project; external link reports assist human review.
 
 **License:** [CC0 1.0 Universal](LICENSE).
