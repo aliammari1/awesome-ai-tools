@@ -129,6 +129,8 @@ Image generation, visual design, creative production, and design-assistance tool
 - [Brandmark](https://brandmark.io/) - AI brand identity generator with color palettes.
 - [Looka](https://looka.com/) - AI logo maker with full brand kit.
 
+- [Klaruvo](https://www.powersoftware.app/en-US/product/detail/klaruvo) - Desktop AI image editor for object and watermark removal that runs fully offline, with cutout, upscaling and batch processing.
+
 ## Communication & Writing
 
 Writing, content creation, translation, localization, and communication assistance.
