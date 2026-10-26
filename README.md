@@ -113,6 +113,7 @@ Image generation, visual design, creative production, and design-assistance tool
 - [Jasper Art](https://www.jasper.ai/art) - AI art generation for marketers.
 - [BlueWillow](https://www.bluewillow.ai/) - Free AI image generator.
 - [Prisma](https://prisma-ai.com/) - Artistic photo filters.
+- [Photoshoot](https://photoshoot.app) - Turn product and fashion reference photos into studio-grade product shots and model imagery for e-commerce. Free trial with 30 credits.
 
 ### Design Tools
 
