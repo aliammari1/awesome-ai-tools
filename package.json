@@ -51,7 +51,7 @@
   "devDependencies": {
     "@astrojs/check": "0.9.11",
     "@eslint/js": "10.0.1",
-    "@types/node": "24.19.2",
+    "@types/node": "26.6.6",
     "awesome-lint": "2.3.0",
     "eslint": "10.13.0",
     "eslint-plugin-astro": "3.2.1",
