@@ -103,6 +103,7 @@ Image generation, visual design, creative production, and design-assistance tool
 - [Leonardo AI](https://leonardo.ai/) - AI art generation for creatives with fine-tuned control.
 - [Adobe Firefly](https://firefly.adobe.com/) - Adobe's generative AI suite integrated in Creative Cloud.
 - [DreamStudio](https://dreamstudio.ai/) - Stability AI's image generation interface.
+- [Vivify](https://vivify.video/realtime-face-swap) - Real-time AI face swap, try-on, and restyle on webcam video.
 - [NightCafe](https://nightcafe.studio/) - AI art generator with multiple algorithms.
 - [Artbreeder](https://www.artbreeder.com/) - Collaborative AI art creation.
 - [Freepik AI](https://www.freepik.com/ai) - AI image generator combining multiple models.
