@@ -320,6 +320,7 @@ Video generation, editing, enhancement, effects, and media-production tools.
 - [MiniMax Hailuo](https://hailuo.ai/) - Video generation with improved motion.
 - [Pika](https://pika.art/) - Video generator with scene integration.
 - [Luma Ray](https://lumalabs.ai/) - AI video generation with dynamic compositions.
+- [Dance AI Generator](https://danceaigenerator.com/) - Turns one photo of a person or pet into a 6-second 9:16 dance video.
 - [Haiper AI](https://haiper.ai/) - AI video generation platform with creative tools.
 - [Pyramidal Flow](https://pyramid-flow.github.io/) - Open-source AI video generation model.
 - [Amazon Nova Reel](https://aws.amazon.com/ai/generative-ai/) - Enterprise-grade AI video with IP indemnification.
