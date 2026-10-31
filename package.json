@@ -51,7 +51,7 @@
     "minisearch": "7.2.0"
   },
   "devDependencies": {
-    "@astrojs/check": "0.9.11",
+    "@astrojs/check": "0.9.12",
     "@eslint/js": "10.0.1",
     "@types/node": "24.19.2",
     "awesome-lint": "2.3.0",
