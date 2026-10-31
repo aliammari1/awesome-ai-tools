@@ -469,6 +469,7 @@ General-purpose models, open models, and frameworks used to build with LLMs.
 - [Haystack](https://haystack.deepset.ai/) - NLP framework for building search systems and RAG pipelines.
 - [Hugging Face](https://huggingface.co/) - ML model hub with models, datasets, and Inference Endpoints.
 - [OpenRouter](https://openrouter.ai/) - Unified API for 100+ LLMs with cost optimization and fallbacks.
+- [APIClaw](https://apiclaw.biz) - Flat-rate OpenAI-compatible AI API (Claude, GPT, Kimi, Qwen, DeepSeek, GLM), $19–$129/mo, 50 free trial.
 - [Poe](https://poe.com/) - Platform for accessing multiple AI chatbots with custom bots.
 - [Together AI](https://together.ai/) - Inference and fine-tuning platform for open-source LLMs.
 - [Replicate](https://replicate.com/) - Run open-source models in the cloud with simple API.
