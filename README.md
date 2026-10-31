@@ -145,6 +145,7 @@ Image generation, visual design, creative production, and design-assistance tool
 - [LogoAI](https://www.logoai.com/) - AI logo generator with brand kit creation.
 - [Brandmark](https://brandmark.io/) - AI brand identity generator with color palettes.
 - [Looka](https://looka.com/) - AI logo maker with full brand kit.
+- [APPLORE](https://applore.app/ai-app-icon-generator) - AI app icon generator with a reference library of 18,000+ real App Store and Google Play icons.
 
 ## Communication & Writing
 
