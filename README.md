@@ -1,6 +1,6 @@
 # Awesome AI Tools [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
-> A curated catalog of **384 AI tools** across **19 categories**.
+> A curated catalog of **385 AI tools** across **19 categories**.
 > Browse the searchable directory at **https://docs.aliammari.dev**.
 
 Find AI tools by task, then compare recorded pricing and open-source information in the [searchable directory](https://docs.aliammari.dev/en/). Unknown metadata stays unknown.
@@ -61,6 +61,7 @@ Agent SDKs, autonomous systems, orchestration, tool use, memory, and browser aut
 ### Browser Automation
 
 - [Browser Use](https://github.com/browser-use/browser-use) - Library that lets agents control a real browser to complete web tasks.
+- [Syl](https://www.usesyl.com/) - App for building a team of AI teammates that share conversations, keep memory and run scheduled routines, with MCP tool connections.
 
 ## Productivity
 
