@@ -1,4 +1,5 @@
 import { pricingLabels } from '../lib/pricing';
+import { formatCompareMarkdown, rowHasDifferences } from '../lib/workspace';
 
 type CompareTool = {
   id: string;
@@ -83,10 +84,7 @@ export function initComparePage() {
 
     tools.forEach((tool) => {
       const card = document.createElement('article');
-      card.className = 'tool-card';
-
-      const top = document.createElement('div');
-      top.className = 'tool-card-top';
+      card.className = 'tool';
 
       const mark = document.createElement('div');
       mark.className = 'tool-mark';
@@ -97,27 +95,27 @@ export function initComparePage() {
         .map((part) => part[0])
         .join('');
 
-      const title = document.createElement('div');
-      title.className = 'tool-title';
+      const body = document.createElement('div');
+      body.className = 'tool-body';
       const heading = document.createElement('h3');
+      heading.className = 'tool-name';
       heading.textContent = tool.name;
-      const category = document.createElement('p');
-      category.className = 'tool-category';
-      category.textContent = tool.subcategory || tool.category;
-      title.append(heading, category);
-      top.append(mark, title);
-
       const description = document.createElement('p');
-      description.className = 'tool-description';
+      description.className = 'tool-desc';
       description.textContent = tool.description;
+      const meta = document.createElement('div');
+      meta.className = 'tool-meta';
+      meta.textContent = tool.subcategory || tool.category;
+      body.append(heading, description, meta);
 
       const actions = document.createElement('div');
       actions.className = 'tool-actions';
 
       const remove = document.createElement('button');
       remove.type = 'button';
-      remove.className = 'icon-text-button';
+      remove.className = 'action';
       remove.textContent = 'Remove';
+      remove.setAttribute('aria-label', 'Remove ' + tool.name + ' from comparison');
       remove.addEventListener('click', () => {
         currentIds = currentIds.filter((id) => id !== tool.id);
         writeStored(currentIds);
@@ -126,14 +124,15 @@ export function initComparePage() {
       });
 
       const visit = document.createElement('a');
-      visit.className = 'visit-link';
+      visit.className = 'action action-visit';
       visit.href = tool.url;
       visit.target = '_blank';
       visit.rel = 'noopener noreferrer nofollow';
       visit.textContent = 'Visit ↗';
+      visit.setAttribute('aria-label', 'Visit ' + tool.name + ' (opens in a new tab)');
 
       actions.append(remove, visit);
-      card.append(top, description, actions);
+      card.append(mark, body, actions);
       grid.append(card);
     });
 
@@ -162,15 +161,32 @@ export function initComparePage() {
       ['Verification', () => 'Not independently verified'],
     ];
 
+    const markdownRows: Array<{ label: string; values: string[] }> = [];
     rows.forEach(([label, value]) => {
+      const values = tools.map((tool) => value(tool));
+      markdownRows.push({ label, values });
       const row = document.createElement('tr');
+      if (rowHasDifferences(values)) row.className = 'compare-diff';
       const header = document.createElement('th');
       header.scope = 'row';
       header.textContent = label;
       row.append(header);
-      tools.forEach((tool) => row.append(td(value(tool))));
+      values.forEach((cell) => row.append(td(cell)));
       body.append(row);
     });
+
+    const copy = document.querySelector<HTMLButtonElement>('#compare-copy');
+    if (copy) {
+      copy.onclick = async () => {
+        const markdown = formatCompareMarkdown(tools, markdownRows);
+        try {
+          await navigator.clipboard.writeText(markdown);
+          copy.textContent = 'Copied';
+        } catch {
+          copy.textContent = 'Copy failed';
+        }
+      };
+    }
 
     const next = new URLSearchParams();
     next.set('ids', ids.join(','));

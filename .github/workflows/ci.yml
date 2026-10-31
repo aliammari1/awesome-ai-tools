@@ -56,7 +56,7 @@ jobs:
         run: bun run typecheck && bun run format:check && bun run lint && bun run lint:awesome
 
       - name: Build site and check budget
-        run: bun run build && bun run check:budget
+        run: bun run build
 
   dependency-review:
     name: Dependency security

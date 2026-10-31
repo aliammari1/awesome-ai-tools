@@ -8,7 +8,7 @@
     "name": "NLP APIs & Services"
   },
   "order": 133,
-  "openSource": null,
+  "openSource": false,
   "pricing": null,
   "status": "listed",
   "source": {

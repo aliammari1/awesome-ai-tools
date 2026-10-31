@@ -1,16 +1,79 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import PageHeader from '../components/PageHeader.astro';
+import { dictionaries } from '../lib/i18n';
+import { htmlLang, locales, textDirection } from '../lib/locales';
+
+const i18n404 = Object.fromEntries(
+  locales.map((loc) => [
+    loc,
+    {
+      lang: htmlLang[loc],
+      dir: textDirection[loc],
+      title: dictionaries[loc]['page.notFound.title'],
+      lead: dictionaries[loc]['page.notFound.lead'],
+      search: dictionaries[loc]['page.notFound.search'],
+      home: dictionaries[loc]['page.notFound.home'],
+    },
+  ]),
+);
 ---
 
-<BaseLayout title="Page not found" description="The requested page does not exist." noindex={true}>
-  <section class="content-page">
-    <p class="kicker">404</p>
-    <h1>Page not found.</h1>
-    <p>The catalog may have moved or the URL may be outdated.</p>
-    <p>
-      <a class="primary-button" href="/en/">
-        Browse the catalog
+<BaseLayout
+  title={dictionaries.en['page.notFound.title']}
+  description={dictionaries.en['page.notFound.description']}
+  noindex={true}
+>
+  <PageHeader
+    title={dictionaries.en['page.notFound.title']}
+    lead={dictionaries.en['page.notFound.lead']}
+  >
+    <div class="actions-row">
+      <a class="btn" href="/en/?search=1#directory" data-404-search>
+        {dictionaries.en['page.notFound.search']}
       </a>
-    </p>
-  </section>
+      <a class="btn btn-secondary" href="/en/" data-404-home>
+        {dictionaries.en['page.notFound.home']}
+      </a>
+    </div>
+  </PageHeader>
+
+  <script
+    id="not-found-i18n"
+    type="application/json"
+    set:html={JSON.stringify(i18n404).replace(/</g, '\\u003c')}
+  />
+  <script is:inline>
+    try {
+      const dataEl = document.getElementById('not-found-i18n');
+      if (dataEl) {
+        const map = JSON.parse(dataEl.textContent || '{}');
+        const pathLoc = location.pathname.split('/')[1];
+        const storedLoc = localStorage.getItem('awt:locale:v1');
+        const loc = map[pathLoc] ? pathLoc : storedLoc && map[storedLoc] ? storedLoc : 'en';
+        const copy = map[loc];
+        if (copy && loc !== 'en') {
+          document.documentElement.lang = copy.lang;
+          document.documentElement.dir = copy.dir;
+          document.title = copy.title + ' · Awesome AI Tools';
+          const h1 = document.querySelector('.page-header h1');
+          const lead = document.querySelector('.page-header .page-lead');
+          const searchBtn = document.querySelector('[data-404-search]');
+          const homeBtn = document.querySelector('[data-404-home]');
+          if (h1) h1.textContent = copy.title;
+          if (lead) lead.textContent = copy.lead;
+          if (searchBtn) {
+            searchBtn.textContent = copy.search;
+            searchBtn.setAttribute('href', '/' + loc + '/?search=1#directory');
+          }
+          if (homeBtn) {
+            homeBtn.textContent = copy.home;
+            homeBtn.setAttribute('href', '/' + loc + '/');
+          }
+        }
+      }
+    } catch {
+      /* English fallback remains rendered */
+    }
+  </script>
 </BaseLayout>

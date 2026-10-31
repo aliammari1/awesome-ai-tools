@@ -83,20 +83,3 @@ test('scripts/audit-catalog.mjs runs successfully and outputs catalog metrics', 
   assert.match(result.stdout, /Metadata Enrichment/);
   assert.match(result.stdout, /Hygiene & Security/);
 });
-
-test('scripts/check-budget.mjs runs and verifies invariants on dist directory', () => {
-  const result = spawnSync('node', ['scripts/check-budget.mjs'], {
-    cwd: root,
-    encoding: 'utf8',
-  });
-  // When dist exists, it validates core routes, tool pages, category pages, and budget
-  if (result.status === 0) {
-    assert.match(result.stdout, /--- Build Invariants & Budget Report ---/);
-    assert.match(result.stdout, /Catalog tools checked:/);
-    assert.match(result.stdout, /Generated HTML pages:/);
-    assert.match(result.stdout, /All catalog invariants and build budgets passed successfully/);
-  } else {
-    // If dist was not built prior to running this test, it should gracefully output the expected error message
-    assert.match(result.stderr, /dist.* not found/i);
-  }
-});

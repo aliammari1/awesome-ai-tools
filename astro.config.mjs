@@ -4,6 +4,11 @@ export default defineConfig({
   site: 'https://docs.aliammari.dev',
   output: 'static',
   trailingSlash: 'always',
+  vite: {
+    optimizeDeps: {
+      include: ['minisearch'],
+    },
+  },
   security: {
     csp: {
       algorithm: 'SHA-256',

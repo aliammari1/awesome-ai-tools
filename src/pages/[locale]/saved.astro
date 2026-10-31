@@ -1,8 +1,10 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import LegacyLocaleNotice from '../../components/LegacyLocaleNotice.astro';
+import PageHeader from '../../components/PageHeader.astro';
 import ToolCard from '../../components/ToolCard.astro';
 import { getCatalog } from '../../lib/catalog';
+import { useTranslations } from '../../lib/i18n';
 import { locales, isLocale } from '../../lib/locales';
 
 export function getStaticPaths() {
@@ -12,6 +14,8 @@ export function getStaticPaths() {
 const requested = Astro.params.locale;
 if (!isLocale(requested)) throw new Error('Unsupported locale');
 const locale = requested;
+const prefix = '/' + locale;
+const t = useTranslations(locale);
 const { tools, categories } = await getCatalog();
 const categoryNames = Object.fromEntries(
   categories.map((category) => [category.id, category.name]),
@@ -19,40 +23,80 @@ const categoryNames = Object.fromEntries(
 ---
 
 <BaseLayout
-  title="Saved tools"
-  description="Tools saved locally in this browser."
+  title={t('page.saved.title')}
+  description={t('page.saved.description')}
   locale={locale}
   noindex={true}
 >
   <LegacyLocaleNotice locale={locale} />
 
-  <section class="saved-page">
-    <p class="kicker">Your shortlist</p>
-    <h1>Saved tools</h1>
-    <p>
-      Saved tools stay in this browser. There is no account, profile, or cloud synchronization
-      behind this list.
-    </p>
+  <PageHeader
+    title={t('page.saved.title')}
+    lead={t('page.saved.lead')}
+    crumbs={[{ label: t('nav.directory'), href: prefix + '/#directory' }]}
+  />
 
-    <div id="saved-tools" class="tool-list">
-      {tools.map((tool) => (
-        <div data-saved-wrapper={tool.id} hidden>
-          <ToolCard
-            tool={tool}
-            locale={locale}
-            categoryName={categoryNames[tool.category] ?? tool.category}
-          />
+  <section class="section" aria-label="Saved tools">
+    <div class="shell">
+      <div id="saved-list" hidden>
+        <div class="saved-toolbar">
+          <label>
+            <span class="sr-only">Active list</span>
+            <select id="saved-list-picker" class="select"></select>
+          </label>
+          <p>
+            <strong class="tnum" id="saved-count">
+              0
+            </strong>{' '}
+            in this list
+          </p>
+          <button class="btn btn-secondary btn-sm" type="button" data-new-list>
+            New list
+          </button>
+          <button class="btn btn-secondary btn-sm" type="button" data-export-list="markdown">
+            Markdown
+          </button>
+          <button class="btn btn-secondary btn-sm" type="button" data-export-list="csv">
+            CSV
+          </button>
+          <button class="btn btn-secondary btn-sm" type="button" data-export-list="json">
+            JSON
+          </button>
+          <label class="btn btn-secondary btn-sm">
+            Import JSON
+            <input id="saved-import" type="file" accept="application/json,.json" hidden />
+          </label>
+          <button class="btn btn-secondary btn-sm" type="button" data-share-list>
+            Share link
+          </button>
+          <button class="btn btn-secondary btn-sm" type="button" data-print-list>
+            Print
+          </button>
+          <a class="btn btn-secondary btn-sm" href={prefix + '/compare/'}>
+            Open comparison
+          </a>
         </div>
-      ))}
-    </div>
+        <div id="saved-tools" class="tool-list print-list" data-view="list">
+          {tools.map((tool) => (
+            <div data-saved-wrapper={tool.id} hidden>
+              <ToolCard
+                tool={tool}
+                locale={locale}
+                categoryName={categoryNames[tool.category] ?? tool.category}
+              />
+            </div>
+          ))}
+        </div>
+      </div>
 
-    <div id="no-saved-tools" class="empty-state">
-      <strong>No saved tools yet.</strong>
-      Browse the directory and use Save to build a shortlist.
-      <div class="actions-row">
-        <a class="primary-button" href={'/' + locale + '/#directory'}>
-          Browse tools
-        </a>
+      <div id="no-saved-tools" class="empty-state">
+        <strong>No saved tools yet.</strong>
+        <p>Use the bookmark button on any tool to keep it here for later.</p>
+        <div class="actions-row">
+          <a class="btn" href={prefix + '/#directory'}>
+            Browse tools
+          </a>
+        </div>
       </div>
     </div>
   </section>
