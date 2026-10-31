@@ -1,0 +1,18 @@
+{
+  "name": "Clarity",
+  "url": "https://agent-tools.cloud/services/desktop-o99r0sf-tail935fba-ts-net-sub899",
+  "description": "Base mainnet x402 API for short AI research reports and low-cost chat, with free discovery.",
+  "category": "ai-search-and-research",
+  "subcategory": {
+    "id": "research-and-knowledge-tools",
+    "name": "Research & Knowledge Tools"
+  },
+  "order": 248,
+  "openSource": false,
+  "pricing": "paid",
+  "status": "listed",
+  "source": {
+    "kind": "manual",
+    "migratedAt": "2026-09-29"
+  }
+}
