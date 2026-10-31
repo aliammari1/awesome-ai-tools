@@ -510,6 +510,7 @@ Marketing, sales, e-commerce, retail, career, and job-search tools.
 - [Jobscan](https://www.jobscan.co/) - Resume and LinkedIn optimization with ATS keyword matching.
 - [Resume Worded](https://resumeworded.com/) - AI resume and LinkedIn feedback with score and targeted advice.
 - [Kickresume](https://www.kickresume.com/) - AI resume builder with templates and job matching.
+- [JobEmerge](https://www.jobemerge.work/) - An AI career copilot with a job-fit test, a 19-language resume translator and a simple Markdown resume editor.
 
 ## Gaming & Entertainment
 
