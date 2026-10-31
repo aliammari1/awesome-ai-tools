@@ -1,14 +1,18 @@
 {
   "name": "Asyntai",
   "url": "https://asyntai.com/",
-  "description": "AI chatbot for websites that answers visitors from your own pages, documents, and product catalog.",
-  "category": "no-code-low-code-ai",
+  "description": "No-code chatbot builder that connects to your business data and integrates with websites and messaging channels.",
+  "category": "ai-agents",
   "subcategory": {
-    "id": "chatbot-builders",
-    "name": "Chatbot Builders"
+    "id": "ai-agents-and-automation",
+    "name": "AI Agents & Automation"
   },
-  "order": 387,
+  "order": 9999,
   "openSource": false,
-  "pricing": null,
-  "status": "listed"
+  "pricing": "freemium",
+  "status": "listed",
+  "source": {
+    "kind": "community",
+    "addedAt": "2026-10-31"
+  }
 }
