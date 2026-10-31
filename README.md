@@ -357,6 +357,7 @@ Video generation, editing, enhancement, effects, and media-production tools.
 - [Magic Hour](https://magichour.ai/) - AI video creation and editing with text-to-video, image-to-video, face swap, lip sync, and animation tools.
 - [Pixwit](https://pixwit.ai/) - All-in-one AI creative platform for generating images, videos, and music from text or image prompts.
 - [shortshort](https://www.shortshort.io/) - Turns one long video (talk, podcast, course) into vertical 9:16 shorts with word-by-word captions.
+- [Unsora](https://tryunsora.com/) - Open-source app, API and MCP server that generates images, video, voiceovers, music and clips and schedules them to social accounts.
 
 ### Video Enhancement & Effects
 
