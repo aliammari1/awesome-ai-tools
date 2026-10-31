@@ -1,20 +1,25 @@
 ---
 import BaseLayout from '../../../layouts/BaseLayout.astro';
 import LegacyLocaleNotice from '../../../components/LegacyLocaleNotice.astro';
+import PageHeader from '../../../components/PageHeader.astro';
 import ToolCard from '../../../components/ToolCard.astro';
-import { getCatalog } from '../../../lib/catalog';
+import Icon from '../../../components/Icon.astro';
+import { formatDate, useTranslations } from '../../../lib/i18n';
+import { getCatalog, similarTools, toolDate } from '../../../lib/catalog';
+import { pricingLabels } from '../../../lib/pricing';
+import { buildSoftwareApplicationJsonLd } from '../../../lib/structured-data';
 import { locales, isLocale } from '../../../lib/locales';
 
 export async function getStaticPaths() {
   const { tools } = await getCatalog();
-  return locales.flatMap((locale) =>
-    tools.map((tool) => ({ params: { locale, tool: tool.id } }))
-  );
+  return locales.flatMap((locale) => tools.map((tool) => ({ params: { locale, tool: tool.id } })));
 }
 
 const requested = Astro.params.locale;
 if (!isLocale(requested)) throw new Error('Unsupported locale');
 const locale = requested;
+const prefix = '/' + locale;
+const t = useTranslations(locale);
 const toolId = Astro.params.tool;
 const { tools, categories } = await getCatalog();
 const tool = tools.find((entry) => entry.id === toolId);
@@ -22,9 +27,38 @@ if (!tool) throw new Error('Unknown tool');
 
 const category = categories.find((entry) => entry.id === tool.category);
 const categoryName = category?.name ?? tool.category;
-const related = tools
-  .filter((entry) => entry.category === tool.category && entry.id !== tool.id)
-  .slice(0, 6);
+const categoryHref = prefix + '/categories/' + tool.category + '/';
+const domainTools = tools
+  .filter((entry) => entry.category === tool.category)
+  .sort((a, b) => a.order - b.order || a.id.localeCompare(b.id, 'en'));
+const domainIndex = domainTools.findIndex((entry) => entry.id === tool.id);
+const previousTool = domainIndex > 0 ? domainTools[domainIndex - 1] : undefined;
+const nextTool = domainIndex >= 0 ? domainTools[domainIndex + 1] : undefined;
+const related = similarTools(tools, tool, 6);
+const addedOn = toolDate(tool);
+const sourceLabel = tool.source.kind === 'community' ? 'Community addition' : 'Catalog migration';
+const origin = (Astro.site ?? Astro.url.origin).toString().replace(/\/$/, '');
+const pagePath = prefix + '/tools/' + tool.id + '/';
+const markdownLink = `[${tool.name}](${origin}${pagePath})`;
+const citation = `${tool.name}. ${categoryName}. Awesome AI Tools. ${origin}${pagePath}`;
+const repo = 'https://github.com/aliammari1/awesome-ai-tools';
+const brokenHref =
+  repo +
+  '/issues/new?template=broken_link.yml&title=' +
+  encodeURIComponent('[BROKEN] ' + tool.name) +
+  '&body=' +
+  encodeURIComponent(
+    `Tool: ${tool.name}\nCatalog URL: ${tool.url}\nRecord: catalog/tools/${tool.id}.json\n`,
+  );
+const correctionHref =
+  repo +
+  '/issues/new?title=' +
+  encodeURIComponent('Update: ' + tool.name) +
+  '&body=' +
+  encodeURIComponent(
+    `Tool: ${tool.name}\nWhat should change:\n\nRecord: catalog/tools/${tool.id}.json\n`,
+  );
+const editHref = repo + '/edit/main/catalog/tools/' + tool.id + '.json';
 
 const initials = tool.name
   .split(/\s+/)
@@ -33,106 +67,269 @@ const initials = tool.name
   .map((part) => part[0])
   .join('');
 
-const pricingLabel: Record<string, string> = {
-  free: 'Free',
-  freemium: 'Freemium',
-  paid: 'Paid',
-  'contact-sales': 'Contact sales',
-};
+const rawRecordJson = JSON.stringify(
+  {
+    name: tool.name,
+    url: tool.url,
+    description: tool.description,
+    category: tool.category,
+    subcategory: tool.subcategory,
+    pricing: tool.pricing,
+    openSource: tool.openSource,
+    status: tool.status,
+    source: tool.source,
+  },
+  null,
+  2,
+);
+
+const yesNo = (value: boolean | null) =>
+  value === true ? 'Yes' : value === false ? 'No' : 'Not recorded';
+const english = locale !== 'en' ? 'en' : undefined;
 ---
-<BaseLayout title={tool.name} description={tool.description} locale={locale}>
+
+<BaseLayout
+  title={tool.name}
+  description={tool.description}
+  locale={locale}
+  ogImagePath={'/og/' + tool.id + '.svg'}
+  jsonLd={buildSoftwareApplicationJsonLd(origin, locale, tool, categoryName)}
+>
   <LegacyLocaleNotice locale={locale} />
 
-  <article class="tool-detail">
-    <a class="back-link" href={'/' + locale + '/categories/' + tool.category + '/'}>← {categoryName}</a>
-
-    <section class="tool-detail-hero">
-      <div>
-        <div class="tool-identity">
-          <div class="tool-mark" aria-hidden="true">{initials}</div>
-          <div>
-            <p class="kicker">AI tool</p>
-            <h1>{tool.name}</h1>
-          </div>
+  <div data-tool-detail-id={tool.id}>
+    <PageHeader
+      title={tool.name}
+      crumbs={[
+        { label: t('nav.directory'), href: prefix + '/#directory' },
+        { label: categoryName, href: categoryHref },
+      ]}
+    >
+      <div slot="title" class="tool-identity">
+        <div class="tool-mark" aria-hidden="true">
+          {initials}
         </div>
-
-        <p class="tool-detail-lede">{tool.description}</p>
-
-        <div class="detail-badges" aria-label="Tool metadata">
-          <span class="meta-chip">{categoryName}</span>
-          {tool.subcategory && <span class="meta-chip">{tool.subcategory.name}</span>}
-          {tool.pricing && <span class="meta-chip">{pricingLabel[tool.pricing]}</span>}
-          {tool.openSource === true && <span class="meta-chip success">Open source</span>}
-        </div>
-
-        <div class="actions-row">
-          <a class="primary-button" href={tool.url} target="_blank" rel="noopener noreferrer">Visit official site ↗</a>
-          <button class="secondary-button" type="button" data-save-tool={tool.id} aria-pressed="false">Save</button>
-          <button class="secondary-button" type="button" data-compare-tool={tool.id} aria-pressed="false">Compare</button>
-        </div>
-      </div>
-
-      <aside class="detail-panel" aria-label="Known catalog data">
-        <dl>
-          <div class="detail-panel-row">
-            <dt>Category</dt>
-            <dd>{categoryName}</dd>
-          </div>
-          <div class="detail-panel-row">
-            <dt>Subcategory</dt>
-            <dd>{tool.subcategory?.name ?? 'Not recorded'}</dd>
-          </div>
-          <div class="detail-panel-row">
-            <dt>Pricing</dt>
-            <dd>{tool.pricing ? pricingLabel[tool.pricing] : 'Not recorded'}</dd>
-          </div>
-          <div class="detail-panel-row">
-            <dt>Open source</dt>
-            <dd>{tool.openSource === true ? 'Yes' : tool.openSource === false ? 'No' : 'Not recorded'}</dd>
-          </div>
-          <div class="detail-panel-row">
-            <dt>Status</dt>
-            <dd>{tool.status === 'listed' ? 'Listed' : tool.status}</dd>
-          </div>
-          <div class="detail-panel-row">
-            <dt>Verification</dt>
-            <dd>Pending</dd>
-          </div>
-        </dl>
-      </aside>
-    </section>
-
-    <section class="detail-body">
-      <div>
-        <h2>Overview</h2>
-        <p>{tool.description}</p>
-
-        <h2>About this catalog entry</h2>
-        <p>
-          This record is intentionally conservative. Metadata that has not been independently checked is shown as “Not recorded” instead of being inferred from marketing copy or generated automatically.
-        </p>
-      </div>
-
-      <aside>
-        <div class="data-note">
-          <strong>Data confidence</strong>
-          <p>
-            This entry was migrated from the repository catalog on September 21, 2026. Migration established structured provenance, but it is not treated as a fresh verification of pricing, availability, or product claims.
+        <div>
+          <h1 lang={english}>{tool.name}</h1>
+          <p class="tool-identity-sub" lang={english}>
+            {categoryName}
+            {tool.subcategory ? ' · ' + tool.subcategory.name : ''}
           </p>
-          <a href={'/' + locale + '/about/methodology/'}>Read the methodology →</a>
         </div>
-      </aside>
+      </div>
+
+      <p class="page-lead" lang={english}>
+        {tool.description}
+      </p>
+
+      <div class="detail-badges">
+        {tool.pricing && <span class="badge">{pricingLabels[tool.pricing]}</span>}
+        {tool.openSource === true && <span class="badge badge-accent">Open source</span>}
+        <span class="badge">{sourceLabel}</span>
+      </div>
+
+      <div class="actions-row">
+        <a class="btn" href={tool.url} target="_blank" rel="noopener noreferrer nofollow">
+          Visit official site <Icon name="arrow-up-right" />
+        </a>
+        <button
+          class="btn btn-secondary"
+          type="button"
+          data-save-tool={tool.id}
+          aria-pressed="false"
+          aria-label={'Save ' + tool.name}
+        >
+          <Icon name="bookmark" class="icon-bookmark" />
+          <span data-pressed-label="Saved">Save</span>
+        </button>
+        <button
+          class="btn btn-secondary"
+          type="button"
+          data-compare-tool={tool.id}
+          aria-pressed="false"
+          aria-label={'Compare ' + tool.name}
+        >
+          <Icon name="compare" />
+          <span data-pressed-label="Added to compare">Compare</span>
+        </button>
+        <button
+          class="btn btn-secondary"
+          type="button"
+          data-use-tool={tool.id}
+          aria-pressed="false"
+          aria-label={'Mark ' + tool.name + ' as in use'}
+        >
+          <span data-pressed-label="In my stack">I use this</span>
+        </button>
+        <button
+          class="btn btn-secondary"
+          type="button"
+          data-share-page={origin + pagePath}
+          aria-label={'Share ' + tool.name}
+        >
+          Share
+        </button>
+        <a
+          class="btn btn-secondary"
+          data-quick-compare={tool.id}
+          hidden
+          href={prefix + '/compare/'}
+        >
+          Compare with last selection
+        </a>
+      </div>
+
+      <nav class="tool-pager" aria-label={'Other tools in ' + categoryName}>
+        {previousTool && (
+          <a href={prefix + '/tools/' + previousTool.id + '/'}>
+            <span>Previous in {categoryName}</span>
+            <strong lang={english}>{previousTool.name}</strong>
+          </a>
+        )}
+        {nextTool && (
+          <a href={prefix + '/tools/' + nextTool.id + '/'}>
+            <span>Next in {categoryName}</span>
+            <strong lang={english}>{nextTool.name}</strong>
+          </a>
+        )}
+      </nav>
+    </PageHeader>
+
+    <section class="section" aria-labelledby="record-title">
+      <div class="shell detail-grid">
+        <div>
+          <nav class="page-toc" aria-label="On this page">
+            <a href="#at-a-glance">At a glance</a>
+            <a href="#record-title">Catalog record</a>
+            {related.length > 0 && <a href="#alternatives">Alternatives</a>}
+          </nav>
+          <h2 id="record-title">Catalog record</h2>
+          <p>
+            This page shows only what the catalog has recorded about{' '}
+            <span lang={english}>{tool.name}</span>. Missing details are marked “Not recorded”.
+            Check the official site for current pricing and availability before choosing a tool for
+            real work.
+          </p>
+          <div class="note">
+            <strong>How reliable is this?</strong>
+            <p>
+              Added on {formatDate(locale, addedOn)} as a {sourceLabel.toLowerCase()}. A recorded
+              date shows when the entry was added. It is not independent verification of pricing,
+              availability or product claims.
+            </p>
+            <div class="actions-row">
+              <button
+                class="btn btn-secondary btn-sm"
+                type="button"
+                data-copy-markdown={markdownLink}
+              >
+                Copy Markdown link
+              </button>
+              <button class="btn btn-secondary btn-sm" type="button" data-copy-markdown={citation}>
+                Copy citation
+              </button>
+              <a
+                class="btn btn-secondary btn-sm"
+                href={brokenHref}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Report broken link <Icon name="arrow-up-right" />
+              </a>
+              <a
+                class="btn btn-secondary btn-sm"
+                href={correctionHref}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Suggest a correction <Icon name="arrow-up-right" />
+              </a>
+              <a class="text-link" href={editHref} target="_blank" rel="noopener noreferrer">
+                Edit this record on GitHub <Icon name="arrow-right" />
+              </a>
+              <button
+                class="btn btn-secondary btn-sm"
+                type="button"
+                data-hide-tool={tool.id}
+                aria-pressed="false"
+              >
+                <span data-pressed-label="Hidden from my results">Hide from my results</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <h2 id="at-a-glance">At a glance</h2>
+          <dl class="spec">
+            <div>
+              <dt>Domain</dt>
+              <dd>
+                <a href={categoryHref} lang={english}>
+                  {categoryName}
+                </a>
+              </dd>
+            </div>
+            <div>
+              <dt>Type</dt>
+              <dd lang={english}>{tool.subcategory?.name ?? 'Not recorded'}</dd>
+            </div>
+            <div>
+              <dt>Pricing</dt>
+              <dd>{tool.pricing ? pricingLabels[tool.pricing] : 'Not recorded'}</dd>
+            </div>
+            <div>
+              <dt>Open source</dt>
+              <dd>{yesNo(tool.openSource)}</dd>
+            </div>
+            <div>
+              <dt>Status</dt>
+              <dd>{tool.status === 'listed' ? 'Listed' : tool.status}</dd>
+            </div>
+            <div>
+              <dt>Added on</dt>
+              <dd>
+                <time datetime={addedOn}>{formatDate(locale, addedOn)}</time>
+              </dd>
+            </div>
+            <div>
+              <dt>Source</dt>
+              <dd>{sourceLabel}</dd>
+            </div>
+          </dl>
+          <div class="code-block">
+            <div class="code-block-head">
+              <span>catalog/tools/{tool.id}.json</span>
+              <span>CC0 1.0</span>
+            </div>
+            <pre><code>{rawRecordJson}</code></pre>
+          </div>
+        </div>
+      </div>
     </section>
 
     {related.length > 0 && (
-      <section class="related-section">
-        <h2>More in {categoryName}</h2>
-        <div class="related-grid">
-          {related.map((entry) => (
-            <ToolCard tool={entry} locale={locale} categoryName={categoryName} />
-          ))}
+      <section class="section section-surface" id="alternatives" aria-labelledby="related-title">
+        <div class="shell">
+          <div class="section-head">
+            <div>
+              <h2 id="related-title">Alternatives</h2>
+              <p>
+                Same type first, then other tools in {categoryName}. Order follows shared wording in
+                the catalog descriptions.
+              </p>
+            </div>
+            <a class="text-link" href={categoryHref}>
+              View all {domainTools.length} <Icon name="arrow-right" />
+            </a>
+          </div>
+          <div class="tool-list" data-view="grid">
+            {related.map((entry) => (
+              <ToolCard tool={entry} locale={locale} categoryName={categoryName} />
+            ))}
+          </div>
         </div>
       </section>
     )}
-  </article>
+  </div>
 </BaseLayout>
