@@ -1,0 +1,100 @@
+name: Tool Addition Request
+description: Suggest a new AI tool for the structured catalog
+title: '[ADD] '
+labels: ['enhancement']
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for suggesting a tool for **Awesome AI Tools**! Please provide factual details below.
+  - type: input
+    id: name
+    attributes:
+      label: Tool Name
+      description: The official name of the tool or project.
+      placeholder: e.g. Cursor
+    validations:
+      required: true
+  - type: input
+    id: url
+    attributes:
+      label: Official URL
+      description: Must be an HTTPS link on a public domain. No affiliate, tracking, or shortened links.
+      placeholder: https://example.com/
+    validations:
+      required: true
+  - type: dropdown
+    id: category
+    attributes:
+      label: Category
+      description: Select the catalog category that best fits the tool.
+      options:
+        - ai-agents
+        - ai-safety-and-ethics
+        - ai-search-and-research
+        - audio-and-music
+        - business-and-marketing
+        - code-generation-and-development
+        - communication-and-writing
+        - computer-vision
+        - creativity-and-design
+        - data-science-and-analytics
+        - gaming-and-entertainment
+        - getting-started
+        - large-language-models
+        - miscellaneous
+        - natural-language-processing
+        - no-code-low-code-ai
+        - productivity
+        - research-and-education
+        - video-and-media
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: One-sentence Description
+      description: A concise, factual sentence describing what the tool does. End with a period. Avoid slogans, valuations, rankings, and user counts.
+      placeholder: Generates optimized SQL queries from natural language questions.
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: Why this tool belongs
+      description: Explain what makes this tool distinct or useful compared to existing catalog entries.
+    validations:
+      required: true
+  - type: dropdown
+    id: pricing
+    attributes:
+      label: Pricing Model (Optional)
+      description: Only select if confirmed on their official pricing page.
+      options:
+        - Unknown / Unsure
+        - free
+        - freemium
+        - paid
+        - contact-sales
+  - type: dropdown
+    id: open_source
+    attributes:
+      label: Is it Open Source? (Optional)
+      description: Does it have a public source repository with an OSI-approved license?
+      options:
+        - Unknown / Unsure
+        - 'Yes (Open Source)'
+        - 'No (Proprietary)'
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: Quality Checklist
+      options:
+        - label: The tool is publicly reachable and not behind a private waitlist.
+          required: true
+        - label: The project appears actively maintained.
+          required: true
+        - label: I verified that this URL is not already in `catalog/tools/`.
+          required: true
+        - label: This link contains no tracking parameters (utm, ref, aff).
+          required: true

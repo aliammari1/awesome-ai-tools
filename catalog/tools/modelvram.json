@@ -1,0 +1,18 @@
+{
+  "name": "ModelVRAM",
+  "url": "https://modelvram.com/",
+  "description": "Browser-based calculator that estimates the GPU memory an LLM needs for inference or fine-tuning (weights, KV cache and overhead) from the model's Hugging Face config, and lists the GPUs and Macs that fit.",
+  "category": "large-language-models",
+  "subcategory": {
+    "id": "llm-tools-and-frameworks",
+    "name": "LLM Tools & Frameworks"
+  },
+  "order": 387,
+  "openSource": null,
+  "pricing": "free",
+  "status": "listed",
+  "source": {
+    "kind": "readme-migration",
+    "migratedAt": "2026-09-29"
+  }
+}

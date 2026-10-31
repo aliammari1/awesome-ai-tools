@@ -1,0 +1,18 @@
+{
+  "name": "Auto-Sklearn",
+  "url": "https://automl.github.io/auto-sklearn/",
+  "description": "Open-source AutoML with ensemble learning.",
+  "category": "data-science-and-analytics",
+  "subcategory": {
+    "id": "machine-learning-platforms",
+    "name": "Machine Learning Platforms"
+  },
+  "order": 107,
+  "openSource": true,
+  "pricing": null,
+  "status": "listed",
+  "source": {
+    "kind": "readme-migration",
+    "migratedAt": "2026-09-21"
+  }
+}
