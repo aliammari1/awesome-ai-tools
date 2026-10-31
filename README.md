@@ -495,6 +495,7 @@ Educational assistants, learning tools, academic research, and research platform
 - [Synthesis](https://www.synthesis.com/) - AI math tutoring for kids with problem-solving focus.
 - [Cognii](https://www.cognii.com/) - AI tutoring with natural language assessment.
 - [Carnegie Learning](https://www.carnegielearning.com/) - AI-powered math and literacy solutions for schools.
+- [Elispeak](https://app.elispeak.com/) - AI English speaking coach for live voice conversations on everyday, work, travel, and IELTS/TOEFL topics.
 
 ### Research Platforms
 
