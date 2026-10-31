@@ -1,0 +1,18 @@
+{
+  "name": "Cutora AI",
+  "url": "https://usecutora.com/",
+  "description": "Cutora is an AI video editor for talking-head videos: upload a raw recording and it hands back an edited video, with the pauses, false starts and retakes cut, the audio cleaned, the colour corrected, and captions, zooms and on-screen text added, all on a timeline you can change.",
+  "category": "video-and-media",
+  "subcategory": {
+    "id": "video-creation-and-editing",
+    "name": "Video Creation & Editing"
+  },
+  "order": 9999,
+  "openSource": false,
+  "pricing": "paid",
+  "status": "listed",
+  "source": {
+    "kind": "community",
+    "addedAt": "2026-10-31"
+  }
+}
