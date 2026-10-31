@@ -1,6 +1,6 @@
 # Awesome AI Tools [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
-> A curated catalog of **415 AI tools** across **19 categories**.
+> A curated catalog of **400+ AI tools** across **19 categories**.
 > Browse the searchable directory at **https://docs.aliammari.dev**.
 
 Find AI tools by task, then compare recorded pricing and open-source information in the [searchable directory](https://docs.aliammari.dev/en/). Unknown metadata stays unknown.
@@ -189,6 +189,7 @@ Writing, content creation, translation, localization, and communication assistan
 - [Beautiful.ai](https://www.beautiful.ai/) - AI-powered presentation design.
 - [Hemingway Editor](https://hemingwayapp.com/) - Readability-focused writing tool.
 - [SocialBu](https://socialbu.com/) - AI-powered social media management for scheduling, publishing, and automating across X, Instagram, LinkedIn, Facebook, TikTok, and more.
+- [ImagineYourBook](https://www.imagineyourbook.com/) - Web app that plans and drafts full manuscripts chapter by chapter, with series story bibles and Word/EPUB/Markdown export.
 - [Multi Upload Tool](https://multi-upload-tool.com/) - Schedules one video to TikTok, YouTube Shorts, Instagram, Facebook, LinkedIn, Pinterest, Bluesky, Threads, and X from a dashboard, REST API, or MCP server that lets Claude, ChatGPT, and Cursor create posts.
 
 ### Translation & Localization
@@ -344,7 +345,7 @@ Video generation, editing, enhancement, effects, and media-production tools.
 - [Fliki](https://fliki.ai/) - Text-to-video with AI voices and avatars.
 - [Steve AI](https://www.steve.ai/) - Animated video creation.
 - [Visla](https://www.visla.us/) - AI video storytelling platform.
-- [MaxVideoAI](https://maxvideoai.com) - Multi-engine AI video generation hub (Sora, Veo, Wan, Kling, LTX…).
+- [MaxVideoAI](https://maxvideoai.com) - Pay-as-you-go AI video generation with model comparison and MCP workflows.
 - [ZOOOP](https://zooop.ai) - AI-native filmmaking workstation for image, video, audio, and lip-sync generation.
 - [YumCut](https://yumcut.com/) - Self-hosted AI workflow for generating finished vertical videos, with a user automation API.
 - [Ideoy](https://ideoy.ai/) - AI meme video generator that remakes this week's memes with one selfie.
@@ -353,7 +354,9 @@ Video generation, editing, enhancement, effects, and media-production tools.
 - [Wan 3.5](https://wan35.app/) - Browser-based AI video generator for text-to-video and image-to-video creation.
 - [Wedding AI](https://weddingai.studio/) - AI wedding invitation video maker that turns templates, names, and photos into an HD MP4.
 - [Effect Video](https://effect.video/) - AI photo-to-video tool with viral effect templates for short vertical clips.
+- [Magic Hour](https://magichour.ai/) - AI video creation and editing with text-to-video, image-to-video, face swap, lip sync, and animation tools.
 - [Pixwit](https://pixwit.ai/) - All-in-one AI creative platform for generating images, videos, and music from text or image prompts.
+- [shortshort](https://www.shortshort.io/) - Turns one long video (talk, podcast, course) into vertical 9:16 shorts with word-by-word captions.
 
 ### Video Enhancement & Effects
 
@@ -397,6 +400,7 @@ Coding assistants, developer tools, code analysis, and software-engineering auto
 - [Replit](https://replit.com/) - Cloud-based IDE with AI coding and instant deployment.
 - [Deno Deploy](https://deno.com/deploy) - Edge deployment with AI-assisted development.
 - [agent-qa](https://github.com/vostride/agent-qa) - Self-improving natural-language web, Android and iOS testing with advanced memidex memory, a CLI, dashboard and MCP tools.
+- [Codex Lookout](https://github.com/makorise/codex-local-hub) - Local-first macOS companion for monitoring and steering Codex Desktop tasks from a phone browser.
 
 ### Code Analysis & Review
 

@@ -18,10 +18,11 @@ const headingAnchor = (s) =>
 const { tools: allTools, categories } = await readCatalog();
 const tools = listedTools(allTools);
 
+const toolCountText = tools.length >= 400 ? '400+' : tools.length;
 const lines = [
   '# Awesome AI Tools [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)',
   '',
-  `> A curated catalog of **${tools.length} AI tools** across **${categories.length} categories**.`,
+  `> A curated catalog of **${toolCountText} AI tools** across **${categories.length} categories**.`,
   '> Browse the searchable directory at **https://docs.aliammari.dev**.',
   '',
   'Find AI tools by task, then compare recorded pricing and open-source information in the [searchable directory](https://docs.aliammari.dev/en/). Unknown metadata stays unknown.',
