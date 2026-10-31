@@ -1,6 +1,6 @@
 # Awesome AI Tools [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
-> A curated catalog of **384 AI tools** across **19 categories**.
+> A curated catalog of **385 AI tools** across **19 categories**.
 > Browse the searchable directory at **https://docs.aliammari.dev**.
 
 Find AI tools by task, then compare recorded pricing and open-source information in the [searchable directory](https://docs.aliammari.dev/en/). Unknown metadata stays unknown.
@@ -61,6 +61,7 @@ Agent SDKs, autonomous systems, orchestration, tool use, memory, and browser aut
 ### Browser Automation
 
 - [Browser Use](https://github.com/browser-use/browser-use) - Library that lets agents control a real browser to complete web tasks.
+- [Aident Loadout](https://aident.ai/) - Remote MCP server, CLI and skill that lets AI agents such as Claude Code, Codex and Cursor use connected apps, with credentials kept in a vault and every action logged.
 
 ## Productivity
 

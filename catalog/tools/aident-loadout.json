@@ -1,0 +1,15 @@
+{
+  "name": "Aident Loadout",
+  "url": "https://aident.ai/",
+  "description": "Remote MCP server, CLI and skill that lets AI agents such as Claude Code, Codex and Cursor use connected apps, with credentials kept in a vault and every action logged.",
+  "category": "ai-agents",
+  "subcategory": null,
+  "order": 388,
+  "openSource": null,
+  "pricing": "freemium",
+  "status": "listed",
+  "source": {
+    "kind": "pull-request",
+    "migratedAt": null
+  }
+}
