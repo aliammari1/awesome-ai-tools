@@ -65,6 +65,7 @@ Agent SDKs, autonomous systems, orchestration, tool use, memory, and browser aut
 ## Productivity
 
 Scheduling, task management, project workflows, email, and day-to-day work automation.
+- [PDFnoted](https://pdfnoted.com/) - Browser-first PDF workspace with AI watermark removal, annotation review, and three-jurisdiction compliance checking (CN/US/EU)
 
 ### Time Management & Scheduling
 
