@@ -1,6 +1,6 @@
 # Awesome AI Tools [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
-> A curated catalog of **405 AI tools** across **19 categories**.
+> A curated catalog of **406 AI tools** across **19 categories**.
 > Browse the searchable directory at **https://docs.aliammari.dev**.
 
 Find AI tools by task, then compare recorded pricing and open-source information in the [searchable directory](https://docs.aliammari.dev/en/). Unknown metadata stays unknown.
@@ -349,6 +349,7 @@ Video generation, editing, enhancement, effects, and media-production tools.
 - [IntroVideo](https://introvideo.io/) - AI logo intro generator that turns a logo into an 8-second cinematic intro video in 16:9 or 9:16.
 - [Wan 3.5](https://wan35.app/) - Browser-based AI video generator for text-to-video and image-to-video creation.
 - [Effect Video](https://effect.video/) - AI photo-to-video tool with viral effect templates for short vertical clips.
+- [Pixwit](https://pixwit.ai/) - All-in-one AI creative platform for generating images, videos, and music from text or image prompts.
 
 ### Video Enhancement & Effects
 
