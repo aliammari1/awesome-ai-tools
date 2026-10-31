@@ -1,70 +1,332 @@
 ---
+import '@fontsource-variable/geist/wght.css';
 import '../styles/global.css';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
-import type { Locale } from '../lib/locales';
-import { englishCanonicalPath } from '../lib/locales';
+import Icon from '../components/Icon.astro';
+import IconSprite from '../components/IconSprite.astro';
+import { useTranslations } from '../lib/i18n';
+import {
+  htmlLang,
+  indexTranslatedLocales,
+  isLocale,
+  legacyLocaleLabels,
+  localizedPath,
+  locales,
+  ogLocale,
+  textDirection,
+  type Locale,
+} from '../lib/locales';
 
 interface Props {
   title: string;
   description: string;
   locale?: Locale;
   noindex?: boolean;
+  ogImagePath?: string;
+  feedHref?: string;
+  feedTitle?: string;
+  jsonLd?: Record<string, unknown> | Array<Record<string, unknown>>;
 }
 
-const { title, description, locale = 'en', noindex = locale !== 'en' } = Astro.props;
+const {
+  title,
+  description,
+  locale = 'en',
+  noindex = false,
+  ogImagePath = '/social-card.png',
+  feedHref,
+  feedTitle,
+  jsonLd,
+} = Astro.props;
+const t = useTranslations(locale);
 
-const canonicalPath = englishCanonicalPath(Astro.url.pathname, locale);
-const canonical = new URL(canonicalPath, Astro.site ?? Astro.url.origin);
-const fullTitle = title === 'Awesome AI Tools' ? title : title + ' · Awesome AI Tools';
-const contentLanguage = 'en';
+const origin = Astro.site ?? Astro.url.origin;
+const pathname = Astro.url.pathname;
+const hasLocalePath = isLocale(pathname.split('/')[1]);
+const translatedIndexable = locale === 'en' || indexTranslatedLocales;
+const blockIndexing = noindex || !translatedIndexable;
+
+// Indexable translated pages are their own canonical. Otherwise they defer to English.
+const canonicalPath = translatedIndexable ? pathname : localizedPath(pathname, 'en');
+const canonical = new URL(canonicalPath, origin);
+const alternates =
+  !blockIndexing && hasLocalePath
+    ? [
+        ...locales.map((entry) => ({
+          hreflang: htmlLang[entry],
+          href: new URL(localizedPath(pathname, entry), origin).toString(),
+        })),
+        { hreflang: 'x-default', href: new URL(localizedPath(pathname, 'en'), origin).toString() },
+      ]
+    : [];
+
+const ogImage = new URL(ogImagePath, origin);
+const siteName = t('site.name');
+const fullTitle = title === siteName ? title : title + ' · ' + siteName;
+const jsonLdList = jsonLd ? (Array.isArray(jsonLd) ? jsonLd : [jsonLd]) : [];
+
+// Data for the optional "this site is available in your language" banner.
+const suggestData = hasLocalePath
+  ? Object.fromEntries(
+      locales
+        .filter((entry) => entry !== locale)
+        .map((entry) => {
+          const tr = useTranslations(entry);
+          const language = legacyLocaleLabels[entry];
+          return [
+            entry,
+            {
+              href: localizedPath(pathname, entry),
+              lang: htmlLang[entry],
+              dir: textDirection[entry],
+              message: tr('lang.suggest', { language }),
+              action: tr('lang.suggestAction', { language }),
+              dismiss: tr('lang.dismiss'),
+            },
+          ];
+        }),
+    )
+  : {};
 ---
 
 <!doctype html>
-<html lang={contentLanguage}>
+<html lang={htmlLang[locale]} dir={textDirection[locale]}>
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="generator" content={Astro.generator} />
     <title>{fullTitle}</title>
     <meta name="description" content={description} />
     <link rel="canonical" href={canonical} />
-    {noindex && <meta name="robots" content="noindex,follow" />}
+    {alternates.map((alt) => (
+      <link rel="alternate" hreflang={alt.hreflang} href={alt.href} />
+    ))}
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link
+      rel="search"
+      type="application/opensearchdescription+xml"
+      title={siteName}
+      href="/opensearch.xml"
+    />
+    <link
+      rel="alternate"
+      type="application/atom+xml"
+      title={siteName + ' · Recent Additions'}
+      href="/feed.xml"
+    />
+    {feedHref && (
+      <link
+        rel="alternate"
+        type="application/rss+xml"
+        title={feedTitle ?? fullTitle}
+        href={feedHref}
+      />
+    )}
+    {blockIndexing && <meta name="robots" content="noindex,follow" />}
     <meta property="og:type" content="website" />
-    <meta property="og:site_name" content="Awesome AI Tools" />
+    <meta property="og:site_name" content={siteName} />
     <meta property="og:title" content={fullTitle} />
     <meta property="og:description" content={description} />
     <meta property="og:url" content={canonical} />
-    <meta name="twitter:card" content="summary" />
-    <meta name="theme-color" content="#f7f8fa" media="(prefers-color-scheme: light)" />
-    <meta name="theme-color" content="#101216" media="(prefers-color-scheme: dark)" />
+    <meta property="og:locale" content={ogLocale[locale]} />
+    {!blockIndexing &&
+      hasLocalePath &&
+      locales
+        .filter((entry) => entry !== locale)
+        .map((entry) => <meta property="og:locale:alternate" content={ogLocale[entry]} />)}
+    <meta property="og:image" content={ogImage} />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content={fullTitle + ' · ' + t('site.tagline')} />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={fullTitle} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={ogImage} />
+    <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#0a0d15" media="(prefers-color-scheme: dark)" />
+    {jsonLdList.map((schemaObj) => (
+      <script
+        type="application/ld+json"
+        set:html={JSON.stringify(schemaObj).replace(/</g, '\\u003c')}
+      />
+    ))}
+    <script is:inline>
+      try {
+        const theme = localStorage.getItem('awt:theme:v1');
+        if (theme === 'light' || theme === 'dark') document.documentElement.dataset.theme = theme;
+        const prefsRaw = localStorage.getItem('awt:a11y-prefs:v1');
+        if (prefsRaw) {
+          const prefs = JSON.parse(prefsRaw);
+          if (prefs && prefs.textSize === 'large')
+            document.documentElement.dataset.textSize = 'large';
+          if (prefs && prefs.reducedMotion === true)
+            document.documentElement.dataset.motion = 'reduce';
+        }
+      } catch {
+        /* the system colour scheme and default preferences apply when storage is unavailable */
+      }
+    </script>
   </head>
   <body data-locale={locale}>
+    <IconSprite />
+    <div class="scroll-progress" data-scroll-progress aria-hidden="true"></div>
     <a class="skip-link" href="#main-content">
-      Skip to content
+      {t('common.skip')}
     </a>
-    <Header locale={locale} />
+    <Header locale={locale} pathname={pathname} />
+    <div data-lang-banner-slot></div>
     <main id="main-content">
       <slot />
     </main>
-    <Footer />
+    <Footer locale={locale} pathname={pathname} />
+
+    <button
+      class="back-to-top"
+      type="button"
+      data-back-to-top
+      aria-label={t('common.backToTop')}
+      hidden
+    >
+      <Icon name="arrow-up" />
+    </button>
 
     <div class="compare-tray" data-compare-tray hidden>
       <p>
         <strong>
-          <span data-compare-count>0</span> selected
-        </strong>{' '}
-        · Compare up to three tools side by side.
+          <span data-compare-count>0</span> / 3
+        </strong>
       </p>
-      <button class="control-button" type="button" data-clear-compare>
+      <button class="btn btn-secondary btn-sm" type="button" data-clear-compare>
         Clear
       </button>
-      <a class="primary-button" href={'/' + locale + '/compare/'} data-compare-link>
+      <a class="btn btn-sm" href={'/' + locale + '/compare/'} data-compare-link>
         Compare
       </a>
     </div>
+
+    <div class="toast-region" data-toast-region role="status" aria-live="polite"></div>
     <div class="sr-only" aria-live="polite" aria-atomic="true" data-site-status></div>
 
+    <dialog class="modal-dialog cmd-dialog" data-cmd-dialog aria-label="Command palette">
+      <div class="cmd-head">
+        <Icon name="search" />
+        <input
+          type="search"
+          class="cmd-input"
+          data-cmd-input
+          placeholder="Search tools, domains, pages or type a command…"
+          autocomplete="off"
+          spellcheck="false"
+        />
+        <button
+          class="icon-button btn-sm"
+          type="button"
+          data-cmd-close
+          aria-label="Close command palette"
+        >
+          <Icon name="close" />
+        </button>
+      </div>
+      <div
+        class="cmd-results"
+        data-cmd-results
+        data-loading="true"
+        role="listbox"
+        aria-label="Command results"
+      >
+        <div class="skeleton-row"></div>
+        <div class="skeleton-row"></div>
+        <div class="skeleton-row"></div>
+      </div>
+      <div class="cmd-foot">
+        <span>
+          <kbd>↑</kbd> <kbd>↓</kbd> navigate
+        </span>
+        <span>
+          <kbd>Enter</kbd> select
+        </span>
+        <span>
+          <kbd>Esc</kbd> close
+        </span>
+      </div>
+    </dialog>
+
+    <dialog
+      class="modal-dialog shortcuts-dialog"
+      data-shortcuts-dialog
+      aria-labelledby="shortcuts-title"
+    >
+      <div class="modal-head">
+        <h2 id="shortcuts-title">Keyboard shortcuts</h2>
+        <button
+          class="icon-button btn-sm"
+          type="button"
+          data-shortcuts-close
+          aria-label="Close shortcuts"
+        >
+          <Icon name="close" />
+        </button>
+      </div>
+      <dl class="shortcuts-list">
+        <div>
+          <dt>
+            <kbd>⌘K</kbd> / <kbd>Ctrl+K</kbd>
+          </dt>
+          <dd>Open command palette (tools, domains, pages, actions)</dd>
+        </div>
+        <div>
+          <dt>
+            <kbd>/</kbd>
+          </dt>
+          <dd>Focus directory search box</dd>
+        </div>
+        <div>
+          <dt>
+            <kbd>j</kbd> / <kbd>k</kbd>
+          </dt>
+          <dd>Move focus to next / previous directory tool result</dd>
+        </div>
+        <div>
+          <dt>
+            <kbd>Enter</kbd>
+          </dt>
+          <dd>Open focused tool detail page</dd>
+        </div>
+        <div>
+          <dt>
+            <kbd>s</kbd>
+          </dt>
+          <dd>Save or unsave focused tool</dd>
+        </div>
+        <div>
+          <dt>
+            <kbd>c</kbd>
+          </dt>
+          <dd>Add or remove focused tool from comparison</dd>
+        </div>
+        <div>
+          <dt>
+            <kbd>?</kbd>
+          </dt>
+          <dd>Show this keyboard shortcuts dialog</dd>
+        </div>
+        <div>
+          <dt>
+            <kbd>Esc</kbd>
+          </dt>
+          <dd>Close open dialog, menu or mobile filter sheet</dd>
+        </div>
+      </dl>
+    </dialog>
+
+    <script
+      id="lang-suggest-data"
+      type="application/json"
+      set:html={JSON.stringify(suggestData).replace(/</g, '\\u003c')}
+    />
     <script>
       import '../scripts/site';
     </script>

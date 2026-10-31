@@ -3,9 +3,12 @@
   "url": "https://manus.im/",
   "description": "General autonomous agent that executes multi-step real-world tasks.",
   "category": "ai-agents",
-  "subcategory": null,
+  "subcategory": {
+    "id": "autonomous-agents",
+    "name": "Autonomous Agents"
+  },
   "order": 6,
-  "openSource": null,
+  "openSource": false,
   "pricing": null,
   "status": "listed",
   "source": {

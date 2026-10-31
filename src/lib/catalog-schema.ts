@@ -1,6 +1,13 @@
 import { z } from 'astro/zod';
-import { isIP } from 'node:net';
 import { pricingValues } from './pricing.ts';
+
+/** Browser-safe stand-in for Node's net.isIP, so the schema can run in the page. */
+function isIpHostname(hostname: string): boolean {
+  if (hostname.includes(':')) return true;
+  const parts = hostname.split('.');
+  if (parts.length !== 4) return false;
+  return parts.every((part) => /^\d{1,3}$/.test(part) && Number(part) <= 255);
+}
 
 const text = z
   .string()
@@ -58,7 +65,7 @@ export const publicUrlSchema = z.url().refine((value) => {
     !url.username &&
     !url.password &&
     !hasTrackingParams(url) &&
-    !isIP(hostname) &&
+    !isIpHostname(hostname) &&
     !hostname.includes(':') &&
     hostname.includes('.') &&
     !/(^|\.)(localhost|local|internal|invalid|test|home|lan|onion)$/.test(hostname) &&

@@ -3,7 +3,10 @@
   "url": "https://github.com/All-Hands-AI/OpenHands",
   "description": "Open-source autonomous software-engineering agent (formerly OpenDevin).",
   "category": "ai-agents",
-  "subcategory": null,
+  "subcategory": {
+    "id": "coding-agents",
+    "name": "Coding Agents"
+  },
   "order": 7,
   "openSource": true,
   "pricing": null,

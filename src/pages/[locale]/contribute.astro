@@ -1,6 +1,9 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import LegacyLocaleNotice from '../../components/LegacyLocaleNotice.astro';
+import PageHeader from '../../components/PageHeader.astro';
+import Icon from '../../components/Icon.astro';
+import { getCatalog } from '../../lib/catalog';
 import { locales, isLocale } from '../../lib/locales';
 
 export function getStaticPaths() {
@@ -9,84 +12,250 @@ export function getStaticPaths() {
 const requested = Astro.params.locale;
 if (!isLocale(requested)) throw new Error('Unsupported locale');
 const locale = requested;
+const prefix = '/' + locale;
+const today = new Date().toISOString().slice(0, 10);
+const { tools, categories } = await getCatalog();
+const builderData = {
+  today,
+  categories: categories.map((category) => ({ id: category.id, name: category.name })),
+  urls: tools.map((tool) => tool.url.replace(/\/$/, '').toLowerCase()),
+};
+const repo = 'https://github.com/aliammari1/awesome-ai-tools';
 
-const example = `{
+const template = `{
   "name": "Example Tool",
-  "url": "https://example.com/",
-  "description": "One factual sentence describing what the tool does.",
+  "url": "https://example.org",
+  "description": "Factual one-sentence summary of what the tool does.",
   "category": "code-generation-and-development",
+  "subcategory": null,
+  "pricing": "freemium",
+  "openSource": true,
+  "status": "listed",
   "source": {
     "kind": "community",
-    "addedAt": "YYYY-MM-DD"
+    "addedAt": "${today}"
   }
 }`;
 ---
 
 <BaseLayout
-  title="Contribute"
-  description="How to add or update an entry in the Awesome AI Tools structured catalog."
+  title="Suggest a tool"
+  description="Suggest an AI tool for the directory or contribute a catalog entry."
   locale={locale}
 >
   <LegacyLocaleNotice locale={locale} />
-  <article class="content-page">
-    <p class="kicker">Repository workflow</p>
-    <h1>Contribute to the catalog</h1>
-    <p>
-      Add or update a structured JSON record. CI validates the catalog, checks types, runs tests,
-      and builds the site. External link reports assist human review.
-    </p>
-    <p>
-      You can also{' '}
-      <a href="https://github.com/aliammari1/awesome-ai-tools/issues/new?template=tool_addition.yml">
-        suggest a tool through an issue
-      </a>{' '}
-      without installing anything.
-    </p>
 
-    <h2>Add a tool</h2>
-    <ol>
-      <li>
-        Run <code>bun run new:tool</code> for the interactive wizard, or manually create{' '}
-        <code>catalog/tools/&lt;slug&gt;.json</code>.
-      </li>
-      <li>
-        Use an existing category ID from <code>catalog/categories/</code>.
-      </li>
-      <li>
-        Write a short factual description. Avoid claims that will become stale quickly unless they
-        are separately sourced.
-      </li>
-      <li>
-        Use <code>null</code> for pricing, open-source status, or verification metadata you do not
-        actually know.
-      </li>
-      <li>
-        Use today's date (format: <code>YYYY-MM-DD</code>) for <code>source.addedAt</code>; this
-        records submission provenance, not independent verification.
-      </li>
-      <li>
-        Install with <code>bun ci</code>, then run <code>bun run generate:readme</code> and{' '}
-        <code>bun run check:pr</code>.
-      </li>
-    </ol>
-
-    <h2>Example</h2>
-    <pre><code>{example}</code></pre>
-
-    <h2>Why the README is generated</h2>
-    <p>
-      Previously, the README, documentation branch, generated content, and translated trees could
-      drift. The catalog is now the only editable data source. This keeps pull requests reviewable
-      and makes the website and README deterministic outputs of the same records.
-    </p>
-
-    <p>
+  <PageHeader
+    title="Suggest a tool"
+    lead="Found a tool that belongs in the catalog? Send its name, the official HTTPS link and one factual sentence about what it does."
+    crumbs={[{ label: 'Directory', href: prefix + '/#directory' }]}
+  >
+    <div class="actions-row">
       <a
-        class="primary-button"
-        href="https://github.com/aliammari1/awesome-ai-tools/blob/main/CONTRIBUTING.md"
+        class="btn"
+        href={repo + '/issues/new?template=tool_addition.yml'}
+        target="_blank"
+        rel="noopener noreferrer"
       >
-        Read CONTRIBUTING.md ↗
+        Suggest on GitHub <Icon name="arrow-up-right" />
       </a>
-    </p>
-  </article>
+      <a
+        class="btn btn-secondary"
+        href={repo + '/blob/main/CONTRIBUTING.md'}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Contribution guide <Icon name="arrow-up-right" />
+      </a>
+    </div>
+  </PageHeader>
+
+  <section class="section" aria-label="How to contribute">
+    <div class="shell prose-grid">
+      <div class="prose">
+        <h2>Fastest: open an issue</h2>
+        <p>
+          The tool addition template needs no local setup and goes straight to maintainer review.
+        </p>
+
+        <h2>Prefer a pull request?</h2>
+        <p>
+          Every entry is a standalone JSON file under <code>catalog/tools/</code>. To add one from
+          your terminal:
+        </p>
+        <ol>
+          <li>
+            Run <code>bun install</code> and <code>bun run new:tool</code>, or create
+            <code>catalog/tools/&lt;slug&gt;.json</code> by hand.
+          </li>
+          <li>
+            Pick an existing domain from <code>catalog/categories/</code>. Write a specific, factual
+            description and leave unverified metadata as <code>null</code>.
+          </li>
+          <li>
+            Run <code>bun run generate:readme</code> and <code>bun run check:pr</code>, then open a
+            pull request with both the JSON record and the updated README.
+          </li>
+        </ol>
+      </div>
+
+      <div class="prose">
+        <h2>Schema template</h2>
+        <div class="code-block">
+          <div class="code-block-head">
+            <span>catalog/tools/example-tool.json</span>
+            <span>CC0 1.0</span>
+          </div>
+          <pre><code>{template}</code></pre>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-surface" aria-labelledby="builder-title">
+    <div class="shell">
+      <div class="section-head">
+        <div>
+          <h2 id="builder-title">Build a record here</h2>
+          <p>
+            The form uses the same catalog schema as pull requests. It checks the URL, required
+            fields and whether that URL is already listed. Nothing is uploaded.
+          </p>
+        </div>
+      </div>
+      <form class="builder-form" id="tool-builder">
+        <label>
+          Name <input name="name" required autocomplete="off" />
+        </label>
+        <label>
+          Official HTTPS URL <input name="url" type="url" required placeholder="https://" />
+        </label>
+        <label>
+          Factual description <textarea name="description" required rows="3"></textarea>
+        </label>
+        <label>
+          Domain
+          <select name="category" required>
+            {categories.map((category) => (
+              <option value={category.id}>{category.name}</option>
+            ))}
+          </select>
+        </label>
+        <label>
+          Open source
+          <select name="openSource">
+            <option value="">Not recorded</option>
+            <option value="true">Yes</option>
+            <option value="false">No</option>
+          </select>
+        </label>
+        <div class="actions-row">
+          <button class="btn" type="submit">
+            Validate record
+          </button>
+          <button class="btn btn-secondary" type="button" id="builder-download" disabled>
+            Download JSON
+          </button>
+          <a
+            class="btn btn-secondary"
+            id="builder-issue"
+            hidden
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Open GitHub issue
+          </a>
+        </div>
+        <p id="builder-status" role="status"></p>
+        <pre id="builder-output" hidden></pre>
+      </form>
+    </div>
+  </section>
+  <script
+    id="builder-data"
+    type="application/json"
+    set:html={JSON.stringify(builderData).replace(/</g, '\\u003c')}
+  ></script>
+  <script>
+    import { toolSchema } from '../../lib/catalog-schema';
+
+    const dataNode = document.querySelector<HTMLScriptElement>('#builder-data');
+    const form = document.querySelector<HTMLFormElement>('#tool-builder');
+    const status = document.querySelector<HTMLElement>('#builder-status');
+    const output = document.querySelector<HTMLElement>('#builder-output');
+    const download = document.querySelector<HTMLButtonElement>('#builder-download');
+    const issue = document.querySelector<HTMLAnchorElement>('#builder-issue');
+    if (dataNode && form && status && output && download && issue) {
+      const data = JSON.parse(dataNode.textContent || '{}') as {
+        today: string;
+        categories: Array<{ id: string; name: string }>;
+        urls: string[];
+      };
+      const known = new Set(data.urls);
+      let ready = '';
+
+      form.addEventListener('submit', (event) => {
+        event.preventDefault();
+        const fields = new FormData(form);
+        const url = String(fields.get('url') || '').trim();
+        const normalized = url.replace(/\/$/, '').toLowerCase();
+        const openSourceRaw = String(fields.get('openSource') || '');
+        const record = {
+          name: String(fields.get('name') || '').trim(),
+          url,
+          description: String(fields.get('description') || '').trim(),
+          category: String(fields.get('category') || ''),
+          subcategory: null,
+          pricing: null,
+          openSource: openSourceRaw === '' ? null : openSourceRaw === 'true',
+          status: 'listed' as const,
+          source: { kind: 'community' as const, addedAt: data.today },
+        };
+        const parsed = toolSchema.safeParse(record);
+        if (!parsed.success) {
+          ready = '';
+          download.disabled = true;
+          issue.hidden = true;
+          output.hidden = true;
+          status.textContent = parsed.error.issues.map((item) => item.message).join(' ');
+          return;
+        }
+        if (!data.categories.some((category) => category.id === parsed.data.category)) {
+          status.textContent = 'Choose a domain that already exists in the catalog.';
+          return;
+        }
+        if (known.has(normalized)) {
+          status.textContent =
+            'That URL is already in the catalog. Suggest a correction instead of a new record.';
+          download.disabled = true;
+          issue.hidden = true;
+          return;
+        }
+        ready = JSON.stringify(parsed.data, null, 2) + '\n';
+        output.hidden = false;
+        output.textContent = ready;
+        download.disabled = false;
+        const body = '```json\n' + ready + '```\n';
+        issue.href =
+          'https://github.com/aliammari1/awesome-ai-tools/issues/new?template=tool_addition.yml&title=' +
+          encodeURIComponent('Add: ' + parsed.data.name) +
+          '&body=' +
+          encodeURIComponent(body);
+        issue.hidden = false;
+        status.textContent =
+          'Record matches the catalog schema. Download the JSON or open a prefilled issue.';
+      });
+
+      download.addEventListener('click', () => {
+        if (!ready) return;
+        const blob = new Blob([ready], { type: 'application/json' });
+        const url = URL.createObjectURL(blob);
+        const link = document.createElement('a');
+        link.href = url;
+        link.download = 'tool.json';
+        link.click();
+        URL.revokeObjectURL(url);
+      });
+    }
+  </script>
 </BaseLayout>

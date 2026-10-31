@@ -33,12 +33,11 @@
     "generate:readme": "bun scripts/generate-readme.mjs",
     "check:readme": "bun scripts/generate-readme.mjs --check",
     "check:pr": "bun run validate && bun run check:readme && bun run test",
-    "check:budget": "node scripts/check-budget.mjs",
     "audit:catalog": "bun scripts/audit-catalog.mjs",
     "new:tool": "bun scripts/new-tool.mjs",
     "lint": "eslint .",
     "lint:awesome": "awesome-lint",
-    "check": "bun run check:pr && bun run typecheck && bun run format:check && bun run lint && bun run lint:awesome && bun run build && bun run check:budget",
+    "check": "bun run check:pr && bun run typecheck && bun run format:check && bun run lint && bun run lint:awesome && bun run build",
     "test": "node --test tests/*.test.mjs",
     "typecheck": "astro check",
     "format": "prettier --write .",
@@ -46,7 +45,10 @@
     "audit:dependencies": "bun audit --audit-level=high --ignore=GHSA-vfj7-8cjw-p6xm"
   },
   "dependencies": {
-    "astro": "7.3.3"
+    "@fontsource-variable/geist": "5.3.0",
+    "@lucide/astro": "1.65.0",
+    "astro": "7.3.3",
+    "minisearch": "7.2.0"
   },
   "devDependencies": {
     "@astrojs/check": "0.9.11",

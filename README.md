@@ -33,16 +33,33 @@ Choose a category below, [suggest a tool](https://github.com/aliammari1/awesome-
 
 Agent SDKs, autonomous systems, orchestration, tool use, memory, and browser automation.
 
+### Agent Frameworks
+
 - [OpenAI Agents SDK](https://openai.github.io/openai-agents-python/) - Lightweight framework for multi-agent workflows with handoffs and guardrails.
-- [Model Context Protocol](https://modelcontextprotocol.io/) - Open standard for connecting AI agents to tools and data sources.
 - [Claude Agent SDK](https://code.claude.com/docs/en/agent-sdk/overview) - Build agents on the same harness as Claude Code with tool use and MCP.
 - [Google Agent Development Kit](https://adk.dev/) - Open-source toolkit for building and deploying multi-agent systems.
 - [Pydantic AI](https://pydantic.dev/docs/ai/overview/) - Type-safe Python agent framework with structured outputs and validation.
 - [Smolagents](https://github.com/huggingface/smolagents) - Hugging Face's minimal library for code-writing agents.
-- [Manus](https://manus.im/) - General autonomous agent that executes multi-step real-world tasks.
-- [OpenHands](https://github.com/All-Hands-AI/OpenHands) - Open-source autonomous software-engineering agent (formerly OpenDevin).
 - [AgentScope](https://github.com/modelscope/agentscope) - Multi-agent platform with distributed orchestration and visual debugging.
+
+### Agent Protocols & Tools
+
+- [Model Context Protocol](https://modelcontextprotocol.io/) - Open standard for connecting AI agents to tools and data sources.
+
+### Autonomous Agents
+
+- [Manus](https://manus.im/) - General autonomous agent that executes multi-step real-world tasks.
+
+### Coding Agents
+
+- [OpenHands](https://github.com/All-Hands-AI/OpenHands) - Open-source autonomous software-engineering agent (formerly OpenDevin).
+
+### Agent Memory & State
+
 - [Letta](https://www.letta.com/) - Framework for stateful agents with long-term memory (formerly MemGPT).
+
+### Browser Automation
+
 - [Browser Use](https://github.com/browser-use/browser-use) - Library that lets agents control a real browser to complete web tasks.
 
 ## Productivity

@@ -1,42 +1,144 @@
 ---
+import Icon from './Icon.astro';
+import LanguageSwitcher from './LanguageSwitcher.astro';
+import { useTranslations } from '../lib/i18n';
 import type { Locale } from '../lib/locales';
 
 interface Props {
   locale?: Locale;
+  pathname: string;
 }
 
-const { locale = 'en' } = Astro.props;
+interface NavLink {
+  label: string;
+  href: string;
+  exact?: string[];
+  prefixes?: string[];
+  badge?: boolean;
+}
+
+const { locale = 'en', pathname } = Astro.props;
+const t = useTranslations(locale);
 const prefix = '/' + locale;
+
+const links: NavLink[] = [
+  {
+    label: t('nav.directory'),
+    href: prefix + '/#directory',
+    exact: [prefix + '/'],
+    prefixes: [prefix + '/categories/', prefix + '/tools/'],
+  },
+  { label: t('nav.domains'), href: prefix + '/#domains' },
+  {
+    label: t('nav.collections'),
+    href: prefix + '/collections/',
+    prefixes: [prefix + '/collections/'],
+  },
+  {
+    label: t('nav.saved'),
+    href: prefix + '/saved/',
+    prefixes: [prefix + '/saved/'],
+    badge: true,
+  },
+  {
+    label: t('nav.insights'),
+    href: prefix + '/insights/',
+    prefixes: [prefix + '/insights/', prefix + '/changelog/'],
+  },
+  {
+    label: t('nav.contribute'),
+    href: prefix + '/contribute/',
+    prefixes: [prefix + '/contribute/'],
+  },
+];
+
+const isCurrent = (link: NavLink) =>
+  Boolean(
+    link.exact?.includes(pathname) || link.prefixes?.some((start) => pathname.startsWith(start)),
+  );
 ---
 
-<header class="site-header">
+<header class="site-header" data-site-header>
   <div class="shell header-inner">
-    <a class="brand" href={prefix + '/'} aria-label="Awesome AI Tools home">
+    <a class="brand" href={prefix + '/'} aria-label={t('nav.home')}>
       <span class="brand-mark" aria-hidden="true">
-        AI
+        <Icon name="brand" />
       </span>
-      <span>Awesome AI Tools</span>
+      <span>{t('site.name')}</span>
     </a>
 
-    <nav class="primary-nav" aria-label="Primary">
-      <a href={prefix + '/#directory'}>Tools</a>
-      <a href={prefix + '/saved/'}>Saved</a>
-      <a href={prefix + '/about/methodology/'}>Methodology</a>
-      <a href={prefix + '/contribute/'}>Contribute</a>
+    <nav class="primary-nav" aria-label={t('nav.primary')}>
+      {links.map((link) => (
+        <a href={link.href} aria-current={isCurrent(link) ? 'page' : undefined}>
+          {link.label}
+          {link.badge && (
+            <span class="nav-count" data-saved-count hidden>
+              0
+            </span>
+          )}
+        </a>
+      ))}
+    </nav>
+
+    <div class="header-actions">
       <a
+        class="search-trigger"
+        href={prefix + '/?search=1#directory'}
+        data-search-shortcut
+        data-cmd-open
+        aria-label={t('nav.searchTools') + ' (⌘K)'}
+      >
+        <Icon name="search" />
+        <span class="search-trigger-label">{t('nav.search')}</span>
+        <kbd aria-hidden="true">⌘K</kbd>
+      </a>
+      <LanguageSwitcher locale={locale} pathname={pathname} />
+      <button
+        class="icon-button theme-toggle"
+        type="button"
+        data-theme-toggle
+        aria-label={t('nav.theme')}
+      >
+        <Icon name="moon" class="icon-moon" />
+        <Icon name="sun" class="icon-sun" />
+      </button>
+      <a
+        class="github-link"
         href="https://github.com/aliammari1/awesome-ai-tools"
         target="_blank"
         rel="noopener noreferrer"
       >
-        GitHub ↗
+        <Icon name="star" />
+        <span>
+          {t('nav.star')}
+          <span class="github-label">{t('nav.starSuffix')}</span>
+        </span>
       </a>
-    </nav>
-
-    <div class="header-actions">
-      <button class="search-shortcut" type="button" data-search-shortcut aria-label="Search tools">
-        <span>Search</span>
-        <kbd>⌘K</kbd>
+      <button
+        class="icon-button nav-toggle"
+        type="button"
+        data-nav-toggle
+        aria-expanded="false"
+        aria-controls="mobile-nav"
+        aria-label={t('nav.menu')}
+      >
+        <Icon name="menu" />
       </button>
     </div>
   </div>
+
+  <nav class="mobile-nav" id="mobile-nav" aria-label={t('nav.mobile')} hidden>
+    <div class="shell mobile-nav-inner">
+      {links.map((link) => (
+        <a href={link.href} aria-current={isCurrent(link) ? 'page' : undefined}>
+          {link.label}
+          {link.badge && (
+            <span class="nav-count" data-saved-count hidden>
+              0
+            </span>
+          )}
+        </a>
+      ))}
+    </div>
+  </nav>
 </header>

@@ -1,6 +1,7 @@
 ---
 import BaseLayout from '../../../layouts/BaseLayout.astro';
 import LegacyLocaleNotice from '../../../components/LegacyLocaleNotice.astro';
+import PageHeader from '../../../components/PageHeader.astro';
 import { locales, isLocale } from '../../../lib/locales';
 
 export function getStaticPaths() {
@@ -9,6 +10,7 @@ export function getStaticPaths() {
 const requested = Astro.params.locale;
 if (!isLocale(requested)) throw new Error('Unsupported locale');
 const locale = requested;
+const prefix = '/' + locale;
 ---
 
 <BaseLayout
@@ -17,65 +19,65 @@ const locale = requested;
   locale={locale}
 >
   <LegacyLocaleNotice locale={locale} />
-  <article class="content-page">
-    <p class="kicker">Trust & maintenance</p>
-    <h1>Curation methodology</h1>
-    <p>
-      The directory is a maintained catalog, not an automatically scraped ranking. Inclusion means a
-      tool met the repository's contribution bar at the time it was added; it is not an endorsement
-      or a security guarantee.
-    </p>
 
-    <h2>Inclusion bar</h2>
-    <ul>
-      <li>
-        <strong>Reachable:</strong> the product or repository should be publicly accessible.
-      </li>
-      <li>
-        <strong>Maintained:</strong> abandoned or archived projects are candidates for removal or a
-        discontinued status.
-      </li>
-      <li>
-        <strong>Distinct:</strong> additions should provide meaningful value beyond near-duplicate
-        entries.
-      </li>
-      <li>
-        <strong>Legitimate:</strong> obvious scams, thin affiliate pages, and deceptive wrappers do
-        not belong.
-      </li>
-      <li>
-        <strong>Specific descriptions:</strong> descriptions explain what a tool does instead of
-        repeating vendor marketing.
-      </li>
-    </ul>
+  <PageHeader
+    title="How tools make the list"
+    lead="A listing helps you discover a tool. It is not an endorsement, a ranking or a security guarantee."
+    crumbs={[{ label: 'Directory', href: prefix + '/#directory' }]}
+  />
 
-    <h2>Verification means something specific</h2>
-    <p>
-      The September 2026 migration converted the README into structured records, but it did{' '}
-      <em>not</em> pretend that all records had just been manually re-verified. A future{' '}
-      <code>verifiedAt</code> field should only be added when someone actually checks the official
-      source.
-    </p>
+  <section class="section" aria-label="Curation methodology">
+    <div class="shell prose-grid">
+      <div class="prose">
+        <h2>What we look for</h2>
+        <ul>
+          <li>
+            <strong>Accessible:</strong> a public product or repository with a working official
+            HTTPS link.
+          </li>
+          <li>
+            <strong>Maintained:</strong> clear evidence that the project is active and usable.
+          </li>
+          <li>
+            <strong>Useful:</strong> a distinct purpose beyond a thin wrapper or duplicate listing.
+          </li>
+          <li>
+            <strong>Credible:</strong> no deceptive claims, affiliate landing pages or referral
+            links.
+          </li>
+          <li>
+            <strong>Plainly described:</strong> what the tool does in practice, without vendor
+            slogans.
+          </li>
+        </ul>
 
-    <h2>One source of truth</h2>
-    <p>
-      Tool records live in <code>catalog/tools/</code>. Category records live in{' '}
-      <code>catalog/categories/</code>. The website and README are both generated from that data, so
-      they cannot silently become separate catalogs.
-    </p>
+        <h2>No pay-to-play</h2>
+        <p>
+          Automated checks reject affiliate query parameters (<code>utm_*</code>, <code>ref</code>,
+          <code>fbclid</code>), insecure HTTP links and duplicate URLs on every pull request.
+        </p>
+      </div>
 
-    <h2>Translations</h2>
-    <p>
-      The old automated translation pipeline was removed from production. Legacy locale URLs remain
-      available as English fallbacks and are excluded from indexing until reviewed translations are
-      rebuilt from structured content.
-    </p>
+      <div class="prose">
+        <h2>What the metadata means</h2>
+        <p>
+          An entry’s added date records when it entered the catalog. It does not mean its price,
+          availability or feature set was independently audited on that date. Unknown details stay
+          marked <em>Not recorded</em>.
+        </p>
 
-    <h2>Popularity and rankings</h2>
-    <p>
-      The site does not claim browser-local activity represents community popularity. There is no
-      public “trending” ranking until a real aggregate data source exists and its methodology can be
-      explained.
-    </p>
-  </article>
+        <h2>Keeping entries current</h2>
+        <p>
+          Records in <code>catalog/tools/</code> feed both this website and the GitHub
+          <code>README.md</code>. Report broken links, outdated descriptions or discontinued
+          projects through <a href={prefix + '/contribute/'}>the contribution page</a>.
+        </p>
+        <p>
+          The directory never ranks tools by paid popularity. Use the descriptions and recorded
+          details as a starting point, then verify the official documentation before adopting a
+          tool.
+        </p>
+      </div>
+    </div>
+  </section>
 </BaseLayout>
