@@ -130,7 +130,7 @@ Image generation, visual design, creative production, and design-assistance tool
 - [Jasper Art](https://www.jasper.ai/art) - AI art generation for marketers.
 - [BlueWillow](https://www.bluewillow.ai/) - Free AI image generator.
 - [Prisma](https://prisma-ai.com/) - Artistic photo filters.
-
+- [Cadence](https://music.rynn.me) — Free browser AI song generator (4 free/day, Keep $1.99).
 ### Design Tools
 
 - [Figma AI](https://www.figma.com/) - Design platform with AI features and auto layout.
