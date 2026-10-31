@@ -1,6 +1,6 @@
 # Awesome AI Tools [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
-> A curated catalog of **406 AI tools** across **19 categories**.
+> A curated catalog of **407 AI tools** across **19 categories**.
 > Browse the searchable directory at **https://docs.aliammari.dev**.
 
 Find AI tools by task, then compare recorded pricing and open-source information in the [searchable directory](https://docs.aliammari.dev/en/). Unknown metadata stays unknown.
@@ -347,6 +347,7 @@ Video generation, editing, enhancement, effects, and media-production tools.
 - [YumCut](https://yumcut.com/) - Self-hosted AI workflow for generating finished vertical videos, with a user automation API.
 - [Ideoy](https://ideoy.ai/) - AI meme video generator that remakes this week's memes with one selfie.
 - [IntroVideo](https://introvideo.io/) - AI logo intro generator that turns a logo into an 8-second cinematic intro video in 16:9 or 9:16.
+- [Visual Maker AI](https://visualmakerai.com/) - Web workspace for generating images, turning photos into short videos, and breaking scripts into scenes and clips with models such as Veo, Seedance, and Kling.
 - [Wan 3.5](https://wan35.app/) - Browser-based AI video generator for text-to-video and image-to-video creation.
 - [Effect Video](https://effect.video/) - AI photo-to-video tool with viral effect templates for short vertical clips.
 - [Pixwit](https://pixwit.ai/) - All-in-one AI creative platform for generating images, videos, and music from text or image prompts.
