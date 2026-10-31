@@ -1,19 +1,9 @@
-import { readFile } from 'node:fs/promises';
-import { join } from 'node:path';
 import { getCollection } from 'astro:content';
 import type { z } from 'astro/zod';
 import { categorySchema, listedTools, toolSchema } from './catalog-schema';
 
 export type Tool = z.infer<typeof toolSchema> & { id: string };
 export type Category = z.infer<typeof categorySchema> & { id: string };
-
-export interface GithubFact {
-  repo: string;
-  stars: number;
-  lastCommit: string | null;
-  license: string | null;
-  asOf: string;
-}
 
 export function toolDate(tool: Pick<Tool, 'source'>): string {
   return tool.source.kind === 'community' ? tool.source.addedAt : tool.source.migratedAt;
@@ -60,20 +50,6 @@ export function similarTools(tools: Tool[], current: Tool, limit = 6): Tool[] {
     .sort((a, b) => b.score - a.score || a.entry.order - b.entry.order)
     .slice(0, limit)
     .map(({ entry }) => entry);
-}
-
-let cachedGithubFacts: Record<string, GithubFact> | null = null;
-
-export async function getGithubFacts(): Promise<Record<string, GithubFact>> {
-  if (cachedGithubFacts) return cachedGithubFacts;
-  try {
-    const raw = await readFile(join(process.cwd(), 'catalog/github-facts.json'), 'utf8');
-    const parsed = JSON.parse(raw);
-    cachedGithubFacts = typeof parsed === 'object' && parsed !== null ? parsed : {};
-  } catch {
-    cachedGithubFacts = {};
-  }
-  return cachedGithubFacts ?? {};
 }
 
 export async function getCatalog(): Promise<{ tools: Tool[]; categories: Category[] }> {

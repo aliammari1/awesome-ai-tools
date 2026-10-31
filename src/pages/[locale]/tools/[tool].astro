@@ -5,7 +5,7 @@ import PageHeader from '../../../components/PageHeader.astro';
 import ToolCard from '../../../components/ToolCard.astro';
 import Icon from '../../../components/Icon.astro';
 import { formatDate, useTranslations } from '../../../lib/i18n';
-import { getCatalog, getGithubFacts, similarTools, toolDate } from '../../../lib/catalog';
+import { getCatalog, similarTools, toolDate } from '../../../lib/catalog';
 import { pricingLabels } from '../../../lib/pricing';
 import { buildSoftwareApplicationJsonLd } from '../../../lib/structured-data';
 import { locales, isLocale } from '../../../lib/locales';
@@ -37,7 +37,6 @@ const nextTool = domainIndex >= 0 ? domainTools[domainIndex + 1] : undefined;
 const related = similarTools(tools, tool, 6);
 const addedOn = toolDate(tool);
 const sourceLabel = tool.source.kind === 'community' ? 'Community addition' : 'Catalog migration';
-const githubFacts = (await getGithubFacts())[tool.id];
 const origin = (Astro.site ?? Astro.url.origin).toString().replace(/\/$/, '');
 const pagePath = prefix + '/tools/' + tool.id + '/';
 const markdownLink = `[${tool.name}](${origin}${pagePath})`;
@@ -202,7 +201,6 @@ const english = locale !== 'en' ? 'en' : undefined;
           <nav class="page-toc" aria-label="On this page">
             <a href="#at-a-glance">At a glance</a>
             <a href="#record-title">Catalog record</a>
-            {githubFacts && <a href="#github-facts">Repository facts</a>}
             {related.length > 0 && <a href="#alternatives">Alternatives</a>}
           </nav>
           <h2 id="record-title">Catalog record</h2>
@@ -299,42 +297,6 @@ const english = locale !== 'en' ? 'en' : undefined;
               <dd>{sourceLabel}</dd>
             </div>
           </dl>
-          {githubFacts && (
-            <div id="github-facts">
-              <h2>Repository facts</h2>
-              <p>Fetched at build time. Hidden when GitHub does not return them.</p>
-              <dl class="spec">
-                <div>
-                  <dt>Repository</dt>
-                  <dd>
-                    <a href={'https://github.com/' + githubFacts.repo}>{githubFacts.repo}</a>
-                  </dd>
-                </div>
-                <div>
-                  <dt>Stars</dt>
-                  <dd>{githubFacts.stars.toLocaleString('en')}</dd>
-                </div>
-                <div>
-                  <dt>Last commit</dt>
-                  <dd>
-                    {githubFacts.lastCommit
-                      ? formatDate(locale, githubFacts.lastCommit)
-                      : 'Not recorded'}
-                  </dd>
-                </div>
-                <div>
-                  <dt>License</dt>
-                  <dd>{githubFacts.license ?? 'Not recorded'}</dd>
-                </div>
-                <div>
-                  <dt>As of</dt>
-                  <dd>
-                    <time datetime={githubFacts.asOf}>{formatDate(locale, githubFacts.asOf)}</time>
-                  </dd>
-                </div>
-              </dl>
-            </div>
-          )}
           <div class="code-block">
             <div class="code-block-head">
               <span>catalog/tools/{tool.id}.json</span>
