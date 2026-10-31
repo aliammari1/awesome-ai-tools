@@ -562,6 +562,7 @@ Game-development tools and AI applications for entertainment and interactive med
 - [AI Dungeon](https://aidungeon.io/) - AI-powered text adventure and storytelling.
 - [NovelAI](https://novelai.net/) - AI storytelling and image generation platform.
 - [Chai](https://chai.ml/) - Platform for chatting with AI personalities.
+- [Kissable](https://kissable.app/) - AI companion with persistent memory, photo and video generation, community scenarios, and emotional voice.
 
 ## No-Code/Low-Code AI
 
