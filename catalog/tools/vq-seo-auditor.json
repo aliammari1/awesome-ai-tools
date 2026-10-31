@@ -1,0 +1,18 @@
+{
+  "name": "VisionQuantech SEO Auditor",
+  "url": "https://apps.visionquantech.com/seo-auditor/",
+  "description": "Runs a 13-point SEO audit on any website URL and returns prioritized fixes with explanations. Free, no signup required.",
+  "category": "business-and-marketing",
+  "subcategory": {
+    "id": "marketing-and-sales",
+    "name": "Marketing & Sales"
+  },
+  "order": 903,
+  "openSource": false,
+  "pricing": "free",
+  "status": "listed",
+  "source": {
+    "kind": "community",
+    "addedAt": "2026-10-17"
+  }
+}

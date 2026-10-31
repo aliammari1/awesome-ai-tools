@@ -1,6 +1,6 @@
 # Awesome AI Tools [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
-> A curated catalog of **400+ AI tools** across **19 categories**.
+> A curated catalog of **420 AI tools** across **19 categories**.
 > Browse the searchable directory at **https://docs.aliammari.dev**.
 
 Find AI tools by task, then compare recorded pricing and open-source information in the [searchable directory](https://docs.aliammari.dev/en/). Unknown metadata stays unknown.
@@ -189,7 +189,6 @@ Writing, content creation, translation, localization, and communication assistan
 - [Beautiful.ai](https://www.beautiful.ai/) - AI-powered presentation design.
 - [Hemingway Editor](https://hemingwayapp.com/) - Readability-focused writing tool.
 - [SocialBu](https://socialbu.com/) - AI-powered social media management for scheduling, publishing, and automating across X, Instagram, LinkedIn, Facebook, TikTok, and more.
-- [ImagineYourBook](https://www.imagineyourbook.com/) - Web app that plans and drafts full manuscripts chapter by chapter, with series story bibles and Word/EPUB/Markdown export.
 - [Multi Upload Tool](https://multi-upload-tool.com/) - Schedules one video to TikTok, YouTube Shorts, Instagram, Facebook, LinkedIn, Pinterest, Bluesky, Threads, and X from a dashboard, REST API, or MCP server that lets Claude, ChatGPT, and Cursor create posts.
 
 ### Translation & Localization
@@ -345,7 +344,7 @@ Video generation, editing, enhancement, effects, and media-production tools.
 - [Fliki](https://fliki.ai/) - Text-to-video with AI voices and avatars.
 - [Steve AI](https://www.steve.ai/) - Animated video creation.
 - [Visla](https://www.visla.us/) - AI video storytelling platform.
-- [MaxVideoAI](https://maxvideoai.com) - Pay-as-you-go AI video generation with model comparison and MCP workflows.
+- [MaxVideoAI](https://maxvideoai.com) - Multi-engine AI video generation hub (Sora, Veo, Wan, Kling, LTX…).
 - [ZOOOP](https://zooop.ai) - AI-native filmmaking workstation for image, video, audio, and lip-sync generation.
 - [YumCut](https://yumcut.com/) - Self-hosted AI workflow for generating finished vertical videos, with a user automation API.
 - [Ideoy](https://ideoy.ai/) - AI meme video generator that remakes this week's memes with one selfie.
@@ -354,9 +353,7 @@ Video generation, editing, enhancement, effects, and media-production tools.
 - [Wan 3.5](https://wan35.app/) - Browser-based AI video generator for text-to-video and image-to-video creation.
 - [Wedding AI](https://weddingai.studio/) - AI wedding invitation video maker that turns templates, names, and photos into an HD MP4.
 - [Effect Video](https://effect.video/) - AI photo-to-video tool with viral effect templates for short vertical clips.
-- [Magic Hour](https://magichour.ai/) - AI video creation and editing with text-to-video, image-to-video, face swap, lip sync, and animation tools.
 - [Pixwit](https://pixwit.ai/) - All-in-one AI creative platform for generating images, videos, and music from text or image prompts.
-- [shortshort](https://www.shortshort.io/) - Turns one long video (talk, podcast, course) into vertical 9:16 shorts with word-by-word captions.
 
 ### Video Enhancement & Effects
 
@@ -400,7 +397,6 @@ Coding assistants, developer tools, code analysis, and software-engineering auto
 - [Replit](https://replit.com/) - Cloud-based IDE with AI coding and instant deployment.
 - [Deno Deploy](https://deno.com/deploy) - Edge deployment with AI-assisted development.
 - [agent-qa](https://github.com/vostride/agent-qa) - Self-improving natural-language web, Android and iOS testing with advanced memidex memory, a CLI, dashboard and MCP tools.
-- [Codex Lookout](https://github.com/makorise/codex-local-hub) - Local-first macOS companion for monitoring and steering Codex Desktop tasks from a phone browser.
 
 ### Code Analysis & Review
 
@@ -520,6 +516,9 @@ Marketing, sales, e-commerce, retail, career, and job-search tools.
 - [Seamless.ai](https://seamless.ai/) - AI-powered B2B lead generation and prospecting.
 - [LogNorm](https://lognorm.com/) - SEO and AI-visibility platform that hands a ranked growth backlog to AI agents over MCP.
 - [TeleTraff](https://teletraff.com/en) - Browser-based panel for Telegram promotion and advertising that writes AI comments on channel posts, invites audiences, sends DM campaigns, and lets AI handle dialogs with leads.
+- [VisionQuantech SEO Auditor](https://apps.visionquantech.com/seo-auditor/) - Runs a 13-point SEO audit on any website URL and returns prioritized fixes with explanations. Free, no signup required.
+- [VisionQuantech AI Headline Tester](https://apps.visionquantech.com/ai-headline-tester/) - Scores marketing headlines and suggests improvements for clarity and click-through. Free, no signup required.
+- [VisionQuantech Hashtag Researcher](https://apps.visionquantech.com/hashtag-researcher/) - Researches hashtags for social posts with relevance scoring. Free, no signup required.
 - [CrakSEO Search Console MCP](https://docs.crakseo.com/mcp-servers/search-console) - Free remote MCP access for AI assistants to query owned-site Google Search Console and Bing Webmaster data; authentication required.
 
 ### E-commerce & Retail
@@ -536,6 +535,8 @@ Marketing, sales, e-commerce, retail, career, and job-search tools.
 - [Jobscan](https://www.jobscan.co/) - Resume and LinkedIn optimization with ATS keyword matching.
 - [Resume Worded](https://resumeworded.com/) - AI resume and LinkedIn feedback with score and targeted advice.
 - [Kickresume](https://www.kickresume.com/) - AI resume builder with templates and job matching.
+- [VisionQuantech ATS Resume Checker](https://apps.visionquantech.com/resume-ats-checker/) - Free ATS resume checker that scores a resume 0-100 against a job description, flags missing keywords, and suggests bullet rewrites. No signup required.
+- [VisionQuantech Interview Prep Coach](https://apps.visionquantech.com/interview-prep-coach/) - Generates likely interview questions from a job description with a STAR answer builder and practice mode. Free, no signup required.
 - [JobEmerge](https://www.jobemerge.work/) - An AI career copilot with a job-fit test, a 19-language resume translator and a simple Markdown resume editor.
 
 ## Gaming & Entertainment
