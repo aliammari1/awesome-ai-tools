@@ -421,6 +421,7 @@ AI search engines, research assistants, knowledge discovery, and evidence-gather
 - [Scite](https://scite.ai/) - Smart citations for research validation.
 - [Connected Papers](https://www.connectedpapers.com/) - Visual academic paper exploration.
 - [CiteMe](https://citeme.app/) - AI-powered academic citation generator that searches 11+ scholarly databases and formats references in 40+ citation styles.
+- [LibreAI](https://libreaihub.vercel.app) - A directory of open-source AI projects organized into categories, with README-derived installation guides.
 
 ## Large Language Models
 
