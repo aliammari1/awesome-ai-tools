@@ -1,6 +1,6 @@
 # Awesome AI Tools [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
-> A curated catalog of **410 AI tools** across **19 categories**.
+> A curated catalog of **411 AI tools** across **19 categories**.
 > Browse the searchable directory at **https://docs.aliammari.dev**.
 
 Find AI tools by task, then compare recorded pricing and open-source information in the [searchable directory](https://docs.aliammari.dev/en/). Unknown metadata stays unknown.
@@ -381,6 +381,7 @@ Coding assistants, developer tools, code analysis, and software-engineering auto
 - [Aider](https://aider.chat/) - Open-source AI pair programmer for terminal with Git integration.
 - [CodeT5](https://github.com/salesforce/CodeT5) - Open-source code generation by Salesforce.
 - [Orbi](https://orbi.build/) - Open-source GitHub coding agent that turns issues labeled ai-ready into independently reviewed, CI-checked, merged pull requests. Free tier: first 3 merged pull requests free, no credit card required.
+- [YYLO](https://github.com/yylo-dev/yylo) - Open-source CLI that orchestrates AI coding agents with Kanban task boards, Git worktree workflows, and merge automation.
 
 ### Development Tools
 
