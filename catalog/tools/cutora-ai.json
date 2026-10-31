@@ -8,8 +8,8 @@
     "name": "Video Creation & Editing"
   },
   "order": 9999,
-  "openSource": null,
-  "pricing": null,
+  "openSource": false,
+  "pricing": "paid",
   "status": "listed",
   "source": {
     "kind": "community",
