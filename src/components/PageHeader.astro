@@ -1,0 +1,59 @@
+---
+import { buildBreadcrumbJsonLd } from '../lib/structured-data';
+
+interface Crumb {
+  label: string;
+  href?: string;
+}
+
+interface Props {
+  title: string;
+  crumbs?: Crumb[];
+  lead?: string;
+  leadLang?: string;
+  leadDir?: 'ltr' | 'rtl';
+}
+
+const { title, crumbs = [], lead, leadLang, leadDir } = Astro.props;
+const origin = (Astro.site ?? Astro.url.origin).toString();
+const breadcrumbJsonLd =
+  crumbs.length > 0
+    ? buildBreadcrumbJsonLd(
+        origin,
+        crumbs.map((c) => ({ label: c.label, href: c.href ?? Astro.url.pathname })),
+        title,
+        Astro.url.pathname,
+      )
+    : null;
+---
+
+<header class="page-header">
+  {breadcrumbJsonLd && (
+    <script
+      type="application/ld+json"
+      set:html={JSON.stringify(breadcrumbJsonLd).replace(/</g, '\\u003c')}
+    />
+  )}
+  <div class="shell">
+    {crumbs.length > 0 && (
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <ol>
+          {crumbs.map((crumb) => (
+            <li>{crumb.href ? <a href={crumb.href}>{crumb.label}</a> : crumb.label}</li>
+          ))}
+          <li aria-current="page">{title}</li>
+        </ol>
+      </nav>
+    )}
+    <slot name="before-title" />
+    <slot name="title">
+      <h1>{title}</h1>
+    </slot>
+    {lead && (
+      <p class="page-lead" lang={leadLang} dir={leadDir}>
+        {lead}
+      </p>
+    )}
+    <slot />
+  </div>
+</header>

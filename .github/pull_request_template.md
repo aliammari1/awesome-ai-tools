@@ -1,37 +1,13 @@
-## Description
+## What changed and why?
 
-Summarize the change and why it is needed.
+<!-- For catalog entries, include the official URL, what the tool does, and why it adds value. For code changes, describe the resulting behavior. -->
 
-## Type of change
+## Verification
 
-- [ ] Add a catalog tool
-- [ ] Update/remove a catalog tool
-- [ ] Re-categorize catalog data
-- [ ] Website/UI change
-- [ ] CI/deployment change
-- [ ] Documentation change
-- [ ] Other
+<!-- What did you check? CI runs the repository checks; mention any manual verification or relevant limitations. -->
 
-## Catalog checklist
+- [ ] For a catalog change, I checked for duplicates and verified the official URL.
+- [ ] For a catalog change, the description is factual and unknown metadata is omitted or `null`.
+- [ ] For a catalog change, I included the generated `README.md` update (`bun run generate:readme`).
 
-For catalog changes:
-
-- [ ] I edited `catalog/tools/` or `catalog/categories/`, not the generated README entry list.
-- [ ] The official URL is reachable.
-- [ ] I have starred this repository ⭐ *(Higher repo visibility means more exposure for your tool!)*
-- [ ] The description is factual and avoids unsupported marketing claims.
-- [ ] Unknown metadata is `null` rather than guessed.
-- [ ] The entry is not a duplicate.
-- [ ] I ran `bun run validate`.
-- [ ] I ran `bun run generate:readme`.
-- [ ] I ran `bun run build`.
-
-## General checklist
-
-- [ ] `README.md` is generated and committed when catalog data changed.
-- [ ] CI is green.
-- [ ] I have read [CONTRIBUTING.md](../CONTRIBUTING.md).
-
-## License acknowledgment
-
-By submitting this PR, I dedicate my contribution to the public domain under the [CC0 1.0 Universal](../LICENSE) dedication used by this project.
+By submitting this PR, I dedicate my contribution to the public domain under [CC0 1.0 Universal](https://github.com/aliammari1/awesome-ai-tools/blob/main/LICENSE).

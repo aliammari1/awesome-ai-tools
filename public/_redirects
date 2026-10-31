@@ -1,0 +1,2 @@
+# Cloudflare Pages edge redirect from root to canonical English locale
+/ /en/ 302

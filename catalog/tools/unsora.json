@@ -7,12 +7,12 @@
     "id": "video-creation-and-editing",
     "name": "Video Creation & Editing"
   },
-  "order": 387,
+  "order": 9999,
   "openSource": true,
   "pricing": "freemium",
   "status": "listed",
   "source": {
-    "kind": "pull-request",
-    "migratedAt": null
+    "kind": "community",
+    "addedAt": "2026-10-15"
   }
 }

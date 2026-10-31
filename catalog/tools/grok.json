@@ -8,7 +8,7 @@
     "name": "General Purpose LLMs"
   },
   "order": 253,
-  "openSource": null,
+  "openSource": false,
   "pricing": null,
   "status": "listed",
   "source": {

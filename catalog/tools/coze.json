@@ -8,7 +8,7 @@
     "name": "Chatbot Builders"
   },
   "order": 345,
-  "openSource": null,
+  "openSource": false,
   "pricing": null,
   "status": "listed",
   "source": {
