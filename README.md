@@ -1,6 +1,6 @@
 # Awesome AI Tools [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
-> A curated catalog of **407 AI tools** across **19 categories**.
+> A curated catalog of **409 AI tools** across **19 categories**.
 > Browse the searchable directory at **https://docs.aliammari.dev**.
 
 Find AI tools by task, then compare recorded pricing and open-source information in the [searchable directory](https://docs.aliammari.dev/en/). Unknown metadata stays unknown.
@@ -150,6 +150,7 @@ Image generation, visual design, creative production, and design-assistance tool
 - [LogoAI](https://www.logoai.com/) - AI logo generator with brand kit creation.
 - [Brandmark](https://brandmark.io/) - AI brand identity generator with color palettes.
 - [Looka](https://looka.com/) - AI logo maker with full brand kit.
+- [ProRemover](https://proremover.io/) - Browser AI tool to remove objects, people, text, and watermarks from photos.
 - [APPLORE](https://applore.app/ai-app-icon-generator) - AI app icon generator with a reference library of 18,000+ real App Store and Google Play icons.
 - [Klaruvo](https://www.powersoftware.app/en-US/product/detail/klaruvo) - Desktop AI image editor for object and watermark removal that runs fully offline, with cutout, upscaling and batch processing.
 
@@ -349,6 +350,7 @@ Video generation, editing, enhancement, effects, and media-production tools.
 - [IntroVideo](https://introvideo.io/) - AI logo intro generator that turns a logo into an 8-second cinematic intro video in 16:9 or 9:16.
 - [Visual Maker AI](https://visualmakerai.com/) - Web workspace for generating images, turning photos into short videos, and breaking scripts into scenes and clips with models such as Veo, Seedance, and Kling.
 - [Wan 3.5](https://wan35.app/) - Browser-based AI video generator for text-to-video and image-to-video creation.
+- [Wedding AI](https://weddingai.studio/) - AI wedding invitation video maker that turns templates, names, and photos into an HD MP4.
 - [Effect Video](https://effect.video/) - AI photo-to-video tool with viral effect templates for short vertical clips.
 - [Pixwit](https://pixwit.ai/) - All-in-one AI creative platform for generating images, videos, and music from text or image prompts.
 
