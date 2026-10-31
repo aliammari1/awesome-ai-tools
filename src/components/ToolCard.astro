@@ -1,0 +1,106 @@
+---
+import Icon from './Icon.astro';
+import { toolDate, type Tool } from '../lib/catalog';
+import { pricingLabels } from '../lib/pricing';
+
+interface Props {
+  tool: Tool;
+  locale?: string;
+  categoryName?: string;
+}
+
+const { tool, locale = 'en', categoryName = tool.category } = Astro.props;
+const initials = tool.name
+  .split(/\s+/)
+  .filter(Boolean)
+  .slice(0, 2)
+  .map((part) => part[0])
+  .join('');
+
+const detailHref = '/' + locale + '/tools/' + tool.id + '/';
+const added = toolDate(tool);
+---
+
+<article
+  class="tool"
+  data-tool-card
+  data-tool-id={tool.id}
+  data-category={tool.category}
+  data-subcategory={tool.subcategory?.id ?? ''}
+  data-pricing={tool.pricing ?? 'unknown'}
+  data-open-source={
+    tool.openSource === true ? 'true' : tool.openSource === false ? 'false' : 'unknown'
+  }
+  data-status={tool.status}
+  data-added={added}
+  data-order={tool.order}
+>
+  <div class="tool-mark" aria-hidden="true">
+    {initials}
+  </div>
+
+  <div
+    class="tool-body"
+    lang={locale !== 'en' ? 'en' : undefined}
+    dir={locale !== 'en' ? 'ltr' : undefined}
+  >
+    <h3 class="tool-name">
+      <a href={detailHref} data-tool-title>
+        {tool.name}
+      </a>
+    </h3>
+    <p class="tool-desc" data-tool-desc>
+      {tool.description}
+    </p>
+    <div class="tool-meta">
+      <span>{tool.subcategory?.name ?? categoryName}</span>
+      {tool.pricing && <span class="badge">{pricingLabels[tool.pricing]}</span>}
+      {tool.openSource === true && <span class="badge badge-accent">Open source</span>}
+    </div>
+  </div>
+
+  <div class="tool-actions">
+    <button
+      class="action action-save"
+      type="button"
+      data-save-tool={tool.id}
+      aria-pressed="false"
+      aria-label={'Save ' + tool.name}
+    >
+      <Icon name="bookmark" class="icon-bookmark" />
+      <span class="action-text" data-pressed-label="Saved">
+        Save
+      </span>
+    </button>
+    <button
+      class="action action-compare"
+      type="button"
+      data-compare-tool={tool.id}
+      aria-pressed="false"
+      aria-label={'Compare ' + tool.name}
+    >
+      <Icon name="compare" />
+      <span class="action-text" data-pressed-label="Added">
+        Compare
+      </span>
+    </button>
+    <button
+      class="action action-icon-only"
+      type="button"
+      data-copy-tool-link={detailHref}
+      aria-label={'Copy link to ' + tool.name}
+    >
+      <Icon name="link" />
+    </button>
+    <a
+      class="action action-visit"
+      href={tool.url}
+      target="_blank"
+      rel="noopener noreferrer nofollow"
+      aria-label={'Visit ' + tool.name + ' (opens in a new tab)'}
+    >
+      <span>Visit</span>
+      <Icon name="arrow-up-right" />
+    </a>
+  </div>
+</article>

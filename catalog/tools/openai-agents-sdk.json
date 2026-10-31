@@ -1,0 +1,18 @@
+{
+  "name": "OpenAI Agents SDK",
+  "url": "https://openai.github.io/openai-agents-python/",
+  "description": "Lightweight framework for multi-agent workflows with handoffs and guardrails.",
+  "category": "ai-agents",
+  "subcategory": {
+    "id": "agent-frameworks",
+    "name": "Agent Frameworks"
+  },
+  "order": 0,
+  "openSource": true,
+  "pricing": null,
+  "status": "listed",
+  "source": {
+    "kind": "readme-migration",
+    "migratedAt": "2026-09-21"
+  }
+}

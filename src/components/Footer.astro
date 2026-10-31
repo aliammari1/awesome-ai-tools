@@ -1,0 +1,161 @@
+---
+import Icon from './Icon.astro';
+import LanguageSwitcher from './LanguageSwitcher.astro';
+import { getCatalog, newestCatalogDate } from '../lib/catalog';
+import { formatDate, useTranslations } from '../lib/i18n';
+import type { Locale } from '../lib/locales';
+
+interface Props {
+  locale?: Locale;
+  pathname: string;
+}
+const { locale = 'en', pathname } = Astro.props;
+const t = useTranslations(locale);
+const year = new Date().getUTCFullYear();
+const prefix = '/' + locale;
+const repo = 'https://github.com/aliammari1/awesome-ai-tools';
+const external = { target: '_blank', rel: 'noopener noreferrer' } as const;
+const { tools } = await getCatalog();
+const lastUpdated = formatDate(locale, newestCatalogDate(tools));
+---
+
+<footer class="site-footer">
+  <div class="shell">
+    <div class="footer-grid">
+      <div>
+        <a class="brand" href={prefix + '/'}>
+          <span class="brand-mark" aria-hidden="true">
+            <Icon name="brand" />
+          </span>
+          <span>{t('site.name')}</span>
+        </a>
+        <p class="footer-about">{t('footer.about')}</p>
+        <div class="footer-tools-row">
+          <LanguageSwitcher locale={locale} pathname={pathname} variant="footer" />
+          <div class="a11y-prefs" role="group" aria-label="Display preferences">
+            <button
+              class="footer-pref-btn"
+              type="button"
+              data-text-size-toggle
+              aria-pressed="false"
+              title="Toggle larger text"
+            >
+              A+
+            </button>
+            <button
+              class="footer-pref-btn"
+              type="button"
+              data-motion-toggle
+              aria-pressed="false"
+              title="Toggle reduced motion"
+            >
+              Motion
+            </button>
+            <button
+              class="footer-pref-btn"
+              type="button"
+              data-shortcuts-open
+              title="Keyboard shortcuts (?)"
+            >
+              <kbd>?</kbd>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <nav class="footer-col" aria-labelledby="footer-browse">
+        <h2 id="footer-browse">{t('footer.browse')}</h2>
+        <ul>
+          <li>
+            <a href={prefix + '/#directory'}>{t('footer.allTools')}</a>
+          </li>
+          <li>
+            <a href={prefix + '/#domains'}>{t('footer.domains')}</a>
+          </li>
+          <li>
+            <a href={prefix + '/collections/'}>{t('nav.collections')}</a>
+          </li>
+          <li>
+            <a href={prefix + '/saved/'}>{t('footer.saved')}</a>
+          </li>
+          <li>
+            <a href={prefix + '/compare/'}>{t('footer.compare')}</a>
+          </li>
+          <li>
+            <a href={prefix + '/insights/'}>{t('nav.insights')}</a>
+          </li>
+          <li>
+            <a href={prefix + '/changelog/'}>{t('nav.changelog')}</a>
+          </li>
+        </ul>
+      </nav>
+
+      <nav class="footer-col" aria-labelledby="footer-project">
+        <h2 id="footer-project">{t('footer.project')}</h2>
+        <ul>
+          <li>
+            <a href={prefix + '/about/methodology/'}>{t('footer.methodology')}</a>
+          </li>
+          <li>
+            <a href={prefix + '/contribute/'}>{t('footer.suggest')}</a>
+          </li>
+          <li>
+            <a href={prefix + '/link-health/'}>{t('nav.linkHealth')}</a>
+          </li>
+          <li>
+            <a href="/feed.xml">Atom feed</a>
+          </li>
+          <li>
+            <a href="/api/tools.json">Public JSON API</a>
+          </li>
+          <li>
+            <a href={repo} {...external}>
+              {t('footer.repo')}
+            </a>
+          </li>
+          <li>
+            <a href={repo + '/issues'} {...external}>
+              {t('footer.issue')}
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <nav class="footer-col" aria-labelledby="footer-governance">
+        <h2 id="footer-governance">{t('footer.governance')}</h2>
+        <ul>
+          <li>
+            <a href={prefix + '/privacy/'}>{t('nav.privacy')}</a>
+          </li>
+          <li>
+            <a href={repo + '/blob/main/CONTRIBUTING.md'} {...external}>
+              {t('footer.contributing')}
+            </a>
+          </li>
+          <li>
+            <a href={repo + '/blob/main/CODE_OF_CONDUCT.md'} {...external}>
+              {t('footer.conduct')}
+            </a>
+          </li>
+          <li>
+            <a href={repo + '/blob/main/SECURITY.md'} {...external}>
+              {t('footer.security')}
+            </a>
+          </li>
+          <li>
+            <a href={repo + '/blob/main/LICENSE'} {...external}>
+              {t('footer.license')}
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="footer-bottom">
+      <span>
+        {t('footer.copyright', { year })} · {t('common.lastUpdated', { date: lastUpdated })}
+      </span>
+      <span>{t('footer.disclaimer')}</span>
+    </div>
+  </div>
+</footer>
