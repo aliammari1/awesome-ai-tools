@@ -1,0 +1,18 @@
+{
+  "name": "RoomMaker AI",
+  "url": "https://roommakerai.org/",
+  "description": "AI room designer that redesigns a room from a photo, previews renovation changes, stages furniture, and drafts floor plan concepts.",
+  "category": "creativity-and-design",
+  "subcategory": {
+    "id": "design-tools",
+    "name": "Design Tools"
+  },
+  "order": 9999,
+  "openSource": false,
+  "pricing": "freemium",
+  "status": "listed",
+  "source": {
+    "kind": "community",
+    "addedAt": "2026-10-01"
+  }
+}
