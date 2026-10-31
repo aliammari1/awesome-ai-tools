@@ -1,0 +1,18 @@
+{
+  "name": "YYLO",
+  "url": "https://github.com/yylo-dev/yylo",
+  "description": "Open-source CLI that orchestrates AI coding agents with Kanban task boards, Git worktree workflows, and merge automation.",
+  "category": "code-generation-and-development",
+  "subcategory": {
+    "id": "ai-coding-assistants",
+    "name": "AI Coding Assistants"
+  },
+  "order": 9999,
+  "openSource": true,
+  "pricing": null,
+  "status": "listed",
+  "source": {
+    "kind": "readme-migration",
+    "migratedAt": "2026-10-16"
+  }
+}

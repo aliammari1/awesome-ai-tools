@@ -2,8 +2,13 @@
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import LegacyLocaleNotice from '../../components/LegacyLocaleNotice.astro';
 import Directory from '../../components/Directory.astro';
-import { getCatalog, countByCategory } from '../../lib/catalog';
+import ToolCard from '../../components/ToolCard.astro';
+import Icon from '../../components/Icon.astro';
+import { getCatalog, countByCategory, recentTools, toolDate } from '../../lib/catalog';
+import { curatedCollections, guidedGoals, toolsForCollection } from '../../lib/collections';
+import { formatDate, formatNumber, useTranslations } from '../../lib/i18n';
 import { locales, isLocale } from '../../lib/locales';
+import { buildItemListJsonLd, buildWebSiteJsonLd } from '../../lib/structured-data';
 
 export function getStaticPaths() {
   return locales.map((locale) => ({ params: { locale } }));
@@ -12,66 +17,249 @@ export function getStaticPaths() {
 const requested = Astro.params.locale;
 if (!isLocale(requested)) throw new Error('Unsupported locale');
 const locale = requested;
+const prefix = '/' + locale;
+const t = useTranslations(locale);
+const n = (value: number) => formatNumber(locale, value);
 
 const { tools, categories } = await getCatalog();
+const categoryNames = Object.fromEntries(categories.map((c) => [c.id, c.name]));
 const counts = countByCategory(tools);
-const featuredCategories = [...categories]
+const openSourceCount = tools.filter((tool) => tool.openSource === true).length;
+const topCategories = [...categories]
   .sort((a, b) => (counts[b.id] ?? 0) - (counts[a.id] ?? 0))
-  .slice(0, 8);
+  .slice(0, 7);
+const newest = recentTools(tools, 6);
+const latestAdditionDate = newest[0] ? formatDate(locale, toolDate(newest[0])) : '';
+
+const origin = (Astro.site ?? Astro.url.origin).toString();
+const homeDescription = t('page.home.description', {
+  count: n(tools.length),
+  domains: n(categories.length),
+});
+const homeJsonLd = [
+  buildWebSiteJsonLd(origin, locale, t('site.name'), homeDescription),
+  buildItemListJsonLd(origin, locale, t('site.name'), tools),
+];
+
+const suggestUrl =
+  'https://github.com/aliammari1/awesome-ai-tools/issues/new?template=tool_addition.yml';
 ---
+
 <BaseLayout
-  title="Awesome AI Tools"
-  description={'Explore ' + tools.length + ' AI tools across ' + categories.length + ' categories with fast search, useful filters, saved lists, and transparent catalog metadata.'}
+  title={t('site.name')}
+  description={homeDescription}
   locale={locale}
+  jsonLd={homeJsonLd}
 >
   <LegacyLocaleNotice locale={locale} />
 
-  <section class="hero">
+  <section class="hero" aria-labelledby="home-title">
     <div class="shell hero-grid">
       <div>
-        <p class="eyebrow">Independent AI tools directory</p>
-        <h1>Find tools for the work you actually need to do.</h1>
-        <p class="hero-copy">
-          Search a repository-backed catalog, narrow it with useful filters, save candidates, and compare tools without invented ratings or pay-to-rank claims.
+        <h1 id="home-title">{t('hero.title', { count: n(tools.length) })}</h1>
+        <p class="hero-lead">{t('hero.lead', { domains: n(categories.length) })}</p>
+        <form class="hero-search" role="search" action={prefix + '/'} method="get" data-hero-search>
+          <label class="search-field">
+            <span class="sr-only">{t('hero.searchLabel', { count: n(tools.length) })}</span>
+            <Icon name="search" />
+            <input
+              type="search"
+              name="q"
+              placeholder={t('hero.placeholder')}
+              autocomplete="off"
+              spellcheck="false"
+              enterkeyhint="search"
+            />
+          </label>
+          <button class="btn" type="submit">
+            {t('hero.search')}
+          </button>
+        </form>
+        <p class="hero-stats">
+          <span>
+            <strong>{n(tools.length)}</strong> {t('hero.statTools')}
+          </span>
+          <span>
+            <strong>{n(categories.length)}</strong> {t('hero.statDomains')}
+          </span>
+          <span>
+            <strong>{n(openSourceCount)}</strong> {t('hero.statOpenSource')}
+          </span>
         </p>
-        <div class="hero-actions">
-          <a class="primary-button" href="#directory">Browse all tools</a>
-          <a class="secondary-button" href={'/' + locale + '/about/methodology/'}>How curation works</a>
-        </div>
       </div>
 
-      <aside class="hero-aside" aria-label="Catalog summary">
-        <strong>{tools.length}</strong>
-        <p>tools in the current catalog</p>
-        <hr />
-        <strong>{categories.length}</strong>
-        <p>categories with one structured source of truth</p>
-      </aside>
+      <nav class="hero-domains" aria-labelledby="hero-domains-title">
+        <h2 id="hero-domains-title">{t('hero.popular')}</h2>
+        <ul>
+          {topCategories.map((category) => (
+            <li>
+              <a href={prefix + '/categories/' + category.id + '/'}>
+                <span>{category.name}</span>
+                <span class="count">{n(counts[category.id] ?? 0)}</span>
+              </a>
+            </li>
+          ))}
+        </ul>
+        <a class="text-link all-link" href="#domains">
+          {t('hero.allDomains', { count: n(categories.length) })} <Icon name="arrow-right" />
+        </a>
+      </nav>
     </div>
   </section>
 
-  <section class="category-section">
+  <section class="section section-surface" aria-labelledby="guided-title">
     <div class="shell">
-      <div class="section-heading">
+      <div class="section-head">
         <div>
-          <h2>Browse by category</h2>
-          <p>Start broad, then refine with the directory filters.</p>
+          <h2 id="guided-title">Guided finder &amp; collections</h2>
+          <p>Pick a goal to filter the directory immediately, or open a curated collection page.</p>
         </div>
+        <a class="text-link" href={prefix + '/collections/'}>
+          All {curatedCollections.length} collections <Icon name="arrow-right" />
+        </a>
       </div>
-
-      <div class="category-grid">
-        {featuredCategories.map((category) => (
-          <a class="category-card" href={'/' + locale + '/categories/' + category.id + '/'}>
-            <div>
-              <strong>{category.name}</strong>
-              <p>{category.description}</p>
-            </div>
-            <span class="category-count">{counts[category.id] ?? 0} tools</span>
+      <div class="guided-grid" role="group" aria-label="Pick a goal">
+        {guidedGoals.map((goal) => (
+          <button
+            type="button"
+            class="guided-card"
+            data-guided-goal={goal.id}
+            data-goal-query={goal.query}
+            data-goal-category={goal.category ?? ''}
+            data-goal-oss={goal.openSource ? 'true' : ''}
+          >
+            <strong>{goal.label}</strong>
+            <span>{goal.description}</span>
+          </button>
+        ))}
+      </div>
+      <div class="collection-pills">
+        {curatedCollections.map((col) => (
+          <a class="chip" href={prefix + '/collections/' + col.slug + '/'}>
+            <span>{col.title}</span>
+            <span class="count">{n(toolsForCollection(tools, col).length)}</span>
           </a>
         ))}
       </div>
     </div>
   </section>
 
-  <Directory tools={tools} categories={categories} locale={locale} />
+  <section class="section" aria-labelledby="newest-title">
+    <div class="shell">
+      <div class="section-head">
+        <div>
+          <h2 id="newest-title">New &amp; recently recorded</h2>
+          <p>
+            Latest additions and catalog records
+            {latestAdditionDate ? ` (updated ${latestAdditionDate})` : ''}.
+          </p>
+        </div>
+        <a class="text-link" href={prefix + '/changelog/'}>
+          Full changelog <Icon name="arrow-right" />
+        </a>
+      </div>
+      <div class="tool-list" data-view="grid">
+        {newest.map((entry) => (
+          <ToolCard
+            tool={entry}
+            locale={locale}
+            categoryName={categoryNames[entry.category] ?? entry.category}
+          />
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <Directory
+    tools={tools}
+    categories={categories}
+    locale={locale}
+    title="Browse every tool"
+    showPresets={true}
+  />
+
+  <section class="section section-surface" id="domains" aria-labelledby="domains-title">
+    <div class="shell">
+      <div class="section-head">
+        <h2 id="domains-title">Browse by domain</h2>
+        <p>
+          Every tool is filed under one primary domain. Open a domain for its own page, or combine
+          several in the directory filters.
+        </p>
+      </div>
+      <ul class="domain-index">
+        {categories.map((category) => (
+          <li lang={locale !== 'en' ? 'en' : undefined} dir={locale !== 'en' ? 'ltr' : undefined}>
+            <a href={prefix + '/categories/' + category.id + '/'}>
+              <span class="domain-top">
+                <span class="domain-name">{category.name}</span>
+                <span class="count">{n(counts[category.id] ?? 0)}</span>
+              </span>
+              <span class="domain-desc">{category.description}</span>
+            </a>
+          </li>
+        ))}
+      </ul>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="principles-title">
+    <div class="shell">
+      <div class="section-head">
+        <h2 id="principles-title">No rankings, no sponsored slots</h2>
+        <p>
+          Many AI directories sell featured badges and bury links behind trackers. This one is a
+          public-domain utility.
+        </p>
+      </div>
+      <ul class="principles">
+        <li>
+          <h3>Plain descriptions</h3>
+          <p>
+            Each entry says what the software does in one factual sentence. Slogans and unverified
+            benchmark claims are removed before merge.
+          </p>
+        </li>
+        <li>
+          <h3>Honest gaps</h3>
+          <p>
+            Pricing or license details that haven’t been checked stay marked “Not recorded” instead
+            of being guessed.
+          </p>
+        </li>
+        <li>
+          <h3>Provenance on every page</h3>
+          <p>
+            Each tool page shows where its record came from and links straight to a GitHub issue for
+            corrections.
+          </p>
+        </li>
+      </ul>
+      <p style="margin-top: 32px">
+        <a class="text-link" href={prefix + '/about/methodology/'}>
+          Read the methodology <Icon name="arrow-right" />
+        </a>
+      </p>
+    </div>
+  </section>
+
+  <section class="cta-band" aria-labelledby="cta-title">
+    <div class="shell cta-band-inner">
+      <div>
+        <h2 id="cta-title">Know a tool that belongs here?</h2>
+        <p>
+          Send its name, the official HTTPS link and one factual sentence. Most additions take a
+          single GitHub issue.
+        </p>
+      </div>
+      <div class="actions-row">
+        <a class="btn btn-on-accent" href={suggestUrl} target="_blank" rel="noopener noreferrer">
+          Suggest a tool <Icon name="arrow-up-right" />
+        </a>
+        <a class="btn btn-outline-on-accent" href={prefix + '/contribute/'}>
+          How to contribute
+        </a>
+      </div>
+    </div>
+  </section>
 </BaseLayout>

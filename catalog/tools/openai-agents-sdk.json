@@ -3,9 +3,12 @@
   "url": "https://openai.github.io/openai-agents-python/",
   "description": "Lightweight framework for multi-agent workflows with handoffs and guardrails.",
   "category": "ai-agents",
-  "subcategory": null,
+  "subcategory": {
+    "id": "agent-frameworks",
+    "name": "Agent Frameworks"
+  },
   "order": 0,
-  "openSource": null,
+  "openSource": true,
   "pricing": null,
   "status": "listed",
   "source": {
