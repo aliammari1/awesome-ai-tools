@@ -61,6 +61,7 @@ Agent SDKs, autonomous systems, orchestration, tool use, memory, and browser aut
 ### Browser Automation
 
 - [Browser Use](https://github.com/browser-use/browser-use) - Library that lets agents control a real browser to complete web tasks.
+- [Drevon](https://www.drevon.dev) - Mac app that connects to your Claude Code or Codex and turns it into an end-to-end GTM operator: research, grunt work, analysis and actions across your stack from a single prompt, in your own browser with your own logins.
 
 ## Productivity
 
