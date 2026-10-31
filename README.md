@@ -1,6 +1,6 @@
 # Awesome AI Tools [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
-> A curated catalog of **384 AI tools** across **19 categories**.
+> A curated catalog of **389 AI tools** across **19 categories**.
 > Browse the searchable directory at **https://docs.aliammari.dev**.
 
 The catalog source of truth is `catalog/tools/*.json`. This README is generated from that structured catalog; edit catalog records instead of editing tool entries here.
@@ -469,6 +469,9 @@ Marketing, sales, e-commerce, retail, career, and job-search tools.
 - [Drift](https://www.drift.com/) - Conversational marketing platform with AI chatbots.
 - [Lavender](https://www.lavender.ai/) - AI email coach for sales with real-time suggestions.
 - [Seamless.ai](https://seamless.ai/) - AI-powered B2B lead generation and prospecting.
+- [VisionQuantech SEO Auditor](https://apps.visionquantech.com/seo-auditor/) - Runs a 13-point SEO audit on any website URL and returns prioritized fixes with explanations. Free, no signup required.
+- [VisionQuantech AI Headline Tester](https://apps.visionquantech.com/ai-headline-tester/) - Scores marketing headlines and suggests improvements for clarity and click-through. Free, no signup required.
+- [VisionQuantech Hashtag Researcher](https://apps.visionquantech.com/hashtag-researcher/) - Researches hashtags for social posts with relevance scoring. Free, no signup required.
 
 ### E-commerce & Retail
 
@@ -484,6 +487,8 @@ Marketing, sales, e-commerce, retail, career, and job-search tools.
 - [Jobscan](https://www.jobscan.co/) - Resume and LinkedIn optimization with ATS keyword matching.
 - [Resume Worded](https://resumeworded.com/) - AI resume and LinkedIn feedback with score and targeted advice.
 - [Kickresume](https://www.kickresume.com/) - AI resume builder with templates and job matching.
+- [VisionQuantech ATS Resume Checker](https://apps.visionquantech.com/resume-ats-checker/) - Free ATS resume checker that scores a resume 0-100 against a job description, flags missing keywords, and suggests bullet rewrites. No signup required.
+- [VisionQuantech Interview Prep Coach](https://apps.visionquantech.com/interview-prep-coach/) - Generates likely interview questions from a job description with a STAR answer builder and practice mode. Free, no signup required.
 
 ## Gaming & Entertainment
 
