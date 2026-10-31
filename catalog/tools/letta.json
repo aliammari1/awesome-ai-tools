@@ -1,0 +1,18 @@
+{
+  "name": "Letta",
+  "url": "https://www.letta.com/",
+  "description": "Framework for stateful agents with long-term memory (formerly MemGPT).",
+  "category": "ai-agents",
+  "subcategory": {
+    "id": "agent-memory-and-state",
+    "name": "Agent Memory & State"
+  },
+  "order": 9,
+  "openSource": true,
+  "pricing": null,
+  "status": "listed",
+  "source": {
+    "kind": "readme-migration",
+    "migratedAt": "2026-09-21"
+  }
+}

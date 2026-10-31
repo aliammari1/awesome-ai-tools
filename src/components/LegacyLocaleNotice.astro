@@ -1,0 +1,20 @@
+---
+import { englishCanonicalPath, type Locale } from '../lib/locales';
+import { useTranslations } from '../lib/i18n';
+
+interface Props {
+  locale: Locale;
+}
+const { locale } = Astro.props;
+const t = useTranslations(locale);
+---
+
+{locale !== 'en' && (
+  <div class="locale-notice" role="note">
+    <strong>{t('notice.title')}</strong>
+    <span>{t('notice.body')}</span>
+    <a href={englishCanonicalPath(Astro.url.pathname, locale)} hreflang="en" lang="en">
+      {t('notice.link')}
+    </a>
+  </div>
+)}

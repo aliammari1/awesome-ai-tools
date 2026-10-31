@@ -1,0 +1,116 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import LegacyLocaleNotice from '../../components/LegacyLocaleNotice.astro';
+import PageHeader from '../../components/PageHeader.astro';
+import { STORAGE_DESCRIPTIONS, STORAGE_KEYS } from '../../lib/workspace';
+import { useTranslations } from '../../lib/i18n';
+import { locales, isLocale } from '../../lib/locales';
+
+export function getStaticPaths() {
+  return locales.map((locale) => ({ params: { locale } }));
+}
+
+const requested = Astro.params.locale;
+if (!isLocale(requested)) throw new Error('Unsupported locale');
+const locale = requested;
+const prefix = '/' + locale;
+const t = useTranslations(locale);
+const keys = STORAGE_DESCRIPTIONS.map((entry) => entry.key);
+---
+
+<BaseLayout
+  title={t('page.privacy.title')}
+  description={t('page.privacy.description')}
+  locale={locale}
+  noindex={true}
+>
+  <LegacyLocaleNotice locale={locale} />
+
+  <PageHeader
+    title={t('page.privacy.title')}
+    lead={t('page.privacy.description')}
+    crumbs={[{ label: t('nav.directory'), href: prefix + '/#directory' }]}
+  >
+    <div class="actions-row">
+      <button class="btn" type="button" data-wipe-storage>
+        Wipe local data
+      </button>
+    </div>
+  </PageHeader>
+
+  <section class="section" aria-labelledby="storage-title">
+    <div class="shell">
+      <h2 id="storage-title">What this browser stores</h2>
+      <p>
+        Nothing is sent to a server. Saved tools, notes, comparison selections and display
+        preferences stay in <code>localStorage</code> under the keys below. The comparison tray
+        never holds more than three tool ids (<code>{STORAGE_KEYS.COMPARE}</code>).
+      </p>
+      <div class="table-wrap" tabindex="0">
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th scope="col">Key</th>
+              <th scope="col">What it is</th>
+              <th scope="col">Stored now</th>
+            </tr>
+          </thead>
+          <tbody>
+            {STORAGE_DESCRIPTIONS.map((entry) => (
+              <tr data-storage-row={entry.key}>
+                <th scope="row">
+                  <code>{entry.key}</code>
+                </th>
+                <td>
+                  <strong>{entry.label}</strong>
+                  <span>{entry.purpose}</span>
+                </td>
+                <td data-storage-size="empty">Not set</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <script id="privacy-keys" type="application/json" set:html={JSON.stringify(keys)}></script>
+  <script>
+    const keyNode = document.querySelector<HTMLScriptElement>('#privacy-keys');
+    const keys = JSON.parse(keyNode?.textContent || '[]') as string[];
+    const rows = document.querySelectorAll('[data-storage-row]');
+    const render = () => {
+      rows.forEach((row) => {
+        const key = row.getAttribute('data-storage-row');
+        const cell = row.querySelector('[data-storage-size]');
+        if (!key || !cell) return;
+        let value: string | null;
+        try {
+          value = localStorage.getItem(key);
+        } catch {
+          value = null;
+        }
+        if (!value) {
+          cell.textContent = 'Not set';
+          return;
+        }
+        cell.textContent = value.length + ' characters';
+      });
+    };
+    document.querySelector('[data-wipe-storage]')?.addEventListener('click', () => {
+      const confirmed = window.confirm(
+        'Remove every Awesome AI Tools value stored in this browser?',
+      );
+      if (!confirmed) return;
+      for (const key of keys) {
+        try {
+          localStorage.removeItem(key);
+        } catch {
+          /* storage may be blocked */
+        }
+      }
+      render();
+    });
+    render();
+  </script>
+</BaseLayout>

@@ -1,0 +1,46 @@
+---
+import Icon from './Icon.astro';
+import { useTranslations } from '../lib/i18n';
+import {
+  htmlLang,
+  legacyLocaleLabels,
+  localizedPath,
+  locales,
+  textDirection,
+  type Locale,
+} from '../lib/locales';
+
+interface Props {
+  locale: Locale;
+  /** Path of the current page, used to build links to the same page in other languages. */
+  pathname: string;
+  variant?: 'header' | 'footer';
+}
+
+const { locale, pathname, variant = 'header' } = Astro.props;
+const t = useTranslations(locale);
+---
+
+<details class:list={['lang-switch', 'lang-switch-' + variant]} data-lang-switch>
+  <summary class="lang-summary" aria-label={t('lang.label') + ': ' + legacyLocaleLabels[locale]}>
+    <Icon name="languages" />
+    <span class="lang-current">{legacyLocaleLabels[locale]}</span>
+    <span class="lang-code">{locale.toUpperCase()}</span>
+  </summary>
+  <ul class="lang-menu" aria-label={t('lang.label')}>
+    {locales.map((entry) => (
+      <li>
+        <a
+          href={localizedPath(pathname, entry)}
+          lang={htmlLang[entry]}
+          hreflang={htmlLang[entry]}
+          dir={textDirection[entry]}
+          data-lang-link={entry}
+          aria-current={entry === locale ? 'true' : undefined}
+        >
+          {legacyLocaleLabels[entry]}
+        </a>
+      </li>
+    ))}
+  </ul>
+</details>

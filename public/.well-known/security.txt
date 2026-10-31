@@ -1,0 +1,6 @@
+Contact: mailto:contact@aliammari.dev
+Contact: https://github.com/aliammari1/awesome-ai-tools/security/advisories/new
+Expires: 2027-10-19T00:00:00.000Z
+Preferred-Languages: en
+Canonical: https://docs.aliammari.dev/.well-known/security.txt
+Policy: https://github.com/aliammari1/awesome-ai-tools/blob/main/SECURITY.md

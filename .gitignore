@@ -1,1 +1,13 @@
-/node_modules
+node_modules/
+.astro/
+dist/
+.DS_Store
+*.log
+.serena/
+.omx/
+.env
+.env.*
+!.env.example
+.changed-urls.txt
+lychee/
+.wrangler/

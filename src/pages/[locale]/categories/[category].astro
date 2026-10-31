@@ -1,0 +1,135 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import LegacyLocaleNotice from '../../../components/LegacyLocaleNotice.astro';
+import PageHeader from '../../../components/PageHeader.astro';
+import Directory from '../../../components/Directory.astro';
+import { getCatalog, countByCategory } from '../../../lib/catalog';
+import { locales, isLocale } from '../../../lib/locales';
+
+export async function getStaticPaths() {
+  const { categories } = await getCatalog();
+  return locales.flatMap((locale) =>
+    categories.map((category) => ({ params: { locale, category: category.id } })),
+  );
+}
+
+const requested = Astro.params.locale;
+if (!isLocale(requested)) throw new Error('Unsupported locale');
+const locale = requested;
+const prefix = '/' + locale;
+const categoryId = Astro.params.category;
+const { tools, categories } = await getCatalog();
+const category = categories.find((entry) => entry.id === categoryId);
+if (!category) throw new Error('Unknown category');
+const categoryTools = tools.filter((tool) => tool.category === category.id);
+const openSourceInCat = categoryTools.filter((tool) => tool.openSource === true).length;
+const subcategoryCounts = new Map<string, { id: string; name: string; count: number }>();
+for (const tool of categoryTools) {
+  if (!tool.subcategory) continue;
+  const current = subcategoryCounts.get(tool.subcategory.id) ?? {
+    id: tool.subcategory.id,
+    name: tool.subcategory.name,
+    count: 0,
+  };
+  current.count += 1;
+  subcategoryCounts.set(tool.subcategory.id, current);
+}
+const subcategories = [...subcategoryCounts.values()].sort(
+  (a, b) => b.count - a.count || a.name.localeCompare(b.name, 'en'),
+);
+const counts = countByCategory(tools);
+const siblings = categories.filter((entry) => entry.id !== category.id);
+---
+
+<BaseLayout
+  title={category.name}
+  description={category.description + ' Browse ' + categoryTools.length + ' catalog entries.'}
+  locale={locale}
+>
+  <LegacyLocaleNotice locale={locale} />
+
+  <PageHeader
+    title={category.name}
+    lead={category.description}
+    crumbs={[{ label: 'Directory', href: prefix + '/#directory' }]}
+  >
+    <dl class="facts">
+      <div>
+        <dt>tools</dt>
+        <dd>{categoryTools.length}</dd>
+      </div>
+      {openSourceInCat > 0 && (
+        <div>
+          <dt>open source</dt>
+          <dd>{openSourceInCat}</dd>
+        </div>
+      )}
+    </dl>
+    {subcategories.length > 0 && (
+      <nav class="sibling-nav" aria-labelledby="type-title">
+        <h2 id="type-title">Types in this domain</h2>
+        <ul>
+          {subcategories.map((type) => (
+            <li>
+              <a class="chip" href={'#type-' + type.id}>
+                <span lang="en">{type.name}</span>
+                <span class="count">{type.count}</span>
+              </a>
+            </li>
+          ))}
+        </ul>
+      </nav>
+    )}
+    <nav class="sibling-nav" aria-labelledby="sibling-title">
+      <h2 id="sibling-title">Other domains</h2>
+      <ul>
+        {siblings.map((sibling) => (
+          <li>
+            <a class="chip" href={prefix + '/categories/' + sibling.id + '/'}>
+              {sibling.name}
+              <span class="count">{counts[sibling.id] ?? 0}</span>
+            </a>
+          </li>
+        ))}
+      </ul>
+    </nav>
+  </PageHeader>
+
+  {subcategories.length > 0 && (
+    <section class="section" aria-labelledby="types-title">
+      <div class="shell">
+        <h2 id="types-title" class="sr-only">
+          Types in {category.name}
+        </h2>
+        <div class="type-sections">
+          {subcategories.map((type) => (
+            <section aria-labelledby={'type-heading-' + type.id} id={'type-' + type.id}>
+              <h3 id={'type-heading-' + type.id} lang="en">
+                {type.name}
+              </h3>
+              <ul>
+                {categoryTools
+                  .filter((tool) => tool.subcategory?.id === type.id)
+                  .map((tool) => (
+                    <li>
+                      <a href={prefix + '/tools/' + tool.id + '/'} lang="en">
+                        {tool.name}
+                      </a>
+                    </li>
+                  ))}
+              </ul>
+            </section>
+          ))}
+        </div>
+      </div>
+    </section>
+  )}
+
+  <Directory
+    tools={categoryTools}
+    categories={[category]}
+    locale={locale}
+    title={'All ' + category.name + ' tools'}
+    showHeading={false}
+  />
+</BaseLayout>

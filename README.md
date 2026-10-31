@@ -1,75 +1,74 @@
 # Awesome AI Tools [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
-Artificial intelligence tools are software applications that utilize machine learning models, natural language processing, and computer vision to automate, enhance, and streamline real-world tasks across text, code, image, audio, video and research.
+> A curated catalog of **400+ AI tools** across **19 categories**.
+> Browse the searchable directory at **https://docs.aliammari.dev**.
 
-  
+Find AI tools by task, then compare recorded pricing and open-source information in the [searchable directory](https://docs.aliammari.dev/en/). Unknown metadata stays unknown.
 
+Choose a category below, [suggest a tool](https://github.com/aliammari1/awesome-ai-tools/issues/new?template=tool_addition.yml), or read our [curation methodology](https://docs.aliammari.dev/en/about/methodology/) and [security policy](SECURITY.md).
 
 ## Contents
+
+- [AI Agents](#ai-agents)
 - [Productivity](#productivity)
-  - [Time Management & Scheduling](#time-management--scheduling)
-  - [Task & Project Management](#task--project-management)
-  - [Email & Communication](#email--communication)
 - [Creativity & Design](#creativity--design)
-  - [Image Generation & Art](#image-generation--art)
-  - [Design Tools](#design-tools)
 - [Communication & Writing](#communication--writing)
-  - [Writing Assistants](#writing-assistants)
-  - [Content Creation](#content-creation)
-  - [Translation & Localization](#translation--localization)
 - [Data Science & Analytics](#data-science--analytics)
-  - [Machine Learning Platforms](#machine-learning-platforms)
-  - [Data Analysis & Visualization](#data-analysis--visualization)
-  - [Research Tools](#research-tools)
 - [Natural Language Processing](#natural-language-processing)
-  - [NLP Libraries & Tools](#nlp-libraries--tools)
-  - [NLP APIs & Services](#nlp-apis--services)
 - [Computer Vision](#computer-vision)
-  - [Image Recognition & Analysis](#image-recognition--analysis)
-  - [Specialized Vision Tools](#specialized-vision-tools)
 - [Audio & Music](#audio--music)
-  - [Music Generation & Composition](#music-generation--composition)
-  - [Voice & Speech](#voice--speech)
 - [Video & Media](#video--media)
-  - [Video Creation & Editing](#video-creation--editing)
-  - [Video Enhancement & Effects](#video-enhancement--effects)
 - [Code Generation & Development](#code-generation--development)
-  - [AI Coding Assistants](#ai-coding-assistants)
-  - [Development Tools](#development-tools)
-  - [Code Analysis & Review](#code-analysis--review)
 - [AI Search & Research](#ai-search--research)
-  - [AI-Powered Search Engines](#ai-powered-search-engines)
-  - [Research & Knowledge Tools](#research--knowledge-tools)
 - [Large Language Models](#large-language-models)
-  - [General Purpose LLMs](#general-purpose-llms)
-  - [Open Source LLMs](#open-source-llms)
-  - [LLM Tools & Frameworks](#llm-tools--frameworks)
 - [Research & Education](#research--education)
-  - [Educational AI Tools](#educational-ai-tools)
-  - [Research Platforms](#research-platforms)
 - [Business & Marketing](#business--marketing)
-  - [Marketing & Sales](#marketing--sales)
-  - [E-commerce & Retail](#e-commerce--retail)
-  - [Career & Job Search](#career--job-search)
 - [Gaming & Entertainment](#gaming--entertainment)
-  - [Game Development](#game-development)
-  - [Entertainment & Media](#entertainment--media)
 - [No-Code/Low-Code AI](#no-codelow-code-ai)
-  - [AI App Builders](#ai-app-builders)
-  - [Chatbot Builders](#chatbot-builders)
 - [AI Safety & Ethics](#ai-safety--ethics)
-  - [AI Safety Tools](#ai-safety-tools)
-  - [AI Ethics & Governance](#ai-ethics--governance)
 - [Miscellaneous](#miscellaneous)
-  - [AI Infrastructure & MLOps](#ai-infrastructure--mlops)
-  - [AI Agents & Automation](#ai-agents--automation)
-  - [Specialized AI Applications](#specialized-ai-applications)
 - [Getting Started](#getting-started)
-  - [Learning Resources](#learning-resources)
 
+## AI Agents
 
+Agent SDKs, autonomous systems, orchestration, tool use, memory, and browser automation.
+
+- [Drevon](https://www.drevon.dev) - Mac app that connects to your Claude Code or Codex and turns it into an end-to-end GTM operator: research, grunt work, analysis and actions across your stack from a single prompt, in your own browser with your own logins.
+
+### Agent Frameworks
+
+- [OpenAI Agents SDK](https://openai.github.io/openai-agents-python/) - Lightweight framework for multi-agent workflows with handoffs and guardrails.
+- [Claude Agent SDK](https://code.claude.com/docs/en/agent-sdk/overview) - Build agents on the same harness as Claude Code with tool use and MCP.
+- [Google Agent Development Kit](https://adk.dev/) - Open-source toolkit for building and deploying multi-agent systems.
+- [Pydantic AI](https://pydantic.dev/docs/ai/overview/) - Type-safe Python agent framework with structured outputs and validation.
+- [Smolagents](https://github.com/huggingface/smolagents) - Hugging Face's minimal library for code-writing agents.
+- [AgentScope](https://github.com/modelscope/agentscope) - Multi-agent platform with distributed orchestration and visual debugging.
+
+### Agent Protocols & Tools
+
+- [Model Context Protocol](https://modelcontextprotocol.io/) - Open standard for connecting AI agents to tools and data sources.
+
+### Autonomous Agents
+
+- [Manus](https://manus.im/) - General autonomous agent that executes multi-step real-world tasks.
+
+### Coding Agents
+
+- [OpenHands](https://github.com/All-Hands-AI/OpenHands) - Open-source autonomous software-engineering agent (formerly OpenDevin).
+
+### Agent Memory & State
+
+- [Letta](https://www.letta.com/) - Framework for stateful agents with long-term memory (formerly MemGPT).
+
+### Browser Automation
+
+- [Browser Use](https://github.com/browser-use/browser-use) - Library that lets agents control a real browser to complete web tasks.
 
 ## Productivity
+
+Scheduling, task management, project workflows, email, and day-to-day work automation.
+
+- [OtterFill](https://otterfill.com/) - AI form filler that turns any form into clear questions, prefills answers from your documents, and cross-checks answers across your other forms.
 
 ### Time Management & Scheduling
 
@@ -108,9 +107,9 @@ Artificial intelligence tools are software applications that utilize machine lea
 - [Mailstrom](https://mailstrom.co) - Bulk email cleanup with AI.
 - [Spike](https://www.spikenow.com/) - Conversational email with AI features.
 
-
-
 ## Creativity & Design
+
+Image generation, visual design, creative production, and design-assistance tools.
 
 ### Image Generation & Art
 
@@ -130,11 +129,12 @@ Artificial intelligence tools are software applications that utilize machine lea
 - [Freepik AI](https://www.freepik.com/ai) - AI image generator combining multiple models.
 - [Playground AI](https://playground.com/) - Free AI image generator with mixed image editing.
 - [Fotor AI](https://www.fotor.com/ai-image-generator/) - AI image generator with editing suite.
-- [Krea AI](https://krea.ai/) - Real-time AI image generation with live canvas editing.
+- [Krea AI](https://www.krea.ai/) - Real-time AI image generation with live canvas editing.
 - [Google Imagen](https://deepmind.google/technologies/imagen/) - Google's photorealistic image model.
 - [Jasper Art](https://www.jasper.ai/art) - AI art generation for marketers.
 - [BlueWillow](https://www.bluewillow.ai/) - Free AI image generator.
 - [Prisma](https://prisma-ai.com/) - Artistic photo filters.
+- [Seedream 5.5](https://seedream5-5.net/) - Web AI image generator and editor that works from text prompts or reference photos.
 
 ### Design Tools
 
@@ -150,10 +150,14 @@ Artificial intelligence tools are software applications that utilize machine lea
 - [LogoAI](https://www.logoai.com/) - AI logo generator with brand kit creation.
 - [Brandmark](https://brandmark.io/) - AI brand identity generator with color palettes.
 - [Looka](https://looka.com/) - AI logo maker with full brand kit.
-
-
+- [ProRemover](https://proremover.io/) - Browser AI tool to remove objects, people, text, and watermarks from photos.
+- [APPLORE](https://applore.app/ai-app-icon-generator) - AI app icon generator with a reference library of 18,000+ real App Store and Google Play icons.
+- [Klaruvo](https://www.powersoftware.app/en-US/product/detail/klaruvo) - Desktop AI image editor for object and watermark removal that runs fully offline, with cutout, upscaling and batch processing.
+- [RoomMaker AI](https://roommakerai.org/) - AI room designer that redesigns a room from a photo, previews renovation changes, stages furniture, and drafts floor plan concepts.
 
 ## Communication & Writing
+
+Writing, content creation, translation, localization, and communication assistance.
 
 ### Writing Assistants
 
@@ -173,6 +177,7 @@ Artificial intelligence tools are software applications that utilize machine lea
 - [Hyperwrite](https://hyperwriteai.com/) - Personal AI writing assistant with AutoWrite and TypeAhead.
 - [Frase](https://www.frase.io/) - AI SEO content creation and optimization with SERP analysis.
 - [Surfer SEO](https://surferseo.com/) - AI-powered content optimization with NLP analysis.
+- [README Skills](https://github.com/Shiaoming123/readme-skills) - Evidence-first Agent Skill for auditing and writing repository-matched, multilingual READMEs.
 
 ### Content Creation
 
@@ -182,9 +187,11 @@ Artificial intelligence tools are software applications that utilize machine lea
 - [Sudowrite](https://www.sudowrite.com/) - AI writing partner for creative fiction.
 - [Gamma](https://gamma.app/) - AI presentation and document generator.
 - [Beautiful.ai](https://www.beautiful.ai/) - AI-powered presentation design.
-- [Hemingway Editor](http://www.hemingwayapp.com/) - Readability-focused writing tool.
+- [Hemingway Editor](https://hemingwayapp.com/) - Readability-focused writing tool.
 - [SocialBu](https://socialbu.com/) - AI-powered social media management for scheduling, publishing, and automating across X, Instagram, LinkedIn, Facebook, TikTok, and more.
-- [CreatorSkills](https://creatorskills.co) - Marketplace for AI skills (SKILL.md format) for content creators — YouTube scripting, sponsorship analysis, content repurposing, and audience growth. Compatible with Claude, ChatGPT, and 20+ AI platforms.
+- [ImagineYourBook](https://www.imagineyourbook.com/) - Web app that plans and drafts full manuscripts chapter by chapter, with series story bibles and Word/EPUB/Markdown export.
+- [Multi Upload Tool](https://multi-upload-tool.com/) - Schedules one video to TikTok, YouTube Shorts, Instagram, Facebook, LinkedIn, Pinterest, Bluesky, Threads, and X from a dashboard, REST API, or MCP server that lets Claude, ChatGPT, and Cursor create posts.
+- [CreatorSkills](https://creatorskills.co) - Marketplace for AI skills (SKILL.md format) for content creators covering YouTube scripting, sponsorship analysis, content repurposing, and audience growth.
 
 ### Translation & Localization
 
@@ -194,9 +201,9 @@ Artificial intelligence tools are software applications that utilize machine lea
 - [Linguee](https://www.linguee.com/) - Dictionary with translation examples.
 - [Reverso](https://www.reverso.net/) - Translation with context examples.
 
-
-
 ## Data Science & Analytics
+
+Machine learning platforms, analytics, visualization, and data-focused research tools.
 
 ### Machine Learning Platforms
 
@@ -206,7 +213,6 @@ Artificial intelligence tools are software applications that utilize machine lea
 - [Amazon SageMaker](https://aws.amazon.com/sagemaker/) - AWS ML platform with Canvas no-code ML and HyperPod.
 - [Databricks](https://databricks.com/) - Unified analytics platform with LakehouseIQ and Mosaic AI.
 - [Dataiku](https://www.dataiku.com/) - Data science platform with AI agents and LLM Mesh.
-- [PyCaret](https://pycaret.org/) - Low-code ML library for rapid experimentation with 30+ algorithms.
 - [Auto-Sklearn](https://automl.github.io/auto-sklearn/) - Open-source AutoML with ensemble learning.
 
 ### Data Analysis & Visualization
@@ -231,10 +237,11 @@ Artificial intelligence tools are software applications that utilize machine lea
 - [Jupyter Notebook](https://jupyter.org/) - Interactive computing environment.
 - [Google Colab](https://colab.research.google.com/) - Free cloud-based notebooks.
 - [Kaggle](https://www.kaggle.com/) - Data science competition platform.
-
-
+- [Pulse](https://pulsecorp.co) - AI-moderated customer interviews for market research.
 
 ## Natural Language Processing
+
+Libraries, APIs, and services for language understanding and text processing.
 
 ### NLP Libraries & Tools
 
@@ -253,9 +260,9 @@ Artificial intelligence tools are software applications that utilize machine lea
 - [Amazon Comprehend](https://aws.amazon.com/comprehend/) - AWS NLP service.
 - [IBM Watson Natural Language Understanding](https://www.ibm.com/cloud/watson-natural-language-understanding) - IBM's NLP service.
 
-
-
 ## Computer Vision
+
+Image recognition, visual analysis, and specialized computer-vision applications.
 
 ### Image Recognition & Analysis
 
@@ -266,22 +273,21 @@ Artificial intelligence tools are software applications that utilize machine lea
 - [Averroes.ai](https://averroes.ai/) - Production-ready visual inspection for manufacturing and quality control.
 - [Nanonets](https://nanonets.com/) - Document AI with OCR, invoice processing, and automation.
 - [OpenCV](https://opencv.org/) - Open-source computer vision library.
-- [Viso.ai](https://viso.ai/) - No-code computer vision platform for enterprise applications.
 - [Landing AI](https://landing.ai/) - Andrew Ng's computer vision platform for manufacturing.
 - [ScanRead.ai](https://scanread.ai) - Free OCR for images, PDFs, screenshots, and handwriting in 100+ languages with PP-OCRv5.
 
 ### Specialized Vision Tools
 
-- [YOLO](https://github.com/ultralytics/ultralytics) - Real-time object detection with C2PSA module.
-- [YOLO](https://pjreddie.com/darknet/yolo/) - Real-time object detection framework.
+- [Ultralytics YOLO](https://github.com/ultralytics/ultralytics) - Real-time object detection, segmentation, and classification framework.
+- [Darknet YOLO](https://pjreddie.com/darknet/yolo/) - Original open-source Darknet neural network framework for real-time object detection.
 - [Detectron2](https://github.com/facebookresearch/detectron2) - Facebook's detection framework.
 - [MediaPipe](https://mediapipe.dev/) - Google's ML framework for live perception.
 - [Face++](https://www.faceplusplus.com/) - Face recognition platform.
 - [DeepLobe](https://deeplobe.ai/) - Flexible computer vision across images, video, and text.
 
-
-
 ## Audio & Music
+
+Music generation, voice, speech, transcription, and audio-production tools.
 
 ### Music Generation & Composition
 
@@ -315,9 +321,9 @@ Artificial intelligence tools are software applications that utilize machine lea
 - [Resemble AI](https://www.resemble.ai/) - AI voice cloning with real-time synthesis and emotion control.
 - [Krisp](https://krisp.ai/) - AI-powered noise cancellation and meeting transcription.
 
-
-
 ## Video & Media
+
+Video generation, editing, enhancement, effects, and media-production tools.
 
 ### Video Creation & Editing
 
@@ -329,7 +335,6 @@ Artificial intelligence tools are software applications that utilize machine lea
 - [Pika](https://pika.art/) - Video generator with scene integration.
 - [Luma Ray](https://lumalabs.ai/) - AI video generation with dynamic compositions.
 - [Haiper AI](https://haiper.ai/) - AI video generation platform with creative tools.
-- [LTX Studio](https://ltx.studio/) - Comprehensive AI filmmaking platform.
 - [Pyramidal Flow](https://pyramid-flow.github.io/) - Open-source AI video generation model.
 - [Amazon Nova Reel](https://aws.amazon.com/ai/generative-ai/) - Enterprise-grade AI video with IP indemnification.
 - [OpenArt](https://openart.ai/) - All-in-one AI image and video platform with multiple models.
@@ -341,16 +346,26 @@ Artificial intelligence tools are software applications that utilize machine lea
 - [Fliki](https://fliki.ai/) - Text-to-video with AI voices and avatars.
 - [Steve AI](https://www.steve.ai/) - Animated video creation.
 - [Visla](https://www.visla.us/) - AI video storytelling platform.
-- [MaxVideoAI](https://maxvideoai.com) - Multi-engine AI video generation hub (Sora, Veo, Wan, Kling, LTX…).
+- [MaxVideoAI](https://maxvideoai.com) - Pay-as-you-go AI video generation with model comparison and MCP workflows.
 - [ZOOOP](https://zooop.ai) - AI-native filmmaking workstation for image, video, audio, and lip-sync generation.
+- [YumCut](https://yumcut.com/) - Self-hosted AI workflow for generating finished vertical videos, with a user automation API.
+- [Ideoy](https://ideoy.ai/) - AI meme video generator that remakes this week's memes with one selfie.
+- [IntroVideo](https://introvideo.io/) - AI logo intro generator that turns a logo into an 8-second cinematic intro video in 16:9 or 9:16.
+- [Visual Maker AI](https://visualmakerai.com/) - Web workspace for generating images, turning photos into short videos, and breaking scripts into scenes and clips with models such as Veo, Seedance, and Kling.
+- [Wan 3.5](https://wan35.app/) - Browser-based AI video generator for text-to-video and image-to-video creation.
+- [Wedding AI](https://weddingai.studio/) - AI wedding invitation video maker that turns templates, names, and photos into an HD MP4.
+- [Effect Video](https://effect.video/) - AI photo-to-video tool with viral effect templates for short vertical clips.
+- [Magic Hour](https://magichour.ai/) - AI video creation and editing with text-to-video, image-to-video, face swap, lip sync, and animation tools.
+- [Pixwit](https://pixwit.ai/) - All-in-one AI creative platform for generating images, videos, and music from text or image prompts.
+- [shortshort](https://www.shortshort.io/) - Turns one long video (talk, podcast, course) into vertical 9:16 shorts with word-by-word captions.
 
 ### Video Enhancement & Effects
 
 - [DaVinci Resolve](https://www.blackmagicdesign.com/products/davinciresolve/) - Video editing with AI features.
 
-
-
 ## Code Generation & Development
+
+Coding assistants, developer tools, code analysis, and software-engineering automation.
 
 ### AI Coding Assistants
 
@@ -370,6 +385,8 @@ Artificial intelligence tools are software applications that utilize machine lea
 - [Continue.dev](https://continue.dev/) - Open-source AI coding assistant for VS Code & JetBrains with custom models.
 - [Aider](https://aider.chat/) - Open-source AI pair programmer for terminal with Git integration.
 - [CodeT5](https://github.com/salesforce/CodeT5) - Open-source code generation by Salesforce.
+- [Orbi](https://orbi.build/) - Open-source GitHub coding agent that turns issues labeled ai-ready into independently reviewed, CI-checked, merged pull requests. Free tier: first 3 merged pull requests free, no credit card required.
+- [YYLO](https://github.com/yylo-dev/yylo) - Open-source CLI that orchestrates AI coding agents with Kanban task boards, Git worktree workflows, and merge automation.
 
 ### Development Tools
 
@@ -383,6 +400,8 @@ Artificial intelligence tools are software applications that utilize machine lea
 - [Anima](https://www.animaapp.com/) - Design to code conversion for React, Vue, and HTML.
 - [Replit](https://replit.com/) - Cloud-based IDE with AI coding and instant deployment.
 - [Deno Deploy](https://deno.com/deploy) - Edge deployment with AI-assisted development.
+- [agent-qa](https://github.com/vostride/agent-qa) - Self-improving natural-language web, Android and iOS testing with advanced memidex memory, a CLI, dashboard and MCP tools.
+- [Codex Lookout](https://github.com/makorise/codex-local-hub) - Local-first macOS companion for monitoring and steering Codex Desktop tasks from a phone browser.
 
 ### Code Analysis & Review
 
@@ -390,9 +409,9 @@ Artificial intelligence tools are software applications that utilize machine lea
 - [DeepCode](https://www.deepcode.ai/) - AI-powered code review.
 - [SonarQube](https://www.sonarqube.org/) - Code quality analysis.
 
-
-
 ## AI Search & Research
+
+AI search engines, research assistants, knowledge discovery, and evidence-gathering tools.
 
 ### AI-Powered Search Engines
 
@@ -402,7 +421,6 @@ Artificial intelligence tools are software applications that utilize machine lea
 - [Google AI Overview](https://ai.google/) - AI-enhanced search feature.
 - [Genspark](https://genspark.ai/) - AI search engine with multi-agent architecture and Sparkpages.
 - [You.com](https://you.com/) - AI search with personalization, privacy focus, and custom AI modes.
-- [Phind](https://www.phind.com/) - Developer-focused AI search engine with code generation.
 - [Kagi](https://kagi.com/) - AI search engine.
 - [Bing Chat](https://www.microsoft.com/en-us/edge/features/bing-chat) - Microsoft's AI-powered search with Copilot integration.
 - [Brave Search](https://search.brave.com/) - Independent search with AI Summarizer and privacy focus.
@@ -414,17 +432,19 @@ Artificial intelligence tools are software applications that utilize machine lea
 - [Semantic Scholar](https://www.semanticscholar.org/) - AI-powered academic research tool.
 - [Elicit](https://elicit.org/) - AI research assistant for literature review.
 - [NotebookLM](https://notebooklm.google/) - Google's AI research and note-taking assistant.
-- [Deep Research](https://openai.com/deep-research) - Research assistant.
+- [Deep Research](https://openai.com/index/introducing-deep-research/) - OpenAI research agent for multi-step web research with cited reports.
 - [ResearchGate](https://www.researchgate.net/) - Scientific network with AI features.
 - [Consensus](https://consensus.app/) - AI-powered research engine for scientific papers.
 - [Scite](https://scite.ai/) - Smart citations for research validation.
 - [Connected Papers](https://www.connectedpapers.com/) - Visual academic paper exploration.
 - [CiteMe](https://citeme.app/) - AI-powered academic citation generator that searches 11+ scholarly databases and formats references in 40+ citation styles.
-- [BGPT MCP](https://github.com/connerlambden/bgpt-mcp) - Hosted MCP server for searching scientific papers with full-text experimental data (50 free searches).
-
-
+- [Arcmira: YouTube Transcript Search](https://arcmira.com) - Search YouTube transcripts for timestamped quotes, speaker appearances, sponsors and recommendations through an app, API and MCP connection.
+- [LibreAI](https://libreaihub.vercel.app) - A directory of open-source AI projects organized into categories, with README-derived installation guides.
+- [Nujan](https://nujan.app/) - Dual-pane scientific paper reader with Socratic AI coaching, formula breakdowns, and multi-paper literature synthesis.
 
 ## Large Language Models
+
+General-purpose models, open models, and frameworks used to build with LLMs.
 
 ### General Purpose LLMs
 
@@ -458,10 +478,11 @@ Artificial intelligence tools are software applications that utilize machine lea
 - [vLLM](https://vllm.ai/) - High-throughput LLM serving with PagedAttention.
 - [Anyscale](https://www.anyscale.com/) - Scalable LLM deployment with Ray framework.
 - [Future AGI](https://github.com/future-agi/future-agi) - Open-source self-hostable end-to-end agent engineering and optimization platform unifying tracing, evaluation, simulation, datasets, gateway, and guardrails in one feedback loop.
-
-
+- [ModelVRAM](https://modelvram.com/) - Browser-based calculator that estimates the GPU memory an LLM needs for inference or fine-tuning (weights, KV cache and overhead) from the model's Hugging Face config, and lists the GPUs and Macs that fit.
 
 ## Research & Education
+
+Educational assistants, learning tools, academic research, and research platforms.
 
 ### Educational AI Tools
 
@@ -482,9 +503,9 @@ Artificial intelligence tools are software applications that utilize machine lea
 - [arXiv](https://arxiv.org/) - Open-access research archive.
 - [Google Scholar](https://scholar.google.com/) - Academic search engine.
 
-
-
 ## Business & Marketing
+
+Marketing, sales, e-commerce, retail, career, and job-search tools.
 
 ### Marketing & Sales
 
@@ -498,6 +519,9 @@ Artificial intelligence tools are software applications that utilize machine lea
 - [Drift](https://www.drift.com/) - Conversational marketing platform with AI chatbots.
 - [Lavender](https://www.lavender.ai/) - AI email coach for sales with real-time suggestions.
 - [Seamless.ai](https://seamless.ai/) - AI-powered B2B lead generation and prospecting.
+- [LogNorm](https://lognorm.com/) - SEO and AI-visibility platform that hands a ranked growth backlog to AI agents over MCP.
+- [TeleTraff](https://teletraff.com/en) - Browser-based panel for Telegram promotion and advertising that writes AI comments on channel posts, invites audiences, sends DM campaigns, and lets AI handle dialogs with leads.
+- [CrakSEO Search Console MCP](https://docs.crakseo.com/mcp-servers/search-console) - Free remote MCP access for AI assistants to query owned-site Google Search Console and Bing Webmaster data; authentication required.
 
 ### E-commerce & Retail
 
@@ -513,10 +537,11 @@ Artificial intelligence tools are software applications that utilize machine lea
 - [Jobscan](https://www.jobscan.co/) - Resume and LinkedIn optimization with ATS keyword matching.
 - [Resume Worded](https://resumeworded.com/) - AI resume and LinkedIn feedback with score and targeted advice.
 - [Kickresume](https://www.kickresume.com/) - AI resume builder with templates and job matching.
-
-
+- [JobEmerge](https://www.jobemerge.work/) - An AI career copilot with a job-fit test, a 19-language resume translator and a simple Markdown resume editor.
 
 ## Gaming & Entertainment
+
+Game-development tools and AI applications for entertainment and interactive media.
 
 ### Game Development
 
@@ -529,6 +554,7 @@ Artificial intelligence tools are software applications that utilize machine lea
 - [Scenario](https://www.scenario.gg/) - AI-generated game assets with consistent art styles.
 - [Ludo.ai](https://ludo.ai/) - AI game design research and ideation platform.
 - [Latitude AI](https://latitude.io/) - AI storytelling and game experiences platform.
+- [RespawnStack](https://respawnstack.com) - Directory of AI tools for game developers.
 
 ### Entertainment & Media
 
@@ -538,9 +564,9 @@ Artificial intelligence tools are software applications that utilize machine lea
 - [NovelAI](https://novelai.net/) - AI storytelling and image generation platform.
 - [Chai](https://chai.ml/) - Platform for chatting with AI personalities.
 
-
-
 ## No-Code/Low-Code AI
+
+AI application builders, chatbot builders, and tools for creating without traditional coding.
 
 ### AI App Builders
 
@@ -573,9 +599,9 @@ Artificial intelligence tools are software applications that utilize machine lea
 - [Dante AI](https://dante-ai.com/) - AI chatbot builder with knowledge base and multi-platform deployment.
 - [Coze](https://www.coze.com/) - ByteDance's AI chatbot platform with plugins and workflows.
 
-
-
 ## AI Safety & Ethics
+
+Safety evaluation, governance, responsible-AI, and risk-management tools.
 
 ### AI Safety Tools
 
@@ -588,10 +614,11 @@ Artificial intelligence tools are software applications that utilize machine lea
 - [IBM Watson OpenScale](https://www.ibm.com/cloud/watson-openscale) - AI governance platform.
 - [Microsoft Responsible AI](https://www.microsoft.com/en-us/ai/responsible-ai) - AI ethics framework.
 - [Google AI Principles](https://ai.google/principles/) - AI ethics guidelines.
-
-
+- [isGenAI](https://isgenai.com/) - Free checker that reports recorded evidence of AI use in images, text and code, such as C2PA Content Credentials, IPTC AI labels and saved generator prompts, with a keyless REST API and MCP server.
 
 ## Miscellaneous
+
+Infrastructure, MLOps, automation, and specialized tools that span multiple categories.
 
 ### AI Infrastructure & MLOps
 
@@ -599,7 +626,6 @@ Artificial intelligence tools are software applications that utilize machine lea
 - [Kubeflow](https://www.kubeflow.org/) - ML workflows on Kubernetes with pipelines and serving.
 - [DVC](https://dvc.org/) - Data version control for ML projects with experiment tracking.
 - [Weights & Biases](https://wandb.ai/) - ML experiment tracking with Weave for LLM evaluation.
-- [Neptune](https://neptune.ai/) - ML metadata store with experiment management and model registry.
 - [Estuary Flow](https://estuary.dev/) - Real-time data automation platform with low-latency streaming.
 - [Informatica](https://www.informatica.com/) - Data integration with AI-powered transformations and CLAIRE.
 - [Alteryx](https://www.alteryx.com/) - Data analytics and automation with AI assistant AiDIN.
@@ -624,6 +650,7 @@ Artificial intelligence tools are software applications that utilize machine lea
 - [Devin AI](https://cognition.ai/) - Autonomous AI software developer agent for full SDLC.
 - [Harvey AI](https://harvey.ai/) - AI agent for automating legal workflows and contract review.
 - [Dust](https://dust.tt/) - AI assistant builder for enterprise with custom agents and data sources.
+- [Frink](https://frink.dev/) - Desktop-first, open-source (MIT) application for running parallel agents, and multi-step custom workflows triggered by schedules, webhooks or events from tools like Linear and Sentry, across your already-used providers.
 
 ### Specialized AI Applications
 
@@ -632,9 +659,9 @@ Artificial intelligence tools are software applications that utilize machine lea
 - [ONNX](https://onnx.ai/) - Open neural network exchange.
 - [Apache MXNet](https://mxnet.apache.org/) - Deep learning framework.
 
-
-
 ## Getting Started
+
+Learning resources and practical starting points for working with modern AI tools.
 
 ### Learning Resources
 
@@ -644,15 +671,8 @@ Artificial intelligence tools are software applications that utilize machine lea
 - [Towards Data Science](https://towardsdatascience.com/) - Medium publication for data science.
 - [ML Paper Implementations](https://github.com/lucidrains) - Research paper implementations.
 
-
-
 ## Contributing
 
-See [CONTRIBUTING.md](CONTRIBUTING.md) for contribution guidelines.
+See [CONTRIBUTING.md](CONTRIBUTING.md) for contribution guidelines. New and updated tools belong in `catalog/tools/`; run `bun run new:tool` to use the interactive tool wizard, or `bun run generate:readme` to regenerate this README and `bun run check:pr` before submitting. CI validates the catalog, tests, typechecks, and builds the project; external link reports assist human review.
 
-## Footnotes
-
-- [Documentation](https://alis-organization-72.gitbook.io/awesome-ai-tools/)
-- [Report Issues](https://github.com/aliammari1/awesome-ai-tools/issues)
-- Last updated: March 2026.
-- Maintained by [Ali Ammari](https://github.com/aliammari1).
+**License:** [CC0 1.0 Universal](LICENSE).

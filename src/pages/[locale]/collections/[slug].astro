@@ -1,0 +1,60 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import LegacyLocaleNotice from '../../../components/LegacyLocaleNotice.astro';
+import PageHeader from '../../../components/PageHeader.astro';
+import Directory from '../../../components/Directory.astro';
+import { getCatalog } from '../../../lib/catalog';
+import { curatedCollections, toolsForCollection } from '../../../lib/collections';
+import { formatNumber, useTranslations } from '../../../lib/i18n';
+import { locales, isLocale } from '../../../lib/locales';
+
+export async function getStaticPaths() {
+  return locales.flatMap((locale) =>
+    curatedCollections.map((collection) => ({ params: { locale, slug: collection.slug } })),
+  );
+}
+
+const requested = Astro.params.locale;
+if (!isLocale(requested)) throw new Error('Unsupported locale');
+const locale = requested;
+const prefix = '/' + locale;
+const t = useTranslations(locale);
+const n = (value: number) => formatNumber(locale, value);
+const collection = curatedCollections.find((entry) => entry.slug === Astro.params.slug);
+if (!collection) throw new Error('Unknown collection');
+
+const { tools, categories } = await getCatalog();
+const matched = toolsForCollection(tools, collection);
+const usedCategoryIds = new Set(matched.map((tool) => tool.category));
+const usedCategories = categories.filter((category) => usedCategoryIds.has(category.id));
+---
+
+<BaseLayout title={collection.title} description={collection.lead} locale={locale}>
+  <LegacyLocaleNotice locale={locale} />
+
+  <PageHeader
+    title={collection.title}
+    lead={collection.lead}
+    leadLang="en"
+    leadDir="ltr"
+    crumbs={[
+      { label: t('nav.directory'), href: prefix + '/#directory' },
+      { label: t('nav.collections'), href: prefix + '/collections/' },
+    ]}
+  >
+    <dl class="facts">
+      <div>
+        <dt>tools</dt>
+        <dd>{n(matched.length)}</dd>
+      </div>
+    </dl>
+  </PageHeader>
+
+  <Directory
+    tools={matched}
+    categories={usedCategories}
+    locale={locale}
+    title={collection.title}
+    showHeading={false}
+  />
+</BaseLayout>

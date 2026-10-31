@@ -1,0 +1,144 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import LegacyLocaleNotice from '../../components/LegacyLocaleNotice.astro';
+import PageHeader from '../../components/PageHeader.astro';
+import {
+  additionsByMonth,
+  countByCategory,
+  getCatalog,
+  newestCatalogDate,
+} from '../../lib/catalog';
+import { formatDate, formatNumber, useTranslations } from '../../lib/i18n';
+import { locales, isLocale } from '../../lib/locales';
+
+export function getStaticPaths() {
+  return locales.map((locale) => ({ params: { locale } }));
+}
+
+const requested = Astro.params.locale;
+if (!isLocale(requested)) throw new Error('Unsupported locale');
+const locale = requested;
+const prefix = '/' + locale;
+const t = useTranslations(locale);
+const n = (value: number) => formatNumber(locale, value);
+const { tools, categories } = await getCatalog();
+const counts = countByCategory(tools);
+const ranked = [...categories].sort(
+  (a, b) => (counts[b.id] ?? 0) - (counts[a.id] ?? 0) || a.name.localeCompare(b.name, 'en'),
+);
+const maxCount = Math.max(1, ...ranked.map((category) => counts[category.id] ?? 0));
+const openSource = tools.filter((tool) => tool.openSource === true).length;
+const closedOrUnknown = tools.length - openSource;
+const recordedLicense = tools.filter((tool) => tool.openSource !== null).length;
+const months = additionsByMonth(tools);
+const maxMonth = Math.max(1, ...months.map((entry) => entry.count));
+const lastUpdated = formatDate(locale, newestCatalogDate(tools));
+---
+
+<BaseLayout
+  title={t('page.insights.title')}
+  description={t('page.insights.description')}
+  locale={locale}
+>
+  <LegacyLocaleNotice locale={locale} />
+
+  <PageHeader
+    title={t('page.insights.title')}
+    lead={t('page.insights.description')}
+    crumbs={[{ label: t('nav.directory'), href: prefix + '/#directory' }]}
+  >
+    <dl class="facts">
+      <div>
+        <dt>{t('hero.statTools')}</dt>
+        <dd>{n(tools.length)}</dd>
+      </div>
+      <div>
+        <dt>{t('hero.statDomains')}</dt>
+        <dd>{n(categories.length)}</dd>
+      </div>
+      <div>
+        <dt>{t('hero.statOpenSource')}</dt>
+        <dd>{n(openSource)}</dd>
+      </div>
+    </dl>
+    <p class="page-lead">{t('common.lastUpdated', { date: lastUpdated })}</p>
+  </PageHeader>
+
+  <section class="section" aria-labelledby="domain-counts-title">
+    <div class="shell prose-grid">
+      <div>
+        <h2 id="domain-counts-title">Tools by domain</h2>
+        <p>
+          Each tool is filed under one primary domain. Counts come from the catalog, not from
+          traffic.
+        </p>
+        <ul class="insight-list">
+          {ranked.map((category) => {
+            const count = counts[category.id] ?? 0;
+            const width = Math.round((count / maxCount) * 100);
+            return (
+              <li>
+                <a href={prefix + '/categories/' + category.id + '/'}>{category.name}</a>
+                <span class="insight-track" aria-hidden="true">
+                  <span class="insight-fill" style={`width: ${width}%`} />
+                </span>
+                <span class="tnum">{n(count)}</span>
+              </li>
+            );
+          })}
+        </ul>
+      </div>
+      <div>
+        <h2>Open-source share</h2>
+        <p>
+          {n(openSource)} of {n(tools.length)} listed tools are recorded as open source.
+          {recordedLicense < tools.length
+            ? ` ${n(tools.length - recordedLicense)} entries do not record a license, so they are not counted as open source.`
+            : ''}
+        </p>
+        <ul class="insight-list">
+          <li>
+            <span>Open source</span>
+            <span class="insight-track" aria-hidden="true">
+              <span
+                class="insight-fill"
+                style={`width: ${Math.round((openSource / Math.max(tools.length, 1)) * 100)}%`}
+              />
+            </span>
+            <span class="tnum">{n(openSource)}</span>
+          </li>
+          <li>
+            <span>Not recorded as open source</span>
+            <span class="insight-track" aria-hidden="true">
+              <span
+                class="insight-fill insight-fill-muted"
+                style={`width: ${Math.round((closedOrUnknown / Math.max(tools.length, 1)) * 100)}%`}
+              />
+            </span>
+            <span class="tnum">{n(closedOrUnknown)}</span>
+          </li>
+        </ul>
+
+        <h2>Additions over time</h2>
+        <p>
+          Grouped by the recorded source date (community <code>addedAt</code> or migration{' '}
+          <code>migratedAt</code>).
+        </p>
+        <ul class="insight-list">
+          {months.map((entry) => (
+            <li>
+              <time datetime={entry.month}>{entry.month}</time>
+              <span class="insight-track" aria-hidden="true">
+                <span
+                  class="insight-fill"
+                  style={`width: ${Math.round((entry.count / maxMonth) * 100)}%`}
+                />
+              </span>
+              <span class="tnum">{n(entry.count)}</span>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </div>
+  </section>
+</BaseLayout>
