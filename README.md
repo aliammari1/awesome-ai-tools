@@ -66,6 +66,8 @@ Agent SDKs, autonomous systems, orchestration, tool use, memory, and browser aut
 
 Scheduling, task management, project workflows, email, and day-to-day work automation.
 
+- [OtterFill](https://otterfill.com/) - AI form filler that turns any form into clear questions, prefills answers from your documents, and cross-checks answers across your other forms.
+
 ### Time Management & Scheduling
 
 - [Motion](https://www.usemotion.com/) - AI calendar scheduling with task automation.
