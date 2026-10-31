@@ -151,6 +151,7 @@ Image generation, visual design, creative production, and design-assistance tool
 - [Brandmark](https://brandmark.io/) - AI brand identity generator with color palettes.
 - [Looka](https://looka.com/) - AI logo maker with full brand kit.
 - [ProRemover](https://proremover.io/) - Browser AI tool to remove objects, people, text, and watermarks from photos.
+- [AdDogs](https://www.addogs.ai/) - AI ad creative generator that clones winning ad designs and applies your product photo and brand identity.
 - [APPLORE](https://applore.app/ai-app-icon-generator) - AI app icon generator with a reference library of 18,000+ real App Store and Google Play icons.
 - [Klaruvo](https://www.powersoftware.app/en-US/product/detail/klaruvo) - Desktop AI image editor for object and watermark removal that runs fully offline, with cutout, upscaling and batch processing.
 - [RoomMaker AI](https://roommakerai.org/) - AI room designer that redesigns a room from a photo, previews renovation changes, stages furniture, and drafts floor plan concepts.
