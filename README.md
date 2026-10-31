@@ -336,6 +336,7 @@ Video generation, editing, enhancement, effects, and media-production tools.
 - [MaxVideoAI](https://maxvideoai.com) - Multi-engine AI video generation hub (Sora, Veo, Wan, Kling, LTX…).
 - [ZOOOP](https://zooop.ai) - AI-native filmmaking workstation for image, video, audio, and lip-sync generation.
 - [YumCut](https://yumcut.com/) - Self-hosted AI workflow for generating finished vertical videos, with a user automation API.
+- [Effect Video](https://effect.video/) - AI photo-to-video tool with viral effect templates for short vertical clips.
 
 ### Video Enhancement & Effects
 
