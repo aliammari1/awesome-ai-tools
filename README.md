@@ -366,6 +366,7 @@ Coding assistants, developer tools, code analysis, and software-engineering auto
 - [Continue.dev](https://continue.dev/) - Open-source AI coding assistant for VS Code & JetBrains with custom models.
 - [Aider](https://aider.chat/) - Open-source AI pair programmer for terminal with Git integration.
 - [CodeT5](https://github.com/salesforce/CodeT5) - Open-source code generation by Salesforce.
+- [Orbi](https://orbi.build/) - Open-source GitHub coding agent that turns issues labeled ai-ready into independently reviewed, CI-checked, merged pull requests. Free tier: first 3 merged pull requests free, no credit card required.
 
 ### Development Tools
 
