@@ -1,6 +1,6 @@
 # Awesome AI Tools [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
-> A curated catalog of **384 AI tools** across **19 categories**.
+> A curated catalog of **385 AI tools** across **19 categories**.
 > Browse the searchable directory at **https://docs.aliammari.dev**.
 
 Find AI tools by task, then compare recorded pricing and open-source information in the [searchable directory](https://docs.aliammari.dev/en/). Unknown metadata stays unknown.
@@ -503,6 +503,7 @@ Marketing, sales, e-commerce, retail, career, and job-search tools.
 - [Jobscan](https://www.jobscan.co/) - Resume and LinkedIn optimization with ATS keyword matching.
 - [Resume Worded](https://resumeworded.com/) - AI resume and LinkedIn feedback with score and targeted advice.
 - [Kickresume](https://www.kickresume.com/) - AI resume builder with templates and job matching.
+- [BKK Staff](https://www.bkkstaff.com/) - Automated resume screening for small businesses that grades applicants for each job, follows up with strong candidates by email and delivers an interview shortlist.
 
 ## Gaming & Entertainment
 
