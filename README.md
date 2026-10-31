@@ -1,6 +1,6 @@
 # Awesome AI Tools [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
-> A curated catalog of **415 AI tools** across **19 categories**.
+> A curated catalog of **416 AI tools** across **19 categories**.
 > Browse the searchable directory at **https://docs.aliammari.dev**.
 
 Find AI tools by task, then compare recorded pricing and open-source information in the [searchable directory](https://docs.aliammari.dev/en/). Unknown metadata stays unknown.
@@ -354,6 +354,7 @@ Video generation, editing, enhancement, effects, and media-production tools.
 - [Wedding AI](https://weddingai.studio/) - AI wedding invitation video maker that turns templates, names, and photos into an HD MP4.
 - [Effect Video](https://effect.video/) - AI photo-to-video tool with viral effect templates for short vertical clips.
 - [Pixwit](https://pixwit.ai/) - All-in-one AI creative platform for generating images, videos, and music from text or image prompts.
+- [VideoText](https://videotext.io) - Subtitle and transcript tools: Make Client Ready format compliance checks, subtitle fixing, video-to-SRT/VTT, translation, video compression and voice recording.
 
 ### Video Enhancement & Effects
 
