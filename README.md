@@ -147,6 +147,8 @@ Image generation, visual design, creative production, and design-assistance tool
 - [Looka](https://looka.com/) - AI logo maker with full brand kit.
 - [APPLORE](https://applore.app/ai-app-icon-generator) - AI app icon generator with a reference library of 18,000+ real App Store and Google Play icons.
 
+- [Klaruvo](https://www.powersoftware.app/en-US/product/detail/klaruvo) - Desktop AI image editor for object and watermark removal that runs fully offline, with cutout, upscaling and batch processing.
+
 ## Communication & Writing
 
 Writing, content creation, translation, localization, and communication assistance.
