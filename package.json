@@ -1,26 +1,66 @@
 {
   "name": "awesome-ai-tools",
-  "private": true,
   "version": "1.0.0",
+  "private": true,
+  "description": "A curated, structured catalog of AI tools with a generated README and searchable directory.",
+  "license": "CC0-1.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aliammari1/awesome-ai-tools.git"
+  },
+  "homepage": "https://docs.aliammari.dev",
+  "bugs": {
+    "url": "https://github.com/aliammari1/awesome-ai-tools/issues"
+  },
+  "keywords": [
+    "awesome-list",
+    "ai",
+    "ai-tools",
+    "catalog",
+    "astro"
+  ],
   "type": "module",
-  "packageManager": "bun@1.4.2",
+  "packageManager": "bun@1.4.3",
   "engines": {
-    "node": ">=22.0.0"
+    "node": ">=24.0.0",
+    "bun": ">=1.4.3"
   },
   "scripts": {
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "validate": "node scripts/validate-catalog.mjs",
-    "generate:readme": "node scripts/generate-readme.mjs",
-    "check:readme": "node scripts/generate-readme.mjs --check",
+    "validate": "bun scripts/validate-catalog.mjs",
+    "generate:readme": "bun scripts/generate-readme.mjs",
+    "check:readme": "bun scripts/generate-readme.mjs --check",
+    "check:pr": "bun run validate && bun run check:readme && bun run test",
+    "audit:catalog": "bun scripts/audit-catalog.mjs",
+    "new:tool": "bun scripts/new-tool.mjs",
+    "lint": "eslint .",
     "lint:awesome": "awesome-lint",
-    "check": "bun run validate && bun run check:readme && bun run lint:awesome && bun run build"
+    "check": "bun run check:pr && bun run typecheck && bun run format:check && bun run lint && bun run lint:awesome && bun run build",
+    "test": "node --test tests/*.test.mjs",
+    "typecheck": "astro check",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "audit:dependencies": "bun audit --audit-level=high --ignore=GHSA-vfj7-8cjw-p6xm"
   },
   "dependencies": {
-    "astro": "7.3.3"
+    "@fontsource-variable/geist": "5.3.0",
+    "@lucide/astro": "1.65.0",
+    "astro": "7.3.3",
+    "minisearch": "7.2.0"
   },
   "devDependencies": {
-    "awesome-lint": "2.3.0"
+    "@astrojs/check": "0.9.11",
+    "@eslint/js": "10.0.1",
+    "@types/node": "24.19.2",
+    "awesome-lint": "2.3.0",
+    "eslint": "10.13.0",
+    "eslint-plugin-astro": "3.2.1",
+    "globals": "17.13.0",
+    "prettier": "3.9.10",
+    "prettier-plugin-astro": "1.1.1",
+    "typescript": "6.0.3",
+    "typescript-eslint": "8.72.1"
   }
 }

@@ -1,0 +1,4 @@
+# Pin dependency ranges at install time. Renovate proposes exact upgrades.
+[install]
+exact = true
+registry = "https://registry.npmjs.org"

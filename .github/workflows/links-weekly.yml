@@ -7,7 +7,6 @@ on:
 
 permissions:
   contents: read
-  issues: write
 
 concurrency:
   group: links-weekly
@@ -17,59 +16,22 @@ jobs:
   link-check:
     name: Scan catalog links
     runs-on: ubuntu-latest
+    timeout-minutes: 20
     steps:
       - name: Checkout
-        uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0 # v7
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
 
-      - name: Run lychee
+      - name: Run lychee link checker
         id: lychee
         uses: lycheeverse/lychee-action@e7477775783ea5526144ba13e8db5eec57747ce8 # v2.9.0
         with:
-          # Match pull-request link policy. These exclusions are official sites
-          # independently confirmed live but unreliable with Lychee's HTTP client.
           args: >-
+            --config .lychee.toml
             --no-progress
-            --max-concurrency 32
-            --max-retries 5
-            --retry-wait-time 2
-            --timeout 30
             --accept 200,202,206,403,405,415,429
-            --exclude https://www\\.krea\\.ai/
-            --exclude https://mailstrom\\.co/
-            --exclude https://www\\.clarifai\\.com/
-            --exclude https://www\\.coursera\\.org/browse/data-science/machine-learning
-            --exclude https://www\\.rankingrider\\.com/
             README.md
-          output: ./lychee/out.md
-          fail: false
           format: markdown
-
-      - name: Find existing tracking issue
-        id: find-issue
-        env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: |
-          number=$(gh issue list --search "Link Checker Report in:title" --state open --json number --jq '.[0].number // empty')
-          echo "number=$number" >> "$GITHUB_OUTPUT"
-
-      - name: Create or update tracking issue
-        if: steps.lychee.outputs.exit_code != 0
-        uses: peter-evans/create-issue-from-file@fca9117c27cdc29c6c4db3b86c48e4115a786710 # v6.0.0
-        with:
-          title: 'Link Checker Report'
-          content-filepath: ./lychee/out.md
-          issue-number: ${{ steps.find-issue.outputs.number }}
-          labels: |
-            broken-link
-            automated
-
-      - name: Close tracking issue if resolved
-        if: steps.lychee.outputs.exit_code == 0 && steps.find-issue.outputs.number != ''
-        env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: |
-          gh issue close "${{ steps.find-issue.outputs.number }}" --comment "All automatically checked links passing as of $(date -u +%F)."
-
-      - name: Report success
-        if: steps.lychee.outputs.exit_code == 0
-        run: echo "No automatically detected broken links found."
+          jobSummary: true
+          fail: true

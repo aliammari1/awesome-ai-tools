@@ -1,9 +1,11 @@
 # Awesome AI Tools [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
-> A curated catalog of **392 AI tools** across **19 categories**.
+> A curated catalog of **389 AI tools** across **19 categories**.
 > Browse the searchable directory at **https://docs.aliammari.dev**.
 
-The catalog source of truth is `catalog/tools/*.json`. This README is generated from that structured catalog; edit catalog records instead of editing tool entries here.
+Find AI tools by task, then compare recorded pricing and open-source information in the [searchable directory](https://docs.aliammari.dev/en/). Unknown metadata stays unknown.
+
+Choose a category below, [suggest a tool](https://github.com/aliammari1/awesome-ai-tools/issues/new?template=tool_addition.yml), or read our [curation methodology](https://docs.aliammari.dev/en/about/methodology/) and [security policy](SECURITY.md).
 
 ## Contents
 
@@ -31,16 +33,33 @@ The catalog source of truth is `catalog/tools/*.json`. This README is generated 
 
 Agent SDKs, autonomous systems, orchestration, tool use, memory, and browser automation.
 
+### Agent Frameworks
+
 - [OpenAI Agents SDK](https://openai.github.io/openai-agents-python/) - Lightweight framework for multi-agent workflows with handoffs and guardrails.
-- [Model Context Protocol](https://modelcontextprotocol.io/) - Open standard for connecting AI agents to tools and data sources.
 - [Claude Agent SDK](https://code.claude.com/docs/en/agent-sdk/overview) - Build agents on the same harness as Claude Code with tool use and MCP.
 - [Google Agent Development Kit](https://adk.dev/) - Open-source toolkit for building and deploying multi-agent systems.
 - [Pydantic AI](https://pydantic.dev/docs/ai/overview/) - Type-safe Python agent framework with structured outputs and validation.
 - [Smolagents](https://github.com/huggingface/smolagents) - Hugging Face's minimal library for code-writing agents.
-- [Manus](https://manus.im/) - General autonomous agent that executes multi-step real-world tasks.
-- [OpenHands](https://github.com/All-Hands-AI/OpenHands) - Open-source autonomous software-engineering agent (formerly OpenDevin).
 - [AgentScope](https://github.com/modelscope/agentscope) - Multi-agent platform with distributed orchestration and visual debugging.
+
+### Agent Protocols & Tools
+
+- [Model Context Protocol](https://modelcontextprotocol.io/) - Open standard for connecting AI agents to tools and data sources.
+
+### Autonomous Agents
+
+- [Manus](https://manus.im/) - General autonomous agent that executes multi-step real-world tasks.
+
+### Coding Agents
+
+- [OpenHands](https://github.com/All-Hands-AI/OpenHands) - Open-source autonomous software-engineering agent (formerly OpenDevin).
+
+### Agent Memory & State
+
 - [Letta](https://www.letta.com/) - Framework for stateful agents with long-term memory (formerly MemGPT).
+
+### Browser Automation
+
 - [Browser Use](https://github.com/browser-use/browser-use) - Library that lets agents control a real browser to complete web tasks.
 
 ## Productivity
@@ -126,6 +145,7 @@ Image generation, visual design, creative production, and design-assistance tool
 - [LogoAI](https://www.logoai.com/) - AI logo generator with brand kit creation.
 - [Brandmark](https://brandmark.io/) - AI brand identity generator with color palettes.
 - [Looka](https://looka.com/) - AI logo maker with full brand kit.
+- [APPLORE](https://applore.app/ai-app-icon-generator) - AI app icon generator with a reference library of 18,000+ real App Store and Google Play icons.
 
 ## Communication & Writing
 
@@ -158,7 +178,7 @@ Writing, content creation, translation, localization, and communication assistan
 - [Sudowrite](https://www.sudowrite.com/) - AI writing partner for creative fiction.
 - [Gamma](https://gamma.app/) - AI presentation and document generator.
 - [Beautiful.ai](https://www.beautiful.ai/) - AI-powered presentation design.
-- [Hemingway Editor](http://www.hemingwayapp.com/) - Readability-focused writing tool.
+- [Hemingway Editor](https://hemingwayapp.com/) - Readability-focused writing tool.
 - [SocialBu](https://socialbu.com/) - AI-powered social media management for scheduling, publishing, and automating across X, Instagram, LinkedIn, Facebook, TikTok, and more.
 
 ### Translation & Localization
@@ -245,8 +265,8 @@ Image recognition, visual analysis, and specialized computer-vision applications
 
 ### Specialized Vision Tools
 
-- [YOLO](https://github.com/ultralytics/ultralytics) - Real-time object detection with C2PSA module.
-- [YOLO](https://pjreddie.com/darknet/yolo/) - Real-time object detection framework.
+- [Ultralytics YOLO](https://github.com/ultralytics/ultralytics) - Real-time object detection, segmentation, and classification framework.
+- [Darknet YOLO](https://pjreddie.com/darknet/yolo/) - Original open-source Darknet neural network framework for real-time object detection.
 - [Detectron2](https://github.com/facebookresearch/detectron2) - Facebook's detection framework.
 - [MediaPipe](https://mediapipe.dev/) - Google's ML framework for live perception.
 - [Face++](https://www.faceplusplus.com/) - Face recognition platform.
@@ -287,9 +307,6 @@ Music generation, voice, speech, transcription, and audio-production tools.
 - [HappyScribe](https://www.happyscribe.com/) - AI transcription with 120+ languages and subtitle export.
 - [Resemble AI](https://www.resemble.ai/) - AI voice cloning with real-time synthesis and emotion control.
 - [Krisp](https://krisp.ai/) - AI-powered noise cancellation and meeting transcription.
-- [Video to Transcript](https://videotext.io/video-to-transcript) - Free AI video transcription with 98.5% word accuracy using Whisper large-v3; upload MP4/MOV/WebM/MKV and get a transcript, SRT/VTT, AI summary, and chapters in one pass.
-- [Guideline Format](https://videotext.io/guideline-format) - Auto-formats raw transcripts to Rev, GoTranscript, TranscribeMe, or Scribie style guides — verbatim rules, speaker labels, punctuation, and QA compliance scoring, exported client-ready.
-- [Voice Recorder](https://videotext.io/voice-recorder) - In-browser voice-to-text recorder — speak and get text instantly with no video upload required, privacy-first with files deleted after processing.
 
 ## Video & Media
 
@@ -319,15 +336,11 @@ Video generation, editing, enhancement, effects, and media-production tools.
 - [MaxVideoAI](https://maxvideoai.com) - Multi-engine AI video generation hub (Sora, Veo, Wan, Kling, LTX…).
 - [ZOOOP](https://zooop.ai) - AI-native filmmaking workstation for image, video, audio, and lip-sync generation.
 - [YumCut](https://yumcut.com/) - Self-hosted AI workflow for generating finished vertical videos, with a user automation API.
-- [Video to Subtitles](https://videotext.io/video-to-subtitles) - Full caption generation hub: upload a video for timed SRT/VTT output, then fix, translate, or burn captions in the same workflow.
-- [Translate Subtitles](https://videotext.io/translate-subtitles) - Free online SRT/VTT subtitle translator supporting 70+ languages with every cue timestamp preserved on download.
-- [Fix Subtitles](https://videotext.io/fix-subtitles) - Auto-corrects overlapping timestamps, long lines, CPS/reading-speed issues, and SRT/VTT formatting errors with instant download.
-- [Burn Subtitles](https://videotext.io/burn-subtitles) - Hardcodes SRT/VTT captions permanently into MP4 video — ideal for Instagram, TikTok, and players without native caption support.
+- [VideoText](https://videotext.io) - Subtitle and transcript tools: Make Client Ready format compliance checks, subtitle fixing, video-to-SRT/VTT, translation, video compression and voice recording.
 
 ### Video Enhancement & Effects
 
 - [DaVinci Resolve](https://www.blackmagicdesign.com/products/davinciresolve/) - Video editing with AI features.
-- [Compress Video](https://videotext.io/compress-video) - Free online video compressor with light, medium, and heavy settings to shrink file size for faster sharing and uploads.
 
 ## Code Generation & Development
 
@@ -364,6 +377,7 @@ Coding assistants, developer tools, code analysis, and software-engineering auto
 - [Anima](https://www.animaapp.com/) - Design to code conversion for React, Vue, and HTML.
 - [Replit](https://replit.com/) - Cloud-based IDE with AI coding and instant deployment.
 - [Deno Deploy](https://deno.com/deploy) - Edge deployment with AI-assisted development.
+- [agent-qa](https://github.com/vostride/agent-qa) - Self-improving natural-language web, Android and iOS testing with advanced memidex memory, a CLI, dashboard and MCP tools.
 
 ### Code Analysis & Review
 
@@ -477,6 +491,7 @@ Marketing, sales, e-commerce, retail, career, and job-search tools.
 - [Drift](https://www.drift.com/) - Conversational marketing platform with AI chatbots.
 - [Lavender](https://www.lavender.ai/) - AI email coach for sales with real-time suggestions.
 - [Seamless.ai](https://seamless.ai/) - AI-powered B2B lead generation and prospecting.
+- [CrakSEO Search Console MCP](https://docs.crakseo.com/mcp-servers/search-console) - Free remote MCP access for AI assistants to query owned-site Google Search Console and Bing Webmaster data; authentication required.
 
 ### E-commerce & Retail
 
@@ -508,6 +523,7 @@ Game-development tools and AI applications for entertainment and interactive med
 - [Scenario](https://www.scenario.gg/) - AI-generated game assets with consistent art styles.
 - [Ludo.ai](https://ludo.ai/) - AI game design research and ideation platform.
 - [Latitude AI](https://latitude.io/) - AI storytelling and game experiences platform.
+- [RespawnStack](https://respawnstack.com) - Directory of AI tools for game developers.
 
 ### Entertainment & Media
 
@@ -624,6 +640,6 @@ Learning resources and practical starting points for working with modern AI tool
 
 ## Contributing
 
-See [CONTRIBUTING.md](CONTRIBUTING.md). New and updated tools belong in `catalog/tools/`; CI validates the catalog, regenerates this README, checks links, and builds the site.
+See [CONTRIBUTING.md](CONTRIBUTING.md) for contribution guidelines. New and updated tools belong in `catalog/tools/`; run `bun run new:tool` to use the interactive tool wizard, or `bun run generate:readme` to regenerate this README and `bun run check:pr` before submitting. CI validates the catalog, tests, typechecks, and builds the project; external link reports assist human review.
 
 **License:** [CC0 1.0 Universal](LICENSE).

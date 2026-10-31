@@ -8,7 +8,7 @@
     "name": "Open Source LLMs"
   },
   "order": 257,
-  "openSource": null,
+  "openSource": true,
   "pricing": null,
   "status": "listed",
   "source": {

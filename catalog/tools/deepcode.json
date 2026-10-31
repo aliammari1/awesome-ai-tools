@@ -8,7 +8,7 @@
     "name": "Code Analysis & Review"
   },
   "order": 227,
-  "openSource": null,
+  "openSource": false,
   "pricing": null,
   "status": "listed",
   "source": {
