@@ -1,0 +1,18 @@
+{
+  "name": "AgentScope",
+  "url": "https://github.com/modelscope/agentscope",
+  "description": "Multi-agent platform with distributed orchestration and visual debugging.",
+  "category": "ai-agents",
+  "subcategory": {
+    "id": "agent-frameworks",
+    "name": "Agent Frameworks"
+  },
+  "order": 8,
+  "openSource": true,
+  "pricing": null,
+  "status": "listed",
+  "source": {
+    "kind": "readme-migration",
+    "migratedAt": "2026-09-21"
+  }
+}

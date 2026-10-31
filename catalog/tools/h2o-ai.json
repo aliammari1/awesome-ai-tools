@@ -1,0 +1,18 @@
+{
+  "name": "H2O.ai",
+  "url": "https://www.h2o.ai/",
+  "description": "Open-source ML and AI platform with h2oGPT and Document AI.",
+  "category": "data-science-and-analytics",
+  "subcategory": {
+    "id": "machine-learning-platforms",
+    "name": "Machine Learning Platforms"
+  },
+  "order": 102,
+  "openSource": true,
+  "pricing": null,
+  "status": "listed",
+  "source": {
+    "kind": "readme-migration",
+    "migratedAt": "2026-09-21"
+  }
+}

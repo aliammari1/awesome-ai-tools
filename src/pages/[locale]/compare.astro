@@ -1,0 +1,83 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import LegacyLocaleNotice from '../../components/LegacyLocaleNotice.astro';
+import PageHeader from '../../components/PageHeader.astro';
+import { getCatalog } from '../../lib/catalog';
+import { locales, isLocale } from '../../lib/locales';
+
+export function getStaticPaths() {
+  return locales.map((locale) => ({ params: { locale } }));
+}
+
+const requested = Astro.params.locale;
+if (!isLocale(requested)) throw new Error('Unsupported locale');
+const locale = requested;
+const prefix = '/' + locale;
+const { tools, categories } = await getCatalog();
+const categoryNames = Object.fromEntries(
+  categories.map((category) => [category.id, category.name]),
+);
+const comparisonData = tools.map((tool) => ({
+  id: tool.id,
+  name: tool.name,
+  url: tool.url,
+  description: tool.description,
+  category: categoryNames[tool.category] ?? tool.category,
+  subcategory: tool.subcategory?.name ?? null,
+  pricing: tool.pricing,
+  openSource: tool.openSource,
+}));
+const serialized = JSON.stringify(comparisonData).replace(/</g, '\\u003c');
+---
+
+<BaseLayout
+  title="Compare tools"
+  description="Compare up to three AI tools side by side using recorded catalog metadata."
+  locale={locale}
+  noindex={true}
+>
+  <LegacyLocaleNotice locale={locale} />
+
+  <PageHeader
+    title="Compare tools"
+    lead="Put up to three tools side by side using the metadata recorded in the catalog. The page address holds your selection, so you can share it."
+    crumbs={[{ label: 'Directory', href: prefix + '/#directory' }]}
+  />
+
+  <section class="section" aria-label="Comparison">
+    <div class="shell">
+      <div id="compare-empty" class="empty-state">
+        <strong>No tools selected.</strong>
+        <p>
+          Choose up to three tools with the compare button in the directory, then come back here.
+        </p>
+        <div class="actions-row">
+          <a class="btn" href={prefix + '/#directory'}>
+            Browse tools
+          </a>
+        </div>
+      </div>
+
+      <div id="compare-content" hidden>
+        <div class="saved-toolbar">
+          <button class="btn btn-secondary btn-sm" type="button" id="compare-copy">
+            Copy as Markdown
+          </button>
+        </div>
+        <div id="compare-grid" class="compare-cards"></div>
+        <div class="table-wrap" tabindex="0" role="region" aria-label="Comparison table">
+          <table class="compare-table">
+            <thead id="compare-head"></thead>
+            <tbody id="compare-body"></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script id="compare-data" type="application/json" set:html={serialized}></script>
+  <script>
+    import { initComparePage } from '../../scripts/compare-page';
+    initComparePage();
+  </script>
+</BaseLayout>

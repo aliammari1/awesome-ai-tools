@@ -1,0 +1,18 @@
+{
+  "name": "Hemingway Editor",
+  "url": "https://hemingwayapp.com/",
+  "description": "Readability-focused writing tool.",
+  "category": "communication-and-writing",
+  "subcategory": {
+    "id": "content-creation",
+    "name": "Content Creation"
+  },
+  "order": 94,
+  "openSource": false,
+  "pricing": null,
+  "status": "listed",
+  "source": {
+    "kind": "readme-migration",
+    "migratedAt": "2026-09-21"
+  }
+}

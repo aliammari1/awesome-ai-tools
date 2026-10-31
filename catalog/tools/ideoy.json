@@ -1,0 +1,18 @@
+{
+  "name": "Ideoy",
+  "url": "https://ideoy.ai/",
+  "description": "AI meme video generator that remakes this week's memes with one selfie.",
+  "category": "video-and-media",
+  "subcategory": {
+    "id": "video-creation-and-editing",
+    "name": "Video Creation & Editing"
+  },
+  "order": 200,
+  "openSource": false,
+  "pricing": "paid",
+  "status": "listed",
+  "source": {
+    "kind": "community",
+    "addedAt": "2026-10-23"
+  }
+}

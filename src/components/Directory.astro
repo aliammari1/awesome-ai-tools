@@ -1,0 +1,417 @@
+---
+import Icon from './Icon.astro';
+import ToolCard from './ToolCard.astro';
+import { countByCategory, type Category, type Tool } from '../lib/catalog';
+import { pricingLabels } from '../lib/pricing';
+
+interface Props {
+  tools: Tool[];
+  categories: Category[];
+  locale?: string;
+  title?: string;
+  /** Show the heading row above the toolbar. */
+  showHeading?: boolean;
+  /** Quick filter chips (home page only). */
+  showPresets?: boolean;
+}
+
+const {
+  tools,
+  categories,
+  locale = 'en',
+  title = 'All tools',
+  showHeading = true,
+  showPresets = false,
+} = Astro.props;
+
+const categoryNames = Object.fromEntries(
+  categories.map((category) => [category.id, category.name]),
+);
+const categoryCounts = countByCategory(tools);
+const pricingOptions = Object.entries(pricingLabels)
+  .map(([id, label]) => ({ id, label, count: tools.filter((tool) => tool.pricing === id).length }))
+  .filter((option) => option.count > 0);
+const openSourceCount = tools.filter((tool) => tool.openSource === true).length;
+
+const subcategoryOptions = [
+  ...tools
+    .reduce((map, tool) => {
+      if (!tool.subcategory) return map;
+      const entry = map.get(tool.subcategory.id) ?? { ...tool.subcategory, count: 0 };
+      entry.count += 1;
+      return map.set(tool.subcategory.id, entry);
+    }, new Map<string, { id: string; name: string; count: number }>())
+    .values(),
+].sort((a, b) => b.count - a.count || a.name.localeCompare(b.name, 'en'));
+
+const alphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('');
+
+const presetCandidates = [
+  { label: 'All tools', preset: 'all' },
+  ...(openSourceCount > 0 ? [{ label: 'Open source', preset: 'open-source' }] : []),
+  ...(pricingOptions.some((option) => option.id === 'free')
+    ? [{ label: 'Free', preset: 'free' }]
+    : []),
+  { label: 'Code & Dev', category: 'code-generation-and-development' },
+  { label: 'LLMs', category: 'large-language-models' },
+  { label: 'AI Agents', category: 'ai-agents' },
+  { label: 'Search & Research', category: 'ai-search-and-research' },
+  { label: 'Design & Media', category: 'creativity-and-design' },
+  { label: 'Writing', category: 'communication-and-writing' },
+];
+const presets = presetCandidates.filter(
+  (item) => !item.category || categories.some((category) => category.id === item.category),
+);
+
+const suggestUrl =
+  'https://github.com/aliammari1/awesome-ai-tools/issues/new?template=tool_addition.yml';
+---
+
+<section
+  class="directory"
+  id="directory"
+  data-directory
+  data-view="list"
+  aria-labelledby="directory-title"
+>
+  <div class="shell">
+    <div class="directory-head" hidden={!showHeading}>
+      <h2 id="directory-title">{title}</h2>
+      <p>
+        <span class="tnum">{tools.length}</span> listed · search by name, task or capability
+      </p>
+    </div>
+
+    <noscript>
+      <p class="no-script-note">
+        All tools are listed below. Enable JavaScript to search, filter, save and compare.
+      </p>
+    </noscript>
+
+    <div class="toolbar" role="search">
+      <div class="search-field-wrap">
+        <label class="search-field">
+          <span class="sr-only">Search {tools.length} tools</span>
+          <Icon name="search" />
+          <input
+            id="tool-search"
+            type="search"
+            placeholder={
+              'Search ' + tools.length + ' tools (try domain:code, oss:yes, "exact", -exclude)…'
+            }
+            autocomplete="off"
+            spellcheck="false"
+            enterkeyhint="search"
+            aria-keyshortcuts="/"
+            aria-controls="search-autocomplete"
+          />
+        </label>
+        <div
+          id="search-autocomplete"
+          class="search-autocomplete"
+          data-search-autocomplete
+          hidden
+        ></div>
+      </div>
+      <button
+        class="btn btn-secondary toolbar-filter-button"
+        type="button"
+        data-filter-toggle
+        aria-expanded="false"
+        aria-controls="filters-panel"
+      >
+        <Icon name="filters" />
+        <span data-filter-toggle-label>Filters</span>
+      </button>
+      <select class="select" id="directory-sort" aria-label="Sort tools">
+        <option value="relevance">Best match</option>
+        <option value="name">Name A–Z</option>
+        <option value="newest">Newest added</option>
+        <option value="catalog">Catalog order</option>
+      </select>
+      <button
+        class="btn btn-secondary toolbar-surprise-button"
+        type="button"
+        data-surprise-me
+        title="Open a random tool"
+      >
+        Surprise me
+      </button>
+    </div>
+
+    <div class="search-assist-row" data-recent-searches hidden></div>
+    <div class="search-assist-row" data-saved-searches hidden></div>
+
+    {showPresets && presets.length > 2 && (
+      <div class="presets" role="group" aria-label="Quick filters">
+        {presets.map((item, index) => (
+          <button
+            type="button"
+            class="chip"
+            data-preset-filter={item.preset ?? 'category'}
+            data-preset-category={item.category ?? ''}
+            aria-pressed={index === 0 ? 'true' : 'false'}
+          >
+            {item.label}
+          </button>
+        ))}
+      </div>
+    )}
+
+    <div class="az-bar" role="group" aria-label="Filter by starting letter" data-az-bar>
+      <button type="button" class="az-btn" data-letter="" aria-pressed="true">
+        All
+      </button>
+      {alphabet.map((letter) => (
+        <button
+          type="button"
+          class="az-btn"
+          data-letter={letter.toLowerCase()}
+          aria-pressed="false"
+        >
+          {letter}
+        </button>
+      ))}
+    </div>
+
+    <div class="active-filters" data-active-filters></div>
+
+    <div class="directory-layout">
+      <button
+        class="filter-backdrop"
+        type="button"
+        data-filter-close
+        tabindex="-1"
+        aria-label="Close filters"
+      ></button>
+      <aside class="filter-panel" id="filters-panel" aria-labelledby="filters-title" tabindex="-1">
+        <div class="filter-panel-header">
+          <h2 id="filters-title">Filters</h2>
+          <div class="results-controls">
+            <button class="clear-link" type="button" data-clear-filters>
+              Reset all
+            </button>
+            <button
+              class="icon-button filter-close"
+              type="button"
+              data-filter-close
+              aria-label="Close filters"
+            >
+              <Icon name="close" />
+            </button>
+          </div>
+        </div>
+
+        <div class="facet-filter-box">
+          <input
+            type="search"
+            class="facet-search-input"
+            data-facet-search
+            placeholder="Filter options"
+            aria-label="Filter facet options"
+          />
+        </div>
+
+        <div class="filter-scroll">
+          {categories.length > 1 && (
+            <fieldset class="facet" data-facet-group="category">
+              <legend>Domain</legend>
+              {categories.map((category) => (
+                <label class="facet-option" data-facet-label={category.name.toLowerCase()}>
+                  <input type="checkbox" name="category" value={category.id} />
+                  <span>{category.name}</span>
+                  <span class="facet-count" data-facet-count={'category:' + category.id}>
+                    {categoryCounts[category.id] ?? 0}
+                  </span>
+                </label>
+              ))}
+            </fieldset>
+          )}
+
+          {subcategoryOptions.length > 1 && (
+            <fieldset class="facet" data-facet-group="subcategory">
+              <legend>Type</legend>
+              {subcategoryOptions.slice(0, 30).map((option) => (
+                <label class="facet-option" data-facet-label={option.name.toLowerCase()}>
+                  <input type="checkbox" name="subcategory" value={option.id} />
+                  <span>{option.name}</span>
+                  <span class="facet-count" data-facet-count={'subcategory:' + option.id}>
+                    {option.count}
+                  </span>
+                </label>
+              ))}
+            </fieldset>
+          )}
+
+          {pricingOptions.length > 0 && (
+            <fieldset class="facet" data-facet-group="pricing">
+              <legend>Pricing</legend>
+              {pricingOptions.map((option) => (
+                <label class="facet-option" data-facet-label={option.label.toLowerCase()}>
+                  <input type="checkbox" name="pricing" value={option.id} />
+                  <span>{option.label}</span>
+                  <span class="facet-count" data-facet-count={'pricing:' + option.id}>
+                    {option.count}
+                  </span>
+                </label>
+              ))}
+            </fieldset>
+          )}
+
+          {openSourceCount > 0 && (
+            <fieldset class="facet">
+              <legend>License</legend>
+              <label class="facet-option" data-facet-label="open source">
+                <input id="open-source-filter" type="checkbox" name="openSource" value="true" />
+                <span>Open source</span>
+                <span class="facet-count" data-facet-count="openSource:true">
+                  {openSourceCount}
+                </span>
+              </label>
+            </fieldset>
+          )}
+
+          <fieldset class="facet">
+            <legend>Added &amp; status</legend>
+            <label class="facet-option" data-facet-label="added in last 30 days">
+              <input type="radio" name="recency" value="" checked />
+              <span>Any date</span>
+            </label>
+            <label class="facet-option" data-facet-label="added in last 30 days">
+              <input type="radio" name="recency" value="30" />
+              <span>Added in last 30 days</span>
+            </label>
+            <label class="facet-option" data-facet-label="added in last 90 days">
+              <input type="radio" name="recency" value="90" />
+              <span>Added in last 90 days</span>
+            </label>
+
+            <label class="facet-option" data-facet-label="show hidden tools">
+              <input type="checkbox" name="showHidden" value="true" data-show-hidden />
+              <span>Show hidden tools</span>
+            </label>
+          </fieldset>
+        </div>
+
+        <div class="filter-panel-footer">
+          <button class="btn" type="button" data-filter-close>
+            Show{' '}
+            <span class="tnum" data-filter-result-count>
+              {tools.length}
+            </span>{' '}
+            tools
+          </button>
+        </div>
+      </aside>
+
+      <div class="results-panel">
+        <div class="results-header">
+          <p class="results-summary" aria-live="polite" aria-atomic="true">
+            Showing <strong id="visible-count">{Math.min(24, tools.length)}</strong> of
+            <span id="match-count">{tools.length}</span> tools
+          </p>
+          <div class="results-controls">
+            <button
+              class="btn btn-secondary btn-sm"
+              type="button"
+              data-save-search
+              title="Save current search and filters"
+            >
+              Save search
+            </button>
+            <button class="btn btn-secondary btn-sm" type="button" data-share-results>
+              <Icon name="link" />
+              <span>Copy link</span>
+            </button>
+            <div class="view-toggle" role="group" aria-label="Result density and layout">
+              <button
+                type="button"
+                data-view-button="list"
+                aria-pressed="true"
+                title="Comfortable list view"
+              >
+                <Icon name="list" />
+                <span class="sr-only">Comfortable list view</span>
+              </button>
+              <button
+                type="button"
+                data-view-button="compact"
+                aria-pressed="false"
+                title="Compact density"
+              >
+                <Icon name="compact" />
+                <span class="sr-only">Compact view</span>
+              </button>
+              <button type="button" data-view-button="grid" aria-pressed="false" title="Grid view">
+                <Icon name="grid" />
+                <span class="sr-only">Grid view</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="share-feedback">
+          <p class="share-status" data-share-status role="status"></p>
+          <input
+            class="share-fallback"
+            data-share-fallback
+            type="text"
+            aria-label="Results link to copy manually"
+            readonly
+            hidden
+          />
+        </div>
+
+        <div id="tool-results" class="tool-list" data-view="list">
+          {tools.map((tool) => (
+            <ToolCard
+              tool={tool}
+              locale={locale}
+              categoryName={categoryNames[tool.category] ?? tool.category}
+            />
+          ))}
+        </div>
+
+        <div id="empty-results" class="empty-state" hidden>
+          <strong>No tools match those filters.</strong>
+          <p>
+            Try fewer words, check the spelling, or clear a filter. Missing a tool that belongs
+            here?
+          </p>
+          <div class="did-you-mean" data-did-you-mean hidden></div>
+          <div class="actions-row">
+            <button class="btn" type="button" data-clear-filters>
+              Clear filters
+            </button>
+            <button class="btn btn-secondary" type="button" data-surprise-me>
+              Surprise me
+            </button>
+            <a
+              class="btn btn-secondary"
+              href={suggestUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Suggest a tool
+            </a>
+          </div>
+        </div>
+
+        <div class="pagination" data-directory-pagination hidden>
+          <button class="btn btn-secondary" type="button" data-load-more>
+            Load more tools
+          </button>
+          <label class="infinite-scroll-toggle">
+            <input type="checkbox" data-infinite-scroll />
+            <span>Auto-load more while scrolling</span>
+          </label>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  import { initDirectory } from '../scripts/directory';
+  initDirectory();
+</script>

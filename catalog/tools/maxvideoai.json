@@ -1,0 +1,18 @@
+{
+  "name": "MaxVideoAI",
+  "url": "https://maxvideoai.com",
+  "description": "Pay-as-you-go AI video generation with model comparison and MCP workflows.",
+  "category": "video-and-media",
+  "subcategory": {
+    "id": "video-creation-and-editing",
+    "name": "Video Creation & Editing"
+  },
+  "order": 196,
+  "openSource": false,
+  "pricing": null,
+  "status": "listed",
+  "source": {
+    "kind": "readme-migration",
+    "migratedAt": "2026-09-21"
+  }
+}

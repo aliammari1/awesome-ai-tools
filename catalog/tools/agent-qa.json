@@ -1,0 +1,18 @@
+{
+  "name": "agent-qa",
+  "url": "https://github.com/vostride/agent-qa",
+  "description": "Self-improving natural-language web, Android and iOS testing with advanced memidex memory, a CLI, dashboard and MCP tools.",
+  "category": "code-generation-and-development",
+  "subcategory": {
+    "id": "development-tools",
+    "name": "Development Tools"
+  },
+  "order": 9999,
+  "openSource": null,
+  "pricing": null,
+  "status": "listed",
+  "source": {
+    "kind": "community",
+    "addedAt": "2026-10-25"
+  }
+}
