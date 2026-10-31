@@ -520,6 +520,7 @@ Marketing, sales, e-commerce, retail, career, and job-search tools.
 - [Seamless.ai](https://seamless.ai/) - AI-powered B2B lead generation and prospecting.
 - [LogNorm](https://lognorm.com/) - SEO and AI-visibility platform that hands a ranked growth backlog to AI agents over MCP.
 - [TeleTraff](https://teletraff.com/en) - Browser-based panel for Telegram promotion and advertising that writes AI comments on channel posts, invites audiences, sends DM campaigns, and lets AI handle dialogs with leads.
+- [BulkPublish](https://www.bulkpublish.com/) - AI-agent API and MCP server for multi-platform social publishing.
 - [CrakSEO Search Console MCP](https://docs.crakseo.com/mcp-servers/search-console) - Free remote MCP access for AI assistants to query owned-site Google Search Console and Bing Webmaster data; authentication required.
 
 ### E-commerce & Retail
