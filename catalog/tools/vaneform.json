@@ -1,0 +1,18 @@
+{
+  "name": "Vaneform",
+  "url": "https://vaneform.com/",
+  "description": "Free website traffic checker with monthly visits, trends, sources, growth leaderboards, and a hosted MCP for AI assistants.",
+  "category": "business-and-marketing",
+  "subcategory": {
+    "id": "marketing-and-sales",
+    "name": "Marketing & Sales"
+  },
+  "order": 10000,
+  "openSource": false,
+  "pricing": "free",
+  "status": "listed",
+  "source": {
+    "kind": "community",
+    "addedAt": "2026-10-31"
+  }
+}

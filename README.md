@@ -521,6 +521,7 @@ Marketing, sales, e-commerce, retail, career, and job-search tools.
 - [LogNorm](https://lognorm.com/) - SEO and AI-visibility platform that hands a ranked growth backlog to AI agents over MCP.
 - [TeleTraff](https://teletraff.com/en) - Browser-based panel for Telegram promotion and advertising that writes AI comments on channel posts, invites audiences, sends DM campaigns, and lets AI handle dialogs with leads.
 - [CrakSEO Search Console MCP](https://docs.crakseo.com/mcp-servers/search-console) - Free remote MCP access for AI assistants to query owned-site Google Search Console and Bing Webmaster data; authentication required.
+- [Vaneform](https://vaneform.com/) - Free website traffic checker with monthly visits, trends, sources, growth leaderboards, and a hosted MCP for AI assistants.
 
 ### E-commerce & Retail
 
