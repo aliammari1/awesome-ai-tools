@@ -316,6 +316,7 @@ Video generation, editing, enhancement, effects, and media-production tools.
 - [Sora](https://openai.com/sora) - OpenAI's video & audio generation with synchronized dialogue, iOS app.
 - [Google Veo](https://deepmind.google/technologies/veo/) - Video model with Ingredients-to-Video, native audio.
 - [Runway](https://runwayml.com/) - Video generation model with accurate motion and physics representation.
+- [Seedance 2.0](https://seedance2ai.im/) - AI video generator with native audio for controllable multi-shot videos.
 - [Kling AI](https://kling.ai/) - Video generation with audio, dialogue, avatars, and editing features.
 - [MiniMax Hailuo](https://hailuo.ai/) - Video generation with improved motion.
 - [Pika](https://pika.art/) - Video generator with scene integration.
