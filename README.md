@@ -485,7 +485,6 @@ Educational assistants, learning tools, academic research, and research platform
 
 ### Educational AI Tools
 
-- [IELTS Writing Practice](https://ieltswritingpractice.app/) - Free IELTS question bank and timed practice, with paid AI scores and writing feedback.
 - [Khan Academy](https://www.khanacademy.org/) - Educational platform with Khanmigo AI tutor powered by GPT-4.
 - [Coursera](https://www.coursera.org/) - Online courses with AI recommendations and career coaching.
 - [Duolingo](https://www.duolingo.com/) - Language learning with Duolingo Max AI features and roleplay.
@@ -496,6 +495,7 @@ Educational assistants, learning tools, academic research, and research platform
 - [Synthesis](https://www.synthesis.com/) - AI math tutoring for kids with problem-solving focus.
 - [Cognii](https://www.cognii.com/) - AI tutoring with natural language assessment.
 - [Carnegie Learning](https://www.carnegielearning.com/) - AI-powered math and literacy solutions for schools.
+- [IELTS Writing Practice](https://ieltswritingpractice.app/) - Free IELTS question bank and timed practice, with paid AI scores and writing feedback.
 
 ### Research Platforms
 
