@@ -1,6 +1,6 @@
 # Awesome AI Tools [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
-> A curated catalog of **389 AI tools** across **19 categories**.
+> A curated catalog of **411 AI tools** across **19 categories**.
 > Browse the searchable directory at **https://docs.aliammari.dev**.
 
 Find AI tools by task, then compare recorded pricing and open-source information in the [searchable directory](https://docs.aliammari.dev/en/). Unknown metadata stays unknown.
@@ -32,6 +32,8 @@ Choose a category below, [suggest a tool](https://github.com/aliammari1/awesome-
 ## AI Agents
 
 Agent SDKs, autonomous systems, orchestration, tool use, memory, and browser automation.
+
+- [Drevon](https://www.drevon.dev) - Mac app that connects to your Claude Code or Codex and turns it into an end-to-end GTM operator: research, grunt work, analysis and actions across your stack from a single prompt, in your own browser with your own logins.
 
 ### Agent Frameworks
 
@@ -65,6 +67,8 @@ Agent SDKs, autonomous systems, orchestration, tool use, memory, and browser aut
 ## Productivity
 
 Scheduling, task management, project workflows, email, and day-to-day work automation.
+
+- [OtterFill](https://otterfill.com/) - AI form filler that turns any form into clear questions, prefills answers from your documents, and cross-checks answers across your other forms.
 
 ### Time Management & Scheduling
 
@@ -130,6 +134,7 @@ Image generation, visual design, creative production, and design-assistance tool
 - [Jasper Art](https://www.jasper.ai/art) - AI art generation for marketers.
 - [BlueWillow](https://www.bluewillow.ai/) - Free AI image generator.
 - [Prisma](https://prisma-ai.com/) - Artistic photo filters.
+- [Seedream 5.5](https://seedream5-5.net/) - Web AI image generator and editor that works from text prompts or reference photos.
 
 ### Design Tools
 
@@ -145,7 +150,9 @@ Image generation, visual design, creative production, and design-assistance tool
 - [LogoAI](https://www.logoai.com/) - AI logo generator with brand kit creation.
 - [Brandmark](https://brandmark.io/) - AI brand identity generator with color palettes.
 - [Looka](https://looka.com/) - AI logo maker with full brand kit.
+- [ProRemover](https://proremover.io/) - Browser AI tool to remove objects, people, text, and watermarks from photos.
 - [APPLORE](https://applore.app/ai-app-icon-generator) - AI app icon generator with a reference library of 18,000+ real App Store and Google Play icons.
+- [Klaruvo](https://www.powersoftware.app/en-US/product/detail/klaruvo) - Desktop AI image editor for object and watermark removal that runs fully offline, with cutout, upscaling and batch processing.
 
 ## Communication & Writing
 
@@ -169,6 +176,7 @@ Writing, content creation, translation, localization, and communication assistan
 - [Hyperwrite](https://hyperwriteai.com/) - Personal AI writing assistant with AutoWrite and TypeAhead.
 - [Frase](https://www.frase.io/) - AI SEO content creation and optimization with SERP analysis.
 - [Surfer SEO](https://surferseo.com/) - AI-powered content optimization with NLP analysis.
+- [README Skills](https://github.com/Shiaoming123/readme-skills) - Evidence-first Agent Skill for auditing and writing repository-matched, multilingual READMEs.
 
 ### Content Creation
 
@@ -180,6 +188,7 @@ Writing, content creation, translation, localization, and communication assistan
 - [Beautiful.ai](https://www.beautiful.ai/) - AI-powered presentation design.
 - [Hemingway Editor](https://hemingwayapp.com/) - Readability-focused writing tool.
 - [SocialBu](https://socialbu.com/) - AI-powered social media management for scheduling, publishing, and automating across X, Instagram, LinkedIn, Facebook, TikTok, and more.
+- [Multi Upload Tool](https://multi-upload-tool.com/) - Schedules one video to TikTok, YouTube Shorts, Instagram, Facebook, LinkedIn, Pinterest, Bluesky, Threads, and X from a dashboard, REST API, or MCP server that lets Claude, ChatGPT, and Cursor create posts.
 
 ### Translation & Localization
 
@@ -225,6 +234,7 @@ Machine learning platforms, analytics, visualization, and data-focused research 
 - [Jupyter Notebook](https://jupyter.org/) - Interactive computing environment.
 - [Google Colab](https://colab.research.google.com/) - Free cloud-based notebooks.
 - [Kaggle](https://www.kaggle.com/) - Data science competition platform.
+- [Pulse](https://pulsecorp.co) - AI-moderated customer interviews for market research.
 
 ## Natural Language Processing
 
@@ -336,6 +346,13 @@ Video generation, editing, enhancement, effects, and media-production tools.
 - [MaxVideoAI](https://maxvideoai.com) - Multi-engine AI video generation hub (Sora, Veo, Wan, Kling, LTX…).
 - [ZOOOP](https://zooop.ai) - AI-native filmmaking workstation for image, video, audio, and lip-sync generation.
 - [YumCut](https://yumcut.com/) - Self-hosted AI workflow for generating finished vertical videos, with a user automation API.
+- [Ideoy](https://ideoy.ai/) - AI meme video generator that remakes this week's memes with one selfie.
+- [IntroVideo](https://introvideo.io/) - AI logo intro generator that turns a logo into an 8-second cinematic intro video in 16:9 or 9:16.
+- [Visual Maker AI](https://visualmakerai.com/) - Web workspace for generating images, turning photos into short videos, and breaking scripts into scenes and clips with models such as Veo, Seedance, and Kling.
+- [Wan 3.5](https://wan35.app/) - Browser-based AI video generator for text-to-video and image-to-video creation.
+- [Wedding AI](https://weddingai.studio/) - AI wedding invitation video maker that turns templates, names, and photos into an HD MP4.
+- [Effect Video](https://effect.video/) - AI photo-to-video tool with viral effect templates for short vertical clips.
+- [Pixwit](https://pixwit.ai/) - All-in-one AI creative platform for generating images, videos, and music from text or image prompts.
 - [VideoText](https://videotext.io) - Subtitle and transcript tools: Make Client Ready format compliance checks, subtitle fixing, video-to-SRT/VTT, translation, video compression and voice recording.
 
 ### Video Enhancement & Effects
@@ -364,6 +381,7 @@ Coding assistants, developer tools, code analysis, and software-engineering auto
 - [Continue.dev](https://continue.dev/) - Open-source AI coding assistant for VS Code & JetBrains with custom models.
 - [Aider](https://aider.chat/) - Open-source AI pair programmer for terminal with Git integration.
 - [CodeT5](https://github.com/salesforce/CodeT5) - Open-source code generation by Salesforce.
+- [Orbi](https://orbi.build/) - Open-source GitHub coding agent that turns issues labeled ai-ready into independently reviewed, CI-checked, merged pull requests. Free tier: first 3 merged pull requests free, no credit card required.
 
 ### Development Tools
 
@@ -414,6 +432,8 @@ AI search engines, research assistants, knowledge discovery, and evidence-gather
 - [Scite](https://scite.ai/) - Smart citations for research validation.
 - [Connected Papers](https://www.connectedpapers.com/) - Visual academic paper exploration.
 - [CiteMe](https://citeme.app/) - AI-powered academic citation generator that searches 11+ scholarly databases and formats references in 40+ citation styles.
+- [Arcmira: YouTube Transcript Search](https://arcmira.com) - Search YouTube transcripts for timestamped quotes, speaker appearances, sponsors and recommendations through an app, API and MCP connection.
+- [LibreAI](https://libreaihub.vercel.app) - A directory of open-source AI projects organized into categories, with README-derived installation guides.
 
 ## Large Language Models
 
@@ -451,6 +471,7 @@ General-purpose models, open models, and frameworks used to build with LLMs.
 - [vLLM](https://vllm.ai/) - High-throughput LLM serving with PagedAttention.
 - [Anyscale](https://www.anyscale.com/) - Scalable LLM deployment with Ray framework.
 - [Future AGI](https://github.com/future-agi/future-agi) - Open-source self-hostable end-to-end agent engineering and optimization platform unifying tracing, evaluation, simulation, datasets, gateway, and guardrails in one feedback loop.
+- [ModelVRAM](https://modelvram.com/) - Browser-based calculator that estimates the GPU memory an LLM needs for inference or fine-tuning (weights, KV cache and overhead) from the model's Hugging Face config, and lists the GPUs and Macs that fit.
 
 ## Research & Education
 
@@ -507,6 +528,7 @@ Marketing, sales, e-commerce, retail, career, and job-search tools.
 - [Jobscan](https://www.jobscan.co/) - Resume and LinkedIn optimization with ATS keyword matching.
 - [Resume Worded](https://resumeworded.com/) - AI resume and LinkedIn feedback with score and targeted advice.
 - [Kickresume](https://www.kickresume.com/) - AI resume builder with templates and job matching.
+- [JobEmerge](https://www.jobemerge.work/) - An AI career copilot with a job-fit test, a 19-language resume translator and a simple Markdown resume editor.
 
 ## Gaming & Entertainment
 
@@ -583,6 +605,7 @@ Safety evaluation, governance, responsible-AI, and risk-management tools.
 - [IBM Watson OpenScale](https://www.ibm.com/cloud/watson-openscale) - AI governance platform.
 - [Microsoft Responsible AI](https://www.microsoft.com/en-us/ai/responsible-ai) - AI ethics framework.
 - [Google AI Principles](https://ai.google/principles/) - AI ethics guidelines.
+- [isGenAI](https://isgenai.com/) - Free checker that reports recorded evidence of AI use in images, text and code, such as C2PA Content Credentials, IPTC AI labels and saved generator prompts, with a keyless REST API and MCP server.
 
 ## Miscellaneous
 
@@ -618,6 +641,7 @@ Infrastructure, MLOps, automation, and specialized tools that span multiple cate
 - [Devin AI](https://cognition.ai/) - Autonomous AI software developer agent for full SDLC.
 - [Harvey AI](https://harvey.ai/) - AI agent for automating legal workflows and contract review.
 - [Dust](https://dust.tt/) - AI assistant builder for enterprise with custom agents and data sources.
+- [Frink](https://frink.dev/) - Desktop-first, open-source (MIT) application for running parallel agents, and multi-step custom workflows triggered by schedules, webhooks or events from tools like Linear and Sentry, across your already-used providers.
 
 ### Specialized AI Applications
 
