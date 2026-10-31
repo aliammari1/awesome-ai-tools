@@ -1,0 +1,11 @@
+{
+  "name": "aiFetchly",
+  "url": "https://www.aifetchly.com",
+  "description": "Open-source desktop AI agent for business automation \u2014 lead generation, knowledge library RAG, outreach, and scheduled workflows. Runs on Windows, macOS, Linux.",
+  "category": "ai-agents",
+  "subcategory": null,
+  "order": 9999,
+  "openSource": true,
+  "pricing": null,
+  "status": "listed"
+}
