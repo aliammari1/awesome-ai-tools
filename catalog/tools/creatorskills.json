@@ -1,0 +1,18 @@
+{
+  "name": "CreatorSkills",
+  "url": "https://creatorskills.co",
+  "description": "Marketplace for AI skills (SKILL.md format) for content creators covering YouTube scripting, sponsorship analysis, content repurposing, and audience growth.",
+  "category": "communication-and-writing",
+  "subcategory": {
+    "id": "content-creation",
+    "name": "Content Creation"
+  },
+  "order": 9999,
+  "openSource": false,
+  "pricing": "freemium",
+  "status": "listed",
+  "source": {
+    "kind": "community",
+    "addedAt": "2026-10-31"
+  }
+}
