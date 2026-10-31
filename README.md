@@ -587,6 +587,7 @@ Safety evaluation, governance, responsible-AI, and risk-management tools.
 - [IBM Watson OpenScale](https://www.ibm.com/cloud/watson-openscale) - AI governance platform.
 - [Microsoft Responsible AI](https://www.microsoft.com/en-us/ai/responsible-ai) - AI ethics framework.
 - [Google AI Principles](https://ai.google/principles/) - AI ethics guidelines.
+- [isGenAI](https://isgenai.com/) - Free checker that reports recorded evidence of AI use in images, text and code, such as C2PA Content Credentials, IPTC AI labels and saved generator prompts, with a keyless REST API and MCP server.
 
 ## Miscellaneous
 

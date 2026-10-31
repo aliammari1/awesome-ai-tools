@@ -1,0 +1,18 @@
+{
+  "name": "isGenAI",
+  "url": "https://isgenai.com/",
+  "description": "Free checker that reports recorded evidence of AI use in images, text and code, such as C2PA Content Credentials, IPTC AI labels and saved generator prompts, with a keyless REST API and MCP server.",
+  "category": "ai-safety-and-ethics",
+  "subcategory": {
+    "id": "ai-ethics-and-governance",
+    "name": "AI Ethics & Governance"
+  },
+  "order": 9999,
+  "openSource": false,
+  "pricing": "free",
+  "status": "listed",
+  "source": {
+    "kind": "community",
+    "addedAt": "2026-10-22"
+  }
+}
