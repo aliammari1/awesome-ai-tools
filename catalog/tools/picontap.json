@@ -1,0 +1,18 @@
+{
+  "name": "PicOnTap",
+  "url": "https://picontap.com/",
+  "description": "Browser-based AI image editor that applies text-prompt edits such as object removal, background replacement, recoloring and photo restoration, with a free tier and no sign-up required.",
+  "category": "creativity-and-design",
+  "subcategory": {
+    "id": "design-tools",
+    "name": "Design Tools"
+  },
+  "order": 9999,
+  "openSource": false,
+  "pricing": null,
+  "status": "listed",
+  "source": {
+    "kind": "community",
+    "addedAt": "2026-11-01"
+  }
+}
