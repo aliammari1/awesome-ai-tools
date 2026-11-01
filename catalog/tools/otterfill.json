@@ -1,0 +1,15 @@
+{
+  "name": "OtterFill",
+  "url": "https://otterfill.com/",
+  "description": "AI form filler that turns any form into clear questions, prefills answers from your documents, and cross-checks answers across your other forms.",
+  "category": "productivity",
+  "subcategory": null,
+  "order": 9999,
+  "openSource": null,
+  "pricing": null,
+  "status": "listed",
+  "source": {
+    "kind": "community",
+    "addedAt": "2026-10-19"
+  }
+}

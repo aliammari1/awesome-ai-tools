@@ -1,0 +1,12 @@
+node_modules/
+dist/
+.astro/
+.serena/
+.omx/
+bun.lock
+README.md
+.changed-urls.txt
+lychee/
+CODE_OF_CONDUCT.md
+src/styles/global.css
+

@@ -1,0 +1,67 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import LegacyLocaleNotice from '../../components/LegacyLocaleNotice.astro';
+import PageHeader from '../../components/PageHeader.astro';
+import { changelogGroups, getCatalog } from '../../lib/catalog';
+import { formatDate, formatNumber, useTranslations } from '../../lib/i18n';
+import { locales, isLocale } from '../../lib/locales';
+
+export function getStaticPaths() {
+  return locales.map((locale) => ({ params: { locale } }));
+}
+
+const requested = Astro.params.locale;
+if (!isLocale(requested)) throw new Error('Unsupported locale');
+const locale = requested;
+const prefix = '/' + locale;
+const t = useTranslations(locale);
+const n = (value: number) => formatNumber(locale, value);
+const { tools, categories } = await getCatalog();
+const names = Object.fromEntries(categories.map((category) => [category.id, category.name]));
+const groups = changelogGroups(tools);
+---
+
+<BaseLayout
+  title={t('page.changelog.title')}
+  description={t('page.changelog.description')}
+  locale={locale}
+>
+  <LegacyLocaleNotice locale={locale} />
+
+  <PageHeader
+    title={t('page.changelog.title')}
+    lead={t('page.changelog.description')}
+    crumbs={[{ label: t('nav.directory'), href: prefix + '/#directory' }]}
+  >
+    <p class="page-lead">
+      {n(tools.length)} records · {n(groups.length)} dates
+    </p>
+  </PageHeader>
+
+  <section class="section" aria-label="Catalog changelog">
+    <div class="shell">
+      <ol class="changelog">
+        {groups.map((group) => (
+          <li>
+            <h2>
+              <time datetime={group.date}>{formatDate(locale, group.date)}</time>
+              <span class="count">{n(group.tools.length)}</span>
+            </h2>
+            <ul>
+              {group.tools.map((tool) => (
+                <li lang="en">
+                  <a href={prefix + '/tools/' + tool.id + '/'}>{tool.name}</a>
+                  <span>
+                    {names[tool.category] ?? tool.category}
+                    {' · '}
+                    {tool.source.kind === 'community' ? 'Community addition' : 'Catalog migration'}
+                  </span>
+                </li>
+              ))}
+            </ul>
+          </li>
+        ))}
+      </ol>
+    </div>
+  </section>
+</BaseLayout>

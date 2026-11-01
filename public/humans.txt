@@ -1,0 +1,12 @@
+/* TEAM */
+Maintainer: Ali Ammari
+Repository: https://github.com/aliammari1/awesome-ai-tools
+Site: https://docs.aliammari.dev
+
+/* THANKS */
+Contributors: Everyone who has submitted issues, pull requests and catalog corrections on GitHub.
+
+/* SITE */
+Standards: HTML5, CSS3, ES2024, JSON Schema 2020-12, Atom 1.0, OpenSearch 1.1
+Framework: Astro (static output, zero server-side tracking)
+License: CC0 1.0 Universal (Public Domain)

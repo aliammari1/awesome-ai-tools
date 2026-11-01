@@ -1,0 +1,18 @@
+{
+  "name": "Frink",
+  "url": "https://frink.dev/",
+  "description": "Desktop-first, open-source (MIT) application for running parallel agents, and multi-step custom workflows triggered by schedules, webhooks or events from tools like Linear and Sentry, across your already-used providers.",
+  "category": "miscellaneous",
+  "subcategory": {
+    "id": "ai-agents-and-automation",
+    "name": "AI Agents & Automation"
+  },
+  "order": 387,
+  "openSource": true,
+  "pricing": null,
+  "status": "listed",
+  "source": {
+    "kind": "readme-migration",
+    "migratedAt": "2026-09-21"
+  }
+}

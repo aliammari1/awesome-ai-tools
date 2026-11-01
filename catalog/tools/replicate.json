@@ -1,0 +1,18 @@
+{
+  "name": "Replicate",
+  "url": "https://replicate.com/",
+  "description": "Run open-source models in the cloud with simple API.",
+  "category": "large-language-models",
+  "subcategory": {
+    "id": "llm-tools-and-frameworks",
+    "name": "LLM Tools & Frameworks"
+  },
+  "order": 269,
+  "openSource": true,
+  "pricing": null,
+  "status": "listed",
+  "source": {
+    "kind": "readme-migration",
+    "migratedAt": "2026-09-21"
+  }
+}
