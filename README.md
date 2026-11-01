@@ -434,7 +434,6 @@ AI search engines, research assistants, knowledge discovery, and evidence-gather
 
 ### Research & Knowledge Tools
 
-- [AIToolIndex](https://aitoolindex.io/) - Searchable directory for comparing AI tools by use case, pricing, and workflow fit.
 - [Semantic Scholar](https://www.semanticscholar.org/) - AI-powered academic research tool.
 - [Elicit](https://elicit.org/) - AI research assistant for literature review.
 - [NotebookLM](https://notebooklm.google/) - Google's AI research and note-taking assistant.
@@ -444,6 +443,7 @@ AI search engines, research assistants, knowledge discovery, and evidence-gather
 - [Scite](https://scite.ai/) - Smart citations for research validation.
 - [Connected Papers](https://www.connectedpapers.com/) - Visual academic paper exploration.
 - [CiteMe](https://citeme.app/) - AI-powered academic citation generator that searches 11+ scholarly databases and formats references in 40+ citation styles.
+- [AIToolIndex](https://aitoolindex.io/) - Searchable directory for comparing AI tools by use case, pricing, and workflow fit.
 - [Arcmira: YouTube Transcript Search](https://arcmira.com) - Search YouTube transcripts for timestamped quotes, speaker appearances, sponsors and recommendations through an app, API and MCP connection.
 - [DisconfirmAI](https://disconfirmai.com/en) - Investment research site that helps you look for evidence against your thesis, with daily reading from public sources, research on filings and data, and a radar that checks for changes against conditions you set.
 - [LibreAI](https://libreaihub.vercel.app) - A directory of open-source AI projects organized into categories, with README-derived installation guides.
