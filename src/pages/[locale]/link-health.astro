@@ -1,0 +1,145 @@
+---
+import { readFile } from 'node:fs/promises';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import LegacyLocaleNotice from '../../components/LegacyLocaleNotice.astro';
+import PageHeader from '../../components/PageHeader.astro';
+import { useTranslations } from '../../lib/i18n';
+import { locales, isLocale } from '../../lib/locales';
+
+export function getStaticPaths() {
+  return locales.map((locale) => ({ params: { locale } }));
+}
+
+const requested = Astro.params.locale;
+if (!isLocale(requested)) throw new Error('Unsupported locale');
+const locale = requested;
+const prefix = '/' + locale;
+const t = useTranslations(locale);
+
+interface LinkReport {
+  total?: number;
+  successful?: number;
+  failures?: number;
+  timeouts?: number;
+  redirects?: number;
+  excludes?: number;
+  failMapSize?: number;
+}
+
+let report: LinkReport | null = null;
+let reportNote =
+  'No link-health report file is checked in. The page describes the checker until a report exists.';
+for (const relative of ['reports/lychee.json', 'catalog/link-health.json']) {
+  try {
+    const raw = await readFile(new URL('../../../' + relative, import.meta.url), 'utf8');
+    const parsed = JSON.parse(raw) as Record<string, unknown>;
+    const failMap = parsed.fail_map;
+    report = {
+      total: typeof parsed.total === 'number' ? parsed.total : undefined,
+      successful: typeof parsed.successful === 'number' ? parsed.successful : undefined,
+      failures: typeof parsed.failures === 'number' ? parsed.failures : undefined,
+      timeouts: typeof parsed.timeouts === 'number' ? parsed.timeouts : undefined,
+      redirects: typeof parsed.redirects === 'number' ? parsed.redirects : undefined,
+      excludes: typeof parsed.excludes === 'number' ? parsed.excludes : undefined,
+      failMapSize: failMap && typeof failMap === 'object' ? Object.keys(failMap).length : undefined,
+    };
+    reportNote =
+      'Figures below are copied from ' +
+      relative +
+      '. They are the checker’s result, not a ranking of tools.';
+    break;
+  } catch {
+    /* try the next conventional path */
+  }
+}
+
+let policy = 'Checker configuration was not found next to this build.';
+try {
+  policy = await readFile(new URL('../../../.lychee.toml', import.meta.url), 'utf8');
+} catch {
+  /* fixture builds may omit the repository config */
+}
+---
+
+<BaseLayout
+  title={t('page.linkHealth.title')}
+  description={t('page.linkHealth.description')}
+  locale={locale}
+>
+  <LegacyLocaleNotice locale={locale} />
+
+  <PageHeader
+    title={t('page.linkHealth.title')}
+    lead={t('page.linkHealth.description')}
+    crumbs={[{ label: t('nav.directory'), href: prefix + '/#directory' }]}
+  />
+
+  <section class="section" aria-labelledby="report-title">
+    <div class="shell prose-grid">
+      <div class="prose">
+        <h2 id="report-title">Latest report</h2>
+        <p>{reportNote}</p>
+        {report && (
+          <dl class="spec">
+            {report.total !== undefined && (
+              <div>
+                <dt>Checked</dt>
+                <dd>{report.total}</dd>
+              </div>
+            )}
+            {report.successful !== undefined && (
+              <div>
+                <dt>Successful</dt>
+                <dd>{report.successful}</dd>
+              </div>
+            )}
+            {report.failures !== undefined && (
+              <div>
+                <dt>Failures</dt>
+                <dd>{report.failures}</dd>
+              </div>
+            )}
+            {report.timeouts !== undefined && (
+              <div>
+                <dt>Timeouts</dt>
+                <dd>{report.timeouts}</dd>
+              </div>
+            )}
+            {report.redirects !== undefined && (
+              <div>
+                <dt>Redirects</dt>
+                <dd>{report.redirects}</dd>
+              </div>
+            )}
+            {report.excludes !== undefined && (
+              <div>
+                <dt>Excluded</dt>
+                <dd>{report.excludes}</dd>
+              </div>
+            )}
+            {report.failMapSize !== undefined && (
+              <div>
+                <dt>Failed URLs</dt>
+                <dd>{report.failMapSize}</dd>
+              </div>
+            )}
+          </dl>
+        )}
+        <p>
+          Broken links can be reported from any tool page. The checker configuration lives in
+          <code>.lychee.toml</code>.
+        </p>
+      </div>
+      <div>
+        <h2 class="sr-only">Checker configuration</h2>
+        <div class="code-block">
+          <div class="code-block-head">
+            <span>.lychee.toml</span>
+            <span>repository</span>
+          </div>
+          <pre><code>{policy}</code></pre>
+        </div>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

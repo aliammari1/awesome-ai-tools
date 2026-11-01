@@ -1,0 +1,18 @@
+{
+  "name": "VideoText",
+  "url": "https://videotext.io",
+  "description": "Subtitle and transcript tools: Make Client Ready format compliance checks, subtitle fixing, video-to-SRT/VTT, translation, video compression and voice recording.",
+  "category": "video-and-media",
+  "subcategory": {
+    "id": "video-creation-and-editing",
+    "name": "Video Creation & Editing"
+  },
+  "order": 9999,
+  "openSource": false,
+  "pricing": "freemium",
+  "status": "listed",
+  "source": {
+    "kind": "community",
+    "addedAt": "2026-10-31"
+  }
+}

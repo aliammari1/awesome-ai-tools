@@ -2,38 +2,126 @@ name: CI
 
 on:
   pull_request:
-    branches:
-      - docs
-  push:
-    branches:
-      - docs
+    branches: [main]
+    types: [opened, synchronize, reopened, ready_for_review]
+  merge_group:
+    branches: [main]
+    types: [checks_requested]
 
 concurrency:
-  group: ci-${{ github.ref }}
-  cancel-in-progress: true
+  group: ci-${{ github.event_name }}-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: ${{ github.event_name == 'pull_request' }}
+
+permissions:
+  contents: read
+
+env:
+  CI: 'true'
 
 jobs:
-  validate:
+  checks:
+    name: Checks
     runs-on: ubuntu-latest
-
+    timeout-minutes: 20
     steps:
       - name: Checkout
-        uses: actions/checkout@v6
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
-          ref: docs
+          persist-credentials: false
 
       - name: Setup Node
-        uses: actions/setup-node@v6
+        uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
         with:
-          node-version: 24.14.1
+          node-version-file: '.node-version'
+          package-manager-cache: false
 
       - name: Setup Bun
-        uses: oven-sh/setup-bun@v2
+        uses: oven-sh/setup-bun@0c5077e51419868618aeaa5fe8019c62421857d6 # v2.2.0
         with:
-          bun-version: latest
+          bun-version: '1.4.3'
 
-      - name: Install dependencies
-        run: bun install --frozen-lockfile
+      - name: Install locked dependencies
+        run: bun ci
+
+      - name: Audit dependency vulnerabilities
+        run: bun run audit:dependencies
+
+      - name: Validate catalog and README sync
+        run: bun run validate && bun run check:readme
+
+      - name: Run automated test suite
+        run: bun run test
+
+      - name: Check code style, types, and awesome-lint
+        run: bun run typecheck && bun run format:check && bun run lint && bun run lint:awesome
 
       - name: Build site
         run: bun run build
+
+  dependency-review:
+    name: Dependency security
+    if: ${{ github.event_name == 'pull_request' }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+
+      - name: Review dependency changes
+        uses: actions/dependency-review-action@a1d282b36b6f3519aa1f3fc636f609c47dddb294 # v5.0.0
+        with:
+          fail-on-severity: moderate
+          fail-on-scopes: runtime,development,unknown
+          show-openssf-scorecard: true
+          show-patched-versions: true
+
+  changed-links:
+    name: Changed catalog links (advisory)
+    if: ${{ github.event_name == 'pull_request' }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Checkout
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+
+      - name: Extract new or changed catalog URLs
+        env:
+          BASE_SHA: ${{ github.event.pull_request.base.sha }}
+          HEAD_SHA: ${{ github.event.pull_request.head.sha }}
+        run: node scripts/changed-links.mjs "$BASE_SHA" "$HEAD_SHA" .changed-urls.txt
+
+      - name: Check changed URLs
+        uses: lycheeverse/lychee-action@e7477775783ea5526144ba13e8db5eec57747ce8 # v2.9.0
+        with:
+          args: --config .lychee.toml --no-progress .changed-urls.txt
+          format: markdown
+          jobSummary: true
+          failIfEmpty: false
+          fail: false
+
+  gate:
+    name: CI gate
+    if: ${{ always() }}
+    needs: [checks, dependency-review, changed-links]
+    runs-on: ubuntu-latest
+    timeout-minutes: 2
+    steps:
+      - name: Require checks and valid link extraction
+        env:
+          CHECKS: ${{ needs.checks.result }}
+          DEPENDENCIES: ${{ needs.dependency-review.result }}
+          LINKS: ${{ needs.changed-links.result }}
+          EVENT: ${{ github.event_name }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          [[ "$CHECKS" == success ]]
+          if [[ "$EVENT" == pull_request ]]; then
+            [[ "$DEPENDENCIES" == success ]]
+            [[ "$LINKS" == success ]]
+          fi
