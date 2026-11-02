@@ -180,8 +180,8 @@ Writing, content creation, translation, localization, and communication assistan
 - [Hyperwrite](https://hyperwriteai.com/) - Personal AI writing assistant with AutoWrite and TypeAhead.
 - [Frase](https://www.frase.io/) - AI SEO content creation and optimization with SERP analysis.
 - [Surfer SEO](https://surferseo.com/) - AI-powered content optimization with NLP analysis.
-- [AI eBook Pro](https://aiebookpro.com/) - AI eBook generator that writes a full book with chapters and a cover from one sentence, with PDF, EPUB and DOCX export.
 - [README Skills](https://github.com/Shiaoming123/readme-skills) - Evidence-first Agent Skill for auditing and writing repository-matched, multilingual READMEs.
+- [AI eBook Pro](https://aiebookpro.com/) - AI eBook generator that writes a full book with chapters and a cover from one sentence, with PDF, EPUB and DOCX export.
 
 ### Content Creation
 
