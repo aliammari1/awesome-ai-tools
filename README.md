@@ -357,6 +357,8 @@ Video generation, editing, enhancement, effects, and media-production tools.
 - [Visual Maker AI](https://visualmakerai.com/) - Web workspace for generating images, turning photos into short videos, and breaking scripts into scenes and clips with models such as Veo, Seedance, and Kling.
 - [Wan 3.5](https://wan35.app/) - Browser-based AI video generator for text-to-video and image-to-video creation.
 - [Wedding AI](https://weddingai.studio/) - AI wedding invitation video maker that turns templates, names, and photos into an HD MP4.
+- [Barz Studio](https://barzvideo.com/) - Free browser rap lyric video maker with lyric sync and beat-reactive visuals; does not generate songs or AI footage.
+- [Cyanvid](https://cyanvid.com/) - AI video generator SaaS for text-to-video and image-to-video with clear credit quotes before generate.
 - [Effect Video](https://effect.video/) - AI photo-to-video tool with viral effect templates for short vertical clips.
 - [Magic Hour](https://magichour.ai/) - AI video creation and editing with text-to-video, image-to-video, face swap, lip sync, and animation tools.
 - [Pixwit](https://pixwit.ai/) - All-in-one AI creative platform for generating images, videos, and music from text or image prompts.
