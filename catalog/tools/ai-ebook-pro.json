@@ -1,0 +1,18 @@
+{
+  "name": "AI eBook Pro",
+  "url": "https://aiebookpro.com/",
+  "description": "AI eBook generator that writes a full book with chapters and a cover from one sentence, with PDF, EPUB and DOCX export.",
+  "category": "communication-and-writing",
+  "subcategory": {
+    "id": "writing-assistants",
+    "name": "Writing Assistants"
+  },
+  "order": 9999,
+  "openSource": false,
+  "pricing": "paid",
+  "status": "listed",
+  "source": {
+    "kind": "community",
+    "addedAt": "2026-10-31"
+  }
+}
