@@ -157,6 +157,7 @@ Image generation, visual design, creative production, and design-assistance tool
 - [APPLORE](https://applore.app/ai-app-icon-generator) - AI app icon generator with a reference library of 18,000+ real App Store and Google Play icons.
 - [Klaruvo](https://www.powersoftware.app/en-US/product/detail/klaruvo) - Desktop AI image editor for object and watermark removal that runs fully offline, with cutout, upscaling and batch processing.
 - [RoomMaker AI](https://roommakerai.org/) - AI room designer that redesigns a room from a photo, previews renovation changes, stages furniture, and drafts floor plan concepts.
+- [CoverNice](https://covernice.com/) - Book cover studio for Amazon KDP: five editable directions, spine width from page count, print-ready wrap PDF.
 
 ## Communication & Writing
 
