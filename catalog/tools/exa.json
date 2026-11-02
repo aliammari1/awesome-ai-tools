@@ -8,7 +8,7 @@
     "name": "AI-Powered Search Engines"
   },
   "order": 240,
-  "openSource": null,
+  "openSource": false,
   "pricing": null,
   "status": "listed",
   "source": {

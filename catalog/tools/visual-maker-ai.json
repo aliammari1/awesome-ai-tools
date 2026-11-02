@@ -1,0 +1,18 @@
+{
+  "name": "Visual Maker AI",
+  "url": "https://visualmakerai.com/",
+  "description": "Web workspace for generating images, turning photos into short videos, and breaking scripts into scenes and clips with models such as Veo, Seedance, and Kling.",
+  "category": "video-and-media",
+  "subcategory": {
+    "id": "video-creation-and-editing",
+    "name": "Video Creation & Editing"
+  },
+  "order": 387,
+  "openSource": false,
+  "pricing": "freemium",
+  "status": "listed",
+  "source": {
+    "kind": "readme-migration",
+    "migratedAt": "2026-09-21"
+  }
+}

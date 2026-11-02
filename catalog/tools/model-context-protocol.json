@@ -3,9 +3,12 @@
   "url": "https://modelcontextprotocol.io/",
   "description": "Open standard for connecting AI agents to tools and data sources.",
   "category": "ai-agents",
-  "subcategory": null,
+  "subcategory": {
+    "id": "agent-protocols-and-tools",
+    "name": "Agent Protocols & Tools"
+  },
   "order": 1,
-  "openSource": null,
+  "openSource": true,
   "pricing": null,
   "status": "listed",
   "source": {

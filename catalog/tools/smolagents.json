@@ -3,9 +3,12 @@
   "url": "https://github.com/huggingface/smolagents",
   "description": "Hugging Face's minimal library for code-writing agents.",
   "category": "ai-agents",
-  "subcategory": null,
+  "subcategory": {
+    "id": "agent-frameworks",
+    "name": "Agent Frameworks"
+  },
   "order": 5,
-  "openSource": null,
+  "openSource": true,
   "pricing": null,
   "status": "listed",
   "source": {

@@ -3,9 +3,12 @@
   "url": "https://code.claude.com/docs/en/agent-sdk/overview",
   "description": "Build agents on the same harness as Claude Code with tool use and MCP.",
   "category": "ai-agents",
-  "subcategory": null,
+  "subcategory": {
+    "id": "agent-frameworks",
+    "name": "Agent Frameworks"
+  },
   "order": 2,
-  "openSource": null,
+  "openSource": false,
   "pricing": null,
   "status": "listed",
   "source": {

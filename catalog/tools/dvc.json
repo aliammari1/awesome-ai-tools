@@ -8,7 +8,7 @@
     "name": "AI Infrastructure & MLOps"
   },
   "order": 354,
-  "openSource": null,
+  "openSource": true,
   "pricing": null,
   "status": "listed",
   "source": {

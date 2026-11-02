@@ -3,9 +3,12 @@
   "url": "https://github.com/modelscope/agentscope",
   "description": "Multi-agent platform with distributed orchestration and visual debugging.",
   "category": "ai-agents",
-  "subcategory": null,
+  "subcategory": {
+    "id": "agent-frameworks",
+    "name": "Agent Frameworks"
+  },
   "order": 8,
-  "openSource": null,
+  "openSource": true,
   "pricing": null,
   "status": "listed",
   "source": {

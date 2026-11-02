@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="white"/>
+  <rect x="64" y="54" width="48" height="48" rx="6" fill="#111318"/>
+  <path d="m76 91 12-24 12 24M81 83h14" fill="none" stroke="white" stroke-width="3.5" stroke-linejoin="round"/>
+  <g font-family="DejaVu Sans, sans-serif">
+    <text x="130" y="84" font-size="23" font-weight="bold" fill="#111318">awesome ai tools.</text>
+    <text x="64" y="228" font-size="19" letter-spacing="3" fill="#535a67">AN OPEN, COMMUNITY-BUILT DIRECTORY</text>
+    <text x="59" y="335" font-size="88" font-weight="bold" letter-spacing="-5" fill="#111318">Find your next</text>
+    <text x="59" y="432" font-size="88" font-weight="bold" letter-spacing="-5" fill="#1455e8">AI tool.</text>
+    <path d="M64 514h1072" stroke="#e4e7ed"/>
+    <text x="64" y="559" font-size="21" fill="#535a67">Search the collection. Save a shortlist. Compare your options.</text>
+    <rect x="973" y="320" width="162" height="162" rx="12" fill="#1455e8"/>
+    <path d="M1019 435l70-70m-70 0h70v70" fill="none" stroke="white" stroke-width="9"/>
+  </g>
+</svg>

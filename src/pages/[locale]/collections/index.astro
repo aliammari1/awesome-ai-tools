@@ -1,0 +1,83 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import LegacyLocaleNotice from '../../../components/LegacyLocaleNotice.astro';
+import PageHeader from '../../../components/PageHeader.astro';
+import { getCatalog } from '../../../lib/catalog';
+import { curatedCollections, guidedGoals, toolsForCollection } from '../../../lib/collections';
+import { formatNumber, useTranslations } from '../../../lib/i18n';
+import { locales, isLocale } from '../../../lib/locales';
+
+export function getStaticPaths() {
+  return locales.map((locale) => ({ params: { locale } }));
+}
+
+const requested = Astro.params.locale;
+if (!isLocale(requested)) throw new Error('Unsupported locale');
+const locale = requested;
+const prefix = '/' + locale;
+const t = useTranslations(locale);
+const n = (value: number) => formatNumber(locale, value);
+const { tools } = await getCatalog();
+---
+
+<BaseLayout
+  title={t('page.collections.title')}
+  description={t('page.collections.description')}
+  locale={locale}
+>
+  <LegacyLocaleNotice locale={locale} />
+
+  <PageHeader
+    title={t('page.collections.title')}
+    lead={t('page.collections.description')}
+    crumbs={[{ label: t('nav.directory'), href: prefix + '/#directory' }]}
+  />
+
+  <section class="section" aria-labelledby="collections-list-title">
+    <div class="shell">
+      <h2 id="collections-list-title" class="sr-only">
+        {t('page.collections.title')}
+      </h2>
+      <ul class="domain-index">
+        {curatedCollections.map((collection) => {
+          const matched = toolsForCollection(tools, collection);
+          return (
+            <li>
+              <a href={prefix + '/collections/' + collection.slug + '/'}>
+                <span class="domain-top">
+                  <span class="domain-name">{collection.title}</span>
+                  <span class="count">{n(matched.length)}</span>
+                </span>
+                <span class="domain-desc">{collection.lead}</span>
+              </a>
+            </li>
+          );
+        })}
+      </ul>
+    </div>
+  </section>
+
+  <section class="section section-surface" aria-labelledby="finder-title">
+    <div class="shell">
+      <div class="section-head">
+        <h2 id="finder-title">Guided finder</h2>
+        <p>Pick a goal. The directory opens with that filter already applied.</p>
+      </div>
+      <div class="guided-grid">
+        {guidedGoals.map((goal) => {
+          const params = new URLSearchParams();
+          if (goal.query) params.set('q', goal.query);
+          if (goal.category) params.set('category', goal.category);
+          if (goal.openSource) params.set('openSource', 'true');
+          const href = prefix + '/#directory' + (params.size ? '?' + params.toString() : '');
+          return (
+            <a class="guided-card" href={href}>
+              <strong>{goal.label}</strong>
+              <span>{goal.description}</span>
+            </a>
+          );
+        })}
+      </div>
+    </div>
+  </section>
+</BaseLayout>

@@ -3,7 +3,10 @@
   "url": "https://adk.dev/",
   "description": "Open-source toolkit for building and deploying multi-agent systems.",
   "category": "ai-agents",
-  "subcategory": null,
+  "subcategory": {
+    "id": "agent-frameworks",
+    "name": "Agent Frameworks"
+  },
   "order": 3,
   "openSource": true,
   "pricing": null,

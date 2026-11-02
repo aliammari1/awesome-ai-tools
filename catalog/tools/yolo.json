@@ -1,14 +1,14 @@
 {
-  "name": "YOLO",
+  "name": "Ultralytics YOLO",
   "url": "https://github.com/ultralytics/ultralytics",
-  "description": "Real-time object detection with C2PSA module.",
+  "description": "Real-time object detection, segmentation, and classification framework.",
   "category": "computer-vision",
   "subcategory": {
     "id": "specialized-vision-tools",
     "name": "Specialized Vision Tools"
   },
   "order": 145,
-  "openSource": null,
+  "openSource": true,
   "pricing": null,
   "status": "listed",
   "source": {

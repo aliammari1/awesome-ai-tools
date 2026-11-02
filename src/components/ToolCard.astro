@@ -1,16 +1,10 @@
 ---
+import Icon from './Icon.astro';
+import { toolDate, type Tool } from '../lib/catalog';
+import { pricingLabels } from '../lib/pricing';
+
 interface Props {
-  tool: {
-    id: string;
-    name: string;
-    url: string;
-    description: string;
-    category: string;
-    subcategory: { id: string; name: string } | null;
-    order: number;
-    openSource: boolean | null;
-    pricing: 'free' | 'freemium' | 'paid' | 'contact-sales' | null;
-  };
+  tool: Tool;
   locale?: string;
   categoryName?: string;
 }
@@ -23,52 +17,90 @@ const initials = tool.name
   .map((part) => part[0])
   .join('');
 
-const pricingLabel: Record<string, string> = {
-  free: 'Free',
-  freemium: 'Freemium',
-  paid: 'Paid',
-  'contact-sales': 'Contact sales',
-};
-
 const detailHref = '/' + locale + '/tools/' + tool.id + '/';
-const searchText = [
-  tool.name,
-  tool.description,
-  categoryName,
-  tool.subcategory?.name ?? '',
-].join(' ').toLowerCase();
+const added = toolDate(tool);
 ---
+
 <article
-  class="tool-card"
+  class="tool"
   data-tool-card
   data-tool-id={tool.id}
-  data-name={tool.name.toLowerCase()}
   data-category={tool.category}
   data-subcategory={tool.subcategory?.id ?? ''}
   data-pricing={tool.pricing ?? 'unknown'}
-  data-open-source={tool.openSource === true ? 'true' : tool.openSource === false ? 'false' : 'unknown'}
+  data-open-source={
+    tool.openSource === true ? 'true' : tool.openSource === false ? 'false' : 'unknown'
+  }
+  data-status={tool.status}
+  data-added={added}
   data-order={tool.order}
-  data-search={searchText}
 >
-  <div class="tool-card-top">
-    <div class="tool-mark" aria-hidden="true">{initials}</div>
-    <div class="tool-title">
-      <h3><a href={detailHref}>{tool.name}</a></h3>
-      <p class="tool-category">{tool.subcategory?.name ?? categoryName}</p>
+  <div class="tool-mark" aria-hidden="true">
+    {initials}
+  </div>
+
+  <div
+    class="tool-body"
+    lang={locale !== 'en' ? 'en' : undefined}
+    dir={locale !== 'en' ? 'ltr' : undefined}
+  >
+    <h3 class="tool-name">
+      <a href={detailHref} data-tool-title>
+        {tool.name}
+      </a>
+    </h3>
+    <p class="tool-desc" data-tool-desc>
+      {tool.description}
+    </p>
+    <div class="tool-meta">
+      <span>{tool.subcategory?.name ?? categoryName}</span>
+      {tool.pricing && <span class="badge">{pricingLabels[tool.pricing]}</span>}
+      {tool.openSource === true && <span class="badge badge-accent">Open source</span>}
     </div>
   </div>
 
-  <p class="tool-description">{tool.description}</p>
-
-  <div class="tool-meta" aria-label="Tool metadata">
-    <span class="meta-chip">{categoryName}</span>
-    {tool.pricing && <span class="meta-chip">{pricingLabel[tool.pricing]}</span>}
-    {tool.openSource === true && <span class="meta-chip success">Open source</span>}
-  </div>
-
   <div class="tool-actions">
-    <button class="icon-text-button" type="button" data-save-tool={tool.id} aria-pressed="false">Save</button>
-    <button class="icon-text-button" type="button" data-compare-tool={tool.id} aria-pressed="false">Compare</button>
-    <a class="visit-link" href={tool.url} target="_blank" rel="noopener noreferrer">Visit ↗</a>
+    <button
+      class="action action-save"
+      type="button"
+      data-save-tool={tool.id}
+      aria-pressed="false"
+      aria-label={'Save ' + tool.name}
+    >
+      <Icon name="bookmark" class="icon-bookmark" />
+      <span class="action-text" data-pressed-label="Saved">
+        Save
+      </span>
+    </button>
+    <button
+      class="action action-compare"
+      type="button"
+      data-compare-tool={tool.id}
+      aria-pressed="false"
+      aria-label={'Compare ' + tool.name}
+    >
+      <Icon name="compare" />
+      <span class="action-text" data-pressed-label="Added">
+        Compare
+      </span>
+    </button>
+    <button
+      class="action action-icon-only"
+      type="button"
+      data-copy-tool-link={detailHref}
+      aria-label={'Copy link to ' + tool.name}
+    >
+      <Icon name="link" />
+    </button>
+    <a
+      class="action action-visit"
+      href={tool.url}
+      target="_blank"
+      rel="noopener noreferrer nofollow"
+      aria-label={'Visit ' + tool.name + ' (opens in a new tab)'}
+    >
+      <span>Visit</span>
+      <Icon name="arrow-up-right" />
+    </a>
   </div>
 </article>

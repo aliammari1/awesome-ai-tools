@@ -1,14 +1,14 @@
 {
-  "name": "YOLO",
+  "name": "Darknet YOLO",
   "url": "https://pjreddie.com/darknet/yolo/",
-  "description": "Real-time object detection framework.",
+  "description": "Original open-source Darknet neural network framework for real-time object detection.",
   "category": "computer-vision",
   "subcategory": {
     "id": "specialized-vision-tools",
     "name": "Specialized Vision Tools"
   },
   "order": 146,
-  "openSource": null,
+  "openSource": true,
   "pricing": null,
   "status": "listed",
   "source": {

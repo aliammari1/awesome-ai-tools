@@ -3,9 +3,12 @@
   "url": "https://pydantic.dev/docs/ai/overview/",
   "description": "Type-safe Python agent framework with structured outputs and validation.",
   "category": "ai-agents",
-  "subcategory": null,
+  "subcategory": {
+    "id": "agent-frameworks",
+    "name": "Agent Frameworks"
+  },
   "order": 4,
-  "openSource": null,
+  "openSource": true,
   "pricing": null,
   "status": "listed",
   "source": {

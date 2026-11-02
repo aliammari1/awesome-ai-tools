@@ -1,0 +1,15 @@
+# Shared policy for PR and weekly catalog checks. HTTP failures are advisory.
+exclude_all_private = true
+max_concurrency = 8
+host_concurrency = 2
+host_request_interval = "500ms"
+max_retries = 2
+retry_wait_time = 2
+timeout = 20
+exclude = [
+  'https://www\.krea\.ai/',
+  'https://mailstrom\.co/',
+  'https://www\.clarifai\.com/',
+  'https://www\.coursera\.org/browse/data-science/machine-learning',
+  'https://www\.rankingrider\.com/',
+]
