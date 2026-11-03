@@ -135,6 +135,7 @@ Image generation, visual design, creative production, and design-assistance tool
 - [Jasper Art](https://www.jasper.ai/art) - AI art generation for marketers.
 - [BlueWillow](https://www.bluewillow.ai/) - Free AI image generator.
 - [Prisma](https://prisma-ai.com/) - Artistic photo filters.
+- [MakeImg](https://makeimg.ai/) - AI photo generator that turns text prompts or photos into new images using models such as Nano Banana 2.1, GPT Image 2.5, and FLUX.2 Pro.
 - [Seedream 5.5](https://seedream5-5.net/) - Web AI image generator and editor that works from text prompts or reference photos.
 - [voxelyo](https://voxelyo.com/) - AI photo enhancer for Airbnb, Vrbo, and real estate listings with sky replacement and twilight conversion.
 
