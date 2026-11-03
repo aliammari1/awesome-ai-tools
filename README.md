@@ -136,6 +136,7 @@ Image generation, visual design, creative production, and design-assistance tool
 - [BlueWillow](https://www.bluewillow.ai/) - Free AI image generator.
 - [Prisma](https://prisma-ai.com/) - Artistic photo filters.
 - [Seedream 5.5](https://seedream5-5.net/) - Web AI image generator and editor that works from text prompts or reference photos.
+- [SpriteCanvas](https://spritecanvas.com/) - AI sprite animation generator that turns a text prompt or character image into 2D game animations and exports transparent PNG sprite sheets with a JSON atlas.
 - [voxelyo](https://voxelyo.com/) - AI photo enhancer for Airbnb, Vrbo, and real estate listings with sky replacement and twilight conversion.
 
 ### Design Tools
