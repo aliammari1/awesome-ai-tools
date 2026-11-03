@@ -1,0 +1,18 @@
+{
+  "name": "SpriteCanvas",
+  "url": "https://spritecanvas.com/",
+  "description": "AI sprite animation generator that turns a text prompt or character image into 2D game animations and exports transparent PNG sprite sheets with a JSON atlas.",
+  "category": "creativity-and-design",
+  "subcategory": {
+    "id": "image-generation-and-art",
+    "name": "Image Generation & Art"
+  },
+  "order": 9999,
+  "openSource": false,
+  "pricing": "freemium",
+  "status": "listed",
+  "source": {
+    "kind": "community",
+    "addedAt": "2026-11-03"
+  }
+}
