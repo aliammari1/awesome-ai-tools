@@ -1,0 +1,47 @@
+name: Report Broken or Changed Link
+description: Report a link rot, domain change, or dead destination in the catalog
+title: '[BROKEN] '
+labels: ['broken-link']
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this form to report broken, dead, or redirected catalog links.
+        **Important:** If the link was hijacked, points to malware, or is malicious, please report privately via [SECURITY.md](https://github.com/aliammari1/awesome-ai-tools/blob/main/SECURITY.md) instead of opening a public issue.
+  - type: input
+    id: tool_name
+    attributes:
+      label: Tool Name or Slug
+      placeholder: e.g. cursor or catalog/tools/cursor.json
+    validations:
+      required: true
+  - type: input
+    id: url
+    attributes:
+      label: Current URL in Catalog
+      placeholder: https://...
+    validations:
+      required: true
+  - type: dropdown
+    id: issue_type
+    attributes:
+      label: Nature of Issue
+      options:
+        - HTTP 404 / Page Not Found
+        - Domain Expired / Parked Page
+        - Permanent Redirect to New URL
+        - Service Discontinued / Shut Down
+        - Other (describe below)
+    validations:
+      required: true
+  - type: input
+    id: new_url
+    attributes:
+      label: Replacement URL (if known)
+      description: If the project moved to a new official domain or repository.
+      placeholder: https://...
+  - type: textarea
+    id: details
+    attributes:
+      label: Additional Context
+      description: Details about error codes, redirects, or official shutdown announcements.

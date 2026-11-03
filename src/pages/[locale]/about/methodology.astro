@@ -1,0 +1,83 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import LegacyLocaleNotice from '../../../components/LegacyLocaleNotice.astro';
+import PageHeader from '../../../components/PageHeader.astro';
+import { locales, isLocale } from '../../../lib/locales';
+
+export function getStaticPaths() {
+  return locales.map((locale) => ({ params: { locale } }));
+}
+const requested = Astro.params.locale;
+if (!isLocale(requested)) throw new Error('Unsupported locale');
+const locale = requested;
+const prefix = '/' + locale;
+---
+
+<BaseLayout
+  title="Curation methodology"
+  description="How Awesome AI Tools selects, records, verifies, and maintains catalog entries."
+  locale={locale}
+>
+  <LegacyLocaleNotice locale={locale} />
+
+  <PageHeader
+    title="How tools make the list"
+    lead="A listing helps you discover a tool. It is not an endorsement, a ranking or a security guarantee."
+    crumbs={[{ label: 'Directory', href: prefix + '/#directory' }]}
+  />
+
+  <section class="section" aria-label="Curation methodology">
+    <div class="shell prose-grid">
+      <div class="prose">
+        <h2>What we look for</h2>
+        <ul>
+          <li>
+            <strong>Accessible:</strong> a public product or repository with a working official
+            HTTPS link.
+          </li>
+          <li>
+            <strong>Maintained:</strong> clear evidence that the project is active and usable.
+          </li>
+          <li>
+            <strong>Useful:</strong> a distinct purpose beyond a thin wrapper or duplicate listing.
+          </li>
+          <li>
+            <strong>Credible:</strong> no deceptive claims, affiliate landing pages or referral
+            links.
+          </li>
+          <li>
+            <strong>Plainly described:</strong> what the tool does in practice, without vendor
+            slogans.
+          </li>
+        </ul>
+
+        <h2>No pay-to-play</h2>
+        <p>
+          Automated checks reject affiliate query parameters (<code>utm_*</code>, <code>ref</code>,
+          <code>fbclid</code>), insecure HTTP links and duplicate URLs on every pull request.
+        </p>
+      </div>
+
+      <div class="prose">
+        <h2>What the metadata means</h2>
+        <p>
+          An entry’s added date records when it entered the catalog. It does not mean its price,
+          availability or feature set was independently audited on that date. Unknown details stay
+          marked <em>Not recorded</em>.
+        </p>
+
+        <h2>Keeping entries current</h2>
+        <p>
+          Records in <code>catalog/tools/</code> feed both this website and the GitHub
+          <code>README.md</code>. Report broken links, outdated descriptions or discontinued
+          projects through <a href={prefix + '/contribute/'}>the contribution page</a>.
+        </p>
+        <p>
+          The directory never ranks tools by paid popularity. Use the descriptions and recorded
+          details as a starting point, then verify the official documentation before adopting a
+          tool.
+        </p>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

@@ -1,0 +1,18 @@
+{
+  "name": "CodeT5",
+  "url": "https://github.com/salesforce/CodeT5",
+  "description": "Open-source code generation by Salesforce.",
+  "category": "code-generation-and-development",
+  "subcategory": {
+    "id": "ai-coding-assistants",
+    "name": "AI Coding Assistants"
+  },
+  "order": 215,
+  "openSource": true,
+  "pricing": null,
+  "status": "listed",
+  "source": {
+    "kind": "readme-migration",
+    "migratedAt": "2026-09-21"
+  }
+}

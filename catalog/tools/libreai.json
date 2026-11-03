@@ -1,0 +1,18 @@
+{
+  "name": "LibreAI",
+  "url": "https://libreaihub.vercel.app",
+  "description": "A directory of open-source AI projects organized into categories, with README-derived installation guides.",
+  "category": "ai-search-and-research",
+  "subcategory": {
+    "id": "research-and-knowledge-tools",
+    "name": "Research & Knowledge Tools"
+  },
+  "order": 9999,
+  "openSource": null,
+  "pricing": null,
+  "status": "listed",
+  "source": {
+    "kind": "readme-migration",
+    "migratedAt": "2026-09-21"
+  }
+}
