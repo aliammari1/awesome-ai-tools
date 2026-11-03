@@ -331,7 +331,6 @@ Video generation, editing, enhancement, effects, and media-production tools.
 ### Video Creation & Editing
 
 - [Sora](https://openai.com/sora) - OpenAI's video & audio generation with synchronized dialogue, iOS app.
-- [cv.cm/v](https://cv.cm/v) - Queue-free Seedance 2.0 text-to-video and image-to-video, with image generation and an API.
 - [Google Veo](https://deepmind.google/technologies/veo/) - Video model with Ingredients-to-Video, native audio.
 - [Runway](https://runwayml.com/) - Video generation model with accurate motion and physics representation.
 - [Kling AI](https://kling.ai/) - Video generation with audio, dialogue, avatars, and editing features.
@@ -358,6 +357,7 @@ Video generation, editing, enhancement, effects, and media-production tools.
 - [Visual Maker AI](https://visualmakerai.com/) - Web workspace for generating images, turning photos into short videos, and breaking scripts into scenes and clips with models such as Veo, Seedance, and Kling.
 - [Wan 3.5](https://wan35.app/) - Browser-based AI video generator for text-to-video and image-to-video creation.
 - [Wedding AI](https://weddingai.studio/) - AI wedding invitation video maker that turns templates, names, and photos into an HD MP4.
+- [cv.cm/v](https://cv.cm/en/v/) - Free in-browser AI photo to video: on-device depth estimation turns one image into a 3D camera-move MP4, nothing uploaded. The same site also has local AI image and music generators.
 - [Effect Video](https://effect.video/) - AI photo-to-video tool with viral effect templates for short vertical clips.
 - [Magic Hour](https://magichour.ai/) - AI video creation and editing with text-to-video, image-to-video, face swap, lip sync, and animation tools.
 - [Pixwit](https://pixwit.ai/) - All-in-one AI creative platform for generating images, videos, and music from text or image prompts.
