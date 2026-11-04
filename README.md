@@ -546,6 +546,7 @@ Marketing, sales, e-commerce, retail, career, and job-search tools.
 
 - [JobMirror](https://jobmirror.app) - AI career toolkit that provides resume review, job fit analysis, and document generation.
 - [Jobscan](https://www.jobscan.co/) - Resume and LinkedIn optimization with ATS keyword matching.
+- [Keel](https://github.com/KeelDev-tech/keel) - Open-source job-application autopilot that refuses to lie.
 - [Resume Worded](https://resumeworded.com/) - AI resume and LinkedIn feedback with score and targeted advice.
 - [Kickresume](https://www.kickresume.com/) - AI resume builder with templates and job matching.
 - [JobEmerge](https://www.jobemerge.work/) - An AI career copilot with a job-fit test, a 19-language resume translator and a simple Markdown resume editor.
