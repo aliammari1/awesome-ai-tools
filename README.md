@@ -321,6 +321,7 @@ Music generation, voice, speech, transcription, and audio-production tools.
 - [Assembly AI](https://www.assemblyai.com/) - Speech-to-text API with speaker diarization and content moderation.
 - [HappyScribe](https://www.happyscribe.com/) - AI transcription with 120+ languages and subtitle export.
 - [Resemble AI](https://www.resemble.ai/) - AI voice cloning with real-time synthesis and emotion control.
+- [Speak AI](https://speakai.co) - Conversation intelligence platform scoring calls and meetings against your own rubric in 100+ languages.
 - [Krisp](https://krisp.ai/) - AI-powered noise cancellation and meeting transcription.
 - [Voqusa](https://www.voqusa.com/en/free/instagram-transcript) - Web tool that turns Instagram, TikTok and YouTube videos into text transcripts; requires a free signup with 5 free credits.
 
