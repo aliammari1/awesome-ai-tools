@@ -688,3 +688,5 @@ Learning resources and practical starting points for working with modern AI tool
 See [CONTRIBUTING.md](CONTRIBUTING.md) for contribution guidelines. New and updated tools belong in `catalog/tools/`; run `bun run new:tool` to use the interactive tool wizard, or `bun run generate:readme` to regenerate this README and `bun run check:pr` before submitting. CI validates the catalog, tests, typechecks, and builds the project; external link reports assist human review.
 
 **License:** [CC0 1.0 Universal](LICENSE).
+
+- **[DocAsker](https://docasker.com)** - AI-verified client document collection and onboarding portal with instant PDF/ID validation and automated WhatsApp/Email reminders.
