@@ -68,6 +68,7 @@ Agent SDKs, autonomous systems, orchestration, tool use, memory, and browser aut
 
 Scheduling, task management, project workflows, email, and day-to-day work automation.
 
+- [DocAsker](https://docasker.com/) - AI-verified client document collection portal that validates uploaded PDFs and IDs for completeness and legibility.
 - [OtterFill](https://otterfill.com/) - AI form filler that turns any form into clear questions, prefills answers from your documents, and cross-checks answers across your other forms.
 
 ### Time Management & Scheduling
@@ -688,5 +689,3 @@ Learning resources and practical starting points for working with modern AI tool
 See [CONTRIBUTING.md](CONTRIBUTING.md) for contribution guidelines. New and updated tools belong in `catalog/tools/`; run `bun run new:tool` to use the interactive tool wizard, or `bun run generate:readme` to regenerate this README and `bun run check:pr` before submitting. CI validates the catalog, tests, typechecks, and builds the project; external link reports assist human review.
 
 **License:** [CC0 1.0 Universal](LICENSE).
-
-- **[DocAsker](https://docasker.com)** - AI-verified client document collection and onboarding portal with instant PDF/ID validation and automated WhatsApp/Email reminders.
