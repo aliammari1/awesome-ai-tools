@@ -527,6 +527,7 @@ Marketing, sales, e-commerce, retail, career, and job-search tools.
 - [Pardot](https://www.pardot.com/) - B2B marketing automation with Einstein AI insights.
 - [Drift](https://www.drift.com/) - Conversational marketing platform with AI chatbots.
 - [Lavender](https://www.lavender.ai/) - AI email coach for sales with real-time suggestions.
+- [LLM Pulse](https://llmpulse.ai/) - Tracks brand mentions, citations, sentiment, and competitor share of voice across AI search engines.
 - [Seamless.ai](https://seamless.ai/) - AI-powered B2B lead generation and prospecting.
 - [LogNorm](https://lognorm.com/) - SEO and AI-visibility platform that hands a ranked growth backlog to AI agents over MCP.
 - [TeleTraff](https://teletraff.com/en) - Browser-based panel for Telegram promotion and advertising that writes AI comments on channel posts, invites audiences, sends DM campaigns, and lets AI handle dialogs with leads.
