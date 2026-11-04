@@ -491,6 +491,8 @@ General-purpose models, open models, and frameworks used to build with LLMs.
 
 Educational assistants, learning tools, academic research, and research platforms.
 
+- [CitePod](https://citepod.com/) - AI-powered citation and research assistant for academic writing and references.
+
 ### Educational AI Tools
 
 - [Khan Academy](https://www.khanacademy.org/) - Educational platform with Khanmigo AI tutor powered by GPT-4.
