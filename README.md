@@ -573,6 +573,7 @@ Game-development tools and AI applications for entertainment and interactive med
 - [Replika](https://replika.ai/) - AI companion and mental wellness chatbot.
 - [AI Dungeon](https://aidungeon.io/) - AI-powered text adventure and storytelling.
 - [NovelAI](https://novelai.net/) - AI storytelling and image generation platform.
+- [Catoon](https://catoon.xyz) - AI serial comic studio for turning long stories into editable comic chapters.
 - [Chai](https://chai.ml/) - Platform for chatting with AI personalities.
 - [Kissable](https://kissable.app/) - AI companion with persistent memory, photo and video generation, community scenarios, and emotional voice.
 
