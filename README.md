@@ -66,6 +66,7 @@ Agent SDKs, autonomous systems, orchestration, tool use, memory, and browser aut
 
 ## Productivity
 
+- [TokenTracker](https://github.com/xiufengsun/TokenTracker) - Local-first AI token usage & cost tracker for coding tools (Claude Code, Codex, Cursor, and more). Privacy-first: token counts only, never prompts.
 Scheduling, task management, project workflows, email, and day-to-day work automation.
 
 - [OtterFill](https://otterfill.com/) - AI form filler that turns any form into clear questions, prefills answers from your documents, and cross-checks answers across your other forms.
