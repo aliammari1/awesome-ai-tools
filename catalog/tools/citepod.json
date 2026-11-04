@@ -1,0 +1,15 @@
+{
+  "name": "CitePod",
+  "url": "https://citepod.com/",
+  "description": "AI-powered citation and research assistant for academic writing and references.",
+  "category": "research-and-education",
+  "subcategory": null,
+  "order": 9999,
+  "openSource": false,
+  "pricing": "freemium",
+  "status": "listed",
+  "source": {
+    "kind": "community",
+    "addedAt": "2026-09-21"
+  }
+}
