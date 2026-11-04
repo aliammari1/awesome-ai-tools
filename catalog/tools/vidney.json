@@ -1,0 +1,18 @@
+{
+  "name": "Vidney",
+  "url": "https://vidney.ai/",
+  "description": "Browser workspace for generating AI videos and images from text or reference images across multiple models with one shared credit balance.",
+  "category": "video-and-media",
+  "subcategory": {
+    "id": "video-creation-and-editing",
+    "name": "Video Creation & Editing"
+  },
+  "order": 9999,
+  "openSource": null,
+  "pricing": "freemium",
+  "status": "listed",
+  "source": {
+    "kind": "community",
+    "addedAt": "2026-11-04"
+  }
+}

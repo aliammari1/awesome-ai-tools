@@ -362,6 +362,7 @@ Video generation, editing, enhancement, effects, and media-production tools.
 - [Pixwit](https://pixwit.ai/) - All-in-one AI creative platform for generating images, videos, and music from text or image prompts.
 - [shortshort](https://www.shortshort.io/) - Turns one long video (talk, podcast, course) into vertical 9:16 shorts with word-by-word captions.
 - [VideoText](https://videotext.io) - Subtitle and transcript tools: Make Client Ready format compliance checks, subtitle fixing, video-to-SRT/VTT, translation, video compression and voice recording.
+- [Vidney](https://vidney.ai/) - Browser workspace for generating AI videos and images from text or reference images across multiple models with one shared credit balance.
 
 ### Video Enhancement & Effects
 
