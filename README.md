@@ -64,6 +64,10 @@ Agent SDKs, autonomous systems, orchestration, tool use, memory, and browser aut
 
 - [Browser Use](https://github.com/browser-use/browser-use) - Library that lets agents control a real browser to complete web tasks.
 
+### AI Agents & Automation
+
+- [Asyntai](https://asyntai.com/) - No-code chatbot builder that connects to your business data and integrates with websites and messaging channels.
+
 ## Productivity
 
 Scheduling, task management, project workflows, email, and day-to-day work automation.
