@@ -1,0 +1,15 @@
+{
+  "name": "DocAsker",
+  "url": "https://docasker.com/",
+  "description": "AI-verified client document collection portal that validates uploaded PDFs and IDs for completeness and legibility.",
+  "category": "productivity",
+  "subcategory": null,
+  "order": 9999,
+  "openSource": null,
+  "pricing": null,
+  "status": "listed",
+  "source": {
+    "kind": "community",
+    "addedAt": "2026-11-04"
+  }
+}

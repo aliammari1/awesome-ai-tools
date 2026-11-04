@@ -68,6 +68,7 @@ Agent SDKs, autonomous systems, orchestration, tool use, memory, and browser aut
 
 Scheduling, task management, project workflows, email, and day-to-day work automation.
 
+- [DocAsker](https://docasker.com/) - AI-verified client document collection portal that validates uploaded PDFs and IDs for completeness and legibility.
 - [OtterFill](https://otterfill.com/) - AI form filler that turns any form into clear questions, prefills answers from your documents, and cross-checks answers across your other forms.
 
 ### Time Management & Scheduling
