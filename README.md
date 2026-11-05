@@ -194,6 +194,7 @@ Writing, content creation, translation, localization, and communication assistan
 - [SocialBu](https://socialbu.com/) - AI-powered social media management for scheduling, publishing, and automating across X, Instagram, LinkedIn, Facebook, TikTok, and more.
 - [ImagineYourBook](https://www.imagineyourbook.com/) - Web app that plans and drafts full manuscripts chapter by chapter, with series story bibles and Word/EPUB/Markdown export.
 - [Multi Upload Tool](https://multi-upload-tool.com/) - Schedules one video to TikTok, YouTube Shorts, Instagram, Facebook, LinkedIn, Pinterest, Bluesky, Threads, and X from a dashboard, REST API, or MCP server that lets Claude, ChatGPT, and Cursor create posts.
+- [Descriptra](https://descriptra.com/) - AI product description generator and GEO/SEO catalog optimizer for e-commerce in 22 languages.
 
 ### Translation & Localization
 
