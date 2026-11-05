@@ -541,6 +541,7 @@ Marketing, sales, e-commerce, retail, career, and job-search tools.
 - [Klevu](https://www.klevu.com/) - AI-powered site search.
 - [Searchspring](https://searchspring.com/) - E-commerce search and merchandising.
 - [RankingRider](https://www.rankingrider.com/) - AI-powered bulk SEO optimization for Shopify products via CSV.
+- [Photta](https://www.photta.app/) - AI product photography studio and embedded e-commerce virtual try-on widget that turns single garment, jewelry, or eyewear photos into on-model lookbooks, 3D ghost mannequins, and live customer try-on experiences.
 
 ### Career & Job Search
 
