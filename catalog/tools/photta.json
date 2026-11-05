@@ -1,0 +1,18 @@
+{
+  "name": "Photta",
+  "url": "https://www.photta.app/",
+  "description": "AI product photography studio and embedded e-commerce virtual try-on widget that turns single garment, jewelry, or eyewear photos into on-model lookbooks, 3D ghost mannequins, and live customer try-on experiences.",
+  "category": "business-and-marketing",
+  "subcategory": {
+    "id": "e-commerce-and-retail",
+    "name": "E-commerce & Retail"
+  },
+  "order": 9999,
+  "openSource": false,
+  "pricing": "freemium",
+  "status": "listed",
+  "source": {
+    "kind": "community",
+    "addedAt": "2026-11-05"
+  }
+}
