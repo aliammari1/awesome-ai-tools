@@ -86,7 +86,7 @@ Scheduling, task management, project workflows, email, and day-to-day work autom
 - [Morgen](https://morgen.so/) - Calendar app with scheduling and task integration.
 - [Amie](https://amie.so/) - Beautiful calendar app with AI scheduling.
 - [ExtraBrain](https://extrabrain.app/) - AI copilot for live interviews and meetings.
-- [Plainer](https://plainer.app/) - Day planner that puts projects, daily tasks and your calendar in one plan, with timeboxing, weekly goals and an assistant whose changes you can undo.
+- [Plainer](https://plainer.app/) - Workspace for notes and files with a planner view, timeboxing and an AI assistant whose changes you can undo.
 
 ### Task & Project Management
 

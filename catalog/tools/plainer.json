@@ -1,7 +1,7 @@
 {
   "name": "Plainer",
   "url": "https://plainer.app/",
-  "description": "Day planner that puts projects, daily tasks and your calendar in one plan, with timeboxing, weekly goals and an assistant whose changes you can undo.",
+  "description": "Workspace for notes and files with a planner view, timeboxing and an AI assistant whose changes you can undo.",
   "category": "productivity",
   "subcategory": {
     "id": "time-management-and-scheduling",
