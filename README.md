@@ -77,6 +77,7 @@ Scheduling, task management, project workflows, email, and day-to-day work autom
 - [Reclaim.ai](https://reclaim.ai/) - Intelligent calendar protection with Travel Timezone feature.
 - [Clockwise](https://www.clockwise.com/) - AI-powered calendar optimization for teams with flexible holds.
 - [Fathom](https://fathom.video/) - Free AI meeting recording and transcription with highlights.
+- [OneMira C1](https://onemira.com/products/c1) - Standalone AI voice recorder with Local AI summaries, automatic Speaker ID, Zero Cloud privacy ($0/mo), and [MCP server](https://github.com/onemira-space/onemira-mcp).
 - [Clockify](https://clockify.me) - Project time tracking with team analytics.
 - [RescueTime](https://www.rescuetime.com/) - Automatic time tracking with AI insights and focus modes.
 - [Focus@Will](https://www.focusatwill.com/) - Focus music service with personalized playlists.
