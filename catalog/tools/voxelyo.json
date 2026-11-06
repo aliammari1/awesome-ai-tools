@@ -1,0 +1,18 @@
+{
+  "category": "creativity-and-design",
+  "description": "AI photo enhancer for Airbnb, Vrbo, and real estate listings with sky replacement and twilight conversion.",
+  "name": "voxelyo",
+  "openSource": false,
+  "order": 9999,
+  "pricing": "paid",
+  "source": {
+    "addedAt": "2026-10-31",
+    "kind": "community"
+  },
+  "status": "listed",
+  "subcategory": {
+    "id": "image-generation-and-art",
+    "name": "Image Generation & Art"
+  },
+  "url": "https://voxelyo.com/"
+}

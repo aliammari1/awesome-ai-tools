@@ -85,6 +85,7 @@ Scheduling, task management, project workflows, email, and day-to-day work autom
 - [Sunsama](https://sunsama.com/) - Daily planner with time-blocking and calendar integrations.
 - [Morgen](https://morgen.so/) - Calendar app with scheduling and task integration.
 - [Amie](https://amie.so/) - Beautiful calendar app with AI scheduling.
+- [ExtraBrain](https://extrabrain.app/) - AI copilot for live interviews and meetings.
 
 ### Task & Project Management
 
@@ -135,6 +136,7 @@ Image generation, visual design, creative production, and design-assistance tool
 - [BlueWillow](https://www.bluewillow.ai/) - Free AI image generator.
 - [Prisma](https://prisma-ai.com/) - Artistic photo filters.
 - [Seedream 5.5](https://seedream5-5.net/) - Web AI image generator and editor that works from text prompts or reference photos.
+- [voxelyo](https://voxelyo.com/) - AI photo enhancer for Airbnb, Vrbo, and real estate listings with sky replacement and twilight conversion.
 
 ### Design Tools
 
@@ -151,6 +153,7 @@ Image generation, visual design, creative production, and design-assistance tool
 - [Brandmark](https://brandmark.io/) - AI brand identity generator with color palettes.
 - [Looka](https://looka.com/) - AI logo maker with full brand kit.
 - [ProRemover](https://proremover.io/) - Browser AI tool to remove objects, people, text, and watermarks from photos.
+- [AdDogs](https://www.addogs.ai/) - AI ad creative generator that clones winning ad designs and applies your product photo and brand identity.
 - [APPLORE](https://applore.app/ai-app-icon-generator) - AI app icon generator with a reference library of 18,000+ real App Store and Google Play icons.
 - [Klaruvo](https://www.powersoftware.app/en-US/product/detail/klaruvo) - Desktop AI image editor for object and watermark removal that runs fully offline, with cutout, upscaling and batch processing.
 - [RoomMaker AI](https://roommakerai.org/) - AI room designer that redesigns a room from a photo, previews renovation changes, stages furniture, and drafts floor plan concepts.
@@ -319,6 +322,7 @@ Music generation, voice, speech, transcription, and audio-production tools.
 - [HappyScribe](https://www.happyscribe.com/) - AI transcription with 120+ languages and subtitle export.
 - [Resemble AI](https://www.resemble.ai/) - AI voice cloning with real-time synthesis and emotion control.
 - [Krisp](https://krisp.ai/) - AI-powered noise cancellation and meeting transcription.
+- [Voqusa](https://www.voqusa.com/en/free/instagram-transcript) - Web tool that turns Instagram, TikTok and YouTube videos into text transcripts; requires a free signup with 5 free credits.
 
 ## Video & Media
 
@@ -358,6 +362,7 @@ Video generation, editing, enhancement, effects, and media-production tools.
 - [Pixwit](https://pixwit.ai/) - All-in-one AI creative platform for generating images, videos, and music from text or image prompts.
 - [shortshort](https://www.shortshort.io/) - Turns one long video (talk, podcast, course) into vertical 9:16 shorts with word-by-word captions.
 - [Unsora](https://tryunsora.com/) - Open-source app, API and MCP server that generates images, video, voiceovers, music and clips and schedules them to social accounts.
+- [VideoText](https://videotext.io) - Subtitle and transcript tools: Make Client Ready format compliance checks, subtitle fixing, video-to-SRT/VTT, translation, video compression and voice recording.
 
 ### Video Enhancement & Effects
 
@@ -401,6 +406,7 @@ Coding assistants, developer tools, code analysis, and software-engineering auto
 - [Replit](https://replit.com/) - Cloud-based IDE with AI coding and instant deployment.
 - [Deno Deploy](https://deno.com/deploy) - Edge deployment with AI-assisted development.
 - [agent-qa](https://github.com/vostride/agent-qa) - Self-improving natural-language web, Android and iOS testing with advanced memidex memory, a CLI, dashboard and MCP tools.
+- [BrewPage](https://brewpage.app/) - Hosting for AI agents that publishes generated HTML pages, Markdown, static sites, files and JSON to temporary HTTPS links through an API, an MCP server or a GitHub Action, with no signup or API key.
 - [Codex Lookout](https://github.com/makorise/codex-local-hub) - Local-first macOS companion for monitoring and steering Codex Desktop tasks from a phone browser.
 
 ### Code Analysis & Review
@@ -439,6 +445,7 @@ AI search engines, research assistants, knowledge discovery, and evidence-gather
 - [Connected Papers](https://www.connectedpapers.com/) - Visual academic paper exploration.
 - [CiteMe](https://citeme.app/) - AI-powered academic citation generator that searches 11+ scholarly databases and formats references in 40+ citation styles.
 - [Arcmira: YouTube Transcript Search](https://arcmira.com) - Search YouTube transcripts for timestamped quotes, speaker appearances, sponsors and recommendations through an app, API and MCP connection.
+- [DisconfirmAI](https://disconfirmai.com/en) - Investment research site that helps you look for evidence against your thesis, with daily reading from public sources, research on filings and data, and a radar that checks for changes against conditions you set.
 - [LibreAI](https://libreaihub.vercel.app) - A directory of open-source AI projects organized into categories, with README-derived installation guides.
 - [Nujan](https://nujan.app/) - Dual-pane scientific paper reader with Socratic AI coaching, formula breakdowns, and multi-paper literature synthesis.
 
@@ -470,6 +477,7 @@ General-purpose models, open models, and frameworks used to build with LLMs.
 - [Haystack](https://haystack.deepset.ai/) - NLP framework for building search systems and RAG pipelines.
 - [Hugging Face](https://huggingface.co/) - ML model hub with models, datasets, and Inference Endpoints.
 - [OpenRouter](https://openrouter.ai/) - Unified API for 100+ LLMs with cost optimization and fallbacks.
+- [APIClaw](https://apiclaw.biz) - Flat-rate OpenAI-compatible AI API (Claude, GPT, Kimi, Qwen, DeepSeek, GLM), $19–$129/mo, 50 free trial.
 - [Poe](https://poe.com/) - Platform for accessing multiple AI chatbots with custom bots.
 - [Together AI](https://together.ai/) - Inference and fine-tuning platform for open-source LLMs.
 - [Replicate](https://replicate.com/) - Run open-source models in the cloud with simple API.
@@ -496,6 +504,8 @@ Educational assistants, learning tools, academic research, and research platform
 - [Synthesis](https://www.synthesis.com/) - AI math tutoring for kids with problem-solving focus.
 - [Cognii](https://www.cognii.com/) - AI tutoring with natural language assessment.
 - [Carnegie Learning](https://www.carnegielearning.com/) - AI-powered math and literacy solutions for schools.
+- [Elispeak](https://app.elispeak.com/) - AI English speaking coach for live voice conversations on everyday, work, travel, and IELTS/TOEFL topics.
+- [IELTS Writing Practice](https://ieltswritingpractice.app/) - Free IELTS question bank and timed practice, with paid AI scores and writing feedback.
 
 ### Research Platforms
 
@@ -521,7 +531,9 @@ Marketing, sales, e-commerce, retail, career, and job-search tools.
 - [Seamless.ai](https://seamless.ai/) - AI-powered B2B lead generation and prospecting.
 - [LogNorm](https://lognorm.com/) - SEO and AI-visibility platform that hands a ranked growth backlog to AI agents over MCP.
 - [TeleTraff](https://teletraff.com/en) - Browser-based panel for Telegram promotion and advertising that writes AI comments on channel posts, invites audiences, sends DM campaigns, and lets AI handle dialogs with leads.
+- [BulkPublish](https://www.bulkpublish.com/) - AI-agent API and MCP server for multi-platform social publishing.
 - [CrakSEO Search Console MCP](https://docs.crakseo.com/mcp-servers/search-console) - Free remote MCP access for AI assistants to query owned-site Google Search Console and Bing Webmaster data; authentication required.
+- [Vaneform](https://vaneform.com/) - Free website traffic checker with monthly visits, trends, sources, growth leaderboards, and a hosted MCP for AI assistants.
 
 ### E-commerce & Retail
 
@@ -563,6 +575,7 @@ Game-development tools and AI applications for entertainment and interactive med
 - [AI Dungeon](https://aidungeon.io/) - AI-powered text adventure and storytelling.
 - [NovelAI](https://novelai.net/) - AI storytelling and image generation platform.
 - [Chai](https://chai.ml/) - Platform for chatting with AI personalities.
+- [Kissable](https://kissable.app/) - AI companion with persistent memory, photo and video generation, community scenarios, and emotional voice.
 
 ## No-Code/Low-Code AI
 
