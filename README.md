@@ -642,6 +642,7 @@ Infrastructure, MLOps, automation, and specialized tools that span multiple cate
 - [Informatica](https://www.informatica.com/) - Data integration with AI-powered transformations and CLAIRE.
 - [Alteryx](https://www.alteryx.com/) - Data analytics and automation with AI assistant AiDIN.
 - [Modal](https://modal.com/) - Serverless cloud for AI with GPU instances and autoscaling.
+- [QIT](https://qit.energy/) - GPU containers. Built for AI; AI Model API plus serverless/reserved GPUs.
 - [Comet ML](https://www.comet.com/) - ML experiment tracking with model monitoring.
 - [ClearML](https://clear.ml/) - Open-source MLOps platform with experiment tracking.
 - [BentoML](https://www.bentoml.com/) - Framework for serving ML models with OpenLLM.
