@@ -392,6 +392,7 @@ Video generation, editing, enhancement, effects, and media-production tools.
 - [shortshort](https://www.shortshort.io/) - Turns one long video (talk, podcast, course) into vertical 9:16 shorts with word-by-word captions.
 - [Unsora](https://tryunsora.com/) - Open-source app, API and MCP server that generates images, video, voiceovers, music and clips and schedules them to social accounts.
 - [VideoText](https://videotext.io) - Subtitle and transcript tools: Make Client Ready format compliance checks, subtitle fixing, video-to-SRT/VTT, translation, video compression and voice recording.
+- [VoxSail](https://voxsail.com/en/) - Browser workspace for translating video and audio, editing subtitles, AI dubbing, and exporting localized media.
 
 ### Video Enhancement & Effects
 
