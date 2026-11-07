@@ -1,0 +1,18 @@
+{
+  "name": "Clout",
+  "url": "https://www.tryclout.ai/",
+  "description": "Browser-based AI creative studio for building consistent characters, generating images and videos, and faceless clips.",
+  "category": "video-and-media",
+  "subcategory": {
+    "id": "video-creation-and-editing",
+    "name": "Video Creation & Editing"
+  },
+  "order": 9999,
+  "openSource": false,
+  "pricing": "freemium",
+  "status": "listed",
+  "source": {
+    "kind": "community",
+    "addedAt": "2026-11-07"
+  }
+}
