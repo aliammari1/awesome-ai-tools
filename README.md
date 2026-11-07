@@ -5,7 +5,9 @@
 
 Find AI tools by task, then compare recorded pricing and open-source information in the [searchable directory](https://docs.aliammari.dev/en/). Unknown metadata stays unknown.
 
-Choose a category below, [suggest a tool](https://github.com/aliammari1/awesome-ai-tools/issues/new?template=tool_addition.yml), or read our [curation methodology](https://docs.aliammari.dev/en/about/methodology/) and [security policy](SECURITY.md).
+Choose a category below, [suggest a tool](https://github.com/aliammari1/awesome-ai-tools/issues/new?template=tool_addition.yml), or read our [curation methodology](https://docs.aliammari.dev/en/about/methodology/).
+
+> **Security Notice:** Every entry links to an independent third-party service or repository. Listing is not an endorsement or security guarantee—always review a tool's privacy policy, terms, and permissions before sharing sensitive data, API keys, or credentials, or running downloaded code. To report a compromised domain, phishing page, or malicious link, see our [security policy](SECURITY.md) (`contact@aliammari.dev`) or [report a broken link](https://github.com/aliammari1/awesome-ai-tools/issues/new?template=broken_link.yml).
 
 ## Contents
 
