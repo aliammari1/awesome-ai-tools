@@ -1,0 +1,18 @@
+{
+  "name": "AIToolIndex",
+  "url": "https://aitoolindex.io/",
+  "description": "Searchable directory for comparing AI tools by use case, pricing, and workflow fit.",
+  "category": "ai-search-and-research",
+  "subcategory": {
+    "id": "research-and-knowledge-tools",
+    "name": "Research & Knowledge Tools"
+  },
+  "order": 9999,
+  "openSource": false,
+  "pricing": "free",
+  "status": "listed",
+  "source": {
+    "kind": "community",
+    "addedAt": "2026-04-20"
+  }
+}
