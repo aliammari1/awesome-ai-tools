@@ -428,6 +428,7 @@ Coding assistants, developer tools, code analysis, and software-engineering auto
 - [CodeGuru](https://aws.amazon.com/codeguru/) - AWS code review service.
 - [DeepCode](https://www.deepcode.ai/) - AI-powered code review.
 - [SonarQube](https://www.sonarqube.org/) - Code quality analysis.
+- [Ponder](https://github.com/Quinnod345/ponder) - Zero-dependency cognitive verification CLI and agent skill that enforces an 8-stage deliberation protocol and a mathematical convergence gate for code reviews.
 
 ## AI Search & Research
 
