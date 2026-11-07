@@ -48,6 +48,7 @@ Agent SDKs, autonomous systems, orchestration, tool use, memory, and browser aut
 
 - [Model Context Protocol](https://modelcontextprotocol.io/) - Open standard for connecting AI agents to tools and data sources.
 - [API.market MCP Gateway](https://api.market/mcp) - Hosted MCP gateway connecting AI agents to 1,500+ APIs for tool discovery, execution, usage checks, and subscriptions.
+- [System One API](https://system-one.dev/en/api) - Decision API and open-source TypeScript SDK returning structured choices, scores, and probabilities for AI agents.
 - [ComputeFirst](https://computefirst.net/docs) - Free hosted MCP server of versioned, deterministic tools for AI agents, such as identifier validation, date math, CSV/JSON transforms, unit conversion and statistics; no API key or sign-up.
 
 ### Autonomous Agents
