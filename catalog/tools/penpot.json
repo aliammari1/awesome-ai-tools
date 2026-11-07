@@ -1,0 +1,18 @@
+{
+  "name": "Penpot",
+  "url": "https://penpot.app/",
+  "description": "Open-source design platform with AI features and collaboration.",
+  "category": "creativity-and-design",
+  "subcategory": {
+    "id": "design-tools",
+    "name": "Design Tools"
+  },
+  "order": 66,
+  "openSource": true,
+  "pricing": null,
+  "status": "listed",
+  "source": {
+    "kind": "readme-migration",
+    "migratedAt": "2026-09-21"
+  }
+}

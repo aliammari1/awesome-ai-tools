@@ -1,0 +1,18 @@
+{
+  "name": "IELTS Writing Practice",
+  "url": "https://ieltswritingpractice.app/",
+  "description": "Free IELTS question bank and timed practice, with paid AI scores and writing feedback.",
+  "category": "research-and-education",
+  "subcategory": {
+    "id": "educational-ai-tools",
+    "name": "Educational AI Tools"
+  },
+  "order": 9999,
+  "openSource": false,
+  "pricing": "freemium",
+  "status": "listed",
+  "source": {
+    "kind": "community",
+    "addedAt": "2026-10-31"
+  }
+}

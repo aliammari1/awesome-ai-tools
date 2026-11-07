@@ -1,33 +1,13 @@
-## Description
-Please include a summary of the changes and the motivation behind them.
+## What changed and why?
 
-## Type of Change
-- [ ] Adding a new AI tool
-- [ ] Updating existing tool information
-- [ ] Fixing a broken link
-- [ ] Re-categorizing a tool
-- [ ] Documentation improvement
-- [ ] Other: ___________
+<!-- For catalog entries, include the official URL, what the tool does, and why it adds value. For code changes, describe the resulting behavior. -->
 
-## Checklist
-- [ ] I have read the [CONTRIBUTING.md](../CONTRIBUTING.md)
-- [ ] I have starred this repository ⭐ *(Higher repo visibility means more exposure for your tool!)*
-- [ ] The tool meets our quality criteria (active, reputable, functional)
-- [ ] The description follows our format: `- [Name](URL) - Description.`
-- [ ] Description is under 120 characters
-- [ ] The entry is in the most specific subcategory and alphabetically ordered
-- [ ] I have verified the link works
-- [ ] `awesome-lint` passes locally (or the CI check is green)
-- [ ] `lychee` passes locally (or the CI check is green)
+## Verification
 
-## Tool Information (for additions)
-- **Name**: 
-- **URL**: 
-- **Category**: 
-- **Description**: 
+<!-- What did you check? CI runs the repository checks; mention any manual verification or relevant limitations. -->
 
-## License Acknowledgment
-By submitting this PR, I dedicate my contribution to the public domain under the [CC0 1.0 Universal](../LICENSE) dedication used by this Awesome list.
+- [ ] For a catalog change, I checked for duplicates and verified the official URL.
+- [ ] For a catalog change, the description is factual and unknown metadata is omitted or `null`.
+- [ ] For a catalog change, I included the generated `README.md` update (`bun run generate:readme`).
 
-## Additional Notes
-Any additional information or context?
+By submitting this PR, I dedicate my contribution to the public domain under [CC0 1.0 Universal](https://github.com/aliammari1/awesome-ai-tools/blob/main/LICENSE).
