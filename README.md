@@ -553,6 +553,7 @@ Educational assistants, learning tools, academic research, and research platform
 - [Elispeak](https://app.elispeak.com/) - AI English speaking coach for live voice conversations on everyday, work, travel, and IELTS/TOEFL topics.
 - [IELTS Writing Practice](https://ieltswritingpractice.app/) - Free IELTS question bank and timed practice, with paid AI scores and writing feedback.
 - [StudyArena](https://studyarena.com) - Lets students compare three AI answers, vote, and reveal the models for free.
+- [Watch YouTube Highlights](https://funcove.dev/watchhighlights/) - Browser extension that selects and plays key passages from captioned YouTube videos with summaries and follow-up Q&A.
 
 ### Research Platforms
 
