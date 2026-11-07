@@ -592,6 +592,7 @@ Marketing, sales, e-commerce, retail, career, and job-search tools.
 - [Kickresume](https://www.kickresume.com/) - AI resume builder with templates and job matching.
 - [ATS Checker](https://atschecker.app/) - AI resume checker that inspects ATS parsing, compares resumes against job descriptions, and suggests targeted edits.
 - [JobEmerge](https://www.jobemerge.work/) - An AI career copilot with a job-fit test, a 19-language resume translator and a simple Markdown resume editor.
+- [NeverApply](https://neverapply.co/) - AI job-search agent that matches roles, tailors resumes, and submits approved applications with an MCP server.
 
 ## Gaming & Entertainment
 
