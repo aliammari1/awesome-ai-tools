@@ -1,0 +1,18 @@
+{
+  "name": "Scientific Figure",
+  "url": "https://scientificfigure.com/",
+  "description": "Draws scientific illustrations, graphical abstracts, data plots, and conference posters from a text prompt, sketch, or paper PDF, with SVG and PPTX export at journal column widths.",
+  "category": "ai-search-and-research",
+  "subcategory": {
+    "id": "research-and-knowledge-tools",
+    "name": "Research & Knowledge Tools"
+  },
+  "order": 10000,
+  "openSource": false,
+  "pricing": "freemium",
+  "status": "listed",
+  "source": {
+    "kind": "community",
+    "addedAt": "2026-11-07"
+  }
+}

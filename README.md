@@ -470,6 +470,7 @@ AI search engines, research assistants, knowledge discovery, and evidence-gather
 - [LibreAI](https://libreaihub.vercel.app) - A directory of open-source AI projects organized into categories, with README-derived installation guides.
 - [Nujan](https://nujan.app/) - Dual-pane scientific paper reader with Socratic AI coaching, formula breakdowns, and multi-paper literature synthesis.
 - [Slashspace](https://www.slashspace.ai/) - Local-first desktop AI canvas for research with branching chats, source context and side-by-side model comparison.
+- [Scientific Figure](https://scientificfigure.com/) - Draws scientific illustrations, graphical abstracts, data plots, and conference posters from a text prompt, sketch, or paper PDF, with SVG and PPTX export at journal column widths.
 
 ## Large Language Models
 
