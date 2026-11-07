@@ -146,6 +146,7 @@ Image generation, visual design, creative production, and design-assistance tool
 - [PixGT](https://www.pixgt.cn/) - E-commerce image generator with product scenes, clothing try-on, and model swapping.
 - [Seedream 5.5](https://seedream5-5.net/) - Web AI image generator and editor that works from text prompts or reference photos.
 - [SpriteCanvas](https://spritecanvas.com/) - AI sprite animation generator that turns a text prompt or character image into 2D game animations and exports transparent PNG sprite sheets with a JSON atlas.
+- [Stunna](https://stunna-app.com/) - AI photo editor for iPhone and Android offering camera-inspired film and flash looks, lighting fixes, and pose guides.
 - [voxelyo](https://voxelyo.com/) - AI photo enhancer for Airbnb, Vrbo, and real estate listings with sky replacement and twilight conversion.
 
 ### Design Tools
