@@ -164,6 +164,7 @@ Image generation, visual design, creative production, and design-assistance tool
 - [AdDogs](https://www.addogs.ai/) - AI ad creative generator that clones winning ad designs and applies your product photo and brand identity.
 - [APPLORE](https://applore.app/ai-app-icon-generator) - AI app icon generator with a reference library of 18,000+ real App Store and Google Play icons.
 - [Klaruvo](https://www.powersoftware.app/en-US/product/detail/klaruvo) - Desktop AI image editor for object and watermark removal that runs fully offline, with cutout, upscaling and batch processing.
+- [PicOnTap](https://picontap.com/) - Browser-based AI image editor that applies text-prompt edits such as object removal, background replacement, recoloring and photo restoration, with a free tier and no sign-up required.
 - [RoomMaker AI](https://roommakerai.org/) - AI room designer that redesigns a room from a photo, previews renovation changes, stages furniture, and drafts floor plan concepts.
 
 ## Communication & Writing
