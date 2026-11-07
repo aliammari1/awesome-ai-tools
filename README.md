@@ -617,6 +617,7 @@ AI application builders, chatbot builders, and tools for creating without tradit
 - [Chatbase](https://chatbase.co/) - Custom GPT chatbots trained on your data with analytics.
 - [Dante AI](https://dante-ai.com/) - AI chatbot builder with knowledge base and multi-platform deployment.
 - [Coze](https://www.coze.com/) - ByteDance's AI chatbot platform with plugins and workflows.
+- [Asyntai](https://asyntai.com/) - No-code chatbot builder that connects to your business data and integrates with websites and messaging channels.
 
 ## AI Safety & Ethics
 
