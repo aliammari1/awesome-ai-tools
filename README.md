@@ -136,7 +136,7 @@ Image generation, visual design, creative production, and design-assistance tool
 - [BlueWillow](https://www.bluewillow.ai/) - Free AI image generator.
 - [Prisma](https://prisma-ai.com/) - Artistic photo filters.
 - [Durofy](https://durofy.com/) - AI magazine cover generator that turns photos into styled covers with art-directed templates.
-- [Seedream 5.5](https://seedream5-5.net/) - Web AI image generator and editor thatworks from text prompts or reference photos.
+- [Seedream 5.5](https://seedream5-5.net/) - Web AI image generator and editor that works from text prompts or reference photos.
 - [voxelyo](https://voxelyo.com/) - AI photo enhancer for Airbnb, Vrbo, and real estate listings with sky replacement and twilight conversion.
 
 ### Design Tools
