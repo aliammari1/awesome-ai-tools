@@ -468,6 +468,7 @@ AI search engines, research assistants, knowledge discovery, and evidence-gather
 - [DisconfirmAI](https://disconfirmai.com/en) - Investment research site that helps you look for evidence against your thesis, with daily reading from public sources, research on filings and data, and a radar that checks for changes against conditions you set.
 - [LibreAI](https://libreaihub.vercel.app) - A directory of open-source AI projects organized into categories, with README-derived installation guides.
 - [Nujan](https://nujan.app/) - Dual-pane scientific paper reader with Socratic AI coaching, formula breakdowns, and multi-paper literature synthesis.
+- [Slashspace](https://www.slashspace.ai/) - Local-first desktop AI canvas for research with branching chats, source context and side-by-side model comparison.
 
 ## Large Language Models
 
