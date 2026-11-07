@@ -1,0 +1,18 @@
+{
+  "name": "codex-profiles",
+  "url": "https://github.com/Ducksss/codex-profiles",
+  "description": "CLI tool for launching OpenAI Codex CLI and ChatGPT Desktop with isolated CODEX_HOME profiles and local state.",
+  "category": "code-generation-and-development",
+  "subcategory": {
+    "id": "development-tools",
+    "name": "Development Tools"
+  },
+  "order": 9999,
+  "openSource": true,
+  "pricing": "free",
+  "status": "listed",
+  "source": {
+    "kind": "community",
+    "addedAt": "2026-11-07"
+  }
+}
