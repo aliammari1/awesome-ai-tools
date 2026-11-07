@@ -63,6 +63,7 @@ Agent SDKs, autonomous systems, orchestration, tool use, memory, and browser aut
 ### Agent Memory & State
 
 - [Letta](https://www.letta.com/) - Framework for stateful agents with long-term memory (formerly MemGPT).
+- [SoloPup Memory](https://github.com/OakcoderX/solopup-memory) - Open-source text-memory plugin for DeepSeek Harness with source references, project scopes, and revision history.
 
 ### Browser Automation
 
