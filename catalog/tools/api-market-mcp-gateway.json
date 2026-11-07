@@ -1,0 +1,18 @@
+{
+  "name": "API.market MCP Gateway",
+  "url": "https://api.market/mcp",
+  "description": "Hosted MCP gateway connecting AI agents to 1,500+ APIs for tool discovery, execution, usage checks, and subscriptions.",
+  "category": "ai-agents",
+  "subcategory": {
+    "id": "agent-protocols-and-tools",
+    "name": "Agent Protocols & Tools"
+  },
+  "order": 9999,
+  "openSource": false,
+  "pricing": "freemium",
+  "status": "listed",
+  "source": {
+    "kind": "community",
+    "addedAt": "2026-11-07"
+  }
+}
