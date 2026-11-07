@@ -364,6 +364,7 @@ Video generation, editing, enhancement, effects, and media-production tools.
 - [Wan 3.5](https://wan35.app/) - Browser-based AI video generator for text-to-video and image-to-video creation.
 - [Wedding AI](https://weddingai.studio/) - AI wedding invitation video maker that turns templates, names, and photos into an HD MP4.
 - [AI Crying Effect](https://aicryingeffect.app/) - Turns one adult portrait into a short AI crying-effect video, ordered by email without an account.
+- [Cutora AI](https://usecutora.com/) - AI video editor for talking-head videos that cuts pauses, false starts, and retakes, cleans audio, corrects color, and adds captions, zooms, and on-screen text on an editable timeline.
 - [cv.cm/v](https://cv.cm/en/v/) - Free in-browser AI photo to video: on-device depth estimation turns one image into a 3D camera-move MP4, nothing uploaded. The same site also has local AI image and music generators.
 - [Effect Video](https://effect.video/) - AI photo-to-video tool with viral effect templates for short vertical clips.
 - [Magic Hour](https://magichour.ai/) - AI video creation and editing with text-to-video, image-to-video, face swap, lip sync, and animation tools.
