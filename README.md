@@ -648,6 +648,7 @@ AI application builders, chatbot builders, and tools for creating without tradit
 - [FlutterFlow](https://flutterflow.io/) - Visual Flutter app builder.
 - [Softr](https://www.softr.io/) - No-code web app builder.
 - [Suriya](https://suriya.ai) - AI app builder for Thai small businesses.
+- [IdeaMade](https://ideamade.ai/) - Turns natural-language requirements into editable product blueprints to build, preview, revise, and publish web apps.
 - [Newly](https://newly.app/) - AI mobile app builder that generates React Native iOS and Android apps with cloud previews and source export.
 
 ### Chatbot Builders
