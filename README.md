@@ -347,6 +347,7 @@ Music generation, voice, speech, transcription, and audio-production tools.
 - [HappyScribe](https://www.happyscribe.com/) - AI transcription with 120+ languages and subtitle export.
 - [Resemble AI](https://www.resemble.ai/) - AI voice cloning with real-time synthesis and emotion control.
 - [Krisp](https://krisp.ai/) - AI-powered noise cancellation and meeting transcription.
+- [Audio Cutter AI](https://audiocutter.ai/) - Browser-based AI audio editor that cuts, trims, and splits recordings using natural-language prompts and topic search.
 - [Transcribe Video: To The Text](https://video2text.ttt.so/) - iPhone app that transcribes video and audio files, YouTube links, and live voice into text with speaker labels, summaries, and TXT/DOCX export.
 - [Voqusa](https://www.voqusa.com/en/free/instagram-transcript) - Web tool that turns Instagram, TikTok and YouTube videos into text transcripts; requires a free signup with 5 free credits.
 
