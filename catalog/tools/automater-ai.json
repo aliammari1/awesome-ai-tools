@@ -1,0 +1,15 @@
+{
+  "name": "AUTOMATER.ai",
+  "url": "https://automater.ai/",
+  "description": "Tray app that keeps track of the AI coding agents you run, with a searchable library of past sessions, a flag when an agent is waiting on you, and usage tracking across providers.",
+  "category": "productivity",
+  "subcategory": null,
+  "order": 9999,
+  "openSource": false,
+  "pricing": "freemium",
+  "status": "listed",
+  "source": {
+    "kind": "community",
+    "addedAt": "2026-11-05"
+  }
+}
