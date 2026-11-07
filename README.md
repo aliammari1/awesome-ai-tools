@@ -140,6 +140,7 @@ Image generation, visual design, creative production, and design-assistance tool
 - [MakeImg](https://makeimg.ai/) - AI photo generator that turns text prompts or photos into new images using models such as Nano Banana 2.1, GPT Image 2.5, and FLUX.2 Pro.
 - [PixGT](https://www.pixgt.cn/) - E-commerce image generator with product scenes, clothing try-on, and model swapping.
 - [Seedream 5.5](https://seedream5-5.net/) - Web AI image generator and editor that works from text prompts or reference photos.
+- [SpriteCanvas](https://spritecanvas.com/) - AI sprite animation generator that turns a text prompt or character image into 2D game animations and exports transparent PNG sprite sheets with a JSON atlas.
 - [voxelyo](https://voxelyo.com/) - AI photo enhancer for Airbnb, Vrbo, and real estate listings with sky replacement and twilight conversion.
 
 ### Design Tools
