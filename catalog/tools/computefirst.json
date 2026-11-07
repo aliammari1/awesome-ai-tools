@@ -1,0 +1,18 @@
+{
+  "name": "ComputeFirst",
+  "url": "https://computefirst.net/docs",
+  "description": "Free hosted MCP server of versioned, deterministic tools for AI agents, such as identifier validation, date math, CSV/JSON transforms, unit conversion and statistics; no API key or sign-up.",
+  "category": "ai-agents",
+  "subcategory": {
+    "id": "agent-protocols-and-tools",
+    "name": "Agent Protocols & Tools"
+  },
+  "order": 10000,
+  "openSource": false,
+  "pricing": "free",
+  "status": "listed",
+  "source": {
+    "kind": "community",
+    "addedAt": "2026-11-01"
+  }
+}
