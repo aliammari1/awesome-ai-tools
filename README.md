@@ -70,6 +70,7 @@ Agent SDKs, autonomous systems, orchestration, tool use, memory, and browser aut
 Scheduling, task management, project workflows, email, and day-to-day work automation.
 
 - [AUTOMATER.ai](https://automater.ai/) - Tray app that keeps track of the AI coding agents you run, with a searchable library of past sessions, a flag when an agent is waiting on you, and usage tracking across providers.
+- [InnerCanvas](https://innercanvas.app/) - Multilingual web app that turns guided drawing prompts such as House-Tree-Person into AI self-reflection reports.
 - [OtterFill](https://otterfill.com/) - AI form filler that turns any form into clear questions, prefills answers from your documents, and cross-checks answers across your other forms.
 
 ### Time Management & Scheduling

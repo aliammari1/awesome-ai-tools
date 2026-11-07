@@ -1,0 +1,15 @@
+{
+  "name": "InnerCanvas",
+  "url": "https://innercanvas.app/",
+  "description": "Multilingual web app that turns guided drawing prompts such as House-Tree-Person into AI self-reflection reports.",
+  "category": "productivity",
+  "subcategory": null,
+  "order": 9999,
+  "openSource": false,
+  "pricing": "freemium",
+  "status": "listed",
+  "source": {
+    "kind": "community",
+    "addedAt": "2026-11-07"
+  }
+}
