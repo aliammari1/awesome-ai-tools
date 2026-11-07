@@ -1,0 +1,18 @@
+{
+  "name": "Kid Story",
+  "url": "https://aikidstory.app/",
+  "description": "AI children's picture book generator that turns toy photos into consistent character illustrations with PDF export.",
+  "category": "creativity-and-design",
+  "subcategory": {
+    "id": "image-generation-and-art",
+    "name": "Image Generation & Art"
+  },
+  "order": 9999,
+  "openSource": false,
+  "pricing": "paid",
+  "status": "listed",
+  "source": {
+    "kind": "community",
+    "addedAt": "2026-11-07"
+  }
+}
