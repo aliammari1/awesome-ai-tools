@@ -47,6 +47,7 @@ Agent SDKs, autonomous systems, orchestration, tool use, memory, and browser aut
 ### Agent Protocols & Tools
 
 - [Model Context Protocol](https://modelcontextprotocol.io/) - Open standard for connecting AI agents to tools and data sources.
+- [ComputeFirst](https://computefirst.net/docs) - Free hosted MCP server of versioned, deterministic tools for AI agents, such as identifier validation, date math, CSV/JSON transforms, unit conversion and statistics; no API key or sign-up.
 
 ### Autonomous Agents
 
@@ -68,6 +69,7 @@ Agent SDKs, autonomous systems, orchestration, tool use, memory, and browser aut
 
 Scheduling, task management, project workflows, email, and day-to-day work automation.
 
+- [AUTOMATER.ai](https://automater.ai/) - Tray app that keeps track of the AI coding agents you run, with a searchable library of past sessions, a flag when an agent is waiting on you, and usage tracking across providers.
 - [OtterFill](https://otterfill.com/) - AI form filler that turns any form into clear questions, prefills answers from your documents, and cross-checks answers across your other forms.
 
 ### Time Management & Scheduling
@@ -86,6 +88,7 @@ Scheduling, task management, project workflows, email, and day-to-day work autom
 - [Morgen](https://morgen.so/) - Calendar app with scheduling and task integration.
 - [Amie](https://amie.so/) - Beautiful calendar app with AI scheduling.
 - [ExtraBrain](https://extrabrain.app/) - AI copilot for live interviews and meetings.
+- [Plainer](https://plainer.app/) - Workspace for notes and files with a planner view, timeboxing and an AI assistant whose changes you can undo.
 
 ### Task & Project Management
 
@@ -107,6 +110,7 @@ Scheduling, task management, project workflows, email, and day-to-day work autom
 - [SaneBox](https://www.sanebox.com) - AI email filtering and prioritization.
 - [Mailstrom](https://mailstrom.co) - Bulk email cleanup with AI.
 - [Spike](https://www.spikenow.com/) - Conversational email with AI features.
+- [Pipp](https://pipp.so/) - Shared inbox for small support teams, with built-in Pipp AI and an MCP server so your own agent can work in it.
 
 ## Creativity & Design
 
@@ -135,7 +139,11 @@ Image generation, visual design, creative production, and design-assistance tool
 - [Jasper Art](https://www.jasper.ai/art) - AI art generation for marketers.
 - [BlueWillow](https://www.bluewillow.ai/) - Free AI image generator.
 - [Prisma](https://prisma-ai.com/) - Artistic photo filters.
+- [Durofy](https://durofy.com/) - AI magazine cover generator that turns photos into styled covers with art-directed templates.
+- [MakeImg](https://makeimg.ai/) - AI photo generator that turns text prompts or photos into new images using models such as Nano Banana 2.1, GPT Image 2.5, and FLUX.2 Pro.
+- [PixGT](https://www.pixgt.cn/) - E-commerce image generator with product scenes, clothing try-on, and model swapping.
 - [Seedream 5.5](https://seedream5-5.net/) - Web AI image generator and editor that works from text prompts or reference photos.
+- [SpriteCanvas](https://spritecanvas.com/) - AI sprite animation generator that turns a text prompt or character image into 2D game animations and exports transparent PNG sprite sheets with a JSON atlas.
 - [voxelyo](https://voxelyo.com/) - AI photo enhancer for Airbnb, Vrbo, and real estate listings with sky replacement and twilight conversion.
 
 ### Design Tools
@@ -181,6 +189,7 @@ Writing, content creation, translation, localization, and communication assistan
 - [Frase](https://www.frase.io/) - AI SEO content creation and optimization with SERP analysis.
 - [Surfer SEO](https://surferseo.com/) - AI-powered content optimization with NLP analysis.
 - [README Skills](https://github.com/Shiaoming123/readme-skills) - Evidence-first Agent Skill for auditing and writing repository-matched, multilingual READMEs.
+- [AI eBook Pro](https://aiebookpro.com/) - AI eBook generator that writes a full book with chapters and a cover from one sentence, with PDF, EPUB and DOCX export.
 
 ### Content Creation
 
@@ -194,6 +203,8 @@ Writing, content creation, translation, localization, and communication assistan
 - [SocialBu](https://socialbu.com/) - AI-powered social media management for scheduling, publishing, and automating across X, Instagram, LinkedIn, Facebook, TikTok, and more.
 - [ImagineYourBook](https://www.imagineyourbook.com/) - Web app that plans and drafts full manuscripts chapter by chapter, with series story bibles and Word/EPUB/Markdown export.
 - [Multi Upload Tool](https://multi-upload-tool.com/) - Schedules one video to TikTok, YouTube Shorts, Instagram, Facebook, LinkedIn, Pinterest, Bluesky, Threads, and X from a dashboard, REST API, or MCP server that lets Claude, ChatGPT, and Cursor create posts.
+- [Descriptra](https://descriptra.com/) - AI product description generator and GEO/SEO catalog optimizer for e-commerce in 22 languages.
+- [CreatorSkills](https://creatorskills.co) - Marketplace for AI skills (SKILL.md format) for content creators covering YouTube scripting, sponsorship analysis, content repurposing, and audience growth.
 
 ### Translation & Localization
 
@@ -291,6 +302,8 @@ Image recognition, visual analysis, and specialized computer-vision applications
 
 Music generation, voice, speech, transcription, and audio-production tools.
 
+- [Vocal Separator](https://vocalseparator.com/) - Separates vocals and instruments into WAV stems, with loops, tempo and pitch controls for music practice.
+
 ### Music Generation & Composition
 
 - [Suno](https://suno.ai/) - AI music generator.
@@ -322,6 +335,7 @@ Music generation, voice, speech, transcription, and audio-production tools.
 - [HappyScribe](https://www.happyscribe.com/) - AI transcription with 120+ languages and subtitle export.
 - [Resemble AI](https://www.resemble.ai/) - AI voice cloning with real-time synthesis and emotion control.
 - [Krisp](https://krisp.ai/) - AI-powered noise cancellation and meeting transcription.
+- [Transcribe Video: To The Text](https://video2text.ttt.so/) - iPhone app that transcribes video and audio files, YouTube links, and live voice into text with speaker labels, summaries, and TXT/DOCX export.
 - [Voqusa](https://www.voqusa.com/en/free/instagram-transcript) - Web tool that turns Instagram, TikTok and YouTube videos into text transcripts; requires a free signup with 5 free credits.
 
 ## Video & Media
@@ -357,10 +371,15 @@ Video generation, editing, enhancement, effects, and media-production tools.
 - [Visual Maker AI](https://visualmakerai.com/) - Web workspace for generating images, turning photos into short videos, and breaking scripts into scenes and clips with models such as Veo, Seedance, and Kling.
 - [Wan 3.5](https://wan35.app/) - Browser-based AI video generator for text-to-video and image-to-video creation.
 - [Wedding AI](https://weddingai.studio/) - AI wedding invitation video maker that turns templates, names, and photos into an HD MP4.
+- [AI Crying Effect](https://aicryingeffect.app/) - Turns one adult portrait into a short AI crying-effect video, ordered by email without an account.
+- [Cutora AI](https://usecutora.com/) - AI video editor for talking-head videos that cuts pauses, false starts, and retakes, cleans audio, corrects color, and adds captions, zooms, and on-screen text on an editable timeline.
+- [cv.cm/v](https://cv.cm/en/v/) - Free in-browser AI photo to video: on-device depth estimation turns one image into a 3D camera-move MP4, nothing uploaded. The same site also has local AI image and music generators.
 - [Effect Video](https://effect.video/) - AI photo-to-video tool with viral effect templates for short vertical clips.
 - [Magic Hour](https://magichour.ai/) - AI video creation and editing with text-to-video, image-to-video, face swap, lip sync, and animation tools.
 - [Pixwit](https://pixwit.ai/) - All-in-one AI creative platform for generating images, videos, and music from text or image prompts.
+- [Seedance Now](https://seedancenow.com/) - Independent browser-based studio for text-to-video and image-to-video with models such as Seedance 2.5, Kling 4.0, and Wan 3.0.
 - [shortshort](https://www.shortshort.io/) - Turns one long video (talk, podcast, course) into vertical 9:16 shorts with word-by-word captions.
+- [Unsora](https://tryunsora.com/) - Open-source app, API and MCP server that generates images, video, voiceovers, music and clips and schedules them to social accounts.
 - [VideoText](https://videotext.io) - Subtitle and transcript tools: Make Client Ready format compliance checks, subtitle fixing, video-to-SRT/VTT, translation, video compression and voice recording.
 
 ### Video Enhancement & Effects
@@ -389,6 +408,7 @@ Coding assistants, developer tools, code analysis, and software-engineering auto
 - [Continue.dev](https://continue.dev/) - Open-source AI coding assistant for VS Code & JetBrains with custom models.
 - [Aider](https://aider.chat/) - Open-source AI pair programmer for terminal with Git integration.
 - [CodeT5](https://github.com/salesforce/CodeT5) - Open-source code generation by Salesforce.
+- [md²](https://github.com/jan-bogaerts/md2) - Open-source desktop workspace for managing Codex and Claude Code tasks through local Markdown cards, isolated Git worktrees, multi-account switching, usage statistics, and editable diagrams for round-tripping between code and visual models.
 - [Orbi](https://orbi.build/) - Open-source GitHub coding agent that turns issues labeled ai-ready into independently reviewed, CI-checked, merged pull requests. Free tier: first 3 merged pull requests free, no credit card required.
 - [YYLO](https://github.com/yylo-dev/yylo) - Open-source CLI that orchestrates AI coding agents with Kanban task boards, Git worktree workflows, and merge automation.
 
@@ -413,6 +433,7 @@ Coding assistants, developer tools, code analysis, and software-engineering auto
 - [CodeGuru](https://aws.amazon.com/codeguru/) - AWS code review service.
 - [DeepCode](https://www.deepcode.ai/) - AI-powered code review.
 - [SonarQube](https://www.sonarqube.org/) - Code quality analysis.
+- [Ponder](https://github.com/Quinnod345/ponder) - Zero-dependency cognitive verification CLI and agent skill that enforces an 8-stage deliberation protocol and a mathematical convergence gate for code reviews.
 
 ## AI Search & Research
 
@@ -443,10 +464,13 @@ AI search engines, research assistants, knowledge discovery, and evidence-gather
 - [Scite](https://scite.ai/) - Smart citations for research validation.
 - [Connected Papers](https://www.connectedpapers.com/) - Visual academic paper exploration.
 - [CiteMe](https://citeme.app/) - AI-powered academic citation generator that searches 11+ scholarly databases and formats references in 40+ citation styles.
+- [AIToolIndex](https://aitoolindex.io/) - Searchable directory for comparing AI tools by use case, pricing, and workflow fit.
 - [Arcmira: YouTube Transcript Search](https://arcmira.com) - Search YouTube transcripts for timestamped quotes, speaker appearances, sponsors and recommendations through an app, API and MCP connection.
 - [DisconfirmAI](https://disconfirmai.com/en) - Investment research site that helps you look for evidence against your thesis, with daily reading from public sources, research on filings and data, and a radar that checks for changes against conditions you set.
 - [LibreAI](https://libreaihub.vercel.app) - A directory of open-source AI projects organized into categories, with README-derived installation guides.
 - [Nujan](https://nujan.app/) - Dual-pane scientific paper reader with Socratic AI coaching, formula breakdowns, and multi-paper literature synthesis.
+- [Slashspace](https://www.slashspace.ai/) - Local-first desktop AI canvas for research with branching chats, source context and side-by-side model comparison.
+- [Scientific Figure](https://scientificfigure.com/) - Draws scientific illustrations, graphical abstracts, data plots, and conference posters from a text prompt, sketch, or paper PDF, with SVG and PPTX export at journal column widths.
 
 ## Large Language Models
 
@@ -486,6 +510,7 @@ General-purpose models, open models, and frameworks used to build with LLMs.
 - [Anyscale](https://www.anyscale.com/) - Scalable LLM deployment with Ray framework.
 - [Future AGI](https://github.com/future-agi/future-agi) - Open-source self-hostable end-to-end agent engineering and optimization platform unifying tracing, evaluation, simulation, datasets, gateway, and guardrails in one feedback loop.
 - [ModelVRAM](https://modelvram.com/) - Browser-based calculator that estimates the GPU memory an LLM needs for inference or fine-tuning (weights, KV cache and overhead) from the model's Hugging Face config, and lists the GPUs and Macs that fit.
+- [UberLLM](https://uberllm.dev/) - Prepaid API with OpenAI- and Anthropic-compatible endpoints on one key for GPT, Claude, Gemini, DeepSeek and other text models plus image, video, music and speech models, each request billed at what its provider charged.
 
 ## Research & Education
 
@@ -503,8 +528,10 @@ Educational assistants, learning tools, academic research, and research platform
 - [Synthesis](https://www.synthesis.com/) - AI math tutoring for kids with problem-solving focus.
 - [Cognii](https://www.cognii.com/) - AI tutoring with natural language assessment.
 - [Carnegie Learning](https://www.carnegielearning.com/) - AI-powered math and literacy solutions for schools.
+- [CitePod](https://citepod.com/) - Turns study notes into an AI-generated study podcast with transcript, topic coverage, and recall questions.
 - [Elispeak](https://app.elispeak.com/) - AI English speaking coach for live voice conversations on everyday, work, travel, and IELTS/TOEFL topics.
 - [IELTS Writing Practice](https://ieltswritingpractice.app/) - Free IELTS question bank and timed practice, with paid AI scores and writing feedback.
+- [StudyArena](https://studyarena.com) - Lets students compare three AI answers, vote, and reveal the models for free.
 
 ### Research Platforms
 
@@ -541,6 +568,7 @@ Marketing, sales, e-commerce, retail, career, and job-search tools.
 - [Klevu](https://www.klevu.com/) - AI-powered site search.
 - [Searchspring](https://searchspring.com/) - E-commerce search and merchandising.
 - [RankingRider](https://www.rankingrider.com/) - AI-powered bulk SEO optimization for Shopify products via CSV.
+- [Photta](https://www.photta.app/) - AI product photography studio and embedded e-commerce virtual try-on widget that turns single garment, jewelry, or eyewear photos into on-model lookbooks, 3D ghost mannequins, and live customer try-on experiences.
 
 ### Career & Job Search
 
@@ -610,6 +638,7 @@ AI application builders, chatbot builders, and tools for creating without tradit
 - [Chatbase](https://chatbase.co/) - Custom GPT chatbots trained on your data with analytics.
 - [Dante AI](https://dante-ai.com/) - AI chatbot builder with knowledge base and multi-platform deployment.
 - [Coze](https://www.coze.com/) - ByteDance's AI chatbot platform with plugins and workflows.
+- [Asyntai](https://asyntai.com/) - No-code chatbot builder that connects to your business data and integrates with websites and messaging channels.
 
 ## AI Safety & Ethics
 
@@ -627,6 +656,7 @@ Safety evaluation, governance, responsible-AI, and risk-management tools.
 - [Microsoft Responsible AI](https://www.microsoft.com/en-us/ai/responsible-ai) - AI ethics framework.
 - [Google AI Principles](https://ai.google/principles/) - AI ethics guidelines.
 - [isGenAI](https://isgenai.com/) - Free checker that reports recorded evidence of AI use in images, text and code, such as C2PA Content Credentials, IPTC AI labels and saved generator prompts, with a keyless REST API and MCP server.
+- [TrustHawk](https://trusthawk.ai/) - Free trust ratings for AI companies, scored on safety, transparency, security and privacy from what each company publishes, with a source link behind every score.
 
 ## Miscellaneous
 

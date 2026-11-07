@@ -1,0 +1,18 @@
+{
+  "name": "StudyArena",
+  "url": "https://studyarena.com",
+  "description": "Lets students compare three AI answers, vote, and reveal the models for free.",
+  "category": "research-and-education",
+  "subcategory": {
+    "id": "educational-ai-tools",
+    "name": "Educational AI Tools"
+  },
+  "order": 9999,
+  "openSource": false,
+  "pricing": "freemium",
+  "status": "listed",
+  "source": {
+    "kind": "community",
+    "addedAt": "2026-10-31"
+  }
+}

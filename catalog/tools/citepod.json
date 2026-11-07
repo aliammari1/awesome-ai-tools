@@ -1,0 +1,18 @@
+{
+  "name": "CitePod",
+  "url": "https://citepod.com/",
+  "description": "Turns study notes into an AI-generated study podcast with transcript, topic coverage, and recall questions.",
+  "category": "research-and-education",
+  "subcategory": {
+    "id": "educational-ai-tools",
+    "name": "Educational AI Tools"
+  },
+  "order": 9999,
+  "openSource": false,
+  "pricing": "freemium",
+  "status": "listed",
+  "source": {
+    "kind": "community",
+    "addedAt": "2026-09-21"
+  }
+}
