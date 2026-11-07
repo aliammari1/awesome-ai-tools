@@ -1,0 +1,18 @@
+{
+  "name": "EditableImage",
+  "url": "https://editableimage.com/",
+  "description": "Converts flat images into editable PowerPoint slides, draw.io diagrams, layered PSD files, or formatted Markdown.",
+  "category": "creativity-and-design",
+  "subcategory": {
+    "id": "design-tools",
+    "name": "Design Tools"
+  },
+  "order": 9999,
+  "openSource": false,
+  "pricing": "freemium",
+  "status": "listed",
+  "source": {
+    "kind": "community",
+    "addedAt": "2026-11-07"
+  }
+}
