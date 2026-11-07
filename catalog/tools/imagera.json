@@ -1,0 +1,18 @@
+{
+  "name": "Imagera",
+  "url": "https://imagera.ai/",
+  "description": "Multi-model AI studio for creating and editing images, video, voice, and music with consistent character IDs.",
+  "category": "creativity-and-design",
+  "subcategory": {
+    "id": "image-generation-and-art",
+    "name": "Image Generation & Art"
+  },
+  "order": 9999,
+  "openSource": false,
+  "pricing": "paid",
+  "status": "listed",
+  "source": {
+    "kind": "community",
+    "addedAt": "2026-11-07"
+  }
+}

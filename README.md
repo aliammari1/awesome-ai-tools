@@ -148,6 +148,7 @@ Image generation, visual design, creative production, and design-assistance tool
 - [BlueWillow](https://www.bluewillow.ai/) - Free AI image generator.
 - [Prisma](https://prisma-ai.com/) - Artistic photo filters.
 - [Durofy](https://durofy.com/) - AI magazine cover generator that turns photos into styled covers with art-directed templates.
+- [Imagera](https://imagera.ai/) - Multi-model AI studio for creating and editing images, video, voice, and music with consistent character IDs.
 - [Kid Story](https://aikidstory.app/) - AI children's picture book generator that turns toy photos into consistent character illustrations with PDF export.
 - [MakeImg](https://makeimg.ai/) - AI photo generator that turns text prompts or photos into new images using models such as Nano Banana 2.1, GPT Image 2.5, and FLUX.2 Pro.
 - [PixGT](https://www.pixgt.cn/) - E-commerce image generator with product scenes, clothing try-on, and model swapping.
