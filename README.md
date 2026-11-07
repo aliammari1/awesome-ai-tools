@@ -508,6 +508,7 @@ Educational assistants, learning tools, academic research, and research platform
 - [Synthesis](https://www.synthesis.com/) - AI math tutoring for kids with problem-solving focus.
 - [Cognii](https://www.cognii.com/) - AI tutoring with natural language assessment.
 - [Carnegie Learning](https://www.carnegielearning.com/) - AI-powered math and literacy solutions for schools.
+- [CitePod](https://citepod.com/) - Turns study notes into an AI-generated study podcast with transcript, topic coverage, and recall questions.
 - [Elispeak](https://app.elispeak.com/) - AI English speaking coach for live voice conversations on everyday, work, travel, and IELTS/TOEFL topics.
 - [IELTS Writing Practice](https://ieltswritingpractice.app/) - Free IELTS question bank and timed practice, with paid AI scores and writing feedback.
 - [StudyArena](https://studyarena.com) - Lets students compare three AI answers, vote, and reveal the models for free.
