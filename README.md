@@ -108,6 +108,7 @@ Scheduling, task management, project workflows, email, and day-to-day work autom
 - [SaneBox](https://www.sanebox.com) - AI email filtering and prioritization.
 - [Mailstrom](https://mailstrom.co) - Bulk email cleanup with AI.
 - [Spike](https://www.spikenow.com/) - Conversational email with AI features.
+- [Pipp](https://pipp.so/) - Shared inbox for small support teams, with built-in Pipp AI and an MCP server so your own agent can work in it.
 
 ## Creativity & Design
 
