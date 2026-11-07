@@ -447,6 +447,7 @@ AI search engines, research assistants, knowledge discovery, and evidence-gather
 - [DisconfirmAI](https://disconfirmai.com/en) - Investment research site that helps you look for evidence against your thesis, with daily reading from public sources, research on filings and data, and a radar that checks for changes against conditions you set.
 - [LibreAI](https://libreaihub.vercel.app) - A directory of open-source AI projects organized into categories, with README-derived installation guides.
 - [Nujan](https://nujan.app/) - Dual-pane scientific paper reader with Socratic AI coaching, formula breakdowns, and multi-paper literature synthesis.
+- [Scientific Figure](https://scientificfigure.com/) - Draws scientific illustrations, graphical abstracts, data plots, and conference posters from a text prompt, sketch, or paper PDF, with SVG and PPTX export at journal column widths.
 
 ## Large Language Models
 
