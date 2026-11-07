@@ -216,6 +216,7 @@ Writing, content creation, translation, localization, and communication assistan
 - [Microsoft Translator](https://www.microsoft.com/en-us/translator/) - Real-time translation.
 - [Linguee](https://www.linguee.com/) - Dictionary with translation examples.
 - [Reverso](https://www.reverso.net/) - Translation with context examples.
+- [MangaTranslate](https://www.mangatranslate.com/) - Web and API platform that translates text in manga and comic images using OCR, automated typesetting, and an editor.
 
 ## Data Science & Analytics
 
