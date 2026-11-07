@@ -1,0 +1,18 @@
+{
+  "name": "Newly",
+  "url": "https://newly.app/",
+  "description": "AI mobile app builder that generates React Native iOS and Android apps with cloud previews and source export.",
+  "category": "no-code-low-code-ai",
+  "subcategory": {
+    "id": "ai-app-builders",
+    "name": "AI App Builders"
+  },
+  "order": 9999,
+  "openSource": false,
+  "pricing": "paid",
+  "status": "listed",
+  "source": {
+    "kind": "community",
+    "addedAt": "2026-11-07"
+  }
+}
