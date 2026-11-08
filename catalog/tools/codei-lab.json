@@ -1,0 +1,18 @@
+{
+  "name": "CodeI Lab",
+  "url": "https://www.codeilab.com/",
+  "description": "Third-party GPT API gateway for coding agents that serves GPT-6 and GPT-5.6 models through OpenAI and Anthropic-compatible endpoints on paid plans.",
+  "category": "large-language-models",
+  "subcategory": {
+    "id": "llm-tools-and-frameworks",
+    "name": "LLM Tools & Frameworks"
+  },
+  "order": 9999,
+  "openSource": false,
+  "pricing": "paid",
+  "status": "listed",
+  "source": {
+    "kind": "community",
+    "addedAt": "2026-11-08"
+  }
+}
