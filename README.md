@@ -208,6 +208,7 @@ Writing, content creation, translation, localization, and communication assistan
 - [Surfer SEO](https://surferseo.com/) - AI-powered content optimization with NLP analysis.
 - [README Skills](https://github.com/Shiaoming123/readme-skills) - Evidence-first Agent Skill for auditing and writing repository-matched, multilingual READMEs.
 - [AI eBook Pro](https://aiebookpro.com/) - AI eBook generator that writes a full book with chapters and a cover from one sentence, with PDF, EPUB and DOCX export.
+- [Hypercritica](https://hypercritica.com/) - Whole-manuscript developmental editing with an editorial letter, comments, and tracked changes.
 
 ### Content Creation
 
