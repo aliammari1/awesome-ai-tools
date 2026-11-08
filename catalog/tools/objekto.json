@@ -1,0 +1,18 @@
+{
+  "name": "objekto.io",
+  "url": "https://objekto.io/en",
+  "description": "Designs multi-part, 3D-printable objects from a few words, a photo, or a sketch, with printability checks and an assembly guide, then has them printed by an industrial workshop and delivered in France.",
+  "category": "creativity-and-design",
+  "subcategory": {
+    "id": "design-tools",
+    "name": "Design Tools"
+  },
+  "order": 9999,
+  "openSource": false,
+  "pricing": "freemium",
+  "status": "listed",
+  "source": {
+    "kind": "community",
+    "addedAt": "2026-11-08"
+  }
+}

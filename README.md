@@ -181,6 +181,7 @@ Image generation, visual design, creative production, and design-assistance tool
 - [DESIGN:OS Studio](https://jangtrinh.github.io/design-os-studio/) - Free GPU-accelerated native interface design tool built in Rust that opens Figma files and exposes MCP tools for agents.
 - [EditableImage](https://editableimage.com/) - Converts flat images into editable PowerPoint slides, draw.io diagrams, layered PSD files, or formatted Markdown.
 - [Klaruvo](https://www.powersoftware.app/en-US/product/detail/klaruvo) - Desktop AI image editor for object and watermark removal that runs fully offline, with cutout, upscaling and batch processing.
+- [objekto.io](https://objekto.io/en) - Designs multi-part, 3D-printable objects from a few words, a photo, or a sketch, with printability checks and an assembly guide, then has them printed by an industrial workshop and delivered in France.
 - [RoomLab.app](https://roomlab.app/) - AI interior design and property tool for virtual staging, restyling, decluttering, renders, and walkthrough videos.
 - [RoomMaker AI](https://roommakerai.org/) - AI room designer that redesigns a room from a photo, previews renovation changes, stages furniture, and drafts floor plan concepts.
 
