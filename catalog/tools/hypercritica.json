@@ -1,0 +1,18 @@
+{
+  "name": "Hypercritica",
+  "url": "https://hypercritica.com/",
+  "description": "Whole-manuscript developmental editing with an editorial letter, comments, and tracked changes.",
+  "category": "communication-and-writing",
+  "subcategory": {
+    "id": "writing-assistants",
+    "name": "Writing Assistants"
+  },
+  "order": 9999,
+  "openSource": false,
+  "pricing": "freemium",
+  "status": "listed",
+  "source": {
+    "kind": "community",
+    "addedAt": "2026-11-08"
+  }
+}
