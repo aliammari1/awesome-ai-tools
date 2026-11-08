@@ -183,6 +183,7 @@ Image generation, visual design, creative production, and design-assistance tool
 - [Klaruvo](https://www.powersoftware.app/en-US/product/detail/klaruvo) - Desktop AI image editor for object and watermark removal that runs fully offline, with cutout, upscaling and batch processing.
 - [RoomLab.app](https://roomlab.app/) - AI interior design and property tool for virtual staging, restyling, decluttering, renders, and walkthrough videos.
 - [RoomMaker AI](https://roommakerai.org/) - AI room designer that redesigns a room from a photo, previews renovation changes, stages furniture, and drafts floor plan concepts.
+- [CoverNice](https://covernice.com/) - Book cover studio for Amazon KDP: five editable directions, spine width from page count, print-ready wrap PDF.
 
 ## Communication & Writing
 
