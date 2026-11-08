@@ -164,6 +164,7 @@ Image generation, visual design, creative production, and design-assistance tool
 
 - [Figma AI](https://www.figma.com/) - Design platform with AI features and auto layout.
 - [Canva AI](https://www.canva.com/) - Design platform with Magic Design and background removal.
+- [EasySociable](https://easysociable.com/?utm_source=aliammari1-awesome-ai-tools&utm_medium=directory&utm_campaign=backlinks) - AI carousel maker that runs inside your coding agent — prompt to branded multi-page carousels for TikTok, Instagram & LinkedIn.
 - [Framer](https://www.framer.com/) - Web design with AI site generation and responsive layouts.
 - [Uizard](https://uizard.io/) - AI-powered design tool with wireframe-to-UI conversion.
 - [Simplified AI](https://simplified.com/) - All-in-one AI platform for design, video, and content.
