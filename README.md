@@ -112,6 +112,7 @@ Scheduling, task management, project workflows, email, and day-to-day work autom
 - [Mem](https://mem.ai/) - AI-native note-taking and knowledge management.
 - [Personal AI](https://personal.ai/) - AI chatbot for personal knowledge management.
 - [Enhanciar](https://enhanciar.in/) - Company knowledge assistant that answers questions across Slack, Gmail, Notion, Drive, and GitHub with source links.
+- [Richer Visions](https://richervisions.com/) - Explains uploaded PDFs and document photos in plain English, highlighting key terms, deadlines, and next steps.
 
 ### Email & Communication
 
