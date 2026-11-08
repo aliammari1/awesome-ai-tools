@@ -1,0 +1,18 @@
+{
+  "name": "Code By AI",
+  "url": "https://www.codebyai.net/",
+  "description": "Pay-per-token API gateway that gives Claude Code, Codex CLI, Gemini CLI and other coding agents one key for Claude, GPT and Gemini models.",
+  "category": "large-language-models",
+  "subcategory": {
+    "id": "llm-tools-and-frameworks",
+    "name": "LLM Tools & Frameworks"
+  },
+  "order": 9999,
+  "openSource": false,
+  "pricing": "paid",
+  "status": "listed",
+  "source": {
+    "kind": "community",
+    "addedAt": "2026-11-08"
+  }
+}
