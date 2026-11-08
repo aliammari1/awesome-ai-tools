@@ -1,0 +1,18 @@
+{
+  "name": "Shotboard",
+  "url": "https://getshotboard.com/",
+  "description": "Mac app to research ads, write scripts, and make the images, video and voice with 100 media models, using your Claude or ChatGPT subscription and paying providers directly with no markup.",
+  "category": "video-and-media",
+  "subcategory": {
+    "id": "video-creation-and-editing",
+    "name": "Video Creation & Editing"
+  },
+  "order": 9999,
+  "openSource": false,
+  "pricing": "freemium",
+  "status": "listed",
+  "source": {
+    "kind": "community",
+    "addedAt": "2026-11-08"
+  }
+}
