@@ -543,6 +543,7 @@ General-purpose models, open models, and frameworks used to build with LLMs.
 - [ModelVRAM](https://modelvram.com/) - Browser-based calculator that estimates the GPU memory an LLM needs for inference or fine-tuning (weights, KV cache and overhead) from the model's Hugging Face config, and lists the GPUs and Macs that fit.
 - [ModelRush](https://modelrush.ai/) - Unified OpenAI-compatible API gateway and browser playground for text, image, video, and voice models.
 - [UberLLM](https://uberllm.dev/) - Prepaid API with OpenAI- and Anthropic-compatible endpoints on one key for GPT, Claude, Gemini, DeepSeek and other text models plus image, video, music and speech models, each request billed at what its provider charged.
+- [Standard Compute](https://standardcompute.com/) - OpenAI- and Anthropic-compatible LLM gateway for companies that routes requests across Claude, GPT, Gemini and open models such as GLM, DeepSeek and MiniMax, with per-key budgets, provider and model allow-lists, a Europe region rule and SAML SSO.
 
 ## Research & Education
 
