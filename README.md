@@ -178,6 +178,7 @@ Image generation, visual design, creative production, and design-assistance tool
 - [ProRemover](https://proremover.io/) - Browser AI tool to remove objects, people, text, and watermarks from photos.
 - [AdDogs](https://www.addogs.ai/) - AI ad creative generator that clones winning ad designs and applies your product photo and brand identity.
 - [APPLORE](https://applore.app/ai-app-icon-generator) - AI app icon generator with a reference library of 18,000+ real App Store and Google Play icons.
+- [AppScreen](https://appscreen.pro/) - In-browser editor for App Store and Google Play screenshots with device frames, backgrounds, and captions, plus an MCP server on the paid plan that lets AI agents build them.
 - [Breatic](https://github.com/orime-org/breatic) - Collaborative workspace combining shared documents, an AI media canvas, and reviewable agent proposals.
 - [DESIGN:OS Studio](https://jangtrinh.github.io/design-os-studio/) - Free GPU-accelerated native interface design tool built in Rust that opens Figma files and exposes MCP tools for agents.
 - [EditableImage](https://editableimage.com/) - Converts flat images into editable PowerPoint slides, draw.io diagrams, layered PSD files, or formatted Markdown.
