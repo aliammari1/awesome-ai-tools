@@ -1,0 +1,18 @@
+{
+  "name": "AppScreen",
+  "url": "https://appscreen.pro/",
+  "description": "In-browser editor for App Store and Google Play screenshots with device frames, backgrounds, and captions, plus an MCP server on the paid plan that lets AI agents build them.",
+  "category": "creativity-and-design",
+  "subcategory": {
+    "id": "design-tools",
+    "name": "Design Tools"
+  },
+  "order": 9999,
+  "openSource": null,
+  "pricing": "freemium",
+  "status": "listed",
+  "source": {
+    "kind": "community",
+    "addedAt": "2026-11-09"
+  }
+}
