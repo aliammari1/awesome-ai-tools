@@ -1,0 +1,18 @@
+{
+  "name": "Standard Compute",
+  "url": "https://standardcompute.com/",
+  "description": "OpenAI- and Anthropic-compatible LLM gateway for companies that routes each step to the cheapest capable model and provider across Claude, GPT, Gemini and open models such as GLM, DeepSeek and MiniMax, with per-key budgets, provider and model allow-lists, a Europe region rule and SAML SSO.",
+  "category": "large-language-models",
+  "subcategory": {
+    "id": "llm-tools-and-frameworks",
+    "name": "LLM Tools & Frameworks"
+  },
+  "order": 10001,
+  "openSource": false,
+  "pricing": "freemium",
+  "status": "listed",
+  "source": {
+    "kind": "community",
+    "addedAt": "2026-11-09"
+  }
+}
