@@ -1,0 +1,18 @@
+{
+  "name": "Prompt Generator",
+  "url": "https://trypromptgenerator.com",
+  "description": "Writes prompts in the syntax of the chosen AI tool, such as ChatGPT, Claude, Gemini, Midjourney, Nano Banana, Veo and Sora, with a free daily allowance and no sign-up.",
+  "category": "communication-and-writing",
+  "subcategory": {
+    "id": "writing-assistants",
+    "name": "Writing Assistants"
+  },
+  "order": 9999,
+  "openSource": false,
+  "pricing": "freemium",
+  "status": "listed",
+  "source": {
+    "kind": "community",
+    "addedAt": "2026-11-10"
+  }
+}
