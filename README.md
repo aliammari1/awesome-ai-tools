@@ -211,6 +211,7 @@ Writing, content creation, translation, localization, and communication assistan
 - [README Skills](https://github.com/Shiaoming123/readme-skills) - Evidence-first Agent Skill for auditing and writing repository-matched, multilingual READMEs.
 - [AI eBook Pro](https://aiebookpro.com/) - AI eBook generator that writes a full book with chapters and a cover from one sentence, with PDF, EPUB and DOCX export.
 - [Hypercritica](https://hypercritica.com/) - Whole-manuscript developmental editing with an editorial letter, comments, and tracked changes.
+- [Prompt Generator](https://trypromptgenerator.com) - Writes prompts in the syntax of the chosen AI tool, such as ChatGPT, Claude, Gemini, Midjourney, Nano Banana, Veo and Sora, with a free daily allowance and no sign-up.
 
 ### Content Creation
 
