@@ -541,6 +541,7 @@ General-purpose models, open models, and frameworks used to build with LLMs.
 - [Anyscale](https://www.anyscale.com/) - Scalable LLM deployment with Ray framework.
 - [Future AGI](https://github.com/future-agi/future-agi) - Open-source self-hostable end-to-end agent engineering and optimization platform unifying tracing, evaluation, simulation, datasets, gateway, and guardrails in one feedback loop.
 - [ModelVRAM](https://modelvram.com/) - Browser-based calculator that estimates the GPU memory an LLM needs for inference or fine-tuning (weights, KV cache and overhead) from the model's Hugging Face config, and lists the GPUs and Macs that fit.
+- [BetterToken](https://bettertoken.ai/) - OpenAI- and Anthropic-compatible API gateway for text, image, and video models.
 - [ModelRush](https://modelrush.ai/) - Unified OpenAI-compatible API gateway and browser playground for text, image, video, and voice models.
 - [UberLLM](https://uberllm.dev/) - Prepaid API with OpenAI- and Anthropic-compatible endpoints on one key for GPT, Claude, Gemini, DeepSeek and other text models plus image, video, music and speech models, each request billed at what its provider charged.
 

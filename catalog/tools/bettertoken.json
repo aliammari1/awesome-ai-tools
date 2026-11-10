@@ -1,0 +1,18 @@
+{
+  "name": "BetterToken",
+  "url": "https://bettertoken.ai/",
+  "description": "OpenAI- and Anthropic-compatible API gateway for text, image, and video models.",
+  "category": "large-language-models",
+  "subcategory": {
+    "id": "llm-tools-and-frameworks",
+    "name": "LLM Tools & Frameworks"
+  },
+  "order": 9999,
+  "openSource": false,
+  "pricing": "paid",
+  "status": "listed",
+  "source": {
+    "kind": "community",
+    "addedAt": "2026-11-10"
+  }
+}
