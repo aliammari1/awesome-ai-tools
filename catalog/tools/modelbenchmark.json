@@ -1,0 +1,18 @@
+{
+  "name": "ModelBenchmark",
+  "url": "https://modelbenchmark.io/",
+  "description": "Independent rankings of 208 AI models from 16 public benchmarks, with prices, context windows and release dates.",
+  "category": "large-language-models",
+  "subcategory": {
+    "id": "llm-tools-and-frameworks",
+    "name": "LLM Tools & Frameworks"
+  },
+  "order": 9999,
+  "openSource": null,
+  "pricing": null,
+  "status": "listed",
+  "source": {
+    "kind": "community",
+    "addedAt": "2026-11-10"
+  }
+}
