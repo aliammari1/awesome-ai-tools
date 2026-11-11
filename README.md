@@ -399,6 +399,7 @@ Video generation, editing, enhancement, effects, and media-production tools.
 - [Cutora AI](https://usecutora.com/) - AI video editor for talking-head videos that cuts pauses, false starts, and retakes, cleans audio, corrects color, and adds captions, zooms, and on-screen text on an editable timeline.
 - [cv.cm/v](https://cv.cm/en/v/) - Free in-browser AI photo to video: on-device depth estimation turns one image into a 3D camera-move MP4, nothing uploaded. The same site also has local AI image and music generators.
 - [Effect Video](https://effect.video/) - AI photo-to-video tool with viral effect templates for short vertical clips.
+- [HoneyVid](https://honeyvid.ai/) - Puts a person, pet or character from one photo into a trending video, or generates videos and images with Kling, Veo and Seedance.
 - [Karaoke Captions](https://karaokecaptions.com/) - Generates editable word-by-word video captions in the browser using local speech recognition with MP4 and SRT export.
 - [Magic Hour](https://magichour.ai/) - AI video creation and editing with text-to-video, image-to-video, face swap, lip sync, and animation tools.
 - [OrkasVideoStudio](https://github.com/Orkas-AI/Orkas-VideoStudio) - Open-source local-first CLI and MCP toolkit for composing, inspecting, and rendering video timelines from JSON plans.
