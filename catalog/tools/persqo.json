@@ -1,0 +1,18 @@
+{
+  "name": "Persqo",
+  "url": "https://persqo.com/",
+  "description": "AI personas test your web app to show why customers don't buy, then return UX findings and a fix prompt.",
+  "category": "code-generation-and-development",
+  "subcategory": {
+    "id": "development-tools",
+    "name": "Development Tools"
+  },
+  "order": 9999,
+  "openSource": null,
+  "pricing": "freemium",
+  "status": "listed",
+  "source": {
+    "kind": "community",
+    "addedAt": "2026-11-12"
+  }
+}
