@@ -1,0 +1,18 @@
+{
+  "name": "Wavegrain",
+  "url": "https://wavegrain.com/",
+  "description": "Makes TikTok slideshows and Instagram carousels for a brand from its website and photos, then schedules and posts them; also offers a hosted MCP server.",
+  "category": "business-and-marketing",
+  "subcategory": {
+    "id": "marketing-and-sales",
+    "name": "Marketing & Sales"
+  },
+  "order": 9999,
+  "openSource": false,
+  "pricing": null,
+  "status": "listed",
+  "source": {
+    "kind": "community",
+    "addedAt": "2026-11-12"
+  }
+}
