@@ -409,6 +409,7 @@ Video generation, editing, enhancement, effects, and media-production tools.
 - [VideoText](https://videotext.io) - Subtitle and transcript tools: Make Client Ready format compliance checks, subtitle fixing, video-to-SRT/VTT, translation, video compression and voice recording.
 - [Vidney](https://vidney.ai/) - Browser workspace for generating AI videos and images from text or reference images across multiple models.
 - [VoxSail](https://voxsail.com/en/) - Browser workspace for translating video and audio, editing subtitles, AI dubbing, and exporting localized media.
+- [MiniMax H3](https://h3minimax.com) - Browser-based runner for the MiniMax H3 video model, text or one image to a 4–15 second video in 768P or 2K.
 
 ### Video Enhancement & Effects
 
