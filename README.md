@@ -593,6 +593,7 @@ Marketing, sales, e-commerce, retail, career, and job-search tools.
 - [BulkPublish](https://www.bulkpublish.com/) - AI-agent API and MCP server for multi-platform social publishing.
 - [Revenue Scout](https://revenuescout.ai/) - Social media lead discovery tool that finds buying-intent posts across seven platforms and drafts replies for review.
 - [SocialEcho](https://www.socialecho.cn/) - AI social media workspace for multi-platform publishing, comment and DM automation, social listening, and analytics.
+- [Wavegrain](https://wavegrain.com/) - Makes TikTok slideshows and Instagram carousels for a brand from its website and photos, then schedules and posts them; also offers a hosted MCP server.
 - [CrakSEO Search Console MCP](https://docs.crakseo.com/mcp-servers/search-console) - Free remote MCP access for AI assistants to query owned-site Google Search Console and Bing Webmaster data; authentication required.
 - [Vaneform](https://vaneform.com/) - Free website traffic checker with monthly visits, trends, sources, growth leaderboards, and a hosted MCP for AI assistants.
 
