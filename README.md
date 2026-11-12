@@ -457,6 +457,7 @@ Coding assistants, developer tools, code analysis, and software-engineering auto
 - [Codex Lookout](https://github.com/makorise/codex-local-hub) - Local-first macOS companion for monitoring and steering Codex Desktop tasks from a phone browser.
 - [codex-profiles](https://github.com/Ducksss/codex-profiles) - CLI tool for launching OpenAI Codex CLI and ChatGPT Desktop with isolated CODEX\_HOME profiles and local state.
 - [Oh My Hermes](https://github.com/rlaope/oh-my-hermes) - Open-source workflow harness and plugin for Hermes Agent with specialist skills, project memory, and model routing.
+- [Persqo](https://persqo.com/) - AI personas test your web app to show why customers don't buy, then return UX findings and a fix prompt.
 
 ### Code Analysis & Review
 
