@@ -1,0 +1,18 @@
+{
+  "name": "Beautyface",
+  "url": "https://beautyface.app",
+  "description": "AI Photoshoot Generator: turns 1–5 selfies into studio-lit LinkedIn headshots and photoshoots in 1K/2K/4K. 20 free credits, no training photos needed.",
+  "category": "creativity-and-design",
+  "subcategory": {
+    "id": "image-generation-and-art",
+    "name": "Image Generation & Art"
+  },
+  "order": 9999,
+  "openSource": false,
+  "pricing": "freemium",
+  "status": "listed",
+  "source": {
+    "kind": "community",
+    "addedAt": "2026-11-13"
+  }
+}
