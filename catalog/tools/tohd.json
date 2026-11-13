@@ -1,0 +1,18 @@
+{
+  "name": "ToHD",
+  "url": "https://tohd.video/",
+  "description": "Browser-based AI video upscaler that turns 360p/480p clips into 720p or 1080p with Real-ESRGAN on the user's own GPU via WebGPU, without uploading the video.",
+  "category": "video-and-media",
+  "subcategory": {
+    "id": "video-enhancement-and-effects",
+    "name": "Video Enhancement & Effects"
+  },
+  "order": 9999,
+  "openSource": false,
+  "pricing": "freemium",
+  "status": "listed",
+  "source": {
+    "kind": "community",
+    "addedAt": "2026-11-13"
+  }
+}

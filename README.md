@@ -413,6 +413,7 @@ Video generation, editing, enhancement, effects, and media-production tools.
 ### Video Enhancement & Effects
 
 - [DaVinci Resolve](https://www.blackmagicdesign.com/products/davinciresolve/) - Video editing with AI features.
+- [ToHD](https://tohd.video/) - Browser-based AI video upscaler that turns 360p/480p clips into 720p or 1080p with Real-ESRGAN on the user's own GPU via WebGPU, without uploading the video.
 
 ## Code Generation & Development
 
