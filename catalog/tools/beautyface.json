@@ -1,0 +1,18 @@
+{
+  "name": "Beautyface",
+  "url": "https://beautyface.app",
+  "description": "Generates studio-lit LinkedIn headshots and photoshoots in 1K, 2K, or 4K from 1–5 selfies, with 20 free credits and no training photos required.",
+  "category": "creativity-and-design",
+  "subcategory": {
+    "id": "image-generation-and-art",
+    "name": "Image Generation & Art"
+  },
+  "order": 9999,
+  "openSource": false,
+  "pricing": "freemium",
+  "status": "listed",
+  "source": {
+    "kind": "community",
+    "addedAt": "2026-11-13"
+  }
+}
