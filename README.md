@@ -151,7 +151,7 @@ Image generation, visual design, creative production, and design-assistance tool
 - [Jasper Art](https://www.jasper.ai/art) - AI art generation for marketers.
 - [BlueWillow](https://www.bluewillow.ai/) - Free AI image generator.
 - [Prisma](https://prisma-ai.com/) - Artistic photo filters.
-- [Beautyface](https://beautyface.app) - AI Photoshoot Generator: turns 1–5 selfies into studio-lit LinkedIn headshots and photoshoots in 1K/2K/4K. 20 free credits, no training photos needed.
+- [Beautyface](https://beautyface.app) - Generates studio-lit LinkedIn headshots and photoshoots in 1K, 2K, or 4K from 1–5 selfies, with 20 free credits and no training photos required.
 - [Durofy](https://durofy.com/) - AI magazine cover generator that turns photos into styled covers with art-directed templates.
 - [Imagera](https://imagera.ai/) - Multi-model AI studio for creating and editing images, video, voice, and music with consistent character IDs.
 - [Kid Story](https://aikidstory.app/) - AI children's picture book generator that turns toy photos into consistent character illustrations with PDF export.
