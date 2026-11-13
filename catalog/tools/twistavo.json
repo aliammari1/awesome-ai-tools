@@ -1,0 +1,18 @@
+{
+  "name": "Twistavo",
+  "url": "https://twistavo.com",
+  "description": "AI video studio to replace a person or character in an existing clip (Scene Recast) and run 60+ video and image models; pay per clip.",
+  "category": "video-and-media",
+  "subcategory": {
+    "id": "video-creation-and-editing",
+    "name": "Video Creation & Editing"
+  },
+  "order": 9999,
+  "openSource": null,
+  "pricing": null,
+  "status": "listed",
+  "source": {
+    "kind": "community",
+    "addedAt": "2026-11-13"
+  }
+}
