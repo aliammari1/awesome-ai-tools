@@ -403,6 +403,7 @@ Video generation, editing, enhancement, effects, and media-production tools.
 - [Magic Hour](https://magichour.ai/) - AI video creation and editing with text-to-video, image-to-video, face swap, lip sync, and animation tools.
 - [OrkasVideoStudio](https://github.com/Orkas-AI/Orkas-VideoStudio) - Open-source local-first CLI and MCP toolkit for composing, inspecting, and rendering video timelines from JSON plans.
 - [Pixwit](https://pixwit.ai/) - All-in-one AI creative platform for generating images, videos, and music from text or image prompts.
+- [Screentell](https://screentell.com) - Free browser-based screen recorder + editor, local processing, unlimited recording on the free tier, HD export with watermark, 3-min export limit per clip.
 - [Seedance Now](https://seedancenow.com/) - Independent browser-based studio for text-to-video and image-to-video with models such as Seedance 2.5, Kling 4.0, and Wan 3.0.
 - [shortshort](https://www.shortshort.io/) - Turns one long video (talk, podcast, course) into vertical 9:16 shorts with word-by-word captions.
 - [Unsora](https://tryunsora.com/) - Open-source app, API and MCP server that generates images, video, voiceovers, music and clips and schedules them to social accounts.
