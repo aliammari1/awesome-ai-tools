@@ -155,6 +155,7 @@ Image generation, visual design, creative production, and design-assistance tool
 - [Imagera](https://imagera.ai/) - Multi-model AI studio for creating and editing images, video, voice, and music with consistent character IDs.
 - [Kid Story](https://aikidstory.app/) - AI children's picture book generator that turns toy photos into consistent character illustrations with PDF export.
 - [MakeImg](https://makeimg.ai/) - AI photo generator that turns text prompts or photos into new images using models such as Nano Banana 2.1, GPT Image 2.5, and FLUX.2 Pro.
+- [PalaPili](https://palapili.com) - Free AI Photo Enhancer & Image Editor: enhance photo clarity, unblur faces, upscale images up to 4K, edit by text prompts; also cinematic AI video and an infinite-canvas storyboard. 10 free credits on signup.
 - [PixGT](https://www.pixgt.cn/) - E-commerce image generator with product scenes, clothing try-on, and model swapping.
 - [Seedream 5.5](https://seedream5-5.net/) - Web AI image generator and editor that works from text prompts or reference photos.
 - [SpriteCanvas](https://spritecanvas.com/) - AI sprite animation generator that turns a text prompt or character image into 2D game animations and exports transparent PNG sprite sheets with a JSON atlas.
