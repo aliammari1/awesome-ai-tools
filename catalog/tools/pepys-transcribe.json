@@ -1,0 +1,18 @@
+{
+  "name": "Pepys Transcribe",
+  "url": "https://pepys.co/",
+  "description": "Pay-as-you-go AI transcription for audio and video files, with speaker labels and subtitle export; credits never expire.",
+  "category": "audio-and-music",
+  "subcategory": {
+    "id": "voice-and-speech",
+    "name": "Voice & Speech"
+  },
+  "order": 9999,
+  "openSource": null,
+  "pricing": null,
+  "status": "listed",
+  "source": {
+    "kind": "community",
+    "addedAt": "2026-11-14"
+  }
+}
