@@ -1,0 +1,18 @@
+{
+  "name": "EveryApp",
+  "url": "https://everyapp.pro/app-builder",
+  "description": "Turns a plain-language description into a private web app at its own address, shared with the people you invite.",
+  "category": "no-code-low-code-ai",
+  "subcategory": {
+    "id": "ai-app-builders",
+    "name": "AI App Builders"
+  },
+  "order": 9999,
+  "openSource": false,
+  "pricing": "freemium",
+  "status": "listed",
+  "source": {
+    "kind": "community",
+    "addedAt": "2026-11-15"
+  }
+}
