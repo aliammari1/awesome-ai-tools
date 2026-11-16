@@ -1,0 +1,18 @@
+{
+  "name": "HiAPI",
+  "url": "https://hiapi.ai/",
+  "description": "Pay-as-you-go API key for image, video, audio and text models such as GPT Image, Seedance, Kling, Veo, DeepSeek and Claude, with OpenAI-compatible text endpoints, async task APIs for media, and published per-model prices.",
+  "category": "large-language-models",
+  "subcategory": {
+    "id": "llm-tools-and-frameworks",
+    "name": "LLM Tools & Frameworks"
+  },
+  "order": 10002,
+  "openSource": false,
+  "pricing": "paid",
+  "status": "listed",
+  "source": {
+    "kind": "community",
+    "addedAt": "2026-11-16"
+  }
+}
