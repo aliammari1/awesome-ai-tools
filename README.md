@@ -386,6 +386,7 @@ Video generation, editing, enhancement, effects, and media-production tools.
 - [Fliki](https://fliki.ai/) - Text-to-video with AI voices and avatars.
 - [Steve AI](https://www.steve.ai/) - Animated video creation.
 - [Visla](https://www.visla.us/) - AI video storytelling platform.
+- [Pavo AI](https://pavoai.app/) - AI video generator and image-to-video maker for short drama and social clips, with a reusable cast for character consistency across shots.
 - [MaxVideoAI](https://maxvideoai.com) - Pay-as-you-go AI video generation with model comparison and MCP workflows.
 - [ZOOOP](https://zooop.ai) - AI-native filmmaking workstation for image, video, audio, and lip-sync generation.
 - [YumCut](https://yumcut.com/) - Self-hosted AI workflow for generating finished vertical videos, with a user automation API.
