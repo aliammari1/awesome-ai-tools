@@ -1,0 +1,18 @@
+{
+  "name": "Off Grid AI",
+  "url": "https://github.com/off-grid-ai/OGAD",
+  "description": "Desktop app that runs open models on your own machine for chat, vision, image generation and voice, with a local OpenAI-compatible API and no account or cloud.",
+  "category": "large-language-models",
+  "subcategory": {
+    "id": "llm-tools-and-frameworks",
+    "name": "LLM Tools & Frameworks"
+  },
+  "order": 9999,
+  "openSource": true,
+  "pricing": "freemium",
+  "status": "listed",
+  "source": {
+    "kind": "community",
+    "addedAt": "2026-11-17"
+  }
+}
