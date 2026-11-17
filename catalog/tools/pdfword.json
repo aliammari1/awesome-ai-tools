@@ -1,0 +1,15 @@
+{
+  "name": "PdfWord",
+  "url": "https://pdfwordtools.pages.dev",
+  "description": "61 free PDF tools that run 100% in your browser.",
+  "category": "productivity",
+  "subcategory": null,
+  "order": 9999,
+  "openSource": null,
+  "pricing": "free",
+  "status": "listed",
+  "source": {
+    "kind": "community",
+    "addedAt": "2026-11-17"
+  }
+}
