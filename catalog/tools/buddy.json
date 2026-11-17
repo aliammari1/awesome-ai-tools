@@ -1,0 +1,18 @@
+{
+  "name": "Buddy.Works",
+  "url": "https://buddy.works/",
+  "description": "Cloud platform where AI coding agents deploy apps, run CI/CD pipelines and work in isolated sandboxes through the bdy CLI, an MCP server and a skill for Claude Code, Codex and other agents.",
+  "category": "code-generation-and-development",
+  "subcategory": {
+    "id": "development-tools",
+    "name": "Development Tools"
+  },
+  "order": 9999,
+  "openSource": false,
+  "pricing": null,
+  "status": "listed",
+  "source": {
+    "kind": "community",
+    "addedAt": "2026-11-17"
+  }
+}

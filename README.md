@@ -454,6 +454,7 @@ Coding assistants, developer tools, code analysis, and software-engineering auto
 - [Deno Deploy](https://deno.com/deploy) - Edge deployment with AI-assisted development.
 - [agent-qa](https://github.com/vostride/agent-qa) - Self-improving natural-language web, Android and iOS testing with advanced memidex memory, a CLI, dashboard and MCP tools.
 - [BrewPage](https://brewpage.app/) - Hosting for AI agents that publishes generated HTML pages, Markdown, static sites, files and JSON to temporary HTTPS links through an API, an MCP server or a GitHub Action, with no signup or API key.
+- [Buddy.Works](https://buddy.works/) - Cloud platform where AI coding agents deploy apps, run CI/CD pipelines and work in isolated sandboxes through the bdy CLI, an MCP server and a skill for Claude Code, Codex and other agents.
 - [Codex Lookout](https://github.com/makorise/codex-local-hub) - Local-first macOS companion for monitoring and steering Codex Desktop tasks from a phone browser.
 - [codex-profiles](https://github.com/Ducksss/codex-profiles) - CLI tool for launching OpenAI Codex CLI and ChatGPT Desktop with isolated CODEX\_HOME profiles and local state.
 - [Oh My Hermes](https://github.com/rlaope/oh-my-hermes) - Open-source workflow harness and plugin for Hermes Agent with specialist skills, project memory, and model routing.
