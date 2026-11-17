@@ -1,0 +1,18 @@
+{
+  "name": "Wishbar",
+  "url": "https://wishbar.app/",
+  "description": "Mac menu bar app where you type what you want in plain English or your own language, and your own AI (ChatGPT through Codex, or Claude) builds it as a live widget.",
+  "category": "no-code-low-code-ai",
+  "subcategory": {
+    "id": "ai-app-builders",
+    "name": "AI App Builders"
+  },
+  "order": 9999,
+  "openSource": false,
+  "pricing": "paid",
+  "status": "listed",
+  "source": {
+    "kind": "community",
+    "addedAt": "2026-11-17"
+  }
+}
