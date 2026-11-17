@@ -661,6 +661,7 @@ AI application builders, chatbot builders, and tools for creating without tradit
 - [Suriya](https://suriya.ai) - AI app builder for Thai small businesses.
 - [IdeaMade](https://ideamade.ai/) - Turns natural-language requirements into editable product blueprints to build, preview, revise, and publish web apps.
 - [Newly](https://newly.app/) - AI mobile app builder that generates React Native iOS and Android apps with cloud previews and source export.
+- [Wishbar](https://wishbar.app/) - Mac menu bar app where you type what you want in plain English or your own language, and your own AI (ChatGPT through Codex, or Claude) builds it as a live widget.
 
 ### Chatbot Builders
 
