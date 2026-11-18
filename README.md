@@ -273,7 +273,7 @@ Machine learning platforms, analytics, visualization, and data-focused research 
 - [Google Colab](https://colab.research.google.com/) - Free cloud-based notebooks.
 - [Kaggle](https://www.kaggle.com/) - Data science competition platform.
 - [Pulse](https://pulsecorp.co) - AI-moderated customer interviews for market research.
-- [Frank AI Researcher](https://www.hifrank.ai) - AI-moderated voice interviews with your own customers in 50+ languages: create studies, run them, and read the transcripts.
+- [Frank AI Researcher](https://www.hifrank.ai) - AI-moderated voice interviews with your own customers: create studies, run them, and read the transcripts.
 
 ## Natural Language Processing
 
