@@ -235,6 +235,7 @@ Writing, content creation, translation, localization, and communication assistan
 - [Linguee](https://www.linguee.com/) - Dictionary with translation examples.
 - [Reverso](https://www.reverso.net/) - Translation with context examples.
 - [MangaTranslate](https://www.mangatranslate.com/) - Web and API platform that translates text in manga and comic images using OCR, automated typesetting, and an editor.
+- [RuneManga](https://runemanga.com/) - Translates manga, manhwa and webtoon pages, erasing the original text and lettering the translation into the bubbles.
 
 ## Data Science & Analytics
 
