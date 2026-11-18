@@ -1,0 +1,18 @@
+{
+  "name": "RuneManga",
+  "url": "https://runemanga.com/",
+  "description": "Translates manga, manhwa and webtoon pages, erasing the original text and lettering the translation into the bubbles.",
+  "category": "communication-and-writing",
+  "subcategory": {
+    "id": "translation-and-localization",
+    "name": "Translation & Localization"
+  },
+  "order": 9999,
+  "openSource": false,
+  "pricing": "freemium",
+  "status": "listed",
+  "source": {
+    "kind": "community",
+    "addedAt": "2026-11-18"
+  }
+}
