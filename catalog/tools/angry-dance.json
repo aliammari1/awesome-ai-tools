@@ -1,0 +1,18 @@
+{
+  "name": "Angry Dance",
+  "url": "https://angrydance.com/",
+  "description": "Turns a single portrait or pet photo into watermark-free AI dance, pet dance, and hug videos using Kling 2.5 Turbo and Hailuo 2.3.",
+  "category": "video-and-media",
+  "subcategory": {
+    "id": "video-creation-and-editing",
+    "name": "Video Creation & Editing"
+  },
+  "order": 9999,
+  "openSource": false,
+  "pricing": "paid",
+  "status": "listed",
+  "source": {
+    "kind": "community",
+    "addedAt": "2026-11-18"
+  }
+}
