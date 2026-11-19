@@ -1,0 +1,18 @@
+{
+  "name": "Launch Automation Redesign",
+  "url": "https://launchautomation.ai/redesign",
+  "description": "Provides a free homepage redesign preview and an SEO report on sampled public pages, with finished working websites available as a paid service.",
+  "category": "creativity-and-design",
+  "subcategory": {
+    "id": "design-tools",
+    "name": "Design Tools"
+  },
+  "order": 9999,
+  "openSource": null,
+  "pricing": null,
+  "status": "listed",
+  "source": {
+    "kind": "community",
+    "addedAt": "2026-11-18"
+  }
+}
