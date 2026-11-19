@@ -9,10 +9,7 @@
   },
   "order": 9999,
   "openSource": null,
-  "pricing": {
-    "type": "paid",
-    "details": "Usage-based pricing for search and extraction APIs."
-  },
+  "pricing": "paid",
   "status": "listed",
   "source": {
     "kind": "community",
