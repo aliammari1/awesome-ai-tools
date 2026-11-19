@@ -156,6 +156,7 @@ Image generation, visual design, creative production, and design-assistance tool
 - [Kid Story](https://aikidstory.app/) - AI children's picture book generator that turns toy photos into consistent character illustrations with PDF export.
 - [MakeImg](https://makeimg.ai/) - AI photo generator that turns text prompts or photos into new images using models such as Nano Banana 2.1, GPT Image 2.5, and FLUX.2 Pro.
 - [PixGT](https://www.pixgt.cn/) - E-commerce image generator with product scenes, clothing try-on, and model swapping.
+- [Raphael AI](https://raphael.app/) - Free, unlimited browser-based AI image generator and editing suite with no sign-up required.
 - [Seedream 5.5](https://seedream5-5.net/) - Web AI image generator and editor that works from text prompts or reference photos.
 - [SpriteCanvas](https://spritecanvas.com/) - AI sprite animation generator that turns a text prompt or character image into 2D game animations and exports transparent PNG sprite sheets with a JSON atlas.
 - [Stunna](https://stunna-app.com/) - AI photo editor for iPhone and Android offering camera-inspired film and flash looks, lighting fixes, and pose guides.
