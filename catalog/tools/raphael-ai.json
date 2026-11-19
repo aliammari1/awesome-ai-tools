@@ -1,0 +1,18 @@
+{
+  "name": "Raphael AI",
+  "url": "https://raphael.app/",
+  "description": "Free, unlimited browser-based AI image generator and editing suite with no sign-up required.",
+  "category": "creativity-and-design",
+  "subcategory": {
+    "id": "image-generation-and-art",
+    "name": "Image Generation & Art"
+  },
+  "order": 9999,
+  "openSource": false,
+  "pricing": "freemium",
+  "status": "listed",
+  "source": {
+    "kind": "community",
+    "addedAt": "2026-11-19"
+  }
+}
