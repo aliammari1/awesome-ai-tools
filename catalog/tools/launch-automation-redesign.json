@@ -1,0 +1,18 @@
+{
+  "name": "Launch Automation Redesign",
+  "url": "https://launchautomation.ai/redesign",
+  "description": "Provides one free homepage redesign preview every 30 days with two free revisions and an SEO report on sampled public pages; finished working websites are available as a paid service.",
+  "category": "creativity-and-design",
+  "subcategory": {
+    "id": "design-tools",
+    "name": "Design Tools"
+  },
+  "order": 9999,
+  "openSource": null,
+  "pricing": null,
+  "status": "listed",
+  "source": {
+    "kind": "community",
+    "addedAt": "2026-11-18"
+  }
+}
