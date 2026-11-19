@@ -1,0 +1,18 @@
+{
+  "name": "Pexi",
+  "url": "https://pexibot.com/",
+  "description": "Compares shared Chrome tabs with source links, drafts follow-ups, and fills forms using a user-supplied AI API key.",
+  "category": "ai-agents",
+  "subcategory": {
+    "id": "autonomous-agents",
+    "name": "Autonomous Agents"
+  },
+  "order": 9999,
+  "openSource": null,
+  "pricing": "paid",
+  "status": "listed",
+  "source": {
+    "kind": "community",
+    "addedAt": "2026-11-19"
+  }
+}
