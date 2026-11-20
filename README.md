@@ -402,6 +402,7 @@ Video generation, editing, enhancement, effects, and media-production tools.
 - [Karaoke Captions](https://karaokecaptions.com/) - Generates editable word-by-word video captions in the browser using local speech recognition with MP4 and SRT export.
 - [Magic Hour](https://magichour.ai/) - AI video creation and editing with text-to-video, image-to-video, face swap, lip sync, and animation tools.
 - [OrkasVideoStudio](https://github.com/Orkas-AI/Orkas-VideoStudio) - Open-source local-first CLI and MCP toolkit for composing, inspecting, and rendering video timelines from JSON plans.
+- [PawMambo](https://pawmambo.com/) - Turns a dog photo and dance-reference video into a short AI dance clip.
 - [Pixwit](https://pixwit.ai/) - All-in-one AI creative platform for generating images, videos, and music from text or image prompts.
 - [Seedance Now](https://seedancenow.com/) - Independent browser-based studio for text-to-video and image-to-video with models such as Seedance 2.5, Kling 4.0, and Wan 3.0.
 - [shortshort](https://www.shortshort.io/) - Turns one long video (talk, podcast, course) into vertical 9:16 shorts with word-by-word captions.
