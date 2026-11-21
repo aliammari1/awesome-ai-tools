@@ -495,6 +495,7 @@ AI search engines, research assistants, knowledge discovery, and evidence-gather
 - [Connected Papers](https://www.connectedpapers.com/) - Visual academic paper exploration.
 - [CiteMe](https://citeme.app/) - AI-powered academic citation generator that searches 11+ scholarly databases and formats references in 40+ citation styles.
 - [AIToolIndex](https://aitoolindex.io/) - Searchable directory for comparing AI tools by use case, pricing, and workflow fit.
+- [Grab AI Tool](https://grabaitool.com/) - Free directory of 600+ AI tools with hand-checked pricing, a 3-question tool finder, a price-change tracker, and a copy-paste prompt library.
 - [Arcmira: YouTube Transcript Search](https://arcmira.com) - Search YouTube transcripts for timestamped quotes, speaker appearances, sponsors and recommendations through an app, API and MCP connection.
 - [DisconfirmAI](https://disconfirmai.com/en) - Investment research site that helps you look for evidence against your thesis, with daily reading from public sources, research on filings and data, and a radar that checks for changes against conditions you set.
 - [FalcoScan](https://falcoscan.com/) - AI market intelligence directory tracking 8,000+ AI products across 30 markets with rankings and an AI Graveyard.
