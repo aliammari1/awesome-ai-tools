@@ -1,6 +1,6 @@
 {
-  "name": "UberLLM",
-  "url": "https://uberllm.dev/",
+  "name": "MartLLM",
+  "url": "https://martllm.com/",
   "description": "Prepaid API with OpenAI- and Anthropic-compatible endpoints on one key for GPT, Claude, Gemini, DeepSeek and other text models plus image, video, music and speech models, each request billed at what its provider charged.",
   "category": "large-language-models",
   "subcategory": {
