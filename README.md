@@ -409,6 +409,7 @@ Video generation, editing, enhancement, effects, and media-production tools.
 - [VideoText](https://videotext.io) - Subtitle and transcript tools: Make Client Ready format compliance checks, subtitle fixing, video-to-SRT/VTT, translation, video compression and voice recording.
 - [Vidney](https://vidney.ai/) - Browser workspace for generating AI videos and images from text or reference images across multiple models.
 - [VoxSail](https://voxsail.com/en/) - Browser workspace for translating video and audio, editing subtitles, AI dubbing, and exporting localized media.
+- [MakeAIVideo](https://makeaivideo.ai/) - Turns a prompt or script into a short-form video with AI voiceover, AI or stock scenes, captions and music, with a REST API and a hosted MCP server for AI agents.
 
 ### Video Enhancement & Effects
 
