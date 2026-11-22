@@ -1,0 +1,18 @@
+{
+  "name": "MakeAIVideo",
+  "url": "https://makeaivideo.ai/",
+  "description": "Turns a prompt or script into a short-form video with AI voiceover, AI or stock scenes, captions and music, with a REST API and a hosted MCP server for AI agents.",
+  "category": "video-and-media",
+  "subcategory": {
+    "id": "video-creation-and-editing",
+    "name": "Video Creation & Editing"
+  },
+  "order": 10000,
+  "openSource": false,
+  "pricing": "paid",
+  "status": "listed",
+  "source": {
+    "kind": "community",
+    "addedAt": "2026-11-22"
+  }
+}
