@@ -393,6 +393,7 @@ Video generation, editing, enhancement, effects, and media-production tools.
 - [IntroVideo](https://introvideo.io/) - AI logo intro generator that turns a logo into an 8-second cinematic intro video in 16:9 or 9:16.
 - [Visual Maker AI](https://visualmakerai.com/) - Web workspace for generating images, turning photos into short videos, and breaking scripts into scenes and clips with models such as Veo, Seedance, and Kling.
 - [Wan 3.5](https://wan35.app/) - Browser-based AI video generator for text-to-video and image-to-video creation.
+- [Free Image to Video](https://freeimagetovideo.ai/) - Free image to video AI with no daily cap: start with no sign-up, keep going on a free account. Every video comes with sound and no watermark.
 - [Wedding AI](https://weddingai.studio/) - AI wedding invitation video maker that turns templates, names, and photos into an HD MP4.
 - [AI Crying Effect](https://aicryingeffect.app/) - Turns one adult portrait into a short AI crying-effect video, ordered by email without an account.
 - [Clout](https://www.tryclout.ai/) - Browser-based AI creative studio for building consistent characters, generating images and videos, and faceless clips.
