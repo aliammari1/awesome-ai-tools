@@ -360,6 +360,7 @@ Music generation, voice, speech, transcription, and audio-production tools.
 - [Audio Cutter AI](https://audiocutter.ai/) - Browser-based AI audio editor that cuts, trims, and splits recordings using natural-language prompts and topic search.
 - [Transcribe Video: To The Text](https://video2text.ttt.so/) - iPhone app that transcribes video and audio files, YouTube links, and live voice into text with speaker labels, summaries, and TXT/DOCX export.
 - [Voqusa](https://www.voqusa.com/en/free/instagram-transcript) - Web tool that turns Instagram, TikTok and YouTube videos into text transcripts; requires a free signup with 5 free credits.
+- [EarScribe](https://earscribe.app) - Browser-based transcription with Whisper running on the device; timestamped transcript with SRT/VTT export.
 
 ## Video & Media
 
