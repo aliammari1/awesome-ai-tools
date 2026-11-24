@@ -1,0 +1,36 @@
+{
+  "name": "CareerBldr",
+  "url": "https://careerbldr.com",
+  "description": "AI resume builder that tailors your resume to a job post, checks ATS fit and writes cover letters.",
+  "category": "business-and-marketing",
+  "subcategory": {
+    "id": "career-and-job-search",
+    "name": "Career & Job Search"
+  },
+  "order": 9999,
+  "openSource": null,
+  "pricing": null,
+  "status": "listed",
+  "source": {
+    "kind": "community",
+    "addedAt": "2026-11-24"
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
