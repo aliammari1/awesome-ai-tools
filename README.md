@@ -266,6 +266,7 @@ Machine learning platforms, analytics, visualization, and data-focused research 
 - [Qlik Predict](https://www.qlik.com/) - No-code predictive analytics with AutoML for business users.
 - [Mode](https://mode.com/) - Collaborative analytics with SQL, Python, and R.
 - [Deepnote](https://deepnote.com/) - Collaborative data science notebooks with AI assistance.
+- [Public Records MCP](https://github.com/GeminiGeorge22/publicrecords-mcp) - 18 Apify-hosted MCP servers for public data: SAM.gov, Grants.gov, USAspending, EU TED and UK tenders, city council meetings, Ashby/Greenhouse/Lever/SmartRecruiters jobs, company social links, Google Ads Transparency, Etsy sales, sports odds, Spotify play counts.
 
 ### Research Tools
 
