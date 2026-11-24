@@ -594,6 +594,7 @@ Marketing, sales, e-commerce, retail, career, and job-search tools.
 - [Revenue Scout](https://revenuescout.ai/) - Social media lead discovery tool that finds buying-intent posts across seven platforms and drafts replies for review.
 - [SocialEcho](https://www.socialecho.cn/) - AI social media workspace for multi-platform publishing, comment and DM automation, social listening, and analytics.
 - [CrakSEO Search Console MCP](https://docs.crakseo.com/mcp-servers/search-console) - Free remote MCP access for AI assistants to query owned-site Google Search Console and Bing Webmaster data; authentication required.
+- [Transformer.gg](https://transformer.gg/) - Sponsored-post marketplace for X creators with a web dashboard, remote MCP server, CLI, and REST API.
 - [Vaneform](https://vaneform.com/) - Free website traffic checker with monthly visits, trends, sources, growth leaderboards, and a hosted MCP for AI assistants.
 
 ### E-commerce & Retail

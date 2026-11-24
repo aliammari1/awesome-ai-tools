@@ -1,0 +1,18 @@
+{
+  "name": "Transformer.gg",
+  "url": "https://transformer.gg/",
+  "description": "Sponsored-post marketplace for X creators with a web dashboard, remote MCP server, CLI, and REST API.",
+  "category": "business-and-marketing",
+  "subcategory": {
+    "id": "marketing-and-sales",
+    "name": "Marketing & Sales"
+  },
+  "order": 10000,
+  "openSource": false,
+  "pricing": "freemium",
+  "status": "listed",
+  "source": {
+    "kind": "community",
+    "addedAt": "2026-11-24"
+  }
+}
