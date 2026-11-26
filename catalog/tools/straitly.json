@@ -1,7 +1,7 @@
 {
   "name": "Straitly",
   "url": "https://straitly.ai/",
-  "description": "AI gateway with one OpenAI-compatible API key for 150+ models, including Claude, GPT, Gemini, Grok and DeepSeek.",
+  "description": "AI gateway with one OpenAI-compatible API key for 100+ models, including Claude, GPT, Gemini, Grok and DeepSeek.",
   "category": "large-language-models",
   "subcategory": {
     "id": "llm-tools-and-frameworks",
