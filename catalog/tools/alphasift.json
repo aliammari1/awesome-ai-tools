@@ -1,0 +1,18 @@
+{
+  "name": "AlphaSift",
+  "url": "https://github.com/ZhuLinsen/alphasift",
+  "description": "Open-source quantitative equity screener with zero-snooping Walk-Forward pattern replay, 14-tool read-only STDIO MCP server, and public T+5/10/20 ledger.",
+  "category": "data-science-and-analytics",
+  "subcategory": {
+    "id": "data-analysis-and-visualization",
+    "name": "Data Analysis & Visualization"
+  },
+  "order": 10000,
+  "openSource": true,
+  "pricing": "free",
+  "status": "listed",
+  "source": {
+    "kind": "community",
+    "addedAt": "2026-11-26"
+  }
+}
