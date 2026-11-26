@@ -1,0 +1,18 @@
+{
+  "name": "fixthis.page",
+  "url": "https://fixthis.page/",
+  "description": "Collects client feedback left directly on a webpage and turns it into a ready-to-use prompt for AI coding assistants.",
+  "category": "code-generation-and-development",
+  "subcategory": {
+    "id": "development-tools",
+    "name": "Development Tools"
+  },
+  "order": 9999,
+  "openSource": true,
+  "pricing": "free",
+  "status": "listed",
+  "source": {
+    "kind": "community",
+    "addedAt": "2026-11-26"
+  }
+}
