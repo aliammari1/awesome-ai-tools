@@ -1,7 +1,7 @@
 {
-  "name": "fixthis.page",
-  "url": "https://fixthis.page/",
-  "description": "Collects client feedback left directly on a webpage and turns it into a ready-to-use prompt for AI coding assistants.",
+  "name": "fix-this-page",
+  "url": "https://github.com/Leonard-IT/fix-this-page",
+  "description": "Embeddable feedback overlay that lets people comment on and edit elements of a website and exports the requested changes as a prompt for AI coding agents.",
   "category": "code-generation-and-development",
   "subcategory": {
     "id": "development-tools",
