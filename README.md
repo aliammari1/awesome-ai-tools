@@ -266,6 +266,7 @@ Machine learning platforms, analytics, visualization, and data-focused research 
 - [Qlik Predict](https://www.qlik.com/) - No-code predictive analytics with AutoML for business users.
 - [Mode](https://mode.com/) - Collaborative analytics with SQL, Python, and R.
 - [Deepnote](https://deepnote.com/) - Collaborative data science notebooks with AI assistance.
+- [AlphaSift](https://github.com/ZhuLinsen/alphasift) - Open-source quantitative equity screener with zero-snooping Walk-Forward pattern replay, 14-tool read-only STDIO MCP server, and public T+5/10/20 ledger.
 
 ### Research Tools
 
