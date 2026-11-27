@@ -59,6 +59,7 @@ Agent SDKs, autonomous systems, orchestration, tool use, memory, and browser aut
 
 - [Manus](https://manus.im/) - General autonomous agent that executes multi-step real-world tasks.
 - [LazySiren](https://lazysiren.com/landing) - AI-operated environment across browser, Android, and Windows that runs 50+ built-in apps and builds new apps on demand.
+- [Dooza Crew](https://www.dooza.ai/crew) - Hosted team of AI employees with their own cloud computer, browser, email, and phone calls for small businesses.
 
 ### Coding Agents
 
