@@ -1,0 +1,15 @@
+{
+  "name": "MuseTool",
+  "url": "https://musetool.online/",
+  "description": "Free directory of 1,000+ online tools, including calculators, converters, countdown timers and PDF tools, with no sign-up or payment.",
+  "category": "miscellaneous",
+  "subcategory": null,
+  "order": 9999,
+  "openSource": false,
+  "pricing": "free",
+  "status": "listed",
+  "source": {
+    "kind": "community",
+    "addedAt": "2026-11-27"
+  }
+}
