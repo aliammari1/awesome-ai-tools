@@ -452,6 +452,7 @@ Coding assistants, developer tools, code analysis, and software-engineering auto
 - [Anima](https://www.animaapp.com/) - Design to code conversion for React, Vue, and HTML.
 - [Replit](https://replit.com/) - Cloud-based IDE with AI coding and instant deployment.
 - [Deno Deploy](https://deno.com/deploy) - Edge deployment with AI-assisted development.
+- [100x Engineer Skill](https://github.com/DeadInternetStudios/100x-engineer-skill) - Open-source skill kit for Claude Code, Cursor and Codex that plans work before coding and verifies the result with tests and formal checks.
 - [agent-qa](https://github.com/vostride/agent-qa) - Self-improving natural-language web, Android and iOS testing with advanced memidex memory, a CLI, dashboard and MCP tools.
 - [BrewPage](https://brewpage.app/) - Hosting for AI agents that publishes generated HTML pages, Markdown, static sites, files and JSON to temporary HTTPS links through an API, an MCP server or a GitHub Action, with no signup or API key.
 - [Codex Lookout](https://github.com/makorise/codex-local-hub) - Local-first macOS companion for monitoring and steering Codex Desktop tasks from a phone browser.

@@ -1,0 +1,18 @@
+{
+  "name": "100x Engineer Skill",
+  "url": "https://github.com/DeadInternetStudios/100x-engineer-skill",
+  "description": "Open-source skill kit for Claude Code, Cursor and Codex that plans work before coding and verifies the result with tests and formal checks.",
+  "category": "code-generation-and-development",
+  "subcategory": {
+    "id": "development-tools",
+    "name": "Development Tools"
+  },
+  "order": 9999,
+  "openSource": true,
+  "pricing": "free",
+  "status": "listed",
+  "source": {
+    "kind": "community",
+    "addedAt": "2026-11-28"
+  }
+}
