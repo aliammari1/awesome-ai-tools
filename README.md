@@ -701,6 +701,8 @@ Safety evaluation, governance, responsible-AI, and risk-management tools.
 
 Infrastructure, MLOps, automation, and specialized tools that span multiple categories.
 
+- [MuseTool](https://musetool.online/) - Free directory of 1,000+ online tools, including calculators, converters, countdown timers and PDF tools, with no sign-up or payment.
+
 ### AI Infrastructure & MLOps
 
 - [MLflow](https://mlflow.org/) - Open-source ML lifecycle management with LLMOps features.
