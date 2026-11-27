@@ -185,6 +185,7 @@ Image generation, visual design, creative production, and design-assistance tool
 - [objekto.io](https://objekto.io/en) - Designs multi-part, 3D-printable objects from text, photos, or sketches with printability checks and assembly guides.
 - [RoomLab.app](https://roomlab.app/) - AI interior design and property tool for virtual staging, restyling, decluttering, renders, and walkthrough videos.
 - [RoomMaker AI](https://roommakerai.org/) - AI room designer that redesigns a room from a photo, previews renovation changes, stages furniture, and drafts floor plan concepts.
+- [TinyMast](https://tinymast.com/) - Free web toolkit that compresses JPG, PNG, WebP and GIF images to a target KB size in batches of up to 100, and compresses, merges, splits and OCRs PDFs.
 
 ## Communication & Writing
 
