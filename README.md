@@ -502,6 +502,7 @@ AI search engines, research assistants, knowledge discovery, and evidence-gather
 - [Nujan](https://nujan.app/) - Dual-pane scientific paper reader with Socratic AI coaching, formula breakdowns, and multi-paper literature synthesis.
 - [Slashspace](https://www.slashspace.ai/) - Local-first desktop AI canvas for research with branching chats, source context and side-by-side model comparison.
 - [Scientific Figure](https://scientificfigure.com/) - Draws scientific illustrations, graphical abstracts, data plots, and conference posters from a text prompt, sketch, or paper PDF, with SVG and PPTX export at journal column widths.
+- [JournalCompass](https://journalcompass.com/) - Free bilingual journal search across 43,499 SCI/SSCI journals with CAS zones, impact factors, review times, APC/OA status and an AI journal matcher.
 
 ## Large Language Models
 
