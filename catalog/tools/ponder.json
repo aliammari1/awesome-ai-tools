@@ -1,0 +1,18 @@
+{
+  "name": "Ponder",
+  "url": "https://github.com/Quinnod345/ponder",
+  "description": "Zero-dependency cognitive verification CLI and agent skill that enforces an 8-stage deliberation protocol and a mathematical convergence gate for code reviews.",
+  "category": "code-generation-and-development",
+  "subcategory": {
+    "id": "code-analysis-and-review",
+    "name": "Code Analysis & Review"
+  },
+  "order": 9999,
+  "openSource": true,
+  "pricing": "free",
+  "status": "listed",
+  "source": {
+    "kind": "community",
+    "addedAt": "2026-11-03"
+  }
+}

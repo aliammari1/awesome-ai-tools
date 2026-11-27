@@ -1,0 +1,18 @@
+{
+  "name": "FalcoScan",
+  "url": "https://falcoscan.com/",
+  "description": "AI market intelligence directory tracking 8,000+ AI products across 30 markets with rankings and an AI Graveyard.",
+  "category": "ai-search-and-research",
+  "subcategory": {
+    "id": "research-and-knowledge-tools",
+    "name": "Research & Knowledge Tools"
+  },
+  "order": 9999,
+  "openSource": false,
+  "pricing": "freemium",
+  "status": "listed",
+  "source": {
+    "kind": "community",
+    "addedAt": "2026-11-07"
+  }
+}

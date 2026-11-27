@@ -1,0 +1,18 @@
+{
+  "name": "TrustHawk",
+  "url": "https://trusthawk.ai/",
+  "description": "Free trust ratings for AI companies, scored on safety, transparency, security and privacy from what each company publishes, with a source link behind every score.",
+  "category": "ai-safety-and-ethics",
+  "subcategory": {
+    "id": "ai-ethics-and-governance",
+    "name": "AI Ethics & Governance"
+  },
+  "order": 9999,
+  "openSource": false,
+  "pricing": "free",
+  "status": "listed",
+  "source": {
+    "kind": "community",
+    "addedAt": "2026-11-05"
+  }
+}

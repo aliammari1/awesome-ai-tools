@@ -1,0 +1,18 @@
+{
+  "name": "SoloPup Memory",
+  "url": "https://github.com/OakcoderX/solopup-memory",
+  "description": "Open-source text-memory plugin for DeepSeek Harness with source references, project scopes, and revision history.",
+  "category": "ai-agents",
+  "subcategory": {
+    "id": "agent-memory-and-state",
+    "name": "Agent Memory & State"
+  },
+  "order": 9999,
+  "openSource": true,
+  "pricing": "free",
+  "status": "listed",
+  "source": {
+    "kind": "community",
+    "addedAt": "2026-11-07"
+  }
+}

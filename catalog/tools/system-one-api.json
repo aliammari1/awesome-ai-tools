@@ -1,0 +1,18 @@
+{
+  "name": "System One API",
+  "url": "https://system-one.dev/en/api",
+  "description": "Decision API and open-source TypeScript SDK returning structured choices, scores, and probabilities for AI agents.",
+  "category": "ai-agents",
+  "subcategory": {
+    "id": "agent-protocols-and-tools",
+    "name": "Agent Protocols & Tools"
+  },
+  "order": 9999,
+  "openSource": true,
+  "pricing": "freemium",
+  "status": "listed",
+  "source": {
+    "kind": "community",
+    "addedAt": "2026-11-07"
+  }
+}

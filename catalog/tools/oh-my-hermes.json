@@ -1,0 +1,18 @@
+{
+  "name": "Oh My Hermes",
+  "url": "https://github.com/rlaope/oh-my-hermes",
+  "description": "Open-source workflow harness and plugin for Hermes Agent with specialist skills, project memory, and model routing.",
+  "category": "code-generation-and-development",
+  "subcategory": {
+    "id": "development-tools",
+    "name": "Development Tools"
+  },
+  "order": 9999,
+  "openSource": true,
+  "pricing": null,
+  "status": "listed",
+  "source": {
+    "kind": "community",
+    "addedAt": "2026-11-07"
+  }
+}

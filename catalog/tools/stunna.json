@@ -1,0 +1,18 @@
+{
+  "name": "Stunna",
+  "url": "https://stunna-app.com/",
+  "description": "AI photo editor for iPhone and Android offering camera-inspired film and flash looks, lighting fixes, and pose guides.",
+  "category": "creativity-and-design",
+  "subcategory": {
+    "id": "image-generation-and-art",
+    "name": "Image Generation & Art"
+  },
+  "order": 9999,
+  "openSource": false,
+  "pricing": "freemium",
+  "status": "listed",
+  "source": {
+    "kind": "community",
+    "addedAt": "2026-11-07"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "name": "VoxSail",
+  "url": "https://voxsail.com/en/",
+  "description": "Browser workspace for translating video and audio, editing subtitles, AI dubbing, and exporting localized media.",
+  "category": "video-and-media",
+  "subcategory": {
+    "id": "video-creation-and-editing",
+    "name": "Video Creation & Editing"
+  },
+  "order": 9999,
+  "openSource": false,
+  "pricing": "paid",
+  "status": "listed",
+  "source": {
+    "kind": "community",
+    "addedAt": "2026-11-07"
+  }
+}

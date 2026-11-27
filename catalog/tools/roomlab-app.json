@@ -1,0 +1,18 @@
+{
+  "name": "RoomLab.app",
+  "url": "https://roomlab.app/",
+  "description": "AI interior design and property tool for virtual staging, restyling, decluttering, renders, and walkthrough videos.",
+  "category": "creativity-and-design",
+  "subcategory": {
+    "id": "design-tools",
+    "name": "Design Tools"
+  },
+  "order": 9999,
+  "openSource": false,
+  "pricing": "freemium",
+  "status": "listed",
+  "source": {
+    "kind": "community",
+    "addedAt": "2026-11-07"
+  }
+}

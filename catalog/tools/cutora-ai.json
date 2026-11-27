@@ -1,0 +1,18 @@
+{
+  "name": "Cutora AI",
+  "url": "https://usecutora.com/",
+  "description": "AI video editor for talking-head videos that cuts pauses, false starts, and retakes, cleans audio, corrects color, and adds captions, zooms, and on-screen text on an editable timeline.",
+  "category": "video-and-media",
+  "subcategory": {
+    "id": "video-creation-and-editing",
+    "name": "Video Creation & Editing"
+  },
+  "order": 9999,
+  "openSource": false,
+  "pricing": "paid",
+  "status": "listed",
+  "source": {
+    "kind": "community",
+    "addedAt": "2026-10-31"
+  }
+}

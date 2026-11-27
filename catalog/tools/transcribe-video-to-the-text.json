@@ -1,0 +1,18 @@
+{
+  "name": "Transcribe Video: To The Text",
+  "url": "https://video2text.ttt.so/",
+  "description": "iPhone app that transcribes video and audio files, YouTube links, and live voice into text with speaker labels, summaries, and TXT/DOCX export.",
+  "category": "audio-and-music",
+  "subcategory": {
+    "id": "voice-and-speech",
+    "name": "Voice & Speech"
+  },
+  "order": 9999,
+  "openSource": false,
+  "pricing": "freemium",
+  "status": "listed",
+  "source": {
+    "kind": "community",
+    "addedAt": "2026-11-03"
+  }
+}

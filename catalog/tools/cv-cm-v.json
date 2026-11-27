@@ -1,0 +1,18 @@
+{
+  "name": "cv.cm/v",
+  "url": "https://cv.cm/en/v/",
+  "description": "Free in-browser AI photo to video: on-device depth estimation turns one image into a 3D camera-move MP4, nothing uploaded. The same site also has local AI image and music generators.",
+  "category": "video-and-media",
+  "subcategory": {
+    "id": "video-creation-and-editing",
+    "name": "Video Creation & Editing"
+  },
+  "order": 9999,
+  "openSource": false,
+  "pricing": "free",
+  "status": "listed",
+  "source": {
+    "kind": "community",
+    "addedAt": "2026-04-20"
+  }
+}

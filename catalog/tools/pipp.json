@@ -1,0 +1,18 @@
+{
+  "name": "Pipp",
+  "url": "https://pipp.so/",
+  "description": "Shared inbox for small support teams, with built-in Pipp AI and an MCP server so your own agent can work in it.",
+  "category": "productivity",
+  "subcategory": {
+    "id": "email-and-communication",
+    "name": "Email & Communication"
+  },
+  "order": 9999,
+  "openSource": false,
+  "pricing": "free",
+  "status": "listed",
+  "source": {
+    "kind": "community",
+    "addedAt": "2026-11-04"
+  }
+}

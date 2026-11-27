@@ -1,0 +1,18 @@
+{
+  "name": "md²",
+  "url": "https://github.com/jan-bogaerts/md2",
+  "description": "Open-source desktop workspace for managing Codex and Claude Code tasks through local Markdown cards, isolated Git worktrees, multi-account switching, usage statistics, and editable diagrams for round-tripping between code and visual models.",
+  "category": "code-generation-and-development",
+  "subcategory": {
+    "id": "ai-coding-assistants",
+    "name": "AI Coding Assistants"
+  },
+  "order": 9999,
+  "openSource": true,
+  "pricing": null,
+  "status": "listed",
+  "source": {
+    "kind": "community",
+    "addedAt": "2026-11-05"
+  }
+}
