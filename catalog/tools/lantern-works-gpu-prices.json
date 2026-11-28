@@ -1,0 +1,18 @@
+{
+  "name": "Lantern Works GPU Prices",
+  "url": "https://thelanternworks.com/",
+  "description": "Free MCP server and public API for comparing cloud GPU rental prices across tracked providers, cheapest first, with vendor source pages, check times, recent price changes and GPU job cost estimates; no API key.",
+  "category": "ai-agents",
+  "subcategory": {
+    "id": "agent-protocols-and-tools",
+    "name": "Agent Protocols & Tools"
+  },
+  "order": 10001,
+  "openSource": true,
+  "pricing": "free",
+  "status": "listed",
+  "source": {
+    "kind": "community",
+    "addedAt": "2026-11-28"
+  }
+}
